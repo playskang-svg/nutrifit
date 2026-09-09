@@ -223,9 +223,12 @@
 /* ------------------------------------------------------------------ *
  * 모바일 타이포그래피 스케일
  *
- * 화면 부품 대부분이 text-xs(12px)와 10~11px 임의값으로 짜여 있다. 데스크톱
- * 정보밀도에는 맞지만 모바일에서는 읽을 수가 없다. 400곳 넘는 클래스를 일일이
- * 고치는 대신 여기서 스케일만 올린다 — 조정할 곳이 한 군데로 남는다.
+ * 화면 부품 대부분이 text-xs(12px)와 10~11px 임의값으로 짜여 있다. 27인치
+ * 모니터의 정보밀도 기준이라 6인치 화면에서는 읽히지 않는다. 400곳 넘는
+ * 클래스를 일일이 고치는 대신 여기서 스케일만 올린다 — 조정할 곳이 한 군데다.
+ *
+ * 기준: 본문은 16px 이상, 보조 설명은 14px 이상, 뱃지·각주도 12.5px 아래로
+ * 내리지 않는다. 한국어는 같은 픽셀에서 라틴 문자보다 작아 보인다.
  *
  * font-size 는 그대로 덮어쓰고(비계층 CSS라 Tailwind 유틸리티보다 우선),
  * line-height 는 :where() 로 특정도 0에 둬서 leading-* 유틸리티가 이긴다.
@@ -235,37 +238,49 @@
   .text-\[9px\],
   .text-\[10px\],
   .text-\[10\.5px\] {
-    font-size: 12px;
+    font-size: 12.5px;
   }
   .text-\[11px\],
   .text-\[11\.5px\],
   .text-\[12px\],
-  .text-\[12\.5px\],
-  .text-xs {
+  .text-\[12\.5px\] {
     font-size: 13.5px;
+  }
+  .text-xs {
+    font-size: 14px;
   }
   .text-\[13px\],
   .text-\[13\.5px\],
   .text-sm {
-    font-size: 15px;
+    font-size: 15.5px;
   }
   .text-\[14px\],
   .text-\[15px\],
   .text-base {
-    font-size: 16.5px;
+    font-size: 17px;
+  }
+  /* 제목은 본문이 커진 만큼 같이 올라가야 위계가 유지된다. */
+  .text-lg {
+    font-size: 19px;
   }
 
   :where(.text-\[9px\], .text-\[10px\], .text-\[10\.5px\]) {
     line-height: 1.5;
   }
-  :where(.text-\[11px\], .text-\[11\.5px\], .text-\[12px\], .text-\[12\.5px\], .text-xs) {
+  :where(.text-\[11px\], .text-\[11\.5px\], .text-\[12px\], .text-\[12\.5px\]) {
     line-height: 1.55;
+  }
+  :where(.text-xs) {
+    line-height: 1.6;
   }
   :where(.text-\[13px\], .text-\[13\.5px\], .text-sm) {
     line-height: 1.65;
   }
   :where(.text-\[14px\], .text-\[15px\], .text-base) {
     line-height: 1.7;
+  }
+  :where(.text-lg) {
+    line-height: 1.45;
   }
 
   /* iOS 사파리는 16px 미만 입력창에 포커스가 가면 화면을 확대해 버린다.
@@ -282,8 +297,8 @@
     overflow-wrap: break-word;
   }
 
-  /* 손가락으로 누를 수 있는 크기. 11px 라벨에 py-1.5 면 26px밖에 안 된다.
-     작은 글자를 단 버튼·링크만 키운다 — 아이콘 버튼은 이미 제 크기가 있다. */
+  /* 손가락으로 누를 수 있는 크기. 작은 글자를 단 버튼·링크만 키운다 —
+     아이콘 버튼은 이미 제 크기가 있다. */
   a[class*="text-xs"],
   a[class*="text-["],
   button[class*="text-xs"],

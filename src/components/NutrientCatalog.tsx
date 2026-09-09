@@ -99,7 +99,7 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
   return (
     <div className="space-y-6">
       {/* Hero Showcase Title */}
-      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 rounded-2xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
+      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 rounded-2xl p-5 sm:p-8 text-white shadow-xl relative overflow-hidden">
         <div className="absolute right-0 top-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
         
         <div className="relative z-10 max-w-3xl">
@@ -115,12 +115,12 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white mb-3 leading-tight">
             100대 필수 영양소 대백과 &amp; 결핍 맞춤 처방
           </h1>
-          <p className="text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-300 font-normal leading-relaxed line-clamp-3 sm:line-clamp-none">
             나이대별(특히 노년기), 남녀, 계절별, 직업군(직장인·수험생), 취약 부위(눈·장·관절 등)에 필요한 
             100가지 영양소의 자연 식품 급원과 한계점, 흡수율 높은 최적의 영양제 제형, 그리고 국내 최저가 구매처까지 체계적으로 제공합니다.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-emerald-200">
+          <div className="mt-6 hidden sm:flex flex-wrap items-center gap-3 text-xs text-emerald-200">
             <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
               <span>100종 전수 조사 완료</span>
@@ -149,7 +149,8 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
           </span>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
+        {/* 모바일은 가로 한 줄로 굴린다. 접히면 네 줄이 되어 콘텐츠를 화면 밖으로 밀어낸다. */}
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 pb-1 sm:mx-0 sm:px-0 sm:pb-0 sm:flex-wrap">
           {PRESET_FILTERS.map((p) => {
             const isActive = activePreset === p.id;
             return (
@@ -159,7 +160,7 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
                   setActivePreset(p.id);
                   if (p.id !== "all") setSelectedCategory("전체");
                 }}
-                className={`text-xs px-3 py-2 rounded-lg font-medium transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap text-xs px-3 py-2 rounded-lg font-medium transition-all cursor-pointer ${
                   isActive
                     ? "bg-slate-900 text-white font-bold shadow-xs"
                     : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
@@ -291,12 +292,12 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
                 <div className="space-y-1.5 text-[11px] mb-3">
                   <div className="flex items-start gap-1.5 text-slate-600">
                     <span className="font-semibold text-slate-700 shrink-0">대표 식품:</span>
-                    <span className="truncate">{item.foodSources.map(f => f.foodName).join(", ")}</span>
+                    <span className="line-clamp-2 sm:truncate">{item.foodSources.map(f => f.foodName).join(", ")}</span>
                   </div>
 
                   <div className="flex items-start gap-1.5 text-emerald-800">
                     <span className="font-semibold text-emerald-950 shrink-0">추천 제형:</span>
-                    <span className="truncate font-medium">{item.bestSupplementForm.recommendedForm}</span>
+                    <span className="line-clamp-2 sm:truncate font-medium">{item.bestSupplementForm.recommendedForm}</span>
                   </div>
                 </div>
 
