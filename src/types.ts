@@ -1,8 +1,6 @@
 export type NutrientCategory =
   | "비타민"
   | "미네랄"
-  | "비타민 (Vitamins)"
-  | "미네랄 (Minerals)"
   | "아미노산 & 단백질"
   | "지방산 & 지질"
   | "식물영양소 & 항산화제"
@@ -10,8 +8,7 @@ export type NutrientCategory =
   | "뇌 & 인지기능"
   | "관절 & 뼈"
   | "면역 & 호흡기"
-  | "활력 & 스테미너"
-  | string;
+  | "활력 & 스테미너";
 
 export type AgeGroup =
   | "전체"

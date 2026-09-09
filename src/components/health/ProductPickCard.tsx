@@ -123,7 +123,7 @@ export const ProductPickCard: React.FC<ProductPickCardProps> = ({
             {title}
           </h4>
 
-          <p className="text-xs text-slate-600 leading-relaxed mt-2 line-clamp-2">
+          <p className="text-xs text-slate-600 leading-relaxed mt-2 line-clamp-3 sm:line-clamp-2">
             {pick.reason}
           </p>
 
@@ -150,7 +150,11 @@ export const ProductPickCard: React.FC<ProductPickCardProps> = ({
                 href={primaryUrl}
                 target="_blank"
                 rel="noopener nofollow sponsored"
-                className="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition-colors shadow-sm"
+                className={`inline-flex items-center gap-1.5 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition-colors shadow-sm ${
+                  source === "coupang"
+                    ? "bg-[#c73a3a] hover:bg-[#a92f2f]"
+                    : "bg-emerald-700 hover:bg-emerald-800"
+                }`}
               >
                 {ctaLabel}
                 <ExternalLink className="w-3.5 h-3.5" />

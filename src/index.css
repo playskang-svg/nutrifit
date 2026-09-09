@@ -219,3 +219,75 @@
   margin: 0 auto;
   padding: 2rem 1.25rem 4rem;
 }
+
+/* ------------------------------------------------------------------ *
+ * 모바일 타이포그래피 스케일
+ *
+ * 화면 부품 대부분이 text-xs(12px)와 10~11px 임의값으로 짜여 있다. 데스크톱
+ * 정보밀도에는 맞지만 모바일에서는 읽을 수가 없다. 400곳 넘는 클래스를 일일이
+ * 고치는 대신 여기서 스케일만 올린다 — 조정할 곳이 한 군데로 남는다.
+ *
+ * font-size 는 그대로 덮어쓰고(비계층 CSS라 Tailwind 유틸리티보다 우선),
+ * line-height 는 :where() 로 특정도 0에 둬서 leading-* 유틸리티가 이긴다.
+ * 뱃지·가격처럼 일부러 좁힌 줄간격이 깨지지 않는다.
+ * ------------------------------------------------------------------ */
+@media (max-width: 640px) {
+  .text-\[9px\],
+  .text-\[10px\],
+  .text-\[10\.5px\] {
+    font-size: 12px;
+  }
+  .text-\[11px\],
+  .text-\[11\.5px\],
+  .text-\[12px\],
+  .text-\[12\.5px\],
+  .text-xs {
+    font-size: 13.5px;
+  }
+  .text-\[13px\],
+  .text-\[13\.5px\],
+  .text-sm {
+    font-size: 15px;
+  }
+  .text-\[14px\],
+  .text-\[15px\],
+  .text-base {
+    font-size: 16.5px;
+  }
+
+  :where(.text-\[9px\], .text-\[10px\], .text-\[10\.5px\]) {
+    line-height: 1.5;
+  }
+  :where(.text-\[11px\], .text-\[11\.5px\], .text-\[12px\], .text-\[12\.5px\], .text-xs) {
+    line-height: 1.55;
+  }
+  :where(.text-\[13px\], .text-\[13\.5px\], .text-sm) {
+    line-height: 1.65;
+  }
+  :where(.text-\[14px\], .text-\[15px\], .text-base) {
+    line-height: 1.7;
+  }
+
+  /* iOS 사파리는 16px 미만 입력창에 포커스가 가면 화면을 확대해 버린다.
+     확대되면 레이아웃이 밀리고 사용자가 손으로 되돌려야 한다. */
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  /* 한국어는 단어 중간에서 끊기면 급격히 읽기 어려워진다 */
+  body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  /* 손가락으로 누를 수 있는 크기. 11px 라벨에 py-1.5 면 26px밖에 안 된다.
+     작은 글자를 단 버튼·링크만 키운다 — 아이콘 버튼은 이미 제 크기가 있다. */
+  a[class*="text-xs"],
+  a[class*="text-["],
+  button[class*="text-xs"],
+  button[class*="text-["] {
+    min-height: 40px;
+  }
+}

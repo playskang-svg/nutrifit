@@ -20,6 +20,7 @@ import { getPostBySlug, getPostsByCategory } from "./content/posts";
 import { useRoute, navigate, linkProps } from "./lib/router";
 import { buildPostSeo, buildHealthListSeo, applySeoHead } from "./lib/seo";
 import { NutrientItem } from "./types";
+import { Search } from "lucide-react";
 
 export default function App() {
   const route = useRoute();
@@ -60,7 +61,24 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
+        {/* 모바일 검색. 헤더의 검색바가 md 미만에서 숨겨져 진입점이 없었다.
+            헤더 안에 두면 스티키 높이를 계속 차지해서 본문 맨 위로 뺐다. */}
+        <div className="md:hidden mb-4">
+          <div className="relative">
+            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <input
+              type="search"
+              inputMode="search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="영양소·증상·음식 검색"
+              aria-label="영양소, 증상, 음식 검색"
+              className="w-full pl-9 pr-3 py-2.5 bg-white text-base text-slate-800 placeholder-slate-400 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-600 transition-all"
+            />
+          </div>
+        </div>
+
         {/* 건강정보 상세 */}
         {route.name === "post" && post && (
           <HealthPostArticle

@@ -1,4 +1,4 @@
-import { NutrientItem } from "../types";
+import { NutrientItem, NutrientCategory } from "../types";
 import { vitaminsList } from "./nutrientsVitamins";
 import { mineralsList } from "./nutrientsMinerals";
 import { aminoAcidsList } from "./nutrientsAminoAcids";
@@ -998,6 +998,35 @@ export const all100Nutrients: NutrientItem[] = [
   ...remainingNutrientsList, // 7 items (#64 ~ #70)
   ...supplementaryNutrients  // 30 items (#71 ~ #100)
 ];
+
+/**
+ * 카테고리 탭 노출 순서.
+ *
+ * 탭 목록을 화면에 하드코딩하면 데이터 라벨과 어긋난 순간 그 탭이 조용히 0건이 된다
+ * (실제로 "비타민 (Vitamins)" vs "비타민" 때문에 비타민·미네랄 탭이 비어 있었다).
+ * 그래서 탭은 항상 데이터에서 뽑고, 이 배열은 순서만 정한다.
+ * 여기 없는 카테고리도 목록 뒤에 자동으로 붙으므로 항목이 숨지 않는다.
+ */
+export const NUTRIENT_CATEGORY_ORDER: NutrientCategory[] = [
+  "비타민",
+  "미네랄",
+  "아미노산 & 단백질",
+  "지방산 & 지질",
+  "식물영양소 & 항산화제",
+  "장 건강 & 특수기능성",
+  "뇌 & 인지기능",
+  "관절 & 뼈",
+  "면역 & 호흡기",
+  "활력 & 스테미너",
+];
+
+/** 실제 데이터에 존재하는 카테고리만, 정해진 순서로 돌려준다. */
+export function listCategories(nutrients: NutrientItem[]): NutrientCategory[] {
+  const present = new Set(nutrients.map((n) => n.category));
+  const ordered = NUTRIENT_CATEGORY_ORDER.filter((c) => present.has(c));
+  const extra = [...present].filter((c) => !NUTRIENT_CATEGORY_ORDER.includes(c));
+  return [...ordered, ...extra];
+}
 
 // Helper to filter by search keyword
 export function filterNutrients(

@@ -18,6 +18,12 @@ import os from "node:os";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DRY = process.argv.includes("--dry");
+/** 일부만 다시 수집한다: --only=mineral-mn,vit-k1. 나머지 행은 파일에 있던 그대로 둔다. */
+const ONLY = (process.argv.find((a) => a.startsWith("--only=")) ?? "")
+  .slice(7)
+  .split(",")
+  .map((v) => v.trim())
+  .filter(Boolean);
 const IHERB_RCODE = "NHQ7658";
 const HOST = "https://api-gateway.coupang.com";
 const B = "/v2/providers/affiliate_open_api/apis/openapi";
@@ -74,7 +80,37 @@ const BAD_NAME =
 const NEG_AFTER = /(없음|무첨가|프리\s|-\s*free)/i;
 const norm = (s) => s.replace(/[\s\-_.]/g, "").toUpperCase();
 
-function score(p, must, blocked, queryIndex) {
+/**
+ * 복합제 판별용. 다른 영양소의 토큰이 상품명에 몇 개나 섞여 있는지 센다.
+ * "어골칼슘 마그네슘 아연 비타민D / 망간 …" 같은 상품은 망간을 담고는 있지만
+ * 망간 대표 상품이 아니다. 토큰 하나만 맞으면 통과시키던 예전 기준이 이런 걸 뽑았다.
+ */
+const FOREIGN = (() => {
+  const map = {};
+  const byId = Object.entries(tokens);
+  for (const [id] of byId) {
+    const own = new Set((tokens[id] ?? []).map(norm));
+    const others = new Set();
+    for (const [oid, list] of byId) {
+      if (oid === id) continue;
+      for (const t of list) {
+        const nt = norm(t);
+        // 한 글자는 우연히 걸리고(예: "철"), 내 토큰과 겹치는 건 남의 성분이 아니다.
+        if (nt.length < 2 || own.has(nt)) continue;
+        // 내 토큰의 부분문자열이면(예: "비타민D" 안의 "비타민") 남의 성분으로 치지 않는다.
+        if ([...own].some((o) => o.includes(nt) || nt.includes(o))) continue;
+        others.add(nt);
+      }
+    }
+    map[id] = [...others];
+  }
+  return map;
+})();
+
+/** 본래 복합제라 다른 성분이 섞여 있는 게 정상인 항목 */
+const COMBO_OK = new Set(["vit-b-complex", "supp-zinc-carnosine", "supp-glucosamine-chondroitin", "supp-rutin-hesperidin"]);
+
+function score(p, must, blocked, queryIndex, id) {
   if (!p.productName || !p.productUrl) return -1;
   if (BAD_NAME.test(p.productName)) return -1;
   if (!OK_CATEGORY.has(p.categoryName)) return -1;
@@ -93,6 +129,16 @@ function score(p, must, blocked, queryIndex) {
   if (p.isRocket) s += 6;
   if (p.isFreeShipping) s += 2;
   if (/(정|캡슐|타블렛|소프트젤|파우더|분말|스틱|포)/.test(p.productName)) s += 4;
+
+  // 대표 성분은 상품명 앞쪽에 온다. 뒤로 밀릴수록 곁다리 성분일 확률이 높다.
+  if (idx >= 0) s += idx <= 12 ? 10 : idx <= 25 ? 4 : 0;
+
+  if (!COMBO_OK.has(id)) {
+    const foreign = (FOREIGN[id] ?? []).filter((t) => n.includes(t)).length;
+    s -= foreign * 9;
+    // 남의 성분이 셋 이상이면 종합제다. 단일 성분 대표 상품으로 내보내지 않는다.
+    if (foreign >= 3) return -1;
+  }
   return s;
 }
 
@@ -124,7 +170,12 @@ function unitPrice(name, price) {
 }
 
 /* ---------- 수집 ---------- */
-const ids = Object.keys(keywords);
+const ids = ONLY.length ? Object.keys(keywords).filter((id) => ONLY.includes(id)) : Object.keys(keywords);
+const unknown = ONLY.filter((id) => !keywords[id]);
+if (unknown.length) {
+  console.error(`keywords.json 에 없는 id: ${unknown.join(", ")}`);
+  process.exit(1);
+}
 const results = {};
 let failed = 0;
 
@@ -142,7 +193,7 @@ for (let i = 0; i < ids.length; i++) {
     await sleep(1100);
     if (r.err) continue;
     const ranked = r.items
-      .map((p) => ({ p, s: score(p, must, blocked, qi) }))
+      .map((p) => ({ p, s: score(p, must, blocked, qi, id) }))
       .filter((x) => x.s >= 0)
       .sort((a, b) => b.s - a.s);
     if (ranked[0]) { best = ranked[0].p; usedKw = queries[qi]; break; }
@@ -178,7 +229,9 @@ for (let i = 0; i < ids.length; i++) {
     iherbUrl: `https://kr.iherb.com/search?kw=${encodeURIComponent(k.en)}&rcode=${IHERB_RCODE}`,
     iherbKeyword: k.en,
   };
-  process.stdout.write(`${String(i + 1).padStart(3)}/${ids.length} ${id.padEnd(28)} ${best ? "OK" : "상품없음"}\n`);
+  process.stdout.write(
+    `${String(i + 1).padStart(3)}/${ids.length} ${id.padEnd(28)} ${best ? best.productName.slice(0, 60) : "상품없음"}\n`,
+  );
 }
 
 console.log(`\n상품 확보 ${ids.length - failed}/${ids.length}`);
@@ -187,6 +240,7 @@ if (DRY) process.exit(0);
 /* ---------- 파일 쓰기 ---------- */
 const today = new Date().toISOString().slice(0, 10);
 const q = (v) => JSON.stringify(v);
+const rowById = {};
 const rows = Object.entries(results)
   .sort((a, b) => a[1].number - b[1].number)
   .map(([id, v]) => {
@@ -197,16 +251,40 @@ const rows = Object.entries(results)
     const cp = c
       ? `{\n      productId: ${q(c.productId)},\n      name: ${q(c.name)},\n      price: ${c.price ?? "null"},\n      imageUrl: ${c.imageUrl ? q(c.imageUrl) : "null"},\n      url: ${q(c.url)},\n      isRocket: ${c.isRocket},\n      isFreeShipping: ${c.isFreeShipping},${up}\n    }`
       : "null";
-    return `  ${q(id)}: {\n    coupang: ${cp},\n    coupangSearchUrl: ${q(v.coupangSearchUrl)},\n    coupangKeyword: ${q(v.coupangKeyword)},\n    iherbUrl: ${q(v.iherbUrl)},\n    iherbKeyword: ${q(v.iherbKeyword)},\n  },`;
+    const row = `  ${q(id)}: {\n    coupang: ${cp},\n    coupangSearchUrl: ${q(v.coupangSearchUrl)},\n    coupangKeyword: ${q(v.coupangKeyword)},\n    iherbUrl: ${q(v.iherbUrl)},\n    iherbKeyword: ${q(v.iherbKeyword)},\n  },`;
+    rowById[id] = row;
+    return row;
   });
 
 const target = path.join(ROOT, "src/data/affiliateLinks.ts");
 const current = fs.readFileSync(target, "utf8");
 const MARK = "export const affiliateOffers: Record<string, AffiliateOffer> = {\n";
-const head = current.slice(0, current.indexOf(MARK) + MARK.length).replace(
-  /export const PRICE_COLLECTED_AT = "[^"]*";/,
-  `export const PRICE_COLLECTED_AT = "${today}";`,
-);
-const tail = current.slice(current.indexOf("\n};\n", current.indexOf(MARK)));
-fs.writeFileSync(target, head + rows.join("\n") + tail);
-console.log(`src/data/affiliateLinks.ts 갱신 (수집일 ${today})`);
+const bodyStart = current.indexOf(MARK) + MARK.length;
+const bodyEnd = current.indexOf("\n};\n", bodyStart);
+
+let head = current.slice(0, bodyStart);
+let body;
+
+if (ONLY.length) {
+  // 부분 수집. 건드리지 않은 행은 글자 하나 바꾸지 않는다.
+  body = current.slice(bodyStart, bodyEnd);
+  for (const [id, row] of Object.entries(rowById)) {
+    const re = new RegExp(`^  "${id}": \\{[\\s\\S]*?\\n  \\},$`, "m");
+    if (!re.test(body)) {
+      console.error(`기존 파일에서 ${id} 블록을 못 찾아 건너뜁니다.`);
+      continue;
+    }
+    body = body.replace(re, () => row.replace(/\n$/, ""));
+  }
+  // 수집일은 전체 재수집일 때만 옮긴다. 일부만 새로 받고 전부 오늘 값이라고 표시하면 거짓말이 된다.
+  console.log(`src/data/affiliateLinks.ts 부분 갱신 (${ONLY.length}건, PRICE_COLLECTED_AT 유지)`);
+} else {
+  head = head.replace(
+    /export const PRICE_COLLECTED_AT = "[^"]*";/,
+    `export const PRICE_COLLECTED_AT = "${today}";`,
+  );
+  body = rows.join("\n");
+  console.log(`src/data/affiliateLinks.ts 갱신 (수집일 ${today})`);
+}
+
+fs.writeFileSync(target, head + body + current.slice(bodyEnd));

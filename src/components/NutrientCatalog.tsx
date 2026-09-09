@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { NutrientItem } from "../types";
 import { CoupangPrice, CoupangBadges, CoupangBuyButton, IherbLink } from "./BuyLinks";
+import { listCategories } from "../data/nutrientsAll";
 import { 
   Sparkles, 
   Search, 
@@ -25,16 +26,6 @@ interface NutrientCatalogProps {
   onSelectNutrient: (nutrient: NutrientItem) => void;
 }
 
-const CATEGORIES = [
-  "전체",
-  "비타민",
-  "미네랄",
-  "아미노산 & 단백질",
-  "지방산 & 지질",
-  "식물영양소 & 항산화제",
-  "장 건강 & 특수기능성"
-];
-
 const PRESET_FILTERS = [
   { id: "all", label: "100대 영양소 전체", organ: "전체", demographic: "전체" },
   { id: "elderly", label: "노년기 필수 (근감소·골밀도)", organ: "전체", demographic: "60대+ 노년기" },
@@ -54,6 +45,24 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
 }) => {
   const [selectedCategory, setSelectedCategory] = useState("전체");
   const [activePreset, setActivePreset] = useState("all");
+
+  // 탭은 데이터에서 뽑는다. 하드코딩하면 라벨이 어긋나는 순간 그 탭이 조용히 0건이 된다.
+  const categories = useMemo(() => ["전체", ...listCategories(nutrients)], [nutrients]);
+
+  // 프리셋을 함께 적용한 상태의 탭별 건수. 0인 탭을 눌러 빈 화면을 보는 일이 없게 미리 보여준다.
+  const categoryCounts = useMemo(() => {
+    const preset = PRESET_FILTERS.find((p) => p.id === activePreset);
+    const counts: Record<string, number> = {};
+    for (const item of nutrients) {
+      if (preset) {
+        if (preset.organ !== "전체" && !item.targetOrgans.includes(preset.organ as any)) continue;
+        if (preset.demographic !== "전체" && !item.targetDemographics.includes(preset.demographic as any)) continue;
+      }
+      counts["전체"] = (counts["전체"] ?? 0) + 1;
+      counts[item.category] = (counts[item.category] ?? 0) + 1;
+    }
+    return counts;
+  }, [nutrients, activePreset]);
 
   const filteredList = useMemo(() => {
     return nutrients.filter((item) => {
@@ -165,8 +174,9 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
 
       {/* Category Tabs */}
       <div className="flex items-center gap-1 overflow-x-auto pb-1 border-b border-slate-200 no-scrollbar">
-        {CATEGORIES.map((cat) => {
+        {categories.map((cat) => {
           const isSelected = selectedCategory === cat;
+          const count = categoryCounts[cat] ?? 0;
           return (
             <button
               key={cat}
@@ -181,6 +191,7 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
               }`}
             >
               {cat}
+              <span className={isSelected ? "ml-1 text-emerald-100" : "ml-1 text-slate-400"}>{count}</span>
             </button>
           );
         })}
