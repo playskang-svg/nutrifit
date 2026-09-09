@@ -34,14 +34,17 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
       {/* Top emergency benefit notice bar */}
-      <div className="bg-emerald-900 text-white text-xs py-1.5 px-4">
+      <div className="hidden sm:block bg-emerald-900 text-white text-xs py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="bg-emerald-500 text-slate-950 font-bold px-1.5 py-0.5 rounded-sm text-[10px] tracking-wider uppercase">
               쿠팡 실시간 가격
             </span>
-            <span className="text-emerald-100 font-medium">
-              100대 필수 영양소 정밀 분석 &amp; 국내 최저가·해외 직구가 한 번에 비교
+            <span className="text-emerald-100 font-medium line-clamp-1">
+              <span className="sm:hidden">국내 최저가 · 해외 직구가 비교</span>
+              <span className="hidden sm:inline">
+                100대 필수 영양소 정밀 분석 &amp; 국내 최저가·해외 직구가 한 번에 비교
+              </span>
             </span>
           </div>
           <div className="hidden sm:flex items-center gap-3 text-[11px] text-emerald-200">
@@ -59,7 +62,7 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Main navigation container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 gap-4">
+        <div className="flex items-center justify-between h-14 sm:h-20 gap-3 sm:gap-4">
           {/* Logo */}
           <a
             {...linkProps("/")}

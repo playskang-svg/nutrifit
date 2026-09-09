@@ -188,7 +188,8 @@ export const SupplementScheduleSection: React.FC<SupplementScheduleSectionProps>
 
       {/* Navigation Sub-Tabs */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-3">
-        <div className="flex items-center gap-2">
+        {/* 서브탭 라벨이 길어 모바일에서 한 줄에 안 들어간다. 가로로 넘치지 않게 접는다. */}
+        <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={() => setActiveSubTab("timeline")}
             className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all cursor-pointer flex items-center gap-2 ${
