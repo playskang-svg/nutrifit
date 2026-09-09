@@ -276,6 +276,9 @@ export interface HealthPost {
   author: PostAuthor;
   readingMinutes: number;
   heroEmoji: string;         // 이미지 없이도 카드가 서도록
+  /** 목록 카드 썸네일. 비우면 productPicks 첫 제품의 사진을 쓰고, 그것도 없으면
+   *  heroEmoji 로 조립한 카드로 떨어진다(깨진 이미지 자리 없음). */
+  thumbnail?: string;
   summary: string;           // 도입 요약 박스 2~3줄
   keyPoints: string[];       // 핵심 요약 3~5줄
   body: string;              // 본문 마크다운 (src/lib/markdown.ts 문법)

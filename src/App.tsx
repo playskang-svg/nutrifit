@@ -15,6 +15,7 @@ import { HealthPostList } from "./components/health/HealthPostList";
 import { HealthPostArticle } from "./components/health/HealthPostArticle";
 import { Footer } from "./components/Footer";
 import { UpdateTicker } from "./components/UpdateTicker";
+import { RecentPostsStrip } from "./components/health/RecentPostsStrip";
 import { all100Nutrients } from "./data/nutrientsAll";
 import { healthColumnsData } from "./data/healthColumnsData";
 import { getPostBySlug, getPostsByCategory } from "./content/posts";
@@ -119,6 +120,10 @@ export default function App() {
 
         {route.name === "home" && (
           <>
+            {/* 새 글은 첫 화면에서 보여야 한다. 안쪽 경로에만 있으면
+                사이트가 관리되고 있는지 방문자가 알 수 없다. */}
+            <RecentPostsStrip />
+
             {activeTab === "catalog" && (
               <NutrientCatalog
                 nutrients={all100Nutrients}
