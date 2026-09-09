@@ -1,4 +1,5 @@
 import React from "react";
+import { linkProps } from "../lib/router";
 import { 
   ShieldCheck, 
   Sparkles, 
@@ -11,7 +12,8 @@ import {
   Clock,
   BarChart3,
   Package,
-  Utensils
+  Utensils,
+  Newspaper
 } from "lucide-react";
 
 interface HeaderProps {
@@ -59,8 +61,8 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-4">
           {/* Logo */}
-          <div 
-            onClick={() => setActiveTab("catalog")}
+          <a
+            {...linkProps("/")}
             className="flex items-center gap-3 cursor-pointer group shrink-0"
           >
             <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-800 flex items-center justify-center text-white shadow-md shadow-emerald-700/20 group-hover:scale-105 transition-transform">
@@ -79,7 +81,7 @@ export const Header: React.FC<HeaderProps> = ({
                 100대 필수 영양소 · 부위별·생애주기별 맞춤 처방 &amp; 직구 가이드
               </p>
             </div>
-          </div>
+          </a>
 
           {/* Global live search bar */}
           <div className="flex-1 max-w-md hidden md:block">
@@ -110,7 +112,8 @@ export const Header: React.FC<HeaderProps> = ({
               className="flex items-center gap-2 px-3.5 sm:px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white text-sm font-semibold rounded-lg shadow-sm shadow-emerald-700/20 transition-all hover:shadow-md cursor-pointer group"
             >
               <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
-              <span>AI 맞춤 영양 분석기</span>
+              <span className="sm:hidden">AI 분석</span>
+              <span className="hidden sm:inline">AI 맞춤 영양 분석기</span>
               <span className="hidden lg:inline-block text-[11px] bg-white/20 text-white font-medium px-1.5 py-0.5 rounded">
                 노년기·직업별
               </span>
@@ -121,6 +124,18 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Category & Section Navigation Tabs */}
         <div className="flex items-center border-t border-slate-100 overflow-x-auto no-scrollbar py-2 gap-1 text-sm font-medium">
           <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
+            <a
+              {...linkProps("/health")}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap ${
+                activeTab === "health"
+                  ? "bg-emerald-700 text-white font-bold shadow-xs"
+                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+              }`}
+            >
+              <Newspaper className="w-4 h-4" />
+              <span>건강정보</span>
+            </a>
+
             <button
               onClick={() => setActiveTab("catalog")}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap ${

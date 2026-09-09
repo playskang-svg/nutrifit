@@ -1,1 +1,221 @@
 @import "tailwindcss";
+
+/* 탭·카테고리 가로 스크롤 바 숨김 (마크업에서 쓰고 있었으나 정의가 없었다) */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ------------------------------------------------------------------ *
+ * 건강정보 본문 타이포그래피
+ * renderMarkdown()이 뱉는 클래스에 대응한다. 읽는 호흡을 우선해
+ * 본문 16.5px / 행간 1.85 / 문단 간격을 넓게 잡았다.
+ * ------------------------------------------------------------------ */
+.post-body {
+  color: #334155;
+  font-size: 16.5px;
+  line-height: 1.85;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.post-body > p {
+  margin: 1.15em 0;
+}
+
+.post-body .post-h2 {
+  margin: 2.4em 0 0.85em;
+  padding-top: 1.6em;
+  border-top: 1px solid #e2e8f0;
+  font-size: 1.42em;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  scroll-margin-top: 6rem;
+}
+
+.post-body .post-h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.post-body .post-h3 {
+  margin: 2em 0 0.6em;
+  font-size: 1.14em;
+  font-weight: 700;
+  color: #1e293b;
+  scroll-margin-top: 6rem;
+}
+
+.post-body .post-list {
+  margin: 1.1em 0;
+  padding-left: 1.35em;
+}
+
+.post-body ul.post-list {
+  list-style: disc;
+}
+.post-body ol.post-list {
+  list-style: decimal;
+}
+.post-body .post-list li {
+  margin: 0.5em 0;
+  padding-left: 0.2em;
+}
+.post-body .post-list li::marker {
+  color: #059669;
+  font-weight: 700;
+}
+
+.post-body strong {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.post-body .post-mark {
+  background: linear-gradient(transparent 58%, #a7f3d0 58%);
+  color: #064e3b;
+  padding: 0 0.1em;
+  font-weight: 600;
+}
+
+.post-body .post-link {
+  color: #047857;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #6ee7b7;
+}
+.post-body .post-link:hover {
+  color: #065f46;
+  text-decoration-color: #047857;
+}
+
+.post-body .post-code {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  font-size: 0.88em;
+  color: #be123c;
+}
+
+.post-body .post-quote {
+  margin: 1.5em 0;
+  padding: 0.2em 0 0.2em 1.1em;
+  border-left: 3px solid #10b981;
+  color: #475569;
+  font-style: normal;
+}
+
+.post-body .post-hr {
+  margin: 2.5em 0;
+  border: 0;
+  border-top: 1px dashed #cbd5e1;
+}
+
+/* 표 — 모바일에서 가로 스크롤 */
+.post-body .post-table-wrap {
+  margin: 1.6em 0;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+.post-body .post-table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+.post-body .post-table th {
+  background: #f8fafc;
+  color: #0f172a;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+.post-body .post-table td {
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.post-body .post-table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* 콜아웃 */
+.post-body .post-callout {
+  margin: 1.7em 0;
+  padding: 1.1em 1.25em;
+  border-radius: 14px;
+  border: 1px solid;
+  font-size: 0.95em;
+}
+.post-body .post-callout > p {
+  margin: 0.5em 0;
+}
+.post-body .post-callout > p:first-child {
+  margin-top: 0;
+}
+.post-body .post-callout > p:last-child {
+  margin-bottom: 0;
+}
+.post-body .post-callout .post-list {
+  margin: 0.5em 0;
+}
+.post-body .post-callout__title {
+  display: flex;
+  gap: 0.5em;
+  align-items: baseline;
+  font-weight: 700;
+  margin-bottom: 0.5em !important;
+}
+
+.post-body .post-callout--tip {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #065f46;
+}
+.post-body .post-callout--warn {
+  background: #fff7ed;
+  border-color: #fed7aa;
+  color: #9a3412;
+}
+.post-body .post-callout--check {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1e40af;
+}
+.post-body .post-callout--note {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #475569;
+}
+
+@media (max-width: 640px) {
+  .post-body {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .post-body .post-h2 {
+    font-size: 1.3em;
+    margin-top: 2em;
+    padding-top: 1.3em;
+  }
+}
+
+/* 워커 사전렌더 셸 — React 마운트 직전까지만 보인다 */
+#prerender {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}

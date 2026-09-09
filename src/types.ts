@@ -60,6 +60,7 @@ export interface DiscountDeal {
   certification: string; // e.g. "USP 인증", "IFOS 5-Star", "TRAACS 킬레이트"
   rating: number;
   reviewCount: number;
+  imageUrl?: string; // 비우면 /api/product-og 로 상품 페이지 대표 이미지를 끌어온다
 }
 
 export interface FoodSourceItem {
@@ -203,4 +204,91 @@ export interface DietMealProfile {
   }[];
   goldenRule: string;
   supplementWindowTip: string;
+}
+
+/* ------------------------------------------------------------------ *
+ * 건강정보 포스팅 (/health) — 글 1편 = src/content/posts/ 파일 1개
+ * ------------------------------------------------------------------ */
+
+export type PostCategorySlug =
+  | "nutrient"    // 영양소 완전정복
+  | "symptom"     // 증상별 케어
+  | "lifestage"   // 생애주기·직업별
+  | "food"        // 음식 & 식단
+  | "choose"      // 영양제 고르는 법
+  | "research";   // 최신 연구 브리핑
+
+export interface PostCategory {
+  slug: PostCategorySlug;
+  label: string;
+  tagline: string;
+  description: string;
+  accent: string;      // Tailwind 색 계열 키 (emerald, amber, ...)
+  emoji: string;
+}
+
+export interface PostAuthor {
+  name: string;
+  credential: string;
+  bio?: string;
+}
+
+export interface PostFaq {
+  question: string;
+  answer: string;
+}
+
+/** E-E-A-T 근거 출처. 최소 1건은 넣는 것을 원칙으로 한다. */
+export interface PostSource {
+  title: string;
+  publisher: string;
+  url: string;
+  year?: string;
+}
+
+/**
+ * 글 본문 아래에 붙는 제품 카드.
+ * imageUrl 을 비워 두면 워커가 url 의 og:image 를 끌어와 채우고,
+ * 그마저 실패하면 화면에서는 디자인된 대체 카드로 떨어진다(깨진 이미지 없음).
+ */
+/** 제휴처. url 호스트로 자동 추론되며, 리다이렉트 링크일 때만 직접 지정한다. */
+export type ProductSource = "iherb" | "naver" | "coupang" | "etc";
+
+export interface ProductPick {
+  source?: ProductSource;
+  /** 채우면 100대 영양소 데이터의 deal에서 제품명·가격·쿠폰·인증을 자동으로 끌어온다. */
+  nutrientId?: string;
+  /** nutrientId가 없을 때만 필수. 있으면 덮어쓰기 용도. */
+  title?: string;
+  brand?: string;
+  spec?: string;
+  url?: string;
+  imageUrl?: string;
+  reason: string; // 이 글의 맥락에서 왜 이 제품인지 한 줄
+  badge?: string; // "IFOS 5-Star", "에디터 선택" 등
+}
+
+export interface HealthPost {
+  slug: string;              // URL: /health/<slug> — 영문 소문자·하이픈, 발행 후 변경 금지
+  title: string;             // 화면 H1
+  seoTitle?: string;         // <title>. 생략 시 title 사용 (앞 25자 안에 타깃 키워드)
+  description: string;       // meta description. 80~160자
+  category: PostCategorySlug;
+  tags: string[];            // 화면 노출용
+  keywords: string[];        // 검색·메타용 (노출 X)
+  publishedAt: string;       // YYYY-MM-DD
+  updatedAt?: string;
+  author: PostAuthor;
+  readingMinutes: number;
+  heroEmoji: string;         // 이미지 없이도 카드가 서도록
+  summary: string;           // 도입 요약 박스 2~3줄
+  keyPoints: string[];       // 핵심 요약 3~5줄
+  body: string;              // 본문 마크다운 (src/lib/markdown.ts 문법)
+  faq?: PostFaq[];           // FAQPage 스키마로 자동 변환
+  sources?: PostSource[];
+  relatedNutrientIds?: string[];  // 100대 영양소 id → 본문 하단 카드
+  productPicks?: ProductPick[];   // 이미지까지 붙는 제품 연결 카드
+  relatedPostSlugs?: string[];
+  featured?: boolean;
+  draft?: boolean;           // true면 목록·사이트맵·RSS에서 제외
 }

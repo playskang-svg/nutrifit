@@ -1,3 +1,12 @@
+import {
+  renderPostDocument,
+  renderListDocument,
+  buildSitemap,
+  buildRss,
+} from "./src/lib/prerender";
+import { getPostBySlug, getPostsByCategory } from "./src/content/posts";
+import { PostCategorySlug } from "./src/types";
+
 interface Fetcher {
   fetch(input: Request | string, init?: RequestInit): Promise<Response>;
 }
@@ -267,7 +276,146 @@ export default {
       }
     }
 
-    // 4. Static assets with single-page-application fallback
+    // 4. 건강정보 사이트맵 (정적 파일 대신 글 목록에서 매번 생성)
+    if (url.pathname === '/sitemap.xml') {
+      return new Response(buildSitemap(), {
+        headers: {
+          'Content-Type': 'application/xml; charset=utf-8',
+          'Cache-Control': 'public, max-age=3600',
+        },
+      });
+    }
+
+    // 5. RSS
+    if (url.pathname === '/rss.xml' || url.pathname === '/feed.xml') {
+      return new Response(buildRss(), {
+        headers: {
+          'Content-Type': 'application/rss+xml; charset=utf-8',
+          'Cache-Control': 'public, max-age=3600',
+        },
+      });
+    }
+
+    // 6. 제품 대표 이미지(og:image) 수집
+    //    데이터에 imageUrl이 비어 있을 때만 호출된다. 판매처가 막으면 조용히 실패하고
+    //    화면은 디자인 대체 카드로 떨어진다.
+    //    ※ 제휴사 이미지 사용은 각 파트너 프로그램 약관을 따른다. 공식 API/피드로
+    //      받은 이미지가 있으면 그 주소를 imageUrl에 직접 넣는 편이 안전하다.
+    if (url.pathname === '/api/product-og') {
+      const target = url.searchParams.get('url') || '';
+      const jsonHeaders = {
+        'Content-Type': 'application/json; charset=utf-8',
+        'Cache-Control': 'public, max-age=86400',
+        ...corsHeaders,
+      };
+
+      const ALLOWED_HOSTS = [
+        'iherb.com',
+        'naver.com',
+        'naver.me',
+        'coupang.com',
+        'coupa.ng',
+      ];
+
+      let targetUrl: URL;
+      try {
+        targetUrl = new URL(target);
+      } catch {
+        return new Response(JSON.stringify({ image: null, reason: 'invalid-url' }), {
+          status: 400,
+          headers: jsonHeaders,
+        });
+      }
+
+      const allowed =
+        targetUrl.protocol === 'https:' &&
+        ALLOWED_HOSTS.some(
+          (host) => targetUrl.hostname === host || targetUrl.hostname.endsWith(`.${host}`)
+        );
+
+      if (!allowed) {
+        return new Response(JSON.stringify({ image: null, reason: 'host-not-allowed' }), {
+          status: 403,
+          headers: jsonHeaders,
+        });
+      }
+
+      const cache = (caches as unknown as { default: Cache }).default;
+      const cacheKey = new Request(`https://og.nutrifit.kr/${encodeURIComponent(targetUrl.toString())}`);
+      const cached = await cache.match(cacheKey);
+      if (cached) return cached;
+
+      let image: string | null = null;
+      try {
+        const page = await fetch(targetUrl.toString(), {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (compatible; NutriFitBot/1.0; +https://nutrifit.kr)',
+            Accept: 'text/html,application/xhtml+xml',
+            'Accept-Language': 'ko-KR,ko;q=0.9',
+          },
+          signal: AbortSignal.timeout(6000),
+        });
+
+        if (page.ok) {
+          const html = (await page.text()).slice(0, 200_000);
+          const match =
+            /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i.exec(html) ||
+            /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i.exec(html) ||
+            /<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)["']/i.exec(html);
+
+          if (match?.[1]) {
+            const resolved = new URL(match[1], targetUrl).toString();
+            if (resolved.startsWith('https://')) image = resolved;
+          }
+        }
+      } catch {
+        // 타임아웃·차단·차단페이지 모두 여기로 온다. 이미지 없이 응답한다.
+      }
+
+      const response = new Response(JSON.stringify({ image }), { headers: jsonHeaders });
+      ctx.waitUntil(cache.put(cacheKey, response.clone()));
+      return response;
+    }
+
+    // 7. 건강정보 페이지 — 크롤러가 JS 없이도 읽도록 index.html을 가공해 내려준다
+    if (url.pathname === '/health' || url.pathname.startsWith('/health/')) {
+      const shellRequest = new Request(new URL('/index.html', request.url), { method: 'GET' });
+      const shell = await env.ASSETS.fetch(shellRequest);
+
+      if (shell.ok) {
+        const baseHtml = await shell.text();
+        const segments = url.pathname.split('/').filter(Boolean);
+
+        let document: string | null = null;
+        let status = 200;
+
+        if (segments.length === 1) {
+          document = renderListDocument(baseHtml, 'all', getPostsByCategory('all'));
+        } else if (segments[1] === 'c') {
+          const category = (segments[2] ?? 'all') as PostCategorySlug;
+          document = renderListDocument(baseHtml, category, getPostsByCategory(category));
+        } else {
+          const post = getPostBySlug(segments[1]);
+          if (post) {
+            document = renderPostDocument(baseHtml, post);
+          } else {
+            // 없는 글은 앱 셸만 내려주고 404로 표시한다 (색인 오염 방지)
+            document = baseHtml;
+            status = 404;
+          }
+        }
+
+        return new Response(document, {
+          status,
+          headers: {
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': status === 200 ? 'public, max-age=300' : 'no-store',
+          },
+        });
+      }
+    }
+
+    // 8. Static assets with single-page-application fallback
     let response = await env.ASSETS.fetch(request);
     if (response.status === 404 && request.method === 'GET' && !url.pathname.startsWith('/api/')) {
       const fallbackUrl = new URL('/index.html', request.url);
