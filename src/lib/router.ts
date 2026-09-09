@@ -1,6 +1,7 @@
 import type { MouseEvent } from "react";
 import { useEffect, useState } from "react";
 import { PostCategorySlug } from "../types";
+import { pageSlugs } from "../content/pages";
 
 /**
  * 의존성 없는 최소 라우터.
@@ -9,11 +10,13 @@ import { PostCategorySlug } from "../types";
  *   /health               글 목록
  *   /health/c/<category>  카테고리 목록
  *   /health/<slug>        글 상세
+ *   /<about|privacy|...>  정책·안내 페이지
  */
 export type Route =
   | { name: "home"; tab: string }
   | { name: "health"; category: PostCategorySlug | "all" }
-  | { name: "post"; slug: string };
+  | { name: "post"; slug: string }
+  | { name: "page"; slug: string };
 
 const NAV_EVENT = "nutrifit:navigate";
 
@@ -28,12 +31,18 @@ export function parseRoute(pathname: string, search = ""): Route {
     return { name: "post", slug: segments[1] };
   }
 
+  if (segments.length === 1 && pageSlugs.includes(segments[0])) {
+    return { name: "page", slug: segments[0] };
+  }
+
   const tab = new URLSearchParams(search).get("tab") ?? "catalog";
   return { name: "home", tab };
 }
 
 export function routeToPath(route: Route): string {
   switch (route.name) {
+    case "page":
+      return `/${route.slug}`;
     case "post":
       return `/health/${route.slug}`;
     case "health":

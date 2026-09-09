@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="아연 권장량과 상한">
+  <defs>
+    <linearGradient id="bgzn" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#0f172a"/><stop offset="0.6" stop-color="#334155"/><stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#e2e8f0"/><stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgzn)"/>
+  <g transform="translate(102 142)">
+    <path d="M0-74 62-50v46C62 34 34 66 0 78-34 66-62 34-62-4v-46z" fill="url(#shield)"/>
+    <text x="0" y="16" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="42" font-weight="800" fill="#1e293b">Zn</text>
+  </g>
+  <!-- 권장량과 상한 사이가 좁다는 것이 이 글의 핵심 -->
+  <g transform="translate(196 100)">
+    <rect width="170" height="22" rx="11" fill="#0f172a" opacity="0.65"/>
+    <rect width="42" height="22" rx="11" fill="#34d399"/>
+    <text x="0" y="-8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13.5" font-weight="700" fill="#6ee7b7">권장 8~10mg</text>
+    <rect y="56" width="170" height="22" rx="11" fill="#0f172a" opacity="0.65"/>
+    <rect y="56" width="146" height="22" rx="11" fill="#fbbf24"/>
+    <text x="0" y="48" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13.5" font-weight="700" fill="#fde68a">상한 35mg</text>
+    <text x="0" y="116" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="14.5" font-weight="800" fill="#fca5a5">오래 넘기면 구리가 밀린다</text>
+  </g>
+</svg>

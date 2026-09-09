@@ -1,6 +1,8 @@
 import React from "react";
 import { HeartPulse, ShieldCheck, ExternalLink, BookOpen, Award } from "lucide-react";
 import { COUPANG_DISCLOSURE } from "../data/affiliateLinks";
+import { allPages } from "../content/pages";
+import { linkProps } from "../lib/router";
 
 interface FooterProps {
   setActiveTab: (tab: string) => void;
@@ -27,10 +29,13 @@ export const Footer: React.FC<FooterProps> = ({
               100대 필수 영양소 임상 데이터베이스. 생애주기별(노년기·성장기), 성별, 계절, 직업(직장인·수험생), 
               취약 부위(눈·장·관절·간)에 맞춘 과학적 음식과 고생체이용률 영양제 가이드.
             </p>
-            <div className="flex items-center gap-2 text-[10px] text-emerald-400 font-mono">
+            <a
+              {...linkProps("/editorial")}
+              className="inline-flex items-center gap-1.5 text-[10px] text-emerald-400 hover:text-emerald-300 transition-colors"
+            >
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>SEO · GEO Optimized Medical Knowledge</span>
-            </div>
+              <span>편집 원칙과 근거 기준 보기</span>
+            </a>
           </div>
 
           {/* Col 2: Quick Links */}
@@ -153,8 +158,21 @@ export const Footer: React.FC<FooterProps> = ({
             <strong>제휴 마케팅 안내:</strong> {COUPANG_DISCLOSURE} 해외 직구 비교 링크(iHerb)에는 추천인 코드가 포함되어 있습니다. 
             어느 쪽이든 구매자의 결제 금액에는 추가 비용이 발생하지 않습니다.
           </p>
-          <p className="pt-2 text-slate-400">
-            © 2025 NutriMatrix 100. All Rights Reserved. Structured with Schema.org MedicalWebPage for Search &amp; Generative Engine Optimization.
+          <nav aria-label="사이트 안내" className="pt-3 flex flex-wrap items-center gap-x-1 gap-y-2">
+            {allPages.map((page, index) => (
+              <React.Fragment key={page.slug}>
+                {index > 0 && <span className="text-slate-600" aria-hidden="true">·</span>}
+                <a
+                  {...linkProps(`/${page.slug}`)}
+                  className="text-slate-300 hover:text-white underline underline-offset-2 decoration-slate-600 hover:decoration-white transition-colors px-1"
+                >
+                  {page.navLabel}
+                </a>
+              </React.Fragment>
+            ))}
+          </nav>
+          <p className="pt-2 text-slate-500">
+            © {new Date().getFullYear()} NutriFit (뉴트리핏). 문의 contact@nutrifit.kr
           </p>
         </div>
       </div>

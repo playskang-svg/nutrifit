@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="반복되는 구내염">
+  <defs>
+    <linearGradient id="bgmu" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#4c0519"/><stop offset="0.6" stop-color="#881337"/><stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgmu)"/>
+  <g transform="translate(200 132)">
+    <path d="M-104 -12C-70-56 70-56 104-12 70 60-70 60-104-12z" fill="#9f1239"/>
+    <path d="M-104 -12C-70-56 70-56 104-12 70 60-70 60-104-12z" fill="none" stroke="#fda4af" stroke-opacity="0.55" stroke-width="3"/>
+    <path d="M-72 -14h144" stroke="#4c0519" stroke-width="4" opacity="0.5"/>
+    <ellipse cx="-30" cy="16" rx="21" ry="14" fill="#fff1f2"/>
+    <ellipse cx="-30" cy="16" rx="21" ry="14" fill="none" stroke="#e11d48" stroke-width="3.5"/>
+    <ellipse cx="42" cy="-2" rx="12" ry="8" fill="#fff1f2" opacity="0.85"/>
+    <ellipse cx="42" cy="-2" rx="12" ry="8" fill="none" stroke="#e11d48" stroke-width="2.5" opacity="0.85"/>
+  </g>
+  <!-- B군만이 아니라 철·엽산·B12를 함께 본다 -->
+  <g transform="translate(52 224)">
+    <rect width="68" height="32" rx="10" fill="#1c1917" opacity="0.65"/>
+    <text x="34" y="22" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="800" fill="#fda4af">Fe</text>
+    <rect x="80" width="68" height="32" rx="10" fill="#1c1917" opacity="0.65"/>
+    <text x="114" y="22" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="800" fill="#fecdd3">엽산</text>
+    <rect x="160" width="68" height="32" rx="10" fill="#1c1917" opacity="0.65"/>
+    <text x="194" y="22" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="800" fill="#fda4af">B12</text>
+    <rect x="240" width="68" height="32" rx="10" fill="#1c1917" opacity="0.65"/>
+    <text x="274" y="22" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="800" fill="#fecdd3">Zn</text>
+  </g>
+</svg>

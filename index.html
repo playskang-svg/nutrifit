@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NutriFit (뉴트리핏) - 대한민국 100대 영양소 &amp; 맞춤 영양제 가이드</title>
-    <meta name="description" content="100대 필수 영양소 백과사전, 연령별(노년기 집중)·성별·계절·직업군별 맞춤 분석, 부위별(눈·장·피로) 식품 및 영양제 추천, iHerb 최저가 할인 연계 및 글로벌 웰니스 칼럼 플랫폼" />
+    <meta name="description" content="영양소 100가지의 권장섭취량·결핍 신호·음식 급원·제형별 흡수 차이를 공공 영양기준과 해외 보건기관 자료를 근거로 정리했습니다. 증상별 건강정보 글과 복용 시간표·식단 매칭 도구를 함께 제공합니다." />
     <meta name="keywords" content="뉴트리핏, NutriFit, 100대 영양소, 영양제 추천, 노인 영양제, 직장인 영양제, 수험생 영양제, 눈건강 루테인, 장건강 유산균, 아이허브 할인코드, 비타민 결핍, 식단 가이드" />
-    <meta name="author" content="NutriFit Clinical &amp; Medical Nutrition" />
+    <meta name="author" content="NutriFit 영양정보팀" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
     <link rel="canonical" href="https://nutrifit.kr/" />
+
+    <!-- 애드센스 사이트 소유 확인. 게시자 ID 는 public/ads.txt 와 같아야 한다 -->
+    <meta name="google-adsense-account" content="ca-pub-4030620718116834" />
     
     <!-- Open Graph / SEO -->
     <meta property="og:title" content="NutriFit (뉴트리핏) - 대한민국 100대 영양소 &amp; 맞춤 영양제 가이드" />
-    <meta property="og:description" content="100대 필수 영양소 백과사전, 연령별·성별·계절·직업별 맞춤 영양제 가이드, 부족 식품 보완 및 최저가 할인 구매 연계" />
+    <meta property="og:description" content="영양소 100가지의 권장섭취량·결핍 신호·제형별 흡수 차이를 공개 기준 자료를 근거로 정리한 건강정보 사이트" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nutrifit.kr/" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:site_name" content="NutriFit (뉴트리핏)" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="NutriFit (뉴트리핏) - 100대 영양소 &amp; 맞춤 영양제 백과" />
-    <meta name="twitter:description" content="연령별, 계절별, 직업군별 필수 영양성분과 iHerb 직구 최저가 할인 정보까지 한눈에" />
+    <meta name="twitter:description" content="영양소별 권장섭취량과 제형 선택 기준을 근거와 함께 정리합니다" />
 
     <!-- GEO & Medical Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -27,40 +30,73 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "Organization",
+          "@id": "https://nutrifit.kr/#organization",
+          "name": "NutriFit (뉴트리핏)",
+          "url": "https://nutrifit.kr/",
+          "description": "영양소와 영양제 정보를 공공 영양기준·해외 보건기관 자료에 근거해 정리하는 건강정보 사이트",
+          "email": "contact@nutrifit.kr",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@nutrifit.kr",
+            "contactType": "customer support",
+            "availableLanguage": ["ko"]
+          },
+          "publishingPrinciples": "https://nutrifit.kr/editorial"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://nutrifit.kr/#website",
+          "url": "https://nutrifit.kr/",
+          "name": "NutriFit (뉴트리핏)",
+          "inLanguage": "ko-KR",
+          "publisher": { "@id": "https://nutrifit.kr/#organization" }
+        },
+        {
           "@type": "MedicalWebPage",
           "@id": "https://nutrifit.kr/#webpage",
           "url": "https://nutrifit.kr/",
-          "name": "대한민국 100대 영양소 및 생애주기별 맞춤 영양 가이드 — NutriFit (뉴트리핏)",
-          "description": "임상 영양학 기반 100대 영양소 상세 데이터, 노년기/직장인/학생 맞춤 분석, 결핍 영양소 보충 식품 및 고흡수율 영양제 추천",
+          "name": "100대 영양소와 영양제 선택 기준 — NutriFit (뉴트리핏)",
+          "description": "영양소별 권장섭취량, 결핍 신호, 음식 급원, 제형에 따른 흡수 차이를 공개된 기준 자료를 근거로 정리한 건강정보 사이트",
           "inLanguage": "ko-KR",
+          "isPartOf": { "@id": "https://nutrifit.kr/#website" },
+          "publisher": { "@id": "https://nutrifit.kr/#organization" },
           "audience": {
             "@type": "PeopleAudience",
             "suggestedGender": "unisex",
-            "suggestedMinAge": "10",
-            "suggestedMaxAge": "99"
+            "suggestedMinAge": "19"
           },
           "about": [
-            { "@type": "DietarySupplement", "name": "Vitamins, Minerals, Amino Acids, Probiotics" },
-            { "@type": "MedicalCondition", "name": "Nutrient Deficiency, Sarcopenia, Eye Fatigue, Gut Dysbiosis" }
+            { "@type": "DietarySupplement", "name": "비타민, 미네랄, 아미노산, 프로바이오틱스" },
+            { "@type": "MedicalCondition", "name": "영양소 결핍" }
           ]
         },
         {
           "@type": "FAQPage",
+          "@id": "https://nutrifit.kr/#faq",
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "노년기에 가장 결핍되기 쉬운 필수 영양소는 무엇인가요?",
+              "name": "노년기에 결핍되기 쉬운 영양소는 무엇인가요?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "위산 저하로 인한 비타민 B12(메틸코발라민), 골다공증 방지를 위한 비타민 D3+K2 및 흡수율 높은 구연산/해조 칼슘, 근감소증 방지를 위한 류신/단백질, 인지기능을 위한 포스파티딜세린이 최우선입니다."
+                "text": "나이가 들면 위산 분비가 줄어 비타민 B12 흡수율이 떨어지는 것으로 알려져 있습니다. 이 밖에 비타민 D, 칼슘, 단백질 섭취가 부족해지기 쉽습니다. 다만 결핍 여부는 증상만으로 판단하기 어려우므로 혈액검사와 진료를 통해 확인하는 것이 정확합니다."
               }
             },
             {
               "@type": "Question",
-              "name": "눈 건강과 장 건강에는 어떤 영양제 제형이 가장 효과적인가요?",
+              "name": "같은 성분인데 제형에 따라 무엇이 달라지나요?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "눈 건강에는 황반색소 밀도를 유지하는 루테인:지아잔틴(5:1 또는 10:2) 복합제와 눈물막 보호를 위한 rTG 오메가3, 모양체 근육 피로를 푸는 아스타잔틴이 탁월합니다. 장 건강에는 보장균수 100억 이상의 장용성 프로바이오틱스와 장 점막 재생을 돕는 L-글루타민 복합 섭취가 권장됩니다."
+                "text": "결합된 형태에 따라 흡수되는 양과 위장 부담이 달라집니다. 예를 들어 산화마그네슘은 값이 싼 대신 흡수율이 낮고 설사를 일으키기 쉬우며, 아미노산 킬레이트 형태는 위장 부담이 상대적으로 적습니다. 라벨에서는 원료 중량이 아니라 '~로서' 뒤에 적힌 실제 성분 함량을 확인해야 합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "이 사이트의 정보로 영양제를 결정해도 되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "이 사이트의 내용은 일반적인 건강·영양 정보이며 의사의 진단이나 처방을 대신하지 않습니다. 건강기능식품은 의약품이 아닙니다. 질환이 있거나 처방약을 복용 중이거나 임신·수유 중이라면 섭취 전에 반드시 의사 또는 약사와 상담하십시오."
               }
             }
           ]

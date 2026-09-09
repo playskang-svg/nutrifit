@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="유산균 보장균수와 균주">
+  <defs>
+    <linearGradient id="bgpb" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#022c22"/><stop offset="0.6" stop-color="#065f46"/><stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgpb)"/>
+  <g fill="#6ee7b7" opacity="0.16">
+    <ellipse cx="56" cy="52" rx="14" ry="7" transform="rotate(-24 56 52)"/>
+    <ellipse cx="344" cy="66" rx="12" ry="6" transform="rotate(18 344 66)"/>
+    <ellipse cx="330" cy="252" rx="15" ry="7" transform="rotate(-12 330 252)"/>
+    <ellipse cx="62" cy="248" rx="11" ry="5.5" transform="rotate(30 62 248)"/>
+  </g>
+  <!-- 앞면의 큰 숫자(투입균수)와 뒷면의 보장균수를 나란히 둔다 -->
+  <g transform="translate(36 84)" opacity="0.45">
+    <rect width="150" height="120" rx="16" fill="#1e293b"/>
+    <text x="75" y="52" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="30" font-weight="800" fill="#94a3b8">5000억</text>
+    <text x="75" y="80" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#64748b">투입균수</text>
+    <text x="75" y="102" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#64748b">(만들 때)</text>
+  </g>
+  <g transform="translate(214 84)">
+    <rect width="150" height="120" rx="16" fill="#047857"/>
+    <rect x="1.5" y="1.5" width="147" height="117" rx="15" fill="none" stroke="#6ee7b7" stroke-opacity="0.75" stroke-width="3"/>
+    <text x="75" y="52" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="30" font-weight="800" fill="#d1fae5">100억</text>
+    <text x="75" y="80" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="14" font-weight="800" fill="#a7f3d0">보장균수</text>
+    <text x="75" y="102" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#6ee7b7">(유통기한까지)</text>
+  </g>
+  <text x="200" y="248" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#a7f3d0">비교 기준은 오른쪽이다</text>
+</svg>

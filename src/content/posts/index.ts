@@ -8,11 +8,35 @@ import { HealthPost, PostCategorySlug } from "../../types";
 import { post as nightLegCrampsMagnesium } from "./night-leg-cramps-magnesium";
 import { post as vitaminDDeficiencyKorea } from "./vitamin-d-deficiency-korea";
 import { post as omega3RtgVsEeForm } from "./omega3-rtg-vs-ee-form";
+import { post as alwaysTiredIronB12 } from "./always-tired-iron-b12";
+import { post as vitaminB12Deficiency } from "./vitamin-b12-deficiency";
+import { post as ironDeficiencyAnemiaKorea } from "./iron-deficiency-anemia-korea";
+import { post as supplementLabelReading } from "./supplement-label-reading";
+import { post as probioticsHowToChoose } from "./probiotics-how-to-choose";
+import { post as eyeStrainScreenLutein } from "./eye-strain-screen-lutein";
+import { post as mouthUlcerNutrition } from "./mouth-ulcer-nutrition";
+import { post as zincIntakeGuide } from "./zinc-intake-guide";
+import { post as coffeeNutrientAbsorption } from "./coffee-nutrient-absorption";
+import { post as dailyProteinIntake } from "./daily-protein-intake";
+import { post as shiftWorkNutrition } from "./shift-work-nutrition";
+import { post as multivitaminEvidence } from "./multivitamin-evidence";
 
 const registry: HealthPost[] = [
   nightLegCrampsMagnesium,
   vitaminDDeficiencyKorea,
   omega3RtgVsEeForm,
+  alwaysTiredIronB12,
+  vitaminB12Deficiency,
+  ironDeficiencyAnemiaKorea,
+  supplementLabelReading,
+  probioticsHowToChoose,
+  eyeStrainScreenLutein,
+  mouthUlcerNutrition,
+  zincIntakeGuide,
+  coffeeNutrientAbsorption,
+  dailyProteinIntake,
+  shiftWorkNutrition,
+  multivitaminEvidence,
 ];
 /* --- 등록부 끝 ---------------------------------------------------- */
 

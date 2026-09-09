@@ -39,9 +39,11 @@ export function escapeHtml(input: string): string {
 function inline(raw: string): string {
   return escapeHtml(raw)
     .replace(/`([^`]+)`/g, '<code class="post-code">$1</code>')
-    .replace(
-      /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
-      '<a href="$2" target="_blank" rel="noopener nofollow" class="post-link">$1</a>'
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_all, text: string, href: string) =>
+      // 사이트 안쪽 링크까지 nofollow·새 창으로 내보내면 내부 링크 신호가 죽는다.
+      /^https?:\/\/(www\.)?nutrifit\.kr(\/|$)/.test(href)
+        ? `<a href="${href.replace(/^https?:\/\/(www\.)?nutrifit\.kr/, "")}" class="post-link">${text}</a>`
+        : `<a href="${href}" target="_blank" rel="noopener nofollow" class="post-link">${text}</a>`
     )
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>")
