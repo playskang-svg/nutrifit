@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { HealthPost } from "../../types";
 import { allPosts } from "../../content/posts";
 import { getOffer } from "../../data/affiliateLinks";
@@ -11,8 +11,8 @@ import { linkProps } from "../../lib/router";
  * 새 글이 올라오면 첫 화면에 바로 보인다 — 글이 안쪽 경로에만 있으면
  * 방문자는 사이트가 관리되고 있는지 알 수 없다.
  *
- * 장식은 최소로 둔다. 둥근 모서리와 옅은 그림자, 사진 한 장, 제목 두 줄.
- * 카드 자체가 눈에 띄려고 하면 정작 글 제목이 안 읽힌다.
+ * 가로로 길고 세로로 얇은 줄 세 개. 첫 화면에서 세 편을 다 보여주되
+ * 아래 콘텐츠를 밀어내지 않는 형태다. 자세한 내용은 눌러서 본다.
  */
 
 const FALLBACK_TINTS = [
@@ -51,7 +51,7 @@ function shortDate(post: HealthPost): string {
   return raw.slice(2).replace(/-/g, ".");
 }
 
-const Card: React.FC<{ post: HealthPost }> = ({ post }) => {
+const Row: React.FC<{ post: HealthPost }> = ({ post }) => {
   const src = thumbnailFor(post);
   const [failed, setFailed] = useState(false);
   const showImage = src && !failed;
@@ -59,11 +59,11 @@ const Card: React.FC<{ post: HealthPost }> = ({ post }) => {
   return (
     <a
       {...linkProps(`/health/${post.slug}`)}
-      className="group block bg-white rounded-2xl shadow-sm hover:shadow-md ring-1 ring-slate-200/70 hover:ring-emerald-300 overflow-hidden transition-all"
+      className="group flex items-stretch gap-3 p-2 bg-white rounded-2xl shadow-sm hover:shadow-md ring-1 ring-slate-200/70 hover:ring-emerald-300 transition-all"
     >
-      {/* 제품 사진은 흰 배경에 물건 하나가 놓인 형태다. cover 로 채우면 병이
-          잘려 무슨 제품인지 안 보인다. contain 으로 전체를 담는다. */}
-      <div className="aspect-[4/3] bg-white overflow-hidden">
+      {/* 썸네일은 4:3으로 그렸다. 줄 높이에 맞춰 늘리면 세로로 길어져
+          좌우가 잘리고 구성 요소가 프레임 밖으로 나간다. 비율을 고정한다. */}
+      <div className="w-[104px] sm:w-[136px] aspect-[4/3] shrink-0 self-center rounded-xl overflow-hidden bg-white">
         {showImage ? (
           <img
             src={src}
@@ -71,36 +71,45 @@ const Card: React.FC<{ post: HealthPost }> = ({ post }) => {
             loading="lazy"
             decoding="async"
             onError={() => setFailed(true)}
-            className="w-full h-full object-contain p-2 group-hover:scale-[1.04] transition-transform duration-300"
+            className={`w-full h-full group-hover:scale-[1.04] transition-transform duration-300 ${
+              // 글 주제로 그린 썸네일은 프레임을 꽉 채운다. 제품 사진으로
+              // 떨어졌을 때만 여백을 둬서 병이 잘리지 않게 한다.
+              post.thumbnail ? "object-cover" : "object-contain p-1.5"
+            }`}
           />
         ) : (
           <div
             className={`w-full h-full bg-gradient-to-br ${tintFor(post.slug)} flex items-center justify-center`}
           >
-            <span className="text-4xl" aria-hidden="true">
+            <span className="text-2xl" aria-hidden="true">
               {post.heroEmoji}
             </span>
           </div>
         )}
       </div>
 
-      <div className="p-3">
-        <h3 className="text-sm font-bold text-slate-900 leading-snug line-clamp-2 group-hover:text-emerald-800 transition-colors">
+      <div className="min-w-0 flex-1 flex flex-col justify-center">
+        <h3 className="text-[13.5px] sm:text-sm font-bold text-slate-900 leading-snug line-clamp-2 group-hover:text-emerald-800 transition-colors">
           {post.title}
         </h3>
-        <p className="text-[11px] text-slate-400 mt-1.5">{shortDate(post)}</p>
+        <p className="text-[12px] text-slate-500 leading-snug line-clamp-1 sm:line-clamp-2 mt-0.5">
+          {post.summary}
+        </p>
+        <p className="text-[11px] text-slate-400 mt-1">{shortDate(post)}</p>
       </div>
+
+      <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-emerald-600 self-center shrink-0 transition-colors" />
     </a>
   );
 };
 
-export const RecentPostsStrip: React.FC<{ limit?: number }> = ({ limit = 4 }) => {
+export const RecentPostsStrip: React.FC<{ limit?: number }> = ({ limit = 3 }) => {
   const posts = allPosts.slice(0, limit);
   if (!posts.length) return null;
 
   return (
     <section className="mb-6">
-      <div className="flex items-baseline justify-between mb-3">
+      <div className="flex items-baseline justify-between mb-2.5">
         <h2 className="text-sm font-bold text-slate-700">새로 올라온 글</h2>
         <a
           {...linkProps("/health")}
@@ -111,10 +120,9 @@ export const RecentPostsStrip: React.FC<{ limit?: number }> = ({ limit = 4 }) =>
         </a>
       </div>
 
-      {/* 모바일은 두 칸. 세 칸부터는 제목이 잘려 카드만 보고는 무슨 글인지 모른다. */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div className="space-y-2">
         {posts.map((post) => (
-          <Card key={post.slug} post={post} />
+          <Row key={post.slug} post={post} />
         ))}
       </div>
     </section>

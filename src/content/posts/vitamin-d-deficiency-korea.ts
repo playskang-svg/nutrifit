@@ -23,6 +23,7 @@ export const post: HealthPost = {
   },
   readingMinutes: 8,
   heroEmoji: "☀️",
+  thumbnail: "/thumbnails/vitamin-d-deficiency-korea.svg",
   summary:
     "비타민D는 뼈에만 관여하는 영양소가 아니라 근력과 면역 조절에도 관여합니다. 문제는 한국의 위도와 생활 패턴에서 햇빛만으로 채우기가 현실적으로 어렵다는 점입니다.",
   keyPoints: [

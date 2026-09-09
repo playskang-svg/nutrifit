@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="창으로 드는 햇빛과 비타민 D">
+  <defs>
+    <linearGradient id="dawn" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fef3c7"/>
+      <stop offset="0.5" stop-color="#fdba74"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#fffbeb" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#fffbeb" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff7ed" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff7ed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#dawn)"/>
+
+  <!-- 창을 통과해 방바닥에 떨어지는 빛. 실내 생활이 결핍의 원인이라는 맥락 -->
+  <g opacity="0.85">
+    <path d="M118 44h74v96h-74z" fill="url(#beam)"/>
+    <path d="M118 44 L36 300 h150 L192 140 V44z" fill="url(#beam)" opacity="0.55"/>
+  </g>
+
+  <!-- 창틀 -->
+  <g stroke="#7c2d12" stroke-opacity="0.55" fill="none" stroke-width="7" stroke-linecap="round">
+    <rect x="114" y="40" width="82" height="104" rx="6"/>
+    <path d="M155 40v104M114 92h82"/>
+  </g>
+
+  <circle cx="300" cy="86" r="72" fill="url(#sunGlow)"/>
+  <circle cx="300" cy="86" r="34" fill="#fffbeb" opacity="0.95"/>
+
+  <!-- 바닥 -->
+  <path d="M0 244h400v56H0z" fill="#7c2d12" opacity="0.35"/>
+
+  <g transform="translate(284 186)">
+    <rect width="76" height="76" rx="20" fill="#431407" opacity="0.68"/>
+    <rect x="1" y="1" width="74" height="74" rx="19" fill="none" stroke="#fed7aa" stroke-opacity="0.6" stroke-width="2"/>
+    <text x="38" y="48" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="36" font-weight="800" fill="#fff7ed">D</text>
+    <text x="38" y="64" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#fdba74" letter-spacing="1">5000 IU</text>
+  </g>
+</svg>

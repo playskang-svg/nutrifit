@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="오메가3 제형 비교">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0e7490"/>
+      <stop offset="0.55" stop-color="#155e75"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="gel" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="0.55" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="gelDim" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#cbd5e1"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#sea)"/>
+
+  <!-- 물결 -->
+  <g fill="none" stroke="#67e8f9" stroke-opacity="0.16" stroke-width="2.5">
+    <path d="M-10 74c40-18 74-18 114 0s74 18 114 0 74-18 114 0"/>
+    <path d="M-10 250c40-18 74-18 114 0s74 18 114 0 74-18 114 0"/>
+  </g>
+
+  <!-- 제형 비교가 글의 뼈대다. 고른 쪽을 밝게, 아닌 쪽을 흐리게 둔다 -->
+  <g transform="translate(74 150)">
+    <ellipse cx="0" cy="0" rx="58" ry="38" transform="rotate(-18)" fill="url(#gel)"/>
+    <ellipse cx="-16" cy="-12" rx="20" ry="10" transform="rotate(-18)" fill="#fffbeb" opacity="0.55"/>
+    <text x="0" y="66" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" font-weight="800" fill="#fde68a">rTG</text>
+  </g>
+
+  <g transform="translate(258 150)" opacity="0.5">
+    <ellipse cx="0" cy="0" rx="58" ry="38" transform="rotate(-18)" fill="url(#gelDim)"/>
+    <text x="0" y="66" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" font-weight="800" fill="#cbd5e1">EE</text>
+  </g>
+
+  <text x="166" y="158" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="26" font-weight="800" fill="#a5f3fc" opacity="0.9">vs</text>
+
+  <g transform="translate(24 26)">
+    <rect width="96" height="34" rx="10" fill="#0f172a" opacity="0.6"/>
+    <rect x="1" y="1" width="94" height="32" rx="9" fill="none" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="2"/>
+    <text x="48" y="24" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="17" font-weight="800" fill="#67e8f9">ω-3</text>
+  </g>
+</svg>

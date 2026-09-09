@@ -23,6 +23,7 @@ export const post: HealthPost = {
   },
   readingMinutes: 6,
   heroEmoji: "🐟",
+  thumbnail: "/thumbnails/omega3-rtg-vs-ee-form.svg",
   summary:
     "같은 1,000mg이라도 캡슐 무게와 EPA·DHA 실제 함량은 다릅니다. 제형과 표기를 읽는 법만 알아도 과장된 제품을 걸러낼 수 있습니다.",
   keyPoints: [

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="한밤의 다리 경련과 마그네슘">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="0.55" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fde68a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fde68a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#sky)"/>
+
+  <!-- 잔별 -->
+  <g fill="#e2e8f0" opacity="0.5">
+    <circle cx="58" cy="52" r="1.6"/><circle cx="112" cy="30" r="1.1"/>
+    <circle cx="168" cy="66" r="1.4"/><circle cx="44" cy="112" r="1"/>
+    <circle cx="238" cy="38" r="1.2"/><circle cx="330" cy="96" r="1.5"/>
+  </g>
+
+  <!-- 달 -->
+  <circle cx="308" cy="62" r="58" fill="url(#moonGlow)"/>
+  <path d="M322 34a30 30 0 1 0 0 56 34 34 0 0 1 0-56z" fill="#fde68a"/>
+
+  <!-- 이불 결 — 자다가 생기는 일이라는 맥락 -->
+  <path d="M0 232c46-18 84-18 130 0s84 18 130 0 84-18 140 0v68H0z" fill="#0b1220" opacity="0.55"/>
+  <path d="M0 252c46-16 84-16 130 0s84 16 130 0 84-16 140 0v48H0z" fill="#020617" opacity="0.5"/>
+
+  <!-- 쥐가 나는 순간 -->
+  <path d="M196 116l-42 62h34l-20 52 62-74h-36l24-40z" fill="url(#bolt)"/>
+
+  <!-- 원소 기호 -->
+  <g transform="translate(40 178)">
+    <rect width="76" height="76" rx="20" fill="#0f172a" opacity="0.72"/>
+    <rect x="1" y="1" width="74" height="74" rx="19" fill="none" stroke="#34d399" stroke-opacity="0.5" stroke-width="2"/>
+    <text x="38" y="45" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="30" font-weight="800" fill="#6ee7b7">Mg</text>
+    <text x="38" y="62" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="11" font-weight="600" fill="#94a3b8" letter-spacing="1">12</text>
+  </g>
+</svg>

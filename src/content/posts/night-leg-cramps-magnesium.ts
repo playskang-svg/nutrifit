@@ -23,6 +23,7 @@ export const post: HealthPost = {
   },
   readingMinutes: 7,
   heroEmoji: "🦵",
+  thumbnail: "/thumbnails/night-leg-cramps-magnesium.svg",
   summary:
     "야간 하지경련은 마그네슘 부족으로 설명되는 경우가 많지만, 실제로는 탈수·순환·약물·기저질환이 원인인 경우도 흔합니다. 무엇부터 확인하고 무엇을 채워야 하는지 순서대로 짚습니다.",
   keyPoints: [
