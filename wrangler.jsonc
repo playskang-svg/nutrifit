@@ -10,7 +10,11 @@
   "workers_dev": true,
   "assets": {
     "directory": "./dist",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
+    // 자산이 매칭되면 워커는 호출되지 않는다. dist/index.html 이 있으므로 "/" 도
+    // 그대로 앱 셸이 나가 크롤러가 빈 문서를 본다. 홈만 워커를 먼저 태워
+    // 사전렌더한 본문을 심어 내려보낸다(worker.ts 9번 분기).
+    "run_worker_first": ["/", "/index.html"]
   },
   "observability": {
     "enabled": true

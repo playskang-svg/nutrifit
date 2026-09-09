@@ -18,8 +18,10 @@ import { RecentPostsStrip } from "./components/health/RecentPostsStrip";
 import { all100Nutrients } from "./data/nutrientsAll";
 import { healthColumnsData } from "./data/healthColumnsData";
 import { getPostBySlug, getPostsByCategory } from "./content/posts";
+import { getPageBySlug } from "./content/pages";
+import { SitePageView } from "./components/SitePageView";
 import { useRoute, navigate, linkProps } from "./lib/router";
-import { buildPostSeo, buildHealthListSeo, applySeoHead } from "./lib/seo";
+import { buildPostSeo, buildHealthListSeo, buildPageSeo, applySeoHead } from "./lib/seo";
 import { NutrientItem } from "./types";
 import { Search } from "lucide-react";
 
@@ -38,6 +40,7 @@ export default function App() {
   };
 
   const post = route.name === "post" ? getPostBySlug(route.slug) : undefined;
+  const sitePage = route.name === "page" ? getPageBySlug(route.slug) : undefined;
 
   // 워커가 내려준 사전렌더 메타를 클라이언트 라우팅에서도 같은 값으로 유지한다.
   useEffect(() => {
@@ -45,8 +48,10 @@ export default function App() {
       applySeoHead(buildPostSeo(post));
     } else if (route.name === "health") {
       applySeoHead(buildHealthListSeo(route.category, getPostsByCategory(route.category)));
+    } else if (route.name === "page" && sitePage) {
+      applySeoHead(buildPageSeo(sitePage));
     }
-  }, [route, post]);
+  }, [route, post, sitePage]);
 
   const isHealthRoute = route.name === "health" || route.name === "post";
 
@@ -107,6 +112,9 @@ export default function App() {
             </a>
           </div>
         )}
+
+        {/* 정책·안내 페이지 */}
+        {route.name === "page" && sitePage && <SitePageView page={sitePage} />}
 
         {/* 건강정보 목록 */}
         {route.name === "health" && (

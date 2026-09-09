@@ -101,7 +101,48 @@ productPicks: [
   `imageUrl`에 넣는 방식이 가장 안전하다. og:image 수집은 보조 수단으로만 쓴다
 - 링크에는 `rel="noopener nofollow sponsored"`가 자동으로 붙는다
 
-## 6. 배포 전 확인
+## 6. 글 분량 기준
+
+애드센스 심사와 검색 노출을 함께 고려한 최소선이다.
+
+| 항목 | 기준 |
+|---|---|
+| 본문(`body`) | **공백 제외 2,000자 이상** |
+| `description` | 80~160자 |
+| `keyPoints` | 3~5줄 |
+| `faq` | 3건 이상 |
+| `sources` | **최소 1건**, 가능하면 3건 |
+
+분량은 채우는 것이 아니라 **빠진 내용을 넣어서** 늘린다. 같은 말을 늘여 쓰면
+독자도 알아보고 심사도 알아본다. 확인:
+
+```bash
+npx tsx scripts/count-chars.ts
+```
+
+## 7. 정책·안내 페이지
+
+`/about` `/editorial` `/contact` `/privacy` `/terms` 는 글이 아니라
+`src/content/pages/<slug>.ts` 다. 본문 문법은 글과 같다.
+
+- 등록: `src/content/pages/index.ts` 배열에 추가한다. **배열 순서가 푸터 링크 순서다**
+- 라우팅: 워커가 `pageSlugs` 로 최상위 경로를 가로챈다. 별도 작업이 필요 없다
+- 정책을 고치면 **`updatedAt` 을 함께 올린다.** 화면과 사이트맵에 개정일이 나간다
+- 광고·제휴 관련 문구를 바꿀 때는 `privacy` 4항과 `terms` 6조를 함께 본다
+
+## 8. 홈이 빈 문서로 나가지 않게
+
+Cloudflare Workers Assets 는 **정적 파일이 매칭되면 워커를 호출하지 않는다.**
+`dist/index.html` 이 있으므로 `/` 도 그냥 앱 셸이 나가고, 크롤러는 48자짜리 빈
+문서를 본다. `wrangler.jsonc` 의 아래 설정이 그것을 막는다.
+
+```jsonc
+"run_worker_first": ["/", "/index.html"]
+```
+
+이 줄을 지우면 홈 사전렌더가 조용히 사라진다. 배포 후 반드시 확인한다.
+
+## 9. 배포 전 확인
 
 ```bash
 npm run lint
@@ -121,3 +162,10 @@ curl -s https://nutrifit.kr/health/<slug> | grep -o "<title>.*</title>"
 
 두 번째 명령의 결과에 글 제목이 나와야 한다. 사이트 기본 제목이 나오면
 워커 사전렌더가 타지 않은 것이다.
+
+홈 사전렌더도 함께 본다. 1만 자 근처가 나와야 정상이고, 50자 근처면
+8항의 `run_worker_first` 가 빠진 것이다.
+
+```bash
+curl -s https://nutrifit.kr/ | sed 's/<[^>]*>/ /g' | tr -s "[:space:]" " " | wc -c
+```

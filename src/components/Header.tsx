@@ -100,15 +100,20 @@ export const Header: React.FC<HeaderProps> = ({
                 100대 필수 영양소 정밀 분석 &amp; 국내 최저가·해외 직구가 한 번에 비교
               </span>
             </div>
+            {/* 실제 절차가 없는 "의학자문위 검증" 표기를 걸어 두었었다. 건강 주제에서
+                신뢰를 빌려오는 거짓 표기는 가장 해롭다. 확인 가능한 사실만 남긴다. */}
             <div className="hidden lg:flex items-center gap-3 text-[11px] text-emerald-200">
               <span className="flex items-center gap-1">
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                미국 의학자문위(MAB) 검증
+                공공 영양기준·해외 보건기관 자료 기반
               </span>
-              <span className="flex items-center gap-1">
+              <a
+                {...linkProps("/editorial")}
+                className="flex items-center gap-1 hover:text-white underline underline-offset-2 decoration-emerald-700 transition-colors"
+              >
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                SEO/GEO 최적화 의학 데이터
-              </span>
+                편집 원칙 공개
+              </a>
             </div>
           </div>
         </div>

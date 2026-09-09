@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="커피와 영양소 흡수">
+  <defs>
+    <linearGradient id="bgcf" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#292524"/><stop offset="0.6" stop-color="#44403c"/><stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+    <linearGradient id="brew" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#78350f"/><stop offset="1" stop-color="#451a03"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgcf)"/>
+  <g stroke="#d6d3d1" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M126 74c8-12-8-22 0-34"/><path d="M152 70c8-12-8-22 0-34"/>
+  </g>
+  <g transform="translate(96 158)">
+    <path d="M-52-40h104v46a52 52 0 0 1-104 0z" fill="#f5f5f4"/>
+    <path d="M-44-32h88v38a44 44 0 0 1-88 0z" fill="url(#brew)"/>
+    <path d="M52-26h16a24 24 0 0 1 0 48h-16" fill="none" stroke="#f5f5f4" stroke-width="9"/>
+    <ellipse cx="0" cy="64" rx="66" ry="9" fill="#0c0a09" opacity="0.45"/>
+  </g>
+  <!-- 탄닌이 식물성 철과 붙어 흡수를 막는다. 시간을 벌리라는 것이 결론 -->
+  <g transform="translate(216 108)">
+    <circle cx="26" cy="26" r="26" fill="#7f1d1d"/>
+    <text x="26" y="34" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" font-weight="800" fill="#fecaca">Fe</text>
+    <line x1="66" y1="26" x2="112" y2="26" stroke="#f87171" stroke-width="5" stroke-linecap="round"/>
+    <line x1="80" y1="10" x2="98" y2="42" stroke="#fca5a5" stroke-width="5" stroke-linecap="round"/>
+    <line x1="98" y1="10" x2="80" y2="42" stroke="#fca5a5" stroke-width="5" stroke-linecap="round"/>
+    <text x="0" y="98" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="17" font-weight="800" fill="#fed7aa">식사 전후 1시간</text>
+    <text x="0" y="124" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#d6d3d1">끊지 말고 시간을 벌린다</text>
+  </g>
+</svg>

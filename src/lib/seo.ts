@@ -1,4 +1,4 @@
-import { HealthPost } from "../types";
+import { HealthPost, SitePage } from "../types";
 import { getCategoryLabel } from "../content/postCategories";
 import { markdownToPlainText } from "./markdown";
 
@@ -22,6 +22,7 @@ export interface SeoHead {
 }
 
 export const postUrl = (slug: string) => `${SITE.origin}/health/${slug}`;
+export const pageUrl = (slug: string) => `${SITE.origin}/${slug}`;
 export const categoryUrl = (slug: string) => `${SITE.origin}/health/c/${slug}`;
 export const healthListUrl = () => `${SITE.origin}/health`;
 
@@ -100,6 +101,41 @@ export function buildPostSeo(post: HealthPost): SeoHead {
     publishedTime: post.publishedAt,
     modifiedTime: post.updatedAt ?? post.publishedAt,
     jsonLd: graph,
+  };
+}
+
+/**
+ * 정책·안내 페이지. 글이 아니므로 MedicalWebPage 가 아니라 WebPage 로 낸다.
+ * 개인정보처리방침·이용약관은 검색 노출을 노리는 문서가 아니지만, 심사와 신뢰를 위해
+ * 색인은 열어 둔다(noindex 를 켠 페이지만 제외).
+ */
+export function buildPageSeo(page: SitePage): SeoHead {
+  const url = pageUrl(page.slug);
+
+  return {
+    title: `${page.seoTitle ?? page.title} | ${SITE.name}`,
+    description: page.description,
+    canonical: url,
+    ogType: "website",
+    modifiedTime: page.updatedAt,
+    jsonLd: [
+      {
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: page.seoTitle ?? page.title,
+        headline: page.title,
+        description: page.description,
+        inLanguage: "ko-KR",
+        dateModified: page.updatedAt,
+        isPartOf: { "@id": `${SITE.origin}/#website` },
+        publisher: { "@id": `${SITE.origin}/#organization` },
+      },
+      breadcrumb([
+        { name: SITE.name, url: `${SITE.origin}/` },
+        { name: page.title, url },
+      ]),
+    ],
   };
 }
 

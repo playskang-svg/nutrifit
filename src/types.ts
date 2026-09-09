@@ -290,3 +290,21 @@ export interface HealthPost {
   featured?: boolean;
   draft?: boolean;           // true면 목록·사이트맵·RSS에서 제외
 }
+
+/* ------------------------------------------------------------------ *
+ * 정책·안내 페이지 (/about, /privacy, /terms, /contact, /editorial)
+ * 글(HealthPost)과 달리 목록·RSS에 들어가지 않고 사이트 하단에서만 연결된다.
+ * ------------------------------------------------------------------ */
+
+export interface SitePage {
+  slug: string;          // URL: /<slug>
+  title: string;         // 화면 H1
+  seoTitle?: string;     // <title>. 생략 시 title
+  description: string;   // meta description
+  navLabel: string;      // 푸터 링크에 쓰는 짧은 이름
+  updatedAt: string;     // YYYY-MM-DD. 정책 페이지는 개정일 표기가 필수다
+  summary: string;       // 제목 아래 한두 줄
+  body: string;          // 본문 마크다운 (src/lib/markdown.ts 문법)
+  /** 사이트맵에서 빼고 robots에 noindex를 준다. 정책상 색인이 불필요한 페이지용 */
+  noindex?: boolean;
+}

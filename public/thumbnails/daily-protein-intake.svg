@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="단백질 하루 섭취량 계산">
+  <defs>
+    <linearGradient id="bgpr" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#431407"/><stop offset="0.6" stop-color="#7c2d12"/><stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgpr)"/>
+  <!-- 한 끼에 몰지 않고 세 끼로 나누는 것이 이 글의 결론 -->
+  <g transform="translate(200 128)">
+    <g transform="translate(-124 0)">
+      <circle r="46" fill="#fed7aa"/><circle r="34" fill="#fdba74"/>
+      <circle r="17" fill="#c2410c"/>
+      <text y="76" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="800" fill="#fed7aa">아침</text>
+    </g>
+    <g>
+      <circle r="46" fill="#fed7aa"/><circle r="34" fill="#fdba74"/>
+      <circle r="17" fill="#c2410c"/>
+      <text y="76" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="800" fill="#fed7aa">점심</text>
+    </g>
+    <g transform="translate(124 0)">
+      <circle r="46" fill="#fed7aa"/><circle r="34" fill="#fdba74"/>
+      <circle r="17" fill="#c2410c"/>
+      <text y="76" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="800" fill="#fed7aa">저녁</text>
+    </g>
+  </g>
+  <g transform="translate(120 34)">
+    <rect width="160" height="40" rx="12" fill="#1c1917" opacity="0.6"/>
+    <rect x="1" y="1" width="158" height="38" rx="11" fill="none" stroke="#fb923c" stroke-opacity="0.55" stroke-width="2"/>
+    <text x="80" y="27" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="18" font-weight="800" fill="#fdba74">체중 x 0.91g</text>
+  </g>
+  <text x="200" y="256" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#fed7aa" opacity="0.9">한 끼에 몰지 않고 세 끼로 나눈다</text>
+</svg>

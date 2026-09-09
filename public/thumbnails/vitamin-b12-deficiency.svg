@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="비타민 B12 흡수 단계">
+  <defs>
+    <linearGradient id="bg12" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#083344"/><stop offset="0.6" stop-color="#134e4a"/><stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg12)"/>
+  <!-- 흡수는 네 단계를 거친다. 하나만 끊겨도 막힌다는 것이 이 글의 뼈대다 -->
+  <g transform="translate(0 116)">
+    <line x1="52" y1="24" x2="348" y2="24" stroke="#5eead4" stroke-opacity="0.28" stroke-width="3" stroke-dasharray="8 8"/>
+    <g transform="translate(52 24)">
+      <circle r="26" fill="#0f766e"/><circle r="26" fill="none" stroke="#5eead4" stroke-opacity="0.6" stroke-width="2.5"/>
+      <text y="6" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" font-weight="800" fill="#ccfbf1">1</text>
+      <text y="52" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#99f6e4">음식</text>
+    </g>
+    <g transform="translate(151 24)">
+      <circle r="26" fill="#0f766e"/><circle r="26" fill="none" stroke="#5eead4" stroke-opacity="0.6" stroke-width="2.5"/>
+      <text y="6" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" font-weight="800" fill="#ccfbf1">2</text>
+      <text y="52" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#99f6e4">위산</text>
+    </g>
+    <g transform="translate(249 24)">
+      <circle r="26" fill="#7f1d1d"/><circle r="26" fill="none" stroke="#fca5a5" stroke-opacity="0.8" stroke-width="3"/>
+      <text y="6" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" font-weight="800" fill="#fee2e2">3</text>
+      <text y="52" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#fca5a5">내인자</text>
+      <line x1="-16" y1="-16" x2="16" y2="16" stroke="#f87171" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(348 24)" opacity="0.45">
+      <circle r="26" fill="#334155"/>
+      <text y="6" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" font-weight="800" fill="#cbd5e1">4</text>
+      <text y="52" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#94a3b8">흡수</text>
+    </g>
+  </g>
+  <g transform="translate(150 32)">
+    <rect width="100" height="40" rx="12" fill="#0f172a" opacity="0.65"/>
+    <rect x="1" y="1" width="98" height="38" rx="11" fill="none" stroke="#2dd4bf" stroke-opacity="0.55" stroke-width="2"/>
+    <text x="50" y="28" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="21" font-weight="800" fill="#5eead4">B12</text>
+  </g>
+  <text x="200" y="256" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#99f6e4" opacity="0.85">먹는 양이 아니라 통과하는 길의 문제</text>
+</svg>

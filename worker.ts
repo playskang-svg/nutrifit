@@ -1,10 +1,13 @@
 import {
   renderPostDocument,
   renderListDocument,
+  renderPageDocument,
+  renderHomeDocument,
   buildSitemap,
   buildRss,
 } from "./src/lib/prerender";
 import { getPostBySlug, getPostsByCategory } from "./src/content/posts";
+import { getPageBySlug } from "./src/content/pages";
 import { PostCategorySlug } from "./src/types";
 
 interface Fetcher {
@@ -481,7 +484,39 @@ export default {
       }
     }
 
-    // 9. Static assets with single-page-application fallback
+    // 9. 홈과 정책·안내 페이지 사전렌더
+    //    홈이 앱 셸로만 나가면 크롤러가 보는 사이트 전체가 빈 문서가 된다.
+    //    탭 화면은 별도 주소가 아니므로 홈 한 장에 요약을 실어 내려보낸다.
+    if (url.pathname === '/' || url.pathname === '/index.html') {
+      const shell = await env.ASSETS.fetch(new Request(new URL('/index.html', request.url), { method: 'GET' }));
+      if (shell.ok) {
+        return new Response(renderHomeDocument(await shell.text()), {
+          headers: {
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': 'public, max-age=300',
+          },
+        });
+      }
+    }
+
+    {
+      const slug = url.pathname.slice(1);
+      const page = slug && !slug.includes('/') ? getPageBySlug(slug) : undefined;
+      if (page) {
+        const shell = await env.ASSETS.fetch(new Request(new URL('/index.html', request.url), { method: 'GET' }));
+        if (shell.ok) {
+          return new Response(renderPageDocument(await shell.text(), page), {
+            headers: {
+              'Content-Type': 'text/html; charset=utf-8',
+              'Cache-Control': 'public, max-age=3600',
+              ...(page.noindex ? { 'X-Robots-Tag': 'noindex' } : {}),
+            },
+          });
+        }
+      }
+    }
+
+    // 10. Static assets with single-page-application fallback
     let response = await env.ASSETS.fetch(request);
     if (response.status === 404 && request.method === 'GET' && !url.pathname.startsWith('/api/')) {
       const fallbackUrl = new URL('/index.html', request.url);

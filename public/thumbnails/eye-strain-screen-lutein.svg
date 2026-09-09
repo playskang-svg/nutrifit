@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="화면 앞의 눈 피로">
+  <defs>
+    <linearGradient id="bgey" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0f172a"/><stop offset="0.55" stop-color="#1e293b"/><stop offset="1" stop-color="#164e63"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.35"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgey)"/>
+  <circle cx="200" cy="150" r="150" fill="url(#glow)"/>
+  <!-- 모니터 불빛 앞의 마른 눈 -->
+  <g transform="translate(200 148)">
+    <path d="M-108 0C-70-52 70-52 108 0-70 52-70 52-108 0z" fill="#0f172a" opacity="0.75"/>
+    <path d="M-108 0C-70-52 70-52 108 0-70 52-70 52-108 0z" fill="none" stroke="#7dd3fc" stroke-opacity="0.75" stroke-width="4"/>
+    <circle r="38" fill="#0e7490"/>
+    <circle r="38" fill="none" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="2"/>
+    <circle r="17" fill="#082f49"/>
+    <circle cx="-13" cy="-13" r="6.5" fill="#e0f2fe" opacity="0.85"/>
+  </g>
+  <g stroke="#fbbf24" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <line x1="200" y1="52" x2="200" y2="30"/>
+    <line x1="128" y1="70" x2="116" y2="52"/>
+    <line x1="272" y1="70" x2="284" y2="52"/>
+  </g>
+  <g transform="translate(150 236)">
+    <rect width="100" height="34" rx="10" fill="#0f172a" opacity="0.7"/>
+    <rect x="1" y="1" width="98" height="32" rx="9" fill="none" stroke="#facc15" stroke-opacity="0.55" stroke-width="2"/>
+    <text x="50" y="24" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="16" font-weight="800" fill="#fde68a">20-20-20</text>
+  </g>
+</svg>
