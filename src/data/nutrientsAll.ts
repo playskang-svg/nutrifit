@@ -39,14 +39,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Thorne",
       productName: "PharmaGABA-250",
       spec: "60 캡슐 / 순수 발효 가바",
-      originalPrice: 38000,
-      dealPrice: 28500,
-      discountPercent: 25,
-      couponCode: "GABA25",
-      iherbUrl: "https://www.iherb.com/search?kw=PharmaGABA+Thorne",
       certification: "PharmaGABA 특허 자연 발효",
-      rating: 4.8,
-      reviewCount: 5200
     }
   },
   {
@@ -79,14 +72,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Alpha GPC 300mg",
       spec: "60 베지 캡슐",
-      originalPrice: 32000,
-      dealPrice: 22400,
-      discountPercent: 30,
-      couponCode: "BRAIN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Alpha+GPC+Now",
       certification: "Non-GMO, 두뇌 인지 기능 인증",
-      rating: 4.8,
-      reviewCount: 8400
     }
   },
   {
@@ -118,14 +104,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "SAM-e 400mg (Enteric Coated)",
       spec: "60 장용정 / 이중 블리스터",
-      originalPrice: 48000,
-      dealPrice: 33600,
-      discountPercent: 30,
-      couponCode: "MOOD30",
-      iherbUrl: "https://www.iherb.com/search?kw=SAM-e+Doctors+Best",
       certification: "이탈리아산 최고 등급 SAM-e 원료",
-      rating: 4.8,
-      reviewCount: 11400
     }
   },
   {
@@ -157,14 +136,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Nutricost",
       productName: "HMB 1000mg (Calcium HMB)",
       spec: "120 캡슐",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "MUSCLE30",
-      iherbUrl: "https://www.iherb.com/search?kw=HMB+Nutricost",
       certification: "제3자 품질 검사 통과, 글루텐 프리",
-      rating: 4.8,
-      reviewCount: 4200
     }
   },
   {
@@ -197,14 +169,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Glucosamine Chondroitin MSM with OptiMSM",
       spec: "240 베지 캡슐 / 관절 3대 성분 복합",
-      originalPrice: 42000,
-      dealPrice: 29400,
-      discountPercent: 30,
-      couponCode: "JOINT30",
-      iherbUrl: "https://www.iherb.com/search?kw=Glucosamine+Chondroitin+Doctors+Best",
       certification: "OptiMSM 포함 정품 원료",
-      rating: 4.8,
-      reviewCount: 21900
     }
   },
   {
@@ -236,14 +201,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Beta-Alanine CarnoSyn 750mg",
       spec: "120 베지 캡슐",
-      originalPrice: 24000,
-      dealPrice: 16800,
-      discountPercent: 30,
-      couponCode: "FIT30",
-      iherbUrl: "https://www.iherb.com/search?kw=CarnoSyn+Beta+Alanine",
       certification: "CarnoSyn 글로벌 스포츠 임상 인증",
-      rating: 4.8,
-      reviewCount: 3800
     }
   },
   {
@@ -275,14 +233,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Nutrex Hawaii",
       productName: "Pure Hawaiian Spirulina 1000mg",
       spec: "180 타블렛 / 무방부제",
-      originalPrice: 34000,
-      dealPrice: 23800,
-      discountPercent: 30,
-      couponCode: "GREEN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Hawaiian+Spirulina+Nutrex",
       certification: "하와이 심층수 재배, Non-GMO Verified",
-      rating: 4.8,
-      reviewCount: 15400
     }
   },
   {
@@ -315,14 +266,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "D-Mannose 500mg",
       spec: "120 베지 캡슐",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "UTI30",
-      iherbUrl: "https://www.iherb.com/search?kw=D-Mannose+Now",
       certification: "Non-GMO, 방광 건강 기능성",
-      rating: 4.9,
-      reviewCount: 16800
     }
   },
   {
@@ -355,14 +299,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Jarrow Formulas",
       productName: "Lactoferrin (Freeze Dried) 250mg",
       spec: "60 캡슐 / 동결건조 아포락토페린",
-      originalPrice: 46000,
-      dealPrice: 32200,
-      discountPercent: 30,
-      couponCode: "SHIELD30",
-      iherbUrl: "https://www.iherb.com/search?kw=Lactoferrin+Jarrow",
       certification: "동결건조 무변성 프랑스산 유청 락토페린",
-      rating: 4.8,
-      reviewCount: 9400
     }
   },
   {
@@ -395,14 +332,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "Beta-Glucan 1,3/1,6 with Wellmune",
       spec: "60 베지 캡슐",
-      originalPrice: 22000,
-      dealPrice: 15400,
-      discountPercent: 30,
-      couponCode: "IMMUNE30",
-      iherbUrl: "https://www.iherb.com/search?kw=Wellmune+Beta+Glucan",
       certification: "Wellmune 정품 특허 임상 인증",
-      rating: 4.8,
-      reviewCount: 6800
     }
   },
   {
@@ -434,14 +364,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Whole Psyllium Husks 454g (유기농)",
       spec: "순수 파우더 454g",
-      originalPrice: 18000,
-      dealPrice: 12600,
-      discountPercent: 30,
-      couponCode: "FIBER30",
-      iherbUrl: "https://www.iherb.com/search?kw=Whole+Psyllium+Husks+Now",
       certification: "USDA 오가닉, Non-GMO",
-      rating: 4.8,
-      reviewCount: 32400
     }
   },
   {
@@ -473,14 +396,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Jarrow Formulas",
       productName: "Artichoke Extract 500mg",
       spec: "180 베지 캡슐 / 시나린 5% 표준화",
-      originalPrice: 27000,
-      dealPrice: 18900,
-      discountPercent: 30,
-      couponCode: "GUT30",
-      iherbUrl: "https://www.iherb.com/search?kw=Artichoke+Extract+Jarrow",
       certification: "표준화 플라보노이드 보증",
-      rating: 4.8,
-      reviewCount: 4300
     }
   },
   {
@@ -513,14 +429,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Kowa",
       productName: "Cabagin Kowa α 300정 (비타민U 오리지널)",
       spec: "300정 대용량",
-      originalPrice: 35000,
-      dealPrice: 26250,
-      discountPercent: 25,
-      couponCode: "STOMACH25",
-      iherbUrl: "https://www.iherb.com/search?kw=Cabagin",
       certification: "일본 국민 위장약, MMSC 비타민U 함유",
-      rating: 4.9,
-      reviewCount: 38200
     }
   },
   {
@@ -552,14 +461,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "Peruvian Maca Organic Gelatinized 500mg",
       spec: "240 베지 캡슐",
-      originalPrice: 26000,
-      dealPrice: 18200,
-      discountPercent: 30,
-      couponCode: "VITAL30",
-      iherbUrl: "https://www.iherb.com/search?kw=Gelatinized+Maca+CGN",
       certification: "USDA 유기농, 젤라틴화 공법",
-      rating: 4.8,
-      reviewCount: 12900
     }
   },
   {
@@ -591,14 +493,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Rhodiola 500mg (3% Standardized)",
       spec: "60 베지 캡슐",
-      originalPrice: 22000,
-      dealPrice: 15400,
-      discountPercent: 30,
-      couponCode: "STRESS30",
-      iherbUrl: "https://www.iherb.com/search?kw=Rhodiola+500mg+Now",
       certification: "Non-GMO, 표준화 성분 보증",
-      rating: 4.8,
-      reviewCount: 9100
     }
   },
   {
@@ -630,14 +525,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Ultra Cordyceps Plus 750mg",
       spec: "120 베지 캡슐 / CS-4 균주",
-      originalPrice: 29000,
-      dealPrice: 20300,
-      discountPercent: 30,
-      couponCode: "OXYGEN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Ultra+Cordyceps+Doctors+Best",
       certification: "순수 배양 CS-4 발효 균사체",
-      rating: 4.8,
-      reviewCount: 7300
     }
   },
   {
@@ -669,14 +557,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Thorne",
       productName: "Berberine-500",
       spec: "60 캡슐",
-      originalPrice: 46000,
-      dealPrice: 34500,
-      discountPercent: 25,
-      couponCode: "GLUCOSE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Thorne+Berberine",
       certification: "최고급 의약품 등급 제조, NSF 인증",
-      rating: 4.8,
-      reviewCount: 6200
     }
   },
   {
@@ -708,14 +589,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Best D-Ribose with Bioenergy Ribose 250g",
       spec: "순수 파우더 250g / 50회분",
-      originalPrice: 34000,
-      dealPrice: 23800,
-      discountPercent: 30,
-      couponCode: "ATP30",
-      iherbUrl: "https://www.iherb.com/search?kw=D-Ribose+Doctors+Best",
       certification: "Bioenergy Ribose 정품 임상 특허",
-      rating: 4.8,
-      reviewCount: 4100
     }
   },
   {
@@ -747,14 +621,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Natural Factors",
       productName: "CranRich Super Strength Cranberry Concentrate 500mg",
       spec: "180 소프트젤 / 36:1 농축",
-      originalPrice: 26000,
-      dealPrice: 18200,
-      discountPercent: 30,
-      couponCode: "CRAN30",
-      iherbUrl: "https://www.iherb.com/search?kw=CranRich+Natural+Factors",
       certification: "CranRich 고농축 제형, Non-GMO",
-      rating: 4.8,
-      reviewCount: 8200
     }
   },
   {
@@ -787,14 +654,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Nature's Way",
       productName: "Chlorofresh Liquid Chlorophyll (Natural Mint 473ml)",
       spec: "액상 473ml / 32회분",
-      originalPrice: 24000,
-      dealPrice: 16800,
-      discountPercent: 30,
-      couponCode: "FRESH30",
-      iherbUrl: "https://www.iherb.com/search?kw=Chlorofresh+Natures+Way",
       certification: "프리미엄 알팔파 추출 식물성 원료",
-      rating: 4.8,
-      reviewCount: 26400
     }
   },
   {
@@ -827,14 +687,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Rutin 450mg",
       spec: "100 베지 캡슐",
-      originalPrice: 19000,
-      dealPrice: 13300,
-      discountPercent: 30,
-      couponCode: "VEIN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Rutin+Now+Foods",
       certification: "비감귤류 식물 유래, Non-GMO",
-      rating: 4.8,
-      reviewCount: 4900
     }
   },
   {
@@ -866,14 +719,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "L-Carnosine with PepZin GI",
       spec: "90 베지 캡슐",
-      originalPrice: 32000,
-      dealPrice: 22400,
-      discountPercent: 30,
-      couponCode: "AGELOCK30",
-      iherbUrl: "https://www.iherb.com/search?kw=Carnosine+Doctors+Best",
       certification: "고순도 의약품급 아미노산",
-      rating: 4.8,
-      reviewCount: 3600
     }
   },
   {
@@ -905,14 +751,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "PepZin GI Zinc-L-Carnosine Complex",
       spec: "120 베지 캡슐 / 일본 특허",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "STOMACH30",
-      iherbUrl: "https://www.iherb.com/search?kw=PepZin+GI+Doctors+Best",
       certification: "Hamari Chemicals 정품 특허 인증",
-      rating: 4.9,
-      reviewCount: 18900
     }
   },
   {
@@ -946,14 +785,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Swanson",
       productName: "Apigenin 50mg (from Chamomile)",
       spec: "90 베지 캡슐",
-      originalPrice: 21000,
-      dealPrice: 14700,
-      discountPercent: 30,
-      couponCode: "SLEEP30",
-      iherbUrl: "https://www.iherb.com/search?kw=Apigenin+50mg",
       certification: "순도 98% 식물성 플라보노이드",
-      rating: 4.7,
-      reviewCount: 4200
     }
   },
   {
@@ -986,14 +818,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Fisetin with Novusetin 100mg",
       spec: "30 베지 캡슐 / 좀비세포 청소",
-      originalPrice: 34000,
-      dealPrice: 23800,
-      discountPercent: 30,
-      couponCode: "SENOLYTIC30",
-      iherbUrl: "https://www.iherb.com/search?kw=Novusetin+Fisetin",
       certification: "Novusetin 일본 왁스나무 추출 특허",
-      rating: 4.8,
-      reviewCount: 3900
     }
   },
   {
@@ -1026,14 +851,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Life Extension",
       productName: "Ergothioneine 5mg (MitoPrime)",
       spec: "30 베지 캡슐 / 세포 수명 연장",
-      originalPrice: 32000,
-      dealPrice: 24000,
-      discountPercent: 25,
-      couponCode: "LONGEVITY25",
-      iherbUrl: "https://www.iherb.com/search?kw=Ergothioneine",
       certification: "MitoPrime 글로벌 특허 원료",
-      rating: 4.8,
-      reviewCount: 2800
     }
   },
   {
@@ -1067,14 +885,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Double Wood Supplements",
       productName: "Spermidine 5mg (Fermented Wheat Germ)",
       spec: "120 캡슐 / 2개월분",
-      originalPrice: 48000,
-      dealPrice: 36000,
-      discountPercent: 25,
-      couponCode: "AUTOPHAGY25",
-      iherbUrl: "https://www.iherb.com/search?kw=Spermidine",
       certification: "제3자 순도 테스트 완료, 미국 제조",
-      rating: 4.7,
-      reviewCount: 3100
     }
   },
   {
@@ -1107,14 +918,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Life Extension",
       productName: "Phosphatidylcholine 840mg",
       spec: "60 소프트젤",
-      originalPrice: 24000,
-      dealPrice: 16800,
-      discountPercent: 30,
-      couponCode: "LIVER30",
-      iherbUrl: "https://www.iherb.com/search?kw=Phosphatidylcholine+Life+Extension",
       certification: "고순도 PPC 추출 농축",
-      rating: 4.8,
-      reviewCount: 4800
     }
   },
   {
@@ -1146,14 +950,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "Sun Chlorella",
       productName: "Sun Chlorella A 200mg",
       spec: "1500 정 / 일본 오리지널 DYNO-Mill 파쇄",
-      originalPrice: 62000,
-      dealPrice: 46500,
-      discountPercent: 25,
-      couponCode: "GREEN25",
-      iherbUrl: "https://www.iherb.com/search?kw=Sun+Chlorella",
       certification: "DYNO-Mill 95% 세포벽 파쇄 특허",
-      rating: 4.8,
-      reviewCount: 8900
     }
   },
   {
@@ -1185,14 +982,7 @@ const supplementaryNutrients: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "100% Whey Protein Isolate (WPI 90%) 2.27kg",
       spec: "무맛 대용량 2.27kg / 75회분 (1회 단백질 27g)",
-      originalPrice: 78000,
-      dealPrice: 54600,
-      discountPercent: 30,
-      couponCode: "PROTEIN30",
-      iherbUrl: "https://www.iherb.com/search?kw=WPI+California+Gold+Nutrition",
       certification: "위스콘신 A등급 유청, 제3자 순도 검증",
-      rating: 4.9,
-      reviewCount: 38400
     }
   }
 ];

@@ -18,6 +18,7 @@ import {
   ShieldCheck,
   Check
 } from "lucide-react";
+import { CoupangBuyButton } from "./BuyLinks";
 import { NutrientItem, TimeSlotKey, UserRoutineEntry } from "../types";
 import { timeSlotsConfig, interactionRules, defaultUserRoutine } from "../data/scheduleData";
 
@@ -396,6 +397,24 @@ export const SupplementScheduleSection: React.FC<SupplementScheduleSectionProps>
                     </button>
                   );
                 })}
+                {Array.from(
+                  new Map(
+                    currentSlotConfig.sampleNutrients
+                      .map((name) => allNutrients.find((n) => n.name.includes(name) || name.includes(n.name)))
+                      .filter((n): n is NutrientItem => Boolean(n))
+                      .map((n) => [n.id, n]),
+                  ).values(),
+                ).map((n) => (
+                  <div
+                    key={n.id}
+                    className="flex items-center gap-1.5 bg-white border border-slate-200 rounded-lg pl-2.5 pr-1.5 py-1"
+                  >
+                    <span className="text-[11px] font-semibold text-slate-600 truncate max-w-[8rem]">
+                      {n.name.split(" (")[0]}
+                    </span>
+                    <CoupangBuyButton nutrientId={n.id} size="sm" />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -490,12 +509,15 @@ export const SupplementScheduleSection: React.FC<SupplementScheduleSectionProps>
                                     {entry.dosage}
                                   </span>
                                   {matchedNutrient && (
-                                    <button
-                                      onClick={() => onSelectNutrient(matchedNutrient)}
-                                      className="text-[11px] text-teal-700 hover:underline flex items-center gap-0.5 font-medium cursor-pointer"
-                                    >
-                                      상세정보 <ArrowRight className="w-3 h-3" />
-                                    </button>
+                                    <>
+                                      <button
+                                        onClick={() => onSelectNutrient(matchedNutrient)}
+                                        className="text-[11px] text-teal-700 hover:underline flex items-center gap-0.5 font-medium cursor-pointer"
+                                      >
+                                        상세정보 <ArrowRight className="w-3 h-3" />
+                                      </button>
+                                      <CoupangBuyButton nutrientId={matchedNutrient.id} size="sm" />
+                                    </>
                                   )}
                                 </div>
                                 {entry.notes && (

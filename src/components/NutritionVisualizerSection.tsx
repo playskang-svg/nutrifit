@@ -25,6 +25,8 @@ import {
   HelpCircle,
   ArrowUpRight
 } from "lucide-react";
+import { CoupangBuyButton } from "./BuyLinks";
+import { PRICE_COLLECTED_AT } from "../data/affiliateLinks";
 import { NutrientItem } from "../types";
 
 interface NutritionVisualizerSectionProps {
@@ -47,28 +49,28 @@ const PRESETS: PresetProfile[] = [
     title: "직장인 만성피로 & 모니터 증후군 스택",
     badge: "2040 직장인 / 교대근무",
     description: "커피로 소모되는 마그네슘, 컴퓨터 화면으로 인한 눈 피로, 스트레스 호르몬 해독에 초점",
-    defaultSelectedIds: ["vit-b-complex", "magnesium-glycinate", "omega-3", "lutein-zeaxanthin", "milk-thistle"]
+    defaultSelectedIds: ["vit-b-complex", "mineral-mg", "fatty-rtg-omega3", "phyto-lutein-zeaxanthin", "phyto-silymarin"]
   },
   {
     id: "senior",
     title: "60대+ 노년기 근감소·골밀도·혈관 안티에이징",
     badge: "시니어 / 항노화",
     description: "노화에 따른 소화흡수력 저하, 동화작용 저항성 극복을 위한 고함량 류신, D3+K2 석회화 차단",
-    defaultSelectedIds: ["vit-d3-k2", "leucine-whey", "calcium-hydroxyapatite", "coq10-ubiquinol", "probiotics-senior"]
+    defaultSelectedIds: ["vit-d3", "amino-leucine", "mineral-ca", "fatty-coq10", "gut-probiotics-100b"]
   },
   {
     id: "student",
     title: "수험생 & 고시생 두뇌 활력·알파파 집중 스택",
     badge: "청소년 / 수험생 / 고시생",
     description: "뇌 신경전달물질 합성(콜린), 뇌파 안정(테아닌), 장기간 좌식 생활에 따른 소화기 케어",
-    defaultSelectedIds: ["vit-b-complex", "l-theanine", "dha-brain", "phosphatidylserine", "probiotics-30b"]
+    defaultSelectedIds: ["vit-b-complex", "amino-theanine", "fatty-dha-brain", "fatty-ps", "gut-probiotics-100b"]
   },
   {
     id: "active",
     title: "피트니스 & 활동량 많은 액티브 스택",
     badge: "운동인 / 피트니스",
     description: "근육 합성, 산화 스트레스 중화, 관절 연골 회복 및 전해질 밸런스 유지",
-    defaultSelectedIds: ["bcaa-glutamine", "msm-opti", "zinc-picolinate", "vit-c-1000", "astaxanthin-12"]
+    defaultSelectedIds: ["amino-glutamine", "mineral-msm", "mineral-zn", "vit-c", "phyto-astaxanthin"]
   }
 ];
 
@@ -510,6 +512,22 @@ export const NutritionVisualizerSection: React.FC<NutritionVisualizerSectionProp
             </button>
           </div>
         </div>
+
+        {activeNutrients.length > 0 && (
+          <div className="mb-3 p-3 bg-slate-50 border border-slate-200 rounded-xl">
+            <p className="text-[11px] font-bold text-slate-500 mb-2">
+              비교 중인 영양소 바로 구매 · 가격은 {PRICE_COLLECTED_AT} 수집 기준
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {activeNutrients.map((n) => (
+                <div key={n.id} className="flex items-center gap-1.5 bg-white border border-slate-200 rounded-lg pl-2.5 pr-1.5 py-1">
+                  <span className="text-[11px] font-semibold text-slate-700 truncate max-w-[9rem]">{n.name}</span>
+                  <CoupangBuyButton nutrientId={n.id} size="sm" />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 max-h-80 overflow-y-auto pr-1">
           {allNutrients

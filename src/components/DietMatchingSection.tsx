@@ -15,6 +15,7 @@ import {
   ShieldCheck,
   Zap
 } from "lucide-react";
+import { CoupangBuyButton } from "./BuyLinks";
 import { DietMealProfile, NutrientItem } from "../types";
 import { dietMealProfiles, mealSelectionOptions, MealOption } from "../data/dietMatchingData";
 
@@ -325,6 +326,24 @@ export const DietMatchingSection: React.FC<DietMatchingSectionProps> = ({
                       </span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">{item.why}</p>
+                    {(() => {
+                      // 식단 데이터의 성분명은 자유 표기라 100대 영양소와 이름으로 맞춘다
+                      const matched = allNutrients.find(
+                        (n) => n.name.includes(item.name) || item.name.includes(n.name.split(" (")[0]),
+                      );
+                      return matched ? (
+                        <div className="pt-1.5 flex items-center justify-between gap-2">
+                          <button
+                            type="button"
+                            onClick={() => onSelectNutrient(matched)}
+                            className="text-[11px] font-semibold text-emerald-700 hover:text-emerald-900 cursor-pointer"
+                          >
+                            영양소 상세
+                          </button>
+                          <CoupangBuyButton nutrientId={matched.id} size="sm" />
+                        </div>
+                      ) : null;
+                    })()}
                   </div>
                 ))}
               </div>

@@ -32,14 +32,7 @@ export const phytonutrientsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Lutein with Lutemax 2020 20mg",
       spec: "180 소프트젤 / 6개월분",
-      originalPrice: 32000,
-      dealPrice: 22400,
-      discountPercent: 30,
-      couponCode: "EYES30",
-      iherbUrl: "https://www.iherb.com/search?kw=Lutemax+2020+Doctors+Best",
       certification: "Lutemax 2020® 임상 특허, Non-GMO",
-      rating: 4.8,
-      reviewCount: 28400
     }
   },
   {
@@ -73,14 +66,7 @@ export const phytonutrientsList: NutrientItem[] = [
       brand: "Sports Research",
       productName: "Astaxanthin 12mg with Organic Coconut MCT",
       spec: "120 식물성 소프트젤",
-      originalPrice: 38000,
-      dealPrice: 26600,
-      discountPercent: 30,
-      couponCode: "ASTA30",
-      iherbUrl: "https://www.iherb.com/search?kw=Astaxanthin+12mg+Sports+Research",
       certification: "AstaReal 원료, Non-GMO Verified, 글루텐 프리",
-      rating: 4.9,
-      reviewCount: 16200
     }
   },
   {
@@ -114,14 +100,7 @@ export const phytonutrientsList: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "Silymarin Complex (밀크씨슬 + 아티초크 + 민들레)",
       spec: "120 베지 캡슐",
-      originalPrice: 20000,
-      dealPrice: 14000,
-      discountPercent: 30,
-      couponCode: "LIVER30",
-      iherbUrl: "https://www.iherb.com/search?kw=Silymarin+Complex+CGN",
       certification: "EuroMed 80% 표준화 오리지널 스페인 원료",
-      rating: 4.8,
-      reviewCount: 31200
     }
   },
   {
@@ -155,14 +134,7 @@ export const phytonutrientsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "High Absorption Curcumin with BioPerine 1000mg",
       spec: "120 타블렛 / Curcumin C3 특허",
-      originalPrice: 39000,
-      dealPrice: 27300,
-      discountPercent: 30,
-      couponCode: "CURCUMIN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Curcumin+BioPerine+Doctors+Best",
       certification: "Curcumin C3 Complex 오리지널 특허",
-      rating: 4.8,
-      reviewCount: 19400
     }
   },
   {
@@ -195,14 +167,7 @@ export const phytonutrientsList: NutrientItem[] = [
       brand: "Thorne",
       productName: "Berberine 500mg (최고 순도)",
       spec: "60 캡슐",
-      originalPrice: 42000,
-      dealPrice: 31500,
-      discountPercent: 25,
-      couponCode: "BERBERINE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Thorne+Berberine",
       certification: "NSF GMP, 고순도 표준화 추출",
-      rating: 4.8,
-      reviewCount: 8400
     }
   },
   {
@@ -236,14 +201,7 @@ export const phytonutrientsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Quercetin with Bromelain (환절기 비염 추천)",
       spec: "120 베지 캡슐",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "ALLERGY30",
-      iherbUrl: "https://www.iherb.com/search?kw=Quercetin+Bromelain+Now",
       certification: "Non-GMO, GMP 품질 보증",
-      rating: 4.8,
-      reviewCount: 14200
     }
   },
   {
@@ -277,14 +235,7 @@ export const phytonutrientsList: NutrientItem[] = [
       brand: "ProHealth Longevity",
       productName: "Micronized Trans-Resveratrol 500mg",
       spec: "60 캡슐 / 미분화 고흡수",
-      originalPrice: 48000,
-      dealPrice: 36000,
-      discountPercent: 25,
-      couponCode: "LONGEVITY25",
-      iherbUrl: "https://www.iherb.com/search?kw=Trans+Resveratrol",
       certification: "제3자 순도 99% 검증, 미국 제조",
-      rating: 4.8,
-      reviewCount: 3900
     }
   }
 ];

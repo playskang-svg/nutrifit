@@ -32,14 +32,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Now Foods",
       productName: "Natural Beta-Carotene 25,000 IU",
       spec: "소프트젤 180정 / 6개월분",
-      originalPrice: 22000,
-      dealPrice: 15400,
-      discountPercent: 30,
-      couponCode: "HEALTH30",
-      iherbUrl: "https://www.iherb.com/search?kw=Beta+Carotene",
       certification: "GMP 품질인증, Non-GMO",
-      rating: 4.8,
-      reviewCount: 4120
     }
   },
   {
@@ -73,14 +66,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Best Benfotiamine 300mg",
       spec: "식물성 캡슐 60정",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "TIRED20",
-      iherbUrl: "https://www.iherb.com/search?kw=Benfotiamine",
       certification: "Non-GMO, Gluten Free",
-      rating: 4.9,
-      reviewCount: 5280
     }
   },
   {
@@ -114,14 +100,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Thorne",
       productName: "Riboflavin 5'-Phosphate",
       spec: "캡슐 60정",
-      originalPrice: 32000,
-      dealPrice: 24000,
-      discountPercent: 25,
-      couponCode: "ACTIVE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Riboflavin+5+Phosphate",
       certification: "NSF Certified, 의사 처방급",
-      rating: 4.8,
-      reviewCount: 2310
     }
   },
   {
@@ -155,14 +134,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Life Extension",
       productName: "No-Flush Niacin 640mg",
       spec: "캡슐 100정",
-      originalPrice: 24000,
-      dealPrice: 18000,
-      discountPercent: 25,
-      couponCode: "HEART25",
-      iherbUrl: "https://www.iherb.com/search?kw=No+Flush+Niacin",
       certification: "GMP 인증, Non-GMO",
-      rating: 4.7,
-      reviewCount: 3890
     }
   },
   {
@@ -196,14 +168,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Jarrow Formulas",
       productName: "Pantothenic Acid B5 500mg",
       spec: "식물성 캡슐 100정",
-      originalPrice: 21000,
-      dealPrice: 15750,
-      discountPercent: 25,
-      couponCode: "STRESS25",
-      iherbUrl: "https://www.iherb.com/search?kw=Pantothenic+Acid",
       certification: "Non-GMO Project Verified",
-      rating: 4.8,
-      reviewCount: 4620
     }
   },
   {
@@ -237,14 +202,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Country Life",
       productName: "P-5-P (Pyridoxal-5'-Phosphate) 50mg",
       spec: "100정",
-      originalPrice: 26000,
-      dealPrice: 19500,
-      discountPercent: 25,
-      couponCode: "BRAIN25",
-      iherbUrl: "https://www.iherb.com/search?kw=P-5-P",
       certification: "글루텐프리, 비건 인증",
-      rating: 4.8,
-      reviewCount: 3150
     }
   },
   {
@@ -278,14 +236,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Natrol",
       productName: "Biotin Maximum Strength 10,000mcg",
       spec: "100정 딸기맛 패스트디졸브",
-      originalPrice: 19000,
-      dealPrice: 13300,
-      discountPercent: 30,
-      couponCode: "HAIR30",
-      iherbUrl: "https://www.iherb.com/search?kw=Biotin+10000",
       certification: "100% 식물성, GMP 인증",
-      rating: 4.8,
-      reviewCount: 9240
     }
   },
   {
@@ -319,14 +270,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Fully Active Folate with Quatrefolic 400mcg",
       spec: "식물성 캡슐 90정",
-      originalPrice: 22000,
-      dealPrice: 16500,
-      discountPercent: 25,
-      couponCode: "FOLATE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Quatrefolic",
       certification: "Quatrefolic 특허 인증, Non-GMO",
-      rating: 4.9,
-      reviewCount: 4780
     }
   },
   {
@@ -360,14 +304,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Jarrow Formulas",
       productName: "Methyl B-12 1,000mcg (체리맛 설하정)",
       spec: "100정",
-      originalPrice: 20000,
-      dealPrice: 14000,
-      discountPercent: 30,
-      couponCode: "SENIOR30",
-      iherbUrl: "https://www.iherb.com/search?kw=Methyl+B12+Jarrow",
       certification: "의사 추천 1위, 설하정 흡수 특허",
-      rating: 4.9,
-      reviewCount: 14200
     }
   },
   {
@@ -401,14 +338,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "Gold C 1,000mg USP급 비타민C",
       spec: "베지 캡슐 240정 / 8개월분",
-      originalPrice: 24000,
-      dealPrice: 16800,
-      discountPercent: 30,
-      couponCode: "VITC30",
-      iherbUrl: "https://www.iherb.com/search?kw=Gold+C+1000mg",
       certification: "USP Grade 인증, 3단계 독립 테스트",
-      rating: 4.8,
-      reviewCount: 38200
     }
   },
   {
@@ -442,14 +372,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Sports Research",
       productName: "Vitamin D3 5000 IU with Coconut MCT Oil",
       spec: "360 소프트젤 / 1년분",
-      originalPrice: 38000,
-      dealPrice: 28500,
-      discountPercent: 25,
-      couponCode: "SUNSHINE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Sports+Research+Vitamin+D3",
       certification: "Non-GMO Verified, 코코넛 오일 기유",
-      rating: 4.9,
-      reviewCount: 29400
     }
   },
   {
@@ -483,14 +406,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Natural Vitamin K2 MK-7 with MenaQ7 100mcg",
       spec: "베지 캡슐 60정",
-      originalPrice: 29000,
-      dealPrice: 20300,
-      discountPercent: 30,
-      couponCode: "BONES30",
-      iherbUrl: "https://www.iherb.com/search?kw=Vitamin+K2+MenaQ7",
       certification: "MenaQ7 오리지널 특허 원료, 임상 검증",
-      rating: 4.8,
-      reviewCount: 7890
     }
   },
   {
@@ -524,14 +440,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Now Foods",
       productName: "Advanced Gamma E Complex",
       spec: "소프트젤 120정",
-      originalPrice: 32000,
-      dealPrice: 22400,
-      discountPercent: 30,
-      couponCode: "ANTIOX30",
-      iherbUrl: "https://www.iherb.com/search?kw=Gamma+E+Complex",
       certification: "천연 토코페롤 전종 함유, Non-GMO",
-      rating: 4.8,
-      reviewCount: 3120
     }
   },
   {
@@ -565,14 +474,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Life Extension",
       productName: "Super K with Advanced K2 Complex",
       spec: "소프트젤 90정 (K1+K2 동시 공급)",
-      originalPrice: 34000,
-      dealPrice: 25500,
-      discountPercent: 25,
-      couponCode: "SUPERK25",
-      iherbUrl: "https://www.iherb.com/search?kw=Super+K+Life+Extension",
       certification: "GMP 인증, 종합 비타민K 골드스탠다드",
-      rating: 4.8,
-      reviewCount: 5670
     }
   },
   {
@@ -606,14 +508,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Thorne",
       productName: "Basic B Complex (최고 등급 활성형)",
       spec: "캡슐 60정",
-      originalPrice: 38000,
-      dealPrice: 28500,
-      discountPercent: 25,
-      couponCode: "ENERGY25",
-      iherbUrl: "https://www.iherb.com/search?kw=Thorne+Basic+B+Complex",
       certification: "미국 프로 운동선수 인증 (NSF Certified for Sport)",
-      rating: 4.9,
-      reviewCount: 8900
     }
   },
   {
@@ -647,14 +542,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Wholesome Story",
       productName: "Myo-Inositol & D-Chiro Inositol 40:1",
       spec: "120 베지 캡슐",
-      originalPrice: 36000,
-      dealPrice: 27000,
-      discountPercent: 25,
-      couponCode: "WOMEN25",
-      iherbUrl: "https://www.iherb.com/search?kw=Myo+Inositol",
       certification: "Clean Label Project 인증",
-      rating: 4.8,
-      reviewCount: 11200
     }
   },
   {
@@ -688,14 +576,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Jarrow Formulas",
       productName: "Citicoline (CDP Choline, Cognizin) 250mg",
       spec: "캡슐 120정",
-      originalPrice: 42000,
-      dealPrice: 31500,
-      discountPercent: 25,
-      couponCode: "FOCUS25",
-      iherbUrl: "https://www.iherb.com/search?kw=Cognizin+Citicoline",
       certification: "Cognizin 특허 뇌 영양 임상 인증",
-      rating: 4.8,
-      reviewCount: 4230
     }
   },
   {
@@ -729,14 +610,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Now Foods",
       productName: "PABA 500mg",
       spec: "베지 캡슐 100정",
-      originalPrice: 18000,
-      dealPrice: 12600,
-      discountPercent: 30,
-      couponCode: "SKIN30",
-      iherbUrl: "https://www.iherb.com/search?kw=PABA+Now+Foods",
       certification: "GMP 인증, Non-GMO",
-      rating: 4.7,
-      reviewCount: 1890
     }
   }
 ];

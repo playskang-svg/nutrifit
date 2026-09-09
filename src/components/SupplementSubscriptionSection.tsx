@@ -19,6 +19,7 @@ import {
   Tag
 } from "lucide-react";
 import { NutrientItem, SubscriptionItem } from "../types";
+import { CoupangBuyButton, IherbLink } from "./BuyLinks";
 
 interface SupplementSubscriptionSectionProps {
   allNutrients: NutrientItem[];
@@ -28,7 +29,7 @@ interface SupplementSubscriptionSectionProps {
 const INITIAL_SUBSCRIPTIONS: SubscriptionItem[] = [
   {
     id: "sub-1",
-    nutrientId: "omega-3",
+    nutrientId: "fatty-rtg-omega3",
     brand: "Sports Research",
     productName: "트리플 스트렝스 rTG 오메가-3 1250mg",
     totalCapsules: 180,
@@ -39,13 +40,11 @@ const INITIAL_SUBSCRIPTIONS: SubscriptionItem[] = [
     priceKrw: 58500,
     autoShipDiscount: 10,
     bottleCount: 1,
-    iherbUrl: "https://www.iherb.com",
-    couponCode: "HEALTH30",
     isActive: true
   },
   {
     id: "sub-2",
-    nutrientId: "vit-d3-k2",
+    nutrientId: "vit-d3",
     brand: "Thorne Research",
     productName: "비타민 D3 5000IU + K2 MK-7 복합제",
     totalCapsules: 60,
@@ -56,13 +55,11 @@ const INITIAL_SUBSCRIPTIONS: SubscriptionItem[] = [
     priceKrw: 42800,
     autoShipDiscount: 5,
     bottleCount: 1,
-    iherbUrl: "https://www.iherb.com",
-    couponCode: "HEALTH30",
     isActive: true
   },
   {
     id: "sub-3",
-    nutrientId: "magnesium-glycinate",
+    nutrientId: "mineral-mg",
     brand: "Doctor's Best",
     productName: "고흡수성 킬레이트 마그네슘 (TRAACS 100% 킬레이트)",
     totalCapsules: 240,
@@ -73,13 +70,11 @@ const INITIAL_SUBSCRIPTIONS: SubscriptionItem[] = [
     priceKrw: 31400,
     autoShipDiscount: 10,
     bottleCount: 1,
-    iherbUrl: "https://www.iherb.com",
-    couponCode: "HEALTH30",
     isActive: true
   },
   {
     id: "sub-4",
-    nutrientId: "probiotics",
+    nutrientId: "gut-probiotics-100b",
     brand: "California Gold Nutrition",
     productName: "LactoBif 300억 프로바이오틱스 유산균",
     totalCapsules: 60,
@@ -90,8 +85,6 @@ const INITIAL_SUBSCRIPTIONS: SubscriptionItem[] = [
     priceKrw: 33000,
     autoShipDiscount: 10,
     bottleCount: 1,
-    iherbUrl: "https://www.iherb.com",
-    couponCode: "HEALTH30",
     isActive: true
   }
 ];
@@ -165,8 +158,6 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
       priceKrw: Math.round(Number(customPriceUsd) * 1380),
       autoShipDiscount: 10,
       bottleCount: 1,
-      iherbUrl: nutrient?.deal.iherbUrl || "https://www.iherb.com",
-      couponCode: "HEALTH30",
       isActive: true
     };
 
@@ -195,8 +186,6 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
           priceKrw: 18600,
           autoShipDiscount: 5,
           bottleCount: 1,
-          iherbUrl: "https://www.iherb.com",
-          couponCode: "HEALTH30",
           isActive: true
         }
       ];
@@ -204,7 +193,7 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
       presetItems = [
         {
           id: "sub-senior-d",
-          nutrientId: "vit-d3-k2",
+          nutrientId: "vit-d3",
           brand: "Thorne",
           productName: "D3/K2 리퀴드 드롭 (비타민 D 5000IU/K2 100mcg)",
           totalCapsules: 60,
@@ -215,13 +204,11 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
           priceKrw: 42800,
           autoShipDiscount: 10,
           bottleCount: 1,
-          iherbUrl: "https://www.iherb.com",
-          couponCode: "HEALTH30",
           isActive: true
         },
         {
           id: "sub-senior-msm",
-          nutrientId: "msm-opti",
+          nutrientId: "mineral-msm",
           brand: "Doctor's Best",
           productName: "OptiMSM 고순도 식이유황 1500mg",
           totalCapsules: 120,
@@ -232,13 +219,11 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
           priceKrw: 23300,
           autoShipDiscount: 5,
           bottleCount: 1,
-          iherbUrl: "https://www.iherb.com",
-          couponCode: "HEALTH30",
           isActive: true
         },
         {
           id: "sub-senior-coq10",
-          nutrientId: "coq10-ubiquinol",
+          nutrientId: "fatty-coq10",
           brand: "Qunol",
           productName: "메가 코큐텐 유비퀴놀 100mg (미토콘드리아 활력)",
           totalCapsules: 60,
@@ -249,8 +234,6 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
           priceKrw: 52400,
           autoShipDiscount: 10,
           bottleCount: 1,
-          iherbUrl: "https://www.iherb.com",
-          couponCode: "HEALTH30",
           isActive: true
         }
       ];
@@ -258,7 +241,7 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
       presetItems = [
         {
           id: "sub-eye-lut",
-          nutrientId: "lutein-zeaxanthin",
+          nutrientId: "phyto-lutein-zeaxanthin",
           brand: "Doctor's Best",
           productName: "루테인 + 지아잔틴 (OptiLut 5:1 황금비율)",
           totalCapsules: 60,
@@ -269,13 +252,11 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
           priceKrw: 26900,
           autoShipDiscount: 10,
           bottleCount: 1,
-          iherbUrl: "https://www.iherb.com",
-          couponCode: "HEALTH30",
           isActive: true
         },
         {
           id: "sub-eye-asta",
-          nutrientId: "astaxanthin-12",
+          nutrientId: "phyto-astaxanthin",
           brand: "BioAstin",
           productName: "하와이안 천연 아스타잔틴 12mg (망막 근육 피로 완화)",
           totalCapsules: 50,
@@ -286,8 +267,6 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
           priceKrw: 46900,
           autoShipDiscount: 10,
           bottleCount: 1,
-          iherbUrl: "https://www.iherb.com",
-          couponCode: "HEALTH30",
           isActive: true
         }
       ];
@@ -308,7 +287,6 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
 
   // Monthly savings approximation
   const totalMonthlyExpenseUsd = totalUsdPerShipment * (30 / 60); // approx normalized to 30 days
-  const totalMonthlySavingsUsd = (totalUsdPerShipment / 0.7 - totalUsdPerShipment) * (30 / 60); // 30% discount savings
 
   // Calculate D-Day for an item
   const calculateDaysRemaining = (startDateStr: string, totalCaps: number, dailyCaps: number) => {
@@ -349,7 +327,6 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
           </div>
           <div className="mt-2 text-xs text-emerald-300 flex items-center gap-1 font-semibold">
             <Sparkles className="w-3.5 h-3.5" />
-            월 약 ${(totalMonthlySavingsUsd).toFixed(1)} 절약 중!
           </div>
         </div>
       </div>
@@ -545,23 +522,7 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
                       </span>
                     </div>
 
-                    <button
-                      onClick={() => handleCopyCode(item.id, item.couponCode)}
-                      className="flex items-center gap-1 font-mono text-[11px] font-bold bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 px-2.5 py-1 rounded cursor-pointer transition-colors"
-                      title="할인 코드 복사"
-                    >
-                      {copiedId === item.id ? (
-                        <>
-                          <Check className="w-3 h-3 text-emerald-600" />
-                          <span>복사됨!</span>
-                        </>
-                      ) : (
-                        <>
-                          <Tag className="w-3 h-3 text-amber-600" />
-                          <span>코드 {item.couponCode}</span>
-                        </>
-                      )}
-                    </button>
+                    {item.nutrientId && <CoupangBuyButton nutrientId={item.nutrientId} size="sm" />}
                   </div>
                 </div>
 
@@ -607,15 +568,7 @@ export const SupplementSubscriptionSection: React.FC<SupplementSubscriptionSecti
                         임상 가이드
                       </button>
                     )}
-                    <a
-                      href={item.iherbUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs font-bold text-white bg-slate-900 hover:bg-teal-800 px-3 py-1.5 rounded-lg flex items-center gap-1 transition-colors"
-                    >
-                      <span>iHerb 주문</span>
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
+                    {item.nutrientId && <IherbLink nutrientId={item.nutrientId} />}
                   </div>
                 </div>
               </div>

@@ -38,10 +38,10 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="bg-emerald-500 text-slate-950 font-bold px-1.5 py-0.5 rounded-sm text-[10px] tracking-wider uppercase">
-              iHerb 공식 연계
+              쿠팡 실시간 가격
             </span>
             <span className="text-emerald-100 font-medium">
-              100대 필수 영양소 정밀 분석 &amp; iHerb 단독 전품목 25~30% 할인 프로모션 코드 적용 중
+              100대 필수 영양소 정밀 분석 &amp; 국내 최저가·해외 직구가 한 번에 비교
             </span>
           </div>
           <div className="hidden sm:flex items-center gap-3 text-[11px] text-emerald-200">
@@ -241,7 +241,7 @@ export const Header: React.FC<HeaderProps> = ({
               }`}
             >
               <Tag className="w-4 h-4 text-amber-600" />
-              <span>iHerb 30% 특가관</span>
+              <span>가격·배송 혜택</span>
             </button>
           </div>
         </div>

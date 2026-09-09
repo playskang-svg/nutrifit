@@ -16,6 +16,7 @@ import {
   CheckCircle2,
   Clock
 } from "lucide-react";
+import { CoupangPrice, CoupangBadges, CoupangBuyButton } from "./BuyLinks";
 
 interface OrganHealthGuideProps {
   allNutrients: NutrientItem[];
@@ -245,7 +246,7 @@ const ORGAN_GUIDES: OrganGuideData[] = [
         recommendedForm: "일본 태양화학 특허 Suntheanine® 200mg"
       },
       {
-        nutrientId: "mineral-magnesium-threonate",
+        nutrientId: "mineral-mg",
         role: "유일하게 혈뇌장벽(BBB)을 통과해 뇌 시냅스 밀도를 높이는 마그네슘",
         recommendedForm: "MIT 특허 Magtein® 마그네슘 L-트레오네이트"
       },
@@ -391,14 +392,14 @@ export const OrganHealthGuide: React.FC<OrganHealthGuideProps> = ({
           </div>
         </div>
 
-        {/* Right 1 Col: Recommended Nutrients & 30% Deal Cards */}
+        {/* Right 1 Col: 부위별 추천 영양소 + 구매 동선 */}
         <div className="space-y-4">
           <div className="bg-slate-900 text-white p-4 rounded-xl flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Pill className="w-4 h-4 text-emerald-400" />
               <span className="text-xs font-bold uppercase tracking-wider">부위별 최적 영양제 솔루션</span>
             </div>
-            <span className="text-[11px] text-emerald-300 font-medium">iHerb 30% 특가 연계</span>
+            <span className="text-[11px] text-emerald-300 font-medium">쿠팡 최저가 연계</span>
           </div>
 
           <div className="space-y-3">
@@ -434,14 +435,19 @@ export const OrganHealthGuide: React.FC<OrganHealthGuideProps> = ({
                     <span className="text-emerald-700 font-medium">{sol.recommendedForm}</span>
                   </div>
 
-                  {matchedNutrient?.deal && (
-                    <div className="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
-                      <div className="flex items-center gap-1 font-bold text-amber-700">
-                        <span className="bg-amber-500 text-white text-[10px] px-1.5 py-0.5 rounded">30% OFF</span>
-                        <span>₩{matchedNutrient.deal.dealPrice.toLocaleString()}</span>
+                  {matchedNutrient && (
+                    <div className="pt-2 border-t border-slate-100 space-y-2">
+                      <div className="flex items-end justify-between gap-2">
+                        <div>
+                          <CoupangPrice nutrientId={matchedNutrient.id} size="sm" />
+                          <CoupangBadges nutrientId={matchedNutrient.id} />
+                        </div>
+                        <div onClick={(e) => e.stopPropagation()}>
+                          <CoupangBuyButton nutrientId={matchedNutrient.id} size="sm" />
+                        </div>
                       </div>
-                      <div className="flex items-center gap-1 text-[11px] font-bold text-emerald-700 group-hover:translate-x-0.5 transition-transform">
-                        <span>처방 상세 &amp; 할인</span>
+                      <div className="flex items-center gap-1 text-[11px] font-bold text-slate-500 group-hover:text-emerald-700 group-hover:translate-x-0.5 transition-all">
+                        <span>처방 상세</span>
                         <ChevronRight className="w-3.5 h-3.5" />
                       </div>
                     </div>

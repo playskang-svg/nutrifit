@@ -14,6 +14,7 @@ import {
   Flame,
   Award
 } from "lucide-react";
+import { CoupangBuyButton } from "./BuyLinks";
 
 interface DemographicSpecialGuideProps {
   allNutrients: NutrientItem[];
@@ -159,8 +160,9 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 &amp; 30% 특가 보기
+                처방 상세 &amp; 최저가 보기
               </button>
+              <CoupangBuyButton nutrientId="amino-leucine" size="sm" className="w-full" />
             </div>
 
             <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-3">
@@ -179,8 +181,9 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 &amp; 30% 특가 보기
+                처방 상세 &amp; 최저가 보기
               </button>
+              <CoupangBuyButton nutrientId="vit-d3" size="sm" className="w-full" />
             </div>
 
             <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-3">
@@ -199,8 +202,9 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 &amp; 30% 특가 보기
+                처방 상세 &amp; 최저가 보기
               </button>
+              <CoupangBuyButton nutrientId="fatty-ps" size="sm" className="w-full" />
             </div>
           </div>
         </div>
@@ -232,13 +236,14 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
               </p>
               <button
                 onClick={() => {
-                  const n = allNutrients.find(x => x.id === "mineral-magnesium");
+                  const n = allNutrients.find(x => x.id === "mineral-mg");
                   if (n) onSelectNutrient(n);
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
                 처방 상세 보기
               </button>
+              <CoupangBuyButton nutrientId="mineral-mg" size="sm" className="w-full" />
             </div>
 
             <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-3">
@@ -256,6 +261,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
               >
                 처방 상세 보기
               </button>
+              <CoupangBuyButton nutrientId="vit-b-complex" size="sm" className="w-full" />
             </div>
 
             <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-3">
@@ -273,6 +279,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
               >
                 처방 상세 보기
               </button>
+              <CoupangBuyButton nutrientId="phyto-silymarin" size="sm" className="w-full" />
             </div>
           </div>
         </div>
@@ -311,6 +318,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
               >
                 처방 상세 보기
               </button>
+              <CoupangBuyButton nutrientId="amino-theanine" size="sm" className="w-full" />
             </div>
 
             <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-3">
@@ -328,6 +336,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
               >
                 처방 상세 보기
               </button>
+              <CoupangBuyButton nutrientId="fatty-dha-brain" size="sm" className="w-full" />
             </div>
 
             <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-3">
@@ -338,13 +347,14 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
               </p>
               <button
                 onClick={() => {
-                  const n = allNutrients.find(x => x.id === "mineral-zinc");
+                  const n = allNutrients.find(x => x.id === "mineral-zn");
                   if (n) onSelectNutrient(n);
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
                 처방 상세 보기
               </button>
+              <CoupangBuyButton nutrientId="mineral-zn" size="sm" className="w-full" />
             </div>
           </div>
         </div>

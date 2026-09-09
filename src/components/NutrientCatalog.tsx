@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { NutrientItem } from "../types";
+import { CoupangPrice, CoupangBadges, CoupangBuyButton, IherbLink } from "./BuyLinks";
 import { 
   Sparkles, 
   Search, 
@@ -107,7 +108,7 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
           </h1>
           <p className="text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
             나이대별(특히 노년기), 남녀, 계절별, 직업군(직장인·수험생), 취약 부위(눈·장·관절 등)에 필요한 
-            100가지 영양소의 자연 식품 급원과 한계점, 흡수율 높은 최적의 영양제 제형, iHerb 30% 할인가 직구까지 체계적으로 제공합니다.
+            100가지 영양소의 자연 식품 급원과 한계점, 흡수율 높은 최적의 영양제 제형, 그리고 국내 최저가 구매처까지 체계적으로 제공합니다.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-emerald-200">
@@ -121,7 +122,7 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
             </div>
             <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>iHerb 공식 할인코드 연계</span>
+              <span>쿠팡 실시간 가격 · 해외 직구가 비교</span>
             </div>
           </div>
         </div>
@@ -306,24 +307,26 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
                 </div>
               </div>
 
-              {/* Card Footer: iHerb Deal & Detail CTA */}
-              <div className="pt-3 border-t border-slate-100 flex items-center justify-between mt-2">
-                {item.deal ? (
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[10px] font-extrabold bg-amber-500 text-white px-1.5 py-0.5 rounded">
-                      {item.deal.discountPercent}% OFF
-                    </span>
-                    <span className="text-xs font-black text-amber-700">
-                      ₩{item.deal.dealPrice.toLocaleString()}
-                    </span>
+              {/* Card Footer: 쿠팡 가격 + 바로구매. 카드에서 상세를 안 열어도 구매까지 간다. */}
+              <div className="pt-3 border-t border-slate-100 mt-2 space-y-2">
+                <div className="flex items-end justify-between gap-2">
+                  <div>
+                    <CoupangPrice nutrientId={item.id} size="sm" />
+                    <CoupangBadges nutrientId={item.id} />
                   </div>
-                ) : (
-                  <span className="text-[11px] text-slate-400">의학 가이드</span>
-                )}
+                  <div onClick={(e) => e.stopPropagation()}>
+                    <CoupangBuyButton nutrientId={item.id} size="sm" />
+                  </div>
+                </div>
 
-                <div className="flex items-center gap-1 text-xs font-bold text-emerald-700 group-hover:translate-x-0.5 transition-transform">
-                  <span>상세보기 &amp; 할인</span>
-                  <ChevronRight className="w-3.5 h-3.5" />
+                <div className="flex items-center justify-between gap-2">
+                  <div onClick={(e) => e.stopPropagation()}>
+                    <IherbLink nutrientId={item.id} />
+                  </div>
+                  <div className="flex items-center gap-1 text-[11px] font-bold text-slate-500 group-hover:text-emerald-700 group-hover:translate-x-0.5 transition-all">
+                    <span>상세보기</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </div>
                 </div>
               </div>
             </div>

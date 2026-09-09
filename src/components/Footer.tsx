@@ -1,5 +1,6 @@
 import React from "react";
 import { HeartPulse, ShieldCheck, ExternalLink, BookOpen, Award } from "lucide-react";
+import { COUPANG_DISCLOSURE } from "../data/affiliateLinks";
 
 interface FooterProps {
   setActiveTab: (tab: string) => void;
@@ -97,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => setActiveTab("columns")} 
                   className="hover:text-white transition-colors cursor-pointer"
                 >
-                  하버드·메이요클리닉·iHerb 의학 칼럼
+                  하버드·메이요클리닉 의학 칼럼
                 </button>
               </li>
               <li>
@@ -105,7 +106,7 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => setActiveTab("deals")} 
                   className="hover:text-white transition-colors cursor-pointer"
                 >
-                  iHerb 공식 30% 특가 할인관
+                  가격·배송 혜택 모아보기
                 </button>
               </li>
             </ul>
@@ -120,7 +121,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>유럽식품안전청 (EFSA) 기능성 원료 기준</li>
               <li>하버드 의과대학 헬스 퍼블리싱 (Harvard Health)</li>
               <li>메이요 클리닉 위장관 &amp; 대사 리포트</li>
-              <li>iHerb Medical Advisory Board Clinical Reviews</li>
+              <li>식품의약품안전처 건강기능식품 기능성 원료 인정 자료</li>
             </ul>
           </div>
 
@@ -149,8 +150,8 @@ export const Footer: React.FC<FooterProps> = ({
             의사의 진단, 치료 또는 처방을 대신할 수 없습니다. 질환이 있거나 처방약을 복용 중인 경우 영양제 섭취 전 반드시 주치의 또는 약사와 상담하십시오.
           </p>
           <p>
-            <strong>제휴 마케팅 안내:</strong> 본 사이트는 iHerb 등 해외 직구 플랫폼의 공식 제휴 프로그램에 참여하여 정품 인증 30% 할인 코드 및 링크를 제공하며, 
-            구매 시 플랫폼으로부터 소정의 수수료를 지급받을 수 있으나 구매자의 결제 금액에는 일체의 추가 비용이 발생하지 않습니다.
+            <strong>제휴 마케팅 안내:</strong> {COUPANG_DISCLOSURE} 해외 직구 비교 링크(iHerb)에는 추천인 코드가 포함되어 있습니다. 
+            어느 쪽이든 구매자의 결제 금액에는 추가 비용이 발생하지 않습니다.
           </p>
           <p className="pt-2 text-slate-400">
             © 2025 NutriMatrix 100. All Rights Reserved. Structured with Schema.org MedicalWebPage for Search &amp; Generative Engine Optimization.

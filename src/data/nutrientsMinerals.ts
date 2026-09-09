@@ -32,14 +32,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "High Absorption Magnesium Glycinate 100mg",
       spec: "240정 / TRAACS 킬레이트 특허",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "MAG30",
-      iherbUrl: "https://www.iherb.com/search?kw=Doctors+Best+Magnesium+Glycinate",
       certification: "TRAACS 오리지널 킬레이트, Non-GMO",
-      rating: 4.9,
-      reviewCount: 42100
     }
   },
   {
@@ -73,14 +66,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Solaray",
       productName: "Calcium Citrate with Vitamin D3",
       spec: "캡슐 240정",
-      originalPrice: 26000,
-      dealPrice: 18200,
-      discountPercent: 30,
-      couponCode: "BONE30",
-      iherbUrl: "https://www.iherb.com/search?kw=Calcium+Citrate+Solaray",
       certification: "위장 흡수 최적화 Citrate, Lab Verified",
-      rating: 4.8,
-      reviewCount: 6540
     }
   },
   {
@@ -114,14 +100,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Thorne",
       productName: "Zinc Picolinate 30mg",
       spec: "캡슐 60정",
-      originalPrice: 22000,
-      dealPrice: 16500,
-      discountPercent: 25,
-      couponCode: "IMMUNE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Thorne+Zinc+Picolinate",
       certification: "최고 생체이용률 Picolinate, NSF 인증",
-      rating: 4.9,
-      reviewCount: 9800
     }
   },
   {
@@ -155,14 +134,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Life Extension",
       productName: "Super Selenium Complex 200mcg with Vit E",
       spec: "베지 캡슐 100정",
-      originalPrice: 20000,
-      dealPrice: 15000,
-      discountPercent: 25,
-      couponCode: "SELENIUM25",
-      iherbUrl: "https://www.iherb.com/search?kw=Super+Selenium+Life+Extension",
       certification: "Se-메틸 L-셀레노시스테인 포함 3종 복합",
-      rating: 4.8,
-      reviewCount: 5120
     }
   },
   {
@@ -196,14 +168,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Solgar",
       productName: "Gentle Iron (부드러운 철분) 25mg",
       spec: "식물성 캡슐 180정 / 위장장애·변비 없음",
-      originalPrice: 27000,
-      dealPrice: 18900,
-      discountPercent: 30,
-      couponCode: "GENTLE30",
-      iherbUrl: "https://www.iherb.com/search?kw=Gentle+Iron+Solgar",
       certification: "Kosher Parve, 글루텐 프리, 비건",
-      rating: 4.8,
-      reviewCount: 16800
     }
   },
   {
@@ -237,14 +202,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Potassium Citrate 99mg",
       spec: "180 베지 캡슐",
-      originalPrice: 16000,
-      dealPrice: 11200,
-      discountPercent: 30,
-      couponCode: "DETOX30",
-      iherbUrl: "https://www.iherb.com/search?kw=Potassium+Citrate+Now",
       certification: "GMP 품질 보증, Non-GMO",
-      rating: 4.7,
-      reviewCount: 8200
     }
   },
   {
@@ -278,14 +236,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Life Extension",
       productName: "Sea-Iodine 1,000mcg",
       spec: "베지 캡슐 60정",
-      originalPrice: 18000,
-      dealPrice: 13500,
-      discountPercent: 25,
-      couponCode: "IODINE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Sea+Iodine+Life+Extension",
       certification: "유기농 해조 추출 복합체",
-      rating: 4.8,
-      reviewCount: 3410
     }
   },
   {
@@ -319,14 +270,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Chromium Picolinate 200mcg",
       spec: "250 베지 캡슐 / 8개월분",
-      originalPrice: 19000,
-      dealPrice: 13300,
-      discountPercent: 30,
-      couponCode: "GLUCOSE30",
-      iherbUrl: "https://www.iherb.com/search?kw=Chromium+Picolinate+Now",
       certification: "Non-GMO, GMP Certified",
-      rating: 4.8,
-      reviewCount: 7120
     }
   },
   {
@@ -360,14 +304,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Source Naturals",
       productName: "Manganese Chelate 10mg",
       spec: "250정",
-      originalPrice: 17000,
-      dealPrice: 12750,
-      discountPercent: 25,
-      couponCode: "JOINT25",
-      iherbUrl: "https://www.iherb.com/search?kw=Manganese+Chelate",
       certification: "아미노산 킬레이트 결합형",
-      rating: 4.7,
-      reviewCount: 2180
     }
   },
   {
@@ -401,14 +338,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Thorne",
       productName: "Copper Bisglycinate 2mg",
       spec: "60 캡슐",
-      originalPrice: 20000,
-      dealPrice: 15000,
-      discountPercent: 25,
-      couponCode: "COPPER25",
-      iherbUrl: "https://www.iherb.com/search?kw=Thorne+Copper+Bisglycinate",
       certification: "TRAACS 킬레이트 특허, NSF 인증",
-      rating: 4.8,
-      reviewCount: 1690
     }
   },
   {
@@ -442,14 +372,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Country Life",
       productName: "Chelated Molybdenum 150mcg",
       spec: "100 타블렛",
-      originalPrice: 17000,
-      dealPrice: 11900,
-      discountPercent: 30,
-      couponCode: "DETOXMO30",
-      iherbUrl: "https://www.iherb.com/search?kw=Chelated+Molybdenum",
       certification: "글루텐 프리, 비건 인증",
-      rating: 4.8,
-      reviewCount: 1980
     }
   },
   {
@@ -483,14 +406,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Life Extension",
       productName: "Boron 3mg with Advanced Calcium Complex",
       spec: "100 베지 캡슐",
-      originalPrice: 16000,
-      dealPrice: 12000,
-      discountPercent: 25,
-      couponCode: "BORON25",
-      iherbUrl: "https://www.iherb.com/search?kw=Boron+Life+Extension",
       certification: "GMP 품질인증, Non-GMO",
-      rating: 4.8,
-      reviewCount: 4520
     }
   },
   {
@@ -524,14 +440,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "BioSil",
       productName: "ch-OSA Advanced Collagen Generator (규소 특허)",
       spec: "60 베지 캡슐",
-      originalPrice: 48000,
-      dealPrice: 36000,
-      discountPercent: 25,
-      couponCode: "SILICA25",
-      iherbUrl: "https://www.iherb.com/search?kw=BioSil",
       certification: "콜라겐 생성 촉진 미국 특허 ch-OSA",
-      rating: 4.8,
-      reviewCount: 9340
     }
   },
   {
@@ -565,14 +474,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Pure MSM Powder with OptiMSM 250g",
       spec: "순수 분말 250g / OptiMSM 정품",
-      originalPrice: 22000,
-      dealPrice: 15400,
-      discountPercent: 30,
-      couponCode: "MSM30",
-      iherbUrl: "https://www.iherb.com/search?kw=OptiMSM+Doctors+Best",
       certification: "OptiMSM 4단계 증류 특허, 미국산",
-      rating: 4.9,
-      reviewCount: 15200
     }
   },
   {
@@ -605,14 +507,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Weyland",
       productName: "Lithium Orotate 5mg",
       spec: "100 베지 캡슐",
-      originalPrice: 24000,
-      dealPrice: 18000,
-      discountPercent: 25,
-      couponCode: "MOOD25",
-      iherbUrl: "https://www.iherb.com/search?kw=Lithium+Orotate+5mg",
       certification: "GMP 인증, 제3자 기관 순도 검사",
-      rating: 4.8,
-      reviewCount: 3200
     }
   },
   {
@@ -646,14 +541,7 @@ export const mineralsList: NutrientItem[] = [
       brand: "Source Naturals",
       productName: "Vanadyl Sulfate with Taurine",
       spec: "100 타블렛",
-      originalPrice: 19000,
-      dealPrice: 13300,
-      discountPercent: 30,
-      couponCode: "PUMP30",
-      iherbUrl: "https://www.iherb.com/search?kw=Vanadyl+Sulfate",
       certification: "스포츠 뉴트리션 인증",
-      rating: 4.7,
-      reviewCount: 1890
     }
   }
 ];

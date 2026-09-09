@@ -16,7 +16,8 @@ import { renderMarkdown, extractHeadings } from "../../lib/markdown";
 import { getCategory, getAccent } from "../../content/postCategories";
 import { getRelatedPosts, formatPostDate } from "../../content/posts";
 import { linkProps } from "../../lib/router";
-import { ProductPickCard, resolveSource } from "./ProductPickCard";
+import { ProductPickCard } from "./ProductPickCard";
+import { COUPANG_DISCLOSURE, LINKPRICE_DISCLOSURE } from "../../data/affiliateLinks";
 
 interface HealthPostArticleProps {
   post: HealthPost;
@@ -45,10 +46,6 @@ export const HealthPostArticle: React.FC<HealthPostArticleProps> = ({
     .filter((item): item is NutrientItem => Boolean(item));
 
   const picks = post.productPicks ?? [];
-  const hasCoupang = picks.some((pick) => {
-    const url = pick.url ?? nutrientById.get(pick.nutrientId ?? "")?.deal.iherbUrl ?? "";
-    return resolveSource(url, pick.source) === "coupang";
-  });
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -183,12 +180,9 @@ export const HealthPostArticle: React.FC<HealthPostArticleProps> = ({
                 />
               ))}
             </div>
+            {/* 대가성 표시는 공정위 추천·보증 심사지침 및 각 제휴사 필수 사항이다. 지우지 않는다. */}
             <p className="mt-3 text-[11px] leading-relaxed text-slate-500 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2">
-              이 글에는 제휴 링크가 포함되어 있으며, 구매가 발생하면 일정액의 수수료를 받을 수 있습니다.
-              수수료는 제품 가격에 영향을 주지 않습니다.
-              {hasCoupang
-                ? " 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
-                : ""}
+              {COUPANG_DISCLOSURE} {LINKPRICE_DISCLOSURE} 수수료는 구매 가격에 영향을 주지 않습니다.
             </p>
           </section>
         ) : null}

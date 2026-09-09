@@ -32,14 +32,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "Nutricost",
       productName: "L-Leucine Powder 500g (순수 류신)",
       spec: "파우더 500g / 100회분",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "MUSCLE30",
-      iherbUrl: "https://www.iherb.com/search?kw=L-Leucine+Nutricost",
       certification: "GMP 제조, 발효 식물성, 제3자 검사",
-      rating: 4.8,
-      reviewCount: 3940
     }
   },
   {
@@ -73,14 +66,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "L-Glutamine AjiPure 454g (발효 순수 글루타민)",
       spec: "무맛 파우더 454g / 90회분",
-      originalPrice: 32000,
-      dealPrice: 22400,
-      discountPercent: 30,
-      couponCode: "GUT30",
-      iherbUrl: "https://www.iherb.com/search?kw=Glutamine+AjiPure",
       certification: "AjiPure 일본 아지노모토 특허 의약품급 발효 원료",
-      rating: 4.9,
-      reviewCount: 18400
     }
   },
   {
@@ -114,14 +100,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "L-Theanine with Suntheanine 150mg",
       spec: "베지 캡슐 90정",
-      originalPrice: 25000,
-      dealPrice: 17500,
-      discountPercent: 30,
-      couponCode: "CALM30",
-      iherbUrl: "https://www.iherb.com/search?kw=Suntheanine+Doctors+Best",
       certification: "Suntheanine 오리지널 일본 특허",
-      rating: 4.8,
-      reviewCount: 11200
     }
   },
   {
@@ -155,14 +134,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "L-Arginine & L-Citrulline 500/250mg",
       spec: "120 베지 캡슐",
-      originalPrice: 24000,
-      dealPrice: 16800,
-      discountPercent: 30,
-      couponCode: "VITAL30",
-      iherbUrl: "https://www.iherb.com/search?kw=Arginine+Citrulline+Now",
       certification: "GMP 품질 보증, 의약품급 아미노산",
-      rating: 4.7,
-      reviewCount: 6540
     }
   },
   {
@@ -196,14 +168,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "Life Extension",
       productName: "N-Acetyl-L-Cysteine 600mg",
       spec: "60 베지 캡슐",
-      originalPrice: 18000,
-      dealPrice: 13500,
-      discountPercent: 25,
-      couponCode: "NAC25",
-      iherbUrl: "https://www.iherb.com/search?kw=NAC+Life+Extension",
       certification: "고순도 의약품급 NAC 원료",
-      rating: 4.8,
-      reviewCount: 15400
     }
   },
   {
@@ -237,14 +202,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Taurine Pure Powder 227g",
       spec: "무맛 순수 파우더 227g / 227회분",
-      originalPrice: 19000,
-      dealPrice: 13300,
-      discountPercent: 30,
-      couponCode: "TAURINE30",
-      iherbUrl: "https://www.iherb.com/search?kw=Taurine+Powder+Now",
       certification: "GMP 인증, 제3자 순도 검증",
-      rating: 4.8,
-      reviewCount: 9200
     }
   },
   {
@@ -278,14 +236,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Best Acetyl-L-Carnitine 500mg with Biosint",
       spec: "120 식물성 캡슐",
-      originalPrice: 29000,
-      dealPrice: 20300,
-      discountPercent: 30,
-      couponCode: "BRAINC30",
-      iherbUrl: "https://www.iherb.com/search?kw=Acetyl+L-Carnitine+Doctors+Best",
       certification: "Sigma-tau 오리지널 Biosint 특허 원료",
-      rating: 4.8,
-      reviewCount: 5800
     }
   },
   {
@@ -319,14 +270,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Glycine Pure Powder 454g",
       spec: "100% 순수 분말 454g / 150회분",
-      originalPrice: 22000,
-      dealPrice: 15400,
-      discountPercent: 30,
-      couponCode: "SLEEP30",
-      iherbUrl: "https://www.iherb.com/search?kw=Glycine+Powder+Now",
       certification: "Non-GMO, 코셔 인증, GMP 제조",
-      rating: 4.8,
-      reviewCount: 7650
     }
   },
   {
@@ -360,14 +304,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "Life Extension",
       productName: "L-Tryptophan 500mg",
       spec: "90 베지 캡슐",
-      originalPrice: 26000,
-      dealPrice: 19500,
-      discountPercent: 25,
-      couponCode: "SEROTONIN25",
-      iherbUrl: "https://www.iherb.com/search?kw=L-Tryptophan+Life+Extension",
       certification: "최고 순도 프리미엄 발효 원료",
-      rating: 4.7,
-      reviewCount: 3890
     }
   },
   {
@@ -400,14 +337,7 @@ export const aminoAcidsList: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "Creatine Monohydrate Creapure 454g",
       spec: "무맛 파우더 454g / 90회분",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "POWER30",
-      iherbUrl: "https://www.iherb.com/search?kw=Creapure+Creatine",
       certification: "Creapure® 독일 정품 특허 인증 (순도 99.99%)",
-      rating: 4.9,
-      reviewCount: 22100
     }
   }
 ];

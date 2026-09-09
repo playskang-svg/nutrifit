@@ -31,14 +31,7 @@ export const remainingNutrientsList: NutrientItem[] = [
       brand: "ProHealth Longevity",
       productName: "Uthever NMN Pro 500mg",
       spec: "60 캡슐 / 세계 1위 Uthever 인증",
-      originalPrice: 75000,
-      dealPrice: 52500,
-      discountPercent: 30,
-      couponCode: "NMN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Uthever+NMN",
       certification: "Uthever 글로벌 임상 특허, 순도 99%",
-      rating: 4.9,
-      reviewCount: 7800
     }
   },
   {
@@ -70,14 +63,7 @@ export const remainingNutrientsList: NutrientItem[] = [
       brand: "Youtheory",
       productName: "Ashwagandha KSM-66 1000mg",
       spec: "150 베지 캡슐",
-      originalPrice: 29000,
-      dealPrice: 20300,
-      discountPercent: 30,
-      couponCode: "CALM30",
-      iherbUrl: "https://www.iherb.com/search?kw=KSM-66+Ashwagandha",
       certification: "KSM-66 오리지널 특허 뿌리 추출물",
-      rating: 4.8,
-      reviewCount: 16800
     }
   },
   {
@@ -109,14 +95,7 @@ export const remainingNutrientsList: NutrientItem[] = [
       brand: "Life Extension",
       productName: "5-LOX Inhibitor with AprèsFlex 100mg",
       spec: "60 베지 캡슐 / 7일 임상 개선",
-      originalPrice: 28000,
-      dealPrice: 21000,
-      discountPercent: 25,
-      couponCode: "FLEX25",
-      iherbUrl: "https://www.iherb.com/search?kw=ApresFlex+Boswellia",
       certification: "ApresFlex 특허 관절 연골 임상 검증",
-      rating: 4.8,
-      reviewCount: 5400
     }
   },
   {
@@ -148,14 +127,7 @@ export const remainingNutrientsList: NutrientItem[] = [
       brand: "Natural Factors",
       productName: "Bilberry Extract 36% Anthocyanosides",
       spec: "60 캡슐",
-      originalPrice: 24000,
-      dealPrice: 16800,
-      discountPercent: 30,
-      couponCode: "EYES30",
-      iherbUrl: "https://www.iherb.com/search?kw=Bilberry+Extract+Natural+Factors",
       certification: "Mirtoselect 품질 기준, GMP 인증",
-      rating: 4.8,
-      reviewCount: 4200
     }
   },
   {
@@ -187,14 +159,7 @@ export const remainingNutrientsList: NutrientItem[] = [
       brand: "Healthy Origins",
       productName: "Pycnogenol 100mg",
       spec: "60 베지 캡슐 / 오리지널 프랑스산",
-      originalPrice: 58000,
-      dealPrice: 43500,
-      discountPercent: 25,
-      couponCode: "PINE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Pycnogenol+Healthy+Origins",
       certification: "Horphag Research 정품 Pycnogenol® 인증",
-      rating: 4.8,
-      reviewCount: 3890
     }
   },
   {
@@ -226,14 +191,7 @@ export const remainingNutrientsList: NutrientItem[] = [
       brand: "Source Naturals",
       productName: "Broccoli Sprouts Extract (설포라판 2,000mcg)",
       spec: "60 타블렛",
-      originalPrice: 22000,
-      dealPrice: 15400,
-      discountPercent: 30,
-      couponCode: "DETOX30",
-      iherbUrl: "https://www.iherb.com/search?kw=Broccoli+Sprouts+Sulforaphane",
       certification: "활성 미로시나아제 효소 보증",
-      rating: 4.8,
-      reviewCount: 4650
     }
   },
   {
@@ -267,14 +225,7 @@ export const remainingNutrientsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Lycopene 20mg with Lyc-O-Mato",
       spec: "50 소프트젤",
-      originalPrice: 21000,
-      dealPrice: 14700,
-      discountPercent: 30,
-      couponCode: "MEN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Lyc-O-Mato+Lycopene",
       certification: "Lyc-O-Mato 이스라엘 특허 천연 원료",
-      rating: 4.8,
-      reviewCount: 3980
     }
   }
 ];

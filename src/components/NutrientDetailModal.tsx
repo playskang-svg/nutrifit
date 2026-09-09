@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { NutrientItem } from "../types";
+import { BuyPanel } from "./BuyLinks";
 import { 
   X, 
   Sparkles, 
@@ -7,10 +8,6 @@ import {
   CheckCircle2, 
   Utensils, 
   Clock, 
-  Tag, 
-  ExternalLink, 
-  Copy, 
-  Check, 
   Award,
   ShieldAlert,
   HelpCircle
@@ -25,15 +22,7 @@ export const NutrientDetailModal: React.FC<NutrientDetailModalProps> = ({
   nutrient,
   onClose,
 }) => {
-  const [copied, setCopied] = useState(false);
-
   if (!nutrient) return null;
-
-  const handleCopyCode = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-900/60 backdrop-blur-xs overflow-y-auto">
@@ -180,58 +169,23 @@ export const NutrientDetailModal: React.FC<NutrientDetailModalProps> = ({
             </div>
           </div>
 
-          {/* iHerb Discount Deal Card */}
-          {nutrient.deal && (
-            <div className="p-4 bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-300 rounded-xl space-y-3">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-1.5">
-                  <span className="bg-amber-600 text-white text-[11px] font-extrabold px-2 py-0.5 rounded">
-                    iHerb 직구 {nutrient.deal.discountPercent}% 특가
-                  </span>
-                  <span className="text-xs font-bold text-slate-700">{nutrient.deal.brand}</span>
-                </div>
-                <div className="flex items-center gap-1 text-xs text-amber-700 font-semibold">
-                  ★ {nutrient.deal.rating} ({nutrient.deal.reviewCount.toLocaleString()} 리뷰)
-                </div>
+          {/* 구매 동선: 에디터 기준 제형 + 쿠팡 실가격/바로구매 */}
+          <div className="space-y-3">
+            <div className="p-4 bg-white border border-slate-200 rounded-xl">
+              <div className="flex items-center gap-1.5 mb-2">
+                <Award className="w-4 h-4 text-teal-600" />
+                <span className="text-[11px] font-bold text-slate-500">에디터 기준 제형</span>
               </div>
-
-              <div>
-                <h5 className="font-bold text-slate-900 text-sm">{nutrient.deal.productName}</h5>
-                <p className="text-xs text-slate-500">{nutrient.deal.spec} · {nutrient.deal.certification}</p>
-              </div>
-
-              <div className="flex items-center justify-between pt-2 border-t border-amber-200">
-                <div>
-                  <span className="text-xs text-slate-400 line-through mr-1.5">
-                    ₩{nutrient.deal.originalPrice.toLocaleString()}
-                  </span>
-                  <span className="text-base font-black text-amber-700">
-                    ₩{nutrient.deal.dealPrice.toLocaleString()}
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => handleCopyCode(nutrient.deal!.couponCode)}
-                    className="flex items-center gap-1 px-2.5 py-1.5 bg-white border border-amber-300 hover:bg-amber-100 text-xs font-bold text-amber-900 rounded-md transition-colors"
-                  >
-                    {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                    <span>{copied ? "복사됨!" : nutrient.deal.couponCode}</span>
-                  </button>
-
-                  <a
-                    href={nutrient.deal.iherbUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-md shadow-xs transition-colors"
-                  >
-                    <span>할인가 구매</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-              </div>
+              <h5 className="font-bold text-slate-900 text-sm">
+                {nutrient.deal.brand} {nutrient.deal.productName}
+              </h5>
+              <p className="text-xs text-slate-500 mt-0.5">
+                {nutrient.deal.spec} · {nutrient.deal.certification}
+              </p>
             </div>
-          )}
+
+            <BuyPanel nutrientId={nutrient.id} />
+          </div>
 
           {/* Demographic & Organ match tags */}
           <div className="pt-2 flex flex-wrap items-center gap-2 text-xs">

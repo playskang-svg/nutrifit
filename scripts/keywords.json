@@ -1,0 +1,602 @@
+{
+ "vit-a": {
+  "ko": "비타민A 베타카로틴",
+  "en": "Beta Carotene 25000",
+  "name": "비타민 A (레티놀 / 베타카로틴)",
+  "number": 1
+ },
+ "vit-b1": {
+  "ko": "벤포티아민",
+  "en": "Benfotiamine 300",
+  "name": "비타민 B1 (티아민 / 벤포티아민)",
+  "number": 2
+ },
+ "vit-b2": {
+  "ko": "비타민B2 리보플라빈",
+  "en": "Riboflavin 5 Phosphate",
+  "name": "비타민 B2 (리보플라빈 / FMN)",
+  "number": 3
+ },
+ "vit-b3": {
+  "ko": "나이아신아마이드 영양제",
+  "en": "No Flush Niacin",
+  "name": "비타민 B3 (나이아신 / 니코틴아미드)",
+  "number": 4
+ },
+ "vit-b5": {
+  "ko": "판토텐산 비타민B5",
+  "en": "Pantothenic Acid 500",
+  "name": "비타민 B5 (판토텐산)",
+  "number": 5
+ },
+ "vit-b6": {
+  "ko": "비타민B6 P5P",
+  "en": "P-5-P Pyridoxal 5 Phosphate",
+  "name": "비타민 B6 (피리독살-5-인산 / P-5-P)",
+  "number": 6
+ },
+ "vit-b7": {
+  "ko": "비오틴 10000",
+  "en": "Biotin 10000 mcg",
+  "name": "비타민 B7 (비오틴)",
+  "number": 7
+ },
+ "vit-b9": {
+  "ko": "활성형엽산 5MTHF",
+  "en": "Quatrefolic Folate 400",
+  "name": "비타민 B9 (활성형 엽산 / 5-MTHF)",
+  "number": 8
+ },
+ "vit-b12": {
+  "ko": "메틸코발라민 비타민B12",
+  "en": "Methyl B-12 1000 mcg",
+  "name": "비타민 B12 (메틸코발라민 / 활성형)",
+  "number": 9
+ },
+ "vit-c": {
+  "ko": "비타민C 1000mg",
+  "en": "Gold C Vitamin C 1000",
+  "name": "비타민 C (아스코르브산 / 리포좀 제형)",
+  "number": 10
+ },
+ "vit-d3": {
+  "ko": "비타민D 5000IU",
+  "en": "Vitamin D3 5000 IU",
+  "name": "비타민 D3 (콜레칼시페롤 / 5,000 IU)",
+  "number": 11
+ },
+ "vit-k2": {
+  "ko": "비타민K2 MK7",
+  "en": "Vitamin K2 MK-7 MenaQ7",
+  "name": "비타민 K2 (메나퀴논-7 / MK-7)",
+  "number": 12
+ },
+ "vit-e": {
+  "ko": "비타민E 토코트리에놀",
+  "en": "Gamma E Complex Tocotrienol",
+  "name": "비타민 E (d-알파-토코페롤 + 복합 토코트리에놀)",
+  "number": 13
+ },
+ "vit-k1": {
+  "ko": "비타민K 복합",
+  "en": "Super K Vitamin K Complex",
+  "name": "비타민 K1 (필로퀴논)",
+  "number": 14
+ },
+ "vit-b-complex": {
+  "ko": "비타민B 컴플렉스 활성형",
+  "en": "Basic B Complex Thorne",
+  "name": "비타민 B-컴플렉스 (활성형 복합 8종)",
+  "number": 15
+ },
+ "inositol": {
+  "ko": "이노시톨",
+  "en": "Myo-Inositol D-Chiro",
+  "name": "이노시톨 (미오-이노시톨 / D-카이로-이노시톨)",
+  "number": 16
+ },
+ "choline": {
+  "ko": "시티콜린 콜린",
+  "en": "Citicoline Cognizin 250",
+  "name": "콜린 (CDP-콜린 / 알파-GPC)",
+  "number": 17
+ },
+ "paba": {
+  "ko": "파바 PABA",
+  "en": "PABA 500 mg",
+  "name": "PABA (파라아미노안식향산)",
+  "number": 18
+ },
+ "mineral-mg": {
+  "ko": "마그네슘 글리시네이트",
+  "en": "Magnesium Glycinate High Absorption",
+  "name": "마그네슘 (글리시네이트 / 트레오네이트)",
+  "number": 19
+ },
+ "mineral-ca": {
+  "ko": "구연산칼슘",
+  "en": "Calcium Citrate Vitamin D3",
+  "name": "칼슘 (구연산칼슘 / 비소성 해조칼슘)",
+  "number": 20
+ },
+ "mineral-zn": {
+  "ko": "아연 피콜리네이트",
+  "en": "Zinc Picolinate 30",
+  "name": "아연 (피콜리네이트 / 비스글리시네이트)",
+  "number": 21
+ },
+ "mineral-se": {
+  "ko": "셀레늄 영양제",
+  "en": "Selenium Selenomethionine 200",
+  "name": "셀레늄 (셀레노메티오닌 / 효모 셀레늄)",
+  "number": 22
+ },
+ "mineral-fe": {
+  "ko": "철분제 킬레이트",
+  "en": "Gentle Iron Bisglycinate 25",
+  "name": "철분 (비스글리시네이트 킬레이트)",
+  "number": 23
+ },
+ "mineral-k": {
+  "ko": "칼륨 포타슘 영양제",
+  "en": "Potassium Citrate 99",
+  "name": "칼륨 (구연산칼륨 / 포타슘)",
+  "number": 24
+ },
+ "mineral-i": {
+  "ko": "요오드 켈프",
+  "en": "Sea-Iodine 1000 mcg",
+  "name": "요오드 (켈프 해조 요오드 / 칼륨 요오드)",
+  "number": 25
+ },
+ "mineral-cr": {
+  "ko": "크롬 피콜리네이트",
+  "en": "Chromium Picolinate 200",
+  "name": "크롬 (피콜린산 크롬 / 크로뮴)",
+  "number": 26
+ },
+ "mineral-mn": {
+  "ko": "망간 영양제",
+  "en": "Manganese Chelate",
+  "name": "망간 (글리시네이트 킬레이트)",
+  "number": 27
+ },
+ "mineral-cu": {
+  "ko": "구리 영양제 코퍼",
+  "en": "Copper Bisglycinate 2 mg",
+  "name": "구리 (글리시네이트 / 세룰로플라스민)",
+  "number": 28
+ },
+ "mineral-mo": {
+  "ko": "몰리브덴 영양제",
+  "en": "Chelated Molybdenum 150",
+  "name": "몰리브덴 (아미노산 킬레이트)",
+  "number": 29
+ },
+ "mineral-b": {
+  "ko": "붕소 보론 영양제",
+  "en": "Boron 3 mg",
+  "name": "붕소 (보론 / 프루토보레이트 칼슘)",
+  "number": 30
+ },
+ "mineral-si": {
+  "ko": "실리카 규소 영양제",
+  "en": "BioSil ch-OSA Silicon",
+  "name": "실리카 (규소 / 쇠뜨기 추출물 / 모노메틸실란트리올)",
+  "number": 31
+ },
+ "mineral-msm": {
+  "ko": "MSM 식이유황",
+  "en": "OptiMSM MSM Powder",
+  "name": "식이유황 (MSM / 옵티MSM)",
+  "number": 32
+ },
+ "mineral-li": {
+  "ko": "리튬 오로트산",
+  "en": "Lithium Orotate 5 mg",
+  "name": "리튬 (오로트산 리튬 / 저용량 5mg)",
+  "number": 33
+ },
+ "mineral-v": {
+  "ko": "바나듐 영양제",
+  "en": "Vanadyl Sulfate",
+  "name": "바나듐 (바나딜 설페이트)",
+  "number": 34
+ },
+ "amino-leucine": {
+  "ko": "류신 로이신 파우더",
+  "en": "L-Leucine Powder",
+  "name": "류신 (L-Leucine / 근감소증 핵심 아미노산)",
+  "number": 35
+ },
+ "amino-glutamine": {
+  "ko": "글루타민 파우더",
+  "en": "L-Glutamine AjiPure",
+  "name": "L-글루타민 (L-Glutamine / 장 점막 재생 1위)",
+  "number": 36
+ },
+ "amino-theanine": {
+  "ko": "테아닌",
+  "en": "L-Theanine Suntheanine 150",
+  "name": "L-테아닌 (L-Theanine / 뇌파 알파파 유도)",
+  "number": 37
+ },
+ "amino-arginine": {
+  "ko": "아르기닌 시트룰린",
+  "en": "L-Arginine L-Citrulline",
+  "name": "L-아르기닌 & L-시트룰린 복합체",
+  "number": 38
+ },
+ "amino-nac": {
+  "ko": "NAC 엔에이씨",
+  "en": "N-Acetyl Cysteine 600",
+  "name": "NAC (N-아세틸 시스테인 / 항산화 제왕 전구체)",
+  "number": 39
+ },
+ "amino-taurine": {
+  "ko": "타우린",
+  "en": "Taurine Powder",
+  "name": "타우린 (Taurine / 피로회복 & 심장 근육 강화)",
+  "number": 40
+ },
+ "amino-carnitine": {
+  "ko": "아세틸엘카르니틴",
+  "en": "Acetyl-L-Carnitine 500",
+  "name": "아세틸-L-카르니틴 (ALCAR / 미토콘드리아 지방 연소)",
+  "number": 41
+ },
+ "amino-glycine": {
+  "ko": "글리신 파우더",
+  "en": "Glycine Powder",
+  "name": "글리신 (Glycine / 심부체온 저하 숙면 & 콜라겐 33%)",
+  "number": 42
+ },
+ "amino-tryptophan": {
+  "ko": "트립토판",
+  "en": "L-Tryptophan 500",
+  "name": "L-트립토판 (L-Tryptophan / 5-HTP)",
+  "number": 43
+ },
+ "amino-creatine": {
+  "ko": "크레아틴 모노하이드레이트",
+  "en": "Creatine Monohydrate Creapure",
+  "name": "크레아틴 모노하이드레이트 (Creapure® / 근력 & 뇌 인지능력)",
+  "number": 44
+ },
+ "fatty-rtg-omega3": {
+  "ko": "rTG 오메가3",
+  "en": "Triple Strength Omega-3 Fish Oil",
+  "name": "rTG 오메가-3 (EPA & DHA 고순도 80%+)",
+  "number": 45
+ },
+ "fatty-dha-brain": {
+  "ko": "DHA 비건 알티지",
+  "en": "Algae DHA Vegan",
+  "name": "고함량 DHA (미세조류 비건 / 뇌 & 망막 집중형)",
+  "number": 46
+ },
+ "fatty-ps": {
+  "ko": "포스파티딜세린",
+  "en": "Phosphatidylserine SerinAid",
+  "name": "포스파티딜세린 (PS / 뇌세포막 인지질 / 300mg)",
+  "number": 47
+ },
+ "fatty-coq10": {
+  "ko": "코엔자임Q10 유비퀴놀",
+  "en": "Ubiquinol Kaneka 100",
+  "name": "코엔자임 Q10 (유비퀴놀 / 활성형 Kaneka™)",
+  "number": 48
+ },
+ "fatty-gla": {
+  "ko": "감마리놀렌산 보라지오일",
+  "en": "Borage Oil GLA",
+  "name": "감마리놀렌산 (GLA / 보라지 오일 24%)",
+  "number": 49
+ },
+ "fatty-lecithin": {
+  "ko": "해바라기 레시틴",
+  "en": "Sunflower Lecithin 1200",
+  "name": "해바라기 레시틴 (Sunflower Lecithin / 인지질 60%+)",
+  "number": 50
+ },
+ "phyto-lutein-zeaxanthin": {
+  "ko": "루테인 지아잔틴",
+  "en": "Lutein Zeaxanthin Lutemax 2020",
+  "name": "루테인 & 지아잔틴 (5:1 황금비율 / 안구 황반색소)",
+  "number": 51
+ },
+ "phyto-astaxanthin": {
+  "ko": "아스타잔틴",
+  "en": "Astaxanthin 12 mg",
+  "name": "아스타잔틴 (Astaxanthin 12mg / 눈 모양체 피로 개선)",
+  "number": 52
+ },
+ "phyto-silymarin": {
+  "ko": "밀크씨슬 실리마린",
+  "en": "Silymarin Milk Thistle Complex",
+  "name": "밀크씨슬 (실리마린 80% 표준화 / 간세포막 보호)",
+  "number": 53
+ },
+ "phyto-curcumin": {
+  "ko": "커큐민 강황",
+  "en": "Curcumin BioPerine 1000",
+  "name": "커큐민 (Curcumin C3 / BCM-95 / 파이토솜)",
+  "number": 54
+ },
+ "phyto-berberine": {
+  "ko": "베르베린",
+  "en": "Berberine 500 Thorne",
+  "name": "베르베린 (Berberine HCl 500mg / AMPK 활성화)",
+  "number": 55
+ },
+ "phyto-quercetin": {
+  "ko": "케르세틴",
+  "en": "Quercetin Bromelain",
+  "name": "케르세틴 (Quercetin / 아연 이온수송체 & 비염 완화)",
+  "number": 56
+ },
+ "phyto-resveratrol": {
+  "ko": "레스베라트롤",
+  "en": "Trans-Resveratrol 500",
+  "name": "트랜스-레스베라트롤 (Trans-Resveratrol 500mg / 시르투인 장수 유전자)",
+  "number": 57
+ },
+ "gut-probiotics-100b": {
+  "ko": "유산균 프로바이오틱스",
+  "en": "LactoBif Probiotics 30 Billion",
+  "name": "복합 프로바이오틱스 (보장균수 300억~1,000억 CFU / 장용성 캡슐)",
+  "number": 58
+ },
+ "gut-butyrate": {
+  "ko": "낙산균 부티레이트",
+  "en": "Butyrate Probiota Bifido",
+  "name": "낙산균 & 트리부티린 (Butyrate / 포스트바이오틱스)",
+  "number": 59
+ },
+ "gut-enzymes": {
+  "ko": "소화효소",
+  "en": "Digest Gold Enzymedica",
+  "name": "소화효소 복합체 (단백질·지방·탄수화물 분해 / 베타인 HCl)",
+  "number": 60
+ },
+ "gut-collagen": {
+  "ko": "저분자 콜라겐",
+  "en": "Marine Collagen Peptides Hyaluronic",
+  "name": "저분자 콜라겐 펩타이드 (피쉬 콜라겐 300달톤 / 비타민C 복합)",
+  "number": 61
+ },
+ "gut-hyaluronic": {
+  "ko": "먹는 히알루론산",
+  "en": "Hyaluronic Acid Chondroitin",
+  "name": "먹는 히알루론산 (경구용 수분 저장 / 100~200mg)",
+  "number": 62
+ },
+ "gut-sawpalmetto": {
+  "ko": "쏘팔메토",
+  "en": "Saw Palmetto Extract 320",
+  "name": "쏘팔메토 열매 추출물 (로르산 85%+ / 남성 전립선 케어)",
+  "number": 63
+ },
+ "special-nmn": {
+  "ko": "NMN 엔엠엔",
+  "en": "NMN 500 mg Uthever",
+  "name": "NMN (니코틴아미드 모노뉴클레오티드 500mg)",
+  "number": 64
+ },
+ "special-ashwagandha": {
+  "ko": "아슈와간다",
+  "en": "Ashwagandha KSM-66",
+  "name": "아슈와간다 (KSM-66® 뿌리 추출물 / 코르티솔 조절)",
+  "number": 65
+ },
+ "special-boswellia": {
+  "ko": "보스웰리아",
+  "en": "Boswellia ApresFlex 5-LOX",
+  "name": "보스웰리아 (유향 추출물 / 5-LOX 염증 효소 차단)",
+  "number": 66
+ },
+ "special-bilberry": {
+  "ko": "빌베리 안토시아닌",
+  "en": "Bilberry Extract Anthocyanosides",
+  "name": "빌베리 안토시아닌 (야생 북유럽 빌베리 / 미세혈관 혈류)",
+  "number": 67
+ },
+ "special-pycnogenol": {
+  "ko": "피크노제놀",
+  "en": "Pycnogenol 100 mg",
+  "name": "피크노제놀 (프랑스 해안송 껍질 추출물 / 혈관 내피 NO)",
+  "number": 68
+ },
+ "special-sulforaphane": {
+  "ko": "설포라판 브로콜리",
+  "en": "Broccoli Sprouts Sulforaphane",
+  "name": "설포라판 (브로콜리 새싹 추출물 / Nrf2 세포 해독)",
+  "number": 69
+ },
+ "special-lycopene": {
+  "ko": "라이코펜",
+  "en": "Lycopene 20 mg Lyc-O-Mato",
+  "name": "라이코펜 (토마토 붉은 색소 / 남성 전립선 & 심장)",
+  "number": 70
+ },
+ "supp-gaba": {
+  "ko": "가바 GABA 영양제",
+  "en": "PharmaGABA 250 Thorne",
+  "name": "GABA (가바 / 뇌 신경 억제 전달물질)",
+  "number": 71
+ },
+ "supp-alpha-gpc": {
+  "ko": "알파GPC",
+  "en": "Alpha GPC 300",
+  "name": "알파-GPC (Alpha-GPC / 아세틸콜린 전구체)",
+  "number": 72
+ },
+ "supp-sam-e": {
+  "ko": "사메 SAM-e",
+  "en": "SAM-e 400 Enteric",
+  "name": "SAM-e (S-아데노실 메티오닌 400mg)",
+  "number": 73
+ },
+ "supp-hmb": {
+  "ko": "HMB 보충제",
+  "en": "HMB 1000 Calcium",
+  "name": "HMB (β-하이드록시 β-메틸부티레이트 / 근단백질 분해 방지)",
+  "number": 74
+ },
+ "supp-glucosamine-chondroitin": {
+  "ko": "글루코사민 콘드로이친",
+  "en": "Glucosamine Chondroitin MSM",
+  "name": "글루코사민 황산염 & 콘드로이틴 (관절 연골 기질)",
+  "number": 75
+ },
+ "supp-beta-alanine": {
+  "ko": "베타알라닌",
+  "en": "Beta-Alanine CarnoSyn",
+  "name": "베타알라닌 (Beta-Alanine / 근육 카르노신 합성)",
+  "number": 76
+ },
+ "supp-spirulina": {
+  "ko": "스피루리나",
+  "en": "Hawaiian Spirulina 1000",
+  "name": "스피루리나 (Spirulina / 피코시아닌 20% 함유 슈퍼푸드)",
+  "number": 77
+ },
+ "supp-d-mannose": {
+  "ko": "디만노스 D-만노스",
+  "en": "D-Mannose 500",
+  "name": "D-만노스 (D-Mannose / 요로 대장균 부착 차단)",
+  "number": 78
+ },
+ "supp-lactoferrin": {
+  "ko": "락토페린",
+  "en": "Lactoferrin 250 Jarrow",
+  "name": "락토페린 (Lactoferrin / 초유 철분 결합 당단백질)",
+  "number": 79
+ },
+ "supp-beta-glucan": {
+  "ko": "베타글루칸",
+  "en": "Beta-Glucan Wellmune",
+  "name": "베타글루칸 (Beta-Glucan 1,3/1,6 / 효모 유래 NK세포 활성)",
+  "number": 80
+ },
+ "supp-psyllium-husk": {
+  "ko": "차전자피 식이섬유",
+  "en": "Psyllium Husk Whole",
+  "name": "차전자피 식이섬유 (Psyllium Husk / 배변 부피 팽창)",
+  "number": 81
+ },
+ "supp-artichoke": {
+  "ko": "아티초크 추출물",
+  "en": "Artichoke Extract 500",
+  "name": "아티초크 추출물 (시나린 / 담즙 분비 & 위장관 운동)",
+  "number": 82
+ },
+ "supp-vitamin-u": {
+  "ko": "카베진 비타민U",
+  "en": "Cabbage Extract Vitamin U",
+  "name": "비타민 U (S-메틸메티오닌 / 위 점막 궤양 수선)",
+  "number": 83
+ },
+ "supp-maca": {
+  "ko": "마카 블랙마카",
+  "en": "Maca Organic Gelatinized",
+  "name": "마카 (유기농 젤라틴화 블랙마카 1,000mg)",
+  "number": 84
+ },
+ "supp-rhodiola": {
+  "ko": "홍경천 로디올라",
+  "en": "Rhodiola 500 Standardized",
+  "name": "로디오라 (홍경천 추출물 / 살리드로사이드 / 스트레스 저항)",
+  "number": 85
+ },
+ "supp-cordyceps": {
+  "ko": "동충하초",
+  "en": "Cordyceps CS-4",
+  "name": "동충하초 추출물 (Cordyceps CS-4 / 폐포 산소 이용률)",
+  "number": 86
+ },
+ "supp-berberine-phytosome": {
+  "ko": "베르베린 파이토솜",
+  "en": "Berberine Phytosome Berbevis",
+  "name": "베르베린 파이토솜 (Berbevis® / 흡수율 10배 개선)",
+  "number": 87
+ },
+ "supp-d-ribose": {
+  "ko": "디리보스 리보오스",
+  "en": "D-Ribose Bioenergy",
+  "name": "D-리보오스 (D-Ribose 5g / 심근 & 근육 ATP 직결 당)",
+  "number": 88
+ },
+ "supp-cranberry-pac": {
+  "ko": "크랜베리 추출물",
+  "en": "Cranberry Concentrate CranRich",
+  "name": "크랜베리 고농축 추출물 (PACs 36mg / 요로 점막 보호)",
+  "number": 89
+ },
+ "supp-chlorophyllin": {
+  "ko": "엽록소 클로로필",
+  "en": "Liquid Chlorophyll Chlorofresh",
+  "name": "엽록소 & 클로로필린 (Chlorophyllin / 체취 제거 & 혈액 정화)",
+  "number": 90
+ },
+ "supp-rutin-hesperidin": {
+  "ko": "루틴 헤스페리딘",
+  "en": "Rutin 450 mg",
+  "name": "루틴 & 헤스페리딘 (비타민 P / 모세혈관 탄력 강화)",
+  "number": 91
+ },
+ "supp-carnosine": {
+  "ko": "카르노신",
+  "en": "L-Carnosine 500",
+  "name": "L-카르노신 (L-Carnosine 500mg / 당화 최종산물 AGEs 차단)",
+  "number": 92
+ },
+ "supp-zinc-carnosine": {
+  "ko": "아연 카르노신 펩진",
+  "en": "PepZin GI Zinc Carnosine",
+  "name": "아연-L-카르노신 (PepZin GI® / 위 점막 밀착 치료)",
+  "number": 93
+ },
+ "supp-apigenin": {
+  "ko": "아피제닌",
+  "en": "Apigenin 50 mg",
+  "name": "아피제닌 (Apigenin 50mg / CD38 효소 억제 & 깊은 수면)",
+  "number": 94
+ },
+ "supp-fisetin": {
+  "ko": "피세틴",
+  "en": "Fisetin Novusetin 100",
+  "name": "피세틴 (Fisetin 100mg / 세놀리틱 좀비세포 청소)",
+  "number": 95
+ },
+ "supp-ergothioneine": {
+  "ko": "에르고티오네인",
+  "en": "Ergothioneine MitoPrime",
+  "name": "에르고티오네인 (Ergothioneine / 장수 비타민 항산화)",
+  "number": 96
+ },
+ "supp-spermidine": {
+  "ko": "스페르미딘",
+  "en": "Spermidine 5 mg Wheat Germ",
+  "name": "스페르미딘 (Spermidine 1~5mg / 세포 자가포식 오토파지)",
+  "number": 97
+ },
+ "supp-phosphatidylcholine": {
+  "ko": "포스파티딜콜린",
+  "en": "Phosphatidylcholine 840",
+  "name": "포스파티딜콜린 (PC / 간세포막 복원 & 담즙 배출)",
+  "number": 98
+ },
+ "supp-chlorella": {
+  "ko": "클로렐라",
+  "en": "Sun Chlorella A",
+  "name": "클로렐라 (Chlorella / CGF 세포 재생 성장인자)",
+  "number": 99
+ },
+ "supp-whey-isolate": {
+  "ko": "WPI 분리유청단백질",
+  "en": "Whey Protein Isolate WPI 90",
+  "name": "WPI 분리유청단백질 (Whey Protein Isolate / 유당 0%)",
+  "number": 100
+ }
+}

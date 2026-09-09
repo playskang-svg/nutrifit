@@ -14,6 +14,7 @@ import {
   Award,
   FileText
 } from "lucide-react";
+import { CoupangPrice, CoupangBadges, CoupangBuyButton } from "./BuyLinks";
 
 interface GlobalColumnsSectionProps {
   columns: HealthColumn[];
@@ -76,13 +77,13 @@ export const GlobalColumnsSection: React.FC<GlobalColumnsSectionProps> = ({
         <div className="max-w-3xl relative z-10">
           <div className="flex items-center gap-2 text-teal-400 text-xs font-bold uppercase tracking-wider mb-2">
             <BookOpen className="w-4 h-4" />
-            <span>글로벌 의학 리서치 &amp; iHerb 컬럼 센터</span>
+            <span>글로벌 의학 리서치 센터</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight mb-2">
-            하버드·메이요클리닉·iHerb 최신 영양 의학 연구 리포트
+            하버드·메이요클리닉 등 최신 영양 의학 연구 리포트
           </h2>
           <p className="text-sm text-slate-300 leading-relaxed">
-            해외 유수 의학 저널과 iHerb 의학 자문위원회(MAB)에서 발표한 최신 임상 데이터를 
+            해외 유수 의학 저널에서 발표한 최신 임상 데이터를 
             한국어로 번역 제공하며, Gemini AI가 핵심 실천 가이드와 필요 영양제를 즉시 요약해 드립니다.
           </p>
         </div>
@@ -172,6 +173,34 @@ export const GlobalColumnsSection: React.FC<GlobalColumnsSectionProps> = ({
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
+
+            {/* 칼럼이 다루는 영양소를 바로 살 수 있게 — 읽고 나서 다시 찾아 들어가지 않도록 */}
+            {col.relatedNutrientIds.length > 0 && (
+              <div className="pt-3 mt-3 border-t border-slate-100">
+                <p className="text-[10px] font-bold text-slate-400 mb-1.5">이 칼럼이 다루는 영양소</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {col.relatedNutrientIds.slice(0, 3).map((id) => {
+                    const matched = allNutrients.find((n) => n.id === id);
+                    if (!matched) return null;
+                    return (
+                      <div
+                        key={id}
+                        className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 rounded-lg pl-2.5 pr-1.5 py-1"
+                      >
+                        <button
+                          type="button"
+                          onClick={() => onSelectNutrient(matched)}
+                          className="text-[11px] font-semibold text-slate-700 hover:text-emerald-800 cursor-pointer truncate max-w-[8rem]"
+                        >
+                          {matched.name.split(" (")[0]}
+                        </button>
+                        <CoupangBuyButton nutrientId={matched.id} size="sm" />
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </article>
         ))}
       </div>
@@ -271,7 +300,7 @@ export const GlobalColumnsSection: React.FC<GlobalColumnsSectionProps> = ({
               {selectedColumn.relatedNutrientIds.length > 0 && (
                 <div className="pt-4 border-t border-slate-200 space-y-3">
                   <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-                    본 칼럼에서 권장하는 필수 영양소 &amp; 30% 특가
+                    본 칼럼에서 권장하는 필수 영양소
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {selectedColumn.relatedNutrientIds.map((id) => {
@@ -292,11 +321,10 @@ export const GlobalColumnsSection: React.FC<GlobalColumnsSectionProps> = ({
                               {matched.name}
                             </span>
                           </div>
-                          {matched.deal && (
-                            <span className="text-[10px] font-extrabold bg-amber-500 text-white px-1.5 py-0.5 rounded">
-                              {matched.deal.discountPercent}% OFF
-                            </span>
-                          )}
+                          <div className="text-right shrink-0">
+                            <CoupangPrice nutrientId={matched.id} size="sm" />
+                            <CoupangBadges nutrientId={matched.id} />
+                          </div>
                         </div>
                       );
                     })}

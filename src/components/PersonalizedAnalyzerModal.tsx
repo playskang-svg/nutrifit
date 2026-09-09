@@ -16,6 +16,7 @@ import {
   Calendar,
   Send
 } from "lucide-react";
+import { CoupangPrice, CoupangBadges } from "./BuyLinks";
 
 interface PersonalizedAnalyzerModalProps {
   isOpen: boolean;
@@ -407,12 +408,12 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
                 </div>
               )}
 
-              {/* Match to 100 DB & iHerb Discounts */}
+              {/* 처방 결과 → 100대 영양소 상세 + 구매 동선 */}
               {analysisResult.recommendedNutrientIds && analysisResult.recommendedNutrientIds.length > 0 && (
                 <div className="pt-2 border-t border-slate-200 space-y-3">
                   <div className="flex items-center justify-between">
                     <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-                      처방된 100대 영양소 상세 및 iHerb 30% 할인가 구매
+                      처방된 100대 영양소 상세 및 최저가 구매
                     </h4>
                     <span className="text-[11px] text-emerald-700 font-bold">클릭 시 상세 도감 이동</span>
                   </div>
@@ -436,11 +437,10 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
                               {matched.name}
                             </span>
                           </div>
-                          {matched.deal && (
-                            <span className="text-[10px] font-extrabold bg-amber-500 text-white px-2 py-0.5 rounded">
-                              {matched.deal.discountPercent}% OFF
-                            </span>
-                          )}
+                          <div className="text-right shrink-0">
+                            <CoupangPrice nutrientId={matched.id} size="sm" />
+                            <CoupangBadges nutrientId={matched.id} />
+                          </div>
                         </div>
                       );
                     })}

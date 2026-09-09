@@ -32,14 +32,7 @@ export const fattyAcidsList: NutrientItem[] = [
       brand: "Sports Research",
       productName: "Triple Strength Omega-3 Fish Oil 1250mg",
       spec: "180 소프트젤 / EPA 685mg + DHA 310mg",
-      originalPrice: 46000,
-      dealPrice: 32200,
-      discountPercent: 30,
-      couponCode: "OMEGA30",
-      iherbUrl: "https://www.iherb.com/search?kw=Sports+Research+Omega+3",
       certification: "IFOS 5-Star 최고등급 인증, Wild Alaska Pollock 원료",
-      rating: 4.9,
-      reviewCount: 51200
     }
   },
   {
@@ -73,14 +66,7 @@ export const fattyAcidsList: NutrientItem[] = [
       brand: "Nordic Naturals",
       productName: "Algae DHA 500mg (100% 비건)",
       spec: "60 식물성 소프트젤",
-      originalPrice: 42000,
-      dealPrice: 31500,
-      discountPercent: 25,
-      couponCode: "DHA25",
-      iherbUrl: "https://www.iherb.com/search?kw=Nordic+Naturals+Algae+DHA",
       certification: "미국임산부협회 공식 추천, 비건 인증",
-      rating: 4.8,
-      reviewCount: 7890
     }
   },
   {
@@ -114,14 +100,7 @@ export const fattyAcidsList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Phosphatidylserine with SerinAid 100mg",
       spec: "120 베지 캡슐 / 뇌 기능 개선 특허",
-      originalPrice: 38000,
-      dealPrice: 26600,
-      discountPercent: 30,
-      couponCode: "BRAINPS30",
-      iherbUrl: "https://www.iherb.com/search?kw=Phosphatidylserine+Doctors+Best",
       certification: "SerinAid® 과학적 임상 특허 인지질",
-      rating: 4.8,
-      reviewCount: 6540
     }
   },
   {
@@ -155,14 +134,7 @@ export const fattyAcidsList: NutrientItem[] = [
       brand: "Healthy Origins",
       productName: "Ubiquinol Kaneka QH 100mg",
       spec: "150 소프트젤 / 5개월분",
-      originalPrice: 58000,
-      dealPrice: 40600,
-      discountPercent: 30,
-      couponCode: "COQ1030",
-      iherbUrl: "https://www.iherb.com/search?kw=Kaneka+Ubiquinol",
       certification: "Kaneka QH 오리지널 환원형 유비퀴놀 인증",
-      rating: 4.9,
-      reviewCount: 14200
     }
   },
   {
@@ -196,14 +168,7 @@ export const fattyAcidsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Borage Oil 1,000mg (GLA 240mg)",
       spec: "120 소프트젤",
-      originalPrice: 24000,
-      dealPrice: 16800,
-      discountPercent: 30,
-      couponCode: "WOMENGLA30",
-      iherbUrl: "https://www.iherb.com/search?kw=Borage+Oil+Now",
       certification: "비정제 냉압착, 헥산 무검출",
-      rating: 4.8,
-      reviewCount: 6120
     }
   },
   {
@@ -237,14 +202,7 @@ export const fattyAcidsList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Sunflower Lecithin 1200mg",
       spec: "200 소프트젤 / 대두 프리",
-      originalPrice: 26000,
-      dealPrice: 18200,
-      discountPercent: 30,
-      couponCode: "LECITHIN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Sunflower+Lecithin+Now",
       certification: "Non-GMO Project 검증, 콩 무첨가",
-      rating: 4.8,
-      reviewCount: 19800
     }
   }
 ];

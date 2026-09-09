@@ -32,14 +32,7 @@ export const gutSpecialtyList: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "LactoBif 30 Probiotics (보장균수 300억)",
       spec: "60 베지 캡슐 / 개별 이중 포일 블리스터",
-      originalPrice: 32000,
-      dealPrice: 22400,
-      discountPercent: 30,
-      couponCode: "LACTO30",
-      iherbUrl: "https://www.iherb.com/search?kw=LactoBif+30",
       certification: "Danisco FloraFIT® 8종 임상 균주, 실온 보관 특허",
-      rating: 4.8,
-      reviewCount: 68400
     }
   },
   {
@@ -73,14 +66,7 @@ export const gutSpecialtyList: NutrientItem[] = [
       brand: "Seeking Health",
       productName: "ProBiota Bifido with Butyrate",
       spec: "60 캡슐",
-      originalPrice: 38000,
-      dealPrice: 28500,
-      discountPercent: 25,
-      couponCode: "GUTCARE25",
-      iherbUrl: "https://www.iherb.com/search?kw=Butyrate",
       certification: "CoreBiome 특허 원료, 무향 장용성",
-      rating: 4.8,
-      reviewCount: 3200
     }
   },
   {
@@ -114,14 +100,7 @@ export const gutSpecialtyList: NutrientItem[] = [
       brand: "Enzymedica",
       productName: "Digest Gold (세계 판매 1위 소화효소)",
       spec: "120 캡슐 / Thera-blend 복합 활성",
-      originalPrice: 48000,
-      dealPrice: 33600,
-      discountPercent: 30,
-      couponCode: "DIGEST30",
-      iherbUrl: "https://www.iherb.com/search?kw=Digest+Gold+Enzymedica",
       certification: "전미 소화효소 판매 1위, 비건 인증",
-      rating: 4.9,
-      reviewCount: 24200
     }
   },
   {
@@ -155,14 +134,7 @@ export const gutSpecialtyList: NutrientItem[] = [
       brand: "California Gold Nutrition",
       productName: "Hydrolyzed Marine Collagen Peptides + Hyaluronic + Vit C",
       spec: "무맛 파우더 464g / 대용량",
-      originalPrice: 42000,
-      dealPrice: 29400,
-      discountPercent: 30,
-      couponCode: "COLLAGEN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Collup+CGN+Marine+Collagen",
       certification: "제3자 독립 테스트 인증, 비린내 제로",
-      rating: 4.8,
-      reviewCount: 41200
     }
   },
   {
@@ -195,14 +167,7 @@ export const gutSpecialtyList: NutrientItem[] = [
       brand: "Doctor's Best",
       productName: "Hyaluronic Acid with Chondroitin Sulfate 100mg",
       spec: "180 베지 캡슐 / BioCell Collagen 복합",
-      originalPrice: 38000,
-      dealPrice: 26600,
-      discountPercent: 30,
-      couponCode: "AQUA30",
-      iherbUrl: "https://www.iherb.com/search?kw=Hyaluronic+Acid+Doctors+Best",
       certification: "BioCell Collagen 오리지널 2형 특허",
-      rating: 4.8,
-      reviewCount: 9800
     }
   },
   {
@@ -234,14 +199,7 @@ export const gutSpecialtyList: NutrientItem[] = [
       brand: "NOW Foods",
       productName: "Saw Palmetto Extract 320mg with Zinc",
       spec: "90 식물성 소프트젤",
-      originalPrice: 28000,
-      dealPrice: 19600,
-      discountPercent: 30,
-      couponCode: "MEN30",
-      iherbUrl: "https://www.iherb.com/search?kw=Saw+Palmetto+320mg+Now",
       certification: "초임계 추출 로르산 85% 보증, 미국산",
-      rating: 4.8,
-      reviewCount: 8900
     }
   }
 ];

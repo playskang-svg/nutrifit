@@ -19,6 +19,31 @@ interface ExecutionContext {
 export interface Env {
   ASSETS: Fetcher;
   GEMINI_API_KEY?: string;
+  /** 쿠팡 파트너스 API. HMAC 서명은 서버에서만 만든다 — 브라우저로 넘기지 않는다. */
+  COUPANG_ACCESS_KEY?: string;
+  COUPANG_SECRET_KEY?: string;
+}
+
+/** 쿠팡 파트너스 CEA 서명. signed-date는 yyMMddTHHmmssZ 형식이다. */
+async function coupangAuthorization(
+  method: string,
+  path: string,
+  query: string,
+  accessKey: string,
+  secretKey: string,
+): Promise<string> {
+  const datetime = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '').slice(2);
+  const encoder = new TextEncoder();
+  const key = await crypto.subtle.importKey(
+    'raw',
+    encoder.encode(secretKey),
+    { name: 'HMAC', hash: 'SHA-256' },
+    false,
+    ['sign'],
+  );
+  const signature = await crypto.subtle.sign('HMAC', key, encoder.encode(datetime + method + path + query));
+  const hex = [...new Uint8Array(signature)].map((b) => b.toString(16).padStart(2, '0')).join('');
+  return `CEA algorithm=HmacSHA256, access-key=${accessKey}, signed-date=${datetime}, signature=${hex}`;
 }
 
 export default {
@@ -415,7 +440,48 @@ export default {
       }
     }
 
-    // 8. Static assets with single-page-application fallback
+    // 8. 쿠팡 골드박스(오늘의 특가). 매일 바뀌므로 빌드에 굽지 않고 여기서 받아온다.
+    //    할인율은 쿠팡 API가 주지 않으므로 만들어내지 않는다 — 특가 "지정 여부"만 전달한다.
+    if (url.pathname === '/api/deals') {
+      const accessKey = env.COUPANG_ACCESS_KEY;
+      const secretKey = env.COUPANG_SECRET_KEY;
+      const json = (body: unknown, status = 200) =>
+        new Response(JSON.stringify(body), {
+          status,
+          headers: {
+            'Content-Type': 'application/json; charset=utf-8',
+            // 특가는 하루 단위로 바뀐다. 엣지에서 30분 캐시해 API 호출 한도를 아낀다.
+            'Cache-Control': 'public, max-age=600, s-maxage=1800',
+            ...corsHeaders,
+          },
+        });
+
+      if (!accessKey || !secretKey) {
+        // 키가 없으면 화면은 특가 영역만 접고 나머지는 그대로 보여준다.
+        return json({ items: [], reason: 'not-configured' });
+      }
+
+      const path = '/v2/providers/affiliate_open_api/apis/openapi/v1/products/goldbox';
+      try {
+        const authorization = await coupangAuthorization('GET', path, '', accessKey, secretKey);
+        const res = await fetch(`https://api-gateway.coupang.com${path}`, {
+          headers: { Authorization: authorization, 'Content-Type': 'application/json;charset=UTF-8' },
+        });
+        if (!res.ok) {
+          // 401/403은 키 문제, 429는 호출 한도. 어느 쪽이든 재시도하지 않는다.
+          return json({ items: [], reason: `upstream-${res.status}` });
+        }
+        const payload = (await res.json()) as { rCode?: string; data?: unknown[] };
+        if (payload.rCode !== '0' || !Array.isArray(payload.data)) {
+          return json({ items: [], reason: 'upstream-payload' });
+        }
+        return json({ items: payload.data, collectedAt: new Date().toISOString() });
+      } catch {
+        return json({ items: [], reason: 'fetch-failed' });
+      }
+    }
+
+    // 9. Static assets with single-page-application fallback
     let response = await env.ASSETS.fetch(request);
     if (response.status === 404 && request.method === 'GET' && !url.pathname.startsWith('/api/')) {
       const fallbackUrl = new URL('/index.html', request.url);

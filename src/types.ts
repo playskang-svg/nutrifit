@@ -48,18 +48,18 @@ export type TargetOrgan =
   | "소화기 & 장"
   | string;
 
-export interface DiscountDeal {
+/**
+ * 에디터가 고른 "이 영양소는 이런 제형으로 사라"는 기준 제품이다.
+ *
+ * 가격·할인율·쿠폰코드·평점은 여기 두지 않는다. 실제 판매 데이터는
+ * src/data/affiliateLinks.ts 의 쿠팡 파트너스 API 스냅샷에서만 온다.
+ * 쿠팡 API는 정가·할인율을 주지 않으므로 화면에서 할인율을 만들어내지 않는다.
+ */
+export interface ProductRecommendation {
   brand: string;
   productName: string;
   spec: string;
-  originalPrice: number;
-  dealPrice: number;
-  discountPercent: number;
-  couponCode: string;
-  iherbUrl: string;
   certification: string; // e.g. "USP 인증", "IFOS 5-Star", "TRAACS 킬레이트"
-  rating: number;
-  reviewCount: number;
   imageUrl?: string; // 비우면 /api/product-og 로 상품 페이지 대표 이미지를 끌어온다
 }
 
@@ -93,7 +93,7 @@ export interface NutrientItem {
   seasons: Season[];
   occupations: Occupation[];
   targetOrgans: TargetOrgan[];
-  deal: DiscountDeal;
+  deal: ProductRecommendation;
   clinicalNote?: string;
 }
 
@@ -181,8 +181,6 @@ export interface SubscriptionItem {
   priceKrw: number;
   autoShipDiscount: number; // 5% or 10%
   bottleCount: number; // 병 수 (통관 6병 제한 체크)
-  iherbUrl: string;
-  couponCode: string;
   isActive: boolean;
 }
 
