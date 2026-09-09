@@ -56,18 +56,16 @@ interface TickerItem {
 }
 
 const Row: React.FC<{
-  label: string;
   /** 앞에 서는 이모지. 살아 움직여서 "지금도 갱신 중"을 전한다. */
   emoji: string;
+  /** 스크린리더용. 화면에는 이모지만 두고 글자 라벨은 두지 않는다 —
+   *  좁은 화면에서 라벨 칩이 가로를 먹어 정작 내용이 오른쪽으로 밀렸다. */
+  srLabel: string;
   tone: "news" | "deal";
   items: TickerItem[];
-}> = ({ label, emoji, tone, items }) => {
+}> = ({ emoji, srLabel, tone, items }) => {
   if (!items.length) return null;
 
-  const chip =
-    tone === "news"
-      ? "bg-emerald-600 text-white"
-      : "bg-amber-400 text-amber-950";
   const tagTone = tone === "news" ? "text-emerald-300" : "text-amber-300";
 
   // 끊김 없이 이어지려면 같은 목록이 두 벌 있어야 한다.
@@ -75,13 +73,12 @@ const Row: React.FC<{
 
   return (
     <div className="flex items-center gap-2 min-w-0 h-6">
+      <span className="sr-only">{srLabel}</span>
       <span
-        className={`shrink-0 inline-flex items-center gap-1 h-5 px-1.5 rounded text-[10px] font-black tracking-tight ${chip}`}
+        className="ticker__pulse shrink-0 text-[13px] leading-none w-4 text-center"
+        aria-hidden="true"
       >
-        <span className="ticker__pulse text-[11px] leading-none" aria-hidden="true">
-          {emoji}
-        </span>
-        {label}
+        {emoji}
       </span>
 
       <div className="ticker relative flex-1 min-w-0 overflow-hidden">
@@ -227,8 +224,8 @@ export const UpdateTicker: React.FC = () => {
   return (
     <div className="bg-slate-900 border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 space-y-0.5">
-        <Row label="최근 소식" emoji="🔄" tone="news" items={news} />
-        <Row label="행사 정보" emoji="🎁" tone="deal" items={deals} />
+        <Row emoji="🔄" srLabel="최근 소식" tone="news" items={news} />
+        <Row emoji="🎁" srLabel="행사 정보" tone="deal" items={deals} />
       </div>
     </div>
   );

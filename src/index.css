@@ -371,3 +371,16 @@
     animation: none;
   }
 }
+
+/* 화면에는 안 보이지만 스크린리더는 읽는 텍스트 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
