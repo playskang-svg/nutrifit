@@ -14,6 +14,7 @@ import { PersonalizedAnalyzerModal } from "./components/PersonalizedAnalyzerModa
 import { HealthPostList } from "./components/health/HealthPostList";
 import { HealthPostArticle } from "./components/health/HealthPostArticle";
 import { Footer } from "./components/Footer";
+import { UpdateTicker } from "./components/UpdateTicker";
 import { all100Nutrients } from "./data/nutrientsAll";
 import { healthColumnsData } from "./data/healthColumnsData";
 import { getPostBySlug, getPostsByCategory } from "./content/posts";
@@ -59,6 +60,10 @@ export default function App() {
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       />
+
+      {/* 갱신 티커. 스티키 헤더 밖에 둬서 스크롤과 함께 올라간다 —
+          안에 넣으면 고정 높이가 두 배가 된다. */}
+      <UpdateTicker />
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">

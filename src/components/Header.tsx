@@ -88,7 +88,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <header className="sm:sticky sm:top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
         {/* 고지바 — 모바일에서는 숨긴다. 같은 문구가 히어로에도 있고 스티키 높이만 먹는다. */}
         <div className="hidden sm:block bg-emerald-900 text-white text-xs py-1.5 px-4">
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">

@@ -306,3 +306,68 @@
     min-height: 40px;
   }
 }
+
+/* ------------------------------------------------------------------ *
+ * 상단 갱신 티커
+ *
+ * 흐르는 움직임이 "계속 갱신되고 있다"를 전한다. 다만 움직이는 링크는
+ * 누르기 어려우므로 마우스를 올리거나(hover) 키보드로 들어오거나
+ * 손가락을 대면(active) 멈춘다.
+ *
+ * 트랙에는 같은 목록이 두 벌 들어 있다. 첫 벌이 정확히 왼쪽으로 빠져나간
+ * 순간(-50%) 두 벌째가 같은 자리에 있어 이음매가 보이지 않는다.
+ * ------------------------------------------------------------------ */
+.ticker__track {
+  animation: ticker-scroll 42s linear infinite;
+}
+
+.ticker:hover .ticker__track,
+.ticker:focus-within .ticker__track,
+.ticker:active .ticker__track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* gap 한 칸(1.5rem)만큼 더 밀어야 두 벌의 간격이 목록 안쪽과 같아진다 */
+    transform: translateX(calc(-50% - 0.75rem));
+  }
+}
+
+/* 동작 축소를 켠 사용자에게 흐르는 배너는 읽기 어렵고 불편하다.
+   애니메이션을 끄고, 대신 손으로 밀어볼 수 있는 가로 목록으로 둔다. */
+@media (prefers-reduced-motion: reduce) {
+  .ticker {
+    overflow-x: auto;
+  }
+  .ticker__track {
+    animation: none;
+  }
+}
+
+/* 티커 앞 이모지. 크게 튀지 않게 숨쉬듯 움직여 "지금도 갱신 중"을 전한다. */
+.ticker__pulse {
+  display: inline-block;
+  animation: ticker-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes ticker-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.75;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker__pulse {
+    animation: none;
+  }
+}
