@@ -1,0 +1,6 @@
+{
+  "name": "NutriScience 100 - 대한민국 100대 영양소 & 맞춤 영양제 가이드",
+  "description": "100대 필수 영양소 백과사전, 연령별(노년기 집중)·성별·계절·직업군별 맞춤 분석, 부위별(눈·장·피로) 식품 및 영양제 추천, iHerb 최저가 할인 연계 및 글로벌 웰니스 칼럼 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
