@@ -23,9 +23,8 @@ DRY=0
 
 DATA="src/data/affiliateLinks.ts"
 BRANCH="auto/price-sync"
-LOG_TAG="[$(date '+%Y-%m-%d %H:%M:%S')]"
-
-log() { echo "$LOG_TAG $*"; }
+# 시각은 매 줄마다 찍는다. 변수로 한 번만 계산하면 5분짜리 수집도 한 시점으로 보인다.
+log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*"; }
 notify() {
   # 배너만 띄운다. 창을 앞으로 끌어오지 않는다.
   osascript -e "display notification \"$1\" with title \"NutriFit 가격 동기화\"" 2>/dev/null || true
