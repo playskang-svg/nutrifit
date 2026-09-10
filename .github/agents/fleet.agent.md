@@ -221,7 +221,7 @@ node "$AGENTS_DIR/runner/state.mjs" save --site "$SITE_KEY" --commit
 - 독자: 영양제를 사려는데 성분표를 못 읽는 사람.
 - 글 저장 위치: `src/content/posts` (typescript-module)
 - 먼저 읽을 문서: `CONTENT.md`, `README.md`
-- 빌드 주의: assets가 dist라 배포 전 vite build가 반드시 필요하다. 매주 월 05:00 가격 재수집 자동화가 별도로 돈다.
+- 빌드 주의: 자체 deploy.yml(npm run deploy:auto)이 빌드·배포한다. 봇 푸시는 그걸 트리거하지 않으므로 방출 뒤 직접 호출한다.
 - 하루 발행량 **3편** · 재고 목표 21편 · 경보선 6편
 - 제휴링크 한 글에 **최대 3개**, 링크당 본문 700자 이상
 - 최소 분량 2500자 · 내부링크 2개 · 외부출처 3개

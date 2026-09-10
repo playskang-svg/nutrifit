@@ -1,6 +1,9 @@
 # ⚠ 이 파일은 adbles-agents/templates/workflows/agents-daily.yml 에서 생성됩니다.
 # 여기서 고치지 말고 중앙 저장소 템플릿을 고친 뒤 `node scripts/deploy-fleet.mjs sync` 를 돌립니다.
-name: agents-daily (뉴트리핑)
+#
+# 매일 도는 SEO 사이클 — 순위를 재고(rankcheck), 황금키워드를 찾고(goldkey),
+# 링크 후보를 모은다(linkmgr). 글은 쓰지 않는다. 그건 agents-publish 몫이다.
+name: agents-daily (뉴트리핏)
 
 on:
   schedule:
@@ -17,6 +20,7 @@ concurrency:
 
 jobs:
   cycle:
+    # 킬스위치: 저장소 변수 AGENTS_ENABLED 를 false 로 두면 전부 멈춘다.
     if: vars.AGENTS_ENABLED != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -29,6 +33,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # _agents 는 중앙 저장소 체크아웃이다. 커밋 대상이 아니다 —
+      # .gitignore 가 아니라 .git/info/exclude 에 넣어 사이트 저장소를 더럽히지 않는다.
       - name: 체크아웃 경로 제외
         run: echo "_agents/" >> .git/info/exclude
 
@@ -54,6 +60,8 @@ jobs:
       - name: 이전 상태 복원
         run: node "$AGENTS_DIR/runner/state.mjs" restore --site "$SITE_KEY"
 
+      # 각 단계는 실패해도 다음으로 넘어간다. 하나가 막혔다고 사이클 전체를 죽이면
+      # 관리 에이전트가 무엇이 막혔는지 보고할 기회조차 없어진다.
       - name: rankcheck — 순위·색인 측정
         id: rank
         continue-on-error: true
@@ -68,25 +76,49 @@ jobs:
         continue-on-error: true
         run: node "$AGENTS_DIR/agents/goldkey/scripts/goldkey.mjs" find --site "$SITE_KEY"
 
-      - name: linkmgr — 내일 쓸 링크 미리 수집
+      # ── 여기서부터 대기열 채우기 ─────────────────────────────────────────
+      # 글은 여기서 쓰지 않는다. 쓰는 것은 맥 로컬 claude 나 Codespace 의 Copilot 이다.
+      # 여기서는 재고가 목표에 모자란 만큼만 글감(키워드·제목·링크)을 대기열에 넣는다.
+      - name: 재고 부족분 계산
+        id: need
+        run: node "$AGENTS_DIR/runner/inventory.mjs" need --site "$SITE_KEY"
+
+      - name: postgen·titlegen·linkmgr — 집필 대기열
+        if: steps.need.outputs.need > 0
         continue-on-error: true
         env:
           COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
           COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
         run: |
-          node "$AGENTS_DIR/runner/pipeline.mjs" pick --site "$SITE_KEY" --n 3 --out "$RUNNER_TEMP/picks.json"
-          node "$AGENTS_DIR/runner/pipeline.mjs" links --site "$SITE_KEY" --from "$RUNNER_TEMP/picks.json" --out "$RUNNER_TEMP/links.json"
+          node "$AGENTS_DIR/runner/inject-credentials.mjs" >/dev/null
+          node "$AGENTS_DIR/runner/pipeline.mjs" pick   --site "$SITE_KEY" --n "${{ steps.need.outputs.need }}" --out "$RUNNER_TEMP/picks.json"
+          node "$AGENTS_DIR/runner/pipeline.mjs" titles --site "$SITE_KEY" --from "$RUNNER_TEMP/picks.json" --out "$RUNNER_TEMP/titles.json"
+          node "$AGENTS_DIR/runner/pipeline.mjs" links  --site "$SITE_KEY" --from "$RUNNER_TEMP/titles.json" --out "$RUNNER_TEMP/links.json"
+          node "$AGENTS_DIR/runner/queue.mjs" put --site "$SITE_KEY" --type publish --titles "$RUNNER_TEMP/titles.json" --links "$RUNNER_TEMP/links.json"
 
-      - name: affkey — 제휴 필요 키워드 감지
+      - name: 제휴링크 점검 — 품절·단종·제휴 없는 글
+        continue-on-error: true
+        run: node "$AGENTS_DIR/runner/affiliate-refresh.mjs" scan --site "$SITE_KEY"
+
+      - name: affkey — 제휴가 필요한 키워드 감지
         continue-on-error: true
         run: node "$AGENTS_DIR/agents/affkey/scripts/affkey.mjs" scan --site "$SITE_KEY"
 
-      - name: crosslink — 사이트 간 연결 대기열
+      - name: crosslink — 우리 사이트 간 연결 대기열
         continue-on-error: true
         run: node "$AGENTS_DIR/agents/crosslink/scripts/crosslink.mjs" queue --site "$SITE_KEY"
 
-      - name: crosslink 대기열 커밋
-        run: node "$AGENTS_DIR/runner/commit.mjs" --site "$SITE_KEY" --stage crosslink-queue
+      - name: 대기열 커밋
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain .fleet/queue)" ]; then
+            git config user.name "adbles-agents[bot]"
+            git config user.email "adbles-agents@users.noreply.github.com"
+            git add .fleet/queue
+            git commit -m "chore(queue): 뉴트리핏 대기열 갱신 [skip ci]"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push || echo "::warning::대기열 푸시 실패 — 다음 회차에 다시 만든다"
+          fi
 
       - name: 상태 저장
         if: always()
