@@ -1,0 +1,213 @@
+{
+  "site": "nutrifit",
+  "label": "뉴트리핏",
+  "domain": "nutrifit.kr",
+  "repo": "playskang-svg/nutrifit",
+  "type": "publish",
+  "createdAt": "2026-09-10T09:04:55.282Z",
+  "createdBy": "local",
+  "titles": [
+    {
+      "keyword": "단백질프로틴",
+      "volume": 1440,
+      "grade": "1위가능",
+      "title": "단백질 프로틴 고르는 법 — WPC·WPI·식물성, 1g당 가격까지 비교",
+      "hook": "함량 대비 가격",
+      "intent": "프로틴 파우더를 처음 고르는 사람. WPC·WPI·가수분해·식물성(대두·완두) 차이, 유당에 예민하면 WPI를 보는 이유, 라벨에서 한 스쿱 단백질 g과 단백질 비율(%) 읽기, 단백질 1g당 가격 계산법을 다룬다. 보조 키워드 WPI프로틴추천(월 1,420)을 이 글에서 함께 흡수한다. 하루 필요량은 기존 글 daily-protein-intake로 내부링크하고 여기서 반복하지 않는다. 신장 질환이 있으면 진료를 먼저 안내한다.",
+      "alternatives": [
+        "단백질 프로틴, 우유 먹으면 배 아픈 사람은 WPI를 골라야 할까?",
+        "단백질 프로틴 한 스쿱, 라벨의 단백질 함량이 실제와 다른 이유"
+      ]
+    },
+    {
+      "keyword": "면역영양제",
+      "volume": 1490,
+      "grade": "상위가능",
+      "title": "면역 영양제, 식약처가 '면역' 표시를 인정한 성분은 따로 있다",
+      "hook": "기능성 인정 문구와 과장 광고의 경계",
+      "intent": "면역 영양제를 사려는 사람. 건강기능식품에 '면역' 기능성을 표시할 수 있는 원료는 식약처가 인정한 것뿐이라는 점을 축으로, 원료별 인정 문구를 식품의약품안전처 원문에서 확인한 것만 인용한다(원료·문구를 지어내지 않는다). 인정 문구를 넘는 감기 예방·치료 표현은 쓰지 않는다. 여러 제품을 겹쳐 먹을 때 아연 등 상한섭취량(한국인 영양소 섭취기준)을 넘는 문제를 짚는다. 기존 글 zinc-intake-guide·supplement-label-reading으로 내부링크.",
+      "alternatives": [
+        "면역 영양제 고르는 법 — 기능성 인정 문구로 성분 가려내기",
+        "면역 영양제 여러 개 겹쳐 먹으면 아연이 상한을 넘는다"
+      ]
+    },
+    {
+      "keyword": "비타민B추천",
+      "volume": 1450,
+      "grade": "상위가능",
+      "title": "비타민B 추천, 활성형이 꼭 필요할까 — 함량·B6 상한으로 고르기",
+      "hook": "고함량 경쟁의 함정",
+      "intent": "비타민B 복합제를 고르는 사람. 제품 추천 목록이 아니라 고르는 기준으로 답한다: 활성형(메틸코발라민·P5P·메틸폴레이트)이 의미 있는 경우와 아닌 경우를 근거 강도로 구분, 영양성분기준치 대비 수천 % 고함량이 필요한지, 비타민B6·나이아신·엽산 상한섭취량(한국인 영양소 섭취기준 원문 확인 후 인용)과 B6 장기 고용량의 신경 증상 보고. 기존 글 vitamin-b12-deficiency·mouth-ulcer-nutrition으로 내부링크.",
+      "alternatives": [
+        "비타민B 추천보다 먼저 볼 것 — 고함량 B6가 상한을 넘는 조합",
+        "비타민B 영양제, 소변이 노래지면 다 빠져나간 걸까?"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "keyword": "단백질프로틴",
+      "internal": [
+        {
+          "url": "https://nutrifit.kr/health/daily-protein-intake",
+          "title": "단백질 하루 얼마나 — 한 끼에 몰아 먹으면 안 되는 이유"
+        },
+        {
+          "url": "https://nutrifit.kr/health/supplement-label-reading",
+          "title": "영양제 라벨 읽는 법 — 500mg이 500mg이 아닌 이유"
+        },
+        {
+          "url": "https://nutrifit.kr/health/coffee-nutrient-absorption",
+          "title": "식후 커피 한 잔이 가져가는 것"
+        }
+      ],
+      "external": [
+        {
+          "title": "2020 한국인 영양소 섭취기준 (보건복지부·한국영양학회)",
+          "url": "https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019"
+        },
+        {
+          "title": "건강기능식품 기능성 원료 정보 (식품안전나라)",
+          "url": "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do"
+        },
+        {
+          "title": "International Society of Sports Nutrition Position Stand: protein and exercise (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28642676/"
+        },
+        {
+          "title": "Protein — The Nutrition Source",
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/"
+        }
+      ],
+      "coupang": [
+        {
+          "name": "뉴욕웨이 라이트 단백질 보충제, 2kg, 1개",
+          "price": "37,900원",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8288998026&itemId=27863137394&vendorItemId=86624554388&traceid=V0-153-313dbe27c3161d86&clickBeacon=300a26e0-acf6-11f1-9c09-eb6d1590719e%7E3&requestid=20260910180119224027003309&token=31850C%7CMIXED&pt=1&slot=1"
+        },
+        {
+          "name": "뉴욕웨이 WPI 초코맛 단백질 보충제",
+          "price": "69,900원",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=5603559414&itemId=9033134749&vendorItemId=71620787392&traceid=V0-153-d1482ff71f9c43f3&requestid=20260910180119224027003309&token=31850C%7CMIXED&pt=0&slot=2"
+        }
+      ],
+      "notes": "쿠팡 2건은 WPC 계열·WPI 계열 예시로 비교 표에 쓸 수 있다. 1g당 가격은 제품 라벨의 스쿱당 단백질 g을 확인한 경우에만 계산해 쓴다 — 수치를 지어내지 않는다."
+    },
+    {
+      "keyword": "면역영양제",
+      "internal": [
+        {
+          "url": "https://nutrifit.kr/health/zinc-intake-guide",
+          "title": "아연, 감기에 좋다는 말과 오래 먹으면 안 되는 이유 사이"
+        },
+        {
+          "url": "https://nutrifit.kr/health/supplement-label-reading",
+          "title": "영양제 라벨 읽는 법"
+        },
+        {
+          "url": "https://nutrifit.kr/health/vitamin-d-deficiency-korea",
+          "title": "비타민D 부족, 햇빛만으로 채워지지 않는 이유와 하루 적정량"
+        },
+        {
+          "url": "https://nutrifit.kr/health/multivitamin-evidence",
+          "title": "종합비타민은 효과가 있나"
+        }
+      ],
+      "external": [
+        {
+          "title": "건강기능식품 기능성 원료 정보 (식품안전나라)",
+          "url": "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do"
+        },
+        {
+          "title": "2020 한국인 영양소 섭취기준 (보건복지부·한국영양학회)",
+          "url": "https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019"
+        },
+        {
+          "title": "Zinc as a Gatekeeper of Immune Function (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29186856/"
+        },
+        {
+          "title": "A Review of Micronutrients and the Immune System (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31963293/"
+        },
+        {
+          "title": "Zinc — Fact Sheet for Health Professionals",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+        }
+      ],
+      "coupang": [
+        {
+          "name": "이알하나 면역 LF300 온가족 면역력 영양제, 6박스, 28정",
+          "price": "245,000원",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9455233247&itemId=28147390582&vendorItemId=95102768592&traceid=V0-153-23d8196b83c7c226&clickBeacon=30405210-acf6-11f1-94e7-88e7ea4ecea2%7E3&requestid=20260910180119549115175495&token=31850C%7CMIXED&pt=1&slot=1"
+        },
+        {
+          "name": "내츄럴플러스 프로폴리스 1000",
+          "price": "22,360원",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=20894936&itemId=81578249&vendorItemId=92000349279&traceid=V0-153-19091fba8d1dfc8d&requestid=20260910180119549115175495&token=31850C%7CMIXED&pt=0&slot=2"
+        }
+      ],
+      "notes": "쿠팡 결과는 글의 기준(식약처가 면역 기능성을 인정한 원료인지)에 맞는지 라벨로 확인되지 않으면 넣지 않는다. 프로폴리스 등 면역 기능성 인정 여부가 확인되지 않은 원료 제품을 면역 제품으로 소개하지 않는다. 제휴링크 0개로 발행해도 된다."
+    },
+    {
+      "keyword": "비타민B추천",
+      "internal": [
+        {
+          "url": "https://nutrifit.kr/health/vitamin-b12-deficiency",
+          "title": "비타민 B12, 위산이 줄면 흡수도 줄어든다"
+        },
+        {
+          "url": "https://nutrifit.kr/health/mouth-ulcer-nutrition",
+          "title": "입안이 자꾸 헐 때, 비타민 B만 먹으면 될까"
+        },
+        {
+          "url": "https://nutrifit.kr/health/always-tired-iron-b12",
+          "title": "자도 자도 피곤할 때, 영양제 전에 확인해야 할 다섯 가지"
+        },
+        {
+          "url": "https://nutrifit.kr/health/multivitamin-evidence",
+          "title": "종합비타민은 효과가 있나"
+        }
+      ],
+      "external": [
+        {
+          "title": "2020 한국인 영양소 섭취기준 (보건복지부·한국영양학회)",
+          "url": "https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019"
+        },
+        {
+          "title": "건강기능식품 기능성 원료 정보 (식품안전나라)",
+          "url": "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do"
+        },
+        {
+          "title": "Vitamin B-6-Induced Neuropathy: Exploring the Mechanisms of Pyridoxine Toxicity (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33912895/"
+        },
+        {
+          "title": "The Role of Vitamin B6 in Peripheral Neuropathy: A Systematic Review (2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37447150/"
+        },
+        {
+          "title": "Vitamin B12 — Fact Sheet for Health Professionals",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+        },
+        {
+          "title": "Folate — Fact Sheet for Health Professionals",
+          "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/"
+        }
+      ],
+      "coupang": [
+        {
+          "name": "메가도스 B 비타민 컴플렉스 51g",
+          "price": "16,970원",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8289158533&itemId=18169956995&vendorItemId=84910700916&traceid=V0-153-f9740a75ee92bb75&requestid=20260910180119881233760571&token=31850C%7CGM&pt=0&slot=1"
+        },
+        {
+          "name": "종근당 정품 활력 비타민B 플러스",
+          "price": "14,210원",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=7771987825&itemId=20984331533&vendorItemId=4102497417&traceid=V0-153-6003a1eb913a8f14&requestid=20260910180119881233760571&token=31850C%7CGM&pt=0&slot=2"
+        }
+      ],
+      "notes": "메가도스 B는 고함량 제품이라 추천이 아니라 함량 비교 예시로만 쓴다. 제품 카드를 넣는다면 B6 함량이 상한 기준과 어떤 관계인지 본문에서 설명한 뒤에 둔다."
+    }
+  ]
+}
