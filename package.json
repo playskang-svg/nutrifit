@@ -8,6 +8,7 @@
     "dev": "tsx server.ts",
     "build": "vite build",
     "deploy": "vite build && wrangler deploy",
+    "deploy:auto": "npm run deploy",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
     "post:new": "node scripts/new-post.mjs"

@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nutrifit.kr/sitemap.xml
+Sitemap: https://nutrifit.kr/rss.xml
