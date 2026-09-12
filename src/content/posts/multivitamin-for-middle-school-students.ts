@@ -150,5 +150,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "뼈가 빠르게 자라는 성장기에 칼슘 흡수를 돕는 역할이 알려져 있어, 연령대 표시가 명확한 청소년용 제품인지 확인하는 참고 기준입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["vitamin-d-deficiency-korea", "iron-deficiency-anemia-korea", "multivitamin-evidence"],
 };

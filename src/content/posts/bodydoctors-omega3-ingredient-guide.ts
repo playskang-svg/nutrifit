@@ -163,6 +163,13 @@ export const post: HealthPost = {
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "캡슐 크기는 편의성 지표일 뿐이라, 제형(rTG) 표기가 뚜렷한 제품을 기준으로 놓고 1일 EPA+DHA 합계부터 계산해보는 용도로 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading", "daily-protein-intake"],
 };

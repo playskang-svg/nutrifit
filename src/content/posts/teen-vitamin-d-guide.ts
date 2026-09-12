@@ -168,6 +168,17 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3", "mineral-ca"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "실내 학습 시간이 길어 햇빛 노출이 줄어드는 청소년이 아침 식사 직후 복용 루틴을 잡을 때 참고할 수 있는 성분입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-ca",
+      reason: "골밀도가 활발히 형성되는 사춘기에 비타민D와 함께 흡수를 고려해 확인하면 좋은 성분입니다.",
+    },
+  ],
   relatedPostSlugs: [
     "vitamin-d-deficiency-korea",
     "daily-protein-intake",

@@ -141,5 +141,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-b-complex", "vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "올인원 제품에 포함된 소량만으로는 국내에서 흔한 비타민D 부족을 교정하는 데 오래 걸릴 수 있다고 본문에서 짚었습니다. 별도로 함량을 확인해 채울 때 고려할 선택지입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "vit-b-complex",
+      reason: "성분 가짓수가 늘수록 개별 함량이 낮아지는 올인원의 한계를 보완해, B군만 따로 넉넉히 채우고 싶을 때 고려할 조합입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "supplement-label-reading", "daily-protein-intake"],
 };

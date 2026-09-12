@@ -178,5 +178,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "장내 균형은 식습관 위에 보조적으로 더하는 접근이 현실적입니다. 특정 제품 하나로 완성된다고 단정하기보다, 목적에 맞는 균주인지부터 확인하는 것이 순서에 맞습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

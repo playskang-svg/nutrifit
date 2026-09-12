@@ -147,6 +147,13 @@ export const post: HealthPost = {
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "공복 조건에서 혈중 농도 상승 폭이 크게 보고된 rTG 제형입니다. 제형 논쟁보다 꾸준한 EPA+DHA 섭취를 우선한다면 고려할 선택지입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "multivitamin-evidence"],
 };

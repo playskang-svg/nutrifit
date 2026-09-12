@@ -152,5 +152,16 @@ B군 비타민들은 탄수화물·지방·단백질을 에너지로 바꾸는 �
     },
   ],
   relatedNutrientIds: ["vit-b-complex", "vit-b12"],
+  productPicks: [
+    {
+      nutrientId: "vit-b-complex",
+      reason: "B1부터 B12까지 여러 성분이 에너지 대사에서 서로 연계돼 작동한다는 본문 설명대로, 개별이 아니라 여러 B군을 함께 채우는 조합으로 골랐습니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "vit-b12",
+      reason: "채식 위주 식단이거나 위산억제제를 장기 복용 중이라면 본문에서 짚은 대로 흡수율이 특히 떨어질 수 있어, 이 성분만 따로 확인해 볼 만합니다.",
+    },
+  ],
   relatedPostSlugs: ["always-tired-iron-b12", "vitamin-b12-deficiency", "multivitamin-evidence"],
 };

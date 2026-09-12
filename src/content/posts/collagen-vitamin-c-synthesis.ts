@@ -144,5 +144,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "콜라겐이 만들어지는 수산화 반응에 조효소로 필요한 성분입니다. 콜라겐만 추가하기 전에 비타민C 결핍부터 채우는 것이 이 글이 말하는 순서입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["daily-protein-intake", "mouth-ulcer-nutrition"],
 };

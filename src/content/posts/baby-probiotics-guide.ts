@@ -183,5 +183,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "영아기 장은 아직 발달 중이라 성인용 제품을 나눠 먹이는 방식은 권장되지 않습니다. 영아 전용으로 균주와 용량이 설계된 제품인지 소아청소년과 상담과 함께 확인하는 것이 먼저입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

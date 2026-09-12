@@ -150,5 +150,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-b9", "mineral-fe"],
+  productPicks: [
+    {
+      nutrientId: "vit-b9",
+      reason: "가임기·임신 준비 여성에게 본문에서 강조한 신경관 결손 예방 효과가 근거가 분명한 성분이라, 목적이 뚜렷할 때 먼저 확인할 만합니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-fe",
+      reason: "월경으로 인한 철 손실을 고려해 여성용 구성에서 본문이 강조한 대표 성분으로, 결핍이 확인된 경우 별도로 채울 때 고려하는 조합입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "iron-deficiency-anemia-korea", "eye-strain-screen-lutein"],
 };

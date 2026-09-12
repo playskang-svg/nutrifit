@@ -164,5 +164,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "순위표의 등수보다 균주명 표기, 보장균수, 목적 적합성을 직접 비교하는 것이 이 글에서 제시한 다섯 가지 기준에 가깝습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

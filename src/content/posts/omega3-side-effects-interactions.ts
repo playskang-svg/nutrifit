@@ -161,6 +161,13 @@ export const post: HealthPost = {
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "항응고제·항혈소판제를 복용하지 않는 일반적인 성인이 부담 없이 시작할 수 있는 용량대이며, 장용성 캡슐이라 트림·비린내 반응도 적은 편입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

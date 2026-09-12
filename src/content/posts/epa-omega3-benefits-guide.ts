@@ -148,6 +148,17 @@ EPA는 혈소판 응집과 관련된 경향이 언급되는 성분이라, 항응
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "EPA 비중이 높은 제품을 고르더라도 흡수에 영향을 주는 것은 여전히 제형입니다. rTG 표기를 확인하고 EPA+DHA 합계도 함께 계산해보세요.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "fatty-dha-brain",
+      reason: "뇌·망막 쪽 관심이라면 DHA 비중이 높게 설계된 제품을 따로 찾아볼 수 있습니다. 라벨의 개별 함량 표기로 비율을 직접 확인하세요.",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3", "fatty-dha-brain"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

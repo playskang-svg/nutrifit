@@ -73,7 +73,7 @@ export function renderPostShell(post: HealthPost): string {
     : "";
 
   return `<div id="prerender">
-  <nav><a href="/">홈</a> › <a href="/health">건강정보</a> › <a href="/health/c/${post.category}">${escapeHtml(
+  <nav><a href="/">홈</a> › <a href="/health">건강블로그</a> › <a href="/health/c/${post.category}">${escapeHtml(
     getCategoryLabel(post.category)
   )}</a></nav>
   <article>
@@ -105,7 +105,7 @@ export function renderListShell(category: string, posts: HealthPost[]): string {
     .join("");
 
   return `<div id="prerender">
-  <nav><a href="/">홈</a> › <a href="/health">건강정보</a></nav>
+  <nav><a href="/">홈</a> › <a href="/health">건강블로그</a></nav>
   <h1>${escapeHtml(label)}</h1>
   <nav><ul>${categoryLinks}</ul></nav>
   <ul>${items || "<li>발행된 글이 없습니다.</li>"}</ul>
@@ -172,9 +172,9 @@ export function renderHomeShell(): string {
     <h1>${escapeHtml(SITE.name)} \u2014 100대 영양소와 영양제 선택 기준</h1>
     <p>영양소별 권장섭취량과 결핍 신호, 음식 급원, 제형에 따른 흡수 차이를 공공 영양기준과 해외 보건기관 자료를 근거로 정리합니다. 건강기능식품은 의약품이 아니며, 이 사이트의 정보는 의사의 진단이나 처방을 대신하지 않습니다.</p>
 
-    <h2>건강정보 최신 글</h2>
+    <h2>건강블로그 최신 글</h2>
     <ul>${posts || "<li>발행된 글이 없습니다.</li>"}</ul>
-    <p><a href="/health">건강정보 전체 보기</a></p>
+    <p><a href="/health">건강블로그 전체 보기</a></p>
 
     <h2>주제별로 찾기</h2>
     <ul>${categories}</ul>
@@ -364,10 +364,10 @@ export function buildRss(): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${escapeXml(SITE.name)} 건강정보</title>
+    <title>${escapeXml(SITE.name)} 건강블로그</title>
     <link>${SITE.origin}/health</link>
     <atom:link href="${SITE.origin}/rss.xml" rel="self" type="application/rss+xml" />
-    <description>증상·영양소·제형 기준으로 정리한 건강정보</description>
+    <description>증상·영양소·제형 기준으로 정리한 건강블로그</description>
     <language>ko</language>
     <lastBuildDate>${toRfc822(allPosts[0]?.publishedAt ?? new Date().toISOString().slice(0, 10))}</lastBuildDate>
 ${items}

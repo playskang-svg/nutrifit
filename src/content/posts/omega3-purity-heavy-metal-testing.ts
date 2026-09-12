@@ -163,6 +163,13 @@ export const post: HealthPost = {
       url: "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "분자증류 정제와 로트별 중금속·산가 검사 성적을 공개해, '퓨어'라는 표현을 실제 수치로 확인할 수 있는 제품입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

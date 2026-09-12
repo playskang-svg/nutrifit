@@ -147,6 +147,13 @@ export const post: HealthPost = {
       url: "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "저온 추출 공정과 EPA+DHA 합계·신선도 지표를 함께 표기한 제품입니다. '초임계' 표기 자체보다 이 정보 공개 수준을 기준으로 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

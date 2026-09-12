@@ -150,5 +150,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "상한섭취량을 2.5배 넘는 5,000mg 대신, 이 글이 대안으로 제시한 1,000~2,000mg대를 나눠 먹는 방식에 맞는 제품을 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["mouth-ulcer-nutrition", "iron-deficiency-anemia-korea", "supplement-label-reading"],
 };

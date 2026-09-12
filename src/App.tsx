@@ -14,7 +14,6 @@ import { PersonalizedAnalyzerModal } from "./components/PersonalizedAnalyzerModa
 import { HealthPostList } from "./components/health/HealthPostList";
 import { HealthPostArticle } from "./components/health/HealthPostArticle";
 import { Footer } from "./components/Footer";
-import { RecentPostsStrip } from "./components/health/RecentPostsStrip";
 import { all100Nutrients } from "./data/nutrientsAll";
 import { healthColumnsData } from "./data/healthColumnsData";
 import { getPostBySlug, getPostsByCategory } from "./content/posts";
@@ -85,7 +84,7 @@ export default function App() {
           </div>
         </div>
 
-        {/* 건강정보 상세 */}
+        {/* 건강블로그 상세 */}
         {route.name === "post" && post && (
           <HealthPostArticle
             post={post}
@@ -108,7 +107,7 @@ export default function App() {
               {...linkProps("/health")}
               className="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-bold px-4 py-2.5 rounded-lg transition-colors"
             >
-              건강정보 목록 보기
+              건강블로그 목록 보기
             </a>
           </div>
         )}
@@ -116,17 +115,17 @@ export default function App() {
         {/* 정책·안내 페이지 */}
         {route.name === "page" && sitePage && <SitePageView page={sitePage} />}
 
-        {/* 건강정보 목록 */}
+        {/* 건강블로그 목록 */}
         {route.name === "health" && (
-          <HealthPostList category={route.category} searchQuery={searchQuery} />
+          <HealthPostList
+            category={route.category}
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+          />
         )}
 
         {route.name === "home" && (
           <>
-            {/* 새 글은 첫 화면에서 보여야 한다. 안쪽 경로에만 있으면
-                사이트가 관리되고 있는지 방문자가 알 수 없다. */}
-            <RecentPostsStrip />
-
             {activeTab === "catalog" && (
               <NutrientCatalog
                 nutrients={all100Nutrients}

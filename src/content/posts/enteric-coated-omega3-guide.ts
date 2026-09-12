@@ -169,6 +169,13 @@ export const post: HealthPost = {
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "장용성 코팅은 트림을 줄일 뿐 흡수율과는 별개입니다. 흡수에 더 직접 영향을 주는 rTG 제형 여부를 코팅과 나눠서 확인할 때 참고할 만합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "coffee-nutrient-absorption", "supplement-label-reading"],
 };

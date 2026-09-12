@@ -169,5 +169,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c", "vit-d3", "mineral-zn", "gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "편식으로 채소·과일 섭취가 부족한 아이라면 채워볼 항목입니다. '먹이면 안 아프다'는 기대보다 결핍을 메운다는 관점으로 접근하는 것이 이 글의 요지입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "균주·균수에 따라 결과가 갈리는 성분이라, 권장 연령이 아이 나이에 맞고 균주명이 구체적으로 표기된 제품을 고르는 것이 중요합니다.",
+    },
+  ],
   relatedPostSlugs: ["vitamin-d-deficiency-korea", "zinc-intake-guide", "probiotics-how-to-choose"],
 };

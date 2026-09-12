@@ -135,5 +135,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3", "mineral-ca"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "완경 이행기와 남성의 대사 변화 모두에서 실내 생활로 부족해지기 쉬운 성분이라, 40대부터 미리 확인해 볼 만한 기준입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-ca",
+      reason: "골밀도 감소가 본격화되기 전인 40대에 비타민D와 함께 챙기면 이후 감소 속도를 관리하는 데 참고가 되는 성분입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "eye-strain-screen-lutein", "vitamin-d-deficiency-korea"],
 };

@@ -7,7 +7,7 @@ export const SITE = {
   name: "NutriFit (뉴트리핏)",
   publisher: "NutriFit 100 Clinical Nutrition",
   locale: "ko_KR",
-  healthSectionTitle: "건강정보",
+  healthSectionTitle: "건강블로그",
 } as const;
 
 export interface SeoHead {
@@ -149,11 +149,11 @@ export function buildHealthListSeo(
 
   return {
     title: isAll
-      ? `건강정보 — 영양소·증상·제형 가이드 | ${SITE.name}`
-      : `${label} 건강정보 모음 | ${SITE.name}`,
+      ? `건강블로그 — 영양소·증상·제형 가이드 | ${SITE.name}`
+      : `${label} 건강블로그 모음 | ${SITE.name}`,
     description: isAll
-      ? "증상별 케어, 영양소 완전정복, 영양제 고르는 법까지. 공공 영양기준과 해외 보건기관 자료를 근거로 정리한 건강정보 아카이브입니다."
-      : `${label} 주제로 정리한 건강정보 글 모음. 근거와 출처를 함께 밝힙니다.`,
+      ? "증상별 케어, 영양소 완전정복, 영양제 고르는 법까지. 공공 영양기준과 해외 보건기관 자료를 근거로 정리한 건강블로그 아카이브입니다."
+      : `${label} 주제로 정리한 건강블로그 글 모음. 근거와 출처를 함께 밝힙니다.`,
     canonical: url,
     ogType: "website",
     jsonLd: [

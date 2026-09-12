@@ -150,5 +150,16 @@ A 제품은 비타민C 수치만 보면 '더 고함량'처럼 보이지만, 비�
     },
   ],
   relatedNutrientIds: ["vit-a", "vit-d3", "mineral-zn"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "본문에서 지적하듯 국내에서 흔히 부족한 성분이라, '고함량'이라는 이름값보다 실제로 부족하기 쉬운 이 성분의 함량이 충분한지를 먼저 보는 편이 실용적입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-zn",
+      reason: "장기 고용량 섭취 시 구리 결핍으로 이어질 수 있다는 본문 내용대로, 상한섭취량 대비 함량을 명확히 확인할 수 있는 제품을 고를 때 참고할 성분입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "supplement-label-reading", "zinc-intake-guide"],
 };

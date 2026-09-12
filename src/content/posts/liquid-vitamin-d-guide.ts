@@ -176,5 +176,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "알약을 삼키기 어렵거나 용량을 방울 단위로 세밀하게 조절해야 하는 상황에서 참고할 수 있는 액상형 예시입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["vitamin-d-deficiency-korea", "supplement-label-reading", "omega3-rtg-vs-ee-form"],
 };

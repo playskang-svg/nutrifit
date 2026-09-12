@@ -148,5 +148,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "브랜드 인지도보다 1일 섭취량 기준 함량과 성분표가 우선이라는 이 글의 결론에 맞춰, 함량이 명확히 표기된 제품을 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["supplement-label-reading", "multivitamin-evidence"],
 };

@@ -42,7 +42,7 @@ const NAV_ITEMS: {
   /** 탭이 아니라 별도 경로인 항목 */
   href?: string;
 }[] = [
-  { id: "health", label: "건강정보", hint: "증상·영양소 해설 글", icon: Newspaper, href: "/health" },
+  { id: "health", label: "건강블로그", hint: "증상·영양소 해설 글", icon: Newspaper, href: "/health" },
   { id: "catalog", label: "100대 영양소 대백과", hint: "결핍 증상부터 최저가까지", icon: BookOpen },
   { id: "schedule", label: "복용 시간표", hint: "흡수 경쟁을 피하는 순서", icon: Clock },
   { id: "visualizer", label: "영양 상태 시각화", hint: "내 부족분을 그래프로", icon: BarChart3 },

@@ -148,5 +148,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "고용량을 고려한다면 몇 mg짜리인지보다 하루 몇 번 나눠 먹을지가 먼저입니다. 1회 함량이 명확해 나눠 먹기 계산이 쉬운 제품을 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["supplement-label-reading", "multivitamin-evidence", "mouth-ulcer-nutrition"],
 };

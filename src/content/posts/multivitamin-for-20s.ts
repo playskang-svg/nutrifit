@@ -152,5 +152,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "실내·야간 위주 생활로 비타민D가 부족해지기 쉬운 20대가 1일 섭취량 기준 함량을 확인할 때 참고할 수 있는 예시입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "vitamin-d-deficiency-korea", "iron-deficiency-anemia-korea"],
 };

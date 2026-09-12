@@ -176,5 +176,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b", "mineral-zn"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "유산균과 아연은 흡수 경로가 달라 함께 먹어도 무방한 것으로 알려져 있습니다. 장 건강 목적에 맞는 균주가 표기된 제품인지 먼저 확인합니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-zn",
+      reason: "아연을 공복에 먹고 속이 불편했다면 식후 복용으로 바꿔볼 수 있습니다. 상한섭취량을 넘는 고용량을 임의로 장기 복용하지 않는 것이 안전합니다.",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "zinc-intake-guide"],
 };

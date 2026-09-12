@@ -170,6 +170,13 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "액상형은 방울 수로 용량을 세밀하게 조절할 수 있어, 연령별 상한섭취량 범위 안에서 관리하기 쉬운 제형을 확인하는 참고 기준입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: [
     "vitamin-d-deficiency-korea",
     "daily-protein-intake",

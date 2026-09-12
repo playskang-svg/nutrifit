@@ -167,6 +167,17 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3", "mineral-ca"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "칼슘 흡수를 돕는 통로 역할을 하는 성분이라, 칼슘 보충에 앞서 비타민D 상태부터 확인하는 것이 이 글에서 설명한 순서입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-ca",
+      reason: "한 번에 500mg 이상 섭취하면 흡수율이 떨어진다고 알려져 있어, 하루 필요량을 나눠 먹을 수 있는 제품인지 확인하는 참고 기준입니다.",
+    },
+  ],
   relatedPostSlugs: [
     "vitamin-d-deficiency-korea",
     "night-leg-cramps-magnesium",

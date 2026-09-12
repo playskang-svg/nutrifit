@@ -165,5 +165,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "캡슐을 문제없이 삼킬 수 있는지, 장용코팅 여부가 표기되어 있는지를 먼저 확인하고, 삼키기 어렵다면 코팅 없이도 설계된 분말·츄어블형을 고려할 수 있습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

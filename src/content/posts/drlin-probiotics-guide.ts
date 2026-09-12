@@ -159,5 +159,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "브랜드명보다 뒷면 표기가 우선입니다. 균주명이 속·종·균주까지 적혀 있고 보장균수와 코팅 방식이 명시된 제품인지 직접 확인하고 고르는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading", "lacto-500-probiotics-guide"],
 };

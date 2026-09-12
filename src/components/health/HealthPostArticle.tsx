@@ -53,7 +53,7 @@ export const HealthPostArticle: React.FC<HealthPostArticleProps> = ({
       <nav aria-label="이동 경로" className="flex items-center gap-1 text-xs text-slate-500 mb-4 flex-wrap">
         <a {...linkProps("/")} className="hover:text-emerald-700">홈</a>
         <ChevronRight className="w-3 h-3" />
-        <a {...linkProps("/health")} className="hover:text-emerald-700">건강정보</a>
+        <a {...linkProps("/health")} className="hover:text-emerald-700">건강블로그</a>
         <ChevronRight className="w-3 h-3" />
         <a {...linkProps(`/health/c/${post.category}`)} className="hover:text-emerald-700">
           {category?.label}
@@ -313,7 +313,7 @@ export const HealthPostArticle: React.FC<HealthPostArticleProps> = ({
           className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-emerald-700"
         >
           <ArrowLeft className="w-4 h-4" />
-          건강정보 목록으로
+          건강블로그 목록으로
         </a>
       </div>
     </div>

@@ -155,5 +155,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "구미형이라면 하루 정해진 섭취 개수와 당류 함량, 연령대 표시가 명확한 제품인지부터 확인하는 참고 기준입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["iron-deficiency-anemia-korea", "vitamin-d-deficiency-korea", "multivitamin-evidence"],
 };

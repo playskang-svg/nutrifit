@@ -152,5 +152,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "비타민 위주 제품에도 흔히 포함되는 성분이라, 미네랄 포함 여부와 별개로 1일 섭취량 기준 함량이 표시되어 있는지 확인하는 참고 예시로 들 수 있습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["supplement-label-reading", "zinc-intake-guide", "multivitamin-evidence"],
 };

@@ -145,5 +145,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "비타민D와 같은 시간에 먹어도 흡수를 방해하지 않는 성분입니다. 기름기 있는 식사 직후로 타이밍을 맞추면 두 성분 모두 무리 없이 흡수된다는 이 글의 결론에 맞춰 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["vitamin-d-deficiency-korea", "supplement-label-reading"],
 };

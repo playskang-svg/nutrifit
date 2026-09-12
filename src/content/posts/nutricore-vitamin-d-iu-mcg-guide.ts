@@ -177,6 +177,13 @@ mg(밀리그램)과 μg(마이크로그램)은 1,000배 차이가 납니다. 비
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "IU와 mcg 표기를 1μg=40IU 공식으로 환산해 상한섭취량과 나란히 놓고 비교해 보는 계산 예시로 참고할 수 있습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: [
     "vitamin-d-deficiency-korea",
     "supplement-label-reading",

@@ -173,5 +173,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["mineral-zn", "mineral-se"],
+  productPicks: [
+    {
+      nutrientId: "mineral-zn",
+      reason: "상한(35mg)에 가깝지 않은 함량인지 먼저 확인하고, 장기 고용량으로 구리 결핍을 유발하지 않는 수준의 제품을 고를 때 참고할 성분입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-se",
+      reason: "μg 단위를 다시 확인해야 한다고 본문이 강조한 성분입니다. 상한(400μg)과 브라질너트 등 식품 섭취량까지 함께 고려해 고르는 것이 안전합니다.",
+    },
+  ],
   relatedPostSlugs: ["zinc-intake-guide", "supplement-label-reading"],
 };

@@ -143,5 +143,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "YT1처럼 균주명 끝에 붙는 코드까지 표기되어 있어야 그 균주를 대상으로 한 구체적인 연구를 확인할 수 있습니다. 균주 코드와 보장균수가 함께 표기된 제품을 고르는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "lacto-500-probiotics-guide", "supplement-label-reading"],
 };

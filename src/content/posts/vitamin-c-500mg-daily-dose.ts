@@ -153,5 +153,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "권장섭취량보다는 넉넉하면서 상한섭취량과는 거리가 있는 500mg대는 매일 복용에 부담이 적은 지점입니다. 이 글이 말하는 '무난한 표준 용량'에 맞춰 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["supplement-label-reading", "mouth-ulcer-nutrition"],
 };

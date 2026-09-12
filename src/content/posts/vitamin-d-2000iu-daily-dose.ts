@@ -172,6 +172,13 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "실내 생활이 많거나 평소 식습관으로 채우기 어려운 성인에게 2,000IU 수준이 현실적인 선택지로 언급되는 경우가 많다는 이 글의 기준을 참고할 수 있는 예시입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: [
     "vitamin-d-deficiency-korea",
     "supplement-label-reading",

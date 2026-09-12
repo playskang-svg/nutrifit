@@ -168,5 +168,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "학령기 아이에게는 성인용을 나눠 먹이기보다 연령별 1일 섭취량이 표기된 어린이용 제품이 안전합니다. 붉은 살코기를 잘 안 먹어 철분 흡수가 걱정되는 아이에게도 함께 볼 수 있는 항목으로 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["mouth-ulcer-nutrition", "daily-protein-intake"],
 };

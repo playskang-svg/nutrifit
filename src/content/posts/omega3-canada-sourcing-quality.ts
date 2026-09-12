@@ -160,6 +160,13 @@ export const post: HealthPost = {
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "원산지·어종은 참고 정보일 뿐이므로, 실제 선택은 EPA+DHA 합계와 중금속·산패 검사 결과 공개 여부로 판단하는 것이 안전합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-made-in-canada-label", "omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

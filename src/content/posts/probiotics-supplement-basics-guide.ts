@@ -170,5 +170,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "균주 비교를 마쳤다면 그다음은 복용 시점과 보관입니다. 포장에 표기된 복용 시점(식전·식후)과 보관 조건(냉장·실온)을 지킬 수 있는 제품인지 확인하는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading", "shift-work-nutrition"],
 };

@@ -162,5 +162,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b", "mineral-zn"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "이 나이는 캡슐을 그대로 삼키기 어려운 경우가 많아, 분말·물약 등 안전하게 섭취할 수 있는 형태와 연령별 1일 섭취량이 표기된 제품인지 먼저 확인합니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-zn",
+      reason: "단체생활 초기 감기가 잦거나 편식이 걱정된다면, 유산균과 별개로 아연 섭취 상태도 함께 점검해 볼 수 있습니다.",
+    },
+  ],
   relatedPostSlugs: ["elementary-school-kids-probiotics-guide", "probiotics-how-to-choose", "zinc-intake-guide"],
 };

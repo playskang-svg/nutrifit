@@ -154,6 +154,13 @@ export const post: HealthPost = {
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "캡슐당 EPA+DHA 합계를 높여 캡슐 수를 줄인 설계인지 확인하고, 하루 총합이 인정 범위(0.5~2g) 안에 있는지로 판단하는 것이 실용적입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "multivitamin-evidence"],
 };

@@ -182,5 +182,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "영아용과는 균주 구성과 목적이 다릅니다. 단체생활로 인한 감염 노출과 편식 시기에 맞는, 아이가 실제로 먹을 수 있는 제형(츄어블·가루·액상)인지를 함께 확인합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

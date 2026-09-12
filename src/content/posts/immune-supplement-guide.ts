@@ -174,5 +174,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c", "vit-d3", "mineral-zn", "gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "실내 생활이 많은 사람에게 부족해지기 쉬운 성분입니다. '면역력을 높인다'는 문구보다 결핍을 채운다는 관점으로 접근할 항목으로 골랐습니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-zn",
+      reason: "상한섭취량이 35mg으로 폭이 좁아 다른 제품과 중복되기 쉬운 성분입니다. 종합비타민·유산균 제품과 함께 먹는다면 함량부터 더해 보는 것이 순서에 맞습니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "supplement-label-reading", "probiotics-how-to-choose"],
 };
