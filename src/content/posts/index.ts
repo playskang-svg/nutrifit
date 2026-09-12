@@ -116,6 +116,101 @@ import { post as yogurtProbioticsLabelGuide } from "./yogurt-probiotics-label-gu
 import { post as yt1ProbioticsStrainGuide } from "./yt1-probiotics-strain-guide";
 import { post as zincSeleniumImmuneMinerals } from "./zinc-selenium-immune-minerals";
 
+/* --- 2026-09-13 환절기 증상·연령대·성별·성분 골든키워드 배치 (93건) --- */
+import { post as aliveMultivitaminLabelReading } from "./alive-multivitamin-label-reading";
+import { post as allInOneMultivitaminForMen } from "./all-in-one-multivitamin-for-men";
+import { post as alopeciaAreataNutritionGuide } from "./alopecia-areata-nutrition-guide";
+import { post as arginineWorkoutTimingGuide } from "./arginine-workout-timing-guide";
+import { post as atomyLuteinLabelGuide } from "./atomy-lutein-label-guide";
+import { post as babyMouthUlcerSprayGuide } from "./baby-mouth-ulcer-spray-guide";
+import { post as biotinHairLossSupplementGuide } from "./biotin-hair-loss-supplement-guide";
+import { post as bronchitisNutritionGuide } from "./bronchitis-nutrition-guide";
+import { post as calciumSupplementFormAbsorptionGuide } from "./calcium-supplement-form-absorption-guide";
+import { post as celebrityMenopauseSupplementCheck } from "./celebrity-menopause-supplement-check";
+import { post as chocolateProteinFlavorGuide } from "./chocolate-protein-flavor-guide";
+import { post as collagen30sUvPreventionGuide } from "./collagen-30s-uv-prevention-guide";
+import { post as collagen50sElasticityGuide } from "./collagen-50s-elasticity-guide";
+import { post as collagenOriginLabelChecklist } from "./collagen-origin-label-checklist";
+import { post as collagenVitaminCComboLabelGuide } from "./collagen-vitamin-c-combo-label-guide";
+import { post as coq10UbiquinolVsUbiquinone } from "./coq10-ubiquinol-vs-ubiquinone";
+import { post as doctorinLuteinZeaxanthinRatioGuide } from "./doctorin-lutein-zeaxanthin-ratio-guide";
+import { post as doctorsbestMsmLabelGuide } from "./doctorsbest-msm-label-guide";
+import { post as dryEyeSupplementGuide } from "./dry-eye-supplement-guide";
+import { post as drySkinNutrientCauses } from "./dry-skin-nutrient-causes";
+import { post as earlyPregnancyNutritionGuide } from "./early-pregnancy-nutrition-guide";
+import { post as elenaProbioticsStrainCfuCheck } from "./elena-probiotics-strain-cfu-check";
+import { post as essentialNutrients50s } from "./essential-nutrients-50s";
+import { post as eyelidTwitchingMagnesiumLink } from "./eyelid-twitching-magnesium-link";
+import { post as folicAcidPregnancyTimingDosage } from "./folic-acid-pregnancy-timing-dosage";
+import { post as glucosamineMsmCombinationGuide } from "./glucosamine-msm-combination-guide";
+import { post as glutathioneBenefitsAndLimits } from "./glutathione-benefits-and-limits";
+import { post as gncMilkThistleLabelGuide } from "./gnc-milk-thistle-label-guide";
+import { post as gutHealthSupplementBuyingGuide } from "./gut-health-supplement-buying-guide";
+import { post as highContentVitaminCLabelGuide } from "./high-content-vitamin-c-label-guide";
+import { post as highSchoolMultivitaminGuide } from "./high-school-multivitamin-guide";
+import { post as infantIronDeficiencyGuide } from "./infant-iron-deficiency-guide";
+import { post as infantMagnesiumSafetyGuide } from "./infant-magnesium-safety-guide";
+import { post as jointCollagenTypeGuide } from "./joint-collagen-type-guide";
+import { post as kidsIronPickyEaterGuide } from "./kids-iron-picky-eater-guide";
+import { post as kidsRhinitisProbioticsGuide } from "./kids-rhinitis-probiotics-guide";
+import { post as lactoseFreeProteinPowderGuide } from "./lactose-free-protein-powder-guide";
+import { post as liposomalGlutathioneAbsorption } from "./liposomal-glutathione-absorption";
+import { post as liquidMagnesiumAbsorptionGuide } from "./liquid-magnesium-absorption-guide";
+import { post as magnesiumPricePerDayGuide } from "./magnesium-price-per-day-guide";
+import { post as maleMenopauseAndropauseNutrients } from "./male-menopause-andropause-nutrients";
+import { post as menopauseCollagenEstrogenGuide } from "./menopause-collagen-estrogen-guide";
+import { post as menopauseHormoneSupportNutrients } from "./menopause-hormone-support-nutrients";
+import { post as menopauseProbioticsGuide } from "./menopause-probiotics-guide";
+import { post as menopauseWomenNutrientsGuide } from "./menopause-women-nutrients-guide";
+import { post as milkThistleSilymarinBuyingGuide } from "./milk-thistle-silymarin-buying-guide";
+import { post as multivitaminAllInOne40s } from "./multivitamin-all-in-one-40s";
+import { post as multivitaminFor30s } from "./multivitamin-for-30s";
+import { post as multivitaminMen30s } from "./multivitamin-men-30s";
+import { post as multivitaminMen40s } from "./multivitamin-men-40s";
+import { post as multivitaminMen50s } from "./multivitamin-men-50s";
+import { post as multivitaminWomen30s } from "./multivitamin-women-30s";
+import { post as multivitaminWomen40s } from "./multivitamin-women-40s";
+import { post as multivitaminWomen50s } from "./multivitamin-women-50s";
+import { post as nitricOxideSupplementIngredients } from "./nitric-oxide-supplement-ingredients";
+import { post as nkCellImmuneNutrients } from "./nk-cell-immune-nutrients";
+import { post as nonHemeIronAbsorptionGuide } from "./non-heme-iron-absorption-guide";
+import { post as nowVitaminDIuMcgLabelGuide } from "./now-vitamin-d-iu-mcg-label-guide";
+import { post as nutricoreGlutathioneLabelGuide } from "./nutricore-glutathione-label-guide";
+import { post as nutricostProteinLabelGuide } from "./nutricost-protein-label-guide";
+import { post as omega3For50sVascularCognitive } from "./omega3-for-50s-vascular-cognitive";
+import { post as omega3ForMenIn30s } from "./omega3-for-men-in-30s";
+import { post as optimsmPatentedIngredientGuide } from "./optimsm-patented-ingredient-guide";
+import { post as oralHairLossNutrientsGuide } from "./oral-hair-loss-nutrients-guide";
+import { post as pharmacistRecommendedMagnesiumLabelCheck } from "./pharmacist-recommended-magnesium-label-check";
+import { post as plantBasedProteinPowderGuide } from "./plant-based-protein-powder-guide";
+import { post as pntMagnesiumIngredientGuide } from "./pnt-magnesium-ingredient-guide";
+import { post as probioticsFor30sStressGut } from "./probiotics-for-30s-stress-gut";
+import { post as proteinFor50sMuscleLossPrevention } from "./protein-for-50s-muscle-loss-prevention";
+import { post as proteinPowderContainerSizeStorageGuide } from "./protein-powder-container-size-storage-guide";
+import { post as proteinPowderSupplementBasics } from "./protein-powder-supplement-basics";
+import { post as proteinPowderTextureMixabilityGuide } from "./protein-powder-texture-mixability-guide";
+import { post as rhinitisProbioticsGutImmune } from "./rhinitis-probiotics-gut-immune";
+import { post as runnyNoseNutrition } from "./runny-nose-nutrition";
+import { post as scalpHairLossNutrientsGuide } from "./scalp-hair-loss-nutrients-guide";
+import { post as seasonalAtopicDermatitisFlare } from "./seasonal-atopic-dermatitis-flare";
+import { post as seasonalBodyAchesNutrition } from "./seasonal-body-aches-nutrition";
+import { post as seasonalDrySkinNutrition } from "./seasonal-dry-skin-nutrition";
+import { post as seasonalHerbalTeaGuide } from "./seasonal-herbal-tea-guide";
+import { post as seasonalHivesNutrition } from "./seasonal-hives-nutrition";
+import { post as seasonalNutritionGuide } from "./seasonal-nutrition-guide";
+import { post as seasonalOtitisMediaChildren } from "./seasonal-otitis-media-children";
+import { post as seasonalPhlegmCoughNutrition } from "./seasonal-phlegm-cough-nutrition";
+import { post as seasonalSoreThroatNutrition } from "./seasonal-sore-throat-nutrition";
+import { post as seasonalTonsillitisNutrition } from "./seasonal-tonsillitis-nutrition";
+import { post as taurineEnergyDrinkContent } from "./taurine-energy-drink-content";
+import { post as toddlerRhinitisNutritionGuide } from "./toddler-rhinitis-nutrition-guide";
+import { post as trueenOmega3RtgEpaDhaCheck } from "./trueen-omega3-rtg-epa-dha-check";
+import { post as ultraLowMolecularCollagenDaltonGuide } from "./ultra-low-molecular-collagen-dalton-guide";
+import { post as wheyProteinHydrolysateAbsorptionGuide } from "./whey-protein-hydrolysate-absorption-guide";
+import { post as wheyProteinIsolateWpcWphComparison } from "./whey-protein-isolate-wpc-wph-comparison";
+import { post as womensReproductiveHealthNutrients } from "./womens-reproductive-health-nutrients";
+import { post as yeongnongMagnesiumIngredientGuide } from "./yeongnong-magnesium-ingredient-guide";
+
 const registry: HealthPost[] = [
   nightLegCrampsMagnesium,
   vitaminDDeficiencyKorea,
@@ -225,6 +320,99 @@ const registry: HealthPost[] = [
   yogurtProbioticsLabelGuide,
   yt1ProbioticsStrainGuide,
   zincSeleniumImmuneMinerals,
+  aliveMultivitaminLabelReading,
+  allInOneMultivitaminForMen,
+  alopeciaAreataNutritionGuide,
+  arginineWorkoutTimingGuide,
+  atomyLuteinLabelGuide,
+  babyMouthUlcerSprayGuide,
+  biotinHairLossSupplementGuide,
+  bronchitisNutritionGuide,
+  calciumSupplementFormAbsorptionGuide,
+  celebrityMenopauseSupplementCheck,
+  chocolateProteinFlavorGuide,
+  collagen30sUvPreventionGuide,
+  collagen50sElasticityGuide,
+  collagenOriginLabelChecklist,
+  collagenVitaminCComboLabelGuide,
+  coq10UbiquinolVsUbiquinone,
+  doctorinLuteinZeaxanthinRatioGuide,
+  doctorsbestMsmLabelGuide,
+  dryEyeSupplementGuide,
+  drySkinNutrientCauses,
+  earlyPregnancyNutritionGuide,
+  elenaProbioticsStrainCfuCheck,
+  essentialNutrients50s,
+  eyelidTwitchingMagnesiumLink,
+  folicAcidPregnancyTimingDosage,
+  glucosamineMsmCombinationGuide,
+  glutathioneBenefitsAndLimits,
+  gncMilkThistleLabelGuide,
+  gutHealthSupplementBuyingGuide,
+  highContentVitaminCLabelGuide,
+  highSchoolMultivitaminGuide,
+  infantIronDeficiencyGuide,
+  infantMagnesiumSafetyGuide,
+  jointCollagenTypeGuide,
+  kidsIronPickyEaterGuide,
+  kidsRhinitisProbioticsGuide,
+  lactoseFreeProteinPowderGuide,
+  liposomalGlutathioneAbsorption,
+  liquidMagnesiumAbsorptionGuide,
+  magnesiumPricePerDayGuide,
+  maleMenopauseAndropauseNutrients,
+  menopauseCollagenEstrogenGuide,
+  menopauseHormoneSupportNutrients,
+  menopauseProbioticsGuide,
+  menopauseWomenNutrientsGuide,
+  milkThistleSilymarinBuyingGuide,
+  multivitaminAllInOne40s,
+  multivitaminFor30s,
+  multivitaminMen30s,
+  multivitaminMen40s,
+  multivitaminMen50s,
+  multivitaminWomen30s,
+  multivitaminWomen40s,
+  multivitaminWomen50s,
+  nitricOxideSupplementIngredients,
+  nkCellImmuneNutrients,
+  nonHemeIronAbsorptionGuide,
+  nowVitaminDIuMcgLabelGuide,
+  nutricoreGlutathioneLabelGuide,
+  nutricostProteinLabelGuide,
+  omega3For50sVascularCognitive,
+  omega3ForMenIn30s,
+  optimsmPatentedIngredientGuide,
+  oralHairLossNutrientsGuide,
+  pharmacistRecommendedMagnesiumLabelCheck,
+  plantBasedProteinPowderGuide,
+  pntMagnesiumIngredientGuide,
+  probioticsFor30sStressGut,
+  proteinFor50sMuscleLossPrevention,
+  proteinPowderContainerSizeStorageGuide,
+  proteinPowderSupplementBasics,
+  proteinPowderTextureMixabilityGuide,
+  rhinitisProbioticsGutImmune,
+  runnyNoseNutrition,
+  scalpHairLossNutrientsGuide,
+  seasonalAtopicDermatitisFlare,
+  seasonalBodyAchesNutrition,
+  seasonalDrySkinNutrition,
+  seasonalHerbalTeaGuide,
+  seasonalHivesNutrition,
+  seasonalNutritionGuide,
+  seasonalOtitisMediaChildren,
+  seasonalPhlegmCoughNutrition,
+  seasonalSoreThroatNutrition,
+  seasonalTonsillitisNutrition,
+  taurineEnergyDrinkContent,
+  toddlerRhinitisNutritionGuide,
+  trueenOmega3RtgEpaDhaCheck,
+  ultraLowMolecularCollagenDaltonGuide,
+  wheyProteinHydrolysateAbsorptionGuide,
+  wheyProteinIsolateWpcWphComparison,
+  womensReproductiveHealthNutrients,
+  yeongnongMagnesiumIngredientGuide,
 ];
 /* --- 등록부 끝 ---------------------------------------------------- */
 
