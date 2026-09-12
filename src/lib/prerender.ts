@@ -14,6 +14,7 @@ import { getCategoryLabel, postCategories } from "../content/postCategories";
 import { allPosts, formatPostDate } from "../content/posts";
 import { allPages, indexablePages } from "../content/pages";
 import { all100Nutrients } from "../data/nutrientsAll";
+import { COUPANG_DISCLOSURE, AFFILIATE_DISCLOSURE } from "../data/affiliateLinks";
 
 /**
  * 워커가 /health/* 요청에 대해 index.html 을 가공해 내려주기 위한 도구 모음.
@@ -79,6 +80,7 @@ export function renderPostShell(post: HealthPost): string {
   <article>
     <h1>${escapeHtml(post.title)}</h1>
     <p>${escapeHtml(post.author.name)} · ${formatPostDate(post.publishedAt)} · ${post.readingMinutes}분</p>
+    <p>${escapeHtml(COUPANG_DISCLOSURE)} ${escapeHtml(AFFILIATE_DISCLOSURE)}</p>
     <p>${escapeHtml(post.summary)}</p>
     ${keyPoints}
     <div class="post-body">${renderMarkdown(post.body)}</div>
@@ -107,6 +109,7 @@ export function renderListShell(category: string, posts: HealthPost[]): string {
   return `<div id="prerender">
   <nav><a href="/">홈</a> › <a href="/health">건강블로그</a></nav>
   <h1>${escapeHtml(label)}</h1>
+  <p>${escapeHtml(COUPANG_DISCLOSURE)} ${escapeHtml(AFFILIATE_DISCLOSURE)}</p>
   <nav><ul>${categoryLinks}</ul></nav>
   <ul>${items || "<li>발행된 글이 없습니다.</li>"}</ul>
 </div>`;
