@@ -17,7 +17,7 @@ import { getCategory, getAccent } from "../../content/postCategories";
 import { getRelatedPosts, formatPostDate } from "../../content/posts";
 import { linkProps } from "../../lib/router";
 import { ProductPickCard } from "./ProductPickCard";
-import { COUPANG_DISCLOSURE, LINKPRICE_DISCLOSURE } from "../../data/affiliateLinks";
+import { COUPANG_DISCLOSURE, LINKPRICE_DISCLOSURE, AFFILIATE_DISCLOSURE } from "../../data/affiliateLinks";
 
 interface HealthPostArticleProps {
   post: HealthPost;
@@ -97,6 +97,13 @@ export const HealthPostArticle: React.FC<HealthPostArticleProps> = ({
             </div>
           </div>
         </header>
+
+        {/* 제휴·수익 고지 — 글 상단에서 바로 보여야 한다. 아래 제품 카드 옆 고지와 별개로,
+            이 페이지가 대부분의 방문자가 처음 도착하는 화면이라 본문 읽기 전에 밝힌다. */}
+        <p className="flex items-start gap-2 text-[11.5px] leading-relaxed text-slate-500 bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2.5 mb-8">
+          <ShieldAlert className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
+          <span>{COUPANG_DISCLOSURE} {AFFILIATE_DISCLOSURE}</span>
+        </p>
 
         {/* 핵심 요약 */}
         {post.keyPoints.length ? (

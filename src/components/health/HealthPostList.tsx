@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Clock, Newspaper, Search, ArrowRight, X } from "lucide-react";
+import { Clock, Newspaper, Search, ArrowRight, X, ShieldAlert } from "lucide-react";
 import { HealthPost, PostCategorySlug } from "../../types";
 import { postCategories, getCategory, getAccent } from "../../content/postCategories";
 import {
@@ -10,6 +10,7 @@ import {
   formatPostDate,
 } from "../../content/posts";
 import { getKeywordGroups, postsInGroup } from "../../content/keywordGroups";
+import { COUPANG_DISCLOSURE, AFFILIATE_DISCLOSURE } from "../../data/affiliateLinks";
 import { linkProps } from "../../lib/router";
 
 interface HealthPostListProps {
@@ -154,6 +155,12 @@ export const HealthPostList: React.FC<HealthPostListProps> = ({
           )}
         </div>
       </div>
+
+      {/* 제휴·수익 고지 — 이 섹션에 들어오면 목록이든 글이든 가장 먼저 보여야 한다 */}
+      <p className="flex items-start gap-2 text-[11.5px] leading-relaxed text-slate-500 bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2.5">
+        <ShieldAlert className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
+        <span>{COUPANG_DISCLOSURE} {AFFILIATE_DISCLOSURE}</span>
+      </p>
 
       {/* 키워드별 모아보기 — 카테고리보다 촘촘한 성분·주제 단위 */}
       {groups.length > 0 && (
