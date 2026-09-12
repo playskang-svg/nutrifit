@@ -3,15 +3,13 @@
   "label": "뉴트리핏",
   "domain": "nutrifit.kr",
   "repo": "playskang-svg/nutrifit",
-  "scannedAt": "2026-09-12T01:10:22.809Z",
-  "pagesCrawled": 28,
+  "scannedAt": "2026-09-10T03:06:35.686Z",
+  "pagesCrawled": 8,
   "sitemapUrls": 28,
-  "externalChecked": 36,
+  "externalChecked": 0,
   "summary": {
-    "medium": 1,
-    "low": 18
+    "medium": 1
   },
-  "occurrences": 19,
   "findings": [
     {
       "severity": "medium",
@@ -19,171 +17,8 @@
       "page": "https://nutrifit.kr",
       "links": 24,
       "note": "nav/header/footer도 role=navigation도 없다. 링크는 있으나 메뉴 구조를 기계가 못 읽는다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/night-leg-cramps-magnesium",
-      "href": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional",
-      "status": 500,
-      "error": null,
-      "note": "500 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/night-leg-cramps-magnesium",
-      "href": "https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/vitamin-d-deficiency-korea",
-      "href": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional",
-      "status": 0,
-      "error": "The operation was aborted due to timeout",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/omega3-rtg-vs-ee-form",
-      "href": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional",
-      "status": 0,
-      "error": "The operation was aborted due to timeout",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/omega3-rtg-vs-ee-form",
-      "href": "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/always-tired-iron-b12",
-      "href": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional",
-      "status": 500,
-      "error": null,
-      "note": "500 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/always-tired-iron-b12",
-      "href": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional",
-      "status": 0,
-      "error": "The operation was aborted due to timeout",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/supplement-label-reading",
-      "href": "https://www.foodsafetykorea.go.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/supplement-label-reading",
-      "href": "https://ods.od.nih.gov/factsheets/WYNTK-Consumer",
-      "status": 0,
-      "error": "The operation was aborted due to timeout",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/probiotics-how-to-choose",
-      "href": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional",
-      "status": 500,
-      "error": null,
-      "note": "500 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/mouth-ulcer-nutrition",
-      "href": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional",
-      "status": 500,
-      "error": null,
-      "note": "500 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/mouth-ulcer-nutrition",
-      "href": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional",
-      "status": 0,
-      "error": "The operation was aborted due to timeout",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/zinc-intake-guide",
-      "href": "https://ods.od.nih.gov/factsheets/Copper-HealthProfessional",
-      "status": 500,
-      "error": null,
-      "note": "500 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/coffee-nutrient-absorption",
-      "href": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional",
-      "status": 0,
-      "error": "The operation was aborted due to timeout",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/multivitamin-evidence",
-      "href": "https://ods.od.nih.gov/factsheets/MVMS-HealthProfessional",
-      "status": 0,
-      "error": "The operation was aborted due to timeout",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/privacy",
-      "href": "https://www.aboutads.info/choices",
-      "status": 429,
-      "error": null,
-      "note": "429 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/privacy",
-      "href": "https://privacy.kisa.or.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/privacy",
-      "href": "https://www.kopico.go.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
     }
   ],
-  "detail": {},
   "autoFixable": [
     "dead-anchor",
     "empty-href",
