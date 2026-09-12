@@ -173,5 +173,12 @@ GMP 같은 제조 인증은 '깨끗하고 일관되게 만들어졌다'는 신�
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "전문성을 강조하는 문구보다, 임상 근거가 실제로 이 제품에 들어간 균주와 용량으로 진행된 것인지, 보장균수가 표기되어 있는지를 확인하는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

@@ -134,5 +134,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "지용성이라 오일 성분과 함께일 때 흡수가 유리한 것으로 알려져 있어, 연질캡슐처럼 기유를 담은 제형을 고를 때 참고할 수 있는 예시입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading", "multivitamin-evidence"],
 };

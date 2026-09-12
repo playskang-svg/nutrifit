@@ -155,5 +155,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3", "vit-b-complex"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "식사만으로 채우기 어려워 기준치 100% 안팎으로 설계되는 대표 성분이라, 함량 비율을 확인하는 예시로 참고할 수 있습니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "vit-b-complex",
+      reason: "에너지 대사에 관여하는 수용성 비타민이라 과잉분은 대체로 배출되는 것으로 알려져, B군 구성이 골고루 포함되어 있는지 확인하는 참고 기준입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "supplement-label-reading", "vitamin-d-deficiency-korea"],
 };

@@ -169,6 +169,13 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "브랜드보다 원료명이 콜레칼시페롤(D3)인지, 기유가 지용성인지부터 확인하는 이 글의 기준으로 참고할 수 있는 예시입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: [
     "vitamin-d-deficiency-korea",
     "supplement-label-reading",

@@ -142,5 +142,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "메가도스 요법의 논쟁과 별개로, 결핍을 채우는 근거가 확실한 것은 상한섭취량 이내의 섭취입니다. 논쟁적인 초고용량 대신 안전선 안에서 관리할 수 있는 제품을 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "iron-deficiency-anemia-korea", "mouth-ulcer-nutrition"],
 };

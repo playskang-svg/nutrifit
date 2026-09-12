@@ -163,6 +163,13 @@ export const post: HealthPost = {
       url: "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "IFOS 등 제3기관 검사 성적과 로트별 함량 표기를 공개해, 이 글에서 다룬 비교 기준을 그대로 적용해 볼 수 있는 제품입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading", "multivitamin-evidence"],
 };

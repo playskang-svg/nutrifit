@@ -165,6 +165,13 @@ rTG 여부만 확인하고 이 세 가지를 놓치면 오히려 손해일 수 �
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "원재료명에 재에스터화(rTG) 표기가 구체적으로 명시된 제품입니다. '알티지급' 같은 모호한 표현이 아니라 표시사항으로 직접 확인하고 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading", "multivitamin-evidence"],
 };

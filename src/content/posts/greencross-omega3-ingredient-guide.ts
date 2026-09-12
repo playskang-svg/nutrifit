@@ -154,6 +154,13 @@ export const post: HealthPost = {
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "제약회사 브랜드라도 제형(rTG/EE) 표시 기준은 동일합니다. 브랜드 이미지와 무관하게 rTG 표기와 EPA+DHA 합계를 직접 대조해보세요.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading", "multivitamin-evidence"],
 };

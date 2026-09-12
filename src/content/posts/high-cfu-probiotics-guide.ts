@@ -172,5 +172,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "숫자가 클수록 좋은 것은 아닙니다. 균수보다 균주가 목적에 맞는지, 보장균수와 보관 조건이 표기되어 있는지를 먼저 확인하는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "multivitamin-evidence"],
 };

@@ -148,5 +148,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "정제를 삼키기 힘든 사람에게 대안이 되는 젤리형입니다. 1일 섭취량 기준 함량과 당류 표기가 명확한 제품을 고르는 것이 이 글의 핵심입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["supplement-label-reading", "mouth-ulcer-nutrition"],
 };

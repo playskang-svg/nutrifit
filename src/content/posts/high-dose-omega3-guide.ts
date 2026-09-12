@@ -163,6 +163,13 @@ export const post: HealthPost = {
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "'고용량' 표기보다 라벨의 EPA+DHA 실제 합계 mg을 먼저 확인하고, 식약처 인정 범위(0.5~2g) 안에서 고르는 것이 기준입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "multivitamin-evidence", "supplement-label-reading"],
 };

@@ -172,5 +172,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "이름에 붙은 숫자보다 뒷면 표기가 우선입니다. 그 숫자가 보장균수인지, 어떤 균주로 구성되어 있는지를 확인한 제품을 고르는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

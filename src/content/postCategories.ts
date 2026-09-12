@@ -70,7 +70,7 @@ export function getCategory(slug: PostCategorySlug | string): PostCategory | und
 }
 
 export function getCategoryLabel(slug: PostCategorySlug | string): string {
-  return categoryMap.get(slug)?.label ?? "건강정보";
+  return categoryMap.get(slug)?.label ?? "건강블로그";
 }
 
 /** 카테고리 accent → Tailwind 클래스. 동적 클래스명은 Tailwind가 못 찾으므로 전부 나열한다. */

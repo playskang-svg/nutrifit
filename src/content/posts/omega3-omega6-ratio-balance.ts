@@ -145,6 +145,17 @@ export const post: HealthPost = {
       url: "https://health.kdca.go.kr",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "비율을 억지로 맞추기보다 오메가3 절대 섭취량을 늘리는 실천에 맞춰 고른 EPA+DHA 제품입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "fatty-gla",
+      reason: "보라지오일·달맞이꽃종자유 유래 GLA는 오메가6 계열이지만 리놀레산과 다른 대사 경로를 거쳐, 균형을 함께 고려할 때 참고할 수 있습니다.",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3", "fatty-gla"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

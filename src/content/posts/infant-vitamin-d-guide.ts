@@ -178,5 +178,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "완전 모유수유아처럼 보충이 권고되는 경우, 방울당 함량이 라벨에 명확히 표시된 영유아 전용 액상 제품인지 확인하는 참고 기준입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["vitamin-d-deficiency-korea", "supplement-label-reading", "multivitamin-evidence"],
 };

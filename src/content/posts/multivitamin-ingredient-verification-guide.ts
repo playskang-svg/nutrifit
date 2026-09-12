@@ -134,5 +134,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3", "mineral-mg"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "같은 성분명이라도 D2인지 D3인지에 따라 흡수율이 다르다고 보고되는 만큼, 원료 형태 표기부터 확인하는 이 글의 기준을 적용해 볼 수 있는 예시입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-mg",
+      reason: "산화마그네슘보다 구연산·글리시네이트 같은 킬레이트형이 흡수율 면에서 낫다고 알려져 있어, 원료 형태 표기를 확인하는 참고 기준입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "supplement-label-reading", "vitamin-d-deficiency-korea"],
 };

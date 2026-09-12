@@ -175,5 +175,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c", "mineral-zn"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "아연과 함께 먹어도 서로의 흡수를 방해하지 않는 성분입니다. 상한섭취량 폭이 넓어 상대적으로 여유 있게 관리할 수 있는 쪽으로 골랐습니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-zn",
+      reason: "상한섭취량이 35mg으로 폭이 좁아 다른 제품과 중복되기 쉬운 성분입니다. 비타민C보다 아연 함량을 먼저 계산해야 한다는 이 글의 요지에 맞춰 골랐습니다.",
+    },
+  ],
   relatedPostSlugs: ["zinc-intake-guide", "supplement-label-reading", "multivitamin-evidence"],
 };

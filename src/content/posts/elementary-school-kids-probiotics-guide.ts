@@ -175,5 +175,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b", "mineral-zn"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "성인용을 줄여 먹이지 않고, 연령별 1일 섭취량과 보장균수가 표기된 어린이 전용 제품인지가 먼저 확인할 기준입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-zn",
+      reason: "감기가 잦거나 편식이 걱정되는 시기라면, 유산균과 별개로 아연 섭취 상태도 함께 살펴볼 수 있습니다.",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "zinc-intake-guide", "supplement-label-reading"],
 };

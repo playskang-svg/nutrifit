@@ -156,6 +156,13 @@ rTG·EE·TG 제형 차이와 흡수율 논쟁은 임신 중에도 동일한 원�
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "EPA보다 DHA 비중을 높여 설계된 제형으로, 식약처 인정 범위(EPA+DHA 합 0.5~2g) 안에서 섭취량을 확인할 수 있습니다. 시작 전 산부인과 상담이 먼저입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "iron-deficiency-anemia-korea", "vitamin-d-deficiency-korea"],
 };

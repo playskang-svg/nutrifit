@@ -154,5 +154,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "광고 문구보다 1일 섭취량 기준 함량과 영양성분기준치 비율이 라벨에 표시되어 있는지부터 확인하는, 이 글에서 설명한 순서를 적용해 볼 수 있는 예시입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "supplement-label-reading", "zinc-intake-guide"],
 };

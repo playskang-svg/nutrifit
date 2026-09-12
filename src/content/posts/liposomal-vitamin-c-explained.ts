@@ -141,5 +141,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "고용량 섭취 시 위장 불편감이 심한 사람이 대안으로 고려해볼 만한 리포좀 제형입니다. 근거가 아직 소규모 연구 위주라는 점을 감안해 가격 대비 효용을 판단하는 것이 이 글의 결론입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["supplement-label-reading", "omega3-rtg-vs-ee-form", "mouth-ulcer-nutrition"],
 };

@@ -160,5 +160,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "유아기는 상한섭취량이 성인보다 훨씬 낮고, 구미형은 만 3세 이전 질식 위험이 있어 액상·가루형이 더 안전합니다. 연령별 용량이 명시된 유아용 제품을 기준으로 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["mouth-ulcer-nutrition", "daily-protein-intake"],
 };

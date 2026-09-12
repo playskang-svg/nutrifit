@@ -164,6 +164,13 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "해외 직구 제품처럼 캡슐당 함량이 높은 경우, 서빙 사이즈 표기를 확인해 실제 1일 섭취량을 계산해 보는 참고 예시입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: [
     "vitamin-d-deficiency-korea",
     "supplement-label-reading",

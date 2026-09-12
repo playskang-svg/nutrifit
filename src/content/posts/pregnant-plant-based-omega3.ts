@@ -162,6 +162,17 @@ DHA(도코사헥사엔산)는 뇌와 망막 조직을 구성하는 지방산으�
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-dha-brain",
+      reason: "algae oil 표기가 명확한 미세조류 유래 DHA 중심 제품으로, 생선 비린내나 수은 걱정 없이 임신 중 DHA를 채우기에 맞습니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "EPA도 함께 필요한 경우를 위한 생선 유래 대안입니다. 임신 중 새로 시작하기 전 산부인과 확인이 먼저입니다.",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3", "fatty-dha-brain"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "vitamin-d-deficiency-korea", "supplement-label-reading"],
 };

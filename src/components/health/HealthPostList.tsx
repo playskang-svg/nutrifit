@@ -1,5 +1,5 @@
-import React, { useMemo } from "react";
-import { Clock, Newspaper, Search, ArrowRight } from "lucide-react";
+import React, { useEffect, useMemo, useState } from "react";
+import { Clock, Newspaper, Search, ArrowRight, X } from "lucide-react";
 import { HealthPost, PostCategorySlug } from "../../types";
 import { postCategories, getCategory, getAccent } from "../../content/postCategories";
 import {
@@ -9,11 +9,13 @@ import {
   searchPosts,
   formatPostDate,
 } from "../../content/posts";
+import { getKeywordGroups, postsInGroup } from "../../content/keywordGroups";
 import { linkProps } from "../../lib/router";
 
 interface HealthPostListProps {
   category: PostCategorySlug | "all";
   searchQuery: string;
+  setSearchQuery?: (query: string) => void;
 }
 
 const PostCard: React.FC<{ post: HealthPost; featured?: boolean }> = ({ post, featured }) => {
@@ -82,16 +84,27 @@ const PostCard: React.FC<{ post: HealthPost; featured?: boolean }> = ({ post, fe
   );
 };
 
-export const HealthPostList: React.FC<HealthPostListProps> = ({ category, searchQuery }) => {
+export const HealthPostList: React.FC<HealthPostListProps> = ({
+  category,
+  searchQuery,
+  setSearchQuery,
+}) => {
   const counts = useMemo(() => getCategoryCounts(), []);
   const activeCategory = getCategory(category);
+  const [activeGroup, setActiveGroup] = useState<string | null>(null);
+  useEffect(() => setActiveGroup(null), [category]);
+
+  const categoryScoped = useMemo(() => getPostsByCategory(category), [category]);
+
+  const groups = useMemo(() => getKeywordGroups(categoryScoped), [categoryScoped]);
 
   const posts = useMemo(() => {
-    const scoped = getPostsByCategory(category);
+    let scoped = categoryScoped;
+    if (activeGroup) scoped = postsInGroup(scoped, activeGroup);
     if (!searchQuery.trim()) return scoped;
     const matched = new Set(searchPosts(searchQuery).map((post) => post.slug));
     return scoped.filter((post) => matched.has(post.slug));
-  }, [category, searchQuery]);
+  }, [categoryScoped, activeGroup, searchQuery]);
 
   const [lead, ...rest] = posts;
 
@@ -102,19 +115,83 @@ export const HealthPostList: React.FC<HealthPostListProps> = ({ category, search
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
             <Newspaper className="w-4 h-4" />
-            <span>NutriFit 건강정보</span>
+            <span>NutriFit 건강블로그</span>
           </div>
           <h1 className="text-2xl sm:text-[32px] font-black tracking-tight leading-tight mb-3">
             {activeCategory
               ? `${activeCategory.label} — ${activeCategory.tagline}`
-              : "증상에서 출발해 영양소로 끝내는 건강정보"}
+              : "증상에서 출발해 영양소로 끝내는 건강블로그"}
           </h1>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-slate-300 leading-relaxed mb-5">
             {activeCategory?.description ??
               "무엇이 부족한지, 왜 부족한지, 무엇부터 채워야 하는지. 공공 영양기준과 해외 보건기관 자료를 근거로 정리하고 출처를 함께 밝힙니다."}
           </p>
+
+          {/* 조그만 검색창 — 헤더 검색과 같은 함수를 쓴다. 이 페이지 안에서
+              바로 찾고 싶을 때 위까지 스크롤하지 않아도 되게. */}
+          {setSearchQuery && (
+            <div className="relative max-w-xs">
+              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="search"
+                inputMode="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="글 제목·성분 검색"
+                aria-label="건강블로그 글 검색"
+                className="w-full pl-8 pr-7 py-1.5 bg-white/10 hover:bg-white/15 focus:bg-white text-xs text-white focus:text-slate-900 placeholder-slate-400 focus:placeholder-slate-400 rounded-lg border border-white/20 focus:outline-none focus:ring-2 focus:ring-emerald-400/40 focus:border-emerald-400 transition-all"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  aria-label="검색어 지우기"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-300 hover:text-white"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
+          )}
         </div>
       </div>
+
+      {/* 키워드별 모아보기 — 카테고리보다 촘촘한 성분·주제 단위 */}
+      {groups.length > 0 && (
+        <div>
+          <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">
+            키워드별로 모아보기
+          </p>
+          <nav aria-label="키워드 그룹" className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+            <button
+              onClick={() => setActiveGroup(null)}
+              className={`shrink-0 px-3 py-1.5 rounded-full text-[12.5px] font-semibold border transition-colors ${
+                activeGroup === null
+                  ? "bg-slate-900 text-white border-slate-900"
+                  : "bg-white text-slate-600 border-slate-200 hover:border-slate-400"
+              }`}
+            >
+              전체
+            </button>
+            {groups.map((group) => (
+              <button
+                key={group.id}
+                onClick={() => setActiveGroup(activeGroup === group.id ? null : group.id)}
+                className={`shrink-0 flex items-center gap-1 px-3 py-1.5 rounded-full text-[12.5px] font-semibold border transition-colors ${
+                  activeGroup === group.id
+                    ? "bg-emerald-700 text-white border-emerald-700"
+                    : "bg-white text-slate-600 border-slate-200 hover:border-slate-400"
+                }`}
+              >
+                <span aria-hidden="true">{group.emoji}</span>
+                {group.label}
+                <span className={activeGroup === group.id ? "text-emerald-200" : "text-slate-400"}>
+                  {group.count}
+                </span>
+              </button>
+            ))}
+          </nav>
+        </div>
+      )}
 
       {/* 카테고리 필터 */}
       <nav aria-label="카테고리" className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
@@ -156,7 +233,9 @@ export const HealthPostList: React.FC<HealthPostListProps> = ({ category, search
           <p className="text-sm text-slate-500">
             {searchQuery
               ? `'${searchQuery}'와 맞는 글이 아직 없습니다.`
-              : "이 카테고리에는 아직 발행된 글이 없습니다."}
+              : activeGroup
+                ? "이 키워드로 묶이는 글이 이 카테고리에는 아직 없습니다."
+                : "이 카테고리에는 아직 발행된 글이 없습니다."}
           </p>
         </div>
       ) : (

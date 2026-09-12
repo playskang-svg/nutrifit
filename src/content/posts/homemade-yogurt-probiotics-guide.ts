@@ -160,5 +160,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "홈메이드 발효는 온도·위생 관리에 따라 결과가 들쭉날쭉할 수 있습니다. 균주와 보장균수를 정확히 관리하고 싶다면 표기가 명확한 제품을 함께 고려할 수 있습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["yogurt-probiotics-label-guide", "probiotics-how-to-choose", "daily-protein-intake"],
 };

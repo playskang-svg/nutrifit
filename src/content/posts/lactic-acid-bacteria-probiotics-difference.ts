@@ -131,5 +131,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "유산균이나 프로바이오틱스라는 큰 이름보다, 뒷면에 균주명(속·종·균주)과 보장균수가 함께 표기되어 있는지를 기준으로 고르는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "probiotics-prebiotics-difference", "supplement-label-reading"],
 };

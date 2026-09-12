@@ -161,6 +161,13 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "메가도스가 아니라, 한국인 상한섭취량 이내에서 1일 섭취량 기준 함량을 확인해 관리 가능한 통상 용량 제품을 고르는 것이 이 글이 강조하는 접근입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: [
     "vitamin-d-deficiency-korea",
     "multivitamin-evidence",

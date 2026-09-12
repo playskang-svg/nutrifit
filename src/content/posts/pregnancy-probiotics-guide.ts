@@ -153,5 +153,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "일반적인 식이 유래 균주는 임신 중 비교적 안전한 편으로 보고되지만, 시작 전 반드시 산전 진찰에서 균주와 시기를 상의한 뒤 정하는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "iron-deficiency-anemia-korea", "supplement-label-reading"],
 };

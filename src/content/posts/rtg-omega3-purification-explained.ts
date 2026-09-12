@@ -140,6 +140,13 @@ rTG는 공정이 많이 들어간 만큼 품질 관리가 잘 된 제품일 가�
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "재에스터화 전환율과 산가·과산화물가 검사 성적을 공개하는 제품입니다. 공정 이름의 화려함보다 이런 정보 공개 여부를 기준으로 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

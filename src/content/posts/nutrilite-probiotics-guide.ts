@@ -170,5 +170,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "브랜드 인지도보다 균주명·보장균수 표기와 유통기한이 충분히 남았는지를 함께 확인하는 것이 실질적인 비교 기준입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

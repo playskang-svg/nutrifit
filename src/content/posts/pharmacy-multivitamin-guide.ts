@@ -124,5 +124,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-b-complex", "vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-b-complex",
+      reason: "본문에서 짚은 대로 결핍 교정 목적이면 의약품, 일상적 공백 보완이면 건강기능식품으로 갈리는 대표적인 성분입니다. 포장의 표기부터 확인하고 고르는 것이 순서에 맞습니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "vit-c",
+      reason: "약국·마트·온라인 어디서나 건강기능식품으로 동일하게 유통되는 성분이라, 약사 상담을 통해 복용 중인 다른 약과 겹치지 않는지 확인하고 고르기 좋은 예시입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "supplement-label-reading", "coffee-nutrient-absorption"],
 };

@@ -153,5 +153,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "제조사가 제약회사인지 여부보다 균주명이 속·종·균주까지 표기되어 있는지, 보장균수가 유통기한까지 명시되어 있는지가 실질적인 비교 기준입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading", "lacto-500-probiotics-guide"],
 };

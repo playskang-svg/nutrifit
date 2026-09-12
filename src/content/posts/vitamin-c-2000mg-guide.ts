@@ -156,5 +156,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "2,000mg을 한 번에 먹기보다 나눠 먹는 편이 흡수에 유리하다는 이 글의 핵심에 맞춰, 1회 함량이 명확해 아침·점심·저녁으로 쪼개 먹기 쉬운 제품을 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["supplement-label-reading", "mouth-ulcer-nutrition", "multivitamin-evidence"],
 };

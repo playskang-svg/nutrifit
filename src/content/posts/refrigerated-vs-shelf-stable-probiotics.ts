@@ -178,5 +178,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "냉장이든 실온이든 우열의 문제가 아니라 표기된 보관 조건을 실제로 지킬 수 있는지가 기준입니다. 생활 패턴에 맞는 보관 방식의 제품을 고르는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

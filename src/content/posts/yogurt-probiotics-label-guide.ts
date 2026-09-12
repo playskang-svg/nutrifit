@@ -167,5 +167,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "요구르트에 적힌 균수는 대개 제조 시점 기준입니다. 균주와 보장균수를 정확히 관리하고 싶다면 표기가 상세한 영양제 형태를 별도로 고려할 수 있습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading", "daily-protein-intake"],
 };

@@ -141,5 +141,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3", "mineral-fe"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "모유수유아의 비타민D 보충처럼 근거가 명확한 경우에 한해, 영유아 연령에 맞게 설계된 제품인지 소아과 상담과 함께 확인하는 참고 예시입니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "mineral-fe",
+      reason: "이유식 이후 철 결핍이 혈액검사로 확인된 경우에 한해 고려할 성분이며, 임의로 시작하지 않고 소아과에서 용량을 안내받는 것이 원칙입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "vitamin-d-deficiency-korea", "iron-deficiency-anemia-korea"],
 };

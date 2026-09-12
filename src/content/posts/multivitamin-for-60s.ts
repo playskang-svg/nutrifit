@@ -149,5 +149,16 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-b12", "vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-b12",
+      reason: "위산 분비 감소로 흡수율이 떨어진다고 본문에서 설명한 대표 성분입니다. 위산 의존도가 낮은 형태를 확인해 보는 것이 60대 이후에는 특히 도움이 될 수 있습니다.",
+      badge: "에디터 선택",
+    },
+    {
+      nutrientId: "vit-d3",
+      reason: "피부에서의 합성 능력 자체가 나이 들며 줄어든다는 본문 설명대로, 종합비타민만으로는 부족할 수 있어 별도로 확인할 만한 성분입니다.",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "vitamin-b12-deficiency", "always-tired-iron-b12"],
 };

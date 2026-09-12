@@ -151,5 +151,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "결핍이 확인되지 않은 일반적인 컨디션 관리라면 주사보다 경구 복용이 접근성과 비용 면에서 실용적이라는 이 글의 결론에 맞춰 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["multivitamin-evidence", "supplement-label-reading"],
 };

@@ -165,5 +165,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "장에 특별한 불편이 없다면 균과 먹이를 함께 담은 신바이오틱스도 무난한 선택지이지만, 가스가 잦다면 프리바이오틱스 없는 단일 균주 제품부터 시작하는 것을 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

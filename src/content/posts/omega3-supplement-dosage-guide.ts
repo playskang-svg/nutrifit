@@ -161,6 +161,13 @@ export const post: HealthPost = {
       url: "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "EPA+DHA 합계가 라벨에 그대로 표기돼 있어, 이 글에서 다룬 0.5~2g 계산법을 캡슐 수로 바로 환산할 수 있는 제품입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

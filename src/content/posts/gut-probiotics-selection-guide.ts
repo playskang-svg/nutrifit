@@ -190,5 +190,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["gut-probiotics-100b"],
+  productPicks: [
+    {
+      nutrientId: "gut-probiotics-100b",
+      reason: "배변, 가스, 항생제 복용 후 중 지금 상황이 무엇인지 먼저 나누고 나서, 그 목적에 맞는 균주가 표기된 제품을 고르는 순서를 권합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["probiotics-how-to-choose", "supplement-label-reading"],
 };

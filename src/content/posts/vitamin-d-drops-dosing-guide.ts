@@ -174,5 +174,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "방울당 함량 표기를 확인해 목표 섭취량에 맞춰 방울 수를 계산해 보는, 이 글에서 설명한 액상형 참고 예시입니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["vitamin-d-deficiency-korea", "supplement-label-reading"],
 };

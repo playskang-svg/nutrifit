@@ -163,6 +163,13 @@ rTG 여부만 확인하고 이 네 가지를 놓치면 오히려 손해일 수 �
       url: "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "'알티지' 광고 문구가 아니라 원재료명·성분 설명란에 제형이 구체적으로 표기돼 있는지를 기준으로 확인하는 것이 정확합니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading", "multivitamin-evidence"],
 };

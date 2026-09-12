@@ -158,5 +158,12 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["vit-c"],
+  productPicks: [
+    {
+      nutrientId: "vit-c",
+      reason: "C&D 복합제를 고려한다면 두 성분의 함량을 각각 따로 확인해야 한다는 것이 이 글의 결론입니다. 비타민C 쪽 1일 섭취량 기준 함량이 명확히 표기된 제품을 골랐습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["vitamin-d-deficiency-korea", "mouth-ulcer-nutrition"],
 };

@@ -155,6 +155,13 @@ export const post: HealthPost = {
       url: "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
     },
   ],
+  productPicks: [
+    {
+      nutrientId: "fatty-rtg-omega3",
+      reason: "'1000mg'은 대개 원료 전체 무게이므로, 영양정보표의 EPA·DHA 개별 함량과 합계를 따로 확인해야 실제 섭취량을 알 수 있습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
   relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
 };

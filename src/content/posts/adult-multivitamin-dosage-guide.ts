@@ -146,5 +146,12 @@ A 제품은 1정, B 제품은 2정이 1일 섭취량이라면, 정제 하나에 
     },
   ],
   relatedNutrientIds: ["vit-d3"],
+  productPicks: [
+    {
+      nutrientId: "vit-d3",
+      reason: "비타민D처럼 기준치 100% 안팎으로 설계되는 성분은 1일 섭취량 기준 함량이 라벨에 명확히 표시된 제품인지부터 확인하는 것이 이 글에서 설명한 비교 순서에 맞습니다.",
+      badge: "에디터 선택",
+    },
+  ],
   relatedPostSlugs: ["supplement-label-reading", "vitamin-d-deficiency-korea", "multivitamin-evidence"],
 };
