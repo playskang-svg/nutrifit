@@ -4,56 +4,56 @@
   "domain": "nutrifit.kr",
   "repo": "playskang-svg/nutrifit",
   "type": "affiliate",
-  "createdAt": "2026-09-13T21:53:48.049Z",
-  "createdBy": "actions/34785013568",
+  "createdAt": "2026-09-14T22:51:08.968Z",
+  "createdBy": "actions/34905847423",
   "networks": [
     "쿠팡파트너스(건강기능식품)"
   ],
   "disclosure": "이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다.",
   "coupangEnabled": true,
   "slice": {
-    "day": 3,
+    "day": 4,
     "of": 7,
-    "files": 32
+    "files": 43
   },
   "existingLinks": [],
   "productIds": [],
   "barePages": [
-    "src/components/OrganHealthGuide.tsx",
-    "src/content/pages/index.ts",
-    "src/content/posts/bronchitis-nutrition-guide.ts",
-    "src/content/posts/coq10-ubiquinol-vs-ubiquinone.ts",
-    "src/content/posts/daily-protein-intake.ts",
-    "src/content/posts/dry-skin-nutrient-causes.ts",
-    "src/content/posts/iron-deficiency-anemia-korea.ts",
-    "src/content/posts/lactic-acid-bacteria-probiotics-difference.ts",
-    "src/content/posts/liposomal-vitamin-c-explained.ts",
-    "src/content/posts/multivitamin-all-in-one-40s.ts",
-    "src/content/posts/multivitamin-for-20s.ts",
-    "src/content/posts/multivitamin-ingredient-standards.ts",
-    "src/content/posts/night-leg-cramps-magnesium.ts",
-    "src/content/posts/nk-cell-immune-nutrients.ts",
-    "src/content/posts/nutricore-glutathione-label-guide.ts",
-    "src/content/posts/omega3-for-50s-vascular-cognitive.ts",
-    "src/content/posts/omega3-pregnancy-guide.ts",
-    "src/content/posts/omega3-rtg-form-explained.ts",
-    "src/content/posts/omega3-rtg-vs-ee-form.ts",
-    "src/content/posts/pharmacy-multivitamin-guide.ts",
-    "src/content/posts/probiotics-capsule-form-guide.ts",
-    "src/content/posts/protein-for-50s-muscle-loss-prevention.ts",
-    "src/content/posts/rhinitis-probiotics-gut-immune.ts",
-    "src/content/posts/seasonal-tonsillitis-nutrition.ts",
-    "src/content/posts/teen-vitamin-d-guide.ts",
-    "src/content/posts/vitamin-c-and-d-combination.ts",
-    "src/content/posts/vitamin-c-for-toddlers.ts",
-    "src/content/posts/vitamin-c-injection-vs-oral.ts",
-    "src/content/posts/vitamin-c-zinc-together.ts",
-    "src/content/posts/whey-protein-hydrolysate-absorption-guide.ts"
+    "src/components/health/HealthPostArticle.tsx",
+    "src/content/posts/all-in-one-multivitamin-guide.ts",
+    "src/content/posts/always-tired-iron-b12.ts",
+    "src/content/posts/atomy-lutein-label-guide.ts",
+    "src/content/posts/celebrity-menopause-supplement-check.ts",
+    "src/content/posts/collagen-origin-label-checklist.ts",
+    "src/content/posts/collagen-vitamin-c-combo-label-guide.ts",
+    "src/content/posts/early-pregnancy-nutrition-guide.ts",
+    "src/content/posts/epa-omega3-benefits-guide.ts",
+    "src/content/posts/folic-acid-pregnancy-timing-dosage.ts",
+    "src/content/posts/glutathione-benefits-and-limits.ts",
+    "src/content/posts/gut-microbiome-basics.ts",
+    "src/content/posts/high-cfu-probiotics-guide.ts",
+    "src/content/posts/high-content-vitamin-c-label-guide.ts",
+    "src/content/posts/high-dose-multivitamin-risk.ts",
+    "src/content/posts/high-dose-vitamin-c-guide.ts",
+    "src/content/posts/immune-supplement-guide.ts",
+    "src/content/posts/index.ts",
+    "src/content/posts/infant-magnesium-safety-guide.ts",
+    "src/content/posts/kids-iron-picky-eater-guide.ts",
+    "src/content/posts/kids-rhinitis-probiotics-guide.ts",
+    "src/content/posts/lactose-free-protein-powder-guide.ts",
+    "src/content/posts/liquid-magnesium-absorption-guide.ts",
+    "src/content/posts/magnesium-price-per-day-guide.ts",
+    "src/content/posts/multivitamin-choose-by-purpose.ts",
+    "src/content/posts/multivitamin-women-50s.ts",
+    "src/content/posts/nutricore-vitamin-d-iu-mcg-guide.ts",
+    "src/content/posts/nutricost-protein-label-guide.ts",
+    "src/content/posts/pregnancy-probiotics-guide.ts",
+    "src/content/posts/pregnant-plant-based-omega3.ts"
   ],
   "newKeywords": [
     {
       "keyword": "신생아비타민D유산균",
-      "volume": 1390
+      "volume": 1400
     },
     {
       "keyword": "멀티종합비타민",
@@ -64,33 +64,25 @@
       "volume": 1410
     },
     {
-      "keyword": "단백질프로틴",
-      "volume": 1430
-    },
-    {
       "keyword": "아이유산균",
-      "volume": 1430
+      "volume": 1410
     },
     {
       "keyword": "WPI프로틴추천",
       "volume": 1380
     },
     {
-      "keyword": "비타민B추천",
-      "volume": 1480
-    },
-    {
-      "keyword": "유아비타민D",
-      "volume": 1360
+      "keyword": "단백질프로틴",
+      "volume": 1430
     },
     {
       "keyword": "면역영양제",
-      "volume": 1490
+      "volume": 1500
     },
     {
       "keyword": "비타민CD",
-      "volume": 1360
+      "volume": 1380
     }
   ],
-  "instructions": "# 제휴링크 갱신 — 뉴트리핏\n\n너는 맥에서 무인으로 돌고 있다. 사람에게 물어볼 수 없다.\n\n## 규칙\n\n1. **제휴 URL을 지어내지 않는다.** 새 링크가 필요하면 반드시 아래 명령으로 실제 링크를 받아온다:\n   ```\n   node /home/runner/work/nutrifit/nutrifit/_agents/agents/linkmgr/scripts/linkmgr.mjs collect --site nutrifit --kw \"<키워드>\" --coupang\n   ```\n2. 가격·재고를 본문에 단정해 쓰지 않는다. \"현재 39,900원\" 같은 문장은 다음 주에 거짓이 된다.\n   가격대나 조건으로 쓴다 — \"3만 원대\", \"로켓배송 여부는 링크에서 확인\".\n3. 제휴링크를 넣은 글에는 고지 문구가 반드시 있어야 한다:\n   > 이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다.\n4. **한 글에 제휴링크는 최대 3개.** 이미 그만큼 있으면 추가하지 말고 교체만 한다.\n   링크 하나당 본문 700자 이상이어야 한다 — 짧은 글에 여러 개 넣지 않는다.\n5. 글의 흐름과 무관한 자리에 링크를 끼워 넣지 않는다. 독자가 그 상품을 필요로 하는 문단에만 넣는다.\n   링크가 촘촘하면 독자는 광고글로 읽고 되돌아간다.\n6. 커밋하지 않는다. 배포하지 않는다.\n\n## 1. 제휴링크가 없는 글 (30건)\n\n아래 글에는 제휴링크가 하나도 없다. 글 주제에 **자연스럽게 맞는 것만** 붙인다.\n맞는 상품이 없으면 붙이지 않는다 — 억지로 넣은 링크는 이탈률만 올린다.\n\n- `src/components/OrganHealthGuide.tsx`\n- `src/content/pages/index.ts`\n- `src/content/posts/bronchitis-nutrition-guide.ts`\n- `src/content/posts/coq10-ubiquinol-vs-ubiquinone.ts`\n- `src/content/posts/daily-protein-intake.ts`\n- `src/content/posts/dry-skin-nutrient-causes.ts`\n- `src/content/posts/iron-deficiency-anemia-korea.ts`\n- `src/content/posts/lactic-acid-bacteria-probiotics-difference.ts`\n- `src/content/posts/liposomal-vitamin-c-explained.ts`\n- `src/content/posts/multivitamin-all-in-one-40s.ts`\n- `src/content/posts/multivitamin-for-20s.ts`\n- `src/content/posts/multivitamin-ingredient-standards.ts`\n- `src/content/posts/night-leg-cramps-magnesium.ts`\n- `src/content/posts/nk-cell-immune-nutrients.ts`\n- `src/content/posts/nutricore-glutathione-label-guide.ts`\n- `src/content/posts/omega3-for-50s-vascular-cognitive.ts`\n- `src/content/posts/omega3-pregnancy-guide.ts`\n- `src/content/posts/omega3-rtg-form-explained.ts`\n- `src/content/posts/omega3-rtg-vs-ee-form.ts`\n- `src/content/posts/pharmacy-multivitamin-guide.ts`\n- `src/content/posts/probiotics-capsule-form-guide.ts`\n- `src/content/posts/protein-for-50s-muscle-loss-prevention.ts`\n- `src/content/posts/rhinitis-probiotics-gut-immune.ts`\n- `src/content/posts/seasonal-tonsillitis-nutrition.ts`\n- `src/content/posts/teen-vitamin-d-guide.ts`\n- `src/content/posts/vitamin-c-and-d-combination.ts`\n- `src/content/posts/vitamin-c-for-toddlers.ts`\n- `src/content/posts/vitamin-c-injection-vs-oral.ts`\n- `src/content/posts/vitamin-c-zinc-together.ts`\n- `src/content/posts/whey-protein-hydrolysate-absorption-guide.ts`\n\n## 3. 새로 발굴된 키워드 (10건)\n\ngoldkey 가 새로 찾은 키워드다. 이 주제를 다루는 **기존 글이 이미 있다면**\n그 글에 해당 키워드용 제휴링크가 붙어 있는지 보고, 없으면 붙인다.\n기존 글이 없으면 아무것도 하지 않는다 — 새 글은 postgen 몫이다.\n\n- 신생아비타민D유산균 (월 1390)\n- 멀티종합비타민 (월 1430)\n- 비타민D섭취량 (월 1410)\n- 단백질프로틴 (월 1430)\n- 아이유산균 (월 1430)\n- WPI프로틴추천 (월 1380)\n- 비타민B추천 (월 1480)\n- 유아비타민D (월 1360)\n- 면역영양제 (월 1490)\n- 비타민CD (월 1360)\n\n---\n\n끝나면 `git diff --stat` 으로 무엇을 바꿨는지 출력한다."
+  "instructions": "# 제휴링크 갱신 — 뉴트리핏\n\n너는 맥에서 무인으로 돌고 있다. 사람에게 물어볼 수 없다.\n\n## 규칙\n\n1. **제휴 URL을 지어내지 않는다.** 새 링크가 필요하면 반드시 아래 명령으로 실제 링크를 받아온다:\n   ```\n   node /home/runner/work/nutrifit/nutrifit/_agents/agents/linkmgr/scripts/linkmgr.mjs collect --site nutrifit --kw \"<키워드>\" --coupang\n   ```\n2. 가격·재고를 본문에 단정해 쓰지 않는다. \"현재 39,900원\" 같은 문장은 다음 주에 거짓이 된다.\n   가격대나 조건으로 쓴다 — \"3만 원대\", \"로켓배송 여부는 링크에서 확인\".\n3. 제휴링크를 넣은 글에는 고지 문구가 반드시 있어야 한다:\n   > 이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다.\n4. **한 글에 제휴링크는 최대 3개.** 이미 그만큼 있으면 추가하지 말고 교체만 한다.\n   링크 하나당 본문 700자 이상이어야 한다 — 짧은 글에 여러 개 넣지 않는다.\n5. 글의 흐름과 무관한 자리에 링크를 끼워 넣지 않는다. 독자가 그 상품을 필요로 하는 문단에만 넣는다.\n   링크가 촘촘하면 독자는 광고글로 읽고 되돌아간다.\n6. 커밋하지 않는다. 배포하지 않는다.\n\n## 1. 제휴링크가 없는 글 (39건)\n\n아래 글에는 제휴링크가 하나도 없다. 글 주제에 **자연스럽게 맞는 것만** 붙인다.\n맞는 상품이 없으면 붙이지 않는다 — 억지로 넣은 링크는 이탈률만 올린다.\n\n- `src/components/health/HealthPostArticle.tsx`\n- `src/content/posts/all-in-one-multivitamin-guide.ts`\n- `src/content/posts/always-tired-iron-b12.ts`\n- `src/content/posts/atomy-lutein-label-guide.ts`\n- `src/content/posts/celebrity-menopause-supplement-check.ts`\n- `src/content/posts/collagen-origin-label-checklist.ts`\n- `src/content/posts/collagen-vitamin-c-combo-label-guide.ts`\n- `src/content/posts/early-pregnancy-nutrition-guide.ts`\n- `src/content/posts/epa-omega3-benefits-guide.ts`\n- `src/content/posts/folic-acid-pregnancy-timing-dosage.ts`\n- `src/content/posts/glutathione-benefits-and-limits.ts`\n- `src/content/posts/gut-microbiome-basics.ts`\n- `src/content/posts/high-cfu-probiotics-guide.ts`\n- `src/content/posts/high-content-vitamin-c-label-guide.ts`\n- `src/content/posts/high-dose-multivitamin-risk.ts`\n- `src/content/posts/high-dose-vitamin-c-guide.ts`\n- `src/content/posts/immune-supplement-guide.ts`\n- `src/content/posts/index.ts`\n- `src/content/posts/infant-magnesium-safety-guide.ts`\n- `src/content/posts/kids-iron-picky-eater-guide.ts`\n- `src/content/posts/kids-rhinitis-probiotics-guide.ts`\n- `src/content/posts/lactose-free-protein-powder-guide.ts`\n- `src/content/posts/liquid-magnesium-absorption-guide.ts`\n- `src/content/posts/magnesium-price-per-day-guide.ts`\n- `src/content/posts/multivitamin-choose-by-purpose.ts`\n- `src/content/posts/multivitamin-women-50s.ts`\n- `src/content/posts/nutricore-vitamin-d-iu-mcg-guide.ts`\n- `src/content/posts/nutricost-protein-label-guide.ts`\n- `src/content/posts/pregnancy-probiotics-guide.ts`\n- `src/content/posts/pregnant-plant-based-omega3.ts`\n\n## 3. 새로 발굴된 키워드 (8건)\n\ngoldkey 가 새로 찾은 키워드다. 이 주제를 다루는 **기존 글이 이미 있다면**\n그 글에 해당 키워드용 제휴링크가 붙어 있는지 보고, 없으면 붙인다.\n기존 글이 없으면 아무것도 하지 않는다 — 새 글은 postgen 몫이다.\n\n- 신생아비타민D유산균 (월 1400)\n- 멀티종합비타민 (월 1430)\n- 비타민D섭취량 (월 1410)\n- 아이유산균 (월 1410)\n- WPI프로틴추천 (월 1380)\n- 단백질프로틴 (월 1430)\n- 면역영양제 (월 1500)\n- 비타민CD (월 1380)\n\n---\n\n끝나면 `git diff --stat` 으로 무엇을 바꿨는지 출력한다."
 }
