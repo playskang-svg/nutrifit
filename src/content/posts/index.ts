@@ -187,6 +187,7 @@ import { post as pntMagnesiumIngredientGuide } from "./pnt-magnesium-ingredient-
 import { post as probioticsFor30sStressGut } from "./probiotics-for-30s-stress-gut";
 import { post as proteinFor50sMuscleLossPrevention } from "./protein-for-50s-muscle-loss-prevention";
 import { post as proteinPowderContainerSizeStorageGuide } from "./protein-powder-container-size-storage-guide";
+import { post as proteinPowderPricePerGramGuide } from "./protein-powder-price-per-gram-guide";
 import { post as proteinPowderSupplementBasics } from "./protein-powder-supplement-basics";
 import { post as proteinPowderTextureMixabilityGuide } from "./protein-powder-texture-mixability-guide";
 import { post as rhinitisProbioticsGutImmune } from "./rhinitis-probiotics-gut-immune";
@@ -390,6 +391,7 @@ const registry: HealthPost[] = [
   probioticsFor30sStressGut,
   proteinFor50sMuscleLossPrevention,
   proteinPowderContainerSizeStorageGuide,
+  proteinPowderPricePerGramGuide,
   proteinPowderSupplementBasics,
   proteinPowderTextureMixabilityGuide,
   rhinitisProbioticsGutImmune,
