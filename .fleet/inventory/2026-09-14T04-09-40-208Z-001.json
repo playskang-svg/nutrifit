@@ -1,0 +1,15 @@
+{
+  "site": "nutrifit",
+  "label": "뉴트리핏",
+  "domain": "nutrifit.kr",
+  "title": "단백질 프로틴 고르는 법 — WPC·WPI·식물성, 1g당 가격까지 비교",
+  "slug": null,
+  "keyword": "단백질프로틴",
+  "createdAt": "2026-09-14T04:09:40.213Z",
+  "createdOn": "1bcbc6be777cec5e194542c3c8443070613ac1c5",
+  "files": [
+    "src/content/posts/index.ts",
+    "src/content/posts/protein-powder-price-per-gram-guide.ts"
+  ],
+  "patch": "2026-09-14T04-09-40-208Z-001.patch"
+}
