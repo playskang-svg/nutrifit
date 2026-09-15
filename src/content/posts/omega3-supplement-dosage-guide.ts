@@ -169,5 +169,5 @@ export const post: HealthPost = {
     },
   ],
   relatedNutrientIds: ["fatty-rtg-omega3"],
-  relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading"],
+  relatedPostSlugs: ["omega3-rtg-vs-ee-form", "supplement-label-reading", "omega3-vitamin-d-together"],
 };

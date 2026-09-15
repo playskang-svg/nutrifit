@@ -183,5 +183,6 @@ export const post: HealthPost = {
     "vitamin-d-deficiency-korea",
     "supplement-label-reading",
     "multivitamin-evidence",
+    "omega3-vitamin-d-together",
   ],
 };

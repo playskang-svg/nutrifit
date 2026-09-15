@@ -212,6 +212,9 @@ import { post as wheyProteinIsolateWpcWphComparison } from "./whey-protein-isola
 import { post as womensReproductiveHealthNutrients } from "./womens-reproductive-health-nutrients";
 import { post as yeongnongMagnesiumIngredientGuide } from "./yeongnong-magnesium-ingredient-guide";
 
+/* --- 2026-09-15 goldkey 추가 배치 --- */
+import { post as omega3VitaminDTogether } from "./omega3-vitamin-d-together";
+
 const registry: HealthPost[] = [
   nightLegCrampsMagnesium,
   vitaminDDeficiencyKorea,
@@ -289,6 +292,7 @@ const registry: HealthPost[] = [
   omega3RtgFormExplained,
   omega3SideEffectsInteractions,
   omega3SupplementDosageGuide,
+  omega3VitaminDTogether,
   pharmacyMultivitaminGuide,
   pregnancyProbioticsGuide,
   pregnantPlantBasedOmega3,
