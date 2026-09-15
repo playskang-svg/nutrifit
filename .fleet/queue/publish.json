@@ -5,8 +5,8 @@
   "repo": "playskang-svg/nutrifit",
   "type": "publish",
   "createdAt": "2026-09-10T09:04:55.282Z",
-  "updatedAt": "2026-09-14T22:51:08.913Z",
-  "createdBy": "actions/34905847423",
+  "updatedAt": "2026-09-15T22:32:12.717Z",
+  "createdBy": "actions/35031176457",
   "titles": [
     {
       "keyword": "면역영양제",
@@ -1945,6 +1945,230 @@
           "priceFormatted": "25,400원",
           "imageUrl": "https://ads-partners.coupang.com/image1/S_ApIPYO2b0pMv3PS4PONT1mt5BQFDx9hJRqmTEcmVyXvNvQu-iMj1vLM06voI5ZSUGMIL2kPteOUdqDN9xjDVQb0xjkCVmMyuqz0MLQmBwWIb1yZZJcjhUeXyulKpTgDW49ulSPtDm2j5Ym0rw7pTDWXDSUJ0CQpxmG8XS7pVXoEK_ZQsFhfsh-lnmEoDc7OIzaT72J0pO1P0Degcijb1GYCUfyDPLIF-dhvTGC5t_79yiwjswMsJRJQLj6MDfI91VfsMl05GMkmqp5qy6WPwee4iRy3SSRturq1MK36MpiH_7tbH1uihdL6E4_qtcFiL4bS-exv9WBOkl6Z8WCwjPy73yMZkiQiA_0APpKjnb9XSEFZ7CcUrXu0ZZkqs9cM9QxEVV7k6ADGCnjzLuPrUeccMk-R4h_dkwryIklXTIiYZVxeATmnJE_FlshhPEhhb8zenEAAelZx3GT-aEi15BajIvKJKqw3SEk2vdORYGxbVt4bO3EK3DJnXVhUtLvOw5LP5ir346KYIz41X9XQYOv9XeAYXLdNeySETYxTZJfiiX-vZT8cbIrlg==",
           "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=7207782395&itemId=28869614076&vendorItemId=91742371475&traceid=V0-153-0d74b04232fc9790&requestid=20260915075108618262948442&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-15T22:32:08.112Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "신생아비타민D유산균",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "6522939318",
+          "name": "PH365 피에이치365 아기 비타민D아연 베이비",
+          "price": 16720,
+          "priceFormatted": "16,720원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/gxlsvsIDnVYOMmyPg8GxFrzpT6obKcXTwS64QYHzvc_Xc-7dKUmKkTq7guNu4KjHzs3C92gcjr4vqtAp6jmksK_vj16Dn6dkNmlNd04YvIfogFPl9LJ7pHgQd2_032zEofk8IlPNoN_iBbU_q_uduaANyE8QXcCeww_r3AZ_6iAqFRJTRVcFdJo_6BdQM79KnqIIVBv6sWFANrMg9Cx5Fn7tPFyX28na7sNwr5Q2mbTc1c2yVYfN9FICEmTPIB8mCU9fNm3XMedlEpaq2GO5LtewqM1g7gHw7Qsr2AVTDu5L6pm32AodjJxk8YkVz4O3hikhkMpAuOCtNtYXrQqQWPqDtmn-GswbT1XDVmwPinDhoj1K_wFlSMShIlfJP-KSYB1I8tf7mTgrhO8x__DgmSSsHwpKtJ2pzaubkt-bjHRkXio-D2HRY6o_aJaPEAmnedWg4q0OiaOj_fNmEaxtGjSGmShmXnplb-98bYdAETuxU3dWRAgN-QT8p-NOeU7lGBFKR1J_vktgq7H6T3eYZTG_RnGOYkEI9Z_45CDTFwG_A408",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=6522939318&itemId=14459812573&vendorItemId=81703260212&traceid=V0-153-54ee4a323d43cec2&requestid=20260916073207829037387957&token=31850C%7CGM&pt=0&slot=1",
+          "isRocket": false,
+          "isFreeShipping": true
+        },
+        {
+          "id": "8622535307",
+          "name": "셀티아이 베이비 비타민D [생균전문관리유산균] 우리 아기 첫 유산균, 잘 누는 우리 아이 유산균 비타민D 함유",
+          "price": 80000,
+          "priceFormatted": "80,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/Oe0xHxS7KiM8T9R3OTqa133CtDJceCsVpbkEyNmFAkcXd_YInhwJloMv-kI0Xfv12d-RcnuMU59L017doj8otJSmusUk19k-aYPLpw_OAH17_QQyBQU3gJyFPEHgO0KfM6qxrGv7bECUlurN-vnO5nZFXWBRRG5v-WZSkPvrPf28oDTk2UVw2HV8si4ya5fln8XdHX77a51PmGcIrIaBiRqoLyPW_XcFPbtXQbUcZmDdf3Fvv02t8TRyWqdZFo2WV9LruPmevpIjNIRzV1vivgTeVeh2IvPmeztxd-0ytu4FY9kV09iV9zr5Hvjh-Ad8OzZX0J8WMNvUCUwjcnhjiLe1A3X7M35x0KgeGy4wTalS8rUHQSqb-0DV_0-fDiucb8LK5LCIWkLBVaBCwe9LiV5SCMQGk7eQ5ox-m9RzwtHbGcxKOURrTVqOvKZm8bnelfUaMQv9mZjASFm25pwLsufphFHaYXcyOeM9FT9qfQY0xPYA6709zjjfgtKS9Dj85-gfTqjsGwl8gpLES3jqsyjpbgj_17ontM4gDrexx8ZU0EKsDQpKhQ==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8622535307&itemId=25015685964&vendorItemId=91968748523&traceid=V0-153-acb4c96c674d693e&requestid=20260916073207829037387957&token=31850C%7CGM&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-15T22:32:08.716Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "비타민D섭취량",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "9542912283",
+          "name": "닥터루템 이시형 박사의 비타민D3 5000IU 30g, 5개, 120정",
+          "price": 56900,
+          "priceFormatted": "56,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/SXoE5Ub9qX07HMOKSVEp8fOk0LjE_QchP7xO2lOOufwXwZTEfMyxOjdQ08xbPUJ99INlCndelSQIcRyP30Om7TBNQ_sx1AUu3Nos1PMxq97zkSyGdS5CXDA1hu9m9L5P0r727lxSGfcwOLz2rxINp1P5TG8kCC_oIoFYdH1CG5aiXk5dg7WUS8csqCkMkCGTmcjr26KrGg1GR3vd8bKsWqLh5BwGXFEHME6nAeORYgbHaq-Z8ofe8CRwmjeMysekgzuf4DUzKH8dnThQOSgToQniwdllULYG0nuGTa9fwurd1SlIFMQa6ZWTkueJ2xPSsjGQIG0qFn9Jnp9KJLvWy6VaTTMeVArkpVL7MrCQ61RJFIAneOd1tAudcQBx2OQXNEPu7rnWxUllVR8lk8u6whV74TZ4TuWeUADMjPzqPj8DkjnEjo0BfsyeSCn1FerlTnS2PidaAY6Lp1AFGxgn8chtyBk7yHiyacIYWQBUCr1eBu2pgfFW93R7fyafDGWnEXRz5xmIpotKzO_FS69ISMWbWA==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9542912283&itemId=28474567139&vendorItemId=95424796065&traceid=V0-153-17b5fe7f5a0f82be&clickBeacon=4958f820-b155-11f1-8b5b-0ca87f7b2d7e%7E3&requestid=20260916073208534289282720&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "8617091665",
+          "name": "닥터엘라 버닝스위치 다이어트보조제 체지방 감소",
+          "price": 69850,
+          "priceFormatted": "69,850원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/hweUe2cXv3hOWRU_hz5dPDQEw7Ep47qYWvJhBcCvZAKlLXpmQ7BoACUts2YMFxLV9PzponNOlYUKBtqHN_TrJcsGJBnRgXefOVxMtoOtNDXz_MtWy9LUDt1gOZiv3YXCOwESECEdvJSwpDV9ucaJQmL3c4BRynX33MbXIgNv9wu1iWVhRmDxzrbahFJl_ubHlJ3h3bz0MQjqOuuOXPnKi6PQjxd0qOznXSoxsgQivQZCHjQatqZEZvCEDpyJXO2qRFpDAgAbKqNNYIPZX6DqIfahbLEhFa0LOZUkYWCz1nHTwBPF-nu2OijYzKF6OJE27a0vnTWkos6fi0n6yZptowzA0Q8SgKcb5SgrIrRGZ2Cqr5i2Sy2F0DRlBENejRU4-v0kNXt3NT6NwzrloyxNSgXGKdVSEF-AaQv65KodtlpUQdpXdXJY0zdL9g2_fxdqbaM3NPN4-ReNV0QC9FE6L-D3JrQuCHoZdsuVvTF_XSqIdZ4KabTJ1qLrR3Uy3kk8izK8zpYdcQlvy5DrNvmvUBWlUPwBpLOQkP_xnJrBSkXyVA0pUq7wkNQV",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8617091665&itemId=25327476989&vendorItemId=95502046414&traceid=V0-153-82444399ad894e76&requestid=20260916073208534289282720&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": true
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-15T22:32:09.157Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "멀티종합비타민",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8588677133",
+          "name": "비타민마을 원어데이 올인원 21종 종합 멀티비타민 미네랄, 60정, 6개",
+          "price": 38900,
+          "priceFormatted": "38,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/LGaWI1Gi7_Tnj9WGLKNLUTQRUVJZ0_oDTeN02lUHGu0iEOs0_e1au_InUJTSl3ORcImbAUTaqGmmeVurYoPbMM_JMDWUSnXYt_Sx0WqRV99gA7ZK7yat-GVshl0ANDUMWOxnqGEu3AF3aeLLQB8PxmLjhiYWGcOC1JAzatcinoh67ZoRgu86dq2sVAeoT1oC8fkNa13kX8-6AUJ7D1TMSqsPnOHCVEOtLCUqJ913HLwr1BfKj-CyrdWdnsDJUQtcOubiqKWTWEJV80sKCo-j17hP89irpj6Y2tOSQmeF11FVnayrihzvwysJpgLR76AyGUBqE0_nlDAvro5fJeXBvQzoyD90YTfmjtWI4SPKVowYyGRGNQPixZVs7kUyKHR_1ftM0Y3rZ8d3nY-_jxLjR2t4YHVFOFmBaGz9B_VwIO0YQ-C-z-RVFavMCsU8DXUO7D-W1CBi0YWZ1W0EHU8EOZ4hqSMLrfW5mRldZuCVBtRfiSMauz8WSgadyQxacXt92-MjIP1bh2mOa-e95HuKvyM=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8588677133&itemId=27957636558&vendorItemId=91703684461&traceid=V0-153-343e9b919ac8e94d&clickBeacon=499d5420-b155-11f1-ae15-bd4d42c52bd3%7E3&requestid=20260916073208971220165792&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": false,
+          "isFreeShipping": true
+        },
+        {
+          "id": "9219313471",
+          "name": "고려은단 멀티비타민 올인원 맨",
+          "price": 21950,
+          "priceFormatted": "21,950원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/EpeTfKd_EVNtyuG2EpSjN8SQ02efnW1gNf5ZJSIK8WUWQbsxPuX5JYwWWqqP2jU4MNBuYXXz6OIzojcax8CVIXfAke8K7imsMWn9j-xSCM5L0qsu9XI3sVrErSw2mZMEGc58hRtS2pJhDnZ3uUSmb1C5aHt_Mq2e9qH9moJtmKyNlrJV9YmCywW62EWOCqJorOi2yT58Lg4fXkFPTl0lexI437lFHzceGp8iCqnFbFXMTdTn-SYT64yg95uP8i2y450OXHC0gw-HkfkuXv0yPsfmIr0Ae8T2rUiO_XphMNbu2T9QQltOkAGYlPiM3dXTzYmXEo7deNG7laqifOtW_M1KSGXTZYt7lL7d25S4-0EadCEsgdg8Vfzvz3j6YdDOpJvVb2xVHYCyberDyrcvfKU9bB1jyH5Ij71EEiafEn2-xDEjDXrInUnAqOCbecVzhqUZyX7UX7bREf3g3f5Liw_OZM_VS7DAjwSYU_4SJ7dlOfiOv7-r5L14E1qb8pqb8ZMdzyeY-TsGO8rxRpMpWqJgfyLRAPkQ4t5fpB3fteEFfX9FGxyQwgsm",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9219313471&itemId=27336863054&vendorItemId=94225309853&traceid=V0-153-6ba519a04994fbd2&requestid=20260916073208971220165792&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": true
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-15T22:32:09.763Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "WPI프로틴추천",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8779692760",
+          "name": "비피아이스포츠 아이소 HD 퓨어 아이솔레이트 프로틴 초콜릿 브라우니, 2.208kg, 1개",
+          "price": 89250,
+          "priceFormatted": "89,250원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/S7TWCXFm781b7K4TS_b4167PJ4spf9oN0jjDMgyT6LQ0tGXJx6bw2vYFS215wbujOBFRc5mKxc2-fURACCn0sUfclCSEwqcrdewf5t-sVv-luS88TGoP8u6JXuWPW3k7CecIsC6ERs98QNTSbTpLv1_ZJMN6dlg2tKheDafOFM_HXzvQLWZRXFqocdWFuoEjxX2NAofDzMsU_i_14yaBfevQ0rzOc7VIIVPvtxNmKV3h1-nli1YbNL8ej-UbpfGPdsnTrgUMs42YZcdCl1bp_CHPzuTXFuXBpPElbZYD5BIoJXx3DyanJ48sP-DCfuHBFfRWdKseHAODW4NhTrsiONT7S2d69B88k-93YsxM0H0aF-Rvh9k_eNDvxRy8TYFL9u0Smm23P0tpMm2wylT5vbZoxydse1bgQ3YB4eOqxS8MPY-XmMpdzipDDsV7QytpTyhQywQjyUsLmW0Qn76ZOi_E-3_AghB3NckYXWI1RM37XP-wLENx9f8JEMEwggdzsxRfJJFQWDJfPMCha4goqLiELq6Hca8Tw1U5hUFs",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8779692760&itemId=604043610&vendorItemId=4583176268&traceid=V0-153-9d2674e657b142e4&clickBeacon=49e336c0-b155-11f1-b2df-e9bd1160aaba%7E3&requestid=20260916073209456301407467&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": false,
+          "isFreeShipping": false
+        },
+        {
+          "id": "5603559414",
+          "name": "뉴욕웨이 WPI 초코맛 단백질 보충제",
+          "price": 69900,
+          "priceFormatted": "69,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/0YakISDF0f3QDPyA0X-Mm-FxReVkiNk6jnkDm6qgOB4ax42m3N_2M_2ccPrDzO9CCEMctCGjn7I3SU_4_VdIFHJSJrmX50xXMVybygxn2IAqK4J3VIQlN0Sb3fPirXUWGCLe8J5OsvYgjL6e-TuT-hS-nRrqA0Fiu-_9NEnewCT7XLlUrqTB8DW88STMasXXwhwFlfoWWWJk0dPFhAPiArzqlBABMDZ28ZBKKFKlhADHXWHoGk_WR3ebYjY1WvkgZZg07-3X5T-q9S930fDRxCxAnbJy7mdA2_HbkFMDS7me3PPC8SPNcJuFzIe3eWP_d3ziETZ-9zkUa-VXy5gaPV0pxnSLc5K_17ak4Hif5XdBaYpbU8EdjJ_EXYxF7ICCOO0dmJXD3y2zaWBR4lMf2Gf6L9bbZgACswZxNGlkFlz5hps1MAqPbeQG6uzgrcZyrOV6fCjRqoO0PrRG54IPfrQ-auMyLXkFoktF-cmxJ-4GwsWGijZ2S2h1bLY6sXI8-AC19zM1-FEc3UKpi3bx8AQAswZozZd4YIvb30wc3RUxt2tv7YYmrK4AXg==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=5603559414&itemId=9033134749&vendorItemId=71620787392&traceid=V0-153-d1482ff71f9c43f3&requestid=20260916073209456301407467&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": true
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-15T22:32:10.339Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "아이유산균",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "15812890",
+          "name": "헬퍼장 베이비 앤 키즈 생유산균, 180g, 1개",
+          "price": 29540,
+          "priceFormatted": "29,540원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/0Yeb8Iy8YLYZATdX0WayzmogM3rQxhvRh_C0uEAWL1SIHa5AFdqK9gqjHS4U0qOUg9-bZHRd1BkLgtUGYZFeGIEyo8G0WiK3psghGfJxW8HiBdJ0_4jjky3w01PtWqdwr8LLuqr70SotdpVoj97LOE4aRmXhlcLnZUtuJCtFikBiK7fu2J4cIQnwRMix3FLtGktObTLwspweJECE-is4rI54aAiDVF63PlzzWxlCuL3ogupxmbOF8Wyb-cQR7lL2kvu5MmM-_X2mfYWNczYBgk2oTb4QDc0iHlksiXNst3VBK8A4CminwPwY-9WEwE7KTKC6JYXJK2cLmpKB9vNsV-HxL2Zky-a6Nw9rEkrk19TYxZ_mkcqRKTxfCHwEGkT9pCQidd8gZWjaGjb8UiSsnkh2UiP_UMGUgDan9TlIDupA4BM9DLpjwYE0WuribABhdVYhZzHgES0OgB-P1w6kcWQ071y7RHhFCJwbc4kApv-6BZGmWSY8gfi9kMJB7Nup_EbMtj3_3gvu9VTz",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=15812890&itemId=64795858&vendorItemId=3102337955&traceid=V0-153-b5dcd1332e6bcc7c&clickBeacon=4a513ad0-b155-11f1-84b7-a4bf69f4789f%7E3&requestid=20260916073210143313517058&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "7201469545",
+          "name": "락토핏 생유산균 키즈",
+          "price": 13820,
+          "priceFormatted": "13,820원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/p6UiUPPx3z_agnbxp3S2Itin0qg7EdlRJS332RFSan1FA2Oij0ha2BRJvyUC4NUQiaWAMec5VrAWkHqM6bl3SyHHhJFMCDf42OfwsT4hBsUMY3KqmuQ16GPKUKFrw8wozRstRbjKq5h6u0hwNFxUUT3C7GpAg2W58qfTQw58PTMn9zRI4OtKOLpQPDzYyZ7vPdQc2MhbKZ7bJJOAaDYDmRbTPU0cS98DG9fKUUtKzPXUmdL-lrzT_PDmMwjtYbb5VImneCUB2ykPfT7947lc2y-tRengZT0eM-SwvCf4pKjVa8aomnMfYM2fB_TrOqHIe-Z2jydgVQUJbpITQLpsZjTt-NYv8EIV2xgbJCj-5QZla0_4mjp6i5eMARsvb5-xVbbLI3Gxa6fMCFDzzkA6IWQ93Z1v-RfW66ERK469s5xvAj9wT_sjcoyYMAPbAtrRvyyA2XzJZGI8-QUDiGF3AcWsVkYKd4R80FZeg8ATK5G-QmN2UHmtJ-aLmIRiJhOjC6OCdbmO8lz6-ou0DAS2KNGb_z6fiXPTKjAps-K2JsC-5iKEUT1RuQ4=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=7201469545&itemId=18204315043&vendorItemId=83397339509&traceid=V0-153-0d59c4e398531bd1&requestid=20260916073210143313517058&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-15T22:32:11.031Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "비타민CD",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "7658149149",
+          "name": "비타민마을 맛있는 메가씨 비타민C 2000 비타민D 3000, 180g, 2개",
+          "price": 24900,
+          "priceFormatted": "24,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/GXG5P5KT4MuUzay8GYJpWs1bBcVKDggZqZgdFJ-YTSKesMOsTnoixwT1V-u5KAzEwq-Lr8Zc6uESajHqgtYBI7odY-DqDbFdVgQpv2xUCIZGaSGd_8zCG7VCwysFg5qzPi9gD_Q3KKWSZ08U4yfms8JG5sbQNjMt_9GvcxtEAqwV1FuvW6fIDxGSe2k1ipc0FmRGfsLO3DKJbElWsmFMmCiKV3ExstZZk6D7pdkbZLtXO4_LKfhqBUsXCF8eGUemk9B0qVcmYJmAiykGxaJdRJnMu6G-Xh1C_t-JhsVvJfB36Du-huRaF1sVg3FwYG1lVK3RKGYP-XN35aNTVxGljdWmhsgEQ-8pHuo7DZW2jiD3lNM2inOwThdrq9l2D66kNq3JOK4OiW51r4pBXHvwqmWrde77x0ugDJRwoJFEPGiNqg2DC7dbELeLQ_oyo6bS7ctEXSmv-5pw-PPp80r6y40wv9l9MMjHmju3KLJFbOUnZKKKDgk__REeMmB-RmALlhAK5G_KDdnsXoNTvLs=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=7658149149&itemId=19804942807&vendorItemId=93351534324&traceid=V0-153-95fa9db98c8f5563&clickBeacon=4abb9560-b155-11f1-87c9-01beb295b2d6%7E3&requestid=20260916073210860007876711&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": false,
+          "isFreeShipping": true
+        },
+        {
+          "id": "5307090358",
+          "name": "고려은단 비타민C 1000 이지+ 비타민D 108g",
+          "price": 15900,
+          "priceFormatted": "15,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/Ac0Y3393PAw-VHQXAdVQgGoEANnIDIfwYiNlynu3XBQENhNgMJ_lZaqPcetwFbU4tAIRgTWkInAjm9LF80FxNmzVImilCQPx2w7wHodPMMYw2a0XvXqgxvm4cTRn9fmKOBdDcOvN2U1HED8w2B52PM4m29lDK_xsMpqkOBEP2QBonjwGo_TKQD9g3OeEY_cZXBKuhM_Ukk0DC-iWd1Ip8Tr16o1260XCqF27j3MEQ4T2cCd0C5l862xFlflGeMrytgCtGEVihrsr_WDUefK48PKmPR6kYTYJwxN1-QLsrpPFgQEwguaPK3rN-z_BjIae6DcVF08-fmOrCNoa-gRO17mwbtPUviiPYPxudqngnJW17pSYI1y_2WukYLZV4l067jLmEi8AESFf2PqbVPyTmDymjGDDVZV29W173PA9Ib5m_7tBvzWsFWitCbfhP4_lATD-QsANe92HCj-zeu5l4D7_6gwYeli4wLf-NTugRsPPqrZ5Dv7KSSiS3Id67JIvN-TPBNycnBF8BVHgNzSALzI5XABnlGbQ0lmAcbRYOUfJJxj4QbzLtYc=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=5307090358&itemId=19037521642&vendorItemId=77769628270&traceid=V0-153-6433ed516512e397&requestid=20260916073210860007876711&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": true
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-15T22:32:12.688Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "단백질프로틴",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8288998026",
+          "name": "뉴욕웨이 라이트 단백질 보충제, 2kg, 1개",
+          "price": 37900,
+          "priceFormatted": "37,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/gExfQvULknTwO4uzgHpKctzZ8686cjtqp3l-ec83t9vU4-N5M-vEGXrD3Th-lDYk6orV52T7PN9LwaMQLNuaDODRVaZbr5lDS_FP1Avzj30g2afUR9jJJaw6gfNejrX1xg6BAze0Z5Y--nsGnyZLFv2ngfOpkH0_yHXJSc7f2lEd4-JUjyDTOtAnd_AneR77tS6mCoXUy4-oRj2LUTOqU5-qmqCFBMPK9qA0dUAay-90K-4bp8BU9Q6wW36iEy7JP5VHVyU1cXmW3IUG2TdfD6ivurL1ofNz-E_pfIrw0VVhVAmvU8tOvfyusHKNsNG9Fx0RWzDxDkrY0pU4ZMQrqcRt9jVrcf-dla3NOuBoYY-vnJ2MxeTSe1FHkBVLYo8ApExUtvK4FGHav11tjvVUjUozSxg-T3dzMp-K2SO3_xDpMnj2zDHpai-sSXuCElnaxH_xleNdTW9iDOcU2SzSSw-YmeHS0WYB6LME-6HkyoMBCYT8uhhmckgR_J1tGGhp4TyxcMX815vJjfV-_GoI",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8288998026&itemId=27863137394&vendorItemId=86624554388&traceid=V0-153-313dbe27c3161d86&clickBeacon=4bb7f6c0-b155-11f1-b3b1-12403078a134%7E3&requestid=20260916073212523247167793&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": false,
+          "isFreeShipping": true
+        },
+        {
+          "id": "7207782395",
+          "name": "퍼스널벌크포뮬러 게이너 3.2kg 복합단백질 프로틴 보충제 근육 헬스",
+          "price": 25400,
+          "priceFormatted": "25,400원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/4cSG8St5L8SIXn9J4UIGyG1p_VOCzENc8WmvlJTSso6nkqBMZfFOEyuoxB0BEaGZ7kCmpsBi_kJDejTtis3lw5kN1PzUeizhTtRZTd10cXTdQS8CR100rljU31KIk25ht7HzSk2frwO-x2_2aU9XEcnrqz9UQnccUUcmgLuMMHr0BqlLcbzbpr_EEpXzjxdik2NMGcdehGMzgH55Xz5k9mSRJDi5Ezs5mjt3yd7DyZBcmJ6s4ELxnIKmM4oQMkVpqMTzkwAPUU9t6ONvd6yTkHDgyeAizENdAjfwcg_jdwiuzxdcgWW5sIm4acUTPvnPhplXGxiWl7EyTy0iLqTVv7Vwhv-Xy1tlwyeK7TquqVfD1XRABzkhvRXwZs3uzoDT8kmiPe5kxFXVnVc36GZzHSHsk1AWuOuGpMokvc69vag8TauWfluV1jGOjjuxVSqG29nQLDOU97LsulqNafbtDRHpB5Hw9wZe1AGKo6SCVwURT6qOk3Avrn_sNpt2KNOKnSDPLKU-KoQpenPgieTqo9IfxKbyjXwXpaCrh6GFK1wh7RkTAndI7YGW",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=7207782395&itemId=28869614076&vendorItemId=91742371475&traceid=V0-153-0d74b04232fc9790&requestid=20260916073212523247167793&token=31850C%7CMIXED&pt=0&slot=2",
           "isRocket": true,
           "isFreeShipping": false
         }
