@@ -1,0 +1,17 @@
+{
+  "site": "nutrifit",
+  "label": "뉴트리핏",
+  "domain": "nutrifit.kr",
+  "title": "오메가3와 비타민D, 같이 먹어도 되는지부터 확인합니다",
+  "slug": "omega3-vitamin-d-together",
+  "keyword": "오메가3비타민D",
+  "createdAt": "2026-09-15T09:26:35.885464Z",
+  "createdOn": "642c7b94ba692b985d6b16109e3478e1ed2a5efb",
+  "files": [
+    "src/content/posts/index.ts",
+    "src/content/posts/omega3-supplement-dosage-guide.ts",
+    "src/content/posts/omega3-vitamin-d-together.ts",
+    "src/content/posts/vitamin-d-2000iu-daily-dose.ts"
+  ],
+  "patch": "2026-09-15T09-26-35-885464Z-001.patch"
+}
