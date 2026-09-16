@@ -3,15 +3,13 @@
   "label": "뉴트리핏",
   "domain": "nutrifit.kr",
   "repo": "playskang-svg/nutrifit",
-  "scannedAt": "2026-09-16T01:24:48.268Z",
-  "pagesCrawled": 200,
-  "sitemapUrls": 215,
-  "externalChecked": 89,
+  "scannedAt": "2026-09-10T03:06:35.686Z",
+  "pagesCrawled": 8,
+  "sitemapUrls": 28,
+  "externalChecked": 0,
   "summary": {
-    "medium": 11,
-    "low": 9
+    "medium": 1
   },
-  "occurrences": 20,
   "findings": [
     {
       "severity": "medium",
@@ -19,187 +17,8 @@
       "page": "https://nutrifit.kr",
       "links": 24,
       "note": "nav/header/footer도 role=navigation도 없다. 링크는 있으나 메뉴 구조를 기계가 못 읽는다"
-    },
-    {
-      "severity": "medium",
-      "kind": "http-to-https",
-      "page": "https://nutrifit.kr/health/seasonal-atopic-dermatitis-flare",
-      "href": "http://www.derma.or.kr/",
-      "text": "대한피부과학회",
-      "nav": false,
-      "note": "http 링크. https로 올려야 한다"
-    },
-    {
-      "severity": "medium",
-      "kind": "http-to-https",
-      "page": "https://nutrifit.kr/health/seasonal-dry-skin-nutrition",
-      "href": "http://www.derma.or.kr/",
-      "text": "대한피부과학회",
-      "nav": false,
-      "note": "http 링크. https로 올려야 한다"
-    },
-    {
-      "severity": "medium",
-      "kind": "http-to-https",
-      "page": "https://nutrifit.kr/health/seasonal-hives-nutrition",
-      "href": "http://www.derma.or.kr/",
-      "text": "대한피부과학회",
-      "nav": false,
-      "note": "http 링크. https로 올려야 한다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://nutrifit.kr/health/arginine-workout-timing-guide",
-      "href": "https://medlineplus.gov/druginfo/natural/875.html",
-      "status": 404,
-      "refs": 2,
-      "text": "L-arginine — MedlinePlus Supplements",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://nutrifit.kr/health/biotin-hair-loss-supplement-guide",
-      "href": "https://www.fda.gov/medical-devices/safety-communications/update-fda-warning-may-lead-inaccurate-lab-test-results-biotin",
-      "status": 404,
-      "refs": 1,
-      "text": "The FDA Warns that Biotin May Interfere with Lab Tests",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://nutrifit.kr/health/coq10-ubiquinol-vs-ubiquinone",
-      "href": "https://ods.od.nih.gov/factsheets/CoenzymeQ10-HealthProfessional",
-      "status": 404,
-      "refs": 1,
-      "text": "Coenzyme Q10 — Fact Sheet for Health Professionals",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://nutrifit.kr/health/doctorin-lutein-zeaxanthin-ratio-guide",
-      "href": "https://www.nei.nih.gov/learn-about-eye-health/outreach-campaigns-and-resources/eye-health-data-and-statistics/age-related-eye-disease-studies-aredsareds2",
-      "status": 404,
-      "refs": 1,
-      "text": "Age-Related Eye Disease Studies (AREDS/AREDS2)",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://nutrifit.kr/health/glutathione-benefits-and-limits",
-      "href": "https://medlineplus.gov/druginfo/natural/1006.html",
-      "status": 404,
-      "refs": 1,
-      "text": "Glutathione — MedlinePlus Supplements",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://nutrifit.kr/health/protein-powder-container-size-storage-guide",
-      "href": "https://www.fda.gov/food/food-labeling-nutrition/food-product-dating",
-      "status": 404,
-      "refs": 1,
-      "text": "Food Product Dating",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://nutrifit.kr/health/multivitamin-choose-by-purpose",
-      "href": "https://ods.od.nih.gov/factsheets/FolicAcid-Consumer",
-      "status": 404,
-      "refs": 1,
-      "text": "Folic Acid — Fact Sheet for Consumers",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/protein-powder-price-per-gram-guide",
-      "href": "https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/alive-multivitamin-label-reading",
-      "href": "https://www.foodsafetykorea.go.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/celebrity-menopause-supplement-check",
-      "href": "https://www.mfds.go.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/celebrity-menopause-supplement-check",
-      "href": "https://www.ftc.go.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/dry-eye-supplement-guide",
-      "href": "https://www.ophthalmology.or.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/high-school-multivitamin-guide",
-      "href": "https://www.kdca.go.kr/yhs",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/pharmacist-recommended-magnesium-label-check",
-      "href": "https://www.ftc.go.kr/www/selectBbsNttList.do?bordCd=1",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/seasonal-herbal-tea-guide",
-      "href": "https://www.rda.go.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/yeongnong-magnesium-ingredient-guide",
-      "href": "https://www.kca.go.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
     }
   ],
-  "detail": {},
   "autoFixable": [
     "dead-anchor",
     "empty-href",
