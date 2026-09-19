@@ -5,8 +5,8 @@
   "repo": "playskang-svg/nutrifit",
   "type": "publish",
   "createdAt": "2026-09-10T09:04:55.282Z",
-  "updatedAt": "2026-09-18T22:01:43.476Z",
-  "createdBy": "actions/35399389170",
+  "updatedAt": "2026-09-19T21:52:45.053Z",
+  "createdBy": "actions/35471554187",
   "titles": [
     {
       "keyword": "면역영양제",
@@ -2577,6 +2577,70 @@
           "priceFormatted": "16,720원",
           "imageUrl": "https://ads-partners.coupang.com/image1/_XYff2Twmwx-WS2R_fYNej0y2b4caU_9kB93LUXyuMDYMNcaAOors_EPFHFI5VWmDpI6ED96xkQiPF-vXRjsrl3hZ02TLQtkg4tiaEpojdwsK0tzbQ9AHa8mesNKZULg8mZVZZds57BoK-WoVEO9zhiEl5gKmST8AxvPv_yAVXQ4jcKI3MuPctHE1kfvUtZNB_n2u9tdw0Vukvxla0dfv_OLzNLWtBUlpMhrx54UOoNCsYobjRljvw7dErVGjsH6OWjPngXtRJcPPm-KPMCldlSv2Hu39NXx3-09FHq7fWt_ESaoOdJuD3uovHa9CxZLCrtnqGvtkddg_YS6YviVTt8dJg7s2APERSZNOGNWHeZ45Fd-l34copHhqd0EMR88vdDnEKOnvBNcbF4eclz_dBEsZbgc6M-dtbHN1oEZ1wUFefahzgb1fyBkj6PUh7CTRfdXTGDankhzRv64s3o6lKP2l6cnDviLnxHupig_G3dGWp1MPy_dbAJv906cFG4uldveojOzs_X1broLp5i3wGZOt9dHMOgDs0ea45yz16egh2nWcUA=",
           "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=6522939318&itemId=14459812573&vendorItemId=81703260212&traceid=V0-153-54ee4a323d43cec2&requestid=20260919070143173118534490&token=31850C%7CGM&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": true
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-19T21:52:44.518Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "오메가3콜레스테롤",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "6586372374",
+          "name": "종근당건강 프로메가 오메가3 트리플",
+          "price": 10900,
+          "priceFormatted": "10,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/vmFjzkOaQp8mXjeRvvFp1FQ0h17BQ1BvfbhUh9gnPWxrVsdKY8Tf3Z5pToNGuBTIOLxjnmXWdmWG6v0pkk3ndEjcr-ucUeCvrRq8SaBt7zNoFJun5hl9ci0K1KvZRHiyYZmJ1yQ334-kPb0ax_WH1xIWoIsEGhiroQQUSHF-rWvo8zw9FRXlJHqoYThjfuUNTbaqDjaj7LcRWJQQtZvQfuTpu50BQPCWMs41jRzOSspkdtYRvdoCR5HWfxx_g6eVb0tllZI3QPsXzVZ2vxHZpxyoy5uoftgdP4vLt422L8YhYW4p0CLMgUa6snB4bWGTOYElKgrf-sT_WlfvfWmtALFVAO0CRB8vKFQa8V41l8ubYt8cyxioF6SS5JgN-MLEz8LCBZy1ZJ8_DoTZOtWA1l90ePM_gwgrI9nkBVbSpZ2OoL2yQi5voVLkXkGSGmrPyfviLFvw1oZWovWNzZ1CJVW7JVENYmxp-0y0pZHq1pqP0u8J5vY-Dg6ynqqyLH64IDolAsO_MN1hrIFsl3EtWK4Vv-a0btj4",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=6586372374&itemId=14842723746&vendorItemId=82081965637&traceid=V0-153-dfb2e13ddc16c873&requestid=20260920065243853251644640&token=31850C%7CGM&pt=0&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "5449810685",
+          "name": "종근당건강 알티지 오메가3 듀얼",
+          "price": 9100,
+          "priceFormatted": "9,100원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/B90jLpwwOKAP4IGcBx5MeKyIeAeHBj_E2nxNfR_7j3jU29QfC2DRUQKCxpq5PthbZiJnRyMYDCXHzosM5E9wT9YagjIMEZXXSJfybvbzFvtMYCXiUgwilAQcOjdPxjAjnWdo1Wu-vFJ1lRbqaF_Mr432-fVUR5ayrXs35cquZBGlmde_1a1de1wnZMfPWYLgL9XMj0v6hbF36j88wfXEi5NiF2oEvtQmMlkgObzL5WfG8ZHLvnYPTtTfcTs0p5SE2fHHp-lqklIJ5j6W4QS8NR8P8VcAO0L7-tKvzdfyih5_uOpRGSLy-jZTx55QV2cFlaoBxcKnyJhbNVdMz8UNgOo0qv1waF2sjaC-Qafrgt08luSjSB2yIyfvcbIfnKxY_FRHMLO3I0kB9ysdW-Geu1KgrMDwPDBERoL3pAqWhcAdXud2Lr4lvdCrT0ARSCpFJjTeH9lstVU-lpgx5ecjx6qHSpNYdPXFWmtKBIJLORhSZ10YFjo1ayIkSDd7K9w87i4eI1oQdmnyX7zatybQEtl0kLDQW7lkl50hNYUfvibWs-egK_o=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=5449810685&itemId=1080337489&vendorItemId=95872220577&traceid=V0-153-bc71fe3b35808921&requestid=20260920065243853251644640&token=31850C%7CGM&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-19T21:52:45.021Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "신생아비타민D유산균",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "6070133449",
+          "name": "[흰여울팜]아기유산균 비타민D 베이비 신생아 액상유산균 닥터에디션바이오D드롭스 3병 선물세트",
+          "price": 111000,
+          "priceFormatted": "111,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/q7v-fsD_xV--Y_GLq0wztFRay7Knv5iHilK1vmj15O1IoN2DDR6364dFHBwp0WwlRb_eFMT29C08oCQQb_TN55RPj7b-hC4Pe5iJUA3-Fo4wfFQJqaveqcpWOjatuj6EB-QYp21PRgEWYd6Fe0zykOzKHRrIFiRrIM9lZLJDC6UcGl1vHp5_5AnPM_COIwOCoFGhIo0lNKEJ0n6sgEsiANFsPbmq4-GbKZYMXkNOotRimneqfchPZgXVZsE-6qQkANaRUTUMXpft_zGQ0kvfoFK8_F5b790ZJ66d1K9v2ieVPZPev2VpsQn9w_BXCKEsmjVAClCZnwgsHhJzFj2ocFVcwIIH8CeD1J4C0xqkO7hM2vld80_KtndkFVEaEJVzXni6QgNU_AD0AfOuaVvLR377ojfOjpCXwDvcMA4i-W7ZjD6FQN6lPv8B0iSaobr_SNaFTFwb1JFWxPfFkfxNLrMZb4VCbbgE3qu15m8OfLDlZb10QGbg53TKVmueGgkrNmzjpaOIXI15i2827EUk1x9aIPG6EKhYoVPgAUIzWBHo4K-u",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=6070133449&itemId=24226991328&vendorItemId=94749187659&traceid=V0-153-0e3c1766b8b37421&requestid=20260920065244796197593695&token=31850C%7CGM&pt=0&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "245822601",
+          "name": "휴럼 트루락 베베 8ml 아기 유산균 비타민d",
+          "price": 75000,
+          "priceFormatted": "75,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/7RHbfMjEoE4Fyf4j7VxZD3s87RqKJ1_9kERkzXhn6wrc0ObXRN2C5dov_VU7rI9KER7dt4sskgHlTod4l9rWPLK3ZaSdEWJ_HjKdZu4wJedAdrBeVcmsQDUjBxl_SasCCSa9x-XIwFpTULM23S3OzIdMpLqzv-ZUSyCwYFjGLtmFYNghamo4HgN77uiwe240knSb3cF0_wj1Z8xCQSkAjV8wEBL7AMpXkwOPqR7kXYsYQEbMVqztGfVIlPFP_gzsw5MJCsA_TEetGwKHfsYKWEUXwAtWG09JGa6bSqC7BMwL-qjf1JRiyBa5UnRt8y-W11YSf2OAp4hTQafVZfqBBYWdoj4JsL_NFvAbF7rAVtkWJUewsU6xYti4prHIOYOLjIJRmOTFE5lMH5t1KS3rqutq-2-ZoJchZN8jdkVufKFwb1WcjzOH5WYHAP3t00xJ6xlnAOrZVaib4mC0G6txcmYd79CeDg1u7efohpsz8qR6UIVwmH_squpsI4xL3IXgzdsM0EA87_4xQuYQV5x8fRfkStDfWz5kE93t-HmEy2dUL-E8tw==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=245822601&itemId=25482573131&vendorItemId=93661979420&traceid=V0-153-0bf51573d5c9c595&requestid=20260920065244796197593695&token=31850C%7CGM&pt=0&slot=2",
           "isRocket": false,
           "isFreeShipping": true
         }
