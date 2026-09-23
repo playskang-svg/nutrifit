@@ -12,7 +12,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const postsDir = resolve(root, "src/content/posts");
 const indexPath = resolve(postsDir, "index.ts");
 
-const CATEGORIES = ["symptom", "nutrient", "choose", "food", "lifestage", "research"];
+const CATEGORIES = ["symptom", "nutrient", "choose", "food", "lifestage", "research", "gift"];
 
 const [slug, title, category = "nutrient"] = process.argv.slice(2);
 
