@@ -5,8 +5,8 @@
   "repo": "playskang-svg/nutrifit",
   "type": "publish",
   "createdAt": "2026-09-21T22:55:54.572Z",
-  "updatedAt": "2026-09-22T22:30:27.081Z",
-  "createdBy": "actions/35792448943",
+  "updatedAt": "2026-09-23T22:33:44.419Z",
+  "createdBy": "actions/35928720602",
   "titles": [
     {
       "keyword": "신생아비타민D유산균",
@@ -42,6 +42,18 @@
       "alternatives": [
         "비타민D하루섭취량, 음식으로 채울 때 vs 영양제로 채울 때",
         "비타민D하루섭취량, 같이 먹으면 흡수 떨어지는 조합 정리"
+      ]
+    },
+    {
+      "keyword": "비타민C1000MG",
+      "volume": 1490,
+      "grade": "1위가능",
+      "title": "비타민C1000MG, 연구로 확인된 범위와 과장된 주장 구분",
+      "hook": "근거 수준별 정리",
+      "intent": "효과가 진짜인지 의심하는 독자",
+      "alternatives": [
+        "비타민C1000MG, 언제 먹어야 흡수가 잘 되는지 시간대 정리",
+        "비타민C1000MG, 함께 먹으면 안 되는 약·성분 조합"
       ]
     }
   ],
@@ -201,6 +213,102 @@
           "priceFormatted": "16,720원",
           "imageUrl": "https://ads-partners.coupang.com/image1/fPT-DW9IifSgy9USfPqnq8jN0bMHw67BfzipzTYmyrFNoIzV3zmmTA-8bN2dcZl7d4k4TFWVZnwUroJXOul9WOHddnmHU1y99XytBQrN8MAogrBUfpVUzjDTlITvHXNQxNkylkl-Z70lo2gVf3SDVw9lTApREz0wrQ7Y024DxqJJA-bHI3YivZXp1dSJqx-s7t9bjMuuob5J-cXLLUXvIU10mFfbAFb-WP53t_ipHfFghdL46TZWwyzYVAEQpwlRc3mmauJuh7VPImHXq2pCYLKFpDlKnMekXdXmE4h0auvuXtlz5h1mWAVkapH4tj8Gw1Kdr-Nml399K29BkvmlSIQuDp6oKKAYgyasg2e1KYCcRPXg6fmOtb6i8b846Ct2KeGab89lqQ8USEPGPyQ8kcZcR-TCRhmoHo-T_XgsXa962qmB8ASRl9eZvd-ZFIYghywiZWP-cNyu7zCz8K-nvKasUHPDdpDf2ml8i2J-ox3VXxRnQr5EZR13tPLn9ImZjkJOs3vLr0V8i_nfO70TVDNXQAfqPPnwrxIiOvdEXrAbZ78M7o4=",
           "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=6522939318&itemId=14459812573&vendorItemId=81703260212&traceid=V0-153-54ee4a323d43cec2&requestid=20260923073026777160009470&token=31850C%7CGM&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": true
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-23T22:33:43.419Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "비타민C1000MG",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "9091671527",
+          "name": "(넥스모스 본사직영) 압타민C 비타민C 1000mg 플러스 건기식 공식정품, 3개, 30정",
+          "price": 150000,
+          "priceFormatted": "150,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/DwMf2WcHI4dkLlb9D6AsgEvlw2bPXi_DjzhTxHRpABfLERAnidStiqIWKZgqDCavBFlInVM8av9qJmne6FiTqQ-FI27obF4UKzF6TOkKU7xAc3OYV15SB9f9oI7WmT5LoIcNgQr11FTwm6UBaJ5Oxb7gZ111pTQcalNxJMSSiaetXgxFS7yDrhUahi_IOwDSP1HKcX8vTXrN4j6gN4CnHGXxqzW_TjIyn7bt-lHOhG0hRCFVgjC5vtjfTM9PQiM8iEL12eOFdTvVTxSdWsVSpRwV38mMzX_Vv1SEWGmfy_MeLKJrR1jAe0kLot558PaH4NQxOQqPrZIHi2310eaCjnS0L98ChOitB9epNq7C6XksFccyVhst-emDEPwvcqL6gLnt8lS1dL8uD_a83foIH9Q5BXHqLBHfj5glfBXTHgSnJabCVCK79xY2mmdccpCZczBh4dWd44Ix9kXWolXHymAaqR9bZ4uqVbSFwqFK4RS1jK1FAg6B_zCiMEG0XQArF1L2ULyDlX1fWfE5eemo0qKlRGopSw3Ow8D6uA==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9091671527&itemId=27821738238&vendorItemId=94781451962&traceid=V0-153-50eefed08a2e7080&clickBeacon=d4ee0340-b79e-11f1-abb2-c1ecae7c88ea%7E3&requestid=20260924073342939291007402&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": false,
+          "isFreeShipping": false
+        },
+        {
+          "id": "6903873562",
+          "name": "바이탈프로그램 정품 비타민C 1000mg",
+          "price": 26900,
+          "priceFormatted": "26,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/W-y4cclh2hp3aSU4W5wpTfyGtGOrztpuyaYHmgB2dSl6ofF8Rls6638xYg79GusWPZX73ISDoJKmk0L7WpxwlTvlpMfAUjwcviqSW8tnFWGfZdk59pVoOcpmKDePTomiSbm5TiCyVRp4vfWMyafj2AfMqZHf5qk-g6FhwhRiFrX-bQ3pXVL8Yc9ZrxzajqNOR5xkC1D46XotAOOdWF99sDp2mL2PI1arU_9_WNi-Deccn9bByau4xq6rhz1oXDiKhDRQAbRONwdHyZAP3P-JirLGea2iUqeEOS_-lsrQNfxSyORInHO1Ddmt0BZsOrPcFtI-wVPWknC7tyJdqv7dIMqilsi0FnRwQLm8eNaMlwW0xDlFHCAd-4fD3IRluDAs_7zviQ4u7XaJKp4fmBTwhWY1EtrDgWUGsv_Uhzy4nIDh592zk8wY4cZ-M_dXXMHiwIM9JdDcb6-c-VGwlHpMLB0z8QcbnoSbKGLvFhYEVcFMnRDhD3KA_BNn_-51_0GJBrDAQ2AzIxAx_YValoTnKIv4YdlPVaa7",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=6903873562&itemId=18220645881&vendorItemId=3000177635&traceid=V0-153-c6b015d67fcab21b&requestid=20260924073342939291007402&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-23T22:33:43.876Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "멀티종합비타민",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "9219313471",
+          "name": "고려은단 멀티비타민 올인원 맨",
+          "price": 21950,
+          "priceFormatted": "21,950원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/JfXHLKjcAYatgE-lJX81Rat5ETlUjx4dEuAzoJdcfYuh9XBqLgM6njCIaBE-RSJoxPVQez5lksIJa2Chw28c4pjMFirajvzk5V0QUK0yAMqCoyGPRfQtZ06kk62WYpA-OcMLBUQ7WzZGUZZLVKsyNiv1W8P6xfv5asd129oBFjvEkM0le3ul31G7Cv7gK-4YyB7m83fao6BxQ9RclWiX7_ZmwJb9tMiKSKuRVQ_iDeE9d1yNIjmUiSc4nNwwq_EaLu7V45a3w2vtXeO-IJEfnKNM4ElDraQX2van25SBnIuB48n0ioKeSBFX1ilLFgm_OlqUjxukrUsH90H9TH51izixmRT-Tt_De2KKNHSS1dlGzkeIbyeyZBGLygEgrHfjDq-J7qo2UxJRZ3cxyQqAXgDrPyK159s3BUA_FoQzy2o1fDsWgAyFR1hH4WOuqNSD-au8iLNhLWhnIRFOD6eWiaCVfe989yAlX4sWf0nQuRXoSN0c-kt1uU2v3zXxrFcJ3W7CLRZyeb4j5yoM9ELxYq6YGz0_cSSSZfK4hsf8vi7vZxR7urwW",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9219313471&itemId=27336863054&vendorItemId=94225309853&traceid=V0-153-6ba519a04994fbd2&requestid=20260924073343675097411245&token=31850C%7CGM&pt=0&slot=1",
+          "isRocket": false,
+          "isFreeShipping": true
+        },
+        {
+          "id": "8413879792",
+          "name": "순수식품 종합 멀티 비타민 미네랄",
+          "price": 24940,
+          "priceFormatted": "24,940원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/qy1YHollLX8WjobZq58FP2MeVTty4bh9acaEP8xVGav36C5ibRqpoVmtYEiEK0FCEi0lSseCTH3yClVpk9GdVXT4tYp9nTvE-tWNW2eY5_olbZ4arsP8jsG6jGEehK8BJ9JtoQupDcV-35aUiamKc1gsxp8vrAXhdae02Cpd6ALUHNdXZjpjsLeyOwuph-KqYtHwZ7xvY54_1IfhwEbCIPduWVNlKU88F97QPkLl8vSoa_wKCZua-Y9Se8QmdXwEv3YiKB5M9JafjwH0nm9pdeIZ0FjpUB4lXRYpCUETPA2YqghyfJ9K3s2RLx240N_y0Ux8ijE_2_CpabKIdNOCPjpGpjbsfGJp7fWiSarwAmDi_5xGuicnpW84awo79xparJUMEVkWRgaJJ9SiJi0YnxPu0q-Byox8fC7hxc6vcL6_hHlJ5g65QQw15osI4P5ZPMrddHnTlGO2N-kaAD8XHg_Fl66FI3KzdfTHuqSyoEeO6b7LJM6kw0pW3IzmSH4VjOsK5cWO0r0zG4xAMGG5I4O1RAi2rUWgZfIY2qAhQ7WFvF3_K9c=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8413879792&itemId=25423511177&vendorItemId=92081817962&traceid=V0-153-ab9f0754b047b3ae&requestid=20260924073343675097411245&token=31850C%7CGM&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-23T22:33:44.387Z",
+      "site": "nutrifit",
+      "domain": "nutrifit.kr",
+      "keyword": "비타민D하루섭취량",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "9542912283",
+          "name": "닥터루템 이시형 박사의 비타민D3 5000IU 30g, 3개, 120정",
+          "price": 34700,
+          "priceFormatted": "34,700원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/nJloqXfd5TqPT2qtnLk0ZgwcTVP008F4RGppMwb68XP6nme10lhesu6IIqzTHWm9JttBtqj65rOzh5Yumo53KRhbK0czs6JNRyJiP1nBFIq_AkvlSFtXWd_sAhShCcbimSn_e1BL6S1pIU4aZ6H4fJ7kwvshuKb77sAvHOwdtKuvEMB-3nnOB3-CjL9F_O1DXR47OafIoO-XbguQjmXUyvPZSxYdwgaXLXa0jgRh4hLyNYQ3wWepnLC95FCR_Vr0wb7CI8JD0N6oS6mR2399L9O_hlPTVit13BJg0tBrI1yM_bKuCkpJJ5l09ne-ODyGvBdnpMzU1NSbPYYDO1VfEHI9a_H7YLjE3vD6eIJnFDcyx53GCRr-1cIn9u_ycUhrYKtwhu21EQKDJjmubi4dLw_J2SPu3aaDE0mNKvAKkjNljmwgjHrmBamu8ideVibTYhhlYWX3mwn2LUPzwpSdHQbNcuwslr1MQ2F6iVukSoEu4bXAwJqfu7zUZhXoSWbCPOEBrL7FBTBi2MbGzLyWbS-Ktw==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9542912283&itemId=28474567154&vendorItemId=95424796090&traceid=V0-153-17b5fe7f5a0f82be&clickBeacon=d59ce0e0-b79e-11f1-aa21-476ff8b1b3ac%7E3&requestid=20260924073344095034760099&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "69043033",
+          "name": "자연의품격 rTG 알티지 오메가3",
+          "price": 27260,
+          "priceFormatted": "27,260원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/AtbCzAVSCeXcefiuAgWn_lImEKPOPptMEYVMFppvpNaTGcqPgJ-JNbqvv6JfzeRhUzRyoPRGp5aMtA7lG-KvnHt-Kb00M0VSq6NQThvfZCndbOhSiCkQD562ZGr6hiQoBcNq8NZD1kSy59-ZCLGagQD5uagNAcf7DRKyWg2TQGC8pEXthn-5o5vC8FQXus7tO3TB5ggppwGhlzLX-x0d8mjS2X5Ck6eUbo3Pv3VqcZssMxaNGkLWqAISXFuJIZBX3WGp4XDrfGXD5MEnw3clZKXl2LSethm5BCNYdCUL-ZLN-U1bXnh15bFF45ZFEckcnWHeMm3INKmgQntBz2qhcBEPMuUpj6QOJva0DH6BNzn7ojWdEID6jcb0blSK91R0iQh5BI_lv11SYgQBqUmZog0XW1TB1P1jkJqqH7-g4gCOdF4ni7ifDOanoluf2JjvZGeK-3m9iQ4uMaepAhatdGMUQL0ehGQpbcvRos8aoKkAXFieWfOO8YcBcuitc2ay4ohqBkQE0Tc7mY5ICzZNaSYBulWLwtFCZ2_0UszuRrmRZ-Mosg_VXfXThIaLbfqyswd_m02_GYkrg0xvM421SyIbTJ4DrJ2J",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=69043033&itemId=25149059356&vendorItemId=3560423439&traceid=V0-153-ebbfccd890147ee2&requestid=20260924073344095034760099&token=31850C%7CMIXED&pt=0&slot=2",
           "isRocket": false,
           "isFreeShipping": true
         }
