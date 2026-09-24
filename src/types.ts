@@ -211,7 +211,8 @@ export type PostCategorySlug =
   | "lifestage"   // 생애주기·직업별
   | "food"        // 음식 & 식단
   | "choose"      // 영양제 고르는 법
-  | "research";   // 최신 연구 브리핑
+  | "research"    // 최신 연구 브리핑
+  | "gift";       // 영양제 선물 추천
 
 export interface PostCategory {
   slug: PostCategorySlug;
