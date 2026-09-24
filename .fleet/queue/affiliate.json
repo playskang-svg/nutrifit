@@ -4,65 +4,58 @@
   "domain": "nutrifit.kr",
   "repo": "playskang-svg/nutrifit",
   "type": "affiliate",
-  "createdAt": "2026-09-23T22:33:44.471Z",
-  "createdBy": "actions/35928720602",
+  "createdAt": "2026-09-24T22:48:28.287Z",
+  "createdBy": "actions/36069178442",
   "networks": [
     "쿠팡파트너스(건강기능식품)"
   ],
   "disclosure": "이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다.",
   "coupangEnabled": true,
   "slice": {
-    "day": 6,
+    "day": 0,
     "of": 7,
-    "files": 34
+    "files": 28
   },
   "existingLinks": [],
   "productIds": [],
   "barePages": [
-    "src/content/pages/contact.ts",
-    "src/content/posts/baby-probiotics-guide.ts",
-    "src/content/posts/children-vitamin-d-recommendation.ts",
-    "src/content/posts/doctorsbest-msm-label-guide.ts",
-    "src/content/posts/drlin-probiotics-guide.ts",
-    "src/content/posts/dry-eye-supplement-guide.ts",
-    "src/content/posts/elena-probiotics-strain-cfu-check.ts",
-    "src/content/posts/high-dose-omega3-when-needed.ts",
-    "src/content/posts/how-to-choose-multivitamin-supplement.ts",
-    "src/content/posts/infant-iron-deficiency-guide.ts",
-    "src/content/posts/infant-vitamin-d-guide.ts",
-    "src/content/posts/liquid-vitamin-d-guide.ts",
-    "src/content/posts/multivitamin-evidence.ts",
-    "src/content/posts/multivitamin-for-40s.ts",
-    "src/content/posts/multivitamin-for-middle-school-students.ts",
-    "src/content/posts/multivitamin-tablet-capsule-gummy-guide.ts",
-    "src/content/posts/multivitamin-women-40s.ts",
-    "src/content/posts/non-heme-iron-absorption-guide.ts",
-    "src/content/posts/now-vitamin-d-iu-mcg-label-guide.ts",
-    "src/content/posts/omega3-purity-heavy-metal-testing.ts",
-    "src/content/posts/oral-hair-loss-nutrients-guide.ts",
-    "src/content/posts/pnt-magnesium-ingredient-guide.ts",
-    "src/content/posts/probiotics-prebiotics-difference.ts",
-    "src/content/posts/proslab-probiotics-guide.ts",
-    "src/content/posts/rtg-omega3-purification-explained.ts",
-    "src/content/posts/seasonal-atopic-dermatitis-flare.ts",
-    "src/content/posts/vitamin-c-5000mg-megadose.ts",
-    "src/content/posts/vitamin-d-deficiency-korea.ts",
-    "src/content/posts/vitamin-d-megadose-risks.ts",
-    "src/content/posts/yt1-probiotics-strain-guide.ts"
+    "src/components/health/RecentPostsStrip.tsx",
+    "src/content/posts/all-in-one-multivitamin-for-men.ts",
+    "src/content/posts/biotin-hair-loss-supplement-guide.ts",
+    "src/content/posts/calcium-supplement-form-absorption-guide.ts",
+    "src/content/posts/calcium-vitamin-d-combination.ts",
+    "src/content/posts/cellonix-omega3-ingredient-guide.ts",
+    "src/content/posts/collagen-vitamin-c-synthesis.ts",
+    "src/content/posts/doctorslin-hypercell-omega3-guide.ts",
+    "src/content/posts/hanmi-probiotics-guide.ts",
+    "src/content/posts/kids-multivitamin-guide.ts",
+    "src/content/posts/lacto-500-probiotics-guide.ts",
+    "src/content/posts/liposomal-glutathione-absorption.ts",
+    "src/content/posts/menopause-probiotics-guide.ts",
+    "src/content/posts/multivitamin-men-40s.ts",
+    "src/content/posts/omega3-1000mg-meaning.ts",
+    "src/content/posts/omega3-omega6-ratio-balance.ts",
+    "src/content/posts/omega3-supplement-dosage-guide.ts",
+    "src/content/posts/partner-supplement-gift-guide.ts",
+    "src/content/posts/seasonal-dry-skin-nutrition.ts",
+    "src/content/posts/seasonal-hives-nutrition.ts",
+    "src/content/posts/vitamin-d-2000iu-daily-dose.ts",
+    "src/content/posts/yeongnong-magnesium-ingredient-guide.ts",
+    "src/content/posts/yogurt-probiotics-label-guide.ts"
   ],
   "newKeywords": [
     {
+      "keyword": "비타민C1000MG",
+      "volume": 1490
+    },
+    {
       "keyword": "비타민D하루섭취량",
-      "volume": 1370
+      "volume": 1390
     },
     {
       "keyword": "멀티종합비타민",
       "volume": 1400
-    },
-    {
-      "keyword": "신생아비타민D유산균",
-      "volume": 1400
     }
   ],
-  "instructions": "# 제휴링크 갱신 — 뉴트리핏\n\n너는 맥에서 무인으로 돌고 있다. 사람에게 물어볼 수 없다.\n\n## 규칙\n\n1. **제휴 URL을 지어내지 않는다.** 새 링크가 필요하면 반드시 아래 명령으로 실제 링크를 받아온다:\n   ```\n   node /home/runner/work/nutrifit/nutrifit/_agents/agents/linkmgr/scripts/linkmgr.mjs collect --site nutrifit --kw \"<키워드>\" --coupang\n   ```\n2. 가격·재고를 본문에 단정해 쓰지 않는다. \"현재 39,900원\" 같은 문장은 다음 주에 거짓이 된다.\n   가격대나 조건으로 쓴다 — \"3만 원대\", \"로켓배송 여부는 링크에서 확인\".\n3. 제휴링크를 넣은 글에는 고지 문구가 반드시 있어야 한다:\n   > 이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다.\n4. **한 글에 제휴링크는 최대 3개.** 이미 그만큼 있으면 추가하지 말고 교체만 한다.\n   링크 하나당 본문 700자 이상이어야 한다 — 짧은 글에 여러 개 넣지 않는다.\n5. 글의 흐름과 무관한 자리에 링크를 끼워 넣지 않는다. 독자가 그 상품을 필요로 하는 문단에만 넣는다.\n   링크가 촘촘하면 독자는 광고글로 읽고 되돌아간다.\n6. 커밋하지 않는다. 배포하지 않는다.\n\n## 1. 제휴링크가 없는 글 (30건)\n\n아래 글에는 제휴링크가 하나도 없다. 글 주제에 **자연스럽게 맞는 것만** 붙인다.\n맞는 상품이 없으면 붙이지 않는다 — 억지로 넣은 링크는 이탈률만 올린다.\n\n- `src/content/pages/contact.ts`\n- `src/content/posts/baby-probiotics-guide.ts`\n- `src/content/posts/children-vitamin-d-recommendation.ts`\n- `src/content/posts/doctorsbest-msm-label-guide.ts`\n- `src/content/posts/drlin-probiotics-guide.ts`\n- `src/content/posts/dry-eye-supplement-guide.ts`\n- `src/content/posts/elena-probiotics-strain-cfu-check.ts`\n- `src/content/posts/high-dose-omega3-when-needed.ts`\n- `src/content/posts/how-to-choose-multivitamin-supplement.ts`\n- `src/content/posts/infant-iron-deficiency-guide.ts`\n- `src/content/posts/infant-vitamin-d-guide.ts`\n- `src/content/posts/liquid-vitamin-d-guide.ts`\n- `src/content/posts/multivitamin-evidence.ts`\n- `src/content/posts/multivitamin-for-40s.ts`\n- `src/content/posts/multivitamin-for-middle-school-students.ts`\n- `src/content/posts/multivitamin-tablet-capsule-gummy-guide.ts`\n- `src/content/posts/multivitamin-women-40s.ts`\n- `src/content/posts/non-heme-iron-absorption-guide.ts`\n- `src/content/posts/now-vitamin-d-iu-mcg-label-guide.ts`\n- `src/content/posts/omega3-purity-heavy-metal-testing.ts`\n- `src/content/posts/oral-hair-loss-nutrients-guide.ts`\n- `src/content/posts/pnt-magnesium-ingredient-guide.ts`\n- `src/content/posts/probiotics-prebiotics-difference.ts`\n- `src/content/posts/proslab-probiotics-guide.ts`\n- `src/content/posts/rtg-omega3-purification-explained.ts`\n- `src/content/posts/seasonal-atopic-dermatitis-flare.ts`\n- `src/content/posts/vitamin-c-5000mg-megadose.ts`\n- `src/content/posts/vitamin-d-deficiency-korea.ts`\n- `src/content/posts/vitamin-d-megadose-risks.ts`\n- `src/content/posts/yt1-probiotics-strain-guide.ts`\n\n## 3. 새로 발굴된 키워드 (3건)\n\ngoldkey 가 새로 찾은 키워드다. 이 주제를 다루는 **기존 글이 이미 있다면**\n그 글에 해당 키워드용 제휴링크가 붙어 있는지 보고, 없으면 붙인다.\n기존 글이 없으면 아무것도 하지 않는다 — 새 글은 postgen 몫이다.\n\n- 비타민D하루섭취량 (월 1370)\n- 멀티종합비타민 (월 1400)\n- 신생아비타민D유산균 (월 1400)\n\n---\n\n끝나면 `git diff --stat` 으로 무엇을 바꿨는지 출력한다."
+  "instructions": "# 제휴링크 갱신 — 뉴트리핏\n\n너는 맥에서 무인으로 돌고 있다. 사람에게 물어볼 수 없다.\n\n## 규칙\n\n1. **제휴 URL을 지어내지 않는다.** 새 링크가 필요하면 반드시 아래 명령으로 실제 링크를 받아온다:\n   ```\n   node /home/runner/work/nutrifit/nutrifit/_agents/agents/linkmgr/scripts/linkmgr.mjs collect --site nutrifit --kw \"<키워드>\" --coupang\n   ```\n2. 가격·재고를 본문에 단정해 쓰지 않는다. \"현재 39,900원\" 같은 문장은 다음 주에 거짓이 된다.\n   가격대나 조건으로 쓴다 — \"3만 원대\", \"로켓배송 여부는 링크에서 확인\".\n3. 제휴링크를 넣은 글에는 고지 문구가 반드시 있어야 한다:\n   > 이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다.\n4. **한 글에 제휴링크는 최대 3개.** 이미 그만큼 있으면 추가하지 말고 교체만 한다.\n   링크 하나당 본문 700자 이상이어야 한다 — 짧은 글에 여러 개 넣지 않는다.\n5. 글의 흐름과 무관한 자리에 링크를 끼워 넣지 않는다. 독자가 그 상품을 필요로 하는 문단에만 넣는다.\n   링크가 촘촘하면 독자는 광고글로 읽고 되돌아간다.\n6. 커밋하지 않는다. 배포하지 않는다.\n\n## 1. 제휴링크가 없는 글 (23건)\n\n아래 글에는 제휴링크가 하나도 없다. 글 주제에 **자연스럽게 맞는 것만** 붙인다.\n맞는 상품이 없으면 붙이지 않는다 — 억지로 넣은 링크는 이탈률만 올린다.\n\n- `src/components/health/RecentPostsStrip.tsx`\n- `src/content/posts/all-in-one-multivitamin-for-men.ts`\n- `src/content/posts/biotin-hair-loss-supplement-guide.ts`\n- `src/content/posts/calcium-supplement-form-absorption-guide.ts`\n- `src/content/posts/calcium-vitamin-d-combination.ts`\n- `src/content/posts/cellonix-omega3-ingredient-guide.ts`\n- `src/content/posts/collagen-vitamin-c-synthesis.ts`\n- `src/content/posts/doctorslin-hypercell-omega3-guide.ts`\n- `src/content/posts/hanmi-probiotics-guide.ts`\n- `src/content/posts/kids-multivitamin-guide.ts`\n- `src/content/posts/lacto-500-probiotics-guide.ts`\n- `src/content/posts/liposomal-glutathione-absorption.ts`\n- `src/content/posts/menopause-probiotics-guide.ts`\n- `src/content/posts/multivitamin-men-40s.ts`\n- `src/content/posts/omega3-1000mg-meaning.ts`\n- `src/content/posts/omega3-omega6-ratio-balance.ts`\n- `src/content/posts/omega3-supplement-dosage-guide.ts`\n- `src/content/posts/partner-supplement-gift-guide.ts`\n- `src/content/posts/seasonal-dry-skin-nutrition.ts`\n- `src/content/posts/seasonal-hives-nutrition.ts`\n- `src/content/posts/vitamin-d-2000iu-daily-dose.ts`\n- `src/content/posts/yeongnong-magnesium-ingredient-guide.ts`\n- `src/content/posts/yogurt-probiotics-label-guide.ts`\n\n## 3. 새로 발굴된 키워드 (3건)\n\ngoldkey 가 새로 찾은 키워드다. 이 주제를 다루는 **기존 글이 이미 있다면**\n그 글에 해당 키워드용 제휴링크가 붙어 있는지 보고, 없으면 붙인다.\n기존 글이 없으면 아무것도 하지 않는다 — 새 글은 postgen 몫이다.\n\n- 비타민C1000MG (월 1490)\n- 비타민D하루섭취량 (월 1390)\n- 멀티종합비타민 (월 1400)\n\n---\n\n끝나면 `git diff --stat` 으로 무엇을 바꿨는지 출력한다."
 }
