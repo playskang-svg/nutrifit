@@ -227,6 +227,9 @@ import { post as milestoneBirthdaySupplementGiftGuide } from "./milestone-birthd
 import { post as pregnantFriendSupplementGiftGuide } from "./pregnant-friend-supplement-gift-guide";
 import { post as partnerSupplementGiftGuide } from "./partner-supplement-gift-guide";
 
+/* --- 2026-09-24 증상별 케어(symptom) 추가 --- */
+import { post as sinusitisSymptomsNutritionGuide } from "./sinusitis-symptoms-nutrition-guide";
+
 const registry: HealthPost[] = [
   nightLegCrampsMagnesium,
   vitaminDDeficiencyKorea,
@@ -441,6 +444,7 @@ const registry: HealthPost[] = [
   milestoneBirthdaySupplementGiftGuide,
   pregnantFriendSupplementGiftGuide,
   partnerSupplementGiftGuide,
+  sinusitisSymptomsNutritionGuide,
 ];
 /* --- 등록부 끝 ---------------------------------------------------- */
 
