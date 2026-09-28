@@ -76,7 +76,7 @@ export const vitaminsList: NutrientItem[] = [
     engName: "Vitamin B2 (Riboflavin / R-5-P)",
     category: "비타민",
     symbolOrAbbr: "Vit B2",
-    oneLineSummary: "체내 세포 호흡, 구내염 예방, 항산화 글루타치온 재생 조효소",
+    oneLineSummary: "체내 에너지 생성과 점막 건강에 관여, 항산화 글루타치온 재생 조효소",
     dailyRDA: "1.5 mg",
     optimalIntake: "25~50 mg",
     deficiencySymptoms: ["구각염 / 구내염 / 설염", "눈 충혈 및 광선 공포증", "지루성 피부염", "피로감"],
@@ -100,7 +100,7 @@ export const vitaminsList: NutrientItem[] = [
       brand: "Thorne",
       productName: "Riboflavin 5'-Phosphate",
       spec: "캡슐 60정",
-      certification: "NSF Certified, 의사 처방급",
+      certification: "NSF Certified",
     }
   },
   {
@@ -348,7 +348,7 @@ export const vitaminsList: NutrientItem[] = [
     engName: "Vitamin D3 (Cholecalciferol)",
     category: "비타민",
     symbolOrAbbr: "Vit D3",
-    oneLineSummary: "칼슘 흡수 촉진, 골다공증 및 골절 예방, 선천 면역 펩타이드(카텔리시딘) 생성",
+    oneLineSummary: "칼슘과 인의 흡수·이용에 필요, 뼈의 형성과 유지에 필요, 선천 면역 펩타이드(카텔리시딘) 생성에 관여",
     dailyRDA: "400~800 IU",
     optimalIntake: "2,000~5,000 IU (혈중 농도 40~60 ng/mL 목표)",
     deficiencySymptoms: ["골연화증 및 노년기 골밀도 급감", "잦은 호흡기 감염 및 면역 붕괴", "계절성 우울증 및 무기력증", "자가면역 질환 위험 증가"],
@@ -565,7 +565,7 @@ export const vitaminsList: NutrientItem[] = [
     bestSupplementForm: {
       recommendedForm: "뇌 장벽(BBB)을 통과하는 시티콜린(CDP-Choline, Cognizin®) 또는 알파-GPC",
       inferiorFormWarning: "일반 염화콜린(Choline Bitartrate)은 장내 미생물에 의해 TMAO로 전환될 위험이 상대적으로 높음",
-      absorptionTip: "수험생 집중력 또는 노년기 치매 예방 목적으로 오전 식후 섭취 권장"
+      absorptionTip: "수험생·노년기 인지 건강에 관심이 있다면 오전 식후 섭취가 무난함 (질병 예방 효과는 확립되지 않음)"
     },
     targetDemographics: ["청소년/학생", "60대+ 노년기", "2030 청년"],
     genders: ["공통"],
@@ -586,7 +586,7 @@ export const vitaminsList: NutrientItem[] = [
     engName: "PABA (Para-Aminobenzoic Acid)",
     category: "비타민",
     symbolOrAbbr: "Vit B10 (구)",
-    oneLineSummary: "엽산 합성 보조, 백모(새치) 예방 및 피부 자외선 손상 방어",
+    oneLineSummary: "엽산 합성 보조, 새치·피부와의 관련성이 거론되는 성분 (근거 제한적)",
     dailyRDA: "미설정",
     optimalIntake: "100~500 mg",
     deficiencySymptoms: ["모발 조기 백발화 (새치)", "자외선 과민증 및 피부 색소 침착", "소화기 피로"],

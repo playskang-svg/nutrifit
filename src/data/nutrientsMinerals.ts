@@ -144,7 +144,7 @@ export const mineralsList: NutrientItem[] = [
     engName: "Iron (Ferrochel Iron Bisglycinate)",
     category: "미네랄",
     symbolOrAbbr: "Fe",
-    oneLineSummary: "헤모글로빈 산소 운반, 전신 조직 저산소증 예방, 어지럼증 및 만성 무기력 해소",
+    oneLineSummary: "헤모글로빈 구성 성분, 체내 산소 운반과 혈액 생성에 필요, 에너지 생성에 필요",
     dailyRDA: "10~14 mg (가임기 여성 14~18mg)",
     optimalIntake: "25~36 mg (빈혈 수치 저하 시)",
     deficiencySymptoms: ["기립성 어지럼증 및 창백한 안색", "만성 산소 부족 피로 및 숨참", "얼음 등을 씹고 싶은 이식증", "스푼형 손톱 및 탈모"],
@@ -416,7 +416,7 @@ export const mineralsList: NutrientItem[] = [
     engName: "Silica (Silicon / Horsetail Extract)",
     category: "미네랄",
     symbolOrAbbr: "Si",
-    oneLineSummary: "콜라겐과 엘라스틴 합성 가속, 모발 굵기 개선, 혈관 유연성 및 동맥경화 예방",
+    oneLineSummary: "콜라겐·엘라스틴 등 결합조직 형성에 관여하는 성분 (모발·혈관 관련 효과는 근거 제한적)",
     dailyRDA: "미설정",
     optimalIntake: "25~50 mg",
     deficiencySymptoms: ["가늘어지고 끊어지는 모발", "잘 깨지고 세로줄 생기는 손톱", "피부 잔주름 증가", "혈관 탄력성 저하"],
@@ -459,7 +459,7 @@ export const mineralsList: NutrientItem[] = [
       { foodName: "브로콜리 / 양배추", contentPer100g: "설포라판 동반", portionTip: "십자화과 채소" },
       { foodName: "자연 방목 달걀", contentPer100g: "메티오닌/시스테인", portionTip: "유황 아미노산 함유" }
     ],
-    foodLimitationReason: "MSM은 휘발성이 매우 강해 조리 가열 및 보관 과정에서 80% 이상 증발하므로 관절염 치료 용량을 식품으로 채우기 불가능.",
+    foodLimitationReason: "MSM은 휘발성이 매우 강해 조리 가열 및 보관 과정에서 80% 이상 증발하므로 보충제 수준의 섭취량을 식품으로 채우기 어려움.",
     bestSupplementForm: {
       recommendedForm: "4단계 증류 정제 공정을 거친 99.9% 순도 OptiMSM® 파우더 또는 캡슐",
       inferiorFormWarning: "중국산 저가 결정화 MSM은 중금속 잔류 및 불순물 위험",

@@ -87,7 +87,7 @@ export const NutrientDetailModal: React.FC<NutrientDetailModalProps> = ({
               <div>
                 <span className="text-xs font-semibold text-emerald-700 block uppercase">최적 기능 섭취량 (Optimal Intake)</span>
                 <span className="text-sm font-bold text-emerald-950">{nutrient.optimalIntake}</span>
-                <p className="text-[11px] text-slate-500 mt-0.5">임상적 활력, 항노화, 피로 개선을 위한 치료적 권장치</p>
+                <p className="text-[11px] text-slate-500 mt-0.5">일부 기능의학 문헌의 참고치이며 공식 권장섭취량이 아닙니다. 상한섭취량을 넘기지 말고 복용 전 전문가와 상담하세요</p>
               </div>
             </div>
           </div>

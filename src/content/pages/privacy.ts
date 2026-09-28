@@ -7,7 +7,7 @@ export const page: SitePage = {
   description:
     "NutriFit(nutrifit.kr)이 수집하는 정보, 쿠키와 광고 식별자 사용 범위, 제3자 광고(Google AdSense) 게재 방식, 이용자가 이를 거부하는 방법을 정리했습니다.",
   navLabel: "개인정보처리방침",
-  updatedAt: "2026-09-09",
+  updatedAt: "2026-09-28",
   summary:
     "이 사이트는 회원가입을 받지 않고 이름·연락처를 저장하지 않습니다. 다만 방문 분석과 광고를 위해 쿠키가 쓰이므로, 무엇이 어디로 가는지 밝힙니다.",
   body: `
@@ -56,7 +56,8 @@ NutriFit(이하 "사이트")은 이용자의 개인정보를 소중히 다루며
 
 - Google을 포함한 제3자 공급업체는 **쿠키를 사용하여 이용자가 이 사이트나 다른 사이트를 방문한 기록을 바탕으로 광고를 게재**합니다.
 - Google이 광고 쿠키(DART 쿠키)를 사용함으로써, Google과 그 파트너는 이용자의 관심분야에 맞춘 광고를 제공할 수 있습니다.
-- 이용자는 [Google 광고 설정](https://myadcenter.google.com/)에서 **맞춤 광고를 해제**할 수 있습니다.
+- 이용자는 [Google 광고 설정](https://adssettings.google.com/)(또는 [내 광고 센터](https://myadcenter.google.com/))에서 **맞춤 광고를 해제**할 수 있습니다.
+- Google이 파트너 사이트에서 정보를 사용하는 방식과 광고 쿠키에 대한 자세한 내용은 [Google 광고 정책](https://policies.google.com/technologies/ads)에서 확인할 수 있습니다.
 - 제3자 공급업체의 쿠키 사용은 [www.aboutads.info](https://www.aboutads.info/choices/)에서 일괄 차단할 수 있습니다.
 - Google의 데이터 처리 방식은 [Google 개인정보처리방침](https://policies.google.com/privacy)과 [Google 파트너 사이트 이용 시 데이터 사용 방침](https://policies.google.com/technologies/partner-sites)을 따릅니다.
 
