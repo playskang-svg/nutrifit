@@ -249,7 +249,7 @@ const supplementaryNutrients: NutrientItem[] = [
     deficiencySymptoms: ["소변 볼 때 찌릿한 요도 작열감", "자주 재발하는 여성 방광염", "소변 참기 힘든 급박뇨"],
     foodSources: [
       { foodName: "크랜베리 생과", contentPer100g: "소량 함유", portionTip: "시중 주스는 설탕 덩어리" },
-      { foodName: "사과 / 복숭아", contentPer100g: "미량", portionTip: "치료적 농도 불가" }
+      { foodName: "사과 / 복숭아", contentPer100g: "미량", portionTip: "보충제 수준 섭취 불가" }
     ],
     foodLimitationReason: "당분이지만 혈당으로 대사되지 않고 신장을 거쳐 소변으로 90% 배출되는 특성으로, 순수 성분 보충이 필수.",
     bestSupplementForm: {
@@ -697,7 +697,7 @@ const supplementaryNutrients: NutrientItem[] = [
     engName: "L-Carnosine (Anti-Glycation & Telomere Protector)",
     category: "아미노산 & 단백질",
     symbolOrAbbr: "Carnosine",
-    oneLineSummary: "혈관 및 렌즈 단백질의 당화(갈변 현상) 억제, 백내장 예방, 세포 수명 텔로미어 단축 지연",
+    oneLineSummary: "혈관·렌즈 단백질의 당화(갈변 현상) 억제와 관련해 연구되는 항산화 성분 (질병 예방 효과는 확립되지 않음)",
     dailyRDA: "미설정",
     optimalIntake: "500~1,000 mg",
     deficiencySymptoms: ["피부 당화로 인한 황색 칙칙함", "수정체 혼탁(백내장 초기)", "동맥 탄력 상실"],
@@ -725,7 +725,7 @@ const supplementaryNutrients: NutrientItem[] = [
   {
     id: "supp-zinc-carnosine",
     number: 93,
-    name: "아연-L-카르노신 (PepZin GI® / 위 점막 밀착 치료)",
+    name: "아연-L-카르노신 (PepZin GI® / 위 점막 관련 연구 원료)",
     engName: "Zinc-L-Carnosine (PepZin GI Mucosal Barrier)",
     category: "장 건강 & 특수기능성",
     symbolOrAbbr: "PepZin GI",
@@ -736,7 +736,7 @@ const supplementaryNutrients: NutrientItem[] = [
     foodSources: [
       { foodName: "일본에서 개발된 킬레이트 특허 화합물", contentPer100g: "식품 존재 안 함", portionTip: "일본에서는 전문의약품으로 승인" }
     ],
-    foodLimitationReason: "일반 아연염(글루콘산 아연 등)은 위산에서 해리되어 위를 자극하고 속 쓰림을 유발하지만, PepZin GI는 위 점막에 밀착 치료 작용을 함.",
+    foodLimitationReason: "일반 아연염(글루콘산 아연 등)은 위산에서 해리되어 위를 자극하고 속 쓰림을 유발하지만, PepZin GI는 위 점막에 머무르는 특성이 연구된 원료임 (위장 질환 치료제가 아님).",
     bestSupplementForm: {
       recommendedForm: "오리지널 일본 하마리(Hamari)사 특허 PepZin GI® 75mg (Zinc 16mg + Carnosine 59mg)",
       inferiorFormWarning: "단순 아연과 카르노신을 물리적으로 섞은 복합제는 위산에 분해되므로 특허 킬레이트 결합 확인",

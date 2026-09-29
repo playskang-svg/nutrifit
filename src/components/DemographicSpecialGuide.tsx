@@ -160,7 +160,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 &amp; 최저가 보기
+                상세 정보 &amp; 최저가 보기
               </button>
               <CoupangBuyButton nutrientId="amino-leucine" size="sm" className="w-full" />
             </div>
@@ -181,7 +181,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 &amp; 최저가 보기
+                상세 정보 &amp; 최저가 보기
               </button>
               <CoupangBuyButton nutrientId="vit-d3" size="sm" className="w-full" />
             </div>
@@ -202,7 +202,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 &amp; 최저가 보기
+                상세 정보 &amp; 최저가 보기
               </button>
               <CoupangBuyButton nutrientId="fatty-ps" size="sm" className="w-full" />
             </div>
@@ -223,7 +223,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
             <p className="text-sm text-slate-300 leading-relaxed max-w-4xl">
               하루 2~3잔의 커피는 신장 아데노신 수용체를 차단하여 체내 마그네슘, 아연, 비타민 B군을 강제로 소변 배출시킵니다. 
               오후만 되면 눈꺼풀이 떨리고 어깨가 뭉치며, 자도 자도 피로가 풀리지 않는 이유는 세포의 실제 ATP 배터리가 방전되었기 때문입니다. 
-              위장장애 없는 <strong>글리시네이트 킬레이트 마그네슘</strong>과 간 해독을 돕는 <strong>밀크씨슬 실리마린</strong>, 활성형 B군이 직장인의 생존 처방입니다.
+              위장 부담이 적은 편으로 알려진 <strong>글리시네이트 킬레이트 마그네슘</strong>과 <strong>밀크씨슬 실리마린</strong>, 활성형 B군이 직장인들이 많이 찾는 조합입니다.
             </p>
           </div>
 
@@ -232,7 +232,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
               <span className="text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">직장인 1위</span>
               <h4 className="font-bold text-base text-slate-900">비스글리시네이트 킬레이트 마그네슘</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                설사 부작용이 없고 근육 뭉침과 눈떨림, 야간 불면을 즉각 이완시키는 최고 흡수율 유기산 마그네슘 300mg.
+                산화마그네슘보다 위장 부담이 적은 편으로 알려진 킬레이트 마그네슘. 에너지 이용과 신경·근육 기능 유지에 필요합니다.
               </p>
               <button
                 onClick={() => {
@@ -241,7 +241,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 보기
+                상세 보기
               </button>
               <CoupangBuyButton nutrientId="mineral-mg" size="sm" className="w-full" />
             </div>
@@ -259,7 +259,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 보기
+                상세 보기
               </button>
               <CoupangBuyButton nutrientId="vit-b-complex" size="sm" className="w-full" />
             </div>
@@ -277,7 +277,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 보기
+                상세 보기
               </button>
               <CoupangBuyButton nutrientId="phyto-silymarin" size="sm" className="w-full" />
             </div>
@@ -316,7 +316,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 보기
+                상세 보기
               </button>
               <CoupangBuyButton nutrientId="amino-theanine" size="sm" className="w-full" />
             </div>
@@ -334,7 +334,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 보기
+                상세 보기
               </button>
               <CoupangBuyButton nutrientId="fatty-dha-brain" size="sm" className="w-full" />
             </div>
@@ -352,7 +352,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
                 }}
                 className="w-full py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors cursor-pointer"
               >
-                처방 상세 보기
+                상세 보기
               </button>
               <CoupangBuyButton nutrientId="mineral-zn" size="sm" className="w-full" />
             </div>
@@ -366,7 +366,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
             <div className="bg-white p-6 rounded-2xl border border-blue-200 shadow-xs space-y-3">
               <div className="flex items-center gap-2 text-blue-700 text-xs font-bold">
                 <CloudSnow className="w-4 h-4" />
-                <span>겨울철 집중 처방 (11월 ~ 3월)</span>
+                <span>겨울철 참고 조합 (11월 ~ 3월)</span>
               </div>
               <h4 className="font-bold text-lg text-slate-900">비타민 D3 5,000IU + 효모 베타글루칸</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
@@ -383,7 +383,7 @@ export const DemographicSpecialGuide: React.FC<DemographicSpecialGuideProps> = (
             <div className="bg-white p-6 rounded-2xl border border-amber-200 shadow-xs space-y-3">
               <div className="flex items-center gap-2 text-amber-700 text-xs font-bold">
                 <Wind className="w-4 h-4" />
-                <span>봄·가을 환절기 처방 (미세먼지 &amp; 알레르기 비염)</span>
+                <span>봄·가을 환절기 참고 조합 (미세먼지 &amp; 알레르기 비염)</span>
               </div>
               <h4 className="font-bold text-lg text-slate-900">케르세틴 파이토솜 + NAC (N-아세틸 시스테인)</h4>
               <p className="text-xs text-slate-600 leading-relaxed">

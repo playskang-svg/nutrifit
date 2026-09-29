@@ -70,7 +70,7 @@ const ORGAN_GUIDES: OrganGuideData[] = [
       },
       {
         nutrientId: "fatty-rtg-omega3",
-        role: "눈물샘 마이봄샘의 염증 억제 및 눈물 기름막 형성으로 안구건조 완치",
+        role: "눈물샘 마이봄샘의 염증 억제 및 눈물 기름막과 관련해 연구되는 성분 (안구건조증 치료 효과는 확립되지 않음)",
         recommendedForm: "IFOS 5-Star 초임계 rTG 오메가-3 (EPA 685mg + DHA 310mg)"
       },
       {
@@ -135,7 +135,7 @@ const ORGAN_GUIDES: OrganGuideData[] = [
     engName: "Joint Cartilage & Bone Density",
     icon: Bone,
     accentColor: "from-blue-600 to-indigo-700",
-    summary: "노년기 무릎 연골 마모와 칼슘 역설(혈관 석회화)을 방지하고, 뼈 속 칼슘을 정확히 골기질로 유도하는 과학적 처방.",
+    summary: "노년기 무릎 연골 마모와 칼슘 역설(혈관 석회화)을 방지하고, 칼슘 대사와 관련해 연구되는 영양소 조합.",
     majorSymptoms: [
       "계단을 내려갈 때 무릎 안쪽이 찌릿하고 시린 통증",
       "관절을 굽힐 때 뚝뚝 소리가 나고 아침 기상 시 뻣뻣한 조조강직",
@@ -221,7 +221,7 @@ const ORGAN_GUIDES: OrganGuideData[] = [
     engName: "Cognitive & Neuro-Protection",
     icon: Brain,
     accentColor: "from-purple-600 to-indigo-800",
-    summary: "뇌세포막 인지질을 복구하여 건망증을 예방하고, 수험생의 뇌파 알파파를 증폭시켜 장시간 몰입 상태를 지원합니다.",
+    summary: "뇌세포막 인지질을 구성하는 성분으로, 인지 기능과의 관련성이 연구되고 있습니다. 건망증 예방이나 집중력 향상을 보장하지 않습니다.",
     majorSymptoms: [
       "방금 전 하려던 말이나 사람 이름이 즉각 떠오르지 않는 노인성 건망증",
       "시험이나 발표를 앞두고 가슴이 두근거리고 잡생각으로 집중 분산",
@@ -275,7 +275,7 @@ export const OrganHealthGuide: React.FC<OrganHealthGuideProps> = ({
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">
             <ShieldCheck className="w-4 h-4" />
-            <span>약한 부위별 정밀 영양 처방</span>
+            <span>약한 부위별 영양 가이드</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-2">
             눈·장·관절·간·뇌: 취약 부위별 음식과 최적 영양제 가이드
@@ -413,7 +413,7 @@ export const OrganHealthGuide: React.FC<OrganHealthGuideProps> = ({
                 >
                   <div className="flex items-center justify-between mb-1.5">
                     <span className="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">
-                      처방 #{idx + 1}
+                      추천 #{idx + 1}
                     </span>
                     {matchedNutrient && (
                       <span className="text-[11px] font-mono text-slate-400">
@@ -447,7 +447,7 @@ export const OrganHealthGuide: React.FC<OrganHealthGuideProps> = ({
                         </div>
                       </div>
                       <div className="flex items-center gap-1 text-[11px] font-bold text-slate-500 group-hover:text-emerald-700 group-hover:translate-x-0.5 transition-all">
-                        <span>처방 상세</span>
+                        <span>상세 보기</span>
                         <ChevronRight className="w-3.5 h-3.5" />
                       </div>
                     </div>

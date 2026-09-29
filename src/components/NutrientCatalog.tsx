@@ -113,7 +113,7 @@ export const NutrientCatalog: React.FC<NutrientCatalogProps> = ({
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white mb-3 leading-tight">
-            100대 필수 영양소 대백과 &amp; 결핍 맞춤 처방
+            100대 필수 영양소 대백과 &amp; 결핍 맞춤 가이드
           </h1>
           <p className="text-sm sm:text-base text-slate-300 font-normal leading-relaxed line-clamp-3 sm:line-clamp-none">
             나이대별(특히 노년기), 남녀, 계절별, 직업군(직장인·수험생), 취약 부위(눈·장·관절 등)에 필요한 

@@ -47,6 +47,25 @@ function renderHeadTags(head: SeoHead): string {
     .join("\n    ");
 }
 
+/** 모든 사전렌더 페이지 하단에 싣는 의학적 고지. */
+export const MEDICAL_DISCLAIMER =
+  "본 글은 정보 제공 목적이며 의학적 진단·치료를 대체하지 않습니다. 복용 전 전문가와 상담하세요. 건강기능식품은 질병의 예방·치료를 위한 의약품이 아닙니다.";
+
+/**
+ * 사전렌더 공통 푸터. React 가 마운트되기 전(=JS 를 실행하지 않는 크롤러)에도
+ * 모든 페이지에서 소개·문의·개인정보처리방침·이용약관으로 가는 링크가 보이게 한다.
+ */
+export function renderSiteFooter(): string {
+  const links = allPages
+    .map((page) => `<li><a href="/${page.slug}">${escapeHtml(page.navLabel)}</a></li>`)
+    .join("");
+  return `<footer>
+    <nav aria-label="사이트 안내"><ul>${links}</ul></nav>
+    <p>${escapeHtml(COUPANG_DISCLOSURE)}</p>
+    <p>\u00a9 ${escapeHtml(SITE.name)} \u00b7 문의 <a href="/contact">문의하기</a></p>
+  </footer>`;
+}
+
 /** 크롤러가 읽을 본문. 화면 스타일은 React 쪽이 담당하므로 구조만 정직하게 낸다. */
 export function renderPostShell(post: HealthPost): string {
   const keyPoints = post.keyPoints.length
@@ -86,8 +105,9 @@ export function renderPostShell(post: HealthPost): string {
     <div class="post-body">${renderMarkdown(post.body)}</div>
     ${faq}
     ${sources}
-    <p>이 글은 일반적인 건강·영양 정보이며 의사의 진단이나 처방을 대신하지 않습니다.</p>
+    <p>${MEDICAL_DISCLAIMER}</p>
   </article>
+  ${renderSiteFooter()}
 </div>`;
 }
 
@@ -112,6 +132,7 @@ export function renderListShell(category: string, posts: HealthPost[]): string {
   <p>${escapeHtml(COUPANG_DISCLOSURE)} ${escapeHtml(AFFILIATE_DISCLOSURE)}</p>
   <nav><ul>${categoryLinks}</ul></nav>
   <ul>${items || "<li>발행된 글이 없습니다.</li>"}</ul>
+  ${renderSiteFooter()}
 </div>`;
 }
 
@@ -125,6 +146,7 @@ export function renderPageShell(page: SitePage): string {
     <p>${escapeHtml(page.summary)}</p>
     <div class="post-body">${renderMarkdown(page.body)}</div>
   </article>
+  ${renderSiteFooter()}
 </div>`;
 }
 
@@ -193,6 +215,7 @@ export function renderHomeShell(): string {
 
     <h2>사이트 안내</h2>
     <ul>${pageLinks}</ul>
+    <p>${MEDICAL_DISCLAIMER}</p>
   </article>
 </div>`;
 }
@@ -306,10 +329,6 @@ const HOME_SECTIONS: { label: string; summary: string }[] = [
   {
     label: "생애주기·직업별 정리",
     summary: "노년기, 수험생, 교대근무처럼 생활 조건이 다른 경우의 우선순위 정리",
-  },
-  {
-    label: "해외 연구·칼럼 요약",
-    summary: "해외 보건기관과 대형 의료기관이 낸 자료를 과장 없이 요약하고 원문을 함께 밝힌 코너",
   },
   {
     label: "가격·배송 정보",

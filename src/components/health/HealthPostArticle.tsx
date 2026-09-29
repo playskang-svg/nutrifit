@@ -282,8 +282,8 @@ export const HealthPostArticle: React.FC<HealthPostArticleProps> = ({
         <aside className="mt-10 flex gap-3 bg-amber-50 border border-amber-200 rounded-xl p-4">
           <ShieldAlert className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
           <p className="text-[12px] text-amber-900 leading-relaxed">
-            <strong className="font-bold">의학적 고지</strong> — 이 글은 일반적인 건강·영양 정보이며 의사의 진단이나
-            처방을 대신하지 않습니다. 질환을 치료 중이거나 약을 복용 중인 경우, 임신·수유 중인 경우에는
+            <strong className="font-bold">의학적 고지</strong> — 본 글은 정보 제공 목적이며 의학적 진단·치료를
+            대체하지 않습니다. 복용 전 전문가와 상담하세요. 질환을 치료 중이거나 약을 복용 중인 경우, 임신·수유 중인 경우에는
             영양제 섭취 전 반드시 의료진과 상의하세요. 증상이 지속되거나 악화되면 진료를 받으시기 바랍니다.
           </p>
         </aside>

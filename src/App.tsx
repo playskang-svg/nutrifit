@@ -3,7 +3,6 @@ import { Header } from "./components/Header";
 import { NutrientCatalog } from "./components/NutrientCatalog";
 import { OrganHealthGuide } from "./components/OrganHealthGuide";
 import { DemographicSpecialGuide } from "./components/DemographicSpecialGuide";
-import { GlobalColumnsSection } from "./components/GlobalColumnsSection";
 import { DiscountDealSection } from "./components/DiscountDealSection";
 import { SupplementScheduleSection } from "./components/SupplementScheduleSection";
 import { NutritionVisualizerSection } from "./components/NutritionVisualizerSection";
@@ -15,7 +14,6 @@ import { HealthPostList } from "./components/health/HealthPostList";
 import { HealthPostArticle } from "./components/health/HealthPostArticle";
 import { Footer } from "./components/Footer";
 import { all100Nutrients } from "./data/nutrientsAll";
-import { healthColumnsData } from "./data/healthColumnsData";
 import { getPostBySlug, getPostsByCategory } from "./content/posts";
 import { getPageBySlug } from "./content/pages";
 import { SitePageView } from "./components/SitePageView";
@@ -24,10 +22,17 @@ import { buildPostSeo, buildHealthListSeo, buildPageSeo, applySeoHead } from "./
 import { NutrientItem } from "./types";
 import { Search } from "lucide-react";
 
+/**
+ * 노출을 중단한 탭. '글로벌 칼럼'은 실제로 존재하지 않는 해외 기관 원문 주소·저자명을
+ * 출처로 달고 있어(원문 링크 404) YMYL·애드센스 심사에서 허위 출처로 읽힐 위험이 커서 내렸다.
+ * 출처를 실제 원문으로 검증해 고치기 전에는 다시 열지 않는다.
+ */
+const HIDDEN_TABS = new Set(["columns"]);
+
 export default function App() {
   const route = useRoute();
   const [activeTab, setActiveTabState] = useState<string>(
-    route.name === "home" ? route.tab : "catalog"
+    route.name === "home" && !HIDDEN_TABS.has(route.tab) ? route.tab : "catalog"
   );
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedNutrient, setSelectedNutrient] = useState<NutrientItem | null>(null);
@@ -172,14 +177,6 @@ export default function App() {
 
             {activeTab === "demographics" && (
               <DemographicSpecialGuide
-                allNutrients={all100Nutrients}
-                onSelectNutrient={(item) => setSelectedNutrient(item)}
-              />
-            )}
-
-            {activeTab === "columns" && (
-              <GlobalColumnsSection
-                columns={healthColumnsData}
                 allNutrients={all100Nutrients}
                 onSelectNutrient={(item) => setSelectedNutrient(item)}
               />

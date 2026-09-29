@@ -23,7 +23,6 @@ export const post: HealthPost = {
   },
   readingMinutes: 7,
   heroEmoji: "😤",
-  thumbnail: "/thumbnails/stress-cortisol-evening-health.svg",
   summary:
     "직장에서 5분 동안 기분 나쁜 말을 들었는데, 퇴근 후에도 3시간째 그 사람과 머릿속에서 싸우고 있습니다. 그 사이 코르티솔은 소화를 멈추고, 수면을 방해하고, 면역세포를 억누르고, 혈당을 흔듭니다. 스트레스를 빨리 끊는 것이 어떤 영양제보다 먼저인 이유를 정리합니다.",
   keyPoints: [
