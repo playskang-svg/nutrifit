@@ -8,6 +8,7 @@ import {
   buildPostSeo,
   buildHealthListSeo,
   buildPageSeo,
+  DEFAULT_OG_IMAGE,
 } from "./seo";
 import { renderMarkdown, escapeHtml } from "./markdown";
 import { getCategoryLabel, postCategories } from "../content/postCategories";
@@ -29,9 +30,17 @@ function renderHeadTags(head: SeoHead): string {
     0
   ).replace(/</g, "\\u003c");
 
+  const image = head.image ?? DEFAULT_OG_IMAGE;
+
   return [
     `<meta property="og:site_name" content="${escapeHtml(SITE.name)}" />`,
     `<meta property="og:locale" content="${SITE.locale}" />`,
+    `<meta property="og:image" content="${escapeHtml(image.url)}" />`,
+    `<meta property="og:image:secure_url" content="${escapeHtml(image.url)}" />`,
+    image.type ? `<meta property="og:image:type" content="${image.type}" />` : "",
+    image.width ? `<meta property="og:image:width" content="${image.width}" />` : "",
+    image.height ? `<meta property="og:image:height" content="${image.height}" />` : "",
+    `<meta property="og:image:alt" content="${escapeHtml(image.alt)}" />`,
     head.publishedTime
       ? `<meta property="article:published_time" content="${head.publishedTime}" />`
       : "",
@@ -41,6 +50,8 @@ function renderHeadTags(head: SeoHead): string {
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${escapeHtml(head.title)}" />`,
     `<meta name="twitter:description" content="${escapeHtml(head.description)}" />`,
+    `<meta name="twitter:image" content="${escapeHtml(image.url)}" />`,
+    `<meta name="twitter:image:alt" content="${escapeHtml(image.alt)}" />`,
     `<script type="application/ld+json">${jsonLd}</script>`,
   ]
     .filter(Boolean)
@@ -246,6 +257,12 @@ export function injectDocument(html: string, head: SeoHead, shell: string): stri
       /<meta\s+property="og:type"\s+content="[\s\S]*?"\s*\/?>/i,
       `<meta property="og:type" content="${head.ogType}" />`
     );
+
+  // index.html 의 홈 기본 미리보기 이미지 태그를 걷어내고, 이 페이지 값(renderHeadTags)으로 다시 넣는다.
+  output = output.replace(
+    /\s*<meta\s+(?:property|name)="(?:og:image(?::[a-z_]+)?|twitter:image(?::alt)?)"\s+content="[\s\S]*?"\s*\/?>/gi,
+    ""
+  );
 
   // 홈용 구조화 데이터가 글 페이지에 남으면 잘못된 신호가 된다. 걷어내고 이 페이지 것을 넣는다.
   output = output.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/gi, "");

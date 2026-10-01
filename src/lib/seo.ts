@@ -10,6 +10,52 @@ export const SITE = {
   healthSectionTitle: "건강블로그",
 } as const;
 
+/** 링크 미리보기(og:image) 한 장. 크롤러는 자바스크립트를 돌리지 않으므로 절대 https 주소여야 한다. */
+export interface OgImage {
+  url: string;
+  type?: string;
+  width?: number;
+  height?: number;
+  alt: string;
+}
+
+/**
+ * 사이트 전체 기본 미리보기 이미지(public/og-image.jpg, 1200x630 JPEG).
+ * 글에 래스터 대표 이미지(thumbnail)가 있으면 그걸 먼저 쓰고, 없을 때 이 값으로 떨어진다.
+ */
+export const DEFAULT_OG_IMAGE: OgImage = {
+  url: `${SITE.origin}/og-image.jpg`,
+  type: "image/jpeg",
+  width: 1200,
+  height: 630,
+  alt: "뉴트리핏 NutriFit - 영양소 100가지·맞춤 영양제 가이드",
+};
+
+const OG_IMAGE_TYPES: Record<string, string> = {
+  jpg: "image/jpeg",
+  jpeg: "image/jpeg",
+  png: "image/png",
+  webp: "image/webp",
+  gif: "image/gif",
+};
+
+/**
+ * 글별 대표 이미지. SVG 썸네일은 페이스북·카카오톡 등 대부분의 미리보기가 받지 않으므로
+ * jpg/png/webp/gif 일 때만 쓰고, 나머지는 사이트 기본 이미지로 대체한다.
+ */
+export function postOgImage(post: HealthPost): OgImage {
+  const thumb = post.thumbnail?.trim();
+  if (!thumb) return DEFAULT_OG_IMAGE;
+  const ext = thumb.split(/[?#]/)[0].split(".").pop()?.toLowerCase() ?? "";
+  const type = OG_IMAGE_TYPES[ext];
+  if (!type) return DEFAULT_OG_IMAGE;
+  let url: string;
+  if (/^https:\/\//i.test(thumb)) url = thumb;
+  else if (thumb.startsWith("/")) url = `${SITE.origin}${thumb}`;
+  else return DEFAULT_OG_IMAGE;
+  return { url, type, alt: post.title };
+}
+
 export interface SeoHead {
   title: string;
   description: string;
@@ -18,6 +64,8 @@ export interface SeoHead {
   ogType: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
+  /** 비우면 DEFAULT_OG_IMAGE */
+  image?: OgImage;
   jsonLd: unknown[];
 }
 
@@ -100,6 +148,7 @@ export function buildPostSeo(post: HealthPost): SeoHead {
     ogType: "article",
     publishedTime: post.publishedAt,
     modifiedTime: post.updatedAt ?? post.publishedAt,
+    image: postOgImage(post),
     jsonLd: graph,
   };
 }
@@ -203,6 +252,21 @@ export function applySeoHead(head: SeoHead): void {
   setMeta('meta[property="og:url"]', "property", "og:url", head.canonical);
   setMeta('meta[property="og:type"]', "property", "og:type", head.ogType);
   if (head.keywords) setMeta('meta[name="keywords"]', "name", "keywords", head.keywords);
+
+  const image = head.image ?? DEFAULT_OG_IMAGE;
+  setMeta('meta[property="og:image"]', "property", "og:image", image.url);
+  setMeta('meta[property="og:image:secure_url"]', "property", "og:image:secure_url", image.url);
+  setMeta('meta[property="og:image:alt"]', "property", "og:image:alt", image.alt);
+  setMeta('meta[name="twitter:image"]', "name", "twitter:image", image.url);
+  const optionalImageMeta: [string, string | undefined][] = [
+    ["og:image:type", image.type],
+    ["og:image:width", image.width ? String(image.width) : undefined],
+    ["og:image:height", image.height ? String(image.height) : undefined],
+  ];
+  for (const [key, value] of optionalImageMeta) {
+    if (value) setMeta(`meta[property="${key}"]`, "property", key, value);
+    else document.head.querySelector(`meta[property="${key}"]`)?.remove();
+  }
 
   let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
   if (!canonical) {
