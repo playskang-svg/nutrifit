@@ -3,10 +3,10 @@
   "label": "뉴트리핏",
   "domain": "nutrifit.kr",
   "repo": "playskang-svg/nutrifit",
-  "scannedAt": "2026-09-19T01:09:54.328Z",
+  "scannedAt": "2026-10-03T01:55:11.580Z",
   "pagesCrawled": 200,
-  "sitemapUrls": 216,
-  "externalChecked": 88,
+  "sitemapUrls": 228,
+  "externalChecked": 85,
   "summary": {
     "medium": 11,
     "low": 3
@@ -17,7 +17,7 @@
       "severity": "medium",
       "kind": "no-semantic-nav",
       "page": "https://nutrifit.kr",
-      "links": 24,
+      "links": 25,
       "note": "nav/header/footer도 role=navigation도 없다. 링크는 있으나 메뉴 구조를 기계가 못 읽는다"
     },
     {
@@ -120,6 +120,15 @@
     {
       "severity": "low",
       "kind": "external-unreachable",
+      "page": "https://nutrifit.kr/health/chuseok-supplement-gift-set-guide",
+      "href": "https://www.kca.go.kr",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
       "page": "https://nutrifit.kr/health/dry-eye-supplement-guide",
       "href": "https://www.ophthalmology.or.kr",
       "status": 0,
@@ -131,15 +140,6 @@
       "kind": "external-unreachable",
       "page": "https://nutrifit.kr/health/high-school-multivitamin-guide",
       "href": "https://www.kdca.go.kr/yhs",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://nutrifit.kr/health/yeongnong-magnesium-ingredient-guide",
-      "href": "https://www.kca.go.kr",
       "status": 0,
       "error": "fetch failed",
       "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
