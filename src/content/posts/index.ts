@@ -230,6 +230,9 @@ import { post as partnerSupplementGiftGuide } from "./partner-supplement-gift-gu
 /* --- 2026-09-24 증상별 케어(symptom) 추가 --- */
 import { post as sinusitisSymptomsNutritionGuide } from "./sinusitis-symptoms-nutrition-guide";
 
+/* --- 2026-10-06 가을 세로토닌 식욕 가이드 --- */
+import { post as autumnSweetCravingSerotoninNutrition } from "./autumn-sweet-craving-serotonin-nutrition";
+
 const registry: HealthPost[] = [
   nightLegCrampsMagnesium,
   vitaminDDeficiencyKorea,
@@ -445,6 +448,7 @@ const registry: HealthPost[] = [
   pregnantFriendSupplementGiftGuide,
   partnerSupplementGiftGuide,
   sinusitisSymptomsNutritionGuide,
+  autumnSweetCravingSerotoninNutrition,
 ];
 /* --- 등록부 끝 ---------------------------------------------------- */
 
