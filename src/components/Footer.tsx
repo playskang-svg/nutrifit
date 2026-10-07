@@ -26,8 +26,8 @@ export const Footer: React.FC<FooterProps> = ({
               <span className="font-bold text-base tracking-tight">NutriFit 100 (뉴트리핏)</span>
             </div>
             <p className="text-slate-400 text-[11px] leading-relaxed">
-              100대 필수 영양소 임상 데이터베이스. 생애주기별(노년기·성장기), 성별, 계절, 직업(직장인·수험생), 
-              취약 부위(눈·장·관절·간)에 맞춘 과학적 음식과 고생체이용률 영양제 가이드.
+              100대 필수 영양소 정보 데이터베이스. 생애주기별(노년기·성장기), 성별, 계절, 직업(직장인·수험생), 
+              취약 부위(눈·장·관절·간)에 맞춘 음식과 영양제 선택 가이드.
             </p>
             <a
               {...linkProps("/editorial")}
@@ -87,7 +87,7 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => setActiveTab("organs")} 
                   className="hover:text-white transition-colors cursor-pointer"
                 >
-                  약한 부위별 처방 (눈·장·관절·간)
+                  약한 부위별 영양 (눈·장·관절·간)
                 </button>
               </li>
               <li>
@@ -96,14 +96,6 @@ export const Footer: React.FC<FooterProps> = ({
                   className="hover:text-white transition-colors cursor-pointer"
                 >
                   노년기 근감소증 &amp; 직장인 피로 솔루션
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => setActiveTab("columns")} 
-                  className="hover:text-white transition-colors cursor-pointer"
-                >
-                  하버드·메이요클리닉 의학 칼럼
                 </button>
               </li>
               <li>
@@ -119,13 +111,11 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Col 3: Medical Reference Sources */}
           <div className="space-y-2">
-            <h4 className="text-white font-bold uppercase tracking-wider text-xs">학술 및 의학 자문 근거</h4>
+            <h4 className="text-white font-bold uppercase tracking-wider text-xs">주요 참고 기관 (제휴·자문 관계 없음)</h4>
             <ul className="space-y-1.5 text-[11px] text-slate-400">
               <li>미국 국립의학도서관 (PubMed / NIH)</li>
               <li>식품의약품안전처 (MFDS) 건강기능식품 데이터</li>
               <li>유럽식품안전청 (EFSA) 기능성 원료 기준</li>
-              <li>하버드 의과대학 헬스 퍼블리싱 (Harvard Health)</li>
-              <li>메이요 클리닉 위장관 &amp; 대사 리포트</li>
               <li>식품의약품안전처 건강기능식품 기능성 원료 인정 자료</li>
             </ul>
           </div>
@@ -137,13 +127,13 @@ export const Footer: React.FC<FooterProps> = ({
               <span>무료 AI 맞춤 영양 분석</span>
             </div>
             <p className="text-[11px] text-slate-300">
-              본인의 연령, 성별, 취약 부위를 체크하고 1분 만에 의학적 영양 리포트를 받아보세요.
+              본인의 연령, 성별, 취약 부위를 체크하고 1분 만에 참고용 영양 정보를 받아보세요. 진단이 아닙니다.
             </p>
             <button
               onClick={onOpenAiDiagnostic}
               className="w-full py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-lg transition-colors cursor-pointer"
             >
-              AI 맞춤 진단 시작하기
+              AI 맞춤 영양 분석 시작하기
             </button>
           </div>
         </div>
@@ -152,7 +142,8 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="border-t border-slate-800 pt-6 space-y-2 text-[10px] text-slate-400 leading-relaxed">
           <p>
             <strong>의학적 면책 고지 (Medical Disclaimer):</strong> 본 웹사이트에서 제공하는 정보는 학술 연구 및 의학 칼럼을 바탕으로 한 일반적인 건강 및 영양 정보이며, 
-            의사의 진단, 치료 또는 처방을 대신할 수 없습니다. 질환이 있거나 처방약을 복용 중인 경우 영양제 섭취 전 반드시 주치의 또는 약사와 상담하십시오.
+            의사의 진단, 치료 또는 처방을 대신할 수 없습니다. 본 글은 정보 제공 목적이며 의학적 진단·치료를 대체하지 않습니다. 복용 전 전문가와 상담하세요.
+            건강기능식품은 질병의 예방·치료를 위한 의약품이 아닙니다. 질환이 있거나 처방약을 복용 중인 경우 영양제 섭취 전 반드시 주치의 또는 약사와 상담하십시오.
           </p>
           <p>
             <strong>제휴 마케팅 안내:</strong> {COUPANG_DISCLOSURE} 해외 직구 비교 링크(iHerb)에는 추천인 코드가 포함되어 있습니다. 

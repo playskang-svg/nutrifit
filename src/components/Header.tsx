@@ -48,9 +48,8 @@ const NAV_ITEMS: {
   { id: "visualizer", label: "영양 상태 시각화", hint: "내 부족분을 그래프로", icon: BarChart3 },
   { id: "subscription", label: "영양제 구독 관리", hint: "재구매 주기와 비용", icon: Package },
   { id: "diet", label: "식단 매칭 가이드", hint: "먹은 음식에 맞춘 보충", icon: Utensils },
-  { id: "organs", label: "약한 부위별 처방", hint: "눈·장·관절·간", icon: Activity },
+  { id: "organs", label: "약한 부위별 영양", hint: "눈·장·관절·간", icon: Activity },
   { id: "demographics", label: "노년기·직업별", hint: "생애주기와 직업군", icon: ShieldCheck },
-  { id: "columns", label: "글로벌 칼럼", hint: "해외 연구 요약", icon: BookOpen },
   { id: "deals", label: "가격·배송 혜택", hint: "로켓배송·직구가 비교", icon: Tag },
 ];
 
@@ -134,7 +133,7 @@ export const Header: React.FC<HeaderProps> = ({
                   </span>
                 </div>
                 <p className="text-xs text-slate-500 hidden lg:block">
-                  100대 필수 영양소 · 부위별·생애주기별 맞춤 처방 &amp; 직구 가이드
+                  100대 필수 영양소 · 부위별·생애주기별 맞춤 영양 정보 &amp; 직구 가이드
                 </p>
               </div>
             </a>

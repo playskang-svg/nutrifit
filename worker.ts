@@ -9,6 +9,7 @@ import {
 import { getPostBySlug, getPostsByCategory } from "./src/content/posts";
 import { getPageBySlug } from "./src/content/pages";
 import { PostCategorySlug } from "./src/types";
+import { postCategories } from "./src/content/postCategories";
 
 interface Fetcher {
   fetch(input: Request | string, init?: RequestInit): Promise<Response>;
@@ -101,8 +102,9 @@ export default {
         const hasValidKey = Boolean(apiKey && apiKey !== 'MY_GEMINI_API_KEY');
 
         if (hasValidKey) {
-          const prompt = `당신은 대한민국 최고 수준의 기능의학(Functional Medicine) 전문의이자 임상영양학자입니다.
-다음 사용자 프로필에 맞춰 과학적 근거에 기반한 1:1 맞춤 영양 리포트를 JSON으로 작성해주세요.
+          const prompt = `당신은 공공 영양기준과 식약처 건강기능식품 기능성 고시를 근거로 영양 정보를 정리하는 에디터입니다. 의사가 아니며 진단·처방을 하지 않습니다.
+다음 사용자 프로필에 맞춰 참고용 영양 정보 리포트를 JSON으로 작성해주세요.
+[반드시 지킬 것] 질병의 진단·치료·예방·완치를 단정하지 말고 '알려져 있다/연구된다'로 표현한다. 권장 용량은 한국인 영양소 섭취기준의 상한섭취량을 넘기지 않는다. 특정 효과를 보장하지 않는다. cautionNotes 에는 '복용 전 의사·약사와 상담하세요'를 포함한다.
 
 [사용자 프로필]
 - 연령대: ${ageGroup}
@@ -115,7 +117,7 @@ export default {
 
 반드시 아래 JSON 구조로만 마크다운 코드블록 없이 순수 JSON만 반환하세요:
 {
-  "summary": "1줄 종합 임상 진단 요약 (예: 60대 여성 노년기 동화작용 저항성과 골다공증·안구건조 위험 집중 케어)",
+  "summary": "1줄 참고 요약 (진단 표현 금지. 예: 60대 여성에게 부족하기 쉬운 영양소와 식사 점검 포인트)",
   "demographicInsights": "생애주기/직업 특성에 따른 영양소 흡수 기전 및 생체이용률 관점의 상세 해설 2~3줄",
   "recommendedFoods": [
     { "food": "식품명 1", "reason": "이 식품이 추천되는 핵심 영양성분과 기전" },
@@ -128,7 +130,7 @@ export default {
       "nutrientName": "영양소 및 최적 제형명 1",
       "recommendedForm": "특허 원료 또는 고흡수율 제형 (예: 비스글리시네이트, TRAACS, rTG 등)",
       "dosageTiming": "최적 섭취 타이밍 (예: 아침 식후, 취침 30분 전)",
-      "whyNeeded": "이 영양소가 필요한 임상적 근거 및 효과"
+      "whyNeeded": "이 영양소가 검토 대상인 이유 (식약처 기능성 문구 수준, 효과 단정 금지)"
     },
     {
       "nutrientName": "영양소 및 최적 제형명 2",
@@ -180,37 +182,37 @@ export default {
         const isSenior = String(ageGroup).includes('60') || String(ageGroup).includes('70') || String(ageGroup).includes('노년');
         
         const dynamicResult = {
-          summary: `${ageGroup} ${gender} (${targetList.join(', ')} 집중) 맞춤 기능의학 진단: 소화 흡수율 최적화와 세포 결합조직 재생 처방`,
+          summary: `${ageGroup} ${gender} (${targetList.join(', ')} 관심) 참고용 영양 정보입니다. 진단이 아니며, 복용 전 의사·약사와 상담하세요.`,
           demographicInsights: isSenior
-            ? `노년기에는 위산 분비와 췌장 효소가 최대 50%까지 감소하여 동화작용 저항성(Anabolic Resistance)이 발생합니다. 음식 섭취뿐만 아니라 아미노산(류신 3g)과 킬레이트 미네랄, 지용성 비타민(D3+K2)을 통해 혈관 석회화를 막고 골밀도를 지키는 정밀 보충이 필수적입니다.`
-            : `${ageGroup}의 활동량과 ${season} 계절 변화에 따른 산화 스트레스를 억제하고, ${targetList[0] || '전신 활력'}의 미토콘드리아 ATP 대사를 정상화하는 기능성 영양 설계입니다.`,
+            ? `노년기에는 위산 분비가 줄어 비타민 B12 등 일부 영양소의 흡수가 떨어질 수 있는 것으로 알려져 있습니다. 단백질·칼슘·비타민 D 섭취가 부족하지 않은지 식사부터 점검하고, 보충이 필요한지는 의사·약사와 상담해 정하세요.`
+            : `${ageGroup}의 생활 패턴과 ${season} 계절을 고려해 식사로 먼저 챙길 영양소를 정리한 참고 정보입니다. ${targetList[0] || '관심 부위'} 관련 증상이 계속되면 진료를 먼저 받으세요.`,
           recommendedFoods: [
-            { food: '자연산 연어 & 등푸른 생선', reason: '망막 황반 및 심뇌혈관 세포막을 보호하는 천연 EPA/DHA 오메가-3' },
-            { food: '데친 브로콜리 새싹 & 케일', reason: '설포라판 및 루테인·지아잔틴 항산화 카로티노이드 고농도 공급' },
-            { food: '전통 발효 된장국 & 멸치', reason: '장내 미생물총 다양성 증진 및 뼈 기질 형성을 위한 천연 미네랄' },
+            { food: '자연산 연어 & 등푸른 생선', reason: 'EPA·DHA 오메가-3 지방산의 대표 급원' },
+            { food: '데친 브로콜리 새싹 & 케일', reason: '루테인·지아잔틴 등 카로티노이드 급원' },
+            { food: '전통 발효 된장국 & 멸치', reason: '발효식품과 칼슘 급원 (된장국은 나트륨 섭취에 유의)' },
           ],
-          foodLimitations: '음식 조리 과정에서 비타민 D3나 아스타잔틴, 고순도 킬레이트 마그네슘의 유효 활성 성분이 파괴되거나 섭취량이 부족하므로 고생체이용률 보충제가 동반되어야 합니다.',
+          foodLimitations: '비타민 D처럼 식사만으로 채우기 어려운 영양소가 있습니다. 보충 여부와 용량은 한국인 영양소 섭취기준의 상한섭취량을 넘지 않도록 전문가와 상담해 정하세요.',
           prescribedSupplements: [
             {
-              nutrientName: '비타민 D3 (5,000IU) + K2 (MK-7 100mcg)',
+              nutrientName: '비타민 D3 + K2 (MK-7)',
               recommendedForm: 'MCT 오일 베이스 연질캡슐 (천연 낫토 유래 MenaQ7®)',
               dosageTiming: '기름진 아침 또는 점심 식후',
-              whyNeeded: '혈관 석회화를 억제하고 칼슘을 뼈 기질로 직행시켜 골다공증 및 심혈관 보호',
+              whyNeeded: '비타민 D는 칼슘과 인의 흡수·이용, 뼈의 형성과 유지에 필요합니다(식약처 기능성). 용량은 상한섭취량(성인 100μg=4,000IU) 이내로 전문가와 상의하세요.',
             },
             {
               nutrientName: '마그네슘 비스글리시네이트 킬레이트',
-              recommendedForm: 'Albion® TRAACS 완전 킬레이트 (위장장애·설사 없음)',
+              recommendedForm: '킬레이트 형태 (산화마그네슘보다 위장 부담이 적은 편으로 알려짐)',
               dosageTiming: '취침 30분~1시간 전 또는 저녁 식후',
-              whyNeeded: '신경 안정, 야간 다리 쥐남 완화, 수면의 질 개선 및 300여 종 체내 효소 활성화',
+              whyNeeded: '에너지 이용과 신경·근육 기능 유지에 필요합니다(식약처 기능성). 신장 질환이 있으면 복용 전 상담이 필요합니다.',
             },
             {
               nutrientName: '루테인·지아잔틴 (5:1) + 아스타잔틴 (6mg)',
               recommendedForm: 'Lutemax 2020® + 천연 헤마토코쿠스 추출 AstaReal®',
               dosageTiming: '점심 식사 직후',
-              whyNeeded: '황반 중심부와 주변부 색소 밀도 동시 유지 및 침침한 모양체 조절 근육 피로 회복',
+              whyNeeded: '루테인은 노화로 감소될 수 있는 황반색소밀도를 유지해 눈 건강에 도움을 줄 수 있습니다(식약처 기능성).',
             },
           ],
-          cautionNotes: '고혈압약, 혈전용해제(와파린/아스피린)를 복용 중인 경우 고용량 비타민 K2 복용 전 전문의와 상의하십시오.',
+          cautionNotes: '본 결과는 정보 제공 목적이며 의학적 진단·치료를 대체하지 않습니다. 복용 전 전문가와 상담하세요. 항응고제(와파린 등)를 복용 중이라면 비타민 K 제품은 반드시 의사와 상의하십시오.',
           recommendedNutrientIds: ['vit-d3', 'vit-k2-mk7', 'min-magnesium-glycinate', 'phyto-lutein-zeaxanthin', 'phyto-astaxanthin'],
         };
 
@@ -252,8 +254,8 @@ export default {
 본문: ${content}
 
 [출력 형식]
-### 💡 Gemini AI 의학 자문 요약
-1. **임상 핵심**: (최신 연구와 데이터 요약)
+### AI 요약 (참고용)
+1. **핵심 내용**: (원문 내용 요약. 질병 치료·예방 단정 금지)
 2. **생체이용률 팁**: (어떤 제형을 어떻게 먹어야 흡수율이 극대화되는지)
 3. **즉시 실천 가이드**: (일상에서 바로 적용할 수 있는 구체적 행동 지침)`;
 
@@ -279,10 +281,9 @@ export default {
         }
 
         // Fallback digest
-        const digest = `### 💡 Gemini AI 의학 자문 요약
-1. **임상 핵심**: ${title}에 관한 글로벌 임상 가이드라인에 따르면, 단일 영양소보다 흡수 조효소와의 복합 섭취 시 생체이용률이 최대 3.2배 향상됩니다.
-2. **생체이용률 팁**: 지용성 성분은 불포화지방산이 풍부한 식사 직후 섭취하고, 미네랄은 유기산 킬레이트 제형을 선택하여 위장 장애를 최소화하세요.
-3. **즉시 실천 가이드**: 수면 1시간 전 스마트폰 블루라이트 차단과 함께 마그네슘 및 테아닌 섭취를 습관화하면 자율신경 회복 속도가 현저히 빨라집니다.`;
+        const digest = `### AI 요약 (참고용)
+지금은 AI 요약을 만들 수 없습니다. "${title}" 원문을 직접 확인해 주세요.
+본 글은 정보 제공 목적이며 의학적 진단·치료를 대체하지 않습니다. 복용 전 전문가와 상담하세요.`;
 
         return new Response(JSON.stringify({ digest }), {
           headers: {
@@ -421,9 +422,15 @@ export default {
           document = renderListDocument(baseHtml, 'all', getPostsByCategory('all'));
         } else if (segments[1] === 'c') {
           const category = (segments[2] ?? 'all') as PostCategorySlug;
-          document = renderListDocument(baseHtml, category, getPostsByCategory(category));
+          if (segments.length === 3 && postCategories.some((item) => item.slug === category)) {
+            document = renderListDocument(baseHtml, category, getPostsByCategory(category));
+          } else {
+            // 없는 카테고리(/health/c/foo)가 200 빈 목록으로 나가면 소프트 404 로 잡힌다
+            document = baseHtml;
+            status = 404;
+          }
         } else {
-          const post = getPostBySlug(segments[1]);
+          const post = segments.length === 2 ? getPostBySlug(segments[1]) : undefined;
           if (post) {
             document = renderPostDocument(baseHtml, post);
           } else {
@@ -516,11 +523,22 @@ export default {
       }
     }
 
-    // 10. Static assets with single-page-application fallback
+    // 10. Static assets. 여기까지 온 주소는 앱에 없는 경로다.
+    //     예전에는 index.html 로 떨어뜨렸는데(→ 307 로 홈 이동) 구글이 소프트 404 로 본다.
+    //     앱 셸은 그대로 주되 상태 코드를 404 로, 색인 제외로 내려보낸다.
     let response = await env.ASSETS.fetch(request);
     if (response.status === 404 && request.method === 'GET' && !url.pathname.startsWith('/api/')) {
-      const fallbackUrl = new URL('/index.html', request.url);
-      response = await env.ASSETS.fetch(new Request(fallbackUrl, request));
+      const shell = await env.ASSETS.fetch(new Request(new URL('/index.html', request.url), { method: 'GET' }));
+      if (shell.ok) {
+        return new Response(await shell.text(), {
+          status: 404,
+          headers: {
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': 'no-store',
+            'X-Robots-Tag': 'noindex',
+          },
+        });
+      }
     }
 
     return response;

@@ -8,7 +8,7 @@ export const aminoAcidsList: NutrientItem[] = [
     engName: "L-Leucine (mTOR Sarcopenia Key)",
     category: "아미노산 & 단백질",
     symbolOrAbbr: "Leucine",
-    oneLineSummary: "노년기 근육 합성(mTOR) 트리거 스위치 작동, 근감소증(Sarcopenia) 예방 필수",
+    oneLineSummary: "근육 단백질 합성(mTOR) 신호에 관여하는 필수아미노산, 노년기 단백질 섭취에서 주목받는 성분",
     dailyRDA: "체중 1kg당 40mg",
     optimalIntake: "식사당 2.5~3.0 g (노년기 근단백 합성 임계치)",
     deficiencySymptoms: ["노년기 하체 근육량 급감 및 낙상 위험", "기초대사량 저하 및 근육 무력증", "수술 및 상처 후 근육 회복 지연"],
@@ -47,14 +47,14 @@ export const aminoAcidsList: NutrientItem[] = [
     optimalIntake: "5,000~10,000 mg (공복 섭취)",
     deficiencySymptoms: ["새는 장 증후군(장 투과성 증가) 및 장누수", "원인 모를 음식 알레르기 및 만성 피부 트러블", "과민성 대장 증후군(IBS) 가스/복통", "면역력 저하"],
     foodSources: [
-      { foodName: "사골 국물 (Bone Broth)", contentPer100g: "콜라겐과 풍부한 글루타민", portionTip: "천연 장 치료식" },
+      { foodName: "사골 국물 (Bone Broth)", contentPer100g: "콜라겐과 풍부한 글루타민", portionTip: "글루타민 급원 식품" },
       { foodName: "양배추 즙", contentPer100g: "비타민U와 글루타민", portionTip: "위장 점막 동시 보호" },
       { foodName: "소고기 및 생선", contentPer100g: "단백질 결합형", portionTip: "단백질 분해 과정 필요" }
     ],
     foodLimitationReason: "스트레스, 음주, 소염진통제(NSAIDs) 복용 시 장 상피세포의 글루타민 소모량이 급증하여 음식 속 양으로는 장 점막 수선 역부족.",
     bestSupplementForm: {
       recommendedForm: "식물 발효 100% 순수 자유형(Free Form) L-글루타민 분말 (AjiPure® 원료)",
-      inferiorFormWarning: "단백질 쉐이크 속 글루타민은 다른 아미노산과 흡수 경쟁을 하므로 장 치료용으로는 단독 공복 분말이 필수",
+      inferiorFormWarning: "단백질 쉐이크 속 글루타민은 다른 아미노산과 흡수 경쟁을 하므로 보충 목적이라면 단독 공복 분말이 유리",
       absorptionTip: "반드시 아침 기상 직후 미온수에 타서 공복에 음용 (장벽에 직접 접촉하도록 함)"
     },
     targetDemographics: ["2030 청년", "4050 중년", "60대+ 노년기"],

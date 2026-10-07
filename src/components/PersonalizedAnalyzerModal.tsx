@@ -79,20 +79,20 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
       console.error(err);
       // Fallback structured result if offline or API key missing
       setAnalysisResult({
-        summary: `${profile.ageGroup} ${profile.gender} 맞춤 진단 결과, 소화 흡수율 저하와 특정 장기(${profile.weakOrgans.join(", ")})의 미토콘드리아 및 결합조직 소모가 관찰됩니다. 음식의 1차 영양 보충과 함께 소화 부담이 없는 고생체이용률 영양제 처방을 병행해야 합니다.`,
-        demographicInsights: "노년기에는 소화 효소와 위산 감소로 동화작용 저항성이 나타나므로, 혈중 류신 농도를 3g 이상 일시에 채워주는 보충 전략과 칼슘 역설을 방지하는 D3+K2 섭취가 필수적입니다.",
+        summary: `${profile.ageGroup} ${profile.gender} 참고 결과입니다. 관심 부위(${profile.weakOrgans.join(", ")})와 관련된 영양소를 식사로 먼저 챙기고, 보충제가 필요한지는 의사·약사와 상담해 결정하세요. 이 결과는 진단이 아닙니다.`,
+        demographicInsights: "노년기에는 위산 분비가 줄어 비타민 B12 등 일부 영양소 흡수가 떨어질 수 있는 것으로 알려져 있습니다. 단백질·칼슘·비타민 D 섭취가 부족하지 않은지 식사부터 점검하세요.",
         recommendedFoods: [
           { food: "연어 & 고등어", reason: "망막 광수용체 DHA와 항염 오메가-3 공급" },
           { food: "케일 & 시금치 나물", reason: "황반 중심을 지키는 루테인과 지아잔틴" },
           { food: "멸치 & 뱅어포 조림", reason: "골기질 형성을 위한 천연 칼슘과 인" }
         ],
-        foodLimitations: "자연 음식만으로는 위장 소화 한계로 인해 류신 3g이나 아스타잔틴 12mg, 비타민 D3 5000IU를 채울 수 없어 영양제 보충이 필수적입니다.",
+        foodLimitations: "일부 영양소는 식사만으로 충분히 채우기 어려울 수 있습니다. 보충 여부와 용량은 상한섭취량을 넘지 않도록 전문가와 상담해 정하세요.",
         prescribedSupplements: [
           {
             nutrientName: "L-류신 & WPI 단백질",
             recommendedForm: "식물 발효 AjiPure® 순수 류신 3g + WPI 25g",
             dosageTiming: "아침 식사 직후 또는 가벼운 산책 뒤",
-            whyNeeded: "mTOR 근단백 합성 스위치를 강제 가동하여 하지 근감소증 예방"
+            whyNeeded: "근육 단백질 합성에 관여하는 아미노산 (근감소증 예방·치료 효과를 보장하지 않음)"
           },
           {
             nutrientName: "비타민 D3 + K2-MK7",
@@ -316,7 +316,7 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
                 ) : (
                   <>
                     <Sparkles className="w-4 h-4 text-amber-300" />
-                    <span>맞춤 영양 처방 리포트 생성 (무료)</span>
+                    <span>맞춤 영양 참고 리포트 생성 (무료)</span>
                   </>
                 )}
               </button>
@@ -328,7 +328,7 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
               <div className="bg-emerald-50 border border-emerald-200 p-5 rounded-2xl space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider">
-                    {profile.ageGroup} · {profile.gender} · {profile.season} 맞춤 의학 처방전
+                    {profile.ageGroup} · {profile.gender} · {profile.season} 맞춤 영양 참고 정보
                   </span>
                   <button
                     onClick={() => setAnalysisResult(null)}
@@ -350,7 +350,7 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
                 <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-2">
                   <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
                     <Utensils className="w-4 h-4 text-emerald-600" />
-                    1차 추천 자연 식단 (음식 치료)
+                    1차 추천 자연 식단
                   </h4>
                   <div className="space-y-1.5 text-xs">
                     {analysisResult.recommendedFoods.map((f, i) => (
@@ -377,14 +377,14 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
               <div className="space-y-3">
                 <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
                   <Pill className="w-4 h-4 text-emerald-700" />
-                  부족 영양소 집중 보충 처방 (고생체이용률 제형)
+                  부족하기 쉬운 영양소 (참고용)
                 </h4>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   {analysisResult.prescribedSupplements.map((supp, idx) => (
                     <div key={idx} className="bg-white border border-slate-200 p-4 rounded-xl space-y-2 shadow-xs">
                       <span className="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded block w-fit">
-                        처방 #{idx + 1}
+                        참고 #{idx + 1}
                       </span>
                       <h5 className="font-bold text-sm text-slate-900">{supp.nutrientName}</h5>
                       <div className="text-xs space-y-1 text-slate-600">
@@ -413,7 +413,7 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
                 <div className="pt-2 border-t border-slate-200 space-y-3">
                   <div className="flex items-center justify-between">
                     <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-                      처방된 100대 영양소 상세 및 최저가 구매
+                      관련 영양소 상세 및 가격 정보
                     </h4>
                     <span className="text-[11px] text-emerald-700 font-bold">클릭 시 상세 도감 이동</span>
                   </div>
@@ -454,7 +454,7 @@ export const PersonalizedAnalyzerModal: React.FC<PersonalizedAnalyzerModalProps>
         {/* Modal Footer */}
         <div className="bg-slate-50 border-t border-slate-200 p-4 flex items-center justify-between shrink-0">
           <span className="text-[11px] text-slate-500">
-            * 질환 치료용 전문의약품이 아니며, 개인별 증상에 따른 건강기능식품 섭취 보조 가이드입니다.
+            * 본 결과는 정보 제공 목적이며 의학적 진단·치료를 대체하지 않습니다. 복용 전 전문가와 상담하세요.
           </span>
           <button
             onClick={onClose}
