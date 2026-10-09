@@ -1,76 +1,18 @@
 {
   "site": "nutrifit",
-  "scoredAt": "2026-10-09T00:03:13.810Z",
+  "scoredAt": "2026-10-09T23:39:43.350Z",
   "rows": [
     {
-      "keyword": "오메가3식물성",
-      "from": "영양제",
-      "volume": 1350,
-      "volumePc": 660,
-      "volumeMobile": 690,
+      "keyword": "프로바이오틱스유산균효능",
+      "from": "엽산",
+      "volume": 1410,
+      "volumePc": 30,
+      "volumeMobile": 1380,
       "adComp": "높음",
-      "adDepth": 9,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.edenmedi.or.kr",
-          2
-        ],
-        [
-          "impfood.mfds.go.kr",
-          3
-        ],
-        [
-          "www.youtube.com",
-          7
-        ],
-        [
-          "www.ikunkang.com",
-          8
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 3,
-      "ourRank": null,
-      "domainCount": 4,
-      "grade": "1위가능",
-      "why": "1위 관공서(www.edenmedi.or.kr) — 신청 절차만 있고 비용·준비물·소요시간을 정리해주지 않는다. 실용 콘텐츠로 비집을 수 있다.",
-      "incumbent": "관공서"
-    },
-    {
-      "keyword": "철분제액상",
-      "from": "지아잔틴",
-      "volume": 1400,
-      "volumePc": 790,
-      "volumeMobile": 610,
-      "adComp": "높음",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "audio4blind.seoul.go.kr",
-          1
-        ],
-        [
-          "www.youtube.com",
-          5
-        ],
-        [
-          "geniet.co.kr",
-          9
-        ],
-        [
-          "vitaful.kr",
-          10
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 3,
-      "ourRank": null,
-      "domainCount": 4,
-      "grade": "1위가능",
-      "why": "1위 관공서(audio4blind.seoul.go.kr) — 신청 절차만 있고 비용·준비물·소요시간을 정리해주지 않는다. 실용 콘텐츠로 비집을 수 있다.",
-      "incumbent": "관공서"
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "신생아비타민D유산균",
@@ -80,340 +22,57 @@
       "volumeMobile": 1300,
       "adComp": "높음",
       "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "dealbago.com",
-          7
-        ],
-        [
-          "falldeal.com",
-          8
-        ],
-        [
-          "www.youtube.com",
-          12
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 2,
-      "ourRank": null,
-      "domainCount": 3,
-      "grade": "상위가능",
-      "why": "겨냥한 글 2건 · 1위 전문사이트(dealbago.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "메가도스비타민D",
-      "from": "영양제부작용",
-      "volume": 1460,
-      "volumePc": 220,
-      "volumeMobile": 1240,
-      "adComp": "중간",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.ssgdfs.com",
-          1
-        ],
-        [
-          "www.pillyze.com",
-          2
-        ],
-        [
-          "www.lotteon.com",
-          4
-        ],
-        [
-          "itempage3.auction.co.kr",
-          8
-        ],
-        [
-          "doctornow.co.kr",
-          9
-        ],
-        [
-          "www.review101.kr",
-          10
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 2,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "상위가능",
-      "why": "겨냥한 글 2건 · 1위 전문사이트(www.ssgdfs.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "오메가3영양제",
-      "from": "종합비타민",
-      "volume": 1440,
-      "volumePc": 550,
-      "volumeMobile": 890,
-      "adComp": "중간",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.gysarang.com",
-          1
-        ],
-        [
-          "www.pillyze.com",
-          2
-        ],
-        [
-          "www.stcarollo.or.kr",
-          3
-        ],
-        [
-          "www.youtube.com",
-          7
-        ],
-        [
-          "health.kr",
-          9
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 2,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "상위가능",
-      "why": "겨냥한 글 2건 · 1위 전문사이트(www.gysarang.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "유산균영양제",
-      "from": "엽산",
-      "volume": 1410,
-      "volumePc": 440,
-      "volumeMobile": 970,
-      "adComp": "중간",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.gysarang.com",
-          2
-        ],
-        [
-          "www.chhas.co.kr",
-          6
-        ],
-        [
-          "namu.wiki",
-          6
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 1,
-      "ourRank": null,
-      "domainCount": 3,
-      "grade": "상위가능",
-      "why": "겨냥한 글 1건 · 1위 전문사이트(www.gysarang.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "아기비타민C",
-      "from": "영양제부작용",
-      "volume": 1370,
-      "volumePc": 90,
-      "volumeMobile": 1280,
-      "adComp": "높음",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.medicopharma.co.kr",
-          2
-        ],
-        [
-          "www.yugacrew.com",
-          4
-        ],
-        [
-          "www.yakup.com",
-          7
-        ],
-        [
-          "www.dailypharm.com",
-          9
-        ],
-        [
-          "www.youtube.com",
-          10
-        ],
-        [
-          "www.mdtoday.co.kr",
-          11
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 2,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "상위가능",
-      "why": "겨냥한 글 2건 · 1위 전문사이트(www.medicopharma.co.kr)",
-      "incumbent": "전문사이트"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "리포좀비타민C효능",
+      "from": "영양제부작용",
+      "volume": 1480,
+      "volumePc": 410,
+      "volumeMobile": 1070,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "칼슘마그네슘영양제",
       "from": "영양제부작용",
       "volume": 1460,
       "volumePc": 390,
       "volumeMobile": 1070,
       "adComp": "높음",
-      "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "various.foodsafetykorea.go.kr",
-          1
-        ],
-        [
-          "impfood.mfds.go.kr",
-          2
-        ],
-        [
-          "plan.danawa.com",
-          2
-        ],
-        [
-          "www.pillyze.com",
-          3
-        ],
-        [
-          "livo.co.kr",
-          4
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 4,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 4건 · 1위 관공서(various.foodsafetykorea.go.kr)",
-      "incumbent": "관공서"
+      "adDepth": 9,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "면역력높이는영양제",
       "from": "지아잔틴",
-      "volume": 1460,
-      "volumePc": 210,
+      "volume": 1450,
+      "volumePc": 200,
       "volumeMobile": 1250,
       "adComp": "높음",
       "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.isgh.co.kr",
-          1
-        ],
-        [
-          "www.gysarang.com",
-          1
-        ],
-        [
-          "ko.accio.com",
-          2
-        ],
-        [
-          "www.youtube.com",
-          3
-        ],
-        [
-          "news.hidoc.co.kr",
-          3
-        ],
-        [
-          "brunch.co.kr",
-          4
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 16,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 16건 · 1위 전문사이트(www.isgh.co.kr)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "칼슘마그네슘영양제",
-      "from": "영양제부작용",
-      "volume": 1430,
-      "volumePc": 380,
-      "volumeMobile": 1050,
-      "adComp": "높음",
-      "adDepth": 9,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "audio4blind.seoul.go.kr",
-          1
-        ],
-        [
-          "www.fmis.kr",
-          3
-        ],
-        [
-          "www.youtube.com",
-          7
-        ],
-        [
-          "impfood.mfds.go.kr",
-          8
-        ],
-        [
-          "www.gysarang.com",
-          9
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 5,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 5건 · 1위 관공서(audio4blind.seoul.go.kr)",
-      "incumbent": "관공서"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "루테인지아잔틴추천",
       "from": "종합비타민",
       "volume": 1370,
-      "volumePc": 140,
-      "volumeMobile": 1230,
+      "volumePc": 130,
+      "volumeMobile": 1240,
       "adComp": "높음",
       "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "storeoftaste.oopy.io",
-          3
-        ],
-        [
-          "reviewmoa.oopy.io",
-          4
-        ],
-        [
-          "ko.accio.com",
-          11
-        ],
-        [
-          "mulgeonread.oopy.io",
-          12
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 7,
-      "ourRank": null,
-      "domainCount": 4,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 7건 · 1위 개인블로그(storeoftaste.oopy.io)",
-      "incumbent": "개인블로그"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "뉴트리코어비타민C",
@@ -423,1052 +82,165 @@
       "volumeMobile": 1150,
       "adComp": "중간",
       "adDepth": 5,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "nutricore.co.kr",
-          1
-        ],
-        [
-          "www.nutricore.co.kr",
-          3
-        ],
-        [
-          "www.pillyze.com",
-          4
-        ],
-        [
-          "price.enuri.com",
-          5
-        ],
-        [
-          "shouldibuy.oopy.io",
-          6
-        ],
-        [
-          "yakfact.kr",
-          7
-        ],
-        [
-          "story.kakao.com",
-          15
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 9,
-      "ourRank": null,
-      "domainCount": 7,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 9건 · 1위 전문사이트(nutricore.co.kr)",
-      "incumbent": "전문사이트"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
-      "keyword": "프로바이오틱스효능",
-      "from": "엽산",
-      "volume": 1350,
-      "volumePc": 120,
-      "volumeMobile": 1230,
+      "keyword": "저분자어린콜라겐",
+      "from": "밀크씨슬",
+      "volume": 1490,
+      "volumePc": 80,
+      "volumeMobile": 1410,
       "adComp": "높음",
       "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.gysarang.com",
-          1
-        ],
-        [
-          "namu.wiki",
-          1
-        ],
-        [
-          "www.nhimc.or.kr",
-          3
-        ],
-        [
-          "www.kca.go.kr",
-          3
-        ],
-        [
-          "www.kribb.re.kr",
-          4
-        ],
-        [
-          "www.youtube.com",
-          4
-        ],
-        [
-          "www.apgroup.com",
-          4
-        ],
-        [
-          "www.21chospital.co.kr",
-          6
-        ]
-      ],
-      "bigCount": 2,
-      "targeted": 13,
-      "ourRank": null,
-      "domainCount": 8,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 13건 · 1위 전문사이트(www.gysarang.com)",
-      "incumbent": "전문사이트"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "어린이종합비타민",
       "from": "어린이영양제",
-      "volume": 1470,
-      "volumePc": 120,
-      "volumeMobile": 1350,
+      "volume": 1480,
+      "volumePc": 110,
+      "volumeMobile": 1370,
       "adComp": "중간",
       "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "kr.iherb.com",
-          1
-        ],
-        [
-          "www.medicaldaily.co.kr",
-          3
-        ],
-        [
-          "www.mindpharm.co.kr",
-          6
-        ],
-        [
-          "www.vitaminhealth.kr",
-          7
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 18,
-      "ourRank": null,
-      "domainCount": 4,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 18건 · 1위 전문사이트(kr.iherb.com)",
-      "incumbent": "전문사이트"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "메가도스비타민D",
+      "from": "영양제부작용",
+      "volume": 1430,
+      "volumePc": 210,
+      "volumeMobile": 1220,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "비타민C고려은단",
+      "from": "영양제부작용",
+      "volume": 1400,
+      "volumePc": 170,
+      "volumeMobile": 1230,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "손가락관절영양제",
+      "from": "MSM",
+      "volume": 1370,
+      "volumePc": 740,
+      "volumeMobile": 630,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "콘드로이친MSM",
+      "from": "MSM",
+      "volume": 1360,
+      "volumePc": 630,
+      "volumeMobile": 730,
+      "adComp": "높음",
+      "adDepth": 9,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "남자갱년기영양제",
       "from": "탈모영양제",
-      "volume": 1390,
-      "volumePc": 160,
-      "volumeMobile": 1230,
+      "volume": 1360,
+      "volumePc": 150,
+      "volumeMobile": 1210,
       "adComp": "높음",
       "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.amc.seoul.kr",
-          3
-        ],
-        [
-          "ko.accio.com",
-          13
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 9,
-      "ourRank": null,
-      "domainCount": 2,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 9건 · 1위 전문사이트(www.amc.seoul.kr)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "비타민C권장량",
-      "from": "영양제부작용",
-      "volume": 1500,
-      "volumePc": 780,
-      "volumeMobile": 720,
-      "adComp": "높음",
-      "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.gysarang.com",
-          1
-        ],
-        [
-          "sotong.go.kr",
-          3
-        ],
-        [
-          "www.stcarollo.or.kr",
-          14
-        ],
-        [
-          "www.youtube.com",
-          20
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 6,
-      "ourRank": null,
-      "domainCount": 4,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 6건 · 1위 전문사이트(www.gysarang.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "관절보스웰리아",
-      "from": "MSM",
-      "volume": 1500,
-      "volumePc": 100,
-      "volumeMobile": 1400,
-      "adComp": "높음",
-      "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.snuh.org",
-          1
-        ],
-        [
-          "various.foodsafetykorea.go.kr",
-          2
-        ],
-        [
-          "frombio.co.kr",
-          6
-        ],
-        [
-          "gradium.co.kr",
-          7
-        ],
-        [
-          "www.junsungki.com",
-          8
-        ],
-        [
-          "news.hidoc.co.kr",
-          9
-        ],
-        [
-          "www.ikunkang.com",
-          10
-        ],
-        [
-          "www.chhas.co.kr",
-          13
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 7,
-      "ourRank": null,
-      "domainCount": 8,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 7건 · 1위 전문사이트(www.snuh.org)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "캐나다오메가3",
-      "from": "종합비타민",
-      "volume": 1490,
-      "volumePc": 670,
-      "volumeMobile": 820,
-      "adComp": "중간",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "impfood.mfds.go.kr",
-          1
-        ],
-        [
-          "itempage3.auction.co.kr",
-          1
-        ],
-        [
-          "cboard.net",
-          3
-        ],
-        [
-          "dudeoji.com",
-          6
-        ],
-        [
-          "dealbom.kr",
-          8
-        ],
-        [
-          "natural365.co.kr",
-          9
-        ],
-        [
-          "todayreview.oopy.io",
-          10
-        ],
-        [
-          "youngview.co.kr",
-          11
-        ],
-        [
-          "sseobogo.oopy.io",
-          12
-        ],
-        [
-          "ssobonshop.oopy.io",
-          13
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 4,
-      "ourRank": null,
-      "domainCount": 11,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 4건 · 1위 관공서(impfood.mfds.go.kr)",
-      "incumbent": "관공서"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "비타민C파우더",
       "from": "영양제부작용",
-      "volume": 1470,
-      "volumePc": 690,
-      "volumeMobile": 780,
+      "volume": 1500,
+      "volumePc": 710,
+      "volumeMobile": 790,
       "adComp": "높음",
       "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "unpa.me",
-          1
-        ],
-        [
-          "www.hwahae.co.kr",
-          1
-        ],
-        [
-          "price.enuri.com",
-          5
-        ],
-        [
-          "www.youtube.com",
-          6
-        ],
-        [
-          "www.review101.kr",
-          8
-        ],
-        [
-          "impfood.mfds.go.kr",
-          9
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 4,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 4건 · 1위 전문사이트(unpa.me)",
-      "incumbent": "전문사이트"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "오메가3DHA",
+      "from": "종합비타민",
+      "volume": 1490,
+      "volumePc": 590,
+      "volumeMobile": 900,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "관절보스웰리아",
+      "from": "MSM",
+      "volume": 1470,
+      "volumePc": 100,
+      "volumeMobile": 1370,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "남자탈모영양제",
       "from": "영양제부작용",
-      "volume": 1460,
-      "volumePc": 180,
+      "volume": 1450,
+      "volumePc": 170,
       "volumeMobile": 1280,
       "adComp": "높음",
       "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "daedamo.com",
-          1
-        ],
-        [
-          "www.schmc.ac.kr",
-          5
-        ],
-        [
-          "www.youtube.com",
-          8
-        ],
-        [
-          "www.gysarang.com",
-          11
-        ],
-        [
-          "namu.wiki",
-          13
-        ]
-      ],
-      "bigCount": 2,
-      "targeted": 16,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 16건 · 1위 전문사이트(daedamo.com)",
-      "incumbent": "전문사이트"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "수산화마그네슘",
+      "from": "지아잔틴",
+      "volume": 1440,
+      "volumePc": 240,
+      "volumeMobile": 1200,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "활성엽산800",
       "from": "엽산",
-      "volume": 1460,
-      "volumePc": 180,
-      "volumeMobile": 1280,
+      "volume": 1440,
+      "volumePc": 170,
+      "volumeMobile": 1270,
       "adComp": "중간",
       "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.fmis.kr",
-          1
-        ],
-        [
-          "www.pillyze.com",
-          3
-        ],
-        [
-          "www.youtube.com",
-          9
-        ],
-        [
-          "pillgram.kr",
-          11
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 17,
-      "ourRank": null,
-      "domainCount": 4,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 17건 · 1위 전문사이트(www.fmis.kr)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "유산균섭취시간",
-      "from": "엽산",
-      "volume": 1350,
-      "volumePc": 150,
-      "volumeMobile": 1200,
-      "adComp": "높음",
-      "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.gysarang.com",
-          3
-        ],
-        [
-          "namu.wiki",
-          9
-        ],
-        [
-          "tilnote.io",
-          10
-        ],
-        [
-          "www.isgh.co.kr",
-          11
-        ],
-        [
-          "www.khff.or.kr",
-          12
-        ],
-        [
-          "www.youtube.com",
-          13
-        ]
-      ],
-      "bigCount": 2,
-      "targeted": 6,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 6건 · 1위 전문사이트(www.gysarang.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "500억유산균",
-      "from": "엽산",
-      "volume": 1350,
-      "volumePc": 160,
-      "volumeMobile": 1190,
-      "adComp": "중간",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.youtube.com",
-          5
-        ],
-        [
-          "namu.wiki",
-          5
-        ],
-        [
-          "www.pillyze.com",
-          6
-        ],
-        [
-          "couhots.shop",
-          7
-        ],
-        [
-          "www.shinsegaetvshopping.com",
-          8
-        ],
-        [
-          "www.lotteon.com",
-          9
-        ]
-      ],
-      "bigCount": 2,
-      "targeted": 21,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 21건 · 1위 영상(www.youtube.com)",
-      "incumbent": "영상"
-    },
-    {
-      "keyword": "액상비타민D",
-      "from": "영양제부작용",
-      "volume": 1500,
-      "volumePc": 650,
-      "volumeMobile": 850,
-      "adComp": "중간",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "health-food.salefinder.co.kr",
-          1
-        ],
-        [
-          "yeoulpharm.com",
-          2
-        ],
-        [
-          "ko.accio.com",
-          7
-        ],
-        [
-          "gift-set.co.kr",
-          8
-        ],
-        [
-          "www.pillyze.com",
-          9
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 4,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 4건 · 1위 전문사이트(health-food.salefinder.co.kr)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "멜라닌영양제",
-      "from": "밀크씨슬",
-      "volume": 1470,
-      "volumePc": 140,
-      "volumeMobile": 1330,
-      "adComp": "높음",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "ko.accio.com",
-          5
-        ],
-        [
-          "health-food.salefinder.co.kr",
-          6
-        ],
-        [
-          "www.gysarang.com",
-          8
-        ],
-        [
-          "www.schmc.ac.kr",
-          9
-        ],
-        [
-          "kormedi.com",
-          16
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 15,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 15건 · 1위 전문사이트(ko.accio.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "철분제복용법",
-      "from": "지아잔틴",
-      "volume": 1420,
-      "volumePc": 750,
-      "volumeMobile": 670,
-      "adComp": "높음",
-      "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.stcarollo.or.kr",
-          1
-        ],
-        [
-          "health.kr",
-          3
-        ],
-        [
-          "www.youtube.com",
-          17
-        ],
-        [
-          "starmarket.oopy.io",
-          19
-        ],
-        [
-          "ko.accio.com",
-          20
-        ],
-        [
-          "doctornow.co.kr",
-          21
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 7,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 7건 · 1위 관공서(www.stcarollo.or.kr)",
-      "incumbent": "관공서"
-    },
-    {
-      "keyword": "람노스유산균",
-      "from": "엽산",
-      "volume": 1420,
-      "volumePc": 120,
-      "volumeMobile": 1300,
-      "adComp": "높음",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.fmis.kr",
-          1
-        ],
-        [
-          "health.kr",
-          3
-        ],
-        [
-          "www.ssg.com",
-          5
-        ],
-        [
-          "www.lotteon.com",
-          6
-        ],
-        [
-          "health-food.salefinder.co.kr",
-          7
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 16,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 16건 · 1위 전문사이트(www.fmis.kr)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "마그네슘아연",
-      "from": "지아잔틴",
-      "volume": 1370,
-      "volumePc": 480,
-      "volumeMobile": 890,
-      "adComp": "높음",
-      "adDepth": 9,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "impfood.mfds.go.kr",
-          1
-        ],
-        [
-          "audio4blind.seoul.go.kr",
-          3
-        ],
-        [
-          "www.phwr.org",
-          9
-        ],
-        [
-          "www.youtube.com",
-          13
-        ],
-        [
-          "news.hidoc.co.kr",
-          14
-        ],
-        [
-          "ko.wikipedia.org",
-          15
-        ],
-        [
-          "www.gysarang.com",
-          16
-        ]
-      ],
-      "bigCount": 2,
-      "targeted": 8,
-      "ourRank": null,
-      "domainCount": 7,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 8건 · 1위 관공서(impfood.mfds.go.kr)",
-      "incumbent": "관공서"
-    },
-    {
-      "keyword": "노안영양제",
-      "from": "종합비타민",
-      "volume": 1460,
-      "volumePc": 270,
-      "volumeMobile": 1190,
-      "adComp": "높음",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.gysarang.com",
-          1
-        ],
-        [
-          "www.youtube.com",
-          10
-        ],
-        [
-          "www.isgh.co.kr",
-          11
-        ],
-        [
-          "gradium.co.kr",
-          12
-        ],
-        [
-          "health-food.salefinder.co.kr",
-          13
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 7,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 7건 · 1위 전문사이트(www.gysarang.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "어린콜라겐",
-      "from": "밀크씨슬",
-      "volume": 1420,
-      "volumePc": 640,
-      "volumeMobile": 780,
-      "adComp": "높음",
-      "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.instagram.com",
-          1
-        ],
-        [
-          "www.facebook.com",
-          1
-        ],
-        [
-          "www.youtube.com",
-          1
-        ],
-        [
-          "m.kshop.co.kr",
-          5
-        ],
-        [
-          "www.pillyze.com",
-          6
-        ],
-        [
-          "mayjaymall.com",
-          8
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 27,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 27건 · 1위 전문사이트(www.instagram.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "헤어영양제",
-      "from": "탈모영양제",
-      "volume": 1370,
-      "volumePc": 190,
-      "volumeMobile": 1180,
-      "adComp": "높음",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "unpa.me",
-          1
-        ],
-        [
-          "price.enuri.com",
-          1
-        ],
-        [
-          "freshreview.oopy.io",
-          5
-        ],
-        [
-          "fallcent.com",
-          6
-        ],
-        [
-          "ko.accio.com",
-          6
-        ],
-        [
-          "www.youtube.com",
-          8
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 13,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 13건 · 1위 전문사이트(unpa.me)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "비타민B5",
-      "from": "영양제부작용",
-      "volume": 1360,
-      "volumePc": 240,
-      "volumeMobile": 1120,
-      "adComp": "중간",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "namu.wiki",
-          1
-        ],
-        [
-          "ko.wikipedia.org",
-          1
-        ],
-        [
-          "gradium.co.kr",
-          7
-        ],
-        [
-          "cuh.chungbuk.ac.kr",
-          8
-        ],
-        [
-          "www.yakcheck.co.kr",
-          9
-        ],
-        [
-          "starmarket.oopy.io",
-          10
-        ],
-        [
-          "www.pillyze.com",
-          11
-        ],
-        [
-          "ko.accio.com",
-          12
-        ],
-        [
-          "health.kr",
-          14
-        ]
-      ],
-      "bigCount": 2,
-      "targeted": 18,
-      "ourRank": null,
-      "domainCount": 9,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 18건 · 1위 백과(namu.wiki)",
-      "incumbent": "백과"
-    },
-    {
-      "keyword": "필수영양제",
-      "from": "영양제",
-      "volume": 1350,
-      "volumePc": 260,
-      "volumeMobile": 1090,
-      "adComp": "높음",
-      "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.chungnam.go.kr",
-          1
-        ],
-        [
-          "www.stcarollo.or.kr",
-          1
-        ],
-        [
-          "www.youtube.com",
-          9
-        ],
-        [
-          "www.ajich.or.kr",
-          10
-        ],
-        [
-          "ko.accio.com",
-          11
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 13,
-      "ourRank": null,
-      "domainCount": 5,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 13건 · 1위 관공서(www.chungnam.go.kr)",
-      "incumbent": "관공서"
-    },
-    {
-      "keyword": "엽산남자",
-      "from": "엽산",
-      "volume": 1410,
-      "volumePc": 210,
-      "volumeMobile": 1200,
-      "adComp": "높음",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "steemit.com",
-          8
-        ],
-        [
-          "ko.accio.com",
-          9
-        ],
-        [
-          "www.youtube.com",
-          11
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 6,
-      "ourRank": null,
-      "domainCount": 3,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 6건 · 1위 전문사이트(steemit.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "피로회복",
-      "from": "영양제부작용",
-      "volume": 1400,
-      "volumePc": 280,
-      "volumeMobile": 1120,
-      "adComp": "중간",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.gysarang.com",
-          1
-        ],
-        [
-          "www.skhospital.co.kr",
-          3
-        ],
-        [
-          "www.youtube.com",
-          3
-        ],
-        [
-          "www.snuh.org",
-          5
-        ],
-        [
-          "www.icfoodnews.com",
-          8
-        ],
-        [
-          "www.amc.seoul.kr",
-          9
-        ],
-        [
-          "health.chosun.com",
-          9
-        ],
-        [
-          "www.isgh.co.kr",
-          10
-        ],
-        [
-          "nikom.or.kr",
-          11
-        ],
-        [
-          "abc8119.com",
-          13
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 32,
-      "ourRank": null,
-      "domainCount": 10,
-      "grade": "경쟁있음",
-      "why": "겨냥한 글 32건 · 1위 전문사이트(www.gysarang.com)",
-      "incumbent": "전문사이트"
-    },
-    {
-      "keyword": "남자영양제올인원",
-      "from": "영양제",
-      "volume": 1500,
-      "volumePc": 100,
-      "volumeMobile": 1400,
-      "adComp": "높음",
-      "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.lotteon.com",
-          8
-        ],
-        [
-          "www.blogchart.co.kr",
-          9
-        ],
-        [
-          "cboard.net",
-          11
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 3,
-      "ourRank": null,
-      "domainCount": 3,
-      "grade": "의도불일치",
-      "why": "1위 쇼핑(www.lotteon.com) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
-      "incumbent": "쇼핑"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "오메가3초임계",
@@ -1478,173 +250,237 @@
       "volumeMobile": 1340,
       "adComp": "높음",
       "adDepth": 9,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "prod.danawa.com",
-          6
-        ],
-        [
-          "price.enuri.com",
-          9
-        ],
-        [
-          "www.pillyze.com",
-          11
-        ]
-      ],
-      "bigCount": 0,
-      "targeted": 4,
-      "ourRank": null,
-      "domainCount": 3,
-      "grade": "의도불일치",
-      "why": "1위 쇼핑(prod.danawa.com) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
-      "incumbent": "쇼핑"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "오메가3식물성",
+      "from": "영양제",
+      "volume": 1390,
+      "volumePc": 680,
+      "volumeMobile": 710,
+      "adComp": "높음",
+      "adDepth": 9,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "먹는콜라겐효능",
+      "from": "밀크씨슬",
+      "volume": 1370,
+      "volumePc": 700,
+      "volumeMobile": 670,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "멜라닌영양제",
+      "from": "밀크씨슬",
+      "volume": 1460,
+      "volumePc": 140,
+      "volumeMobile": 1320,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "철분제복용법",
+      "from": "지아잔틴",
+      "volume": 1450,
+      "volumePc": 780,
+      "volumeMobile": 670,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "람노스유산균",
+      "from": "엽산",
+      "volume": 1400,
+      "volumePc": 110,
+      "volumeMobile": 1290,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "마그네슘아연",
+      "from": "지아잔틴",
+      "volume": 1380,
+      "volumePc": 490,
+      "volumeMobile": 890,
+      "adComp": "높음",
+      "adDepth": 9,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "유산균영양제",
+      "from": "엽산",
+      "volume": 1380,
+      "volumePc": 400,
+      "volumeMobile": 980,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "70대영양제",
+      "from": "영양제",
+      "volume": 1360,
+      "volumePc": 90,
+      "volumeMobile": 1270,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "아기비타민C",
+      "from": "영양제부작용",
+      "volume": 1360,
+      "volumePc": 90,
+      "volumeMobile": 1270,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "오메가3종류",
+      "from": "종합비타민",
+      "volume": 1360,
+      "volumePc": 480,
+      "volumeMobile": 880,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
       "keyword": "콜라겐가루",
       "from": "밀크씨슬",
-      "volume": 1460,
-      "volumePc": 650,
-      "volumeMobile": 810,
+      "volume": 1490,
+      "volumePc": 670,
+      "volumeMobile": 820,
       "adComp": "높음",
       "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "price.enuri.com",
-          3
-        ],
-        [
-          "dama-bori.com",
-          4
-        ],
-        [
-          "www.youtube.com",
-          5
-        ],
-        [
-          "amicell.co.kr",
-          6
-        ],
-        [
-          "item4u.co.kr",
-          7
-        ],
-        [
-          "www.eokeburim.kr",
-          8
-        ]
-      ],
-      "bigCount": 1,
-      "targeted": 9,
-      "ourRank": null,
-      "domainCount": 6,
-      "grade": "의도불일치",
-      "why": "1위 쇼핑(price.enuri.com) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
-      "incumbent": "쇼핑"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
-      "keyword": "비타민C고려은단",
-      "from": "영양제부작용",
-      "volume": 1410,
-      "volumePc": 180,
-      "volumeMobile": 1230,
-      "adComp": "중간",
+      "keyword": "산후영양제",
+      "from": "엽산",
+      "volume": 1480,
+      "volumePc": 110,
+      "volumeMobile": 1370,
+      "adComp": "높음",
       "adDepth": 8,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "www.eundan.com",
-          2
-        ],
-        [
-          "eundan.com",
-          3
-        ],
-        [
-          "www.youtube.com",
-          5
-        ],
-        [
-          "namu.wiki",
-          6
-        ],
-        [
-          "www.coupang.com",
-          7
-        ],
-        [
-          "prod.danawa.com",
-          8
-        ],
-        [
-          "price.enuri.com",
-          11
-        ],
-        [
-          "www.pillyze.com",
-          12
-        ]
-      ],
-      "bigCount": 3,
-      "targeted": 0,
-      "ourRank": null,
-      "domainCount": 8,
-      "grade": "경쟁높음",
-      "why": "대형 플랫폼 3곳 상위",
-      "incumbent": "전문사이트"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     },
     {
-      "keyword": "수산화마그네슘",
-      "from": "지아잔틴",
+      "keyword": "노안영양제",
+      "from": "종합비타민",
       "volume": 1450,
-      "volumePc": 250,
-      "volumeMobile": 1200,
+      "volumePc": 260,
+      "volumeMobile": 1190,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "철분제액상",
+      "from": "지아잔틴",
+      "volume": 1440,
+      "volumePc": 820,
+      "volumeMobile": 620,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "어린콜라겐",
+      "from": "밀크씨슬",
+      "volume": 1420,
+      "volumePc": 650,
+      "volumeMobile": 770,
       "adComp": "높음",
       "adDepth": 10,
-      "hasWebBlock": true,
-      "top": [
-        [
-          "ko.wikipedia.org",
-          1
-        ],
-        [
-          "impfood.mfds.go.kr",
-          1
-        ],
-        [
-          "ko.accio.com",
-          2
-        ],
-        [
-          "namu.wiki",
-          3
-        ],
-        [
-          "cashdoc.me",
-          3
-        ],
-        [
-          "www.youtube.com",
-          3
-        ],
-        [
-          "fm.amc.seoul.kr",
-          4
-        ],
-        [
-          "health.kr",
-          5
-        ]
-      ],
-      "bigCount": 3,
-      "targeted": 13,
-      "ourRank": null,
-      "domainCount": 8,
-      "grade": "경쟁높음",
-      "why": "대형 플랫폼 3곳 상위",
-      "incumbent": "백과"
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "헤어영양제",
+      "from": "탈모영양제",
+      "volume": 1390,
+      "volumePc": 190,
+      "volumeMobile": 1200,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "비타민B5",
+      "from": "영양제부작용",
+      "volume": 1360,
+      "volumePc": 230,
+      "volumeMobile": 1130,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "피로회복",
+      "from": "영양제부작용",
+      "volume": 1380,
+      "volumePc": 270,
+      "volumeMobile": 1110,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "엽산남자",
+      "from": "엽산",
+      "volume": 1360,
+      "volumePc": 200,
+      "volumeMobile": 1160,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
     }
   ]
 }
