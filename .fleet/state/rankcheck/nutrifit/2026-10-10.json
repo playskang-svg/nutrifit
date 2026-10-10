@@ -1,108 +1,108 @@
 {
   "site": "nutrifit",
   "domain": "nutrifit.kr",
-  "checkedAt": "2026-09-10T22:00:55.779Z",
+  "checkedAt": "2026-10-10T23:00:28.761Z",
   "engine": "naver",
   "results": [
     {
       "keyword": "영양제",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "영양제추천",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "영양제조합",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "영양제순서",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "영양제복용법",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "영양제부작용",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "비타민D",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "비타민C",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "비타민B",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "비타민B12",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "종합비타민",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "멀티비타민",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "오메가3",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "rTG오메가3",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "루테인",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "지아잔틴",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "마그네슘",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "칼슘",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "아연",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "철분",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "엽산",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "유산균",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "프로바이오틱스",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "프리바이오틱스",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "신바이오틱스",
-      "hit": false
+      "error": "HTTP 403"
     }
   ]
 }
