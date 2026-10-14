@@ -10,6 +10,7 @@ import { getPostBySlug, getPostsByCategory } from "./src/content/posts";
 import { getPageBySlug } from "./src/content/pages";
 import { PostCategorySlug } from "./src/types";
 import { postCategories } from "./src/content/postCategories";
+import { resolveRedirect } from "./src/content/postRedirects";
 
 interface Fetcher {
   fetch(input: Request | string, init?: RequestInit): Promise<Response>;
@@ -405,6 +406,10 @@ export default {
       ctx.waitUntil(cache.put(cacheKey, response.clone()));
       return response;
     }
+
+    // 7-0. 병합·삭제한 글의 옛 주소는 새 주소로 301 (색인된 주소를 죽이지 않는다)
+    const moved = resolveRedirect(url.pathname);
+    if (moved) return Response.redirect(new URL(moved, url.origin).toString(), 301);
 
     // 7. 건강정보 페이지 — 크롤러가 JS 없이도 읽도록 index.html을 가공해 내려준다
     if (url.pathname === '/health' || url.pathname.startsWith('/health/')) {

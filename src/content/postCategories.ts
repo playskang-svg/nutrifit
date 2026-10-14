@@ -59,15 +59,6 @@ export const postCategories: PostCategory[] = [
     accent: "slate",
     emoji: "📑",
   },
-  {
-    slug: "gift",
-    label: "영양제 선물 추천",
-    tagline: "받는 분 먼저, 성분은 그다음",
-    description:
-      "부모님·조부모님·배우자처럼 받는 사람의 나이와 상황에 따라 부담 없이 고를 수 있는 영양제 선물 기준을 정리합니다. 예산·포장·복용 편의성까지 함께 봅니다.",
-    accent: "orange",
-    emoji: "🎁",
-  },
 ];
 
 const categoryMap = new Map<string, PostCategory>(
