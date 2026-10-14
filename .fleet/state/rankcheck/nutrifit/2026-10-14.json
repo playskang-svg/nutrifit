@@ -1,7 +1,7 @@
 {
   "site": "nutrifit",
   "domain": "nutrifit.kr",
-  "checkedAt": "2026-10-13T23:29:17.285Z",
+  "checkedAt": "2026-10-14T22:45:31.115Z",
   "engine": "naver",
   "results": [
     {
@@ -98,11 +98,11 @@
     },
     {
       "keyword": "프리바이오틱스",
-      "hit": false
+      "error": "HTTP 403"
     },
     {
       "keyword": "신바이오틱스",
-      "hit": false
+      "error": "HTTP 403"
     }
   ]
 }
