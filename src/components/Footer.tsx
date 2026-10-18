@@ -162,6 +162,13 @@ export const Footer: React.FC<FooterProps> = ({
               </React.Fragment>
             ))}
           </nav>
+          <nav aria-label="함께 보면 좋은 정보" className="pt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
+            <span className="font-semibold text-slate-300">함께 보면 좋은 정보</span>
+            <a href="https://pet.tipspedia.kr/" className="text-slate-300 hover:text-white underline underline-offset-2 decoration-slate-600">펫피디아 · 반려동물 건강</a>
+            <a href="https://present.tipspedia.kr/" className="text-slate-300 hover:text-white underline underline-offset-2 decoration-slate-600">선물저널 · 건강 선물</a>
+            <a href="https://gajun.kr/" className="text-slate-300 hover:text-white underline underline-offset-2 decoration-slate-600">가전비교연구소 · 주방가전</a>
+            <a href="https://tipspedia.kr/" className="text-slate-300 hover:text-white underline underline-offset-2 decoration-slate-600">팁스피디아 · 생활꿀팁</a>
+          </nav>
           <p className="pt-2 text-slate-500">
             © {new Date().getFullYear()} NutriFit (뉴트리핏). 문의 contact@nutrifit.kr
           </p>
