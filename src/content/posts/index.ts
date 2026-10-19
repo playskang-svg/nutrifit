@@ -234,8 +234,10 @@ import { post as sinusitisSymptomsNutritionGuide } from "./sinusitis-symptoms-nu
 import { post as autumnSweetCravingSerotoninNutrition } from "./autumn-sweet-craving-serotonin-nutrition";
 
 import { post as redGinsengBestTimeToTake } from "./red-ginseng-best-time-to-take";
+import { post as suneungCaffeineEnergyDrinkLimit } from "./suneung-caffeine-energy-drink-limit";
 
 const registry: HealthPost[] = [
+  suneungCaffeineEnergyDrinkLimit,
   redGinsengBestTimeToTake,
   nightLegCrampsMagnesium,
   vitaminDDeficiencyKorea,
