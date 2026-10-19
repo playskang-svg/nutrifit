@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="수능 도시락 메뉴 소화 편한 반찬과 보관법">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c2d12"/><stop offset="1" stop-color="#be123c"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#g)"/>
+<circle cx="1010" cy="170" r="150" fill="#ffffff" opacity="0.08"/><circle cx="1090" cy="520" r="110" fill="#ffffff" opacity="0.06"/>
+<rect x="70" y="80" width="300" height="52" rx="26" fill="#fde68a"/><text x="220" y="116" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="26" font-weight="800" fill="#78350f">수능 D-30 도시락 점검</text>
+<text x="70" y="250" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="72" font-weight="800" fill="#ffffff">수능 도시락 메뉴,</text>
+<text x="70" y="340" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="72" font-weight="800" fill="#ffffff">뭘 담아야</text>
+<text x="70" y="430" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="72" font-weight="800" fill="#fde68a">속 편하고 안전할까?</text>
+<text x="70" y="520" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="34" font-weight="600" fill="#ffe4e6">소화 편한 반찬 · 2시간 보관 기준</text>
+<text x="70" y="580" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="26" font-weight="700" fill="#fecdd3">NutriFit 뉴트리핏</text>
+<g transform="translate(870 270)"><rect x="0" y="40" width="240" height="190" rx="26" fill="#fff"/><rect x="0" y="40" width="240" height="46" rx="23" fill="#f59e0b"/><text x="120" y="74" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="26" font-weight="800" fill="#fff">보온 도시락</text>
+<rect x="20" y="104" width="94" height="52" rx="12" fill="#fde68a"/><text x="67" y="138" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="22" font-weight="700" fill="#78350f">밥</text>
+<rect x="126" y="104" width="94" height="52" rx="12" fill="#fecaca"/><text x="173" y="138" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="22" font-weight="700" fill="#7f1d1d">국</text>
+<rect x="20" y="166" width="94" height="48" rx="12" fill="#bbf7d0"/><text x="67" y="198" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="22" font-weight="700" fill="#14532d">나물</text>
+<rect x="126" y="166" width="94" height="48" rx="12" fill="#bfdbfe"/><text x="173" y="198" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">달걀</text></g>
+</svg>

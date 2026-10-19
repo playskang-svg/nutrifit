@@ -235,8 +235,10 @@ import { post as autumnSweetCravingSerotoninNutrition } from "./autumn-sweet-cra
 
 import { post as redGinsengBestTimeToTake } from "./red-ginseng-best-time-to-take";
 import { post as suneungCaffeineEnergyDrinkLimit } from "./suneung-caffeine-energy-drink-limit";
+import { post as suneungLunchboxMenuFoodSafety } from "./suneung-lunchbox-menu-food-safety";
 
 const registry: HealthPost[] = [
+  suneungLunchboxMenuFoodSafety,
   suneungCaffeineEnergyDrinkLimit,
   redGinsengBestTimeToTake,
   nightLegCrampsMagnesium,
