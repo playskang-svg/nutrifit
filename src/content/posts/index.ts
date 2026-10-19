@@ -233,7 +233,10 @@ import { post as sinusitisSymptomsNutritionGuide } from "./sinusitis-symptoms-nu
 /* --- 2026-10-06 가을 세로토닌 식욕 가이드 --- */
 import { post as autumnSweetCravingSerotoninNutrition } from "./autumn-sweet-craving-serotonin-nutrition";
 
+import { post as redGinsengBestTimeToTake } from "./red-ginseng-best-time-to-take";
+
 const registry: HealthPost[] = [
+  redGinsengBestTimeToTake,
   nightLegCrampsMagnesium,
   vitaminDDeficiencyKorea,
   omega3RtgVsEeForm,

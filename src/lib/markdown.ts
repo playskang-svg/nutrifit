@@ -166,6 +166,27 @@ export function renderMarkdown(markdown: string): string {
       continue;
     }
 
+    // 이미지 한 줄: ![대체텍스트](/경로)  또는 버튼 링크 [![대체텍스트](/경로)](https://...)
+    const linkedImg = /^\[!\[([^\]]*)\]\((\/[^\s)]+)\)\]\((https?:\/\/[^\s)]+)\)$/.exec(trimmed);
+    if (linkedImg) {
+      flushAll();
+      const href = linkedImg[3];
+      const internal = /^https?:\/\/(www\.)?nutrifit\.kr(\/|$)/.test(href);
+      const rel = internal ? "" : /coupang|iherb|linkprice/.test(href) ? ' target="_blank" rel="sponsored nofollow noopener"' : ' target="_blank" rel="noopener nofollow"';
+      out.push(
+        `<p class="post-cta" style="text-align:center;margin:1.4em 0"><a href="${escapeHtml(href)}"${rel}><img src="${escapeHtml(linkedImg[2])}" alt="${escapeHtml(linkedImg[1])}" loading="lazy" style="max-width:420px;width:100%;height:auto;display:inline-block" /></a></p>`
+      );
+      continue;
+    }
+    const plainImg = /^!\[([^\]]*)\]\((\/[^\s)]+)\)$/.exec(trimmed);
+    if (plainImg) {
+      flushAll();
+      out.push(
+        `<figure class="post-figure" style="margin:1.4em 0;text-align:center"><img src="${escapeHtml(plainImg[2])}" alt="${escapeHtml(plainImg[1])}" loading="lazy" style="max-width:100%;height:auto;border-radius:16px" /></figure>`
+      );
+      continue;
+    }
+
     if (trimmed === "---") {
       flushAll();
       out.push('<hr class="post-hr" />');

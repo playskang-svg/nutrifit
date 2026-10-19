@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="홍삼 먹는 시간">
+  <defs><linearGradient id="bgrg" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#4a0e17"/><stop offset="0.6" stop-color="#7f1d1d"/><stop offset="1" stop-color="#3b0a12"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#bgrg)"/>
+  <circle cx="330" cy="70" r="46" fill="#fecaca" opacity="0.18"/>
+  <text x="28" y="78" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="15" font-weight="700" fill="#fca5a5">식약처 기준으로 정리</text>
+  <text x="28" y="140" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="50" font-weight="800" fill="#fff">홍삼</text>
+  <text x="28" y="200" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="50" font-weight="800" fill="#fff">먹는 시간</text>
+  <rect x="28" y="224" width="344" height="40" rx="20" fill="#0f172a" opacity="0.55"/>
+  <text x="200" y="250" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="17" font-weight="700" fill="#fde68a">정해진 시간 없음 · 내 몸 반응이 기준</text>
+</svg>
