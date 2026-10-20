@@ -3,7 +3,7 @@
   "label": "뉴트리핏",
   "domain": "nutrifit.kr",
   "repo": "playskang-svg/nutrifit",
-  "updatedAt": "2026-10-19T23:12:55.490Z",
+  "updatedAt": "2026-10-20T22:47:12.543Z",
   "updatedBy": "actions",
   "networks": [
     "쿠팡파트너스(건강기능식품)"
@@ -16,13 +16,6 @@
   },
   "needs": [],
   "history": [
-    {
-      "at": "2026-09-20T21:59:36.034Z",
-      "by": "actions",
-      "open": 0,
-      "new": 0,
-      "resolved": 0
-    },
     {
       "at": "2026-09-21T22:55:54.738Z",
       "by": "actions",
@@ -221,6 +214,13 @@
     },
     {
       "at": "2026-10-19T23:12:55.490Z",
+      "by": "actions",
+      "open": 0,
+      "new": 0,
+      "resolved": 0
+    },
+    {
+      "at": "2026-10-20T22:47:12.543Z",
       "by": "actions",
       "open": 0,
       "new": 0,
