@@ -167,71 +167,133 @@ export function renderPageShell(page: SitePage): string {
  * 100대 영양소 목록·최신 글까지 홈 한 장에 담아 내려보낸다.
  */
 export function renderHomeShell(): string {
-  const posts = allPosts
-    .slice(0, 12)
+  const hero = allPosts[0];
+  const sidePosts = allPosts.slice(1, 5);
+
+  const heroHtml = hero
+    ? `<div class="newsroom-hero-main">
+        <a href="/health/${hero.slug}" class="hero-card">
+          <div class="hero-visual-box"><span class="hero-visual-badge">${hero.heroEmoji}</span></div>
+          <div class="hero-card-body">
+            <div class="hero-card-meta">
+              <span class="hero-chip">${escapeHtml(getCategoryLabel(hero.category))}</span>
+              <span class="hero-time">${hero.readingMinutes}분 읽기</span>
+              <span class="hero-time" style="margin-left:auto">${formatPostDate(hero.publishedAt)}</span>
+            </div>
+            <h2 class="hero-title">${escapeHtml(hero.title)}</h2>
+            <p class="hero-desc">${escapeHtml(hero.description)}</p>
+          </div>
+        </a>
+      </div>`
+    : "";
+
+  const sideHtml = sidePosts
     .map(
-      (post) =>
-        `<li><a href="/health/${post.slug}"><h3>${escapeHtml(post.title)}</h3></a><p>${escapeHtml(
-          post.description
-        )}</p><p>${getCategoryLabel(post.category)} \u00b7 ${formatPostDate(post.publishedAt)}</p></li>`
+      (post) => `<a href="/health/${post.slug}" class="side-story-item">
+        <div class="side-story-thumb">${post.heroEmoji}</div>
+        <div class="side-story-content">
+          <div class="side-story-meta"><span>${escapeHtml(getCategoryLabel(post.category))}</span> · <span>${post.readingMinutes}분</span></div>
+          <h3 class="side-story-title">${escapeHtml(post.title)}</h3>
+        </div>
+      </a>`
     )
     .join("");
 
-  const categories = postCategories
-    .map(
-      (category) =>
-        `<li><a href="/health/c/${category.slug}"><strong>${escapeHtml(
-          category.label
-        )}</strong></a> \u2014 ${escapeHtml(category.description)}</li>`
-    )
-    .join("");
+  const categoriesHtml = postCategories
+    .map((cat) => {
+      const catPosts = allPosts.filter((p) => p.category === cat.slug).slice(0, 4);
+      if (!catPosts.length) return "";
+      const cards = catPosts
+        .map(
+          (p) => `<a href="/health/${p.slug}" class="editorial-post-card">
+            <div class="editorial-card-thumb">${p.heroEmoji}</div>
+            <div class="editorial-card-body">
+              <div class="editorial-card-meta">
+                <span class="editorial-card-chip">${escapeHtml(cat.label)}</span>
+                <span class="editorial-card-date">${formatPostDate(p.publishedAt)}</span>
+              </div>
+              <h3 class="editorial-card-title">${escapeHtml(p.title)}</h3>
+              <p class="editorial-card-desc">${escapeHtml(p.description)}</p>
+            </div>
+          </a>`
+        )
+        .join("");
 
-  const sections = HOME_SECTIONS.map(
-    (section) => `<li><strong>${escapeHtml(section.label)}</strong> \u2014 ${escapeHtml(section.summary)}</li>`
-  ).join("");
-
-  const nutrientRows = all100Nutrients
-    .map(
-      (nutrient) =>
-        `<tr><td>${nutrient.number}</td><td>${escapeHtml(nutrient.name)}</td><td>${escapeHtml(
-          nutrient.category
-        )}</td><td>${escapeHtml(nutrient.oneLineSummary)}</td><td>${escapeHtml(nutrient.dailyRDA)}</td></tr>`
-    )
-    .join("");
-
-  const pageLinks = allPages
-    .map((page) => `<li><a href="/${page.slug}">${escapeHtml(page.navLabel)}</a></li>`)
+      return `<section class="newsroom-category-block">
+        <div class="newsroom-category-block-header">
+          <h2>${escapeHtml(cat.label)}</h2>
+          <a href="/health/c/${cat.slug}">${escapeHtml(cat.label)} 전체보기 ›</a>
+        </div>
+        <div class="newsroom-category-grid">${cards}</div>
+      </section>`;
+    })
     .join("");
 
   return `<div id="prerender">
-  <article>
-    <h1>${escapeHtml(SITE.name)} \u2014 100대 영양소와 영양제 선택 기준</h1>
-    <p>영양소별 권장섭취량과 결핍 신호, 음식 급원, 제형에 따른 흡수 차이를 공공 영양기준과 해외 보건기관 자료를 근거로 정리합니다. 건강기능식품은 의약품이 아니며, 이 사이트의 정보는 의사의 진단이나 처방을 대신하지 않습니다.</p>
+    <div class="newsroom-layout">
+      <div class="newsroom-main">
+        <section class="newsroom-hero">
+          ${heroHtml}
+          <div class="newsroom-hero-side">
+            <h3 class="newsroom-hero-side-title">주요 건강 브리핑</h3>
+            ${sideHtml}
+          </div>
+        </section>
 
-    <h2>건강블로그 최신 글</h2>
-    <ul>${posts || "<li>발행된 글이 없습니다.</li>"}</ul>
-    <p><a href="/health">건강블로그 전체 보기</a></p>
+        <section class="situation-hub-grid">
+          <a href="/?tab=catalog" class="situation-hub-card">
+            <span class="situation-tag">100대 영양소</span>
+            <h3 class="situation-title">대한민국 100대 필수 영양소 백과</h3>
+            <p class="situation-desc">100가지 영양소 권장량·결핍 신호·최적 제형 비교</p>
+          </a>
+          <a href="/?tab=schedule" class="situation-hub-card">
+            <span class="situation-tag">복용 시간표</span>
+            <h3 class="situation-title">흡수율 극대화 영양제 복용 시간표</h3>
+            <p class="situation-desc">식전·식후 복용 순서와 상극 충돌 방지 가이드</p>
+          </a>
+          <a href="/?tab=organs" class="situation-hub-card">
+            <span class="situation-tag">장기별 가이드</span>
+            <h3 class="situation-title">눈·장·혈관·관절 타겟 영양</h3>
+            <p class="situation-desc">취약 부위별 기능성 성분과 임상 근거 리포트</p>
+          </a>
+          <a href="/?tab=diet" class="situation-hub-card">
+            <span class="situation-tag">식단 매칭</span>
+            <h3 class="situation-title">음식 급원과 시너지 식단</h3>
+            <p class="situation-desc">식품 섭취 한계와 보충 필요 성분 비교</p>
+          </a>
+        </section>
 
-    <h2>주제별로 찾기</h2>
-    <ul>${categories}</ul>
+        ${categoriesHtml}
+      </div>
 
-    <h2>사이트에서 제공하는 도구</h2>
-    <ul>${sections}</ul>
-
-    <h2>100대 필수 영양소 목록</h2>
-    <div class="post-table-wrap"><table class="post-table">
-      <thead><tr><th>번호</th><th>영양소</th><th>분류</th><th>한 줄 요약</th><th>권장섭취량</th></tr></thead>
-      <tbody>${nutrientRows}</tbody>
-    </table></div>
-
-    <h2>사이트 안내</h2>
-    <ul>${pageLinks}</ul>
-    <p>${MEDICAL_DISCLAIMER}</p>
-  </article>
-</div>`;
+      <aside class="newsroom-sidebar">
+        <div class="newsroom-sidebar-sticky">
+          <div class="sidebar-widget">
+            <h3 class="sidebar-widget-title">상황별 핵심 도구</h3>
+            <a href="/?tab=schedule" class="sidebar-hub-item">
+              <span class="sidebar-hub-tag">복용 순서</span>
+              <h4 class="sidebar-hub-title">영양제 복용 시간표</h4>
+              <p class="sidebar-hub-desc">흡수 경쟁을 피하고 시너지를 극대화하는 시간표</p>
+            </a>
+            <a href="/?tab=catalog" class="sidebar-hub-item">
+              <span class="sidebar-hub-tag">영양소 백과</span>
+              <h4 class="sidebar-hub-title">100대 필수 영양소 도감</h4>
+              <p class="sidebar-hub-desc">성분별 권장량과 최적 제형 완벽 정리</p>
+            </a>
+          </div>
+          <div class="sidebar-widget">
+            <h3 class="sidebar-widget-title">편집 원칙과 기준</h3>
+            <p style="font-size:12px;color:#60747c;line-height:1.65;margin:0 0 12px">
+              뉴트리핏은 의약품이 아닌 건강기능식품의 과학적 연구와 보건복지부 한국인 영양소 섭취기준, 식약처 기능성 고시를 근거로 정직하게 작성합니다.
+            </p>
+            <a href="/editorial" style="font-size:12px;font-weight:700;color:var(--teal)">편집 원칙 전문 보기 →</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>`;
 }
 
-/** 홈 셸만 심는다. head 는 index.html 에 이미 홈 기준으로 들어 있다. */
 export function renderHomeDocument(html: string): string {
   return html.replace('<div id="root"></div>', `${renderHomeShell()}\n    <div id="root"></div>`);
 }
