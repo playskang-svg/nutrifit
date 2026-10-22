@@ -1,0 +1,37 @@
+{
+  "site": "nutrifit",
+  "label": "뉴트리핏",
+  "domain": "nutrifit.kr",
+  "repo": "playskang-svg/nutrifit",
+  "scannedAt": "2026-09-10T03:06:35.686Z",
+  "pagesCrawled": 8,
+  "sitemapUrls": 28,
+  "externalChecked": 0,
+  "summary": {
+    "medium": 1
+  },
+  "findings": [
+    {
+      "severity": "medium",
+      "kind": "no-semantic-nav",
+      "page": "https://nutrifit.kr",
+      "links": 24,
+      "note": "nav/header/footer도 role=navigation도 없다. 링크는 있으나 메뉴 구조를 기계가 못 읽는다"
+    }
+  ],
+  "autoFixable": [
+    "dead-anchor",
+    "empty-href",
+    "javascript-void",
+    "placeholder-url",
+    "http-to-https",
+    "double-slash"
+  ],
+  "reportOnly": [
+    "dead-external-link",
+    "external-unreachable",
+    "orphan-page",
+    "redirect-chain",
+    "noindex"
+  ]
+}
