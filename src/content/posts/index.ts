@@ -215,17 +215,8 @@ import { post as yeongnongMagnesiumIngredientGuide } from "./yeongnong-magnesium
 /* --- 2026-09-15 goldkey 추가 배치 --- */
 import { post as omega3VitaminDTogether } from "./omega3-vitamin-d-together";
 
-/* --- 2026-09-23 영양제 선물 추천(gift) 카테고리 신설 배치 (10편) --- */
+/* --- 2026-09-23 영양제 선물 가이드 (2026-10-12 9편을 이 글 하나로 병합, 옛 주소는 postRedirects.ts 로 301) --- */
 import { post as parentsSupplementGiftGuide } from "./parents-supplement-gift-guide";
-import { post as parents70sSupplementGiftGuide } from "./parents-70s-supplement-gift-guide";
-import { post as parents60sSupplementGiftGuide } from "./parents-60s-supplement-gift-guide";
-import { post as grandparentsSupplementGiftGuide } from "./grandparents-supplement-gift-guide";
-import { post as chuseokSupplementGiftSetGuide } from "./chuseok-supplement-gift-set-guide";
-import { post as parentsDaySupplementGiftGuide } from "./parents-day-supplement-gift-guide";
-import { post as inLawsSupplementGiftGuide } from "./in-laws-supplement-gift-guide";
-import { post as milestoneBirthdaySupplementGiftGuide } from "./milestone-birthday-supplement-gift-guide";
-import { post as pregnantFriendSupplementGiftGuide } from "./pregnant-friend-supplement-gift-guide";
-import { post as partnerSupplementGiftGuide } from "./partner-supplement-gift-guide";
 
 /* --- 2026-09-24 증상별 케어(symptom) 추가 --- */
 import { post as sinusitisSymptomsNutritionGuide } from "./sinusitis-symptoms-nutrition-guide";
@@ -447,15 +438,6 @@ const registry: HealthPost[] = [
   womensReproductiveHealthNutrients,
   yeongnongMagnesiumIngredientGuide,
   parentsSupplementGiftGuide,
-  parents70sSupplementGiftGuide,
-  parents60sSupplementGiftGuide,
-  grandparentsSupplementGiftGuide,
-  chuseokSupplementGiftSetGuide,
-  parentsDaySupplementGiftGuide,
-  inLawsSupplementGiftGuide,
-  milestoneBirthdaySupplementGiftGuide,
-  pregnantFriendSupplementGiftGuide,
-  partnerSupplementGiftGuide,
   sinusitisSymptomsNutritionGuide,
   autumnSweetCravingSerotoninNutrition,
 ];
