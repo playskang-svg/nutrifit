@@ -15,6 +15,7 @@ import { getCategoryLabel, postCategories } from "../content/postCategories";
 import { allPosts, formatPostDate } from "../content/posts";
 import { allPages, indexablePages } from "../content/pages";
 import { all100Nutrients } from "../data/nutrientsAll";
+import { HEALTH_TOOLS, TOOLS_HUB } from "../data/healthTools";
 import { COUPANG_DISCLOSURE, AFFILIATE_DISCLOSURE } from "../data/affiliateLinks";
 
 /**
@@ -166,7 +167,7 @@ export function renderPageShell(page: SitePage): string {
  * 탭 화면은 별도 주소가 아니므로(?tab=), 각 탭이 무엇을 하는 곳인지와
  * 100대 영양소 목록·최신 글까지 홈 한 장에 담아 내려보낸다.
  */
-export function renderHomeShell(): string {
+function renderHomeShellBase(): string {
   const hero = allPosts[0];
   const sidePosts = allPosts.slice(1, 5);
 
@@ -292,6 +293,11 @@ export function renderHomeShell(): string {
       </aside>
     </div>
   </div>`;
+}
+
+export function renderHomeShell(): string {
+  const tools = HEALTH_TOOLS.map((t) => `<a href="${t.href}" class="situation-hub-card"><span class="situation-tag">${t.emoji} ${escapeHtml(t.tag)}</span><h3 class="situation-title">${escapeHtml(t.title)}</h3><p class="situation-desc">${escapeHtml(t.desc)}</p></a>`).join("");
+  return renderHomeShellBase() + `\n<section id="tools" aria-label="바로 쓰는 건강 계산기"><h2>바로 쓰는 건강 계산기</h2><div class="situation-hub-grid">${tools}<a href="${TOOLS_HUB}" class="situation-hub-card"><h3 class="situation-title">전체 계산기 30개</h3></a></div></section>`;
 }
 
 export function renderHomeDocument(html: string): string {

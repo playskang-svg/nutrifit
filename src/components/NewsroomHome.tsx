@@ -1,3 +1,4 @@
+import { HEALTH_TOOLS, TOOLS_HUB } from "../data/healthTools";
 import React, { useMemo } from "react";
 import { HealthPost, NutrientItem } from "../types";
 import { postCategories, getCategory } from "../content/postCategories";
@@ -147,8 +148,28 @@ export const NewsroomHome: React.FC<NewsroomHomeProps> = ({
           </div>
         </section>
 
-        {/* Category Newsroom Blocks (adbles.com Category Sections) */}
-        {categoryBlocks.map((cat) => (
+        {/* 건강 계산기 (tools.tipspedia.kr) */}
+        <section aria-labelledby="tools-heading" id="tools">
+          <h2 id="tools-heading" style={{ fontSize: 18, fontWeight: 800, margin: "8px 0 12px" }}>바로 쓰는 건강 계산기</h2>
+          <div className="situation-hub-grid">
+            {HEALTH_TOOLS.map((tool) => (
+              <a key={tool.href} className="situation-hub-card" href={tool.href}>
+                <span className="situation-tag">{tool.emoji} {tool.tag}</span>
+                <h3 className="situation-title">{tool.title}</h3>
+                <p className="situation-desc">{tool.desc}</p>
+                <span className="situation-action">계산해 보기 <ChevronRight className="w-3.5 h-3.5" /></span>
+              </a>
+            ))}
+            <a className="situation-hub-card" href={TOOLS_HUB}>
+              <span className="situation-tag">🧰 전체 도구</span>
+              <h3 className="situation-title">전체 계산기 30개</h3>
+              <p className="situation-desc">실업급여·부가세·환전·강아지 나이까지 분야별 도구 모음</p>
+              <span className="situation-action">전체 보기 <ChevronRight className="w-3.5 h-3.5" /></span>
+            </a>
+          </div>
+        </section>
+
+        {/* Category Newsroom Blocks (adbles.com Category Sections) */}        {categoryBlocks.map((cat) => (
           <section key={cat.slug} className="newsroom-category-block" aria-labelledby={`cat-${cat.slug}`}>
             <div className="newsroom-category-block-header">
               <h2 id={`cat-${cat.slug}`}>{cat.label}</h2>
