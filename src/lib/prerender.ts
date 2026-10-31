@@ -297,7 +297,10 @@ function renderHomeShellBase(): string {
 
 export function renderHomeShell(): string {
   const tools = HEALTH_TOOLS.map((t) => `<a href="${t.href}" class="situation-hub-card"><span class="situation-tag">${t.emoji} ${escapeHtml(t.tag)}</span><h3 class="situation-title">${escapeHtml(t.title)}</h3><p class="situation-desc">${escapeHtml(t.desc)}</p></a>`).join("");
-  return renderHomeShellBase() + `\n<section id="tools" aria-label="바로 쓰는 건강 계산기"><h2>바로 쓰는 건강 계산기</h2><div class="situation-hub-grid">${tools}<a href="${TOOLS_HUB}" class="situation-hub-card"><h3 class="situation-title">전체 계산기 30개</h3></a></div></section>`;
+  const base = renderHomeShellBase();
+  // #prerender 안에 넣어야 main.tsx 가 앱 마운트 때 같이 지운다
+  const end = base.lastIndexOf("</div>");
+  return base.slice(0, end) + `\n<section id="tools" aria-label="바로 쓰는 건강 계산기"><h2>바로 쓰는 건강 계산기</h2><div class="situation-hub-grid">${tools}<a href="${TOOLS_HUB}" class="situation-hub-card"><h3 class="situation-title">전체 계산기 30개</h3></a></div></section>\n` + base.slice(end);
 }
 
 export function renderHomeDocument(html: string): string {
