@@ -1,22 +1,24 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "nutrifit",
-  "main": "worker.ts",
-  "compatibility_date": "2026-09-08",
-  "compatibility_flags": ["nodejs_compat"],
-  "routes": [
-    { "pattern": "nutrifit.kr", "custom_domain": true }
-  ],
-  "workers_dev": true,
+  "main": "custom-worker.ts",
+  "name": "nutrifit-v2",
+  "compatibility_date": "2025-08-15",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
-    "directory": "./dist",
-    "binding": "ASSETS",
-    // 자산이 매칭되면 워커는 호출되지 않는다. dist/index.html 이 있으므로 "/" 도
-    // 그대로 앱 셸이 나가 크롤러가 빈 문서를 본다. 홈만 워커를 먼저 태워
-    // 사전렌더한 본문을 심어 내려보낸다(worker.ts 9번 분기).
-    "run_worker_first": ["/", "/index.html"]
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
   },
-  "observability": {
-    "enabled": true
-  }
+  "observability": { "enabled": true },
+  "workers_dev": true,
+  "preview_urls": false,
+  "d1_databases": [
+    {
+      "binding": "D1",
+      "database_id": "a895a61b-8d7a-4827-9940-ba958fd7caaa",
+      "database_name": "nutrifit",
+      "remote": true
+    }
+  ],
+  "r2_buckets": [{ "binding": "R2", "bucket_name": "nutrifit-media", "remote": true }],
+  "triggers": { "crons": ["0 0,4,11 * * *"] }
 }

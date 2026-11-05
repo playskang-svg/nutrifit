@@ -9,3 +9,10 @@ dist/
 .agents/
 bun.lock
 bun.lockb
+.env
+.secrets/
+.wrangler/
+.open-next/
+worker-dist/
+og/
+open-next.tgz

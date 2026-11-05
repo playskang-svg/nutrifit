@@ -1,20 +1,7 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# nutrifit v2
 
-# Run and deploy your AI Studio app
+뉴트리핏(nutrifit.kr) 재구축. Payload + Next + OpenNext on Cloudflare Workers (D1, R2).
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/0259546c-fe3f-4ff3-b959-3dda2a63de27
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- 설치: `pnpm install --frozen-lockfile`
+- 테스트: `pnpm test`
+- 배포: GitHub Actions 빌드 후 `pnpm deploy:ci`
