@@ -1,5 +1,8 @@
 // Content gate (R38): shape, fact lock, compliance check, NF-md conversion and photo collection for one document.
 // Pure apart from the caller's inputs; scripts/gate.mjs does the file reading and the CLI wrapper.
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import path from 'node:path'
+
 import { checkDoc, loadRules } from './check.mjs'
 import { sameFacts } from './factlock.mjs'
 import { NfmdError, nfmdToLexical } from './nfmd.mjs'
@@ -82,4 +85,21 @@ export async function runGate({ kind, draft, final, env, jev = {} }) {
   }
   const unique = photos.filter((p, i) => photos.findIndex((q) => q.key === p.key) === i)
   return { ok: !issues.some((i) => i.severity === 'error'), slug: final.slug, issues, photos: unique }
+}
+
+// Photo manifest (jsonl of { slug, key, caption }): drop this slug's old lines, append the new ones.
+// A line that does not parse is kept as is and reported as a warn issue.
+export function updateManifest(file, slug, photos) {
+  const warns = []
+  const kept = (existsSync(file) ? readFileSync(file, 'utf8').split(/\r?\n/) : []).filter(Boolean).filter((line, i) => {
+    try {
+      return JSON.parse(line).slug !== slug
+    } catch {
+      warns.push(issue('MANIFEST', `${path.basename(file)}:${i + 1}`, '사진 목록의 깨진 줄은 건너뛰고 그대로 뒀어요', 'warn'))
+      return true
+    }
+  })
+  mkdirSync(path.dirname(file), { recursive: true })
+  writeFileSync(file, [...kept, ...photos.map((p) => JSON.stringify({ slug, key: p.key, caption: p.caption }))].join('\n') + '\n')
+  return warns
 }

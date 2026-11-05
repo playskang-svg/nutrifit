@@ -1,6 +1,10 @@
+import { spawnSync } from 'node:child_process'
+import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
-import { runGate, shapeIssues } from './gate.mjs'
+import { runGate, shapeIssues, updateManifest } from './gate.mjs'
 
 const post = (over = {}) => ({
   slug: 'cold-hands',
@@ -76,5 +80,62 @@ describe('runGate', () => {
     const client = async (_s, q) => Object.fromEntries(Object.keys(q).map((k) => [k, { type: 'noul', noul: 0 }]))
     const withJev = await gate(post({ body }), post({ body }), { jev: { client } })
     expect(codes(withJev)).not.toContain('FORBIDDEN_CLAIM')
+  })
+})
+
+describe('Jev verdicts', () => {
+  const body = '## a\n\n이 영양제는 수족냉증을 치료해요.'
+  it('keeps FORBIDDEN_CLAIM as an error on a positive verdict', async () => {
+    const client = async (_s, q) => Object.fromEntries(Object.keys(q).map((k) => [k, { type: 'noul', noul: 0.99 }]))
+    const r = await gate(post({ body }), post({ body }), { jev: { client } })
+    expect(r.issues.find((i) => i.code === 'FORBIDDEN_CLAIM')).toMatchObject({ severity: 'error' })
+    expect(r.ok).toBe(false)
+  })
+  it('reports JEV_FAILED when the client throws', async () => {
+    const client = async () => {
+      throw new Error('HTTP 500')
+    }
+    const r = await gate(post({ body }), post({ body }), { jev: { client } })
+    expect(codes(r)).toContain('JEV_FAILED')
+    expect(codes(r)).not.toContain('FORBIDDEN_CLAIM')
+    expect(r.ok).toBe(false)
+  })
+})
+
+describe('updateManifest', () => {
+  const tmp = () => path.join(mkdtempSync(path.join(tmpdir(), 'gate-')), 'drafts/_photos.jsonl')
+  const lines = (f) => readFileSync(f, 'utf8').split('\n').filter(Boolean)
+  it('replaces one slug and keeps the others', () => {
+    const f = tmp()
+    updateManifest(f, 'a', [{ key: 'post-a-1', caption: 'x' }, { key: 'post-a-2', caption: 'y' }])
+    updateManifest(f, 'b', [{ key: 'post-b-1', caption: 'z' }])
+    updateManifest(f, 'a', [{ key: 'post-a-1', caption: 'new' }])
+    expect(lines(f).map((l) => JSON.parse(l))).toEqual([
+      { slug: 'b', key: 'post-b-1', caption: 'z' },
+      { slug: 'a', key: 'post-a-1', caption: 'new' },
+    ])
+  })
+  it('skips a corrupt line with a warn issue', () => {
+    const f = tmp()
+    updateManifest(f, 'a', [{ key: 'post-a-1', caption: 'x' }])
+    writeFileSync(f, readFileSync(f, 'utf8') + '{broken\n')
+    const warns = updateManifest(f, 'b', [{ key: 'post-b-1', caption: 'z' }])
+    expect(warns).toEqual([expect.objectContaining({ code: 'MANIFEST', severity: 'warn' })])
+    expect(lines(f)).toHaveLength(3)
+  })
+})
+
+describe('gate CLI', () => {
+  const cli = (args) => spawnSync(process.execPath, ['scripts/gate.mjs', ...args], { encoding: 'utf8' })
+  it('reports one INPUT error naming missing --work inputs', () => {
+    const dir = mkdtempSync(path.join(tmpdir(), 'gate-cli-'))
+    const f = path.join(dir, 'd.json')
+    writeFileSync(f, JSON.stringify(post()))
+    const r = cli(['--kind', 'post', '--draft', f, '--final', f, '--no-jev', '--work', path.join(dir, 'nope')])
+    const out = JSON.parse(r.stdout)
+    expect(r.status).toBe(1)
+    expect(out.issues).toHaveLength(1)
+    expect(out.issues[0]).toMatchObject({ code: 'INPUT', severity: 'error' })
+    for (const n of ['briefs/hub-list.json', 'briefs/link-targets.json', 'coupang/picks.json']) expect(out.issues[0].text).toContain(n)
   })
 })
