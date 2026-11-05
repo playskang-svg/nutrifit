@@ -2,7 +2,7 @@ import React from 'react'
 
 import type { AffiliateLink } from '@/payload-types'
 
-// Direct to 3ha.in: a click must still work when the Worker is over its CPU limit, and the studio counts clicks itself.
+// Direct to link.coupang.com: a click must still work when the Worker is over its CPU limit.
 export function AffiliateAnchor({
   link,
   className,

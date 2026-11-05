@@ -5,6 +5,23 @@ import { publishedWhere } from '@/lib/payload'
 import { signedIn } from './access'
 import { faq, heroPhoto, keywords, primaryKeyword, sources } from './fields'
 
+export const BODY_AREAS = [
+  { label: '머리', value: 'head' },
+  { label: '눈', value: 'eye' },
+  { label: '귀', value: 'ear' },
+  { label: '코·목', value: 'nose-throat' },
+  { label: '입·치아', value: 'mouth' },
+  { label: '목·어깨', value: 'neck-shoulder' },
+  { label: '가슴', value: 'chest' },
+  { label: '배', value: 'abdomen' },
+  { label: '허리·등', value: 'back' },
+  { label: '비뇨·생식기', value: 'urogenital' },
+  { label: '팔·손', value: 'arm-hand' },
+  { label: '다리·발', value: 'leg-foot' },
+  { label: '피부·모발', value: 'skin-hair' },
+  { label: '전신', value: 'whole' },
+]
+
 const publishedOnly: Access = ({ req }) => (req.user ? true : publishedWhere(new Date()))
 
 export const Posts: CollectionConfig = {
@@ -48,6 +65,13 @@ export const Posts: CollectionConfig = {
       admin: { position: 'sidebar' },
     },
     {
+      name: 'area',
+      label: '증상 부위',
+      type: 'select',
+      options: BODY_AREAS,
+      admin: { position: 'sidebar', description: '증상 카테고리 글에 넣습니다.' },
+    },
+    {
       name: 'updatedAtDisplay',
       label: '화면에 보일 수정일',
       type: 'date',
@@ -70,6 +94,7 @@ export const Posts: CollectionConfig = {
             { label: '영양소', value: 'nutrient' },
             { label: '몸 고민', value: 'body' },
             { label: '생활', value: 'life' },
+            { label: '증상 부위', value: 'area' },
           ],
         },
         { name: 'slug', label: '허브 주소', type: 'text', required: true },

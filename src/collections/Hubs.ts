@@ -18,6 +18,7 @@ export const Hubs: CollectionConfig = {
       options: [
         { label: '몸 고민', value: 'body' },
         { label: '생활', value: 'life' },
+        { label: '증상 부위', value: 'area' },
       ],
     },
     { name: 'name', label: '이름', type: 'text', required: true },

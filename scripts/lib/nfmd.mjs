@@ -22,7 +22,7 @@ const block = (state, blockType, fields) => ({
   type: 'block',
   version: 2,
   format: '',
-  fields: { id: `${blockType}-${++state.ids}`, blockName: '', blockType, ...fields },
+  fields: { id: `${state.ctx.idPrefix ?? ''}${blockType}-${++state.ids}`, blockName: '', blockType, ...fields },
 })
 
 // Adjacent runs with the same format share one text node, as Lexical normalizes them.
@@ -109,6 +109,7 @@ function compare(rows, caption, state) {
   }
   return block(state, 'compare', {
     caption,
+    corner: plain(labels[0], head.line),
     columns: labels.slice(1).map((label) => ({ label: plain(label, head.line) })),
     rows: body.map((row) => {
       const [label, ...values] = cells(row)

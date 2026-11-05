@@ -151,6 +151,27 @@ export interface Post {
    */
   publishedAt: string;
   category: number | Category;
+  /**
+   * 증상 카테고리 글에 넣습니다.
+   */
+  area?:
+    | (
+        | 'head'
+        | 'eye'
+        | 'ear'
+        | 'nose-throat'
+        | 'mouth'
+        | 'neck-shoulder'
+        | 'chest'
+        | 'abdomen'
+        | 'back'
+        | 'urogenital'
+        | 'arm-hand'
+        | 'leg-foot'
+        | 'skin-hair'
+        | 'whole'
+      )
+    | null;
   updatedAtDisplay?: string | null;
   /**
    * 네이버에서 이 글이 노출되길 바라는 검색어 하나.
@@ -163,7 +184,7 @@ export interface Post {
   description: string;
   hubs?:
     | {
-        kind: 'nutrient' | 'body' | 'life';
+        kind: 'nutrient' | 'body' | 'life' | 'area';
         slug: string;
         id?: string | null;
       }[]
@@ -407,6 +428,11 @@ export interface Nutrient {
  */
 export interface Pick {
   id: number;
+  /**
+   * 본문의 {{pick:키}}에 쓰는 이름. 예: mg-01
+   */
+  key: string;
+  kind: 'supplement' | 'quasiDrug' | 'device' | 'cosmetic' | 'gear' | 'food';
   name: string;
   brand: string;
   coupangProductId: string;
@@ -461,7 +487,7 @@ export interface AffiliateLink {
  */
 export interface Hub {
   id: number;
-  kind: 'body' | 'life';
+  kind: 'body' | 'life' | 'area';
   name: string;
   slug: string;
   summary: string;
@@ -671,6 +697,7 @@ export interface PostsSelect<T extends boolean = true> {
   slug?: T;
   publishedAt?: T;
   category?: T;
+  area?: T;
   updatedAtDisplay?: T;
   primaryKeyword?: T;
   seoTitle?: T;
@@ -858,6 +885,8 @@ export interface HubsSelect<T extends boolean = true> {
  * via the `definition` "picks_select".
  */
 export interface PicksSelect<T extends boolean = true> {
+  key?: T;
+  kind?: T;
   name?: T;
   brand?: T;
   coupangProductId?: T;

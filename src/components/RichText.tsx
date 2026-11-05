@@ -1,20 +1,28 @@
-import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+import type { SerializedEditorState, SerializedLexicalNode } from '@payloadcms/richtext-lexical/lexical'
 import {
+  type JSXConverter,
   type JSXConvertersFunction,
   RichText as PayloadRichText,
 } from '@payloadcms/richtext-lexical/react'
 import type React from 'react'
 
+import { bannerFor, MAX_BANNERS_PER_PAGE } from '@/lib/banners'
 import { retina } from '@/lib/images'
+import type { AffiliateLink, Nutrient, Pick } from '@/payload-types'
 
-type CtaFields = { hook: string; name: string; button: string; url: string; image?: string | null }
-type PhotoFields = { src: string; alt: string; caption: string }
-type FactsFields = { name: string; score: string; count: string; note: string; rows?: { label: string; value: string }[] }
-type CompareFields = {
-  caption: string
-  columns?: { label: string }[]
-  rows?: { label: string; cells?: { value: string }[] }[]
-}
+import { Callout } from './Callout'
+import { Compare, type CompareFields } from './Compare'
+import { CoupangBanner } from './CoupangBanner'
+import { IntakeBar } from './IntakeBar'
+import { LinkCard, type LinkCardFields } from './LinkCard'
+import { PickCard, PickSearch } from './PickCard'
+import { Timeline } from './Timeline'
+
+type Fields<T> = { node: { fields: T }; nodesToJSX: (args: { nodes: SerializedLexicalNode[] }) => React.ReactNode[] }
+type NestedRoot = { root?: { children?: SerializedLexicalNode[] } } | null | undefined
+
+const HIGHLIGHT = 128 // Lexical IS_HIGHLIGHT
+const SPONSORED = /^https:\/\/link\.coupang\.com\//
 
 const startsWithCaptionMark = (node: { children?: unknown[] }): boolean => {
   const first = node.children?.[0] as { text?: string } | undefined
@@ -24,89 +32,83 @@ const startsWithCaptionMark = (node: { children?: unknown[] }): boolean => {
 // `midway` is rendered once, right before the third H2, so the hook lands after the reader has the facts.
 const MIDWAY_HEADING = 3
 
-export function RichText({ data, midway }: { data: unknown; midway?: React.ReactNode }) {
+export function RichText({
+  data,
+  picks,
+  nutrients,
+  links,
+  bannerSlot,
+  hub,
+  midway,
+}: {
+  data: unknown
+  picks: Map<string, Pick>
+  nutrients: Map<string, Nutrient>
+  // Affiliate links by slug, for `search-<nutrient>` picks.
+  links?: Map<string, AffiliateLink>
+  bannerSlot: string
+  // The page's hub as `<kind>-<slug>`, the banner fallback before `default`.
+  hub?: string
+  midway?: React.ReactNode
+}) {
   let headings = 0
+  let banners = 0
+  let inTimeline = false
   const converters: JSXConvertersFunction = ({ defaultConverters }) => ({
     ...defaultConverters,
+    // Blocks this renderer does not know (or nodes from a newer editor) render nothing.
+    unknown: () => null,
+    text: (args) => {
+      const text = (defaultConverters.text as Exclude<JSXConverter, React.ReactNode>)(args)
+      return args.node.format & HIGHLIGHT ? <mark className="hl">{text}</mark> : text
+    },
     blocks: {
-      cta: ({ node }: { node: { fields: CtaFields } }) => {
-        const { hook, name, button, url, image } = node.fields
-        return (
-          <a className="post-cta" href={url} rel="sponsored nofollow noopener" target="_blank">
-            {image ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img alt={name} height={300} loading="lazy" src={image} srcSet={retina(image)} width={400} />
-            ) : null}
-            <span className="post-cta__body">
-              <strong>{hook}</strong>
-              <small>{name}</small>
-              <span className="button button--go">{button}</span>
-            </span>
-          </a>
-        )
+      callout: ({ node, nodesToJSX }: Fields<{ tone: string; title?: string | null; body?: NestedRoot }>) => (
+        <Callout title={node.fields.title} tone={node.fields.tone}>
+          {nodesToJSX({ nodes: node.fields.body?.root?.children ?? [] })}
+        </Callout>
+      ),
+      compare: ({ node }: Fields<CompareFields>) => <Compare {...node.fields} />,
+      pick: ({ node }: Fields<{ pickId: string }>) => {
+        const { pickId } = node.fields
+        if (pickId.startsWith('auto-')) return null // placeholder until real picks are chosen
+        const search = /^search-(.+)$/.exec(pickId)?.[1]
+        if (search) return <PickSearch link={links?.get(pickId)} name={nutrients.get(search)?.name ?? search} />
+        const pick = picks.get(pickId)
+        return pick ? <PickCard pick={pick} /> : null
       },
-      photo: ({ node }: { node: { fields: PhotoFields } }) => {
-        const { src, alt, caption } = node.fields
+      photo: ({ node }: Fields<{ photo: string; caption: string }>) => {
+        const src = `/photos/${node.fields.photo}.webp`
         return (
           <figure className="post-photo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img alt={alt} height={667} loading="lazy" src={src} srcSet={retina(src)} width={1000} />
-            <figcaption>▲ {caption}</figcaption>
+            <img alt={node.fields.caption} height={800} loading="lazy" src={src} srcSet={retina(src)} width={1200} />
+            <figcaption>▲ {node.fields.caption}</figcaption>
           </figure>
         )
       },
-      compare: ({ node }: { node: { fields: CompareFields } }) => {
-        const { caption, columns, rows } = node.fields
-        return (
-          // Scrolls sideways inside its own box on narrow phones instead of widening the page.
-          <div aria-label={caption} className="compare" role="region" tabIndex={0}>
-            <table>
-              <caption>{caption}</caption>
-              <thead>
-                <tr>
-                  <th scope="col">
-                    <span className="sr-only">항목</span>
-                  </th>
-                  {columns?.map((column) => (
-                    <th key={column.label} scope="col">
-                      {column.label}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {rows?.map((row) => (
-                  <tr key={row.label}>
-                    <th scope="row">{row.label}</th>
-                    {row.cells?.map((cell, index) => (
-                      <td key={index}>{cell.value}</td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )
+      linkCard: ({ node }: Fields<LinkCardFields>) => <LinkCard {...node.fields} />,
+      intakeBar: ({ node }: Fields<{ nutrient: string }>) => {
+        const nutrient = nutrients.get(node.fields.nutrient)
+        return nutrient ? <IntakeBar nutrient={nutrient} /> : null
       },
-      facts: ({ node }: { node: { fields: FactsFields } }) => {
-        const { name, score, count, note, rows } = node.fields
-        return (
-          <aside aria-label={`${name} 요약`} className="hotel-facts">
-            <div className="hotel-facts__score">
-              <strong>{score}</strong>
-              <small>후기 {count}개</small>
-            </div>
-            <dl>
-              {rows?.map((row) => (
-                <div key={row.label} style={{ display: 'contents' }}>
-                  <dt>{row.label}</dt>
-                  <dd>{row.value}</dd>
-                </div>
-              ))}
-            </dl>
-            <p className="hotel-facts__note">{note}</p>
-          </aside>
-        )
+      timeline: ({ node, nodesToJSX }: Fields<{ nutrient: string }>) => {
+        const nutrient = nutrients.get(node.fields.nutrient)
+        const timing = (nutrient?.timing as NestedRoot)?.root?.children
+        // A timing text that names itself would otherwise recurse forever.
+        if (!timing?.length || inTimeline) return null
+        inTimeline = true
+        try {
+          return <Timeline name={nutrient.name}>{nodesToJSX({ nodes: timing })}</Timeline>
+        } finally {
+          inTimeline = false
+        }
+      },
+      banner: () => {
+        const banner = bannerFor(bannerSlot, hub)
+        if (!banner || banners >= MAX_BANNERS_PER_PAGE) return null
+        banners += 1
+        return <CoupangBanner banner={banner} />
       },
     },
     paragraph: ({ node, nodesToJSX }) => {
@@ -115,13 +117,14 @@ export function RichText({ data, midway }: { data: unknown; midway?: React.React
       return <p>{children}</p>
     },
     link: ({ node, nodesToJSX }) => {
-      const href = (node.fields as { url?: string }).url ?? ''
-      const sponsored = href.includes('3ha.in')
+      const { url, newTab } = node.fields as { url?: string; newTab?: boolean }
+      const href = url ?? ''
+      const sponsored = SPONSORED.test(href)
       return (
         <a
           href={href}
           rel={sponsored ? 'sponsored nofollow noopener' : undefined}
-          target={sponsored ? '_blank' : undefined}
+          target={sponsored || newTab ? '_blank' : undefined}
         >
           {nodesToJSX({ nodes: node.children })}
         </a>

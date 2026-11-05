@@ -126,6 +126,7 @@ test('a table with a 표: caption line becomes a compare block', () => {
       blockName: '',
       blockType: 'compare',
       caption: '형태별 비교',
+      corner: '형태',
       columns: [{ label: '흡수' }, { label: '위장 부담' }],
       rows: [
         { label: '산화', cells: [{ value: '낮음' }, { value: '있음' }] },
@@ -133,7 +134,15 @@ test('a table with a 표: caption line becomes a compare block', () => {
       ],
     },
   })
-  expect(plain.fields).toMatchObject({ caption: '', columns: [{ label: '이유' }], rows: [{ label: '저녁' }] })
+  expect(plain.fields).toMatchObject({ caption: '', corner: '시간', columns: [{ label: '이유' }], rows: [{ label: '저녁' }] })
+  const [blank] = convert('| | 값 |\n|---|---|\n| 저녁 | 1 |')
+  expect(blank.fields.corner).toBe('')
+})
+
+test('ctx.idPrefix prefixes block ids', () => {
+  const [callout, banner] = nfmdToLexical('::: tip\n물과 함께\n:::\n\n{{banner}}', { ...ctx, idPrefix: 'timing-' }).root.children
+  expect(callout.fields.id).toBe('timing-callout-1')
+  expect(banner.fields.id).toBe('timing-banner-2')
 })
 
 test('::: warn 주의 becomes a callout with nested rich text', () => {

@@ -8,7 +8,7 @@ import { CloudflareContext, getCloudflareContext } from '@opennextjs/cloudflare'
 import { GetPlatformProxyOptions } from 'wrangler'
 import { r2Storage } from '@payloadcms/storage-r2'
 
-import { CompareBlock, CtaBlock, PhotoBlock } from './blocks/Cta'
+import { BODY_BLOCKS } from './blocks'
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { AffiliateLinks } from './collections/AffiliateLinks'
@@ -90,7 +90,7 @@ export default buildConfig({
   ],
   globals: [Navigation],
   editor: lexicalEditor({
-    features: ({ defaultFeatures }) => [...defaultFeatures, BlocksFeature({ blocks: [CtaBlock, PhotoBlock, CompareBlock] })],
+    features: ({ defaultFeatures }) => [...defaultFeatures, BlocksFeature({ blocks: BODY_BLOCKS })],
   }),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
