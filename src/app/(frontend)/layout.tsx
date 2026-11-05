@@ -3,6 +3,7 @@ import { headers } from 'next/headers'
 import Script from 'next/script'
 import React from 'react'
 
+import { JsonLd } from '@/components/JsonLd'
 import { Disclosure } from '@/components/Disclosure'
 import { ReadingProgress } from '@/components/ReadingProgress'
 import { Reveal } from '@/components/Reveal'
@@ -10,6 +11,7 @@ import { SiteFooter } from '@/components/SiteFooter'
 import { SiteHeader } from '@/components/SiteHeader'
 import { FOOTER_LINKS, HEADER_LINKS } from '@/globals/Navigation'
 import { isProdHost } from '@/lib/host'
+import { siteGraph } from '@/lib/jsonld'
 import { getClient, SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from '@/lib/payload'
 
 import './styles.css'
@@ -65,30 +67,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@graph': [
-                {
-                  '@type': 'WebSite',
-                  '@id': `${SITE_URL}/#website`,
-                  url: SITE_URL,
-                  name: SITE_NAME,
-                  description: SITE_DESCRIPTION,
-                  inLanguage: 'ko-KR',
-                  potentialAction: {
-                    '@type': 'SearchAction',
-                    target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/search?q={search_term_string}` },
-                    'query-input': 'required name=search_term_string',
-                  },
-                },
-                { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL },
-              ],
-            }),
-          }}
-        />
+        <JsonLd data={siteGraph()} />
         {live ? (
           <script
             async

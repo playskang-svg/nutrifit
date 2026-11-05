@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { cache } from 'react'
 
+import { SITE_URL } from '@/lib/payload'
 import { getHub, picksById, postsForHub, richTextContext } from '@/lib/queries'
-import { faqLd } from '@/lib/jsonld'
+import { collectionPage, crumbs, faqPage, graph } from '@/lib/jsonld'
 import { keywordTitle, pageMeta } from '@/lib/seo'
 import type { Hub, Nutrient } from '@/payload-types'
 
@@ -24,12 +26,12 @@ const KINDS = {
 } as const
 
 // Area pages exist for all 14 body areas, with or without a hub document; body and life pages need one.
-async function load(kind: Hub['kind'], slug: string) {
+const load = cache(async (kind: Hub['kind'], slug: string) => {
   const hub = await getHub(kind, slug)
   const name = hub?.name ?? (kind === 'area' ? areaLabel(slug) : undefined)
   if (!name) notFound()
   return { hub, name }
-}
+})
 
 export async function hubMetadata(kind: Hub['kind'], slug: string): Promise<Metadata> {
   const { hub, name } = await load(kind, slug)
@@ -52,14 +54,20 @@ export async function HubView({ kind, slug }: { kind: Hub['kind']; slug: string 
   ])
   const nutrients = (hub?.nutrients ?? []).filter((item): item is Nutrient => typeof item === 'object')
   const summary = hub?.summary ?? `${name}에 나타나는 증상을 모았어요.`
-  const faq = faqLd(hub?.faq)
+  const trail = [{ name: crumb, path: base }, { name, path }]
   const video = hub?.heroVideo
   const photo = hub?.heroPhoto
   return (
     <>
-      {faq ? <JsonLd data={faq} /> : null}
+      <JsonLd
+        data={graph(
+          collectionPage(name, `${SITE_URL}${path}`, posts.map((post) => ({ name: post.title, url: `/health/${post.slug}` }))),
+          crumbs(trail),
+          faqPage(hub?.faq),
+        )}
+      />
       <div className="frame crumbs-row">
-        <Breadcrumbs items={[{ name: crumb, path: base }, { name, path }]} />
+        <Breadcrumbs items={trail} />
       </div>
       {kind !== 'area' && (video || photo) ? (
         <PhotoHead

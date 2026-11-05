@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
 
-import { rssXml, sitemapEntries } from './sitemap'
+import { rssXml, sitemapEntries, sitemapXml } from './sitemap'
 
 const now = new Date('2026-11-10T00:00:00Z')
 const at = '2026-11-01T00:00:00.000Z'
@@ -53,4 +53,8 @@ test('rss leaves out future posts and links /health/<slug>', () => {
   const xml = rssXml(posts, now)
   expect(xml).toContain('<link>https://nutrifit.kr/health/magnesium-sleep</link>')
   expect(xml).not.toContain('future-post')
+})
+
+test('sitemap escapes & in loc', () => {
+  expect(sitemapXml([{ loc: 'https://nutrifit.kr/a?x=1&y=2' }])).toContain('<loc>https://nutrifit.kr/a?x=1&amp;y=2</loc>')
 })

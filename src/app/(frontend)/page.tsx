@@ -11,7 +11,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '@/lib/payload'
 
 export const dynamic = 'force-dynamic'
 
-export const metadata = { ...pageMeta({ title: SITE_TITLE, description: SITE_DESCRIPTION, path: '/' }), title: { absolute: SITE_TITLE } }
+export const metadata = pageMeta({ title: SITE_TITLE, description: SITE_DESCRIPTION, path: '/', bare: true })
 
 const CONCERNS = [
   { href: '/body/eye', name: '눈', summary: '오래 보는 화면, 건조한 눈' },

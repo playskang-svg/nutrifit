@@ -44,12 +44,12 @@ export function sitemapEntries({
   ]
 }
 
+const esc = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+
 export const sitemapXml = (entries: SitemapEntry[]) =>
   `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${entries
-    .map((entry) => `<url><loc>${entry.loc}</loc>${entry.lastmod ? `<lastmod>${entry.lastmod}</lastmod>` : ''}</url>`)
+    .map((entry) => `<url><loc>${esc(entry.loc)}</loc>${entry.lastmod ? `<lastmod>${entry.lastmod}</lastmod>` : ''}</url>`)
     .join('')}</urlset>`
-
-const esc = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
 // One builder for /rss.xml and /feed.xml.
 export function rssXml(posts: { slug: string; title: string; description: string; publishedAt: string }[], now: Date) {

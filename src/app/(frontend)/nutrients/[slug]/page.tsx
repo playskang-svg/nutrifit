@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { cache } from 'react'
 
 import { ArticleEnd } from '@/components/ArticleEnd'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
@@ -11,7 +12,8 @@ import { PickCard } from '@/components/PickCard'
 import { PostList } from '@/components/PostList'
 import { RichText } from '@/components/RichText'
 import { VerdictBox } from '@/components/VerdictBox'
-import { faqLd } from '@/lib/jsonld'
+import { collectionPage, crumbs, faqPage, graph } from '@/lib/jsonld'
+import { SITE_URL } from '@/lib/payload'
 import { findOne, picksById, postsForHub, richTextContext } from '@/lib/queries'
 import { keywordTitle, pageMeta } from '@/lib/seo'
 import type { Nutrient } from '@/payload-types'
@@ -20,7 +22,7 @@ export const dynamic = 'force-dynamic'
 
 type Props = { params: Promise<{ slug: string }> }
 
-const load = async (slug: string) => ((await findOne('nutrients', { slug: { equals: slug } })) as Nutrient | null) ?? notFound()
+const load = cache(async (slug: string) => ((await findOne('nutrients', { slug: { equals: slug } })) as Nutrient | null) ?? notFound())
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const item = await load((await params).slug)
@@ -43,12 +45,18 @@ export default async function NutrientPage({ params }: Props) {
   const good = item.interactions?.good ?? []
   const caution = item.interactions?.caution ?? []
   const foods = item.foods ?? []
-  const faq = faqLd(item.faq)
+  const trail = [{ name: '영양소 사전', path: '/nutrients' }, { name: item.name, path }]
   return (
     <article className="section page-head">
-      {faq ? <JsonLd data={faq} /> : null}
+      <JsonLd
+        data={graph(
+          collectionPage(item.name, `${SITE_URL}${path}`, posts.map((post) => ({ name: post.title, url: `/health/${post.slug}` }))),
+          crumbs(trail),
+          faqPage(item.faq),
+        )}
+      />
       <div className="frame frame--text">
-        <Breadcrumbs items={[{ name: '영양소 사전', path: '/nutrients' }, { name: item.name, path }]} />
+        <Breadcrumbs items={trail} />
         <h1>{item.name}</h1>
         <p className="lede">{item.summary}</p>
         {item.aliases?.length ? (

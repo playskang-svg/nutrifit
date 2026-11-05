@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { cache } from 'react'
 
 import { ArticleEnd } from '@/components/ArticleEnd'
 import { areaLabel, BodyMap } from '@/components/BodyMap'
@@ -12,17 +13,18 @@ import { RichText } from '@/components/RichText'
 import { SummaryBox } from '@/components/SummaryBox'
 import { VerdictBox } from '@/components/VerdictBox'
 import { wide } from '@/lib/images'
-import { articleLd, faqLd } from '@/lib/jsonld'
+import { blogPosting, crumbs, faqPage, graph } from '@/lib/jsonld'
 import { formatDate } from '@/lib/pricing'
+import { SITE_URL } from '@/lib/payload'
 import { getPublishedPost, richTextContext } from '@/lib/queries'
-import { DEFAULT_IMAGE, pageMeta } from '@/lib/seo'
+import { ogPath, pageMeta } from '@/lib/seo'
 import type { Category, Post } from '@/payload-types'
 
 export const dynamic = 'force-dynamic'
 
 type Props = { params: Promise<{ slug: string }> }
 
-const load = async (slug: string) => (await getPublishedPost(slug)) ?? notFound()
+const load = cache(async (slug: string) => (await getPublishedPost(slug)) ?? notFound())
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await load((await params).slug)
@@ -31,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.seoTitle || post.title,
     description: post.description,
     path: `/health/${post.slug}`,
-    image: post.ogImage || DEFAULT_IMAGE,
+    image: post.ogImage || ogPath(post.slug),
     article: {
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAtDisplay ?? post.updatedAt,
@@ -61,23 +63,28 @@ export default async function PostPage({ params }: Props) {
   const related = (post.relatedPosts ?? []).filter((item): item is Post => typeof item === 'object')
   const symptom = category.slug === 'symptom' && post.area
   const photo = post.heroPhoto ? `/photos/${post.heroPhoto}.webp` : null
-  const faq = faqLd(post.faq)
+  const items = [...trail(post, category), { name: post.title, path }]
   return (
     <>
       <JsonLd
-        data={articleLd({
-          title: post.title,
-          description: post.description,
-          path,
-          image: post.ogImage || photo || DEFAULT_IMAGE,
-          published: post.publishedAt,
-          modified: post.updatedAtDisplay ?? post.updatedAt,
-        })}
+        data={graph(
+          blogPosting(
+            {
+              title: post.title,
+              description: post.description,
+              image: post.ogImage || ogPath(post.slug),
+              publishedAt: post.publishedAt,
+              modifiedAt: post.updatedAtDisplay ?? post.updatedAt,
+            },
+            `${SITE_URL}${path}`,
+          ),
+          crumbs(items),
+          faqPage(post.faq),
+        )}
       />
-      {faq ? <JsonLd data={faq} /> : null}
       <article className="section page-head post">
         <div className="frame frame--text">
-          <Breadcrumbs items={[...trail(post, category), { name: post.title, path }]} />
+          <Breadcrumbs items={items} />
           <h1>{post.title}</h1>
           <p className="post__date">
             <time dateTime={post.publishedAt}>{formatDate(post.updatedAtDisplay ?? post.publishedAt)}</time>
