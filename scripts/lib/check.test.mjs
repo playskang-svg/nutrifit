@@ -39,6 +39,14 @@ describe('checkDoc', () => {
     expect(over).toEqual([expect.objectContaining({ code: 'OVER_UL', severity: 'warn' })])
   })
 
+  it('uses the 2025 phosphorus UL of 3,500 mg', () => {
+    expect(rules.ul.items.phosphorus).toMatchObject({ ul: 3500, edition: '2025' })
+    // "인" is one syllable and skipped by name matching, so test through a longer alias.
+    const alias = { ...rules, ul: { ...rules.ul, items: { ...rules.ul.items, phosphorus: { ...rules.ul.items.phosphorus, names: ['인산'] } } } }
+    expect(withBody('인산 3,400mg을 매일 드세요.', {}, alias)).toEqual([])
+    expect(withBody('인산 3,600mg을 매일 드세요.', {}, alias)).toEqual([expect.objectContaining({ code: 'OVER_UL' })])
+  })
+
   it('accepts notice claims quoted word for word', () => {
     expect(withBody("식약처 고시는 칼슘의 기능성을 '골다공증 발생 위험 감소에 도움을 줌'으로 정했어요.")).toEqual([])
     expect(withBody("프로바이오틱스의 인정 기능성에는 '장 건강에 도움을 줄 수 있음'이 있어요.")).toEqual([])

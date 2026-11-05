@@ -5,7 +5,9 @@ import { existsSync, readFileSync } from 'node:fs'
 
 const DEFAULT_ENV_FILE = 'C:/Window_DEV/github/jev-systemone/.env'
 const BATCH = 20 // sentences per call = 40 noul questions
-const THRESHOLD = 0.5
+const THRESHOLD = 0.5 // hubs
+// Per-question cutoffs; tuned on scripts/lib/jev-labels.json (see jev-threshold.json in the work folder).
+export const THRESHOLDS = { diseaseClaim: 0.65, overUlAdvice: 0.35 } // gap midpoints: disease neg<=0.40 pos>=0.88, overUl neg<=0.12 pos>=0.55
 
 export class JevError extends Error {
   constructor(message) {
@@ -71,7 +73,7 @@ export async function judgeSentences(items, { client = restClient } = {}) {
     chunk.forEach((it, j) => {
       const d = answers[`disease${j}`].noul
       const u = answers[`ul${j}`].noul
-      out.push({ text: it.text, diseaseClaim: d >= THRESHOLD, overUlAdvice: u >= THRESHOLD, reason: `jev disease=${d.toFixed(2)} overUl=${u.toFixed(2)}` })
+      out.push({ text: it.text, diseaseClaim: d >= THRESHOLDS.diseaseClaim, overUlAdvice: u >= THRESHOLDS.overUlAdvice, scores: { disease: d, overUl: u }, reason: `jev disease=${d.toFixed(2)} overUl=${u.toFixed(2)}` })
     })
   }
   return out

@@ -84,6 +84,9 @@ function ulIssues(c, text) {
   return out
 }
 
+// Reader-facing body: a post's body, or the joined nutrient sections.
+export const docBody = (doc) => doc.body ?? [doc.deficiency, doc.excess, doc.timing, doc.howToChoose].filter(Boolean).join('\n\n')
+
 export function checkDoc(doc, rules) {
   const c = compile(rules)
   const issues = []
