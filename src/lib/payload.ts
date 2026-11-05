@@ -1,25 +1,21 @@
-import config from '@payload-config'
-import { getPayload } from 'payload'
+import { getPayload, type Where } from 'payload'
 
-export const getClient = () => getPayload({ config })
+// Imported lazily so unit tests can load this module without booting the Cloudflare bindings.
+export const getClient = async () => getPayload({ config: (await import('@payload-config')).default })
 
 export const SITE_URL = 'https://nutrifit.kr'
 // The search term this site owns on Naver, so it stays in the title of every page.
 export const SITE_NAME = '뉴트리핏'
-// The earlier name, without the space: people type it as one word into Naver.
-export const SITE_NAME_COMPACT = '여행할인정보센터'
-export const SITE_TITLE = `${SITE_NAME} | 호텔·항공권·투어·이심 할인코드, ${SITE_NAME_COMPACT}`
-export const SITE_DESCRIPTION =
-  '핀다여행쿠폰(여행할인정보센터)은 아고다·트립닷컴·클룩 등 호텔·항공권·투어 액티비티·이심(eSIM)·렌터카 공식 할인코드와 여행 쿠폰, 최신 특가 프로모션을 모아 정리하는 여행 경비 절약 가이드입니다.'
-export const DISCLOSURE =
-  '이 사이트는 제휴마케팅이 포함된 광고로, 링크를 통해 예약하면 운영자가 일정 수수료를 받을 수 있습니다. 구매자가 내는 금액은 달라지지 않습니다.'
+export const DISCLOSURE = '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.'
+export const MEDICAL_NOTE =
+  '이 글은 일반적인 건강 정보이며 진단이나 치료를 대신하지 않습니다. 복용 중인 약이 있거나 질환이 있다면 의사·약사와 먼저 상의하세요.'
 
-export const publishedWhere = () => ({
-  and: [
-    { _status: { equals: 'published' as const } },
-    { publishedAt: { less_than_equal: new Date().toISOString() } },
-  ],
+export const publishedWhere = (now: Date): Where => ({
+  and: [{ _status: { equals: 'published' } }, { publishedAt: { less_than_equal: now.toISOString() } }],
 })
 
 // Media URLs already carry serverURL in production and are relative elsewhere.
 export const absoluteUrl = (url: string): string => (url.startsWith('http') ? url : `${SITE_URL}${url}`)
+
+export const SITE_TITLE = `${SITE_NAME} | 영양제·건강 정보`
+export const SITE_DESCRIPTION = '영양제 성분과 섭취 기준을 공식 자료로 확인하고, 내게 맞는 제품 고르는 법을 정리하는 건강 정보 사이트입니다.'

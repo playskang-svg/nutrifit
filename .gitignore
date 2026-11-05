@@ -16,3 +16,4 @@ bun.lockb
 worker-dist/
 og/
 open-next.tgz
+tsconfig.tsbuildinfo

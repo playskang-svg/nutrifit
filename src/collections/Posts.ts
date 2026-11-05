@@ -1,25 +1,16 @@
 import type { Access, CollectionConfig } from 'payload'
 
-import { signedIn } from './access'
+import { publishedWhere } from '@/lib/payload'
 
-const publishedOnly: Access = ({ req }) => {
-  if (req.user) return true
-  return {
-    and: [
-      { _status: { equals: 'published' } },
-      { publishedAt: { less_than_equal: new Date().toISOString() } },
-    ],
-  }
-}
+import { signedIn } from './access'
+import { faq, heroPhoto, keywords, primaryKeyword, sources } from './fields'
+
+const publishedOnly: Access = ({ req }) => (req.user ? true : publishedWhere(new Date()))
 
 export const Posts: CollectionConfig = {
   slug: 'posts',
   labels: { singular: '글', plural: '글' },
-  admin: {
-    useAsTitle: 'title',
-    group: '콘텐츠',
-    defaultColumns: ['title', 'category', 'publishedAt', '_status'],
-  },
+  admin: { useAsTitle: 'title', group: '콘텐츠', defaultColumns: ['title', 'category', 'publishedAt', '_status'] },
   // A future publish date acts as scheduling; Workers have no job runner for schedulePublish.
   versions: { drafts: true },
   access: { read: publishedOnly, create: signedIn, update: signedIn, delete: signedIn },
@@ -33,7 +24,7 @@ export const Posts: CollectionConfig = {
       required: true,
       unique: true,
       index: true,
-      admin: { position: 'sidebar', description: '영문 소문자와 하이픈. 예: chatgpt-pricing' },
+      admin: { position: 'sidebar', description: '영문 소문자와 하이픈.' },
     },
     {
       name: 'publishedAt',
@@ -57,61 +48,49 @@ export const Posts: CollectionConfig = {
       admin: { position: 'sidebar' },
     },
     {
-      name: 'verifiedAt',
-      label: '정보 확인일',
+      name: 'updatedAtDisplay',
+      label: '화면에 보일 수정일',
       type: 'date',
-      required: true,
-      defaultValue: () => new Date().toISOString(),
       admin: { position: 'sidebar', date: { pickerAppearance: 'dayOnly' } },
     },
+    primaryKeyword,
+    { name: 'seoTitle', label: '검색 제목', type: 'text', admin: { description: '비우면 글 제목을 씁니다.' } },
+    { name: 'description', label: '검색 설명', type: 'textarea', required: true },
     {
-      name: 'metaTitle',
-      label: '검색 제목',
-      type: 'text',
-      admin: { position: 'sidebar', description: '비우면 글 제목을 씁니다.' },
-    },
-    {
-      name: 'summary',
-      label: '핵심 한 줄 요약',
-      type: 'textarea',
-      required: true,
-      admin: { description: '글 맨 위 요약 상자와 검색 설명에 함께 쓰입니다.' },
-    },
-    { name: 'heroImage', label: '대표 사진', type: 'upload', relationTo: 'media', required: true },
-    {
-      name: 'ogImage',
-      label: '공유 썸네일 (1200×630)',
-      type: 'upload',
-      relationTo: 'media',
-      admin: { description: '비워 두면 사이트 기본 썸네일을 씁니다.' },
-    },
-    { name: 'content', label: '본문', type: 'richText', required: true },
-    {
-      name: 'deals',
-      label: '글에 넣을 할인',
-      type: 'relationship',
-      relationTo: 'deals',
-      hasMany: true,
-      admin: {
-        description: '본문 앞과 끝에 코드·예약 버튼으로 들어갑니다. 수익률 상향 클룩 글에는 클룩 할인만 넣습니다.',
-      },
-    },
-    {
-      name: 'relatedPosts',
-      label: '함께 볼 글',
-      type: 'relationship',
-      relationTo: 'posts',
-      hasMany: true,
-      maxDepth: 2,
-    },
-    {
-      name: 'sources',
-      label: '공식 출처',
+      name: 'hubs',
+      label: '속한 허브',
       type: 'array',
       fields: [
-        { name: 'label', label: '이름', type: 'text', required: true },
-        { name: 'url', label: '주소', type: 'text', required: true },
+        {
+          name: 'kind',
+          label: '종류',
+          type: 'select',
+          required: true,
+          options: [
+            { label: '영양소', value: 'nutrient' },
+            { label: '몸 고민', value: 'body' },
+            { label: '생활', value: 'life' },
+          ],
+        },
+        { name: 'slug', label: '허브 주소', type: 'text', required: true },
       ],
     },
+    { name: 'keyPoints', label: '핵심 요약', type: 'text', hasMany: true },
+    {
+      name: 'verdict',
+      label: '이런 분께',
+      type: 'group',
+      fields: [
+        { name: 'who', label: '해당되는 분', type: 'text', hasMany: true },
+        { name: 'skip', label: '건너뛰어도 되는 분', type: 'text', hasMany: true },
+      ],
+    },
+    { name: 'content', label: '본문', type: 'richText', required: true },
+    faq,
+    sources,
+    keywords,
+    heroPhoto,
+    { name: 'ogImage', label: '공유 썸네일 경로', type: 'text', admin: { description: '1200×630, 예: /og/slug.png' } },
+    { name: 'relatedPosts', label: '함께 볼 글', type: 'relationship', relationTo: 'posts', hasMany: true, maxDepth: 1 },
   ],
 }

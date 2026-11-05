@@ -19,8 +19,8 @@ export default async function SearchPage({
         collection: 'posts',
         where: {
           and: [
-            ...publishedWhere().and,
-            { or: [{ title: { contains: q } }, { summary: { contains: q } }] },
+            publishedWhere(new Date()),
+            { or: [{ title: { contains: q } }, { description: { contains: q } }] },
           ],
         },
         limit: 30,
@@ -31,7 +31,7 @@ export default async function SearchPage({
     <section className="section page-head">
       <div className="frame">
         <h1>{q ? `‘${q}’ 검색 결과` : '글 검색'}</h1>
-        {results ? <PostList posts={results.docs} /> : <p>찾을 여행지나 서비스 이름을 입력해 주세요.</p>}
+        {results ? <PostList posts={results.docs} /> : <p>찾을 영양소나 증상을 입력해 주세요.</p>}
       </div>
     </section>
   )

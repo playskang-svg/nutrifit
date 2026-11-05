@@ -8,17 +8,16 @@ import { CloudflareContext, getCloudflareContext } from '@opennextjs/cloudflare'
 import { GetPlatformProxyOptions } from 'wrangler'
 import { r2Storage } from '@payloadcms/storage-r2'
 
-import { CompareBlock, CtaBlock, FactsBlock, PhotoBlock } from './blocks/Cta'
+import { CompareBlock, CtaBlock, PhotoBlock } from './blocks/Cta'
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { AffiliateLinks } from './collections/AffiliateLinks'
 import { Categories } from './collections/Categories'
-import { Deals } from './collections/Deals'
-import { Destinations } from './collections/Destinations'
+import { Hubs } from './collections/Hubs'
 import { Pages } from './collections/Pages'
-import { Partners } from './collections/Partners'
+import { Nutrients } from './collections/Nutrients'
 import { Posts } from './collections/Posts'
-import { Products } from './collections/Products'
+import { Picks } from './collections/Picks'
 import { Navigation } from './globals/Navigation'
 import { ko } from '@payloadcms/translations/languages/ko'
 
@@ -82,17 +81,16 @@ export default buildConfig({
     Posts,
     Pages,
     Categories,
-    Media,
-    Deals,
-    Partners,
-    Destinations,
-    Products,
+    Nutrients,
+    Hubs,
+    Picks,
     AffiliateLinks,
+    Media,
     Users,
   ],
   globals: [Navigation],
   editor: lexicalEditor({
-    features: ({ defaultFeatures }) => [...defaultFeatures, BlocksFeature({ blocks: [CtaBlock, PhotoBlock, FactsBlock, CompareBlock] })],
+    features: ({ defaultFeatures }) => [...defaultFeatures, BlocksFeature({ blocks: [CtaBlock, PhotoBlock, CompareBlock] })],
   }),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {

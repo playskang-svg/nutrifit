@@ -24,27 +24,6 @@ export const PhotoBlock: Block = {
   ],
 }
 
-// Rating and key facts at the top of a hotel review.
-export const FactsBlock: Block = {
-  slug: 'facts',
-  labels: { singular: '호텔 요약', plural: '호텔 요약' },
-  fields: [
-    { name: 'name', label: '호텔 이름', type: 'text', required: true },
-    { name: 'score', label: '평점', type: 'text', required: true },
-    { name: 'count', label: '후기 수', type: 'text', required: true },
-    { name: 'note', label: '안내 문구', type: 'text', required: true },
-    {
-      name: 'rows',
-      label: '항목',
-      type: 'array',
-      fields: [
-        { name: 'label', label: '이름', type: 'text', required: true },
-        { name: 'value', label: '값', type: 'text', required: true },
-      ],
-    },
-  ],
-}
-
 // Side-by-side table for choosing between areas, platforms or products; rows are the questions readers ask.
 export const CompareBlock: Block = {
   slug: 'compare',
