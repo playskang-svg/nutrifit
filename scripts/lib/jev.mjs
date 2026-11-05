@@ -1,5 +1,6 @@
-// Jev (TypeSafe System One) as the binding true/false judge. Uses the REST path (POST /v1/systemone) like
-// jev-systemone's rest_system_one. Any failure becomes a JevError; callers record it, never guess an answer.
+// Jev (TypeSafe System One) as the binding true/false judge. typesafe-sdk is Python-only, so this mirrors its wire contract:
+// POST /v1/systemone (typesafe_sdk/_core/constants.py SYSTEM_ONE_PATH), base https://api.typesafe.ai, model jev-latest
+// (typesafe_sdk/constants.py DEFAULT_BASE_URL / DEFAULT_MODEL, env TYPESAFE_BASE_URL / TYPESAFE_DEFAULT_MODEL). Any failure becomes a JevError; callers record it, never guess an answer.
 import { existsSync, readFileSync } from 'node:fs'
 
 const DEFAULT_ENV_FILE = 'C:/Window_DEV/github/jev-systemone/.env'

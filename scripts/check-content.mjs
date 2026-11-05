@@ -65,7 +65,7 @@ for (const file of files) {
   const id = raw.slug ?? basename(file, '.json')
   const doc = toDoc(raw)
   let issues = checkDoc(doc, rules)
-  if (!noJev) issues = await judgeSuspects(doc, issues)
+  issues = noJev ? issues.map((i) => ({ ...i, severity: i.code === 'OVER_UL' ? 'error' : i.severity })) : await judgeSuspects(doc, issues)
   docs[id] = {}
   for (const i of issues) {
     console.log(`${id}\t${i.severity}\t${i.code}\t${i.where}\t${i.text}`)
@@ -75,7 +75,8 @@ for (const file of files) {
   }
 }
 const sorted = Object.fromEntries(Object.entries(counts).sort((a, b) => b[1] - a[1]))
-console.log(`\n${files.length} files, ${errors} errors`)
+console.log(`
+${files.length} files, ${errors} errors${noJev ? " (Jev skipped (--no-jev): suspects kept as raw errors)" : ""}`)
 console.table(sorted)
 if (out) writeFileSync(out, JSON.stringify({ checkedAt: new Date().toISOString(), files: files.length, counts: sorted, docs }, null, 2) + '\n')
 process.exitCode = errors ? 1 : 0
