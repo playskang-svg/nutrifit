@@ -87,7 +87,7 @@ function ulIssues(c, text) {
 export function checkDoc(doc, rules) {
   const c = compile(rules)
   const issues = []
-  const add = (code, where, text, severity = 'error') => issues.push({ code, severity, where, text })
+  const add = (code, where, text, severity = 'error', sentence) => issues.push({ code, severity, where, text, ...(sentence && { sentence }) })
   const isPost = doc.kind === 'post'
   const title = doc.title ?? doc.name ?? ''
   const body = doc.body ?? [doc.deficiency, doc.excess, doc.timing, doc.howToChoose].filter(Boolean).join('\n\n')
@@ -112,14 +112,14 @@ export function checkDoc(doc, rules) {
       const plain = s.replace(c.claimRe, '').replace(c.care, '')
       const phrase = c.phrases.find((p) => p.re.test(plain))
       const product = c.subject.test(plain)
-      if (phrase) add('FORBIDDEN_CLAIM', where, `${s} — ${phrase.reason}`)
-      else if (product && c.cure.test(plain)) add('FORBIDDEN_CLAIM', where, `${s} — 제품·성분에 치료 표현(별표1 제1호)`)
-      else if (product && c.disease.test(plain) && c.effect.test(plain)) add('FORBIDDEN_CLAIM', where, `${s} — 질병·증상과 효능 연결(별표1 제1호)`)
+      if (phrase) add('FORBIDDEN_CLAIM', where, `${s} — ${phrase.reason}`, 'error', s)
+      else if (product && c.cure.test(plain)) add('FORBIDDEN_CLAIM', where, `${s} — 제품·성분에 치료 표현(별표1 제1호)`, 'error', s)
+      else if (product && c.disease.test(plain) && c.effect.test(plain)) add('FORBIDDEN_CLAIM', where, `${s} — 질병·증상과 효능 연결(별표1 제1호)`, 'error', s)
       if (c.experience.test(s)) add('EXPERIENCE_TONE', where, s)
       if (c.professional.test(s)) add('PROFESSIONAL_ENDORSE', where, s)
       if (c.drug.test(s)) add('DRUG_MENTION', where, s)
       if (c.celeb.test(s)) add('CELEB_NAME', where, s)
-      for (const hit of ulIssues(c, s)) add('OVER_UL', where, hit, 'warn')
+      for (const hit of ulIssues(c, s)) add('OVER_UL', where, hit, 'warn', s)
     }
   }
 
