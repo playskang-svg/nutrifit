@@ -11,6 +11,7 @@ const TTL_SECONDS = 6 * 60 * 60
 // Bump to drop every cached page on the next deploy, for example after a data push.
 const CACHE_VERSION = 1
 const NEVER_CACHE = /^\/(admin|api|search)(\/|$)/
+const PROD_ROBOTS = 'User-agent: *\nAllow: /\n\nSitemap: https://nutrifit.kr/sitemap.xml\nSitemap: https://nutrifit.kr/rss.xml\n'
 
 export default {
   async fetch(request: Request, env: unknown, ctx: { waitUntil(promise: Promise<unknown>): void }) {
@@ -28,8 +29,10 @@ export default {
 }
 
 async function serve(request: Request, url: URL, env: unknown, ctx: { waitUntil(promise: Promise<unknown>): void }): Promise<Response> {
-  if (url.pathname === '/robots.txt' && !isProdHost(url.hostname)) {
-    return new Response('User-agent: *\nDisallow: /\n', { headers: { 'content-type': 'text/plain; charset=utf-8' } })
+  // Lives here, not in public/: static assets are served before the worker runs, so a file would reach previews too.
+  if (url.pathname === '/robots.txt') {
+    const body = isProdHost(url.hostname) ? PROD_ROBOTS : 'User-agent: *\nDisallow: /\n'
+    return new Response(body, { headers: { 'content-type': 'text/plain; charset=utf-8' } })
   }
   const legacy = request.method === 'GET' || request.method === 'HEAD' ? legacyRedirect(url) : null
   if (legacy?.status === 301) return Response.redirect(legacy.location, 301)
