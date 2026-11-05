@@ -1,57 +1,32 @@
-// Follows every 3ha.in link one hop and checks it lands at the partner it was issued for, carrying this account's AID.
-// Run: node scripts/verify-links.mjs   Exits 1 on any mismatch.
-import { readFileSync } from 'node:fs'
+// Follows every Coupang link in data/links.json one hop and checks it lands on coupang.com with this account's partner id.
+// Also fails when a banned id (lib/verify.mjs) shows up anywhere in data/. Run: node scripts/verify-links.mjs   Exits 1 on any problem.
+import fs from 'node:fs'
+import path from 'node:path'
 
-const AID = '136206'
-// Program id -> hosts its tracking redirect may start at.
-const HOSTS = {
-  agoda: ['agoda.com'],
-  tripcom: ['trip.com'],
-  klook: ['klook.com'],
-  kkday: ['kkday.com'],
-  yeogi: ['yeogi', 'onelink.me'],
-  partnerize_traveloka: ['prf.hn', 'traveloka.com'],
-  partnerize_hotelscom: ['hotels.com', 'prf.hn'],
-  partnerize_expedia: ['expedia', 'prf.hn'],
-  bookingcom: ['booking.com', 'awin', 'prf.hn'],
-  linkprice_yanolja: ['linkprice.com'],
-  linkprice_ttang: ['linkprice.com'],
-  usimsa: ['usimsa.com'],
-  impactcom_holafly: ['holafly', 'impact', 'sjv.io', 'pxf.io'],
-  ebridge: ['theloungemembers.com', 'ebridge'],
-  hanatour: ['hanatour.com'],
-  stay_and_more: ['staynmore.com'],
-  rakuten: ['rakuten'],
-  minda: ['theminda.com'],
-  tripstore: ['tripstore.kr'],
-  zoomzoomtour: ['zoomzoomtour.com'],
-  waug: ['waug.com'],
-  tiqets: ['tiqets.com'],
-  kayak: ['kayak'],
-  kayak_hotelscombined: ['hotelscombined', 'kayak'],
-  zzimcar: ['zzimcar'],
+import { bannedIn, linkProblem } from './lib/verify.mjs'
+
+let bad = 0
+const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => (entry.isDirectory() ? walk(path.join(dir, entry.name)) : [path.join(dir, entry.name)]))
+for (const file of walk('data').filter((name) => name.endsWith('.json'))) {
+  const hits = bannedIn(fs.readFileSync(file, 'utf8'))
+  if (hits.length) {
+    bad += 1
+    console.log('BANNED', file, hits.join(', '))
+  }
 }
 
-const links = JSON.parse(readFileSync('scripts/links.json', 'utf8'))
-let bad = 0
-let checked = 0
-const entries = Object.entries(links).filter(([, link]) => link.url)
-for (let i = 0; i < entries.length; i += 8) {
+const links = fs.existsSync('data/links.json') ? JSON.parse(fs.readFileSync('data/links.json', 'utf8')) : []
+for (let i = 0; i < links.length; i += 8) {
   await Promise.all(
-    entries.slice(i, i + 8).map(async ([slug, link]) => {
+    links.slice(i, i + 8).map(async (link) => {
       const res = await fetch(link.url, { redirect: 'manual', signal: AbortSignal.timeout(20000) }).catch((e) => ({ error: e.message }))
-      const location = res.headers?.get('location') ?? ''
-      const hosts = HOSTS[link.program] ?? []
-      const hostOk = hosts.some((h) => location.includes(h))
-      // Partner-specific redirects (onelink, partner pages) do not always expose the AID in the URL.
-      const aidOk = location.includes(AID) || ['yeogi', 'usimsa', 'hanatour', 'ebridge'].includes(link.program)
-      checked += 1
-      if (!hostOk || !aidOk) {
+      const problem = linkProblem(link, res.headers?.get('location') ?? '')
+      if (problem) {
         bad += 1
-        console.log('MISMATCH', slug, link.url, res.status ?? res.error, location.slice(0, 110))
+        console.log('MISMATCH', link.slug, link.url, res.status ?? res.error, problem)
       }
     }),
   )
 }
-console.log(`checked ${checked}, mismatched ${bad}`)
+console.log(`checked ${links.length} links, problems ${bad}`)
 process.exit(bad ? 1 : 0)

@@ -1,7 +1,7 @@
 // Tells Naver and Bing about every sitemap URL. The Naver console account is not needed, so run it by hand after a data push.
 // Run: node scripts/indexnow.mjs
-const SITE = 'https://trip.pinda.kr'
-const KEY = 'da4ee8f017fb3f5a26698b8a377481d6'
+const SITE = 'https://nutrifit.kr'
+const KEY = 'ec0de90ecd0626943cd9064b9fbef0d9'
 const ENDPOINTS = ['https://searchadvisor.naver.com/indexnow', 'https://www.bing.com/indexnow']
 
 const xml = await (await fetch(`${SITE}/sitemap.xml?v=${Date.now()}`)).text()
