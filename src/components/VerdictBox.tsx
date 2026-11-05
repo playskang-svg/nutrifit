@@ -4,8 +4,8 @@ function Column({ title, lines, tone }: { title: string; lines: string[]; tone: 
     <div className={`verdict__col verdict__col--${tone}`}>
       <p className="verdict__title">{title}</p>
       <ul>
-        {lines.map((line) => (
-          <li key={line}>{line}</li>
+        {lines.map((line, index) => (
+          <li key={`${index}-${line}`}>{line}</li>
         ))}
       </ul>
     </div>

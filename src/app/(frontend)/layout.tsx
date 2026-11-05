@@ -8,6 +8,7 @@ import { ReadingProgress } from '@/components/ReadingProgress'
 import { Reveal } from '@/components/Reveal'
 import { SiteFooter } from '@/components/SiteFooter'
 import { SiteHeader } from '@/components/SiteHeader'
+import { FOOTER_LINKS, HEADER_LINKS } from '@/globals/Navigation'
 import { isProdHost } from '@/lib/host'
 import { getClient, SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from '@/lib/payload'
 
@@ -102,9 +103,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         </a>
         <Disclosure />
         <ReadingProgress />
-        <SiteHeader items={nav.header ?? []} siteName={SITE_NAME} />
+        <SiteHeader items={nav.header?.length ? nav.header : HEADER_LINKS} siteName={SITE_NAME} />
         <main id="main">{children}</main>
-        <SiteFooter items={nav.footer ?? []} />
+        <SiteFooter items={nav.footer?.length ? nav.footer : FOOTER_LINKS} />
         <Reveal />
         {live ? (
           <>

@@ -17,3 +17,5 @@ worker-dist/
 og/
 open-next.tgz
 tsconfig.tsbuildinfo
+.next/
+next-env.d.ts

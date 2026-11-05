@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 
 import { SITE_NAME, SITE_URL } from './payload'
 
-const DEFAULT_IMAGE = '/og-default.png'
+// Until per-page share cards exist (Task 25), pages share the site card.
+export const DEFAULT_IMAGE = '/og-image.jpg'
 
 // Next replaces the parent's openGraph entirely, so every page has to restate these fields.
 export const pageMeta = ({
@@ -39,3 +40,6 @@ export const publisher = {
   url: SITE_URL,
   logo: `${SITE_URL}/icon-512.png`,
 }
+
+// The search title keeps the page's primary keyword even when the display name differs.
+export const keywordTitle = (name: string, keyword: string) => (name.includes(keyword) ? name : `${name} · ${keyword}`)

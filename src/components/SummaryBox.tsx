@@ -5,8 +5,8 @@ export function SummaryBox({ points }: { points: string[] }) {
     <aside aria-label="핵심 한 줄 요약" className="summary-box reveal">
       <p className="summary-box__title">💡 핵심 한 줄 요약</p>
       <ul>
-        {points.map((point) => (
-          <li key={point}>{point}</li>
+        {points.map((point, index) => (
+          <li key={`${index}-${point}`}>{point}</li>
         ))}
       </ul>
     </aside>

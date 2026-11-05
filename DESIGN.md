@@ -50,7 +50,7 @@ Pretendard Variable 하나. `word-break: keep-all`, 긴 영문 성분명은 `ove
 - **H2 상자**: `--accent-soft` 바탕 + 왼쪽 6px `--accent` 막대 + 반경 10px, 안쪽 여백 14px 20px. 본문(`.prose h2`)에만.
 - **"💡 핵심 한 줄 요약" 상자**(`SummaryBox`): 글 맨 앞, `--surface` 바탕, 제목은 그대로 `💡 핵심 한 줄 요약`, 아래 2~4줄 요점. 이모지는 이 상자 제목에만 씁니다(운영 수칙의 정해진 문구).
 - **결론 상자**(`VerdictBox`): 두 칸 "이런 분께"(강조색 ✓) / "피하실 분"(경고색 ✕). 폭 640 아래에서는 위아래로 쌓입니다.
-- **알림 상자**(`Callout`): tip·check는 `--accent-soft`, note는 `--surface`, warn은 `--alert-soft` 바탕에 왼쪽 4px 막대. 그림자·테두리 없음.
+- **알림 상자**(`Callout`): tip·check는 `--accent-soft`, note는 `--surface`, warn은 `--alert-soft` 바탕. 옆 막대 없이 제목 글자색으로 구분(tip·check `--accent`, note `--ink`, warn `--alert`). 막대는 H2 상자에만. 그림자·테두리 없음.
 - **형광펜**(`mark.hl`): `--hl`이 왼쪽에서 오른쪽으로 0.8초에 칠해집니다(`Reveal`). 움직임 줄이기 설정이면 처음부터 칠해진 상태.
 - **비교표**(`.compare`): 표 자체가 가로 스크롤, 페이지는 넓어지지 않음. 첫 열 굵게, 칸 선은 `--line`.
 - **섭취 기준표**(`.intake-bar`): 비교표와 같은 표 모양, 캡션에 판(2025/2020) 표시.
@@ -75,11 +75,11 @@ Pretendard Variable 하나. `word-break: keep-all`, 긴 영문 성분명은 `ove
 - props `{ src, srcMobile, poster, posterMobile, alt }`. 데스크톱 1280×720, 폰(폭 759 이하) 544×680.
 - 포스터 이미지가 먼저 그려지고(`fetchpriority=high`), 영상은 `muted autoplay loop playsInline`로 재생이 시작되면 0.6초에 겹쳐 나타납니다.
 - `prefers-reduced-motion: reduce` 또는 데이터 절약(`saveData`)이면 영상을 받지 않고 포스터만.
-- 글은 왼쪽(인물 반대편)에만, 글 아래에만 중성 어두운 가림막(`rgba(10,16,22,.55)`). 폰에서는 아래쪽 글 영역만.
+- 글은 왼쪽(인물 반대편)에만. 데스크톱은 왼쪽 끝에서 오른쪽으로 옅어지는 중성 가림막(`rgba(10,16,22)` 0.8 → 0.66(40%) → 0(72%))이 영상과 페이지를 잇고, 글자 대비 4.5:1 이상을 지킵니다. 상자 모양 패널은 없습니다. 폰(759 이하)은 영상 아래 흰 바탕에 글.
 
 ## 몸 지도(Task 6 `/symptoms`)
 
-- SVG 앞·뒤 두 장, 나란히(폰에서는 "앞 / 뒤" 전환 버튼). 부위 14곳(interfaces.md R17)은 각각 `<a>` 안의 `path.body-map__area`.
+- SVG 앞·뒤·얼굴 세 장, 나란히(폰에서는 "앞 / 뒤 / 얼굴" 전환 버튼 — 라디오 버튼이라 스크립트 없이 작동). 얼굴 장은 눈·귀·코·목·입을 44px 이상으로 누를 수 있게 따로 둡니다. 부위 14곳(interfaces.md R17)은 각각 `<a>` 안의 `.body-map__area` 도형. 뒤 장의 머리는 피부·모발, 전신은 모든 부위를 칠합니다.
 - 토큰: `--map-idle: var(--surface)`(쉬는 부위), `--map-edge: var(--bg)`(부위 사이 2px 흰 틈, 선 대신), `--map-hover: var(--accent-soft)`, `--map-active: var(--accent)`(지금 보는 부위, `aria-current="page"` 또는 `.is-active`). 몸 윤곽선은 그리지 않고 면만 칠합니다.
 - 강조 방식: 호버·포커스면 바탕이 `--accent-soft`로 0.2초 바뀌고, 선택 부위는 `--accent`로 칠한 뒤 부위 이름 라벨(14px, 흰 글자, `--accent` 바탕, 반경 10px)이 옆에 붙습니다. 키보드 포커스는 `outline` 대신 `stroke: var(--accent); stroke-width: 3`.
 - 지도 아래에 같은 14곳의 글자 목록을 꼭 둡니다(스크립트·SVG 없이도 이동 가능, 화면 낭독기용).

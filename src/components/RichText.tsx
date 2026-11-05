@@ -40,16 +40,20 @@ export function RichText({
   bannerSlot,
   hub,
   midway,
+  idPrefix = 'section-',
 }: {
   data: unknown
   picks: Map<string, Pick>
   nutrients: Map<string, Nutrient>
   // Affiliate links by slug, for `search-<nutrient>` picks.
   links?: Map<string, AffiliateLink>
-  bannerSlot: string
+  // Only one RichText per page gets a slot; without one, banner blocks render nothing.
+  bannerSlot?: string
   // The page's hub as `<kind>-<slug>`, the banner fallback before `default`.
   hub?: string
   midway?: React.ReactNode
+  // H2 ids for the table of contents; pages with several RichText fields give each its own prefix.
+  idPrefix?: string
 }) {
   let headings = 0
   let banners = 0
@@ -105,6 +109,7 @@ export function RichText({
         }
       },
       banner: () => {
+        if (bannerSlot === undefined) return null
         const banner = bannerFor(bannerSlot, hub)
         if (!banner || banners >= MAX_BANNERS_PER_PAGE) return null
         banners += 1
@@ -138,7 +143,7 @@ export function RichText({
       return (
         <>
           {midway && Tag === 'h2' && headings === MIDWAY_HEADING ? midway : null}
-          <Tag>{children}</Tag>
+          <Tag id={Tag === 'h2' ? `${idPrefix}${headings}` : undefined}>{children}</Tag>
         </>
       )
     },

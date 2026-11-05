@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { PostList } from '@/components/PostList'
-import { getClient, publishedWhere } from '@/lib/payload'
+import { findPublishedPosts } from '@/lib/queries'
 
 export const dynamic = 'force-dynamic'
 
@@ -13,19 +13,8 @@ export default async function SearchPage({
   searchParams: Promise<{ q?: string }>
 }) {
   const q = ((await searchParams).q ?? '').trim().slice(0, 50)
-  const payload = await getClient()
   const results = q
-    ? await payload.find({
-        collection: 'posts',
-        where: {
-          and: [
-            publishedWhere(new Date()),
-            { or: [{ title: { contains: q } }, { description: { contains: q } }] },
-          ],
-        },
-        limit: 30,
-        depth: 1,
-      })
+    ? await findPublishedPosts({ where: { or: [{ title: { contains: q } }, { description: { contains: q } }] }, limit: 30 })
     : null
   return (
     <section className="section page-head">

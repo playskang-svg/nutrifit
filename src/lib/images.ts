@@ -1,5 +1,5 @@
 // hires.cjs renders an @2x twin for every webp in these folders, so the 2x candidate always exists.
-const TWINNED = /^\/(photos|hotels|products|deals|blog)\/[^?#@]+\.webp$/
+const TWINNED = /^\/(photos|products)\/[^?#@]+\.webp$/
 
 export const twin = (src: string) => src.replace(/\.webp$/, '@2x.webp')
 

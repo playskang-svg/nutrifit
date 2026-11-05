@@ -141,3 +141,15 @@ test('intakeBar and timeline read the nutrients map; unknown nutrients render no
     ),
   ).toBe('<div class="prose"></div>')
 })
+
+test('h2 headings carry ids in the server HTML for the table of contents', () => {
+  const html = render('## 먼저 볼 곳\n\n본문\n\n## 고르는 법\n\n### 작은 제목')
+  expect(html).toContain('<h2 id="section-1">먼저 볼 곳</h2>')
+  expect(html).toContain('<h2 id="section-2">고르는 법</h2>')
+  expect(html).toContain('<h3>작은 제목</h3>')
+})
+
+test('without a bannerSlot the banner block renders nothing', () => {
+  const html = renderToStaticMarkup(<RichText data={nfmdToLexical('{{banner}}', ctx)} nutrients={nutrients} picks={picks} />)
+  expect(html).toBe('<div class="prose"></div>')
+})

@@ -3,16 +3,13 @@
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 
-// Collects the article's H2s after render, since RichText headings carry no ids of their own.
+// Lists the article's H2s; RichText gives each one an id in the server HTML.
 export function MobileToc() {
   const pathname = usePathname()
   const box = useRef<HTMLDetailsElement>(null)
   const [items, setItems] = useState<{ id: string; text: string }[]>([])
   useEffect(() => {
-    const heads = [...document.querySelectorAll<HTMLHeadingElement>('.prose h2')]
-    heads.forEach((head, index) => {
-      if (!head.id) head.id = `section-${index + 1}`
-    })
+    const heads = [...document.querySelectorAll<HTMLHeadingElement>('.prose h2[id]')]
     setItems(heads.map((head) => ({ id: head.id, text: head.textContent ?? '' })))
   }, [pathname])
   if (items.length < 2) return null

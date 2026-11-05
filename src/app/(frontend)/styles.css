@@ -11,7 +11,6 @@
   --hl: color-mix(in srgb, var(--accent) 22%, var(--bg));
   --line: color-mix(in srgb, var(--ink) 12%, var(--bg));
   --alert-soft: color-mix(in srgb, var(--alert) 8%, var(--bg));
-  --scrim: rgba(10, 16, 22, 0.58);
 
   --map-idle: var(--surface);
   --map-edge: var(--bg);
@@ -457,7 +456,6 @@ small {
 }
 
 .photo-head__body {
-  z-index: 1;
   align-self: end;
   padding-block: var(--s7);
 }
@@ -466,11 +464,17 @@ small {
   max-width: 560px;
 }
 
-/* The scrim sits only behind the words. */
-.photo-head__panel {
-  padding: var(--s6);
-  border-radius: var(--radius);
-  background: var(--scrim);
+/* A neutral scrim fades in from the left edge, behind the words only, so the clip runs into the page. */
+.photo-head::before {
+  content: '';
+  grid-area: 1 / 1;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(10, 16, 22, 0.8) 0%, rgba(10, 16, 22, 0.66) 40%, rgba(10, 16, 22, 0) 72%);
+  pointer-events: none;
+}
+
+.photo-head__body {
+  z-index: 2;
 }
 
 .photo-head h1 {
@@ -727,28 +731,30 @@ mark.hl {
   color: var(--alert);
 }
 
-/* Callouts */
+/* Callouts: a tinted field and a title in the tone's colour, no side bar (only the H2 box keeps one). */
 .callout {
   margin-block: var(--s6);
   padding: var(--s4) var(--s5);
-  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   background: var(--accent-soft);
 }
 
 .callout--note {
-  border-left-color: var(--muted);
   background: var(--surface);
 }
 
 .callout--warn {
-  border-left-color: var(--alert);
   background: var(--alert-soft);
 }
 
 .callout__title {
   margin: 0 0 var(--s2);
+  color: var(--accent);
   font-weight: 800;
+}
+
+.callout--note .callout__title {
+  color: var(--ink);
 }
 
 .callout--warn .callout__title {
@@ -912,7 +918,8 @@ mark.hl {
     transform 0.1s;
 }
 
-.prose .pick-search {
+.prose .pick-search,
+.prose .pick-card__go {
   color: var(--bg);
 }
 
@@ -1240,6 +1247,167 @@ a[aria-current='page'] > .body-map__area,
   font-weight: 700;
 }
 
+/* Views side by side; phones show one, picked with the 앞·뒤·얼굴 radio tabs (no script needed). */
+.body-map {
+  margin-block: var(--s6);
+}
+
+.body-map__views {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s5);
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.body-map__view {
+  margin: 0;
+}
+
+.body-map__view svg {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+}
+
+.body-map__view figcaption {
+  margin-top: var(--s2);
+  color: var(--muted);
+  font-size: var(--t-small);
+  text-align: center;
+}
+
+.body-map__tabs {
+  display: none;
+}
+
+.body-map__tab {
+  display: grid;
+  place-items: center;
+  min-width: 72px;
+  min-height: 44px;
+  padding: 0 var(--s4);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#body-map-front:checked ~ .body-map__tabs [for='body-map-front'],
+#body-map-back:checked ~ .body-map__tabs [for='body-map-back'],
+#body-map-face:checked ~ .body-map__tabs [for='body-map-face'] {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.body-map__switch:focus-visible ~ .body-map__tabs {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+
+.body-map > .body-map__label {
+  display: table;
+  margin: var(--s4) auto 0;
+}
+
+.body-map__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(120px, 100%), 1fr));
+  gap: var(--s2);
+  margin: var(--s6) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.body-map__list a {
+  display: grid;
+  place-items: center;
+  min-height: 48px;
+  padding: var(--s2) var(--s3);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s;
+}
+
+.body-map__list a:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.body-map__list a[aria-current='page'] {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Page furniture */
+.crumbs-row {
+  padding-top: var(--s5);
+}
+
+.page-head--tight {
+  padding-block: var(--s4) var(--s5);
+}
+
+.section--top {
+  padding-top: 0;
+}
+
+.block,
+.list-gap {
+  margin-top: var(--s7);
+}
+
+.list-title {
+  margin-top: var(--s7);
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: var(--s5);
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s4);
+  margin-top: var(--s6);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.post__date {
+  margin: var(--s3) 0 var(--s5);
+  color: var(--muted);
+  font-size: var(--t-small);
+}
+
+.post__hero {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.article-end {
+  margin-top: var(--s7);
+}
+
+.medical-note {
+  margin: 0 0 var(--s7);
+  padding: var(--s4) var(--s5);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: var(--t-small);
+  line-height: 1.6;
+}
+
+.article-end .sources + .share {
+  margin-top: var(--s7);
+}
+
 /* Rise in. Hidden only once Reveal has set data-reveal, so content never waits on a script that failed. */
 .reveal {
   transition:
@@ -1352,14 +1520,44 @@ a[aria-current='page'] > .body-map__area,
     padding-block: var(--s5) 0;
   }
 
-  .photo-head__panel {
-    padding: 0;
-    background: none;
+  .photo-head::before {
+    content: none;
   }
 
   .photo-head__lede {
     color: var(--muted);
     font-size: var(--t-body);
+  }
+
+  .body-map__tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--s2);
+    margin-bottom: var(--s4);
+  }
+
+  /* 280px wide keeps every region (limbs, bands, face parts) a 44px+ target. */
+  .body-map__views {
+    display: block;
+    max-width: 280px;
+  }
+
+  .body-map__view svg {
+    max-height: none;
+  }
+
+  .body-map__view {
+    display: none;
+  }
+
+  #body-map-front:checked ~ .body-map__views .body-map__view--front,
+  #body-map-back:checked ~ .body-map__views .body-map__view--back,
+  #body-map-face:checked ~ .body-map__views .body-map__view--face {
+    display: block;
+  }
+
+  .body-map__view figcaption {
+    display: none;
   }
 
   /* Six icons fit one line at 360 only without the label beside them. */
