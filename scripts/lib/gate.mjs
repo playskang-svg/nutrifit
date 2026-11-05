@@ -35,7 +35,9 @@ export function shapeIssues(kind, doc) {
 
 const factIssues = (kind, draft, final) => {
   const pairs = NF_FIELDS[kind].map((f) => [f, draft[f] ?? '', final[f] ?? ''])
-  ;(final.faq ?? []).forEach((f, i) => pairs.push([`faq[${i}].a`, draft.faq?.[i]?.a ?? '', f?.a ?? '']))
+  // Walk the longer list so a dropped (or added) FAQ item compares against '' and reports its facts.
+  const n = Math.max(draft.faq?.length ?? 0, final.faq?.length ?? 0)
+  for (let i = 0; i < n; i++) pairs.push([`faq[${i}].a`, draft.faq?.[i]?.a ?? '', final.faq?.[i]?.a ?? ''])
   return pairs.flatMap(([where, a, b]) => {
     const r = sameFacts(String(a), String(b))
     return r.ok ? [] : [issue('FACTS_CHANGED', where, `빠짐: ${r.missing.join(' ') || '-'} / 늘어남: ${r.added.join(' ') || '-'}`)]

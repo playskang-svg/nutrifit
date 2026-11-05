@@ -48,6 +48,12 @@ describe('runGate', () => {
     expect(r.ok).toBe(false)
   })
 
+  it('reports FACTS_CHANGED when humanize drops an FAQ item', async () => {
+    const d = post({ faq: [{ q: 'q', a: '3번 먹어요.' }, { q: 'q2', a: '하루 2알이에요.' }] })
+    const r = await gate(post({ faq: [{ q: 'q', a: '3번 먹어요.' }] }), d)
+    expect(r.issues.filter((i) => i.code === 'FACTS_CHANGED').map((i) => i.where)).toEqual(['faq[1].a'])
+  })
+
   it('reports CONVERT with the line for an unknown directive', async () => {
     const r = await gate(post({ body: '## a\n\n문장이에요.\n\n{{pick:nope}}' }))
     expect(r.issues.find((i) => i.code === 'CONVERT')).toMatchObject({ where: 'body:5', severity: 'error' })
