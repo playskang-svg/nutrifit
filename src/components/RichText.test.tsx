@@ -61,11 +61,11 @@ test('==highlight== renders as mark.hl', () => {
   expect(render('먹기 전 ==꼭 확인==하세요')).toContain('<mark class="hl">꼭 확인</mark>')
 })
 
-test('Coupang links are sponsored, other links are not', () => {
-  const html = render('[쿠팡](https://link.coupang.com/a/abc123) [시세](https://sise.pinda.kr/foods/spinach)')
+test('Coupang links are sponsored, other external links only noopener', () => {
+  const html = render('[쿠팡](https://link.coupang.com/a/abc123) [시세](https://sise.pinda.kr/foods/spinach) [성분](/nutrients/magnesium)')
   expect(html).toContain('<a href="https://link.coupang.com/a/abc123" rel="sponsored nofollow noopener" target="_blank">쿠팡</a>')
-  expect(html).toMatch(/<a href="https:\/\/sise\.pinda\.kr\/foods\/spinach"[^>]*>시세<\/a>/)
-  expect(html).not.toMatch(/<a href="https:\/\/sise[^>]*rel=/)
+  expect(html).toMatch(/<a href="https:\/\/sise\.pinda\.kr\/foods\/spinach" rel="noopener"[^>]*>시세<\/a>/)
+  expect(html).toContain('<a href="/nutrients/magnesium">성분</a>')
 })
 
 test('callout warn renders aside.callout.callout--warn with its body', () => {
@@ -78,7 +78,8 @@ test('callout warn renders aside.callout.callout--warn with its body', () => {
 test('linkCard is a centered a.link-card that never prints its href', () => {
   const html = render('{{card:/nutrients/magnesium}}\n{{card:https://sise.pinda.kr/foods/spinach}}')
   expect(html.match(/<a class="link-card link-card--center"/g)).toHaveLength(2)
-  expect(html).toContain('href="/nutrients/magnesium"')
+  expect(html).toContain('href="/nutrients/magnesium">')
+  expect(html).toContain('href="https://sise.pinda.kr/foods/spinach" rel="noopener" target="_blank"')
   expect(text(html)).not.toContain('/nutrients/magnesium')
   expect(text(html)).not.toContain('sise.pinda.kr')
   expect(text(html)).toContain('시금치 시세')

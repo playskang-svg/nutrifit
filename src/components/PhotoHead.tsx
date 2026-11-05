@@ -1,34 +1,30 @@
 import React from 'react'
 
-import { type HeroClip, HeroVideo } from '@/components/HeroVideo'
+import { HeroVideo, type HeroVideoProps } from '@/components/HeroVideo'
 import { wide } from '@/lib/images'
 
-// Page heading set over a full-width photo.
+// Page heading set over a full-width photo or a looping clip; the text sits on the left, clear of the subject.
 export function PhotoHead({
   title,
   lede,
   photo,
-  clip,
+  video,
   photoAlt = '',
   srcSet,
-  eyebrow,
-  tall = false,
   children,
 }: {
   title: string
   lede?: React.ReactNode
   photo?: string | null
-  clip?: HeroClip
+  video?: HeroVideoProps
   photoAlt?: string
   srcSet?: string
-  eyebrow?: React.ReactNode
-  tall?: boolean
   children?: React.ReactNode
 }) {
   return (
-    <section className={tall ? 'photo-head photo-head--tall' : 'photo-head'}>
-      {clip ? (
-        <HeroVideo alt={photoAlt} clip={clip} />
+    <section className="photo-head">
+      {video ? (
+        <HeroVideo alt={photoAlt} {...video} />
       ) : photo ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
@@ -43,10 +39,11 @@ export function PhotoHead({
         />
       ) : null}
       <div className="frame photo-head__body">
-        {eyebrow}
-        <h1>{title}</h1>
-        {lede ? <p className="photo-head__lede">{lede}</p> : null}
-        {children}
+        <div className="photo-head__panel">
+          <h1>{title}</h1>
+          {lede ? <p className="photo-head__lede">{lede}</p> : null}
+          {children}
+        </div>
       </div>
     </section>
   )

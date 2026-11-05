@@ -120,10 +120,11 @@ export function RichText({
       const { url, newTab } = node.fields as { url?: string; newTab?: boolean }
       const href = url ?? ''
       const sponsored = SPONSORED.test(href)
+      const external = /^https?:\/\//.test(href)
       return (
         <a
           href={href}
-          rel={sponsored ? 'sponsored nofollow noopener' : undefined}
+          rel={sponsored ? 'sponsored nofollow noopener' : external || newTab ? 'noopener' : undefined}
           target={sponsored || newTab ? '_blank' : undefined}
         >
           {nodesToJSX({ nodes: node.children })}

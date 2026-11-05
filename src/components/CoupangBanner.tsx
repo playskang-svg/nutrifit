@@ -17,7 +17,6 @@ export function CoupangBanner({ banner }: { banner: Banner }) {
         <iframe
           height={size.height}
           loading="lazy"
-          referrerPolicy="unsafe-url"
           src={bannerSrc(size)}
           style={{ border: 0 }}
           title="쿠팡 추천 상품"
