@@ -9,7 +9,7 @@ import { legacyRedirect } from './src/lib/legacy'
 // Low traffic means most visits would be cache misses at 5 minutes, and a miss is what risks Error 1102.
 const TTL_SECONDS = 6 * 60 * 60
 // Bump to drop every cached page on the next deploy, for example after a data push.
-const CACHE_VERSION = 6
+const CACHE_VERSION = 1
 const NEVER_CACHE = /^\/(admin|api|search)(\/|$)/
 
 export default {
