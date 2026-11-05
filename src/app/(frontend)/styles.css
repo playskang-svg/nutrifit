@@ -464,12 +464,20 @@ small {
   max-width: 560px;
 }
 
-/* A neutral scrim fades in from the left edge, behind the words only, so the clip runs into the page. */
+/* A neutral scrim fades in from the left edge, behind the words only, so the clip runs into the page.
+   Its stops follow the 560px text column (frame edge + 560px), not the viewport, so every line keeps 4.5:1
+   at any width; 0.66 over a white frame is about 6:1. */
 .photo-head::before {
+  --text-end: calc(max(var(--gutter), (100% - 1180px) / 2) + 560px);
   content: '';
   grid-area: 1 / 1;
   z-index: 1;
-  background: linear-gradient(90deg, rgba(10, 16, 22, 0.8) 0%, rgba(10, 16, 22, 0.66) 40%, rgba(10, 16, 22, 0) 72%);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 16, 22, 0.8) 0,
+    rgba(10, 16, 22, 0.66) calc(var(--text-end) + 24px),
+    rgba(10, 16, 22, 0) calc(var(--text-end) + 220px)
+  );
   pointer-events: none;
 }
 
@@ -1529,6 +1537,21 @@ a[aria-current='page'] > .body-map__area,
     font-size: var(--t-body);
   }
 
+  /* Six icons fit one line at 360 only without the label beside them. */
+  .share__label {
+    flex-basis: 100%;
+  }
+
+  .mobile-toc {
+    position: sticky;
+    top: var(--head);
+    z-index: 10;
+  }
+}
+
+/* Touch screens and anything under 1024px show one view at a time: three side by side inside 720px would
+   shrink the neck band and limbs under 44px (iPad portrait is a touch device). */
+@media (max-width: 1023px), (pointer: coarse) {
   .body-map__tabs {
     display: flex;
     justify-content: center;
@@ -1558,17 +1581,6 @@ a[aria-current='page'] > .body-map__area,
 
   .body-map__view figcaption {
     display: none;
-  }
-
-  /* Six icons fit one line at 360 only without the label beside them. */
-  .share__label {
-    flex-basis: 100%;
-  }
-
-  .mobile-toc {
-    position: sticky;
-    top: var(--head);
-    z-index: 10;
   }
 }
 

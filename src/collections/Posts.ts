@@ -72,6 +72,14 @@ export const Posts: CollectionConfig = {
       admin: { position: 'sidebar', description: '증상 카테고리 글에 넣습니다.' },
     },
     {
+      name: 'featured',
+      label: '단골 글',
+      type: 'checkbox',
+      defaultValue: false,
+      index: true,
+      admin: { position: 'sidebar', description: '홈의 단골 글 6개에 넣습니다.' },
+    },
+    {
       name: 'updatedAtDisplay',
       label: '화면에 보일 수정일',
       type: 'date',

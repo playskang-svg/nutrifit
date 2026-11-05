@@ -172,6 +172,10 @@ export interface Post {
         | 'whole'
       )
     | null;
+  /**
+   * 홈의 단골 글 6개에 넣습니다.
+   */
+  featured?: boolean | null;
   updatedAtDisplay?: string | null;
   /**
    * 네이버에서 이 글이 노출되길 바라는 검색어 하나.
@@ -297,6 +301,13 @@ export interface Nutrient {
    * 네이버에서 이 글이 노출되길 바라는 검색어 하나.
    */
   primaryKeyword: string;
+  /**
+   * 성분 페이지 맨 위 결론 상자
+   */
+  verdict?: {
+    who?: string[] | null;
+    skip?: string[] | null;
+  };
   officialClaims?:
     | {
         text: string;
@@ -698,6 +709,7 @@ export interface PostsSelect<T extends boolean = true> {
   publishedAt?: T;
   category?: T;
   area?: T;
+  featured?: T;
   updatedAtDisplay?: T;
   primaryKeyword?: T;
   seoTitle?: T;
@@ -776,6 +788,12 @@ export interface NutrientsSelect<T extends boolean = true> {
   group?: T;
   summary?: T;
   primaryKeyword?: T;
+  verdict?:
+    | T
+    | {
+        who?: T;
+        skip?: T;
+      };
   officialClaims?:
     | T
     | {

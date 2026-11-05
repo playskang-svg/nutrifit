@@ -33,11 +33,13 @@ const CALCULATORS = [
 
 // Order: hero, concerns, popular nutrients, staple posts, life stages, one banner, calculators.
 export default async function HomePage() {
-  const [nutrients, life, posts] = await Promise.all([
+  const [nutrients, life, featured] = await Promise.all([
     findDocs('nutrients', undefined, 8),
     findDocs('hubs', { kind: { equals: 'life' } }, 8),
-    findPublishedPosts({ limit: 6 }),
+    findPublishedPosts({ where: { featured: { equals: true } }, limit: 6 }),
   ])
+  // Until editors tick 단골 글 on some posts, the latest 6 stand in under an honest heading.
+  const posts = featured.docs.length ? featured : await findPublishedPosts({ limit: 6 })
   const banner = bannerFor('home')
   return (
     <>
@@ -73,7 +75,7 @@ export default async function HomePage() {
       {posts.docs.length ? (
         <section className="section section--top">
           <div className="frame">
-            <h2>새로 올라온 글</h2>
+            <h2>{featured.docs.length ? '단골 글' : '새로 올라온 글'}</h2>
             <PostList feature posts={posts.docs} />
             <Link className="text-link more-link" href="/health">
               건강 정보 전체 보기

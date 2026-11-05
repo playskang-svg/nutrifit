@@ -10,7 +10,7 @@ import { MobileToc } from '@/components/MobileToc'
 import { PickCard } from '@/components/PickCard'
 import { PostList } from '@/components/PostList'
 import { RichText } from '@/components/RichText'
-import { SummaryBox } from '@/components/SummaryBox'
+import { VerdictBox } from '@/components/VerdictBox'
 import { faqLd } from '@/lib/jsonld'
 import { findOne, picksById, postsForHub, richTextContext } from '@/lib/queries'
 import { keywordTitle, pageMeta } from '@/lib/seo'
@@ -50,8 +50,13 @@ export default async function NutrientPage({ params }: Props) {
       <div className="frame frame--text">
         <Breadcrumbs items={[{ name: '영양소 사전', path: '/nutrients' }, { name: item.name, path }]} />
         <h1>{item.name}</h1>
-        {item.aliases?.length ? <p className="lede">{item.aliases.join(', ')}</p> : null}
-        <SummaryBox points={[item.summary]} />
+        <p className="lede">{item.summary}</p>
+        {item.aliases?.length ? (
+          <p>
+            <small>다른 이름: {item.aliases.join(', ')}</small>
+          </p>
+        ) : null}
+        <VerdictBox skip={item.verdict?.skip ?? []} who={item.verdict?.who ?? []} />
         <MobileToc />
         <div className="prose">
           {claims.length ? (

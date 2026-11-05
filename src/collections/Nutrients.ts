@@ -29,6 +29,16 @@ export const Nutrients: CollectionConfig = {
     { name: 'summary', label: '한 줄 소개', type: 'textarea', required: true },
     primaryKeyword,
     {
+      name: 'verdict',
+      label: '결론',
+      type: 'group',
+      admin: { description: '성분 페이지 맨 위 결론 상자' },
+      fields: [
+        { name: 'who', label: '챙기면 좋은 분', type: 'text', hasMany: true },
+        { name: 'skip', label: '조심할 분', type: 'text', hasMany: true },
+      ],
+    },
+    {
       name: 'officialClaims',
       label: '인정된 기능성',
       type: 'array',
