@@ -1,0 +1,108 @@
+{
+  "slug": "alive-multivitamin-label-reading",
+  "title": "얼라이브종합비타민 라벨 읽는 법, IU·DFE·%DV 뜻",
+  "seoTitle": "얼라이브종합비타민 라벨 IU·DFE·%DV 읽기",
+  "description": "얼라이브종합비타민 같은 해외 종합비타민 라벨에 적힌 IU, mcg DFE, %DV를 한국 섭취기준으로 옮겨 읽어 봐요. 비타민D 환산, 엽산 DFE 계산, %DV가 국내 기준과 어떻게 다른지, 직구 전에 확인할 것까지 정리했어요.",
+  "category": "choose",
+  "primaryKeyword": "얼라이브종합비타민",
+  "hubs": [
+    {
+      "kind": "nutrient",
+      "slug": "multivitamin"
+    }
+  ],
+  "keyPoints": [
+    "얼라이브종합비타민 라벨은 IU, DFE, %DV 세 가지만 알면 읽혀요",
+    "비타민D는 IU를 40으로 나누면 μg가 돼요. 성인 상한섭취량은 100μg(4,000IU)이에요(2025 기준)",
+    "엽산 mcg DFE는 합성 엽산에 1.7배를 곱한 값이에요. 괄호 속 folic acid 숫자를 따로 보세요",
+    "%DV는 미국 하루 기준치에 견준 비율이니, 실제 함량은 한국 섭취기준과 비교하세요"
+  ],
+  "verdict": {
+    "who": [
+      "해외직구 종합비타민 라벨이 낯선 분",
+      "비타민D·엽산이 든 영양제를 겹쳐 먹는 분"
+    ],
+    "skip": [
+      "국내 표시사항이 붙은 제품만 먹는 분",
+      "임신 중이거나 먹는 약이 있는 분(상담 먼저)"
+    ]
+  },
+  "body": "## 해외 라벨, 단위부터 달라요\n\n{{photo:post-alive-multivitamin-label-reading-1|병 뒷면의 단위부터 하나씩 확인해요}}\n\n얼라이브종합비타민처럼 해외에서 들여온 종합비타민은 병 뒷면이 IU, mcg, mcg DFE, %DV 같은 영어 단위로 채워져 있어요. 국내 제품에서 보던 mg·μg 표기와 달라서 함량이 많은지 적은지 감이 잘 안 오죠. ==단위 세 가지만 한국 기준으로 옮겨 읽으면 어떤 해외 제품이든 스스로 따져 볼 수 있어요.==\n\n이 글은 특정 제품의 품질을 평가하지 않아요. 브랜드와 상관없이 라벨 숫자를 한국 영양소 섭취기준에 맞춰 보는 순서만 다뤄요.\n\n## Supplement Facts 표 읽는 순서\n\n미국 제품 성분표에는 보통 'Supplement Facts'라는 제목이 붙어요. 맨 위에 1회 섭취 분량(Serving Size)이 있고 그 아래로 성분마다 1회분 함량(Amount Per Serving)과 %DV가 나란히 적혀 있어요.\n\n제일 먼저 볼 줄은 Serving Size예요. 2정이 1회분이면 표의 숫자는 2정을 합친 양이에요. 1정만 먹는다면 실제로는 절반을 먹는 셈이죠.\n\n표: 라벨 영어 표기 뜻\n| 표기 | 뜻 | 확인할 점 |\n|---|---|---|\n| Serving Size | 1회 섭취 분량 | 몇 정이 1회분인지 |\n| Amount Per Serving | 1회분 함량 | 어떤 단위인지 |\n| %DV | 미국 기준치 대비 % | 한국 기준과 다름 |\n| mcg | 마이크로그램 | 국내 μg와 같음 |\n\nmcg와 μg는 이름만 다를 뿐 같은 단위예요. 낯설어도 숫자는 그대로 옮겨 적으면 돼요. 단위 옆에 DFE나 IU가 붙어 있을 때만 계산을 한 번 더 해요.\n\n## 비타민D IU를 μg로 바꾸기\n\n미국 식품의약국(FDA) 지침은 비타민D를 mcg으로 적고 IU는 그 뒤 괄호 안에 함께 쓰도록 했어요. 환산 기준이 **1μg = 40IU**라서 IU 숫자를 40으로 나누면 국내 라벨과 같은 μg 값이 나와요.\n\n표: 비타민D 단위 환산\n| IU 표기 | μg 환산 | 한국 성인 기준 |\n|---|---|---|\n| 400IU | 10μg | 충분섭취량 |\n| 1,000IU | 25μg | 충분섭취량의 2.5배 |\n| 2,000IU | 50μg | 상한의 절반 |\n| 4,000IU | 100μg | 상한섭취량 |\n\n{{intake:vitamin-d}}\n\n19~64세 성인의 비타민D 충분섭취량은 10μg, 65세 이상은 15μg이에요(2020 한국인 영양소 섭취기준). 상한섭취량은 100μg(4,000IU)이고요(2025 한국인 영양소 섭취기준). ==종합비타민 말고 비타민D 단일제를 따로 먹는다면 두 제품의 μg를 더해 상한 안인지 보세요.==\n\n국내 건강기능식품의 비타민D 기능성은 식약처 고시에 '칼슘과 인이 흡수되고 이용되는데 필요', '뼈의 형성과 유지에 필요' 등으로 정해져 있어요. 해외 라벨의 영어 문구는 이 고시를 따른 표현이 아니에요. 우리말로 옮겨 읽을 때도 고시 문구를 기준으로 삼는 게 안전해요.\n\n## 엽산 mcg DFE는 순수 엽산량이 아니에요\n\n엽산 줄의 DFE는 식이엽산당량(Dietary Folate Equivalents)의 줄임말이에요. FDA 지침은 합성 엽산(folic acid)의 생체이용률을 85%, 음식 속 엽산을 약 50%로 보고 합성 엽산에 **1.7배**를 곱하게 했어요. 식으로 옮기면 'DFE = 음식 속 엽산 + 1.7 × 합성 엽산'이에요.\n\nFDA 지침에 실린 예시로는 1회분에 합성 엽산 400mcg이 든 제품을 'Folate 680mcg DFE (400mcg folic acid)'로 적고, %DV는 170%가 돼요. 괄호 속 숫자가 실제로 넣은 합성 엽산의 양이에요. 이 숫자는 따로 적어 두세요.\n\n한국 성인의 엽산 권장섭취량은 400μg DFE, 상한섭취량은 1,000μg DFE예요(2025 한국인 영양소 섭취기준). 상한은 영양제나 강화식품으로 먹는 엽산에 적용돼요. 엽산이 든 제품을 두 개 이상 먹고 있다면 합쳐서 계산하세요.\n\n식약처 고시는 엽산의 기능성을 '세포와 혈액생성에 필요', '태아 신경관의 정상 발달에 필요' 등으로 정했어요. 임신을 준비하거나 임신 중이라면 필요량이 달라지니 먹을 양은 의사와 함께 정하세요.\n\n## %DV는 미국 기준치 대비 비율이에요\n\n%DV는 1회분 함량이 미국 하루 기준치(Daily Value)의 몇 %인지 보여 주는 숫자예요. FDA가 정한 하루 기준치는 비타민C 90mg, 비타민D 20mcg, 엽산 400mcg DFE로 잡혀 있어요.\n\n국내 라벨의 %는 '1일 영양성분 기준치'에 견준 비율인데, 이 기준치부터 미국 값과 달라요. 그래서 ==%DV 숫자보다 mg·μg로 적힌 실제 함량을 한국 섭취기준과 비교하는 편이 정확해요.==\n\n비타민C 180mg을 예로 들면 미국 기준으로는 200%예요. 같은 180mg을 한국 성인 권장섭취량 100mg(2020 기준)과 견주면 1.8배고, 상한섭취량 2,000mg(2025 기준)에는 한참 못 미쳐요. %가 크다고 곧바로 많은 양은 아닌 셈이죠.\n\n표: 미국 기준치와 한국 성인 기준\n| 성분 | 미국 하루 기준치 | 한국 성인 기준 |\n|---|---|---|\n| 비타민C | 90mg | 권장 100mg |\n| 비타민D | 20mcg | 충분 10μg |\n| 엽산 | 400mcg DFE | 권장 400μg DFE |\n\n함량 숫자가 큰 제품을 고를 때 더 살필 점은 따로 정리했어요.\n\n{{card:/health/high-dose-multivitamin-risk}}\n\n## 해외직구 전에 확인할 것\n\n해외에서 팔리는 제품이라고 국내 건강기능식품 기준을 거친 건 아니에요. 식품안전나라 '해외직구식품 올바로' 페이지도 구매 전에 '해외직구 위해식품 차단목록'부터 확인하라고 안내해요.\n\n::: check 주문 전에 확인\n- 위해식품 차단목록에서 제품명 검색\n- 원재료명(Other Ingredients)의 알레르기 성분\n- 다른 영양제와 합친 비타민D·엽산 하루 양\n:::\n\n국내 건강기능식품에는 건강기능식품 마크와 고시된 기능성 문구가 표시돼요. 직구 제품의 영어 문구는 이 기준과 다를 수 있어요. 광고 문장보다 성분표 숫자를 먼저 보세요.\n\n::: warn 먼저 상담하세요\n- 먹는 약이 있거나 지병으로 진료를 받고 있어요.\n- 임신 중이거나 임신을 준비하고 있어요.\n:::\n\n## 종합비타민 함량 비교해 보기\n\n{{photo:post-alive-multivitamin-label-reading-2|실제 함량을 적어 두면 비교가 쉬워져요}}\n\n라벨 읽는 법을 익혔으면 다른 종합비타민도 같은 방식으로 견줘 볼 수 있어요. 1회분 정 수, 비타민D μg, 엽산 DFE와 괄호 속 엽산량을 한 줄씩 적어 두세요. 제품끼리 어디가 다른지 금방 보여요.\n\n아래 버튼은 특정 제품을 고른 게 아니에요. 종합비타민 검색 결과로 이어져요.\n\n{{pick:search-multivitamin}}\n\n## 함께 보면 좋은 글\n\n국내 라벨의 기본 항목부터 다시 짚고 싶다면 이 글부터 보세요.\n\n{{card:/health/supplement-label-reading}}\n\n브랜드보다 성분표를 먼저 봐야 하는 이유도 이어서 읽어 보세요.\n\n{{card:/health/multivitamin-ingredient-verification-guide}}\n\n{{card:/nutrients/multivitamin}}",
+  "faq": [
+    {
+      "q": "비타민D 1,000IU는 몇 μg인가요?",
+      "a": "25μg이에요. IU를 40으로 나누면 μg가, μg에 40을 곱하면 IU가 나와요. 성인 상한섭취량은 100μg(4,000IU)이고요(2025 한국인 영양소 섭취기준)."
+    },
+    {
+      "q": "엽산 400mcg DFE는 엽산 400mcg과 같나요?",
+      "a": "다를 수 있어요. 합성 엽산은 1.7배로 계산하니까 합성 엽산만 들었다면 실제 양은 약 235mcg이에요. 라벨 괄호 속 folic acid 숫자도 같이 확인하세요."
+    },
+    {
+      "q": "%DV가 200%면 너무 많이 먹는 건가요?",
+      "a": "%DV만 보고는 판단하기 어려워요. 미국 기준치에 견준 비율이라 실제 함량을 한국 상한섭취량과 비교해야 하거든요. 비타민C 180mg은 200%지만 상한섭취량 2,000mg(2025 기준)보다 훨씬 적어요."
+    },
+    {
+      "q": "해외직구 종합비타민, 사기 전에 무엇을 확인하나요?",
+      "a": "먼저 식품안전나라의 해외직구 위해식품 차단목록에서 제품명을 검색해 보세요. 국내 건강기능식품 기준을 거치지 않은 제품이니 원재료명과 함량도 직접 확인하는 게 좋아요."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Converting Units of Measure for Folate, Niacin, and Vitamins A, D, and E on the Nutrition and Supplement Facts Labels: Guidance for Industry",
+      "url": "https://www.fda.gov/media/129863/download",
+      "publisher": "U.S. Food and Drug Administration",
+      "date": "2019"
+    },
+    {
+      "label": "Daily Value on the Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+      "publisher": "U.S. Food and Drug Administration",
+      "date": "2024-03-05"
+    },
+    {
+      "label": "2025 한국인 영양소 섭취기준(KDRIs)",
+      "url": "https://www.kns.or.kr/fileroom/fileroom_view.asp?idx=167&BoardID=Kdr",
+      "publisher": "한국영양학회",
+      "date": "2025-12-31"
+    },
+    {
+      "label": "2020 한국인 영양소 섭취기준 배포",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&act=view&list_no=362385",
+      "publisher": "보건복지부",
+      "date": "2020-12-23"
+    },
+    {
+      "label": "「건강기능식품의 기준 및 규격」 고시전문(제2026-43호)",
+      "url": "https://www.mfds.go.kr/brd/m_211/view.do?seq=14973",
+      "publisher": "식품의약품안전처",
+      "date": "2026-06-11"
+    },
+    {
+      "label": "해외직구식품 올바로",
+      "url": "https://www.foodsafetykorea.go.kr/portal/fooddanger/foodDirectImportView.do",
+      "publisher": "식품의약품안전처 식품안전나라"
+    },
+    {
+      "label": "건강기능식품에는 '마크' 부착…기능성 표시식품과 구분하세요",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148918529",
+      "publisher": "식품의약품안전처(정책브리핑)",
+      "date": "2023-08-03"
+    }
+  ],
+  "keywords": [
+    "얼라이브종합비타민",
+    "종합비타민 라벨 읽는 법",
+    "비타민D IU mcg 환산",
+    "엽산 DFE 뜻",
+    "%DV 뜻",
+    "해외직구 영양제 라벨",
+    "종합비타민"
+  ],
+  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "relatedPosts": [
+    "supplement-label-reading",
+    "multivitamin-ingredient-verification-guide",
+    "multivitamin-ingredient-standards",
+    "high-dose-multivitamin-risk"
+  ]
+}
