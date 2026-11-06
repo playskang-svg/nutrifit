@@ -7,9 +7,18 @@
   "area": "urogenital",
   "primaryKeyword": "임신 초기 증상",
   "hubs": [
-    { "kind": "area", "slug": "urogenital" },
-    { "kind": "life", "slug": "pregnancy" },
-    { "kind": "nutrient", "slug": "folate" }
+    {
+      "kind": "area",
+      "slug": "urogenital"
+    },
+    {
+      "kind": "life",
+      "slug": "pregnancy"
+    },
+    {
+      "kind": "nutrient",
+      "slug": "folate"
+    }
   ],
   "keyPoints": [
     "임신 초기 증상은 생리 지연과 메스꺼움이 대표적이에요. 심한 복통·출혈·어지럼이 있으면 바로 응급실로 가세요.",
@@ -109,5 +118,6 @@
     "early-pregnancy-nutrition-guide",
     "folic-acid-pregnancy-timing-dosage",
     "omega3-pregnancy-guide"
-  ]
+  ],
+  "heroPhoto": "life-pregnancy-3"
 }

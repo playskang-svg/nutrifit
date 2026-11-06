@@ -1,1 +1,842 @@
-{}
+{
+ "nutrient-arginine-1": {
+  "src": "/photos/nutrient-arginine-1.webp",
+  "src2x": "/photos/nutrient-arginine-1@2x.webp",
+  "alt": "nutrient 아르기닌 관련 건강 생활 사진"
+ },
+ "nutrient-copper-1": {
+  "src": "/photos/nutrient-copper-1.webp",
+  "src2x": "/photos/nutrient-copper-1@2x.webp",
+  "alt": "nutrient 구리 관련 건강 생활 사진"
+ },
+ "nutrient-coq10-1": {
+  "src": "/photos/nutrient-coq10-1.webp",
+  "src2x": "/photos/nutrient-coq10-1@2x.webp",
+  "alt": "nutrient 코엔자임Q10 관련 건강 생활 사진"
+ },
+ "nutrient-fiber-1": {
+  "src": "/photos/nutrient-fiber-1.webp",
+  "src2x": "/photos/nutrient-fiber-1@2x.webp",
+  "alt": "nutrient 식이섬유 관련 건강 생활 사진"
+ },
+ "nutrient-folate-1": {
+  "src": "/photos/nutrient-folate-1.webp",
+  "src2x": "/photos/nutrient-folate-1@2x.webp",
+  "alt": "nutrient 엽산 관련 건강 생활 사진"
+ },
+ "nutrient-garcinia-1": {
+  "src": "/photos/nutrient-garcinia-1.webp",
+  "src2x": "/photos/nutrient-garcinia-1@2x.webp",
+  "alt": "nutrient 가르시니아 관련 건강 생활 사진"
+ },
+ "nutrient-gla-1": {
+  "src": "/photos/nutrient-gla-1.webp",
+  "src2x": "/photos/nutrient-gla-1@2x.webp",
+  "alt": "nutrient 감마리놀렌산 관련 건강 생활 사진"
+ },
+ "nutrient-glucosamine-1": {
+  "src": "/photos/nutrient-glucosamine-1.webp",
+  "src2x": "/photos/nutrient-glucosamine-1@2x.webp",
+  "alt": "nutrient 글루코사민 관련 건강 생활 사진"
+ },
+ "nutrient-glutathione-1": {
+  "src": "/photos/nutrient-glutathione-1.webp",
+  "src2x": "/photos/nutrient-glutathione-1@2x.webp",
+  "alt": "nutrient 글루타치온 관련 건강 생활 사진"
+ },
+ "nutrient-green-tea-extract-1": {
+  "src": "/photos/nutrient-green-tea-extract-1.webp",
+  "src2x": "/photos/nutrient-green-tea-extract-1@2x.webp",
+  "alt": "nutrient 녹차추출물 관련 건강 생활 사진"
+ },
+ "nutrient-hyaluronic-acid-1": {
+  "src": "/photos/nutrient-hyaluronic-acid-1.webp",
+  "src2x": "/photos/nutrient-hyaluronic-acid-1@2x.webp",
+  "alt": "nutrient 히알루론산 관련 건강 생활 사진"
+ },
+ "nutrient-iodine-1": {
+  "src": "/photos/nutrient-iodine-1.webp",
+  "src2x": "/photos/nutrient-iodine-1@2x.webp",
+  "alt": "nutrient 요오드 관련 건강 생활 사진"
+ },
+ "nutrient-iron-1": {
+  "src": "/photos/nutrient-iron-1.webp",
+  "src2x": "/photos/nutrient-iron-1@2x.webp",
+  "alt": "nutrient 철분 관련 건강 생활 사진"
+ },
+ "nutrient-lutein-1": {
+  "src": "/photos/nutrient-lutein-1.webp",
+  "src2x": "/photos/nutrient-lutein-1@2x.webp",
+  "alt": "nutrient 루테인 관련 건강 생활 사진"
+ },
+ "nutrient-magnesium-1": {
+  "src": "/photos/nutrient-magnesium-1.webp",
+  "src2x": "/photos/nutrient-magnesium-1@2x.webp",
+  "alt": "nutrient 마그네슘 관련 건강 생활 사진"
+ },
+ "nutrient-milk-thistle-1": {
+  "src": "/photos/nutrient-milk-thistle-1.webp",
+  "src2x": "/photos/nutrient-milk-thistle-1@2x.webp",
+  "alt": "nutrient 밀크씨슬 관련 건강 생활 사진"
+ },
+ "nutrient-msm-1": {
+  "src": "/photos/nutrient-msm-1.webp",
+  "src2x": "/photos/nutrient-msm-1@2x.webp",
+  "alt": "nutrient MSM 관련 건강 생활 사진"
+ },
+ "nutrient-multivitamin-1": {
+  "src": "/photos/nutrient-multivitamin-1.webp",
+  "src2x": "/photos/nutrient-multivitamin-1@2x.webp",
+  "alt": "nutrient 종합비타민 관련 건강 생활 사진"
+ },
+ "nutrient-niacin-1": {
+  "src": "/photos/nutrient-niacin-1.webp",
+  "src2x": "/photos/nutrient-niacin-1@2x.webp",
+  "alt": "nutrient 나이아신 관련 건강 생활 사진"
+ },
+ "nutrient-omega-3-1": {
+  "src": "/photos/nutrient-omega-3-1.webp",
+  "src2x": "/photos/nutrient-omega-3-1@2x.webp",
+  "alt": "nutrient 오메가3 관련 건강 생활 사진"
+ },
+ "nutrient-pantothenic-acid-1": {
+  "src": "/photos/nutrient-pantothenic-acid-1.webp",
+  "src2x": "/photos/nutrient-pantothenic-acid-1@2x.webp",
+  "alt": "nutrient 판토텐산 관련 건강 생활 사진"
+ },
+ "nutrient-potassium-1": {
+  "src": "/photos/nutrient-potassium-1.webp",
+  "src2x": "/photos/nutrient-potassium-1@2x.webp",
+  "alt": "nutrient 칼륨 관련 건강 생활 사진"
+ },
+ "nutrient-prebiotics-1": {
+  "src": "/photos/nutrient-prebiotics-1.webp",
+  "src2x": "/photos/nutrient-prebiotics-1@2x.webp",
+  "alt": "nutrient 프리바이오틱스 관련 건강 생활 사진"
+ },
+ "nutrient-probiotics-1": {
+  "src": "/photos/nutrient-probiotics-1.webp",
+  "src2x": "/photos/nutrient-probiotics-1@2x.webp",
+  "alt": "nutrient 유산균 관련 건강 생활 사진"
+ },
+ "nutrient-propolis-1": {
+  "src": "/photos/nutrient-propolis-1.webp",
+  "src2x": "/photos/nutrient-propolis-1@2x.webp",
+  "alt": "nutrient 프로폴리스 관련 건강 생활 사진"
+ },
+ "nutrient-protein-1": {
+  "src": "/photos/nutrient-protein-1.webp",
+  "src2x": "/photos/nutrient-protein-1@2x.webp",
+  "alt": "nutrient 단백질 관련 건강 생활 사진"
+ },
+ "nutrient-red-ginseng-1": {
+  "src": "/photos/nutrient-red-ginseng-1.webp",
+  "src2x": "/photos/nutrient-red-ginseng-1@2x.webp",
+  "alt": "nutrient 홍삼 관련 건강 생활 사진"
+ },
+ "nutrient-saw-palmetto-1": {
+  "src": "/photos/nutrient-saw-palmetto-1.webp",
+  "src2x": "/photos/nutrient-saw-palmetto-1@2x.webp",
+  "alt": "nutrient 쏘팔메토 관련 건강 생활 사진"
+ },
+ "nutrient-selenium-1": {
+  "src": "/photos/nutrient-selenium-1.webp",
+  "src2x": "/photos/nutrient-selenium-1@2x.webp",
+  "alt": "nutrient 셀레늄 관련 건강 생활 사진"
+ },
+ "nutrient-spirulina-1": {
+  "src": "/photos/nutrient-spirulina-1.webp",
+  "src2x": "/photos/nutrient-spirulina-1@2x.webp",
+  "alt": "nutrient 스피루리나 관련 건강 생활 사진"
+ },
+ "nutrient-taurine-1": {
+  "src": "/photos/nutrient-taurine-1.webp",
+  "src2x": "/photos/nutrient-taurine-1@2x.webp",
+  "alt": "nutrient 타우린 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-a-1": {
+  "src": "/photos/nutrient-vitamin-a-1.webp",
+  "src2x": "/photos/nutrient-vitamin-a-1@2x.webp",
+  "alt": "nutrient 비타민A 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-b-complex-1": {
+  "src": "/photos/nutrient-vitamin-b-complex-1.webp",
+  "src2x": "/photos/nutrient-vitamin-b-complex-1@2x.webp",
+  "alt": "nutrient 비타민B 컴플렉스 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-b1-1": {
+  "src": "/photos/nutrient-vitamin-b1-1.webp",
+  "src2x": "/photos/nutrient-vitamin-b1-1@2x.webp",
+  "alt": "nutrient 비타민B1 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-b12-1": {
+  "src": "/photos/nutrient-vitamin-b12-1.webp",
+  "src2x": "/photos/nutrient-vitamin-b12-1@2x.webp",
+  "alt": "nutrient 비타민B12 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-b2-1": {
+  "src": "/photos/nutrient-vitamin-b2-1.webp",
+  "src2x": "/photos/nutrient-vitamin-b2-1@2x.webp",
+  "alt": "nutrient 비타민B2 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-b6-1": {
+  "src": "/photos/nutrient-vitamin-b6-1.webp",
+  "src2x": "/photos/nutrient-vitamin-b6-1@2x.webp",
+  "alt": "nutrient 비타민B6 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-c-1": {
+  "src": "/photos/nutrient-vitamin-c-1.webp",
+  "src2x": "/photos/nutrient-vitamin-c-1@2x.webp",
+  "alt": "nutrient 비타민C 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-d-1": {
+  "src": "/photos/nutrient-vitamin-d-1.webp",
+  "src2x": "/photos/nutrient-vitamin-d-1@2x.webp",
+  "alt": "nutrient 비타민D 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-e-1": {
+  "src": "/photos/nutrient-vitamin-e-1.webp",
+  "src2x": "/photos/nutrient-vitamin-e-1@2x.webp",
+  "alt": "nutrient 비타민E 관련 건강 생활 사진"
+ },
+ "nutrient-vitamin-k-1": {
+  "src": "/photos/nutrient-vitamin-k-1.webp",
+  "src2x": "/photos/nutrient-vitamin-k-1@2x.webp",
+  "alt": "nutrient 비타민K 관련 건강 생활 사진"
+ },
+ "nutrient-zeaxanthin-1": {
+  "src": "/photos/nutrient-zeaxanthin-1.webp",
+  "src2x": "/photos/nutrient-zeaxanthin-1@2x.webp",
+  "alt": "nutrient 지아잔틴 관련 건강 생활 사진"
+ },
+ "nutrient-zinc-1": {
+  "src": "/photos/nutrient-zinc-1.webp",
+  "src2x": "/photos/nutrient-zinc-1@2x.webp",
+  "alt": "nutrient 아연 관련 건강 생활 사진"
+ },
+ "body-bone-1": {
+  "src": "/photos/body-bone-1.webp",
+  "src2x": "/photos/body-bone-1@2x.webp",
+  "alt": "body 뼈 관련 건강 생활 사진"
+ },
+ "body-circulation-1": {
+  "src": "/photos/body-circulation-1.webp",
+  "src2x": "/photos/body-circulation-1@2x.webp",
+  "alt": "body 혈행 관련 건강 생활 사진"
+ },
+ "body-eye-1": {
+  "src": "/photos/body-eye-1.webp",
+  "src2x": "/photos/body-eye-1@2x.webp",
+  "alt": "body 눈 관련 건강 생활 사진"
+ },
+ "body-fatigue-1": {
+  "src": "/photos/body-fatigue-1.webp",
+  "src2x": "/photos/body-fatigue-1@2x.webp",
+  "alt": "body 피로 관련 건강 생활 사진"
+ },
+ "body-gut-1": {
+  "src": "/photos/body-gut-1.webp",
+  "src2x": "/photos/body-gut-1@2x.webp",
+  "alt": "body 장·소화 관련 건강 생활 사진"
+ },
+ "body-hair-1": {
+  "src": "/photos/body-hair-1.webp",
+  "src2x": "/photos/body-hair-1@2x.webp",
+  "alt": "body 모발·손발톱 관련 건강 생활 사진"
+ },
+ "body-immunity-1": {
+  "src": "/photos/body-immunity-1.webp",
+  "src2x": "/photos/body-immunity-1@2x.webp",
+  "alt": "body 면역 관련 건강 생활 사진"
+ },
+ "body-joint-1": {
+  "src": "/photos/body-joint-1.webp",
+  "src2x": "/photos/body-joint-1@2x.webp",
+  "alt": "body 관절 관련 건강 생활 사진"
+ },
+ "body-liver-1": {
+  "src": "/photos/body-liver-1.webp",
+  "src2x": "/photos/body-liver-1@2x.webp",
+  "alt": "body 간 관련 건강 생활 사진"
+ },
+ "body-mouth-1": {
+  "src": "/photos/body-mouth-1.webp",
+  "src2x": "/photos/body-mouth-1@2x.webp",
+  "alt": "body 구내염·구강 관련 건강 생활 사진"
+ },
+ "body-muscle-1": {
+  "src": "/photos/body-muscle-1.webp",
+  "src2x": "/photos/body-muscle-1@2x.webp",
+  "alt": "body 근육 관련 건강 생활 사진"
+ },
+ "body-prostate-1": {
+  "src": "/photos/body-prostate-1.webp",
+  "src2x": "/photos/body-prostate-1@2x.webp",
+  "alt": "body 전립선 관련 건강 생활 사진"
+ },
+ "body-skin-1": {
+  "src": "/photos/body-skin-1.webp",
+  "src2x": "/photos/body-skin-1@2x.webp",
+  "alt": "body 피부 관련 건강 생활 사진"
+ },
+ "body-sleep-1": {
+  "src": "/photos/body-sleep-1.webp",
+  "src2x": "/photos/body-sleep-1@2x.webp",
+  "alt": "body 수면 관련 건강 생활 사진"
+ },
+ "body-vaginal-health-1": {
+  "src": "/photos/body-vaginal-health-1.webp",
+  "src2x": "/photos/body-vaginal-health-1@2x.webp",
+  "alt": "body 질 건강 관련 건강 생활 사진"
+ },
+ "life-kids-1": {
+  "src": "/photos/life-kids-1.webp",
+  "src2x": "/photos/life-kids-1@2x.webp",
+  "alt": "life 아기·어린이 관련 건강 생활 사진"
+ },
+ "life-men-1": {
+  "src": "/photos/life-men-1.webp",
+  "src2x": "/photos/life-men-1@2x.webp",
+  "alt": "life 남성 관련 건강 생활 사진"
+ },
+ "life-menopause-1": {
+  "src": "/photos/life-menopause-1.webp",
+  "src2x": "/photos/life-menopause-1@2x.webp",
+  "alt": "life 갱년기 관련 건강 생활 사진"
+ },
+ "life-midlife-1": {
+  "src": "/photos/life-midlife-1.webp",
+  "src2x": "/photos/life-midlife-1@2x.webp",
+  "alt": "life 40~50대 관련 건강 생활 사진"
+ },
+ "life-pregnancy-1": {
+  "src": "/photos/life-pregnancy-1.webp",
+  "src2x": "/photos/life-pregnancy-1@2x.webp",
+  "alt": "life 임신 준비·임산부 관련 건강 생활 사진"
+ },
+ "life-seniors-1": {
+  "src": "/photos/life-seniors-1.webp",
+  "src2x": "/photos/life-seniors-1@2x.webp",
+  "alt": "life 60대 이상 관련 건강 생활 사진"
+ },
+ "life-teens-1": {
+  "src": "/photos/life-teens-1.webp",
+  "src2x": "/photos/life-teens-1@2x.webp",
+  "alt": "life 청소년·수험생 관련 건강 생활 사진"
+ },
+ "life-women-1": {
+  "src": "/photos/life-women-1.webp",
+  "src2x": "/photos/life-women-1@2x.webp",
+  "alt": "life 20~30대 여성 관련 건강 생활 사진"
+ },
+ "nutrient-pantothenic-acid-3": {
+  "src": "/photos/nutrient-pantothenic-acid-3.webp",
+  "src2x": "/photos/nutrient-pantothenic-acid-3@2x.webp",
+  "alt": "라벨의 1일 섭취량부터 확인해요 장면 사진"
+ },
+ "nutrient-vitamin-b1-3": {
+  "src": "/photos/nutrient-vitamin-b1-3.webp",
+  "src2x": "/photos/nutrient-vitamin-b1-3@2x.webp",
+  "alt": "라벨에서 1일 섭취량부터 확인해요 장면 사진"
+ },
+ "nutrient-vitamin-b2-3": {
+  "src": "/photos/nutrient-vitamin-b2-3.webp",
+  "src2x": "/photos/nutrient-vitamin-b2-3@2x.webp",
+  "alt": "먹을 시간을 정해 두면 잊지 않아요 장면 사진"
+ },
+ "nutrient-vitamin-b6-2": {
+  "src": "/photos/nutrient-vitamin-b6-2.webp",
+  "src2x": "/photos/nutrient-vitamin-b6-2@2x.webp",
+  "alt": "고기·생선·감자로도 B6를 채울 수 있어요 장면 사진"
+ },
+ "nutrient-niacin-3": {
+  "src": "/photos/nutrient-niacin-3.webp",
+  "src2x": "/photos/nutrient-niacin-3@2x.webp",
+  "alt": "라벨에서 원료 형태와 1일 섭취량부터 봐요 장면 사진"
+ },
+ "nutrient-vitamin-a-3": {
+  "src": "/photos/nutrient-vitamin-a-3.webp",
+  "src2x": "/photos/nutrient-vitamin-a-3@2x.webp",
+  "alt": "라벨에서 레티놀인지 베타카로틴인지 먼저 보세요 장면 사진"
+ },
+ "nutrient-vitamin-b12-3": {
+  "src": "/photos/nutrient-vitamin-b12-3.webp",
+  "src2x": "/photos/nutrient-vitamin-b12-3@2x.webp",
+  "alt": "먹을 시간을 정해 두면 잊지 않아요 장면 사진"
+ },
+ "nutrient-folate-3": {
+  "src": "/photos/nutrient-folate-3.webp",
+  "src2x": "/photos/nutrient-folate-3@2x.webp",
+  "alt": "라벨에서 엽산 함량과 단위를 먼저 확인해요 장면 사진"
+ },
+ "nutrient-vitamin-k-3": {
+  "src": "/photos/nutrient-vitamin-k-3.webp",
+  "src2x": "/photos/nutrient-vitamin-k-3@2x.webp",
+  "alt": "먹을 시간을 정해 두면 잊지 않아요 장면 사진"
+ },
+ "nutrient-vitamin-e-3": {
+  "src": "/photos/nutrient-vitamin-e-3.webp",
+  "src2x": "/photos/nutrient-vitamin-e-3@2x.webp",
+  "alt": "라벨에서 토코페롤 형태와 함량을 먼저 보세요 장면 사진"
+ },
+ "nutrient-vitamin-c-3": {
+  "src": "/photos/nutrient-vitamin-c-3.webp",
+  "src2x": "/photos/nutrient-vitamin-c-3@2x.webp",
+  "alt": "라벨에서 1일 섭취량 기준 함량부터 보세요 장면 사진"
+ },
+ "nutrient-vitamin-d-3": {
+  "src": "/photos/nutrient-vitamin-d-3.webp",
+  "src2x": "/photos/nutrient-vitamin-d-3@2x.webp",
+  "alt": "라벨에서 IU와 μg 숫자를 함께 확인해 보세요 장면 사진"
+ },
+ "nutrient-multivitamin-3": {
+  "src": "/photos/nutrient-multivitamin-3.webp",
+  "src2x": "/photos/nutrient-multivitamin-3@2x.webp",
+  "alt": "성분표를 먼저 보면 겹치는 성분이 보여요 장면 사진"
+ },
+ "nutrient-magnesium-3": {
+  "src": "/photos/nutrient-magnesium-3.webp",
+  "src2x": "/photos/nutrient-magnesium-3@2x.webp",
+  "alt": "라벨에서 1일 섭취량과 마그네슘 함량을 먼저 보세요 장면 사진"
+ },
+ "nutrient-vitamin-b-complex-3": {
+  "src": "/photos/nutrient-vitamin-b-complex-3.webp",
+  "src2x": "/photos/nutrient-vitamin-b-complex-3@2x.webp",
+  "alt": "라벨에서 성분별 함량과 1일 섭취량부터 봐요 장면 사진"
+ },
+ "nutrient-calcium-3": {
+  "src": "/photos/nutrient-calcium-3.webp",
+  "src2x": "/photos/nutrient-calcium-3@2x.webp",
+  "alt": "라벨에서 칼슘 원료와 1일 함량부터 보세요 장면 사진"
+ },
+ "nutrient-iron-3": {
+  "src": "/photos/nutrient-iron-3.webp",
+  "src2x": "/photos/nutrient-iron-3@2x.webp",
+  "alt": "먹을 시간을 정해 두면 잊지 않아요 장면 사진"
+ },
+ "nutrient-iodine-3": {
+  "src": "/photos/nutrient-iodine-3.webp",
+  "src2x": "/photos/nutrient-iodine-3@2x.webp",
+  "alt": "라벨에서 요오드가 들었는지 먼저 확인하세요 장면 사진"
+ },
+ "nutrient-copper-3": {
+  "src": "/photos/nutrient-copper-3.webp",
+  "src2x": "/photos/nutrient-copper-3@2x.webp",
+  "alt": "라벨에서 구리 함량의 단위부터 확인하세요 장면 사진"
+ },
+ "nutrient-potassium-2": {
+  "src": "/photos/nutrient-potassium-2.webp",
+  "src2x": "/photos/nutrient-potassium-2@2x.webp",
+  "alt": "채소와 콩으로 칼륨을 먼저 채워 보세요 장면 사진"
+ },
+ "nutrient-probiotics-3": {
+  "src": "/photos/nutrient-probiotics-3.webp",
+  "src2x": "/photos/nutrient-probiotics-3@2x.webp",
+  "alt": "라벨의 1일 섭취량 기준 균수부터 확인해요 장면 사진"
+ },
+ "nutrient-protein-3": {
+  "src": "/photos/nutrient-protein-3.webp",
+  "src2x": "/photos/nutrient-protein-3@2x.webp",
+  "alt": "라벨의 1회 제공량 단백질 g부터 봐요 장면 사진"
+ },
+ "nutrient-gla-3": {
+  "src": "/photos/nutrient-gla-3.webp",
+  "src2x": "/photos/nutrient-gla-3@2x.webp",
+  "alt": "라벨에서 감마리놀렌산 양부터 찾아보세요 장면 사진"
+ },
+ "nutrient-omega-3-3": {
+  "src": "/photos/nutrient-omega-3-3.webp",
+  "src2x": "/photos/nutrient-omega-3-3@2x.webp",
+  "alt": "라벨에서 EPA와 DHA를 합친 양부터 확인해 보세요 장면 사진"
+ },
+ "nutrient-glutathione-3": {
+  "src": "/photos/nutrient-glutathione-3.webp",
+  "src2x": "/photos/nutrient-glutathione-3@2x.webp",
+  "alt": "라벨에서 1일 섭취량과 함량부터 확인해요 장면 사진"
+ },
+ "nutrient-lutein-3": {
+  "src": "/photos/nutrient-lutein-3.webp",
+  "src2x": "/photos/nutrient-lutein-3@2x.webp",
+  "alt": "라벨에서 루테인 함량부터 찾아보세요 장면 사진"
+ },
+ "nutrient-zeaxanthin-3": {
+  "src": "/photos/nutrient-zeaxanthin-3.webp",
+  "src2x": "/photos/nutrient-zeaxanthin-3@2x.webp",
+  "alt": "라벨의 원료 이름과 함량부터 확인해요 장면 사진"
+ },
+ "nutrient-msm-3": {
+  "src": "/photos/nutrient-msm-3.webp",
+  "src2x": "/photos/nutrient-msm-3@2x.webp",
+  "alt": "라벨에서 MSM 함량과 하루 알 수를 함께 보세요 장면 사진"
+ },
+ "nutrient-milk-thistle-3": {
+  "src": "/photos/nutrient-milk-thistle-3.webp",
+  "src2x": "/photos/nutrient-milk-thistle-3@2x.webp",
+  "alt": "라벨에서 실리마린 함량부터 찾아보세요 장면 사진"
+ },
+ "nutrient-hyaluronic-acid-3": {
+  "src": "/photos/nutrient-hyaluronic-acid-3.webp",
+  "src2x": "/photos/nutrient-hyaluronic-acid-3@2x.webp",
+  "alt": "라벨에서 제품 종류와 1일 함량부터 봐요 장면 사진"
+ },
+ "nutrient-glucosamine-3": {
+  "src": "/photos/nutrient-glucosamine-3.webp",
+  "src2x": "/photos/nutrient-glucosamine-3@2x.webp",
+  "alt": "라벨에서 염산염인지 황산염인지 찾아보세요 장면 사진"
+ },
+ "nutrient-propolis-3": {
+  "src": "/photos/nutrient-propolis-3.webp",
+  "src2x": "/photos/nutrient-propolis-3@2x.webp",
+  "alt": "라벨에서 총 플라보노이드가 몇 mg인지 찾아보세요 장면 사진"
+ },
+ "nutrient-saw-palmetto-3": {
+  "src": "/photos/nutrient-saw-palmetto-3.webp",
+  "src2x": "/photos/nutrient-saw-palmetto-3@2x.webp",
+  "alt": "라벨에서 로르산 함량부터 찾아보세요 장면 사진"
+ },
+ "nutrient-chlorella-3": {
+  "src": "/photos/nutrient-chlorella-3.webp",
+  "src2x": "/photos/nutrient-chlorella-3@2x.webp",
+  "alt": "라벨에서 총 엽록소가 몇 mg인지 찾아보세요 장면 사진"
+ },
+ "nutrient-garcinia-3": {
+  "src": "/photos/nutrient-garcinia-3.webp",
+  "src2x": "/photos/nutrient-garcinia-3@2x.webp",
+  "alt": "라벨에서 HCA 함량부터 찾아보세요 장면 사진"
+ },
+ "nutrient-green-tea-extract-3": {
+  "src": "/photos/nutrient-green-tea-extract-3.webp",
+  "src2x": "/photos/nutrient-green-tea-extract-3@2x.webp",
+  "alt": "라벨에서 카테킨 함량부터 찾아보세요 장면 사진"
+ },
+ "nutrient-biotin-3": {
+  "src": "/photos/nutrient-biotin-3.webp",
+  "src2x": "/photos/nutrient-biotin-3@2x.webp",
+  "alt": "라벨의 1일 섭취량 기준 함량부터 봐요 장면 사진"
+ },
+ "nutrient-selenium-3": {
+  "src": "/photos/nutrient-selenium-3.webp",
+  "src2x": "/photos/nutrient-selenium-3@2x.webp",
+  "alt": "라벨에서 셀레늄 함량을 μg 단위로 먼저 보세요 장면 사진"
+ },
+ "nutrient-zinc-3": {
+  "src": "/photos/nutrient-zinc-3.webp",
+  "src2x": "/photos/nutrient-zinc-3@2x.webp",
+  "alt": "라벨에서 1일 섭취량 기준 아연 함량부터 보세요 장면 사진"
+ },
+ "nutrient-prebiotics-3": {
+  "src": "/photos/nutrient-prebiotics-3.webp",
+  "src2x": "/photos/nutrient-prebiotics-3@2x.webp",
+  "alt": "원재료명에서 원료 이름부터 확인해요 장면 사진"
+ },
+ "nutrient-fiber-3": {
+  "src": "/photos/nutrient-fiber-3.webp",
+  "src2x": "/photos/nutrient-fiber-3@2x.webp",
+  "alt": "라벨에서 원료 이름과 1일 식이섬유 양을 먼저 봐요 장면 사진"
+ },
+ "nutrient-chromium-3": {
+  "src": "/photos/nutrient-chromium-3.webp",
+  "src2x": "/photos/nutrient-chromium-3@2x.webp",
+  "alt": "라벨에서 크롬 함량의 단위부터 확인해요 장면 사진"
+ },
+ "nutrient-arginine-3": {
+  "src": "/photos/nutrient-arginine-3.webp",
+  "src2x": "/photos/nutrient-arginine-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 아르기닌 함량을 함께 봐요 장면 사진"
+ },
+ "nutrient-astaxanthin-3": {
+  "src": "/photos/nutrient-astaxanthin-3.webp",
+  "src2x": "/photos/nutrient-astaxanthin-3@2x.webp",
+  "alt": "라벨에서 아스타잔틴으로서 몇 mg인지 찾아보세요 장면 사진"
+ },
+ "nutrient-collagen-3": {
+  "src": "/photos/nutrient-collagen-3.webp",
+  "src2x": "/photos/nutrient-collagen-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 콜라겐 함량을 함께 봐요 장면 사진"
+ },
+ "nutrient-taurine-3": {
+  "src": "/photos/nutrient-taurine-3.webp",
+  "src2x": "/photos/nutrient-taurine-3@2x.webp",
+  "alt": "라벨에서 타우린과 카페인 함량을 함께 보세요 장면 사진"
+ },
+ "nutrient-red-ginseng-3": {
+  "src": "/photos/nutrient-red-ginseng-3.webp",
+  "src2x": "/photos/nutrient-red-ginseng-3@2x.webp",
+  "alt": "라벨에서 진세노사이드 합계가 몇 mg인지 찾아보세요 장면 사진"
+ },
+ "nutrient-coq10-3": {
+  "src": "/photos/nutrient-coq10-3.webp",
+  "src2x": "/photos/nutrient-coq10-3@2x.webp",
+  "alt": "라벨에서 코엔자임Q10으로서 몇 mg인지 찾아보세요 장면 사진"
+ },
+ "nutrient-boswellia-3": {
+  "src": "/photos/nutrient-boswellia-3.webp",
+  "src2x": "/photos/nutrient-boswellia-3@2x.webp",
+  "alt": "라벨에서 제품 종류와 1일 섭취량부터 확인해요 장면 사진"
+ },
+ "nutrient-spirulina-3": {
+  "src": "/photos/nutrient-spirulina-3.webp",
+  "src2x": "/photos/nutrient-spirulina-3@2x.webp",
+  "alt": "라벨에서 총 엽록소 함량부터 찾아보세요 장면 사진"
+ },
+ "body-joint-2": {
+  "src": "/photos/body-joint-2.webp",
+  "src2x": "/photos/body-joint-2@2x.webp",
+  "alt": "원료마다 라벨의 기능성 문구가 달라요 장면 사진"
+ },
+ "body-joint-3": {
+  "src": "/photos/body-joint-3.webp",
+  "src2x": "/photos/body-joint-3@2x.webp",
+  "alt": "라벨의 원료 이름과 1일 섭취량을 함께 봐요 장면 사진"
+ },
+ "body-skin-2": {
+  "src": "/photos/body-skin-2.webp",
+  "src2x": "/photos/body-skin-2@2x.webp",
+  "alt": "원료마다 인정된 피부 문구가 따로 있어요 장면 사진"
+ },
+ "body-skin-3": {
+  "src": "/photos/body-skin-3.webp",
+  "src2x": "/photos/body-skin-3@2x.webp",
+  "alt": "라벨의 기능성 문구부터 읽어 보세요 장면 사진"
+ },
+ "body-bone-2": {
+  "src": "/photos/body-bone-2.webp",
+  "src2x": "/photos/body-bone-2@2x.webp",
+  "alt": "뼈에 필요한 성분은 식탁에서 먼저 채워요 장면 사진"
+ },
+ "body-bone-3": {
+  "src": "/photos/body-bone-3.webp",
+  "src2x": "/photos/body-bone-3@2x.webp",
+  "alt": "라벨의 1일 섭취량부터 확인해요 장면 사진"
+ },
+ "body-liver-2": {
+  "src": "/photos/body-liver-2.webp",
+  "src2x": "/photos/body-liver-2@2x.webp",
+  "alt": "라벨의 기능성 문구부터 확인해 보세요 장면 사진"
+ },
+ "body-liver-3": {
+  "src": "/photos/body-liver-3.webp",
+  "src2x": "/photos/body-liver-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 함량을 같이 보세요 장면 사진"
+ },
+ "body-fatigue-2": {
+  "src": "/photos/body-fatigue-2.webp",
+  "src2x": "/photos/body-fatigue-2@2x.webp",
+  "alt": "원료마다 라벨에 쓸 수 있는 문구가 달라요 장면 사진"
+ },
+ "body-fatigue-3": {
+  "src": "/photos/body-fatigue-3.webp",
+  "src2x": "/photos/body-fatigue-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 함량을 같이 보세요 장면 사진"
+ },
+ "body-hair-2": {
+  "src": "/photos/body-hair-2.webp",
+  "src2x": "/photos/body-hair-2@2x.webp",
+  "alt": "머리카락도 끼니의 단백질과 미네랄에서 시작해요 장면 사진"
+ },
+ "body-hair-3": {
+  "src": "/photos/body-hair-3.webp",
+  "src2x": "/photos/body-hair-3@2x.webp",
+  "alt": "라벨의 기능성 문구와 1일 섭취량을 먼저 봐요 장면 사진"
+ },
+ "body-vaginal-health-2": {
+  "src": "/photos/body-vaginal-health-2.webp",
+  "src2x": "/photos/body-vaginal-health-2@2x.webp",
+  "alt": "라벨의 기능성 문구가 원료를 알려 줘요 장면 사진"
+ },
+ "body-vaginal-health-3": {
+  "src": "/photos/body-vaginal-health-3.webp",
+  "src2x": "/photos/body-vaginal-health-3@2x.webp",
+  "alt": "기능성 문구와 1일 섭취량부터 읽어 보세요 장면 사진"
+ },
+ "body-circulation-2": {
+  "src": "/photos/body-circulation-2.webp",
+  "src2x": "/photos/body-circulation-2@2x.webp",
+  "alt": "원료마다 라벨의 기능성 문구가 달라요 장면 사진"
+ },
+ "body-circulation-3": {
+  "src": "/photos/body-circulation-3.webp",
+  "src2x": "/photos/body-circulation-3@2x.webp",
+  "alt": "라벨의 원료 이름과 1일 섭취량을 함께 봐요 장면 사진"
+ },
+ "body-muscle-2": {
+  "src": "/photos/body-muscle-2.webp",
+  "src2x": "/photos/body-muscle-2@2x.webp",
+  "alt": "단백질 반찬을 끼니마다 나눠 두면 채우기 쉬워요 장면 사진"
+ },
+ "body-muscle-3": {
+  "src": "/photos/body-muscle-3.webp",
+  "src2x": "/photos/body-muscle-3@2x.webp",
+  "alt": "1회 제공량의 단백질 g과 당류를 함께 봐요 장면 사진"
+ },
+ "life-kids-2": {
+  "src": "/photos/life-kids-2.webp",
+  "src2x": "/photos/life-kids-2@2x.webp",
+  "alt": "아이 영양은 이유식과 끼니에서 먼저 채워요 장면 사진"
+ },
+ "life-kids-3": {
+  "src": "/photos/life-kids-3.webp",
+  "src2x": "/photos/life-kids-3@2x.webp",
+  "alt": "라벨에서 아이 나이별 섭취량부터 확인해요 장면 사진"
+ },
+ "life-women-2": {
+  "src": "/photos/life-women-2.webp",
+  "src2x": "/photos/life-women-2@2x.webp",
+  "alt": "철과 엽산은 식사로 먼저 채워 보세요 장면 사진"
+ },
+ "life-women-3": {
+  "src": "/photos/life-women-3.webp",
+  "src2x": "/photos/life-women-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 함량부터 보세요 장면 사진"
+ },
+ "life-men-2": {
+  "src": "/photos/life-men-2.webp",
+  "src2x": "/photos/life-men-2@2x.webp",
+  "alt": "남녀 기준이 다른 성분부터 라벨에서 찾아보세요 장면 사진"
+ },
+ "life-men-3": {
+  "src": "/photos/life-men-3.webp",
+  "src2x": "/photos/life-men-3@2x.webp",
+  "alt": "1일 섭취량 기준 함량을 성분별로 맞춰 보세요 장면 사진"
+ },
+ "life-midlife-2": {
+  "src": "/photos/life-midlife-2.webp",
+  "src2x": "/photos/life-midlife-2@2x.webp",
+  "alt": "모자란 성분은 식탁에서 먼저 따져 봐요 장면 사진"
+ },
+ "life-midlife-3": {
+  "src": "/photos/life-midlife-3.webp",
+  "src2x": "/photos/life-midlife-3@2x.webp",
+  "alt": "먹고 있는 제품의 1일 함량을 모두 더해 봐요 장면 사진"
+ },
+ "body-gut-2": {
+  "src": "/photos/body-gut-2.webp",
+  "src2x": "/photos/body-gut-2@2x.webp",
+  "alt": "원료마다 라벨에 쓸 수 있는 문구가 달라요 장면 사진"
+ },
+ "body-gut-3": {
+  "src": "/photos/body-gut-3.webp",
+  "src2x": "/photos/body-gut-3@2x.webp",
+  "alt": "라벨의 기능성 문구부터 읽어 보세요 장면 사진"
+ },
+ "body-sleep-2": {
+  "src": "/photos/body-sleep-2.webp",
+  "src2x": "/photos/body-sleep-2@2x.webp",
+  "alt": "라벨의 기능성 문구가 어느 원료에 붙었는지 보세요 장면 사진"
+ },
+ "body-sleep-3": {
+  "src": "/photos/body-sleep-3.webp",
+  "src2x": "/photos/body-sleep-3@2x.webp",
+  "alt": "라벨의 원재료명과 기능성 문구를 함께 보세요 장면 사진"
+ },
+ "body-immunity-2": {
+  "src": "/photos/body-immunity-2.webp",
+  "src2x": "/photos/body-immunity-2@2x.webp",
+  "alt": "원료마다 라벨에 쓸 수 있는 면역 문구가 달라요 장면 사진"
+ },
+ "body-immunity-3": {
+  "src": "/photos/body-immunity-3.webp",
+  "src2x": "/photos/body-immunity-3@2x.webp",
+  "alt": "라벨의 기능성 문구부터 읽어 보세요 장면 사진"
+ },
+ "body-prostate-2": {
+  "src": "/photos/body-prostate-2.webp",
+  "src2x": "/photos/body-prostate-2@2x.webp",
+  "alt": "라벨의 기능성 문구와 원료 이름부터 보세요 장면 사진"
+ },
+ "body-prostate-3": {
+  "src": "/photos/body-prostate-3.webp",
+  "src2x": "/photos/body-prostate-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 로르산 함량을 함께 보세요 장면 사진"
+ },
+ "life-pregnancy-2": {
+  "src": "/photos/life-pregnancy-2.webp",
+  "src2x": "/photos/life-pregnancy-2@2x.webp",
+  "alt": "임신 중 필요한 성분은 식탁에서 먼저 채워요 장면 사진"
+ },
+ "life-pregnancy-3": {
+  "src": "/photos/life-pregnancy-3.webp",
+  "src2x": "/photos/life-pregnancy-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 주의 문구부터 봐요 장면 사진"
+ },
+ "life-seniors-2": {
+  "src": "/photos/life-seniors-2.webp",
+  "src2x": "/photos/life-seniors-2@2x.webp",
+  "alt": "단백질 반찬과 다섯 식품군이 고루 놓인 식탁부터 봐요 장면 사진"
+ },
+ "life-seniors-3": {
+  "src": "/photos/life-seniors-3.webp",
+  "src2x": "/photos/life-seniors-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 주의사항부터 확인해요 장면 사진"
+ },
+ "life-menopause-2": {
+  "src": "/photos/life-menopause-2.webp",
+  "src2x": "/photos/life-menopause-2@2x.webp",
+  "alt": "이 시기 식탁은 칼슘과 단백질부터 살펴요 장면 사진"
+ },
+ "life-menopause-3": {
+  "src": "/photos/life-menopause-3.webp",
+  "src2x": "/photos/life-menopause-3@2x.webp",
+  "alt": "라벨의 기능성 문구와 1일 섭취량부터 봐요 장면 사진"
+ },
+ "life-teens-2": {
+  "src": "/photos/life-teens-2.webp",
+  "src2x": "/photos/life-teens-2@2x.webp",
+  "alt": "성장기 영양은 매일 먹는 식탁에서 먼저 채워요 장면 사진"
+ },
+ "life-teens-3": {
+  "src": "/photos/life-teens-3.webp",
+  "src2x": "/photos/life-teens-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 함량부터 확인해요 장면 사진"
+ },
+ "nutrient-iron-2": {
+  "src": "/photos/nutrient-iron-2.webp",
+  "src2x": "/photos/nutrient-iron-2@2x.webp",
+  "alt": "고기·해산물과 채소의 철은 흡수 방식이 달라요 장면 사진"
+ },
+ "nutrient-multivitamin-2": {
+  "src": "/photos/nutrient-multivitamin-2.webp",
+  "src2x": "/photos/nutrient-multivitamin-2@2x.webp",
+  "alt": "미네랄은 끼니로 먼저 채우는 편이 수월해요 장면 사진"
+ },
+ "nutrient-arginine-2": {
+  "src": "/photos/nutrient-arginine-2.webp",
+  "src2x": "/photos/nutrient-arginine-2@2x.webp",
+  "alt": "콩과 견과류, 잎채소로 재료를 고루 채울 수 있어요 장면 사진"
+ },
+ "nutrient-zinc-2": {
+  "src": "/photos/nutrient-zinc-2.webp",
+  "src2x": "/photos/nutrient-zinc-2@2x.webp",
+  "alt": "굴과 고기, 콩으로도 아연을 채울 수 있어요 장면 사진"
+ },
+ "home-1": {
+  "src": "/photos/home-1.webp",
+  "src2x": "/photos/home-1@2x.webp",
+  "alt": "home 관련 건강 생활 사진"
+ },
+ "home-2": {
+  "src": "/photos/home-2.webp",
+  "src2x": "/photos/home-2@2x.webp",
+  "alt": "home 관련 건강 생활 사진"
+ },
+ "home-3": {
+  "src": "/photos/home-3.webp",
+  "src2x": "/photos/home-3@2x.webp",
+  "alt": "home 관련 건강 생활 사진"
+ },
+ "home-4": {
+  "src": "/photos/home-4.webp",
+  "src2x": "/photos/home-4@2x.webp",
+  "alt": "home 관련 건강 생활 사진"
+ },
+ "about-1": {
+  "src": "/photos/about-1.webp",
+  "src2x": "/photos/about-1@2x.webp",
+  "alt": "about 관련 건강 생활 사진"
+ },
+ "about-2": {
+  "src": "/photos/about-2.webp",
+  "src2x": "/photos/about-2@2x.webp",
+  "alt": "about 관련 건강 생활 사진"
+ }
+}

@@ -7,8 +7,14 @@
   "area": "urogenital",
   "primaryKeyword": "자궁선근증 증상",
   "hubs": [
-    { "kind": "area", "slug": "urogenital" },
-    { "kind": "life", "slug": "women" }
+    {
+      "kind": "area",
+      "slug": "urogenital"
+    },
+    {
+      "kind": "life",
+      "slug": "women"
+    }
   ],
   "keyPoints": [
     "자궁선근증 증상은 생리 과다와 생리통이 대표적이에요. 피가 멈추지 않으면 바로 응급실로 가세요.",
@@ -98,5 +104,6 @@
     "womens-reproductive-health-nutrients",
     "iron-deficiency-anemia-korea",
     "multivitamin-women-40s"
-  ]
+  ],
+  "heroPhoto": "life-women-1"
 }
