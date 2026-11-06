@@ -1,1 +1,14 @@
-{}
+{
+  "default": {
+    "wide": {
+      "id": 1047143,
+      "width": 680,
+      "height": 140
+    },
+    "narrow": {
+      "id": 1047146,
+      "width": 320,
+      "height": 250
+    }
+  }
+}

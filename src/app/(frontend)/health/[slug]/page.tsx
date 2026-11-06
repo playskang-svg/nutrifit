@@ -16,6 +16,7 @@ import { wide } from '@/lib/images'
 import { blogPosting, crumbs, faqPage, graph } from '@/lib/jsonld'
 import { formatDate } from '@/lib/pricing'
 import { SITE_URL } from '@/lib/payload'
+import { photoUrl } from '@/lib/photos'
 import { getPublishedPost, richTextContext } from '@/lib/queries'
 import { ogPath, pageMeta } from '@/lib/seo'
 import type { Category, Post } from '@/payload-types'
@@ -62,7 +63,7 @@ export default async function PostPage({ params }: Props) {
   const hub = post.hubs?.[0]
   const related = (post.relatedPosts ?? []).filter((item): item is Post => typeof item === 'object')
   const symptom = category.slug === 'symptom' && post.area
-  const photo = post.heroPhoto ? `/photos/${post.heroPhoto}.webp` : null
+  const photo = photoUrl(post.heroPhoto)
   const items = [...trail(post, category), { name: post.title, path }]
   return (
     <>

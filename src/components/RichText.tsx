@@ -8,6 +8,7 @@ import type React from 'react'
 
 import { bannerFor, MAX_BANNERS_PER_PAGE } from '@/lib/banners'
 import { retina } from '@/lib/images'
+import { type Photos, photoUrl } from '@/lib/photos'
 import type { AffiliateLink, Nutrient, Pick } from '@/payload-types'
 
 import { Callout } from './Callout'
@@ -37,6 +38,7 @@ export function RichText({
   picks,
   nutrients,
   links,
+  photos,
   bannerSlot,
   hub,
   midway,
@@ -47,6 +49,8 @@ export function RichText({
   nutrients: Map<string, Nutrient>
   // Affiliate links by slug, for `search-<nutrient>` picks.
   links?: Map<string, AffiliateLink>
+  // Keys of data/photos.json; a photo block whose key is missing renders nothing. Defaults to the real file.
+  photos?: Photos
   // Only one RichText per page gets a slot; without one, banner blocks render nothing.
   bannerSlot?: string
   // The page's hub as `<kind>-<slug>`, the banner fallback before `default`.
@@ -82,7 +86,8 @@ export function RichText({
         return pick ? <PickCard pick={pick} /> : null
       },
       photo: ({ node }: Fields<{ photo: string; caption: string }>) => {
-        const src = `/photos/${node.fields.photo}.webp`
+        const src = photoUrl(node.fields.photo, photos)
+        if (!src) return null
         return (
           <figure className="post-photo">
             {/* eslint-disable-next-line @next/next/no-img-element */}

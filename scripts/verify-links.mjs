@@ -16,9 +16,9 @@ for (const file of walk('data').filter((name) => name.endsWith('.json'))) {
 }
 
 const links = fs.existsSync('data/links.json') ? JSON.parse(fs.readFileSync('data/links.json', 'utf8')) : []
-for (let i = 0; i < links.length; i += 8) {
+for (let i = 0; i < links.length; i += 3) {
   await Promise.all(
-    links.slice(i, i + 8).map(async (link) => {
+    links.slice(i, i + 3).map(async (link) => {
       const res = await fetch(link.url, { redirect: 'manual', signal: AbortSignal.timeout(20000) }).catch((e) => ({ error: e.message }))
       const problem = linkProblem(link, res.headers?.get('location') ?? '')
       if (problem) {
@@ -27,6 +27,7 @@ for (let i = 0; i < links.length; i += 8) {
       }
     }),
   )
+  await new Promise((resolve) => setTimeout(resolve, 400)) // Coupang answers 403 when hit faster
 }
 console.log(`checked ${links.length} links, problems ${bad}`)
 process.exit(bad ? 1 : 0)

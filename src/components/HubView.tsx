@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { cache } from 'react'
 
 import { SITE_URL } from '@/lib/payload'
+import { photoUrl } from '@/lib/photos'
 import { getHub, picksById, postsForHub, richTextContext } from '@/lib/queries'
 import { collectionPage, crumbs, faqPage, graph } from '@/lib/jsonld'
 import { keywordTitle, pageMeta } from '@/lib/seo'
@@ -56,7 +57,7 @@ export async function HubView({ kind, slug }: { kind: Hub['kind']; slug: string 
   const summary = hub?.summary ?? `${name}에 나타나는 증상을 모았어요.`
   const trail = [{ name: crumb, path: base }, { name, path }]
   const video = hub?.heroVideo
-  const photo = hub?.heroPhoto
+  const photo = photoUrl(hub?.heroPhoto)
   return (
     <>
       <JsonLd
@@ -72,7 +73,7 @@ export async function HubView({ kind, slug }: { kind: Hub['kind']; slug: string 
       {kind !== 'area' && (video || photo) ? (
         <PhotoHead
           lede={summary}
-          photo={photo ? `/photos/${photo}.webp` : undefined}
+          photo={photo ?? undefined}
           title={name}
           video={
             video

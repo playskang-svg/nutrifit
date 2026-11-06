@@ -15,10 +15,12 @@ export function CoupangBanner({ banner }: { banner: Banner }) {
     <div className="coupang-banner" ref={slot}>
       {size ? (
         <iframe
+          frameBorder="0"
           height={size.height}
           loading="lazy"
+          referrerPolicy="unsafe-url"
+          scrolling="no"
           src={bannerSrc(size)}
-          style={{ border: 0 }}
           title="쿠팡 추천 상품"
           width={size.width}
         />

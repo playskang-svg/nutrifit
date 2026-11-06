@@ -27,6 +27,7 @@ const picks = new Map<string, Pick>([
     {
       key: 'mg-01',
       kind: 'supplement',
+      isHealthFunctionalFood: true,
       name: '마그네슘 365',
       brand: '뉴트리',
       link: link('mg-01'),
@@ -152,4 +153,15 @@ test('h2 headings carry ids in the server HTML for the table of contents', () =>
 test('without a bannerSlot the banner block renders nothing', () => {
   const html = renderToStaticMarkup(<RichText data={nfmdToLexical('{{banner}}', ctx)} nutrients={nutrients} picks={picks} />)
   expect(html).toBe('<div class="prose"></div>')
+})
+
+test('a photo block renders only when its key is in the photos map', () => {
+  const data = nfmdToLexical('{{photo:mg-foods|마그네슘이 많은 음식}}', ctx)
+  const html = (photos: Record<string, unknown>) =>
+    renderToStaticMarkup(<RichText data={data} nutrients={nutrients} photos={photos} picks={picks} />)
+  expect(html({ 'mg-foods': {} })).toContain('/photos/mg-foods.webp')
+  expect(html({ 'mg-foods': {} })).toContain('▲ 마그네슘이 많은 음식')
+  const missing = html({})
+  expect(missing).not.toContain('<img')
+  expect(missing).not.toContain('마그네슘이 많은 음식')
 })

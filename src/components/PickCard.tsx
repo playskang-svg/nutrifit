@@ -5,7 +5,11 @@ import type { AffiliateLink, Pick } from '@/payload-types'
 import { AffiliateAnchor } from './AffiliateAnchor'
 
 export function PickCard({ pick }: { pick: Pick }) {
-  const badge = PICK_KINDS.find((kind) => kind.value === pick.kind)?.label
+  // 건강기능식품 is a label claim: only shown when the label is confirmed (R30).
+  const badge =
+    pick.kind === 'supplement' && pick.isHealthFunctionalFood !== true
+      ? undefined
+      : PICK_KINDS.find((kind) => kind.value === pick.kind)?.label
   return (
     <article className="pick-card">
       {pick.image ? (
