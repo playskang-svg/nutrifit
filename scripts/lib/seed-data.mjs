@@ -46,13 +46,15 @@ export function buildCtx(data) {
   for (const hub of data.hubs) {
     cards.set(`${HUB_PATH[hub.kind]}/${hub.slug}`, { title: hub.name, summary: hub.summary, image: photoSrc(hub.heroPhoto) })
   }
+  cards.set('/symptoms', { title: '증상 사전', summary: '몸 그림에서 불편한 부위를 골라 증상별 글을 찾아보세요.', image: '' })
   for (const food of Object.values(data.siseFoods).flat()) {
     if (food.url?.startsWith('https://sise.pinda.kr/')) cards.set(food.url, { title: food.name, summary: SISE_SUMMARY, image: '' })
   }
   return {
     picks: new Set(data.picks.map((pick) => pick.id)),
     nutrients: new Set(data.nutrients.map((item) => item.slug)),
-    photos: new Set(Object.keys(data.photos)),
+    // Same key rule as the gate (PHOTO_KEY): a key without a file stays in the tree and RichText skips it (R46).
+    photos: { has: (key) => key in data.photos || /^(nutrient|body|life|area|post)-[a-z0-9-]+-\d+$/.test(key) },
     cards,
   }
 }

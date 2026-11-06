@@ -27,7 +27,9 @@ describe('buildCtx', () => {
   it('collects picks, nutrients, photos and card targets', () => {
     expect([...ctx.picks]).toEqual(['mg-01'])
     expect([...ctx.nutrients]).toEqual(['magnesium'])
-    expect([...ctx.photos]).toEqual(['legs'])
+    expect(ctx.photos.has('legs')).toBe(true)
+    expect(ctx.photos.has('post-leg-cramp-1')).toBe(true)
+    expect(ctx.photos.has('random')).toBe(false)
     expect(ctx.cards.get('/health/leg-cramp')).toEqual({ title: '다리 쥐', summary: '밤에 쥐가 날 때', image: '/photos/legs.webp' })
     expect(ctx.cards.get('/nutrients/magnesium')).toMatchObject({ title: '마그네슘', image: '' })
     expect(ctx.cards.get('/symptoms/leg-foot')).toMatchObject({ title: '다리·발' })
