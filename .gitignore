@@ -14,7 +14,7 @@ bun.lockb
 .wrangler/
 .open-next/
 worker-dist/
-og/
+/og/
 open-next.tgz
 tsconfig.tsbuildinfo
 .next/

@@ -9,7 +9,7 @@ export const DEFAULT_IMAGE = '/og-image.jpg'
 export const pageTitle = (primary: string) => `${primary} | ${SITE_NAME}`
 
 // Share card for a post that has no ogImage of its own; Task 25 generates the files.
-export const ogPath = (slug: string) => `/og/${slug}.png`
+export const ogPath = (slug: string) => `/og/${slug}.jpg`
 
 export const pageMeta = ({
   title: primary,
