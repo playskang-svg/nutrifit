@@ -102,7 +102,7 @@ export function pickDoc(pick, ids) {
     key: pick.id,
     kind: pick.kind,
     name: pick.name,
-    brand: pick.brand,
+    brand: pick.brand || '-', // 38 listings had no brand; '-' satisfies the required field and PickCard hides it
     coupangProductId: pick.coupangProductId,
     link: need(ids.links, pick.link, '링크', where),
     image: pick.image,

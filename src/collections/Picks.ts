@@ -44,13 +44,14 @@ export const Picks: CollectionConfig = {
     { name: 'coupangProductId', label: '쿠팡 상품 번호', type: 'text', required: true },
     { name: 'link', label: '제휴 링크', type: 'relationship', relationTo: 'affiliate-links', required: true },
     { name: 'image', label: '사진 경로', type: 'text', admin: { description: '예: /products/상품번호.webp' } },
-    { name: 'nutrient', label: '영양소', type: 'relationship', relationTo: 'nutrients', validate: supplementOnly },
+    // Optional: 4 supplements (ERr731, 백수오, 크랜베리 정) have no nutrient page.
+    { name: 'nutrient', label: '영양소', type: 'relationship', relationTo: 'nutrients' },
     { name: 'form', label: '제형', type: 'text' },
     {
       name: 'perServing',
       label: '1회 섭취량당 성분',
       type: 'array',
-      validate: supplementOnly,
+      // Not required: 76 Coupang listings gave no per-serving table (perServingConfidence 'none'); the card then shows no amounts.
       fields: [
         { name: 'name', label: '성분', type: 'text', required: true },
         { name: 'amount', label: '함량', type: 'number', required: true },

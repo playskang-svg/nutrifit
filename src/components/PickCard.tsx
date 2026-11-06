@@ -19,7 +19,7 @@ export function PickCard({ pick }: { pick: Pick }) {
       <div className="pick-card__body">
         {badge ? <span className="pick-card__badge">{badge}</span> : null}
         <strong className="pick-card__name">{pick.name}</strong>
-        <small className="pick-card__brand">{pick.brand}</small>
+        {pick.brand && pick.brand !== '-' ? <small className="pick-card__brand">{pick.brand}</small> : null}
         {pick.kind === 'supplement' && pick.perServing?.length ? (
           <table className="pick-card__serving">
             <caption>1회 섭취량당</caption>

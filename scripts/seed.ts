@@ -25,10 +25,15 @@ const payload = await getPayload({ config })
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const upsert = async (collection: CollectionSlug, where: any, doc: any): Promise<number> => {
   const { docs } = await payload.find({ collection, where, limit: 1, depth: 0, draft: true })
-  const saved: any = docs[0]
-    ? await payload.update({ collection, id: docs[0].id, data: doc, depth: 0 } as any)
-    : await payload.create({ collection, data: doc, depth: 0 } as any)
-  return saved.id
+  try {
+    const saved: any = docs[0]
+      ? await payload.update({ collection, id: docs[0].id, data: doc, depth: 0 } as any)
+      : await payload.create({ collection, data: doc, depth: 0 } as any)
+    return saved.id
+  } catch (e: any) {
+    console.error(collection, JSON.stringify(where), JSON.stringify(e?.data?.errors ?? e?.message))
+    throw e
+  }
 }
 const bySlug = async (collection: CollectionSlug, items: any[], toDoc: (item: any) => any) => {
   const ids = new Map<string, number>()
