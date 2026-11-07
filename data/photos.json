@@ -898,5 +898,750 @@
   "src": "/photos/post-baby-mouth-ulcer-spray-guide-2.webp",
   "src2x": "/photos/post-baby-mouth-ulcer-spray-guide-2@2x.webp",
   "alt": "헌 입안에는 부드럽고 미지근한 음식이 편해요 일러스트"
+ },
+ "post-baby-multivitamin-guide-1": {
+  "src": "/photos/post-baby-multivitamin-guide-1.webp",
+  "src2x": "/photos/post-baby-multivitamin-guide-1@2x.webp",
+  "alt": "아기 영양제는 연령 표시부터 확인해요 일러스트"
+ },
+ "post-baby-multivitamin-guide-2": {
+  "src": "/photos/post-baby-multivitamin-guide-2.webp",
+  "src2x": "/photos/post-baby-multivitamin-guide-2@2x.webp",
+  "alt": "라벨의 적용 연령과 1일 섭취량을 먼저 봐요 일러스트"
+ },
+ "post-baby-probiotics-guide-1": {
+  "src": "/photos/post-baby-probiotics-guide-1.webp",
+  "src2x": "/photos/post-baby-probiotics-guide-1@2x.webp",
+  "alt": "아기의 장은 첫 몇 달 동안 빠르게 자리를 잡아요 일러스트"
+ },
+ "post-baby-probiotics-guide-2": {
+  "src": "/photos/post-baby-probiotics-guide-2.webp",
+  "src2x": "/photos/post-baby-probiotics-guide-2@2x.webp",
+  "alt": "라벨의 대상 월령과 균주명을 먼저 봐요 일러스트"
+ },
+ "post-bodydoctors-omega3-ingredient-guide-3": {
+  "src": "/photos/post-bodydoctors-omega3-ingredient-guide-3.webp",
+  "src2x": "/photos/post-bodydoctors-omega3-ingredient-guide-3@2x.webp",
+  "alt": "라벨의 1일 섭취량 기준 함량부터 확인해요 일러스트"
+ },
+ "post-calcium-supplement-form-absorption-guide-1": {
+  "src": "/photos/post-calcium-supplement-form-absorption-guide-1.webp",
+  "src2x": "/photos/post-calcium-supplement-form-absorption-guide-1@2x.webp",
+  "alt": "탄산칼슘은 밥을 먹을 때 함께 챙기는 형태예요 일러스트"
+ },
+ "post-calcium-supplement-form-absorption-guide-2": {
+  "src": "/photos/post-calcium-supplement-form-absorption-guide-2.webp",
+  "src2x": "/photos/post-calcium-supplement-form-absorption-guide-2@2x.webp",
+  "alt": "라벨에서 칼슘 함량을 따로 확인해 보세요 일러스트"
+ },
+ "post-calcium-vitamin-d-combination-1": {
+  "src": "/photos/post-calcium-vitamin-d-combination-1.webp",
+  "src2x": "/photos/post-calcium-vitamin-d-combination-1@2x.webp",
+  "alt": "칼슘과 비타민D는 라벨에서 함께 확인해요 일러스트"
+ },
+ "post-calcium-vitamin-d-combination-2": {
+  "src": "/photos/post-calcium-vitamin-d-combination-2.webp",
+  "src2x": "/photos/post-calcium-vitamin-d-combination-2@2x.webp",
+  "alt": "칼슘은 채소와 유제품, 비타민D는 생선에서 찾아요 일러스트"
+ },
+ "post-celebrity-menopause-supplement-check-1": {
+  "src": "/photos/post-celebrity-menopause-supplement-check-1.webp",
+  "src2x": "/photos/post-celebrity-menopause-supplement-check-1@2x.webp",
+  "alt": "포장 뒷면의 함량과 표시부터 확인해요 일러스트"
+ },
+ "post-cellonix-omega3-ingredient-guide-3": {
+  "src": "/photos/post-cellonix-omega3-ingredient-guide-3.webp",
+  "src2x": "/photos/post-cellonix-omega3-ingredient-guide-3@2x.webp",
+  "alt": "라벨의 영양·기능정보부터 확인해요 일러스트"
+ },
+ "post-children-vitamin-d-recommendation-1": {
+  "src": "/photos/post-children-vitamin-d-recommendation-1.webp",
+  "src2x": "/photos/post-children-vitamin-d-recommendation-1@2x.webp",
+  "alt": "아이 영양제는 적용 연령부터 확인해요 일러스트"
+ },
+ "post-children-vitamin-d-recommendation-2": {
+  "src": "/photos/post-children-vitamin-d-recommendation-2.webp",
+  "src2x": "/photos/post-children-vitamin-d-recommendation-2@2x.webp",
+  "alt": "라벨의 1일 섭취량과 계량 도구를 함께 봐요 일러스트"
+ },
+ "post-chocolate-protein-flavor-guide-1": {
+  "src": "/photos/post-chocolate-protein-flavor-guide-1.webp",
+  "src2x": "/photos/post-chocolate-protein-flavor-guide-1@2x.webp",
+  "alt": "초코프로틴은 맛보다 라벨부터 확인해요 일러스트"
+ },
+ "post-chocolate-protein-flavor-guide-2": {
+  "src": "/photos/post-chocolate-protein-flavor-guide-2.webp",
+  "src2x": "/photos/post-chocolate-protein-flavor-guide-2@2x.webp",
+  "alt": "우유나 두유에 타면 초코 맛이 달라져요 일러스트"
+ },
+ "post-chuseok-supplement-gift-set-guide-3": {
+  "src": "/photos/post-chuseok-supplement-gift-set-guide-3.webp",
+  "src2x": "/photos/post-chuseok-supplement-gift-set-guide-3@2x.webp",
+  "alt": "라벨의 1일 섭취량부터 읽어 보세요 일러스트"
+ },
+ "post-chuseok-supplement-gift-set-guide-2": {
+  "src": "/photos/post-chuseok-supplement-gift-set-guide-2.webp",
+  "src2x": "/photos/post-chuseok-supplement-gift-set-guide-2@2x.webp",
+  "alt": "선물 상자 안 구성표를 함께 챙겨 보세요 일러스트"
+ },
+ "post-collagen-30s-uv-prevention-guide-1": {
+  "src": "/photos/post-collagen-30s-uv-prevention-guide-1.webp",
+  "src2x": "/photos/post-collagen-30s-uv-prevention-guide-1@2x.webp",
+  "alt": "자외선 차단은 매일 같은 순서로 챙기면 쉬워요 일러스트"
+ },
+ "post-collagen-30s-uv-prevention-guide-2": {
+  "src": "/photos/post-collagen-30s-uv-prevention-guide-2.webp",
+  "src2x": "/photos/post-collagen-30s-uv-prevention-guide-2@2x.webp",
+  "alt": "콜라겐은 라벨의 제품 종류부터 확인해요 일러스트"
+ },
+ "post-collagen-50s-elasticity-guide-1": {
+  "src": "/photos/post-collagen-50s-elasticity-guide-1.webp",
+  "src2x": "/photos/post-collagen-50s-elasticity-guide-1@2x.webp",
+  "alt": "50대 피부 변화는 호르몬 변화와 함께 봐야 해요 일러스트"
+ },
+ "post-collagen-50s-elasticity-guide-2": {
+  "src": "/photos/post-collagen-50s-elasticity-guide-2.webp",
+  "src2x": "/photos/post-collagen-50s-elasticity-guide-2@2x.webp",
+  "alt": "라벨의 원료명과 1일 섭취량부터 확인해요 일러스트"
+ },
+ "post-collagen-origin-label-checklist-1": {
+  "src": "/photos/post-collagen-origin-label-checklist-1.webp",
+  "src2x": "/photos/post-collagen-origin-label-checklist-1@2x.webp",
+  "alt": "원재료명 칸에서 원료 동물부터 찾아봐요 일러스트"
+ },
+ "post-collagen-origin-label-checklist-2": {
+  "src": "/photos/post-collagen-origin-label-checklist-2.webp",
+  "src2x": "/photos/post-collagen-origin-label-checklist-2@2x.webp",
+  "alt": "영양·기능정보 칸에서 비타민C mg을 확인해요 일러스트"
+ },
+ "post-collagen-vitamin-c-combo-label-guide-1": {
+  "src": "/photos/post-collagen-vitamin-c-combo-label-guide-1.webp",
+  "src2x": "/photos/post-collagen-vitamin-c-combo-label-guide-1@2x.webp",
+  "alt": "라벨 뒷면의 숫자부터 확인해 보세요 일러스트"
+ },
+ "post-collagen-vitamin-c-combo-label-guide-2": {
+  "src": "/photos/post-collagen-vitamin-c-combo-label-guide-2.webp",
+  "src2x": "/photos/post-collagen-vitamin-c-combo-label-guide-2@2x.webp",
+  "alt": "비타민C는 과일과 채소로도 채울 수 있어요 일러스트"
+ },
+ "post-collagen-vitamin-c-synthesis-1": {
+  "src": "/photos/post-collagen-vitamin-c-synthesis-1.webp",
+  "src2x": "/photos/post-collagen-vitamin-c-synthesis-1@2x.webp",
+  "alt": "콜라겐과 비타민C는 만드는 과정에서 이어져 있어요 일러스트"
+ },
+ "post-collagen-vitamin-c-synthesis-2": {
+  "src": "/photos/post-collagen-vitamin-c-synthesis-2.webp",
+  "src2x": "/photos/post-collagen-vitamin-c-synthesis-2@2x.webp",
+  "alt": "라벨에서 원료와 1일 섭취량을 함께 봐요 일러스트"
+ },
+ "post-coq10-ubiquinol-vs-ubiquinone-1": {
+  "src": "/photos/post-coq10-ubiquinol-vs-ubiquinone-1.webp",
+  "src2x": "/photos/post-coq10-ubiquinol-vs-ubiquinone-1@2x.webp",
+  "alt": "지방이 든 식사 뒤로 먹는 시간을 정해 두세요 일러스트"
+ },
+ "post-daily-protein-intake-1": {
+  "src": "/photos/post-daily-protein-intake-1.webp",
+  "src2x": "/photos/post-daily-protein-intake-1@2x.webp",
+  "alt": "단백질 반찬은 여러 식품에서 고르게 골라요 일러스트"
+ },
+ "post-daily-protein-intake-2": {
+  "src": "/photos/post-daily-protein-intake-2.webp",
+  "src2x": "/photos/post-daily-protein-intake-2@2x.webp",
+  "alt": "끼니마다 단백질 반찬을 하나씩 두면 나누기 쉬워요 일러스트"
+ },
+ "post-doctorin-lutein-zeaxanthin-ratio-guide-1": {
+  "src": "/photos/post-doctorin-lutein-zeaxanthin-ratio-guide-1.webp",
+  "src2x": "/photos/post-doctorin-lutein-zeaxanthin-ratio-guide-1@2x.webp",
+  "alt": "라벨 뒷면에서 두 성분의 mg을 따로 찾아요 일러스트"
+ },
+ "post-doctorin-lutein-zeaxanthin-ratio-guide-2": {
+  "src": "/photos/post-doctorin-lutein-zeaxanthin-ratio-guide-2.webp",
+  "src2x": "/photos/post-doctorin-lutein-zeaxanthin-ratio-guide-2@2x.webp",
+  "alt": "1일 섭취량 기준 mg을 두 제품에서 맞춰 봐요 일러스트"
+ },
+ "post-doctorin-vitamin-d-explained-1": {
+  "src": "/photos/post-doctorin-vitamin-d-explained-1.webp",
+  "src2x": "/photos/post-doctorin-vitamin-d-explained-1@2x.webp",
+  "alt": "브랜드 이름보다 병 뒷면의 숫자를 먼저 봐요 일러스트"
+ },
+ "post-doctorin-vitamin-d-explained-2": {
+  "src": "/photos/post-doctorin-vitamin-d-explained-2.webp",
+  "src2x": "/photos/post-doctorin-vitamin-d-explained-2@2x.webp",
+  "alt": "IU와 μg 숫자를 같은 기준으로 맞춰 봐요 일러스트"
+ },
+ "post-doctorsbest-msm-label-guide-1": {
+  "src": "/photos/post-doctorsbest-msm-label-guide-1.webp",
+  "src2x": "/photos/post-doctorsbest-msm-label-guide-1@2x.webp",
+  "alt": "제품명보다 성분표의 원료 목록을 먼저 봐요 일러스트"
+ },
+ "post-doctorsbest-msm-label-guide-2": {
+  "src": "/photos/post-doctorsbest-msm-label-guide-2.webp",
+  "src2x": "/photos/post-doctorsbest-msm-label-guide-2@2x.webp",
+  "alt": "1회 제공량과 하루 섭취 횟수를 함께 봐요 일러스트"
+ },
+ "post-doctorslin-hypercell-omega3-guide-1": {
+  "src": "/photos/post-doctorslin-hypercell-omega3-guide-1.webp",
+  "src2x": "/photos/post-doctorslin-hypercell-omega3-guide-1@2x.webp",
+  "alt": "기술 이름 옆의 원리 설명을 함께 찾아봐요 일러스트"
+ },
+ "post-doctorslin-hypercell-omega3-guide-2": {
+  "src": "/photos/post-doctorslin-hypercell-omega3-guide-2.webp",
+  "src2x": "/photos/post-doctorslin-hypercell-omega3-guide-2@2x.webp",
+  "alt": "라벨의 영양·기능정보 칸부터 읽어요 일러스트"
+ },
+ "post-drlin-probiotics-guide-1": {
+  "src": "/photos/post-drlin-probiotics-guide-1.webp",
+  "src2x": "/photos/post-drlin-probiotics-guide-1@2x.webp",
+  "alt": "브랜드 이름보다 상자 뒷면 표기를 먼저 봐요 일러스트"
+ },
+ "post-drlin-probiotics-guide-2": {
+  "src": "/photos/post-drlin-probiotics-guide-2.webp",
+  "src2x": "/photos/post-drlin-probiotics-guide-2@2x.webp",
+  "alt": "큰 숫자보다 그 숫자의 기준을 먼저 봐요 일러스트"
+ },
+ "post-early-pregnancy-nutrition-guide-1": {
+  "src": "/photos/post-early-pregnancy-nutrition-guide-1.webp",
+  "src2x": "/photos/post-early-pregnancy-nutrition-guide-1@2x.webp",
+  "alt": "임신 초기에는 엽산부터 순서를 정해요 일러스트"
+ },
+ "post-early-pregnancy-nutrition-guide-2": {
+  "src": "/photos/post-early-pregnancy-nutrition-guide-2.webp",
+  "src2x": "/photos/post-early-pregnancy-nutrition-guide-2@2x.webp",
+  "alt": "삼키기 편한 시간과 제형을 먼저 찾아요 일러스트"
+ },
+ "post-elementary-school-kids-probiotics-guide-1": {
+  "src": "/photos/post-elementary-school-kids-probiotics-guide-1.webp",
+  "src2x": "/photos/post-elementary-school-kids-probiotics-guide-1@2x.webp",
+  "alt": "라벨의 섭취 연령과 1일 섭취량부터 확인해요 일러스트"
+ },
+ "post-elementary-school-kids-probiotics-guide-2": {
+  "src": "/photos/post-elementary-school-kids-probiotics-guide-2.webp",
+  "src2x": "/photos/post-elementary-school-kids-probiotics-guide-2@2x.webp",
+  "alt": "매일 같은 식사 자리에 붙여 두면 잊지 않아요 일러스트"
+ },
+ "post-elena-probiotics-strain-cfu-check-1": {
+  "src": "/photos/post-elena-probiotics-strain-cfu-check-1.webp",
+  "src2x": "/photos/post-elena-probiotics-strain-cfu-check-1@2x.webp",
+  "alt": "브랜드보다 라벨 뒷면의 네 줄을 먼저 봐요 일러스트"
+ },
+ "post-elena-probiotics-strain-cfu-check-2": {
+  "src": "/photos/post-elena-probiotics-strain-cfu-check-2.webp",
+  "src2x": "/photos/post-elena-probiotics-strain-cfu-check-2@2x.webp",
+  "alt": "보관 방법 문구는 사고 나서도 다시 확인해요 일러스트"
+ },
+ "post-enteric-coated-omega3-guide-1": {
+  "src": "/photos/post-enteric-coated-omega3-guide-1.webp",
+  "src2x": "/photos/post-enteric-coated-omega3-guide-1@2x.webp",
+  "alt": "비린 맛이 올라오는 이유부터 나눠 봐요 일러스트"
+ },
+ "post-enteric-coated-omega3-guide-2": {
+  "src": "/photos/post-enteric-coated-omega3-guide-2.webp",
+  "src2x": "/photos/post-enteric-coated-omega3-guide-2@2x.webp",
+  "alt": "코팅 표기와 EPA+DHA 함량을 함께 봐요 일러스트"
+ },
+ "post-epa-omega3-benefits-guide-3": {
+  "src": "/photos/post-epa-omega3-benefits-guide-3.webp",
+  "src2x": "/photos/post-epa-omega3-benefits-guide-3@2x.webp",
+  "alt": "라벨의 EPA와 DHA 숫자를 따로 읽어요 일러스트"
+ },
+ "post-epa-omega3-benefits-guide-2": {
+  "src": "/photos/post-epa-omega3-benefits-guide-2.webp",
+  "src2x": "/photos/post-epa-omega3-benefits-guide-2@2x.webp",
+  "alt": "등푸른생선에는 EPA와 DHA가 함께 들어 있어요 일러스트"
+ },
+ "post-essential-nutrients-50s-1": {
+  "src": "/photos/post-essential-nutrients-50s-1.webp",
+  "src2x": "/photos/post-essential-nutrients-50s-1@2x.webp",
+  "alt": "성별보다 공통 기준을 먼저 확인해요 일러스트"
+ },
+ "post-essential-nutrients-50s-2": {
+  "src": "/photos/post-essential-nutrients-50s-2.webp",
+  "src2x": "/photos/post-essential-nutrients-50s-2@2x.webp",
+  "alt": "먹고 있는 약 이름부터 적어 봐요 일러스트"
+ },
+ "post-folic-acid-pregnancy-timing-dosage-1": {
+  "src": "/photos/post-folic-acid-pregnancy-timing-dosage-1.webp",
+  "src2x": "/photos/post-folic-acid-pregnancy-timing-dosage-1@2x.webp",
+  "alt": "임신을 계획할 때부터 엽산을 챙겨요 일러스트"
+ },
+ "post-folic-acid-pregnancy-timing-dosage-2": {
+  "src": "/photos/post-folic-acid-pregnancy-timing-dosage-2.webp",
+  "src2x": "/photos/post-folic-acid-pregnancy-timing-dosage-2@2x.webp",
+  "alt": "녹색 채소와 콩으로 식사 속 엽산을 채워요 일러스트"
+ },
+ "post-glucosamine-msm-combination-guide-1": {
+  "src": "/photos/post-glucosamine-msm-combination-guide-1.webp",
+  "src2x": "/photos/post-glucosamine-msm-combination-guide-1@2x.webp",
+  "alt": "복합 제품은 원료마다 하루 양을 따로 봐요 일러스트"
+ },
+ "post-glucosamine-msm-combination-guide-2": {
+  "src": "/photos/post-glucosamine-msm-combination-guide-2.webp",
+  "src2x": "/photos/post-glucosamine-msm-combination-guide-2@2x.webp",
+  "alt": "라벨의 1일 섭취량 기준 함량부터 확인해요 일러스트"
+ },
+ "post-glutathione-benefits-and-limits-1": {
+  "src": "/photos/post-glutathione-benefits-and-limits-1.webp",
+  "src2x": "/photos/post-glutathione-benefits-and-limits-1@2x.webp",
+  "alt": "글루타치온은 몸이 아미노산으로 만드는 물질이에요 일러스트"
+ },
+ "post-glutathione-benefits-and-limits-2": {
+  "src": "/photos/post-glutathione-benefits-and-limits-2.webp",
+  "src2x": "/photos/post-glutathione-benefits-and-limits-2@2x.webp",
+  "alt": "라벨에서 식품유형과 1일 섭취량부터 봐요 일러스트"
+ },
+ "post-gnc-milk-thistle-label-guide-1": {
+  "src": "/photos/post-gnc-milk-thistle-label-guide-1.webp",
+  "src2x": "/photos/post-gnc-milk-thistle-label-guide-1@2x.webp",
+  "alt": "라벨의 숫자를 순서대로 읽으면 비교가 쉬워요 일러스트"
+ },
+ "post-grandparents-supplement-gift-guide-3": {
+  "src": "/photos/post-grandparents-supplement-gift-guide-3.webp",
+  "src2x": "/photos/post-grandparents-supplement-gift-guide-3@2x.webp",
+  "alt": "라벨의 1일 섭취량부터 함께 읽어 보세요 일러스트"
+ },
+ "post-grandparents-supplement-gift-guide-2": {
+  "src": "/photos/post-grandparents-supplement-gift-guide-2.webp",
+  "src2x": "/photos/post-grandparents-supplement-gift-guide-2@2x.webp",
+  "alt": "드시는 시간과 양을 크게 적어 함께 드려요 일러스트"
+ },
+ "post-greencross-omega3-ingredient-guide-1": {
+  "src": "/photos/post-greencross-omega3-ingredient-guide-1.webp",
+  "src2x": "/photos/post-greencross-omega3-ingredient-guide-1@2x.webp",
+  "alt": "브랜드 이름보다 병 뒷면의 숫자를 먼저 봐요 일러스트"
+ },
+ "post-greencross-omega3-ingredient-guide-2": {
+  "src": "/photos/post-greencross-omega3-ingredient-guide-2.webp",
+  "src2x": "/photos/post-greencross-omega3-ingredient-guide-2@2x.webp",
+  "alt": "하루 몇 알인지와 1일 함량을 함께 봐요 일러스트"
+ },
+ "post-gut-health-supplement-buying-guide-1": {
+  "src": "/photos/post-gut-health-supplement-buying-guide-1.webp",
+  "src2x": "/photos/post-gut-health-supplement-buying-guide-1@2x.webp",
+  "alt": "보관 표기와 코팅 여부는 라벨 뒷면에서 확인해요 일러스트"
+ },
+ "post-gut-health-supplement-buying-guide-2": {
+  "src": "/photos/post-gut-health-supplement-buying-guide-2.webp",
+  "src2x": "/photos/post-gut-health-supplement-buying-guide-2@2x.webp",
+  "alt": "라벨 항목을 차례로 짚어 보면 비교가 쉬워요 일러스트"
+ },
+ "post-gut-microbiome-basics-1": {
+  "src": "/photos/post-gut-microbiome-basics-1.webp",
+  "src2x": "/photos/post-gut-microbiome-basics-1@2x.webp",
+  "alt": "장 속 균형은 매일의 식탁에서 시작돼요 일러스트"
+ },
+ "post-gut-microbiome-basics-2": {
+  "src": "/photos/post-gut-microbiome-basics-2.webp",
+  "src2x": "/photos/post-gut-microbiome-basics-2@2x.webp",
+  "alt": "채소와 콩, 발효식품을 고루 담아 보세요 일러스트"
+ },
+ "post-gut-probiotics-selection-guide-1": {
+  "src": "/photos/post-gut-probiotics-selection-guide-1.webp",
+  "src2x": "/photos/post-gut-probiotics-selection-guide-1@2x.webp",
+  "alt": "물과 채소 반찬부터 챙기는 게 순서예요 일러스트"
+ },
+ "post-gut-probiotics-selection-guide-2": {
+  "src": "/photos/post-gut-probiotics-selection-guide-2.webp",
+  "src2x": "/photos/post-gut-probiotics-selection-guide-2@2x.webp",
+  "alt": "균주명과 보장균수는 라벨 뒷면에서 확인해요 일러스트"
+ },
+ "post-hanmi-probiotics-guide-1": {
+  "src": "/photos/post-hanmi-probiotics-guide-1.webp",
+  "src2x": "/photos/post-hanmi-probiotics-guide-1@2x.webp",
+  "alt": "회사 이름보다 상자 뒷면 표기를 먼저 봐요 일러스트"
+ },
+ "post-hanmi-probiotics-guide-2": {
+  "src": "/photos/post-hanmi-probiotics-guide-2.webp",
+  "src2x": "/photos/post-hanmi-probiotics-guide-2@2x.webp",
+  "alt": "앞면 숫자보다 뒷면 보장균수를 먼저 봐요 일러스트"
+ },
+ "post-high-cfu-probiotics-guide-1": {
+  "src": "/photos/post-high-cfu-probiotics-guide-1.webp",
+  "src2x": "/photos/post-high-cfu-probiotics-guide-1@2x.webp",
+  "alt": "앞면의 큰 숫자보다 뒷면 표기를 먼저 봐요 일러스트"
+ },
+ "post-high-cfu-probiotics-guide-2": {
+  "src": "/photos/post-high-cfu-probiotics-guide-2.webp",
+  "src2x": "/photos/post-high-cfu-probiotics-guide-2@2x.webp",
+  "alt": "보관 방법 문구는 사고 나서도 다시 봐요 일러스트"
+ },
+ "post-high-content-vitamin-c-label-guide-1": {
+  "src": "/photos/post-high-content-vitamin-c-label-guide-1.webp",
+  "src2x": "/photos/post-high-content-vitamin-c-label-guide-1@2x.webp",
+  "alt": "앞면 숫자보다 뒷면 표부터 확인해요 일러스트"
+ },
+ "post-high-content-vitamin-c-label-guide-2": {
+  "src": "/photos/post-high-content-vitamin-c-label-guide-2.webp",
+  "src2x": "/photos/post-high-content-vitamin-c-label-guide-2@2x.webp",
+  "alt": "원재료명은 맨 앞 원료부터 읽어요 일러스트"
+ },
+ "post-high-dose-omega3-guide-2": {
+  "src": "/photos/post-high-dose-omega3-guide-2.webp",
+  "src2x": "/photos/post-high-dose-omega3-guide-2@2x.webp",
+  "alt": "등푸른생선으로 채우는 몫부터 따져 봐요 일러스트"
+ },
+ "post-high-dose-omega3-guide-3": {
+  "src": "/photos/post-high-dose-omega3-guide-3.webp",
+  "src2x": "/photos/post-high-dose-omega3-guide-3@2x.webp",
+  "alt": "라벨의 EPA와 DHA 숫자를 따로 읽어요 일러스트"
+ },
+ "post-high-dose-vitamin-c-guide-1": {
+  "src": "/photos/post-high-dose-vitamin-c-guide-1.webp",
+  "src2x": "/photos/post-high-dose-vitamin-c-guide-1@2x.webp",
+  "alt": "하루 양을 정해 두면 나눠 먹기 쉬워요 일러스트"
+ },
+ "post-high-dose-vitamin-c-guide-2": {
+  "src": "/photos/post-high-dose-vitamin-c-guide-2.webp",
+  "src2x": "/photos/post-high-dose-vitamin-c-guide-2@2x.webp",
+  "alt": "채소와 과일로 먼저 채우고 모자란 만큼 보태요 일러스트"
+ },
+ "post-high-school-multivitamin-guide-1": {
+  "src": "/photos/post-high-school-multivitamin-guide-1.webp",
+  "src2x": "/photos/post-high-school-multivitamin-guide-1@2x.webp",
+  "alt": "늦은 저녁보다 제때 먹는 끼니가 먼저예요 일러스트"
+ },
+ "post-high-school-multivitamin-guide-2": {
+  "src": "/photos/post-high-school-multivitamin-guide-2.webp",
+  "src2x": "/photos/post-high-school-multivitamin-guide-2@2x.webp",
+  "alt": "라벨에서 1일 섭취량과 원재료부터 확인해요 일러스트"
+ },
+ "post-homemade-yogurt-probiotics-guide-2": {
+  "src": "/photos/post-homemade-yogurt-probiotics-guide-2.webp",
+  "src2x": "/photos/post-homemade-yogurt-probiotics-guide-2@2x.webp",
+  "alt": "온도를 일정하게 지키는 것이 발효의 첫 조건이에요 일러스트"
+ },
+ "post-homemade-yogurt-probiotics-guide-3": {
+  "src": "/photos/post-homemade-yogurt-probiotics-guide-3.webp",
+  "src2x": "/photos/post-homemade-yogurt-probiotics-guide-3@2x.webp",
+  "alt": "도구를 소독한 뒤 발효를 시작해요 일러스트"
+ },
+ "post-how-to-choose-multivitamin-supplement-1": {
+  "src": "/photos/post-how-to-choose-multivitamin-supplement-1.webp",
+  "src2x": "/photos/post-how-to-choose-multivitamin-supplement-1@2x.webp",
+  "alt": "라벨의 1일 섭취량부터 확인해요 일러스트"
+ },
+ "post-how-to-choose-multivitamin-supplement-2": {
+  "src": "/photos/post-how-to-choose-multivitamin-supplement-2.webp",
+  "src2x": "/photos/post-how-to-choose-multivitamin-supplement-2@2x.webp",
+  "alt": "여러 제품은 겹치는 성분을 더해 봐요 일러스트"
+ },
+ "post-how-to-evaluate-probiotics-ranking-1": {
+  "src": "/photos/post-how-to-evaluate-probiotics-ranking-1.webp",
+  "src2x": "/photos/post-how-to-evaluate-probiotics-ranking-1@2x.webp",
+  "alt": "순위표 대신 라벨의 숫자를 나란히 놓고 봐요 일러스트"
+ },
+ "post-immune-supplement-guide-1": {
+  "src": "/photos/post-immune-supplement-guide-1.webp",
+  "src2x": "/photos/post-immune-supplement-guide-1@2x.webp",
+  "alt": "원료마다 라벨에 쓸 수 있는 문구가 달라요 일러스트"
+ },
+ "post-immune-supplement-guide-2": {
+  "src": "/photos/post-immune-supplement-guide-2.webp",
+  "src2x": "/photos/post-immune-supplement-guide-2@2x.webp",
+  "alt": "라벨의 기능성 문구부터 읽어 보세요 일러스트"
+ },
+ "post-in-laws-supplement-gift-guide-3": {
+  "src": "/photos/post-in-laws-supplement-gift-guide-3.webp",
+  "src2x": "/photos/post-in-laws-supplement-gift-guide-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 주의사항을 먼저 읽어 보세요 일러스트"
+ },
+ "post-in-laws-supplement-gift-guide-2": {
+  "src": "/photos/post-in-laws-supplement-gift-guide-2.webp",
+  "src2x": "/photos/post-in-laws-supplement-gift-guide-2@2x.webp",
+  "alt": "선물 상자 안 구성표를 함께 챙겨 보세요 일러스트"
+ },
+ "post-infant-iron-deficiency-guide-1": {
+  "src": "/photos/post-infant-iron-deficiency-guide-1.webp",
+  "src2x": "/photos/post-infant-iron-deficiency-guide-1@2x.webp",
+  "alt": "이유식을 시작할 때 철 음식부터 챙겨요 일러스트"
+ },
+ "post-infant-iron-deficiency-guide-2": {
+  "src": "/photos/post-infant-iron-deficiency-guide-2.webp",
+  "src2x": "/photos/post-infant-iron-deficiency-guide-2@2x.webp",
+  "alt": "고기와 두부로 이유식에 철을 더해요 일러스트"
+ },
+ "post-infant-magnesium-safety-guide-1": {
+  "src": "/photos/post-infant-magnesium-safety-guide-1.webp",
+  "src2x": "/photos/post-infant-magnesium-safety-guide-1@2x.webp",
+  "alt": "두부와 잎채소로 이유식 식단을 꾸릴 수 있어요 일러스트"
+ },
+ "post-infant-magnesium-safety-guide-2": {
+  "src": "/photos/post-infant-magnesium-safety-guide-2.webp",
+  "src2x": "/photos/post-infant-magnesium-safety-guide-2@2x.webp",
+  "alt": "라벨의 1일 섭취량과 섭취 대상을 먼저 확인해요 일러스트"
+ },
+ "post-infant-vitamin-d-guide-1": {
+  "src": "/photos/post-infant-vitamin-d-guide-1.webp",
+  "src2x": "/photos/post-infant-vitamin-d-guide-1@2x.webp",
+  "alt": "방울당 함량은 라벨에서 먼저 확인해요 일러스트"
+ },
+ "post-infant-vitamin-d-guide-2": {
+  "src": "/photos/post-infant-vitamin-d-guide-2.webp",
+  "src2x": "/photos/post-infant-vitamin-d-guide-2@2x.webp",
+  "alt": "이유식이 늘면 보충 여부를 다시 확인해요 일러스트"
+ },
+ "post-joint-collagen-type-guide-1": {
+  "src": "/photos/post-joint-collagen-type-guide-1.webp",
+  "src2x": "/photos/post-joint-collagen-type-guide-1@2x.webp",
+  "alt": "콜라겐은 부위마다 종류가 달라서 라벨부터 봐요 일러스트"
+ },
+ "post-joint-collagen-type-guide-2": {
+  "src": "/photos/post-joint-collagen-type-guide-2.webp",
+  "src2x": "/photos/post-joint-collagen-type-guide-2@2x.webp",
+  "alt": "제품 뒷면에서 원료명과 1일 섭취량을 먼저 확인해요 일러스트"
+ },
+ "post-kids-rhinitis-probiotics-guide-2": {
+  "src": "/photos/post-kids-rhinitis-probiotics-guide-2.webp",
+  "src2x": "/photos/post-kids-rhinitis-probiotics-guide-2@2x.webp",
+  "alt": "아이 식탁은 여러 가지 음식으로 골고루 차려요 일러스트"
+ },
+ "post-kids-rhinitis-probiotics-guide-3": {
+  "src": "/photos/post-kids-rhinitis-probiotics-guide-3.webp",
+  "src2x": "/photos/post-kids-rhinitis-probiotics-guide-3@2x.webp",
+  "alt": "라벨의 대상 연령과 1일 섭취량을 먼저 읽어요 일러스트"
+ },
+ "post-lactic-acid-bacteria-probiotics-difference-1": {
+  "src": "/photos/post-lactic-acid-bacteria-probiotics-difference-1.webp",
+  "src2x": "/photos/post-lactic-acid-bacteria-probiotics-difference-1@2x.webp",
+  "alt": "발효식품 속 균이 모두 프로바이오틱스는 아니에요 일러스트"
+ },
+ "post-lactic-acid-bacteria-probiotics-difference-2": {
+  "src": "/photos/post-lactic-acid-bacteria-probiotics-difference-2.webp",
+  "src2x": "/photos/post-lactic-acid-bacteria-probiotics-difference-2@2x.webp",
+  "alt": "큰 이름보다 뒷면의 균 이름을 먼저 봐요 일러스트"
+ },
+ "post-lacto-500-probiotics-guide-1": {
+  "src": "/photos/post-lacto-500-probiotics-guide-1.webp",
+  "src2x": "/photos/post-lacto-500-probiotics-guide-1@2x.webp",
+  "alt": "뒷면 표시를 읽으면 숫자의 뜻이 보여요 일러스트"
+ },
+ "post-lacto-500-probiotics-guide-2": {
+  "src": "/photos/post-lacto-500-probiotics-guide-2.webp",
+  "src2x": "/photos/post-lacto-500-probiotics-guide-2@2x.webp",
+  "alt": "보관 방법은 라벨에 적힌 대로 지켜요 일러스트"
+ },
+ "post-lactose-free-protein-powder-guide-2": {
+  "src": "/photos/post-lactose-free-protein-powder-guide-2.webp",
+  "src2x": "/photos/post-lactose-free-protein-powder-guide-2@2x.webp",
+  "alt": "콩과 곡물로 만든 단백질에는 유당이 없어요 일러스트"
+ },
+ "post-lactose-free-protein-powder-guide-3": {
+  "src": "/photos/post-lactose-free-protein-powder-guide-3.webp",
+  "src2x": "/photos/post-lactose-free-protein-powder-guide-3@2x.webp",
+  "alt": "원재료명에서 유청과 분유 표기를 먼저 봐요 일러스트"
+ },
+ "post-liposomal-glutathione-absorption-1": {
+  "src": "/photos/post-liposomal-glutathione-absorption-1.webp",
+  "src2x": "/photos/post-liposomal-glutathione-absorption-1@2x.webp",
+  "alt": "막으로 감싼 제형인지는 원재료명에서 확인해요 일러스트"
+ },
+ "post-liposomal-glutathione-absorption-2": {
+  "src": "/photos/post-liposomal-glutathione-absorption-2.webp",
+  "src2x": "/photos/post-liposomal-glutathione-absorption-2@2x.webp",
+  "alt": "달걀과 채소를 곁들인 한 끼로 재료를 챙겨요 일러스트"
+ },
+ "post-liposomal-vitamin-c-explained-1": {
+  "src": "/photos/post-liposomal-vitamin-c-explained-1.webp",
+  "src2x": "/photos/post-liposomal-vitamin-c-explained-1@2x.webp",
+  "alt": "리포좀은 제형 이름이라 함량은 따로 봐야 해요 일러스트"
+ },
+ "post-liposomal-vitamin-c-explained-2": {
+  "src": "/photos/post-liposomal-vitamin-c-explained-2.webp",
+  "src2x": "/photos/post-liposomal-vitamin-c-explained-2@2x.webp",
+  "alt": "리포좀 표기보다 1일 섭취량 기준 함량을 먼저 봐요 일러스트"
+ },
+ "post-liquid-magnesium-absorption-guide-1": {
+  "src": "/photos/post-liquid-magnesium-absorption-guide-1.webp",
+  "src2x": "/photos/post-liquid-magnesium-absorption-guide-1@2x.webp",
+  "alt": "액상은 계량컵으로 양을 재서 먹는 제형이에요 일러스트"
+ },
+ "post-liquid-magnesium-absorption-guide-2": {
+  "src": "/photos/post-liquid-magnesium-absorption-guide-2.webp",
+  "src2x": "/photos/post-liquid-magnesium-absorption-guide-2@2x.webp",
+  "alt": "원재료명에서 당류와 감미료를 함께 확인해요 일러스트"
+ },
+ "post-liquid-vitamin-d-guide-1": {
+  "src": "/photos/post-liquid-vitamin-d-guide-1.webp",
+  "src2x": "/photos/post-liquid-vitamin-d-guide-1@2x.webp",
+  "alt": "방울당 함량은 라벨에서 먼저 확인해요 일러스트"
+ },
+ "post-liquid-vitamin-d-guide-2": {
+  "src": "/photos/post-liquid-vitamin-d-guide-2.webp",
+  "src2x": "/photos/post-liquid-vitamin-d-guide-2@2x.webp",
+  "alt": "개봉한 날짜를 적어 두면 사용기한을 놓치지 않아요 일러스트"
+ },
+ "post-magnesium-price-per-day-guide-1": {
+  "src": "/photos/post-magnesium-price-per-day-guide-1.webp",
+  "src2x": "/photos/post-magnesium-price-per-day-guide-1@2x.webp",
+  "alt": "통 가격보다 하루 값을 먼저 계산해 보세요 일러스트"
+ },
+ "post-magnesium-price-per-day-guide-2": {
+  "src": "/photos/post-magnesium-price-per-day-guide-2.webp",
+  "src2x": "/photos/post-magnesium-price-per-day-guide-2@2x.webp",
+  "alt": "라벨의 영양·기능정보에서 1일 함량을 찾아요 일러스트"
+ },
+ "post-megadose-vitamin-c-therapy-debate-1": {
+  "src": "/photos/post-megadose-vitamin-c-therapy-debate-1.webp",
+  "src2x": "/photos/post-megadose-vitamin-c-therapy-debate-1@2x.webp",
+  "alt": "메가도스 논쟁은 하루 몇 mg을 먹느냐에서 시작돼요 일러스트"
+ },
+ "post-megadose-vitamin-c-therapy-debate-2": {
+  "src": "/photos/post-megadose-vitamin-c-therapy-debate-2.webp",
+  "src2x": "/photos/post-megadose-vitamin-c-therapy-debate-2@2x.webp",
+  "alt": "알약으로 먹는 양과 혈중 농도는 비례하지 않아요 일러스트"
+ },
+ "post-menopause-collagen-estrogen-guide-1": {
+  "src": "/photos/post-menopause-collagen-estrogen-guide-1.webp",
+  "src2x": "/photos/post-menopause-collagen-estrogen-guide-1@2x.webp",
+  "alt": "갱년기 피부 변화는 호르몬 변화와 함께 봐요 일러스트"
+ },
+ "post-menopause-collagen-estrogen-guide-2": {
+  "src": "/photos/post-menopause-collagen-estrogen-guide-2.webp",
+  "src2x": "/photos/post-menopause-collagen-estrogen-guide-2@2x.webp",
+  "alt": "라벨의 원료명과 1일 섭취량부터 확인해요 일러스트"
+ },
+ "post-menopause-hormone-support-nutrients-1": {
+  "src": "/photos/post-menopause-hormone-support-nutrients-1.webp",
+  "src2x": "/photos/post-menopause-hormone-support-nutrients-1@2x.webp",
+  "alt": "달라지는 몸을 먼저 알아 두면 고르기 쉬워요 일러스트"
+ },
+ "post-menopause-hormone-support-nutrients-2": {
+  "src": "/photos/post-menopause-hormone-support-nutrients-2.webp",
+  "src2x": "/photos/post-menopause-hormone-support-nutrients-2@2x.webp",
+  "alt": "라벨의 1일 섭취량 기준 함량부터 확인해요 일러스트"
+ },
+ "post-menopause-probiotics-guide-1": {
+  "src": "/photos/post-menopause-probiotics-guide-1.webp",
+  "src2x": "/photos/post-menopause-probiotics-guide-1@2x.webp",
+  "alt": "완경 전후에는 식사와 생활 리듬도 함께 바뀌어요 일러스트"
+ },
+ "post-menopause-probiotics-guide-2": {
+  "src": "/photos/post-menopause-probiotics-guide-2.webp",
+  "src2x": "/photos/post-menopause-probiotics-guide-2@2x.webp",
+  "alt": "라벨의 원재료명에서 균주 이름을 볼 수 있어요 일러스트"
+ },
+ "post-milestone-birthday-supplement-gift-guide-3": {
+  "src": "/photos/post-milestone-birthday-supplement-gift-guide-3.webp",
+  "src2x": "/photos/post-milestone-birthday-supplement-gift-guide-3@2x.webp",
+  "alt": "라벨의 1일 섭취량과 기능성 문구부터 보세요 일러스트"
+ },
+ "post-milestone-birthday-supplement-gift-guide-2": {
+  "src": "/photos/post-milestone-birthday-supplement-gift-guide-2.webp",
+  "src2x": "/photos/post-milestone-birthday-supplement-gift-guide-2@2x.webp",
+  "alt": "축하 카드와 함께 먹는 방법을 적어 두세요 일러스트"
+ },
+ "post-milk-thistle-silymarin-buying-guide-1": {
+  "src": "/photos/post-milk-thistle-silymarin-buying-guide-1.webp",
+  "src2x": "/photos/post-milk-thistle-silymarin-buying-guide-1@2x.webp",
+  "alt": "밀크씨슬은 씨앗에서 뽑은 실리마린을 먼저 봐요 일러스트"
+ },
+ "post-milk-thistle-silymarin-buying-guide-2": {
+  "src": "/photos/post-milk-thistle-silymarin-buying-guide-2.webp",
+  "src2x": "/photos/post-milk-thistle-silymarin-buying-guide-2@2x.webp",
+  "alt": "라벨의 실리마린 mg과 하루 알 수를 함께 봐요 일러스트"
+ },
+ "post-multivitamin-choose-by-purpose-1": {
+  "src": "/photos/post-multivitamin-choose-by-purpose-1.webp",
+  "src2x": "/photos/post-multivitamin-choose-by-purpose-1@2x.webp",
+  "alt": "성별과 나이에 따라 먼저 볼 성분이 달라요 일러스트"
+ },
+ "post-multivitamin-choose-by-purpose-2": {
+  "src": "/photos/post-multivitamin-choose-by-purpose-2.webp",
+  "src2x": "/photos/post-multivitamin-choose-by-purpose-2@2x.webp",
+  "alt": "목적과 맞는 성분이 라벨에 있는지 봐요 일러스트"
+ },
+ "post-multivitamin-evidence-3": {
+  "src": "/photos/post-multivitamin-evidence-3.webp",
+  "src2x": "/photos/post-multivitamin-evidence-3@2x.webp",
+  "alt": "라벨에서 성분별 함량을 먼저 확인해 보세요 일러스트"
+ },
+ "post-multivitamin-for-20s-1": {
+  "src": "/photos/post-multivitamin-for-20s-1.webp",
+  "src2x": "/photos/post-multivitamin-for-20s-1@2x.webp",
+  "alt": "다섯 가지 식품군이 고루 오른 한 끼가 기본이에요 일러스트"
+ },
+ "post-multivitamin-for-20s-2": {
+  "src": "/photos/post-multivitamin-for-20s-2.webp",
+  "src2x": "/photos/post-multivitamin-for-20s-2@2x.webp",
+  "alt": "라벨의 1일 섭취량과 성분 함량부터 확인해요 일러스트"
+ },
+ "post-multivitamin-for-30s-1": {
+  "src": "/photos/post-multivitamin-for-30s-1.webp",
+  "src2x": "/photos/post-multivitamin-for-30s-1@2x.webp",
+  "alt": "낮에 잠깐이라도 밖에 나가는 시간을 챙겨 보세요 일러스트"
+ },
+ "post-multivitamin-for-30s-2": {
+  "src": "/photos/post-multivitamin-for-30s-2.webp",
+  "src2x": "/photos/post-multivitamin-for-30s-2@2x.webp",
+  "alt": "라벨의 1일 섭취량 기준 함량부터 확인해요 일러스트"
+ },
+ "post-multivitamin-for-40s-1": {
+  "src": "/photos/post-multivitamin-for-40s-1.webp",
+  "src2x": "/photos/post-multivitamin-for-40s-1@2x.webp",
+  "alt": "검진표를 먼저 보면 챙길 성분이 좁혀져요 일러스트"
+ },
+ "post-multivitamin-for-40s-2": {
+  "src": "/photos/post-multivitamin-for-40s-2.webp",
+  "src2x": "/photos/post-multivitamin-for-40s-2@2x.webp",
+  "alt": "눈 건강 성분은 라벨에서 함량을 따로 확인해요 일러스트"
+ },
+ "post-multivitamin-for-60s-1": {
+  "src": "/photos/post-multivitamin-for-60s-1.webp",
+  "src2x": "/photos/post-multivitamin-for-60s-1@2x.webp",
+  "alt": "먹는 약과 영양제를 한자리에 모아 확인해 보세요 일러스트"
+ },
+ "post-multivitamin-for-60s-2": {
+  "src": "/photos/post-multivitamin-for-60s-2.webp",
+  "src2x": "/photos/post-multivitamin-for-60s-2@2x.webp",
+  "alt": "하루 한 번 같은 끼니에 맞춰 두면 잊지 않아요 일러스트"
+ },
+ "post-multivitamin-for-middle-school-students-1": {
+  "src": "/photos/post-multivitamin-for-middle-school-students-1.webp",
+  "src2x": "/photos/post-multivitamin-for-middle-school-students-1@2x.webp",
+  "alt": "우유와 생선, 채소가 함께 오른 밥상이 먼저예요 일러스트"
+ },
+ "post-multivitamin-for-middle-school-students-2": {
+  "src": "/photos/post-multivitamin-for-middle-school-students-2.webp",
+  "src2x": "/photos/post-multivitamin-for-middle-school-students-2@2x.webp",
+  "alt": "라벨에서 섭취 대상과 1일 섭취량부터 봐요 일러스트"
+ },
+ "post-multivitamin-ingredient-standards-1": {
+  "src": "/photos/post-multivitamin-ingredient-standards-1.webp",
+  "src2x": "/photos/post-multivitamin-ingredient-standards-1@2x.webp",
+  "alt": "성분표는 비타민과 미네랄로 나눠 읽어요 일러스트"
+ },
+ "post-multivitamin-ingredient-standards-2": {
+  "src": "/photos/post-multivitamin-ingredient-standards-2.webp",
+  "src2x": "/photos/post-multivitamin-ingredient-standards-2@2x.webp",
+  "alt": "제형마다 담을 수 있는 성분 폭이 달라요 일러스트"
+ },
+ "post-multivitamin-ingredient-verification-guide-1": {
+  "src": "/photos/post-multivitamin-ingredient-verification-guide-1.webp",
+  "src2x": "/photos/post-multivitamin-ingredient-verification-guide-1@2x.webp",
+  "alt": "포장 앞면의 마크와 문구부터 확인해요 일러스트"
+ },
+ "post-multivitamin-ingredient-verification-guide-2": {
+  "src": "/photos/post-multivitamin-ingredient-verification-guide-2.webp",
+  "src2x": "/photos/post-multivitamin-ingredient-verification-guide-2@2x.webp",
+  "alt": "여러 제품의 성분표를 나란히 놓고 더해 봐요 일러스트"
+ },
+ "post-multivitamin-men-30s-1": {
+  "src": "/photos/post-multivitamin-men-30s-1.webp",
+  "src2x": "/photos/post-multivitamin-men-30s-1@2x.webp",
+  "alt": "끼니마다 단백질 반찬 하나를 먼저 정해 두세요 일러스트"
+ },
+ "post-multivitamin-men-30s-2": {
+  "src": "/photos/post-multivitamin-men-30s-2.webp",
+  "src2x": "/photos/post-multivitamin-men-30s-2@2x.webp",
+  "alt": "라벨의 1일 섭취량과 함량을 먼저 확인해요 일러스트"
+ },
+ "post-multivitamin-men-40s-2": {
+  "src": "/photos/post-multivitamin-men-40s-2.webp",
+  "src2x": "/photos/post-multivitamin-men-40s-2@2x.webp",
+  "alt": "검진 결과지부터 펼쳐 보면 챙길 성분이 보여요 일러스트"
+ },
+ "post-multivitamin-men-40s-3": {
+  "src": "/photos/post-multivitamin-men-40s-3.webp",
+  "src2x": "/photos/post-multivitamin-men-40s-3@2x.webp",
+  "alt": "라벨의 1일 섭취량 기준 함량부터 보세요 일러스트"
  }
 }
