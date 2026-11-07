@@ -112,7 +112,7 @@
     "원형탈모 아연",
     "원형탈모영양제"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "scalp-hair-loss-nutrients-guide",
     "oral-hair-loss-nutrients-guide",
@@ -126,5 +126,6 @@
       "why": "생활에서 챙길 것: 머리카락이 빠진 자리를 햇빛에서 가리기"
     }
   ],
-  "heroPhoto": "body-hair-3"
+  "heroPhoto": "body-hair-3",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

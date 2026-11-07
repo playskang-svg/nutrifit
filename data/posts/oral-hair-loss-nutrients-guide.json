@@ -103,11 +103,12 @@
     "철분 아연 비오틴",
     "머리카락 빠짐"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "biotin-hair-loss-supplement-guide",
     "scalp-hair-loss-nutrients-guide",
     "alopecia-areata-nutrition-guide"
   ],
-  "heroPhoto": "body-hair-1"
+  "heroPhoto": "body-hair-1",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

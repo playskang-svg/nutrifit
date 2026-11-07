@@ -99,12 +99,13 @@
     "페리틴 수치",
     "만성피로"
   ],
-  "publishedAt": "2026-09-09T09:00:00+09:00",
+  "publishedAt": "2026-09-09T00:00:00.000Z",
   "relatedPosts": [
     "iron-deficiency-anemia-korea",
     "vitamin-b12-deficiency",
     "non-heme-iron-absorption-guide",
     "coffee-nutrient-absorption"
   ],
-  "heroPhoto": "nutrient-iron-3"
+  "heroPhoto": "nutrient-iron-3",
+  "updatedAtDisplay": "2026-09-09T00:00:00.000Z"
 }

@@ -107,7 +107,7 @@
     "눈 영양제",
     "모니터 눈 건조"
   ],
-  "publishedAt": "2026-09-09T09:00:00+09:00",
+  "publishedAt": "2026-09-09T00:00:00.000Z",
   "relatedPosts": [
     "dry-eye-supplement-guide",
     "doctorin-lutein-zeaxanthin-ratio-guide",
@@ -126,5 +126,6 @@
       "why": "화면 습관 소제목의 덥고 건조한 방에서 습도를 올리는 방법과 이어져요"
     }
   ],
-  "heroPhoto": "body-eye-1"
+  "heroPhoto": "body-eye-1",
+  "updatedAtDisplay": "2026-09-09T00:00:00.000Z"
 }

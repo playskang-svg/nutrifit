@@ -100,12 +100,13 @@
     "계절성 정동장애 식욕",
     "가을 비타민D"
   ],
-  "publishedAt": "2026-10-06T09:00:00+09:00",
+  "publishedAt": "2026-10-06T00:00:00.000Z",
   "relatedPosts": [
     "vitamin-d-deficiency-korea",
     "vitamin-d-2000iu-daily-dose",
     "shift-work-nutrition",
     "stress-cortisol-evening-health"
   ],
-  "heroPhoto": "nutrient-vitamin-d-1"
+  "heroPhoto": "nutrient-vitamin-d-1",
+  "updatedAtDisplay": "2026-10-06T00:00:00.000Z"
 }

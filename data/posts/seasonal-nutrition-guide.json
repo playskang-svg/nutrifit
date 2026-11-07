@@ -104,12 +104,13 @@
     "계절 바뀔 때 건강관리",
     "환절기 비타민D"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "seasonal-dry-skin-nutrition",
     "seasonal-sore-throat-nutrition",
     "seasonal-hives-nutrition",
     "seasonal-otitis-media-children"
   ],
-  "heroPhoto": "body-immunity-1"
+  "heroPhoto": "body-immunity-1",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

@@ -113,11 +113,12 @@
     "아토피 목욕법",
     "아토피 감염 신호"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "seasonal-dry-skin-nutrition",
     "seasonal-hives-nutrition",
     "dry-skin-nutrient-causes"
   ],
-  "heroPhoto": "body-skin-3"
+  "heroPhoto": "body-skin-3",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

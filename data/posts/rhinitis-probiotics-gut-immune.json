@@ -105,7 +105,7 @@
     "프로바이오틱스 기능성",
     "유산균 라벨 보는 법"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "kids-rhinitis-probiotics-guide",
     "runny-nose-nutrition",
@@ -119,5 +119,6 @@
       "why": "생활에서 먼저 바꿔 볼 것: 생리식염수로 코를 헹구는 습관"
     }
   ],
-  "heroPhoto": "nutrient-probiotics-3"
+  "heroPhoto": "nutrient-probiotics-3",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

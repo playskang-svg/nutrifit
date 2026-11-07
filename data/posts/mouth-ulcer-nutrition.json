@@ -102,7 +102,7 @@
     "구내염 비타민",
     "구내염 증상"
   ],
-  "publishedAt": "2026-09-09T09:00:00+09:00",
+  "publishedAt": "2026-09-09T00:00:00.000Z",
   "relatedPosts": [
     "always-tired-iron-b12",
     "vitamin-b12-deficiency",
@@ -125,5 +125,6 @@
       "why": "집에서 해볼 것의 부드러운 모 칫솔로 바꾸기"
     }
   ],
-  "heroPhoto": "body-mouth-1"
+  "heroPhoto": "body-mouth-1",
+  "updatedAtDisplay": "2026-09-09T00:00:00.000Z"
 }

@@ -114,12 +114,13 @@
     "마그네슘 상한섭취량",
     "종아리 스트레칭"
   ],
-  "publishedAt": "2026-09-09T09:00:00+09:00",
+  "publishedAt": "2026-09-09T00:00:00.000Z",
   "relatedPosts": [
     "eyelid-twitching-magnesium-link",
     "magnesium-price-per-day-guide",
     "liquid-magnesium-absorption-guide"
   ],
   "productNeeds": [],
-  "heroPhoto": "nutrient-magnesium-1"
+  "heroPhoto": "nutrient-magnesium-1",
+  "updatedAtDisplay": "2026-09-09T00:00:00.000Z"
 }

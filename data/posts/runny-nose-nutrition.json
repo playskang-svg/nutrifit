@@ -108,7 +108,7 @@
     "아침 콧물",
     "아연 상한섭취량"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "sinusitis-symptoms-nutrition-guide",
     "seasonal-nutrition-guide",
@@ -132,5 +132,6 @@
       "why": "생활에서 먼저 바꿔 볼 것: 식염수로 코를 씻어 내는 관리"
     }
   ],
-  "heroPhoto": "body-immunity-1"
+  "heroPhoto": "body-immunity-1",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

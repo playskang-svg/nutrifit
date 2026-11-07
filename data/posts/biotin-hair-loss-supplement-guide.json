@@ -102,11 +102,12 @@
     "비오틴 혈액검사",
     "비오틴 하루 섭취량"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "oral-hair-loss-nutrients-guide",
     "scalp-hair-loss-nutrients-guide",
     "alopecia-areata-nutrition-guide"
   ],
-  "heroPhoto": "nutrient-biotin-3"
+  "heroPhoto": "nutrient-biotin-3",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

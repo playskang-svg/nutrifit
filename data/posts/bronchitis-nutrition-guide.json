@@ -102,7 +102,7 @@
     "비타민A 상한섭취량",
     "기관지 점막 비타민A"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "seasonal-phlegm-cough-nutrition",
     "seasonal-tonsillitis-nutrition",
@@ -116,5 +116,6 @@
       "why": "집에서 먼저 해 볼 것: 깨끗하게 관리한 가습기로 실내 공기를 촉촉하게"
     }
   ],
-  "heroPhoto": "body-immunity-2"
+  "heroPhoto": "body-immunity-2",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

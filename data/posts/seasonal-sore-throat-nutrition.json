@@ -118,12 +118,13 @@
     "소금물 가글",
     "인후염 병원 가야 할 때"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "seasonal-tonsillitis-nutrition",
     "seasonal-phlegm-cough-nutrition",
     "seasonal-nutrition-guide",
     "seasonal-herbal-tea-guide"
   ],
-  "heroPhoto": "body-immunity-1"
+  "heroPhoto": "body-immunity-1",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

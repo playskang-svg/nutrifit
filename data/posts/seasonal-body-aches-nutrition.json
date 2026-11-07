@@ -125,7 +125,7 @@
     "오한",
     "비타민D 상한섭취량"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "seasonal-sore-throat-nutrition",
     "seasonal-tonsillitis-nutrition",
@@ -144,5 +144,6 @@
       "why": "오한이 먼저 왔다면: 열이 오르내리는지 확인하기"
     }
   ],
-  "heroPhoto": "body-immunity-1"
+  "heroPhoto": "body-immunity-1",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

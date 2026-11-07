@@ -110,7 +110,7 @@
     "유스타키오관",
     "삼출성 중이염"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "toddler-rhinitis-nutrition-guide",
     "kids-rhinitis-probiotics-guide",
@@ -129,5 +129,6 @@
       "why": "집에 두면 편한 도구: 코를 풀지 못하는 아기의 콧물을 닦아 낼 때"
     }
   ],
-  "heroPhoto": "life-kids-2"
+  "heroPhoto": "life-kids-2",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

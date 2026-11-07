@@ -95,7 +95,7 @@
     "만성 두드러기",
     "두드러기 병원"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "seasonal-atopic-dermatitis-flare",
     "seasonal-dry-skin-nutrition",
@@ -109,5 +109,6 @@
       "why": "생활 습관 소제목의 보습제를 꾸준히 바르기"
     }
   ],
-  "heroPhoto": "body-skin-3"
+  "heroPhoto": "body-skin-3",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

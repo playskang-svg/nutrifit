@@ -109,12 +109,13 @@
     "인공눈물 고르는 법",
     "쇼그렌증후군 안구건조"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "eye-strain-screen-lutein",
     "omega3-rtg-vs-ee-form",
     "omega3-supplement-dosage-guide",
     "eyelid-twitching-magnesium-link"
   ],
-  "heroPhoto": "body-eye-1"
+  "heroPhoto": "body-eye-1",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

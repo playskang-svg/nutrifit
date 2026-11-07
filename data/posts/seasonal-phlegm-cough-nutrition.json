@@ -117,12 +117,13 @@
       "why": "자꾸 나올 때의 미세먼지 짙은 날 바깥 활동용"
     }
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "bronchitis-nutrition-guide",
     "seasonal-sore-throat-nutrition",
     "seasonal-nutrition-guide",
     "seasonal-herbal-tea-guide"
   ],
-  "heroPhoto": "body-immunity-2"
+  "heroPhoto": "body-immunity-2",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }

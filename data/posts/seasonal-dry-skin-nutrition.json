@@ -99,12 +99,13 @@
     "보습제 성분",
     "오메가3비타민E"
   ],
-  "publishedAt": "2026-09-13T09:00:00+09:00",
+  "publishedAt": "2026-09-13T00:00:00.000Z",
   "relatedPosts": [
     "seasonal-atopic-dermatitis-flare",
     "seasonal-hives-nutrition",
     "dry-skin-nutrient-causes",
     "seasonal-nutrition-guide"
   ],
-  "heroPhoto": "body-skin-1"
+  "heroPhoto": "body-skin-1",
+  "updatedAtDisplay": "2026-09-13T00:00:00.000Z"
 }
