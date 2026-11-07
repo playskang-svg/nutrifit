@@ -20,6 +20,7 @@
     }
   ],
   "r2_buckets": [{ "binding": "R2", "bucket_name": "nutrifit-media", "remote": true }],
-  "vars": { "SITE_HOST": "preview" },
+  "routes": [{ "pattern": "nutrifit.kr", "custom_domain": true }],
+  "vars": { "SITE_HOST": "nutrifit.kr" },
   "triggers": { "crons": ["0 0,4,11 * * *"] }
 }
