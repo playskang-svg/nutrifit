@@ -5,6 +5,7 @@ import { cache } from 'react'
 import { ArticleEnd } from '@/components/ArticleEnd'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { FaqList } from '@/components/FaqList'
+import { Illustration, subject } from '@/components/Illustration'
 import { IntakeBar } from '@/components/IntakeBar'
 import { JsonLd } from '@/components/JsonLd'
 import { MobileToc } from '@/components/MobileToc'
@@ -88,6 +89,7 @@ export default async function NutrientPage({ params }: Props) {
           {hasText(item.deficiency) || hasText(item.excess) ? (
             <section>
               <h2 id="signs">부족하거나 넘칠 때</h2>
+              <Illustration caption={`${item.name} 부족·과다 때 몸이 보내는 신호`} photo={`nutrient-${item.slug}-signs`} />
               {hasText(item.deficiency) ? (
                 <>
                   <h3>부족하면</h3>
@@ -138,6 +140,7 @@ export default async function NutrientPage({ params }: Props) {
           {foods.length ? (
             <section>
               <h2 id="foods">많이 든 음식</h2>
+              <Illustration caption={`${subject(item.name)} 많이 든 음식`} photo={`nutrient-${item.slug}-foods`} />
               <div aria-label={`${item.name}이 많은 음식`} className="compare" role="region" tabIndex={0}>
                 <table>
                   <thead>
