@@ -112,6 +112,12 @@
     "가르시니아 복용시간"
   ],
   "heroPhoto": "nutrient-garcinia-1",
-  "picks": [],
+  "picks": [
+    "garcinia-1",
+    "garcinia-2",
+    "garcinia-3",
+    "garcinia-4",
+    "garcinia-5"
+  ],
   "order": 50
 }

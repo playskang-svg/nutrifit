@@ -189,6 +189,12 @@
     "칼륨 영양제"
   ],
   "heroPhoto": "nutrient-potassium-1",
-  "picks": [],
+  "picks": [
+    "potassium-1",
+    "potassium-2",
+    "potassium-3",
+    "potassium-4",
+    "potassium-5"
+  ],
   "order": 22
 }

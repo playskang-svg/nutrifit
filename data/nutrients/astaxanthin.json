@@ -98,6 +98,11 @@
     "아스타잔틴 하루 섭취량"
   ],
   "heroPhoto": "nutrient-astaxanthin-1",
-  "picks": [],
+  "picks": [
+    "astaxanthin-1",
+    "astaxanthin-2",
+    "astaxanthin-3",
+    "astaxanthin-4"
+  ],
   "order": 36
 }

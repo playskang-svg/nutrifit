@@ -95,6 +95,12 @@
     "저분자콜라겐히알루론산"
   ],
   "heroPhoto": "nutrient-hyaluronic-acid-1",
-  "picks": [],
+  "picks": [
+    "hyaluronic-acid-1",
+    "hyaluronic-acid-2",
+    "hyaluronic-acid-3",
+    "hyaluronic-acid-4",
+    "hyaluronic-acid-5"
+  ],
   "order": 41
 }

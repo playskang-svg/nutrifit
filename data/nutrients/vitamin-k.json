@@ -164,6 +164,12 @@
     "비타민K2비타민D"
   ],
   "heroPhoto": "nutrient-vitamin-k-1",
-  "picks": [],
+  "picks": [
+    "vitamin-k-1",
+    "vitamin-k-2",
+    "vitamin-k-3",
+    "vitamin-k-4",
+    "vitamin-k-5"
+  ],
   "order": 14
 }

@@ -116,6 +116,12 @@
     "녹차추출물 카페인"
   ],
   "heroPhoto": "nutrient-green-tea-extract-1",
-  "picks": [],
+  "picks": [
+    "green-tea-extract-1",
+    "green-tea-extract-2",
+    "green-tea-extract-3",
+    "green-tea-extract-4",
+    "green-tea-extract-5"
+  ],
   "order": 49
 }

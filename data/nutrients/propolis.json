@@ -101,6 +101,12 @@
     "프로폴리스 플라보노이드"
   ],
   "heroPhoto": "nutrient-propolis-1",
-  "picks": [],
+  "picks": [
+    "propolis-1",
+    "propolis-2",
+    "propolis-3",
+    "propolis-4",
+    "propolis-5"
+  ],
   "order": 46
 }

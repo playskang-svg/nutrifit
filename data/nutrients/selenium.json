@@ -126,6 +126,8 @@
     "셀레늄 많은 음식"
   ],
   "heroPhoto": "nutrient-selenium-1",
-  "picks": [],
+  "picks": [
+    "selenium-1"
+  ],
   "order": 20
 }

@@ -135,6 +135,10 @@
     "루테인지아잔틴아스타잔틴추천"
   ],
   "heroPhoto": "nutrient-zeaxanthin-1",
-  "picks": [],
+  "picks": [
+    "zeaxanthin-1",
+    "zeaxanthin-2",
+    "zeaxanthin-3"
+  ],
   "order": 35
 }

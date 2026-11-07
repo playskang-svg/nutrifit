@@ -95,6 +95,11 @@
     "유산균프리바이오틱스"
   ],
   "heroPhoto": "nutrient-prebiotics-1",
-  "picks": [],
+  "picks": [
+    "prebiotics-1",
+    "prebiotics-3",
+    "prebiotics-4",
+    "prebiotics-5"
+  ],
   "order": 28
 }

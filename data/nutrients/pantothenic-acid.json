@@ -121,6 +121,11 @@
     "비타민B5 부작용"
   ],
   "heroPhoto": "nutrient-pantothenic-acid-1",
-  "picks": [],
+  "picks": [
+    "pantothenic-acid-1",
+    "pantothenic-acid-2",
+    "pantothenic-acid-4",
+    "pantothenic-acid-5"
+  ],
   "order": 5
 }

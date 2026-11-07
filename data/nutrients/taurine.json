@@ -124,6 +124,12 @@
     "타우린분말"
   ],
   "heroPhoto": "nutrient-taurine-1",
-  "picks": [],
+  "picks": [
+    "taurine-1",
+    "taurine-2",
+    "taurine-3",
+    "taurine-4",
+    "taurine-5"
+  ],
   "order": 32
 }

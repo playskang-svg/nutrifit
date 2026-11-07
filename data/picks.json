@@ -8687,5 +8687,2115 @@
       "collectedAt": "2026-11-05"
     },
     "checkedAt": "2026-11-05"
+  },
+  {
+    "id": "astaxanthin-1",
+    "kind": "supplement",
+    "name": "닥터린 올인원 루테인 지아잔틴 아스타잔틴, 60정, 3개",
+    "brand": "닥터린",
+    "coupangProductId": 8214957343,
+    "link": "p-8214957343",
+    "image": "/products/8214957343.webp",
+    "nutrient": "astaxanthin",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 50600,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "astaxanthin-2",
+    "kind": "supplement",
+    "name": "보령 루테인 지아잔틴 아스타잔틴 플러스, 30정, 6개",
+    "brand": "보령",
+    "coupangProductId": 8643265737,
+    "link": "p-8643265737",
+    "image": "/products/8643265737.webp",
+    "nutrient": "astaxanthin",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "30정",
+    "ulChecked": false,
+    "price": {
+      "value": 55190,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "astaxanthin-3",
+    "kind": "supplement",
+    "name": "뉴트리코어 루테인지아잔틴 아스타잔틴 레티놀A, 150정, 1개",
+    "brand": "뉴트리코어",
+    "coupangProductId": 8933771965,
+    "link": "p-8933771965",
+    "image": "/products/8933771965.webp",
+    "nutrient": "astaxanthin",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "150정",
+    "ulChecked": false,
+    "price": {
+      "value": 104960,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "astaxanthin-4",
+    "kind": "supplement",
+    "name": "아스타잔틴 24mg 캡슐 - 항산화제 채식주의자에게 적합, 120정, 1개",
+    "brand": "",
+    "coupangProductId": 8304962610,
+    "link": "p-8304962610",
+    "image": "/products/8304962610.webp",
+    "nutrient": "astaxanthin",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "아스타잔틴",
+        "amount": 24,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "아스타잔틴 24mg, 캡슐, 120정",
+    "ulChecked": false,
+    "price": {
+      "value": 23580,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "boswellia-1",
+    "kind": "supplement",
+    "name": "프롬바이오 관절연골 엔 보스웰리아 25.5g, 30정, 4개",
+    "brand": "프롬바이오",
+    "coupangProductId": 9060969687,
+    "link": "p-9060969687",
+    "image": "/products/9060969687.webp",
+    "nutrient": "boswellia",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "30정",
+    "ulChecked": false,
+    "price": {
+      "value": 75890,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "boswellia-2",
+    "kind": "supplement",
+    "name": "프롬바이오 관절연골엔 보스웰리아, 120정, 1개",
+    "brand": "프롬바이오",
+    "coupangProductId": 9060969687,
+    "link": "p-9060969687",
+    "image": "/products/9060969687.webp",
+    "nutrient": "boswellia",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 37150,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "boswellia-3",
+    "kind": "supplement",
+    "name": "닥터메인유 철갑상어 콘드로이친 보스웰리아 1400 POWER, 60정, 3개",
+    "brand": "닥터메인유",
+    "coupangProductId": 7041609492,
+    "link": "p-7041609492",
+    "image": "/products/7041609492.webp",
+    "nutrient": "boswellia",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 114640,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "boswellia-4",
+    "kind": "supplement",
+    "name": "JW중외제약 프리미엄 보스웰리아 마스터, 60정, 3개",
+    "brand": "JW중외제약",
+    "coupangProductId": 9335142164,
+    "link": "p-9335142164",
+    "image": "/products/9335142164.webp",
+    "nutrient": "boswellia",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 38500,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "boswellia-5",
+    "kind": "supplement",
+    "name": "뉴트리원 더블 업 보스웰리아 추출물분말 30.009g, 30정, 15개",
+    "brand": "뉴트리원",
+    "coupangProductId": 6184057927,
+    "link": "p-6184057927",
+    "image": "/products/6184057927.webp",
+    "nutrient": "boswellia",
+    "form": "분말",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "분말, 30정",
+    "ulChecked": false,
+    "price": {
+      "value": 142500,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chlorella-1",
+    "kind": "supplement",
+    "name": "대상웰라이프 클로렐라 뉴, 700정, 2개",
+    "brand": "자체브랜드",
+    "coupangProductId": 7591834488,
+    "link": "p-7591834488",
+    "image": "/products/7591834488.webp",
+    "nutrient": "chlorella",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "700정",
+    "ulChecked": false,
+    "price": {
+      "value": 44010,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chlorella-2",
+    "kind": "supplement",
+    "name": "대상웰라이프 정품 면역엔 클로렐라 30p, 81g, 1개",
+    "brand": "대상웰라이프",
+    "coupangProductId": 7355847293,
+    "link": "p-7355847293",
+    "image": "/products/7355847293.webp",
+    "nutrient": "chlorella",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 18340,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chlorella-3",
+    "kind": "supplement",
+    "name": "대상웰라이프 면역엔 클로렐라, 81g, 2개",
+    "brand": "대상웰라이프",
+    "coupangProductId": 7355847293,
+    "link": "p-7355847293",
+    "image": "/products/7355847293.webp",
+    "nutrient": "chlorella",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 36680,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chlorella-4",
+    "kind": "supplement",
+    "name": "튼튼닷컴 클로렐라 (1400정) - 총 엽록소 90 mg / 항산화에 도움을 줄 수 있는 건강기능식품 / 정품, 클로렐라 (1400정) - 총 엽록소 90 mg / 피, 1400정, 350g, 1개",
+    "brand": "튼튼닷컴",
+    "coupangProductId": 8983764037,
+    "link": "p-8983764037",
+    "image": "/products/8983764037.webp",
+    "nutrient": "chlorella",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": true,
+    "reason": "1400정",
+    "ulChecked": false,
+    "price": {
+      "value": 35910,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chlorella-5",
+    "kind": "supplement",
+    "name": "일본 아사히고도 아사히뉴클로렐라 대용량 1550정 클로렐라 100%, 310g, 1개",
+    "brand": "아사히",
+    "coupangProductId": 7593483681,
+    "link": "p-7593483681",
+    "image": "/products/7593483681.webp",
+    "nutrient": "chlorella",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "1550정",
+    "ulChecked": false,
+    "price": {
+      "value": 45800,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chromium-1",
+    "kind": "supplement",
+    "name": "헬스헬퍼 맥스컷 프로 크롬, 120정, 1개",
+    "brand": "헬스헬퍼",
+    "coupangProductId": 8835750104,
+    "link": "p-8835750104",
+    "image": "/products/8835750104.webp",
+    "nutrient": "chromium",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 37600,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chromium-2",
+    "kind": "supplement",
+    "name": "나우푸드 GTF-크롬 200mcg 타블렛, 1개, 250정",
+    "brand": "나우푸드",
+    "coupangProductId": 333452060,
+    "link": "p-333452060",
+    "image": "/products/333452060.webp",
+    "nutrient": "chromium",
+    "form": "타블렛",
+    "perServing": [
+      {
+        "name": "크롬",
+        "amount": 200,
+        "unit": "μg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "크롬 200μg, 타블렛, 250정",
+    "ulChecked": false,
+    "price": {
+      "value": 15050,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chromium-3",
+    "kind": "supplement",
+    "name": "비타민마을 혈당조절 바나바잎 크롬 컴플렉스9 15g, 30정, 6개",
+    "brand": "비타민마을",
+    "coupangProductId": 7783977231,
+    "link": "p-7783977231",
+    "image": "/products/7783977231.webp",
+    "nutrient": "chromium",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "30정",
+    "ulChecked": false,
+    "price": {
+      "value": 25900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chromium-4",
+    "kind": "supplement",
+    "name": "리듬랩 혈당케어 바나바잎 크롬 영양제, 3개, 60정",
+    "brand": "",
+    "coupangProductId": 9620822105,
+    "link": "p-9620822105",
+    "image": "/products/9620822105.webp",
+    "nutrient": "chromium",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 26640,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "chromium-5",
+    "kind": "supplement",
+    "name": "Swanson 크로뮴 피콜리네이트 200Mcg 캡슐, 200개입, 1개, 200정",
+    "brand": "스완슨",
+    "coupangProductId": 3239572,
+    "link": "p-3239572",
+    "image": "/products/3239572.webp",
+    "nutrient": "chromium",
+    "form": "캡슐",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "캡슐, 200정",
+    "ulChecked": false,
+    "price": {
+      "value": 9540,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "garcinia-1",
+    "kind": "supplement",
+    "name": "그린몬스터 다이어트 스페셜 2 가르시니아 900, 112정, 1개",
+    "brand": "그린몬스터",
+    "coupangProductId": 6807918291,
+    "link": "p-6807918291",
+    "image": "/products/6807918291.webp",
+    "nutrient": "garcinia",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "112정",
+    "ulChecked": false,
+    "price": {
+      "value": 12900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "garcinia-2",
+    "kind": "supplement",
+    "name": "뉴트리디데이 가르시니아 1000, 112정, 1개",
+    "brand": "뉴트리디데이",
+    "coupangProductId": 6697513406,
+    "link": "p-6697513406",
+    "image": "/products/6697513406.webp",
+    "nutrient": "garcinia",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "112정",
+    "ulChecked": false,
+    "price": {
+      "value": 12900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "garcinia-3",
+    "kind": "supplement",
+    "name": "헤밀레 김소형 원방 공비단 차전자피 가르시니아 혈당 다이어트 환, 150g, 4박스",
+    "brand": "헤밀레",
+    "coupangProductId": 8774274978,
+    "link": "p-8774274978",
+    "image": "/products/8774274978.webp",
+    "nutrient": "garcinia",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 60910,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "garcinia-4",
+    "kind": "supplement",
+    "name": "뉴트리정 체지방 감소 가르시니아 HCA 대용량, 1개, 300정",
+    "brand": "뉴트리정(NutriJung)",
+    "coupangProductId": 9668494415,
+    "link": "p-9668494415",
+    "image": "/products/9668494415.webp",
+    "nutrient": "garcinia",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "300정",
+    "ulChecked": false,
+    "price": {
+      "value": 16900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "garcinia-5",
+    "kind": "supplement",
+    "name": "헬스헬퍼 맥스컷 체지방 컷팅 프로 HCA 가르시니아 1000 123.2g, 1개, 112정",
+    "brand": "헬스헬퍼",
+    "coupangProductId": 9611001693,
+    "link": "p-9611001693",
+    "image": "/products/9611001693.webp",
+    "nutrient": "garcinia",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "112정",
+    "ulChecked": false,
+    "price": {
+      "value": 10230,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "gla-1",
+    "kind": "supplement",
+    "name": "네추럴라이즈 감마리놀렌산 달맞이꽃 종자유, 300정, 1개",
+    "brand": "네추럴라이즈",
+    "coupangProductId": 6789736242,
+    "link": "p-6789736242",
+    "image": "/products/6789736242.webp",
+    "nutrient": "gla",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "300정",
+    "ulChecked": false,
+    "price": {
+      "value": 33860,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "gla-2",
+    "kind": "supplement",
+    "name": "네추럴라이즈 감마리놀렌산 보라지오일, 180정, 1개",
+    "brand": "네추럴라이즈",
+    "coupangProductId": 107509107,
+    "link": "p-107509107",
+    "image": "/products/107509107.webp",
+    "nutrient": "gla",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "180정",
+    "ulChecked": false,
+    "price": {
+      "value": 35900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "gla-3",
+    "kind": "supplement",
+    "name": "뉴트리코어 달맞이꽃종자유 영양제, 120정, 4개",
+    "brand": "뉴트리코어",
+    "coupangProductId": 6456247780,
+    "link": "p-6456247780",
+    "image": "/products/6456247780.webp",
+    "nutrient": "gla",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 179600,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "gla-4",
+    "kind": "supplement",
+    "name": "캐나다직수입 감마리놀렌산 달맞이꽃종자유 (1001mg * 300캡슐) 'Evening Primrose Oil' 노랑, 1개",
+    "brand": "네이처스힐",
+    "coupangProductId": 9534021813,
+    "link": "p-9534021813",
+    "image": "/products/9534021813.webp",
+    "nutrient": "gla",
+    "form": "캡슐",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "300캡슐",
+    "ulChecked": false,
+    "price": {
+      "value": 25820,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "gla-5",
+    "kind": "supplement",
+    "name": "데일리코어 감마리놀렌산 보라지유, 60정, 1개",
+    "brand": "데일리코어",
+    "coupangProductId": 7674647088,
+    "link": "p-7674647088",
+    "image": "/products/7674647088.webp",
+    "nutrient": "gla",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 10330,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "glucosamine-1",
+    "kind": "supplement",
+    "name": "닥터스베스트 글루코사민 콘드로이친 MSM 캡슐, 360정, 1개",
+    "brand": "닥터스베스트",
+    "coupangProductId": 202217052,
+    "link": "p-202217052",
+    "image": "/products/202217052.webp",
+    "nutrient": "glucosamine",
+    "form": "캡슐",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "캡슐, 360정",
+    "ulChecked": false,
+    "price": {
+      "value": 46950,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "glucosamine-2",
+    "kind": "supplement",
+    "name": "종근당 N아세틸 글루코사민, 90정, 1개",
+    "brand": "종근당",
+    "coupangProductId": 7427013942,
+    "link": "p-7427013942",
+    "image": "/products/7427013942.webp",
+    "nutrient": "glucosamine",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "90정",
+    "ulChecked": false,
+    "price": {
+      "value": 24980,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "glucosamine-3",
+    "kind": "supplement",
+    "name": "뉴센트리 프로테오글리칸 비변성 2형 콜라겐 연어코연골 추출물 분말 정 상어연골 콘드로이친 글루코사민, 60정, 6개",
+    "brand": "뉴센트리",
+    "coupangProductId": 7357847044,
+    "link": "p-7357847044",
+    "image": "/products/7357847044.webp",
+    "nutrient": "glucosamine",
+    "form": "분말",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "분말, 60정",
+    "ulChecked": false,
+    "price": {
+      "value": 92900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "glucosamine-4",
+    "kind": "supplement",
+    "name": "광동 관절케어 글루코사민 맥스 3개월분 영양제 MSM, 1개, 180정",
+    "brand": "광동",
+    "coupangProductId": 9658645540,
+    "link": "p-9658645540",
+    "image": "/products/9658645540.webp",
+    "nutrient": "glucosamine",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "180정",
+    "ulChecked": false,
+    "price": {
+      "value": 25110,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "glucosamine-5",
+    "kind": "supplement",
+    "name": "마더네스트 초록홍합 글루코사민 1500mg, 365정, 1개",
+    "brand": "마더네스트",
+    "coupangProductId": 8051172770,
+    "link": "p-8051172770",
+    "image": "/products/8051172770.webp",
+    "nutrient": "glucosamine",
+    "form": "정",
+    "perServing": [
+      {
+        "name": "글루코사민",
+        "amount": 1500,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "글루코사민 1500mg, 365정",
+    "ulChecked": false,
+    "price": {
+      "value": 101200,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "green-tea-extract-1",
+    "kind": "supplement",
+    "name": "그린몬스터 다이어트 녹차카테킨 플러스, 28정, 15.4g, 1개",
+    "brand": "그린몬스터",
+    "coupangProductId": 9334761024,
+    "link": "p-9334761024",
+    "image": "/products/9334761024.webp",
+    "nutrient": "green-tea-extract",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "28정",
+    "ulChecked": false,
+    "price": {
+      "value": 13800,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "green-tea-extract-2",
+    "kind": "supplement",
+    "name": "슬림플래닛 녹차카테킨 500mg 애프터밀, 180정, 2개",
+    "brand": "슬림플래닛",
+    "coupangProductId": 1787315760,
+    "link": "p-1787315760",
+    "image": "/products/1787315760.webp",
+    "nutrient": "green-tea-extract",
+    "form": "정",
+    "perServing": [
+      {
+        "name": "녹차",
+        "amount": 500,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "녹차 500mg, 180정",
+    "ulChecked": false,
+    "price": {
+      "value": 39220,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "green-tea-extract-3",
+    "kind": "supplement",
+    "name": "주식회사힐링 프리미엄 카테킨24 그래뉼스틱, 400mg, 50개입, 2개",
+    "brand": "주식회사힐링",
+    "coupangProductId": 1913349,
+    "link": "p-1913349",
+    "image": "/products/1913349.webp",
+    "nutrient": "green-tea-extract",
+    "form": "스틱",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "스틱",
+    "ulChecked": false,
+    "price": {
+      "value": 16330,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "green-tea-extract-4",
+    "kind": "supplement",
+    "name": "루틴업 가인핏 다이어트 쾌변 혈당 케어 녹차추출물 카테킨 난소화성말토덱스트린 식이섬유 다이어트 보조제, 3박스, 14회분",
+    "brand": "루틴업",
+    "coupangProductId": 8529468436,
+    "link": "p-8529468436",
+    "image": "/products/8529468436.webp",
+    "nutrient": "green-tea-extract",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 79800,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "green-tea-extract-5",
+    "kind": "supplement",
+    "name": "뉴트라라이프 더블 컷 다이어트 카테킨 앤 바나바잎, 60정, 3개",
+    "brand": "뉴트라라이프",
+    "coupangProductId": 7154317849,
+    "link": "p-7154317849",
+    "image": "/products/7154317849.webp",
+    "nutrient": "green-tea-extract",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 47610,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "hyaluronic-acid-1",
+    "kind": "supplement",
+    "name": "로엘 히알루론산 콜라겐정, 60정, 1개",
+    "brand": "로엘",
+    "coupangProductId": 1349936400,
+    "link": "p-1349936400",
+    "image": "/products/1349936400.webp",
+    "nutrient": "hyaluronic-acid",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 10940,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "hyaluronic-acid-2",
+    "kind": "supplement",
+    "name": "어린 콜라겐 펩타이드 비오틴 피쉬콜라겐 히알루론산 저분자콜라겐 어류 생선콜라겐 먹는 분말 스틱, 4개, 60g",
+    "brand": "",
+    "coupangProductId": 8261121663,
+    "link": "p-8261121663",
+    "image": "/products/8261121663.webp",
+    "nutrient": "hyaluronic-acid",
+    "form": "분말",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "분말",
+    "ulChecked": false,
+    "price": {
+      "value": 37640,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "hyaluronic-acid-3",
+    "kind": "supplement",
+    "name": "비비랩 촉촉한 수분충전 히알루론산, 100정, 1개",
+    "brand": "비비랩",
+    "coupangProductId": 5869850519,
+    "link": "p-5869850519",
+    "image": "/products/5869850519.webp",
+    "nutrient": "hyaluronic-acid",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "100정",
+    "ulChecked": false,
+    "price": {
+      "value": 35820,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "hyaluronic-acid-4",
+    "kind": "supplement",
+    "name": "뉴트리코스트 히알루론산 100mg 캡슐, 120정, 1개",
+    "brand": "뉴트리코스트",
+    "coupangProductId": 6453425570,
+    "link": "p-6453425570",
+    "image": "/products/6453425570.webp",
+    "nutrient": "hyaluronic-acid",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "히알루론산",
+        "amount": 100,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "히알루론산 100mg, 캡슐, 120정",
+    "ulChecked": false,
+    "price": {
+      "value": 18240,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "hyaluronic-acid-5",
+    "kind": "supplement",
+    "name": "필라멘토 피부영양제 글루타치온+콜라겐+히알루론산+바나바잎추출물+유산균 이너뷰티 분말스틱, 3박스, 14회분",
+    "brand": "필라멘토",
+    "coupangProductId": 8808588635,
+    "link": "p-8808588635",
+    "image": "/products/8808588635.webp",
+    "nutrient": "hyaluronic-acid",
+    "form": "분말",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "분말",
+    "ulChecked": false,
+    "price": {
+      "value": 23030,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "pantothenic-acid-1",
+    "kind": "supplement",
+    "name": "재로우 판토텐산 B5 500mg 캡슐, 100정, 2개",
+    "brand": "재로우",
+    "coupangProductId": 6978767285,
+    "link": "p-6978767285",
+    "image": "/products/6978767285.webp",
+    "nutrient": "pantothenic-acid",
+    "form": "캡슐",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "캡슐, 100정",
+    "ulChecked": false,
+    "price": {
+      "value": 27870,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "pantothenic-acid-2",
+    "kind": "supplement",
+    "name": "나우푸드 판토텐산 500mg 베지 캡슐, 100정, 1개",
+    "brand": "나우푸드",
+    "coupangProductId": 7007680965,
+    "link": "p-7007680965",
+    "image": "/products/7007680965.webp",
+    "nutrient": "pantothenic-acid",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "판토텐산",
+        "amount": 500,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "판토텐산 500mg, 캡슐, 100정",
+    "ulChecked": false,
+    "price": {
+      "value": 10730,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "pantothenic-acid-3",
+    "kind": "supplement",
+    "name": "나우푸드 판토텐산 500mg, 250정, 1개",
+    "brand": "나우푸드",
+    "coupangProductId": 7007680965,
+    "link": "p-7007680965",
+    "image": "/products/7007680965.webp",
+    "nutrient": "pantothenic-acid",
+    "form": "정",
+    "perServing": [
+      {
+        "name": "판토텐산",
+        "amount": 500,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "판토텐산 500mg, 250정",
+    "ulChecked": false,
+    "price": {
+      "value": 24380,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "pantothenic-acid-4",
+    "kind": "supplement",
+    "name": "비타민마을 비오틴 10000 판토텐산 컴플렉스 10 30g, 30정, 6개",
+    "brand": "비타민마을",
+    "coupangProductId": 7225143642,
+    "link": "p-7225143642",
+    "image": "/products/7225143642.webp",
+    "nutrient": "pantothenic-acid",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "30정",
+    "ulChecked": false,
+    "price": {
+      "value": 38900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "pantothenic-acid-5",
+    "kind": "supplement",
+    "name": "월간건강 글루타치온 판토텐산 플러스, 1개, 120정",
+    "brand": "월간건강",
+    "coupangProductId": 8371680297,
+    "link": "p-8371680297",
+    "image": "/products/8371680297.webp",
+    "nutrient": "pantothenic-acid",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 25120,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "potassium-1",
+    "kind": "supplement",
+    "name": "나우푸드 포타슘 시트레이트 99mg 캡슐, 1개, 180정",
+    "brand": "나우푸드",
+    "coupangProductId": 29208,
+    "link": "p-29208",
+    "image": "/products/29208.webp",
+    "nutrient": "potassium",
+    "form": "캡슐",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "캡슐, 180정",
+    "ulChecked": false,
+    "price": {
+      "value": 12060,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "potassium-2",
+    "kind": "supplement",
+    "name": "비타민마을 와이즈 칼륨, 120정, 3개",
+    "brand": "비타민마을",
+    "coupangProductId": 7413539890,
+    "link": "p-7413539890",
+    "image": "/products/7413539890.webp",
+    "nutrient": "potassium",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 35900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "potassium-3",
+    "kind": "supplement",
+    "name": "뉴트리디데이 프리미엄 칼륨 포타슘 1400, 120정, 1개",
+    "brand": "뉴트리디데이",
+    "coupangProductId": 7230096551,
+    "link": "p-7230096551",
+    "image": "/products/7230096551.webp",
+    "nutrient": "potassium",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 10900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "potassium-4",
+    "kind": "supplement",
+    "name": "퍼니트 칼륨 포타슘 수분 밸런스 1500, 120정, 2박스",
+    "brand": "퍼니트",
+    "coupangProductId": 8194500296,
+    "link": "p-8194500296",
+    "image": "/products/8194500296.webp",
+    "nutrient": "potassium",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 19440,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "potassium-5",
+    "kind": "supplement",
+    "name": "종근당 부기 솔루션 칼륨 168g, 1개, 120정",
+    "brand": "종근당",
+    "coupangProductId": 9479828763,
+    "link": "p-9479828763",
+    "image": "/products/9479828763.webp",
+    "nutrient": "potassium",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 15900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "prebiotics-1",
+    "kind": "supplement",
+    "name": "종근당 프리바이오틱스 프락토올리고당 FOS 유산균 30p, 150g, 3개",
+    "brand": "종근당",
+    "coupangProductId": 2207617074,
+    "link": "p-2207617074",
+    "image": "/products/2207617074.webp",
+    "nutrient": "prebiotics",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 30840,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "prebiotics-2",
+    "kind": "supplement",
+    "name": "종근당 프리바이오틱스 프락토올리고당 FOS 유산균, 150g, 2개",
+    "brand": "종근당",
+    "coupangProductId": 2207617074,
+    "link": "p-2207617074",
+    "image": "/products/2207617074.webp",
+    "nutrient": "prebiotics",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 21300,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "prebiotics-3",
+    "kind": "supplement",
+    "name": "JW중외제약 프리미엄 프리바이오틱스 FOS 4000, 150g, 3개",
+    "brand": "JW중외제약",
+    "coupangProductId": 198316556,
+    "link": "p-198316556",
+    "image": "/products/198316556.webp",
+    "nutrient": "prebiotics",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 22210,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "prebiotics-4",
+    "kind": "supplement",
+    "name": "메이준뉴트리 이승남 더블액션 프리바이오틱스 프락토올리고당 유산균 30p, 150g, 3개",
+    "brand": "메이준뉴트리",
+    "coupangProductId": 1563203699,
+    "link": "p-1563203699",
+    "image": "/products/1563203699.webp",
+    "nutrient": "prebiotics",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 25700,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "prebiotics-5",
+    "kind": "supplement",
+    "name": "순수식품 프리바이오틱스 FOS4300 6박스(180포) 아연 프락토올리고당, 180개, 5g",
+    "brand": "순수식품",
+    "coupangProductId": 1176284696,
+    "link": "p-1176284696",
+    "image": "/products/1176284696.webp",
+    "nutrient": "prebiotics",
+    "form": "포",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "180포",
+    "ulChecked": false,
+    "price": {
+      "value": 29390,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "propolis-1",
+    "kind": "supplement",
+    "name": "내츄럴플러스 프로폴리스 1000, 180정, 1개",
+    "brand": "내츄럴플러스",
+    "coupangProductId": 20894936,
+    "link": "p-20894936",
+    "image": "/products/20894936.webp",
+    "nutrient": "propolis",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "180정",
+    "ulChecked": false,
+    "price": {
+      "value": 23900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "propolis-2",
+    "kind": "supplement",
+    "name": "종근당건강 프로폴리스 플러스, 60정, 1개",
+    "brand": "종근당건강",
+    "coupangProductId": 12804417,
+    "link": "p-12804417",
+    "image": "/products/12804417.webp",
+    "nutrient": "propolis",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 8040,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "propolis-3",
+    "kind": "supplement",
+    "name": "세노비스 프로폴리스 플러스, 60정, 1개",
+    "brand": "세노비스",
+    "coupangProductId": 5857122777,
+    "link": "p-5857122777",
+    "image": "/products/5857122777.webp",
+    "nutrient": "propolis",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 19410,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "propolis-4",
+    "kind": "supplement",
+    "name": "뉴트리정 프리미엄 항산화 프로폴리스 대용량, 1개, 300정",
+    "brand": "뉴트리정(NutriJung)",
+    "coupangProductId": 9513775758,
+    "link": "p-9513775758",
+    "image": "/products/9513775758.webp",
+    "nutrient": "propolis",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "300정",
+    "ulChecked": false,
+    "price": {
+      "value": 18900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "propolis-5",
+    "kind": "supplement",
+    "name": "닥터필 프로폴리스 이뮨 프로 필름 식약청인증 30P, 9.5g, 6박스",
+    "brand": "닥터필",
+    "coupangProductId": 8631970658,
+    "link": "p-8631970658",
+    "image": "/products/8631970658.webp",
+    "nutrient": "propolis",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": true,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 149000,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "selenium-1",
+    "kind": "supplement",
+    "name": "나우푸드 셀레늄 200mcg 베지 캡슐, 1개, 180정",
+    "brand": "나우푸드",
+    "coupangProductId": 26200,
+    "link": "p-26200",
+    "image": "/products/26200.webp",
+    "nutrient": "selenium",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "셀레늄",
+        "amount": 200,
+        "unit": "μg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "셀레늄 200μg, 캡슐, 180정",
+    "ulChecked": true,
+    "price": {
+      "value": 11100,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "spirulina-1",
+    "kind": "supplement",
+    "name": "내츄럴플러스 스피루리나, 180정, 1개",
+    "brand": "내츄럴플러스",
+    "coupangProductId": 7414797984,
+    "link": "p-7414797984",
+    "image": "/products/7414797984.webp",
+    "nutrient": "spirulina",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "180정",
+    "ulChecked": false,
+    "price": {
+      "value": 13170,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "spirulina-2",
+    "kind": "supplement",
+    "name": "나우푸드 스피루리나 1000mg 타블렛, 240정, 1개",
+    "brand": "나우푸드",
+    "coupangProductId": 2638520,
+    "link": "p-2638520",
+    "image": "/products/2638520.webp",
+    "nutrient": "spirulina",
+    "form": "타블렛",
+    "perServing": [
+      {
+        "name": "스피루리나",
+        "amount": 1000,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "스피루리나 1000mg, 타블렛, 240정",
+    "ulChecked": false,
+    "price": {
+      "value": 24110,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "spirulina-3",
+    "kind": "supplement",
+    "name": "뉴트리가든 하와이안 스피루리나, 120정, 1개",
+    "brand": "뉴트리가든",
+    "coupangProductId": 8852912,
+    "link": "p-8852912",
+    "image": "/products/8852912.webp",
+    "nutrient": "spirulina",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 12720,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "taurine-1",
+    "kind": "supplement",
+    "name": "익스트림 옵티마 BCAA 타우린 7000 플러스, 300g, 1개",
+    "brand": "익스트림",
+    "coupangProductId": 6712065168,
+    "link": "p-6712065168",
+    "image": "/products/6712065168.webp",
+    "nutrient": "taurine",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구성은 상품 페이지 확인",
+    "ulChecked": false,
+    "price": {
+      "value": 23900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "taurine-2",
+    "kind": "supplement",
+    "name": "나우푸드 더블 스트렝스 타우린 1000mg 베지 캡슐, 1개, 250정",
+    "brand": "나우푸드",
+    "coupangProductId": 8104064905,
+    "link": "p-8104064905",
+    "image": "/products/8104064905.webp",
+    "nutrient": "taurine",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "타우린",
+        "amount": 1000,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "타우린 1000mg, 캡슐, 250정",
+    "ulChecked": false,
+    "price": {
+      "value": 20030,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "taurine-3",
+    "kind": "supplement",
+    "name": "닥터스원 타우린 아르기닌 1000 120g, 120정, 1개",
+    "brand": "",
+    "coupangProductId": 7560610880,
+    "link": "p-7560610880",
+    "image": "/products/7560610880.webp",
+    "nutrient": "taurine",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "120정",
+    "ulChecked": false,
+    "price": {
+      "value": 10500,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "taurine-4",
+    "kind": "supplement",
+    "name": "비타민마을 타우린 스틱, 120g, 1개",
+    "brand": "비타민마을",
+    "coupangProductId": 7275987773,
+    "link": "p-7275987773",
+    "image": "/products/7275987773.webp",
+    "nutrient": "taurine",
+    "form": "스틱",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "스틱",
+    "ulChecked": false,
+    "price": {
+      "value": 10900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "taurine-5",
+    "kind": "supplement",
+    "name": "라이프토콜 타우린 1000mg 맥스 150g, 120정, 1개",
+    "brand": "라이프토콜",
+    "coupangProductId": 7463630820,
+    "link": "p-7463630820",
+    "image": "/products/7463630820.webp",
+    "nutrient": "taurine",
+    "form": "정",
+    "perServing": [
+      {
+        "name": "타우린",
+        "amount": 1000,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "타우린 1000mg, 120정",
+    "ulChecked": false,
+    "price": {
+      "value": 13740,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-a-1",
+    "kind": "supplement",
+    "name": "솔가 드라이 비타민A 1500mcg 타블렛, 100정, 1개",
+    "brand": "솔가",
+    "coupangProductId": 2074539,
+    "link": "p-2074539",
+    "image": "/products/2074539.webp",
+    "nutrient": "vitamin-a",
+    "form": "타블렛",
+    "perServing": [
+      {
+        "name": "비타민A",
+        "amount": 1500,
+        "unit": "μg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "비타민A 1500μg, 타블렛, 100정",
+    "ulChecked": true,
+    "price": {
+      "value": 7540,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b1-1",
+    "kind": "supplement",
+    "name": "닥터스베스트 벤포티아민 150mg 베지 캡, 120정, 1개",
+    "brand": "닥터스베스트",
+    "coupangProductId": 228944,
+    "link": "p-228944",
+    "image": "/products/228944.webp",
+    "nutrient": "vitamin-b1",
+    "form": "정",
+    "perServing": [
+      {
+        "name": "비타민B1",
+        "amount": 150,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "비타민B1 150mg, 120정",
+    "ulChecked": false,
+    "price": {
+      "value": 24920,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b1-2",
+    "kind": "supplement",
+    "name": "뉴트리코스트 벤포티아민 300mg 활성 지용성 비타민 B1 90캡슐 2개, 90정",
+    "brand": "Nutricost",
+    "coupangProductId": 6569988843,
+    "link": "p-6569988843",
+    "image": "/products/6569988843.webp",
+    "nutrient": "vitamin-b1",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "비타민B1",
+        "amount": 300,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "비타민B1 300mg, 90캡슐",
+    "ulChecked": false,
+    "price": {
+      "value": 45400,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b1-3",
+    "kind": "supplement",
+    "name": "뉴트리코스트 벤포티아민 300mg 캡슐, 90정, 1개",
+    "brand": "뉴트리코스트",
+    "coupangProductId": 6569988843,
+    "link": "p-6569988843",
+    "image": "/products/6569988843.webp",
+    "nutrient": "vitamin-b1",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "비타민B1",
+        "amount": 300,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "비타민B1 300mg, 캡슐, 90정",
+    "ulChecked": false,
+    "price": {
+      "value": 20300,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b12-1",
+    "kind": "supplement",
+    "name": "솔가 비타민 B12 500, 100정, 1개",
+    "brand": "솔가",
+    "coupangProductId": 6159037720,
+    "link": "p-6159037720",
+    "image": "/products/6159037720.webp",
+    "nutrient": "vitamin-b12",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "100정",
+    "ulChecked": false,
+    "price": {
+      "value": 25430,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b12-2",
+    "kind": "supplement",
+    "name": "네이처메이드 비타민B12 구미, 120정, 1개",
+    "brand": "네이처메이드",
+    "coupangProductId": 8049500159,
+    "link": "p-8049500159",
+    "image": "/products/8049500159.webp",
+    "nutrient": "vitamin-b12",
+    "form": "구미",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "구미, 120정",
+    "ulChecked": false,
+    "price": {
+      "value": 28800,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b12-3",
+    "kind": "supplement",
+    "name": "뉴트리코스트 비타민 B12 1000mcg 240캡슐 2개, 240정",
+    "brand": "뉴트리코스트",
+    "coupangProductId": 8213688394,
+    "link": "p-8213688394",
+    "image": "/products/8213688394.webp",
+    "nutrient": "vitamin-b12",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "비타민B12",
+        "amount": 1000,
+        "unit": "μg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "비타민B12 1000μg, 240캡슐",
+    "ulChecked": false,
+    "price": {
+      "value": 37800,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b2-1",
+    "kind": "supplement",
+    "name": "나우푸드 B-2 100mg 리보플라빈 캡슐, 2개, 100정",
+    "brand": "나우푸드",
+    "coupangProductId": 28026,
+    "link": "p-28026",
+    "image": "/products/28026.webp",
+    "nutrient": "vitamin-b2",
+    "form": "캡슐",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "캡슐, 100정",
+    "ulChecked": false,
+    "price": {
+      "value": 18370,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b2-2",
+    "kind": "supplement",
+    "name": "뉴트리코스트 비타민 B2 리보플라빈 400mg 캡슐, 1개, 120정",
+    "brand": "뉴트리코스트",
+    "coupangProductId": 216731274,
+    "link": "p-216731274",
+    "image": "/products/216731274.webp",
+    "nutrient": "vitamin-b2",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "비타민B2",
+        "amount": 400,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "비타민B2 400mg, 캡슐, 120정",
+    "ulChecked": false,
+    "price": {
+      "value": 21520,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-b2-3",
+    "kind": "supplement",
+    "name": "네이쳐스웨이 리보플라빈 비타민 B2 100mg 캡슐, 1개, 100정",
+    "brand": "네이쳐스웨이",
+    "coupangProductId": 222356,
+    "link": "p-222356",
+    "image": "/products/222356.webp",
+    "nutrient": "vitamin-b2",
+    "form": "캡슐",
+    "perServing": [
+      {
+        "name": "비타민B2",
+        "amount": 100,
+        "unit": "mg"
+      }
+    ],
+    "perServingConfidence": "explicit",
+    "isHealthFunctionalFood": null,
+    "reason": "비타민B2 100mg, 캡슐, 100정",
+    "ulChecked": false,
+    "price": {
+      "value": 10190,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-k-1",
+    "kind": "supplement",
+    "name": "고려은단 뼈건강 칼마디+K2 칼슘 마그네슘 비타민D 비타민K2, 60정, 3개",
+    "brand": "고려은단",
+    "coupangProductId": 8068437942,
+    "link": "p-8068437942",
+    "image": "/products/8068437942.webp",
+    "nutrient": "vitamin-k",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 49300,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-k-2",
+    "kind": "supplement",
+    "name": "나우푸드 MK-7 비타민 K-2 100mcg 베지 캡슐, 120개입, 1개, 120정",
+    "brand": "나우푸드",
+    "coupangProductId": 208403088,
+    "link": "p-208403088",
+    "image": "/products/208403088.webp",
+    "nutrient": "vitamin-k",
+    "form": "캡슐",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "캡슐, 120정",
+    "ulChecked": false,
+    "price": {
+      "value": 23490,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-k-3",
+    "kind": "supplement",
+    "name": "비타민 K2 식약청인증 MK-7 엔썸잇 뼈건강 영양제 메나퀴논 대용량, 1개, 90정",
+    "brand": "엔썸잇",
+    "coupangProductId": 8431329388,
+    "link": "p-8431329388",
+    "image": "/products/8431329388.webp",
+    "nutrient": "vitamin-k",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": true,
+    "reason": "90정",
+    "ulChecked": false,
+    "price": {
+      "value": 20110,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-k-4",
+    "kind": "supplement",
+    "name": "나우푸드 비타민 K-2 100mcg 베지 캡슐, 100정, 1개",
+    "brand": "나우푸드",
+    "coupangProductId": 1416998339,
+    "link": "p-1416998339",
+    "image": "/products/1416998339.webp",
+    "nutrient": "vitamin-k",
+    "form": "캡슐",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "캡슐, 100정",
+    "ulChecked": false,
+    "price": {
+      "value": 12220,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "vitamin-k-5",
+    "kind": "supplement",
+    "name": "엔썸잇 비타민K2 식약청인증 MK-7 뼈건강영양제, 2개, 60정",
+    "brand": "엔썸잇",
+    "coupangProductId": 9039845291,
+    "link": "p-9039845291",
+    "image": "/products/9039845291.webp",
+    "nutrient": "vitamin-k",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": true,
+    "reason": "60정",
+    "ulChecked": false,
+    "price": {
+      "value": 17020,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "zeaxanthin-1",
+    "kind": "supplement",
+    "name": "아이원 루테인지아잔틴 미니, 180정, 1개",
+    "brand": "아이원",
+    "coupangProductId": 7568064592,
+    "link": "p-7568064592",
+    "image": "/products/7568064592.webp",
+    "nutrient": "zeaxanthin",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "180정",
+    "ulChecked": false,
+    "price": {
+      "value": 35600,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "zeaxanthin-2",
+    "kind": "supplement",
+    "name": "뉴트리원 루테인 지아잔틴 164, 50정, 3개",
+    "brand": "뉴트리원",
+    "coupangProductId": 8552790998,
+    "link": "p-8552790998",
+    "image": "/products/8552790998.webp",
+    "nutrient": "zeaxanthin",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "50정",
+    "ulChecked": false,
+    "price": {
+      "value": 55350,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "zeaxanthin-3",
+    "kind": "supplement",
+    "name": "뉴트리원 루테인 지아잔틴 164 알티지 오메가3, 100정, 2개",
+    "brand": "뉴트리원",
+    "coupangProductId": 4777216990,
+    "link": "p-4777216990",
+    "image": "/products/4777216990.webp",
+    "nutrient": "zeaxanthin",
+    "form": "정",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "100정",
+    "ulChecked": false,
+    "price": {
+      "value": 89820,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
   }
 ]

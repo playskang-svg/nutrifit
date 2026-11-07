@@ -178,6 +178,10 @@
     "리보플라빈"
   ],
   "heroPhoto": "nutrient-vitamin-b2-1",
-  "picks": [],
+  "picks": [
+    "vitamin-b2-1",
+    "vitamin-b2-2",
+    "vitamin-b2-3"
+  ],
   "order": 3
 }

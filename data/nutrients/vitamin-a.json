@@ -211,6 +211,8 @@
     "베타카로틴오메가3"
   ],
   "heroPhoto": "nutrient-vitamin-a-1",
-  "picks": [],
+  "picks": [
+    "vitamin-a-1"
+  ],
   "order": 1
 }

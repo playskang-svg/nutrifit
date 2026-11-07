@@ -113,6 +113,10 @@
     "스피루리나 영양제"
   ],
   "heroPhoto": "nutrient-spirulina-1",
-  "picks": [],
+  "picks": [
+    "spirulina-1",
+    "spirulina-2",
+    "spirulina-3"
+  ],
   "order": 47
 }

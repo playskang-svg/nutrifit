@@ -125,6 +125,12 @@
     "크롬 상한섭취량"
   ],
   "heroPhoto": "nutrient-chromium-1",
-  "picks": [],
+  "picks": [
+    "chromium-1",
+    "chromium-2",
+    "chromium-3",
+    "chromium-4",
+    "chromium-5"
+  ],
   "order": 23
 }

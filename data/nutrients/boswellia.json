@@ -109,6 +109,11 @@
     "보스웰리아파는곳"
   ],
   "heroPhoto": "nutrient-boswellia-1",
-  "picks": [],
+  "picks": [
+    "boswellia-1",
+    "boswellia-3",
+    "boswellia-4",
+    "boswellia-5"
+  ],
   "order": 40
 }

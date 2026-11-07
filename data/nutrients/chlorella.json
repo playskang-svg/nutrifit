@@ -107,6 +107,11 @@
     "클로렐라 부작용"
   ],
   "heroPhoto": "nutrient-chlorella-1",
-  "picks": [],
+  "picks": [
+    "chlorella-1",
+    "chlorella-2",
+    "chlorella-4",
+    "chlorella-5"
+  ],
   "order": 48
 }

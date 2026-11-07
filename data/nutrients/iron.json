@@ -197,6 +197,9 @@
     "철분제추천"
   ],
   "heroPhoto": "nutrient-iron-1",
-  "picks": [],
+  "picks": [
+    "iron-1",
+    "iron-2"
+  ],
   "order": 18
 }

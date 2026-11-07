@@ -105,6 +105,12 @@
     "글루코사민 부작용"
   ],
   "heroPhoto": "nutrient-glucosamine-1",
-  "picks": [],
+  "picks": [
+    "glucosamine-1",
+    "glucosamine-2",
+    "glucosamine-3",
+    "glucosamine-4",
+    "glucosamine-5"
+  ],
   "order": 39
 }

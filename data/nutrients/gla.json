@@ -117,6 +117,12 @@
     "감마리놀렌산 부작용"
   ],
   "heroPhoto": "nutrient-gla-1",
-  "picks": [],
+  "picks": [
+    "gla-1",
+    "gla-2",
+    "gla-3",
+    "gla-4",
+    "gla-5"
+  ],
   "order": 26
 }
