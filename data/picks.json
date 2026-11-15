@@ -10797,5 +10797,401 @@
       "collectedAt": "2026-11-07"
     },
     "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "exercise-mat-1",
+    "kind": "gear",
+    "name": "코멧 스포츠 NBR 요가매트 20mm, 네이비, 1개",
+    "brand": "코멧",
+    "coupangProductId": 4888844473,
+    "link": "p-4888844473",
+    "image": "/products/4888844473.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "네이비, 1개",
+    "ulChecked": false,
+    "price": {
+      "value": 15090,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "exercise-mat-2",
+    "kind": "gear",
+    "name": "에바핏 NBR 프리미엄 요가매트 20mm, 챠콜, 1개",
+    "brand": "에바핏",
+    "coupangProductId": 25888977,
+    "link": "p-25888977",
+    "image": "/products/25888977.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "챠콜, 1개",
+    "ulChecked": false,
+    "price": {
+      "value": 24800,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "nonslip-mat-1",
+    "kind": "gear",
+    "name": "월광 미끄럼방지 욕실매트 튜브형, 회색, 1개",
+    "brand": "월광",
+    "coupangProductId": 3721932,
+    "link": "p-3721932",
+    "image": "/products/3721932.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "회색, 1개",
+    "ulChecked": false,
+    "price": {
+      "value": 17300,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "nonslip-mat-2",
+    "kind": "gear",
+    "name": "미리 미끄럼방지 욕실매트 90 x 100 x 1 cm, 베이지, 1개",
+    "brand": "미리",
+    "coupangProductId": 9724978334,
+    "link": "p-9724978334",
+    "image": "/products/9724978334.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "베이지, 1개",
+    "ulChecked": false,
+    "price": {
+      "value": 21300,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "sensor-light-1",
+    "kind": "gear",
+    "name": "히즈엔 무선 충전식 동작 감지 센서등 자동인식 led 붙이는 조명, 웜옐로우, 1개",
+    "brand": "히즈엔",
+    "coupangProductId": 8491381679,
+    "link": "p-8491381679",
+    "image": "/products/8491381679.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "웜옐로우, 1개",
+    "ulChecked": false,
+    "price": {
+      "value": 8700,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "sensor-light-2",
+    "kind": "gear",
+    "name": "홈플래닛 광센서 LED 취침등 콘센트형, 화이트",
+    "brand": "홈플래닛",
+    "coupangProductId": 8074992787,
+    "link": "p-8074992787",
+    "image": "/products/8074992787.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "화이트",
+    "ulChecked": false,
+    "price": {
+      "value": 5000,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "bath-handrail-1",
+    "kind": "gear",
+    "name": "Daybyday 바른생활이야기 스탠안전손잡이 직경 3.2cm, 1개",
+    "brand": "Daybyday",
+    "coupangProductId": 8023849008,
+    "link": "p-8023849008",
+    "image": "/products/8023849008.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "1개",
+    "ulChecked": false,
+    "price": {
+      "value": 8200,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "bath-handrail-2",
+    "kind": "gear",
+    "name": "모칸도 안전손잡이 지름 3.2cm 노인 장애인 환자 화장실 안전 손잡이, ABS_황색, 2개",
+    "brand": "모칸도",
+    "coupangProductId": 7691514552,
+    "link": "p-7691514552",
+    "image": "/products/7691514552.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "ABS_황색, 2개",
+    "ulChecked": false,
+    "price": {
+      "value": 29190,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "body-scale-1",
+    "kind": "gear",
+    "name": "앳플리 디지털 LED 체중계, T3, 화이트, 1개",
+    "brand": "앳플리",
+    "coupangProductId": 6417202386,
+    "link": "p-6417202386",
+    "image": "/products/6417202386.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "T3, 화이트, 1개",
+    "ulChecked": false,
+    "price": {
+      "value": 12920,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "body-scale-2",
+    "kind": "gear",
+    "name": "노바리빙 컬러 백라이트 사각 체중계, 블랙, 1개",
+    "brand": "노바리빙",
+    "coupangProductId": 5258756746,
+    "link": "p-5258756746",
+    "image": "/products/5258756746.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "블랙, 1개",
+    "ulChecked": false,
+    "price": {
+      "value": 8730,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "portable-fan-1",
+    "kind": "gear",
+    "name": "PERFFIER 가성비 급속 냉각 휴대용 미니 무선 손선풍기 탁상용 겸용 4000mAh대용량 배터리 각도 조절 초경량 설계 저소음 작동 5단계 풍속 조절 LED 잔량 표시, 화이트, T40",
+    "brand": "퍼피어",
+    "coupangProductId": 9407424626,
+    "link": "p-9407424626",
+    "image": "/products/9407424626.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "화이트, T40",
+    "ulChecked": false,
+    "price": {
+      "value": 13800,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "portable-fan-2",
+    "kind": "gear",
+    "name": "알리사 100단 아이스 터보 MAX 휴대용 선풍기, APF01, 화이트",
+    "brand": "알리사",
+    "coupangProductId": 8719219704,
+    "link": "p-8719219704",
+    "image": "/products/8719219704.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "APF01, 화이트",
+    "ulChecked": false,
+    "price": {
+      "value": 26970,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "winter-gloves-1",
+    "kind": "gear",
+    "name": "1+1 글램가드 따뜻한 겨울용 스마트폰 터치 기모 방한 장갑 2개",
+    "brand": "글램가드",
+    "coupangProductId": 9018569129,
+    "link": "p-9018569129",
+    "image": "/products/9018569129.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "ulChecked": false,
+    "price": {
+      "value": 9100,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "winter-gloves-2",
+    "kind": "gear",
+    "name": "라세르 스마트폰 터치 기모 스포츠 방한 장갑",
+    "brand": "라세르",
+    "coupangProductId": 8354359389,
+    "link": "p-8354359389",
+    "image": "/products/8354359389.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "ulChecked": false,
+    "price": {
+      "value": 7900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "neck-warmer-1",
+    "kind": "gear",
+    "name": "[1+1] 에어메쉬로 숨쉬기 편한 우디우디 프리미엄 기모 방한 넥워머",
+    "brand": "우디우디",
+    "coupangProductId": 8413085956,
+    "link": "p-8413085956",
+    "image": "/products/8413085956.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "ulChecked": false,
+    "price": {
+      "value": 17900,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "sterile-gauze-1",
+    "kind": "quasiDrug",
+    "name": "유성진 멸균 가아제 대형거즈 (10 * 10)cm 8겹, 4세트, 5매",
+    "brand": "유성진",
+    "coupangProductId": 7548380834,
+    "link": "p-7548380834",
+    "image": "/products/7548380834.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "4세트, 5매",
+    "ulChecked": false,
+    "price": {
+      "value": 5200,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "medical-tape-1",
+    "kind": "gear",
+    "name": "쓰리엠 마이크로포 의료용 테이프 탄, 3개입, 1개",
+    "brand": "쓰리엠",
+    "coupangProductId": 6654110018,
+    "link": "p-6654110018",
+    "image": "/products/6654110018.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "3개입, 1개",
+    "ulChecked": false,
+    "price": {
+      "value": 4100,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "medical-tape-2",
+    "kind": "gear",
+    "name": "이노테이프 저자극 반투명 의료용 실리콘 테이프, 2개, 1개입",
+    "brand": "-",
+    "coupangProductId": 8676824601,
+    "link": "p-8676824601",
+    "image": "/products/8676824601.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "2개, 1개입",
+    "ulChecked": false,
+    "price": {
+      "value": 19800,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "sanitary-pad-1",
+    "kind": "quasiDrug",
+    "name": "좋은느낌 입는 오버나이트, 대형, 8개입, 2개",
+    "brand": "유한킴벌리",
+    "coupangProductId": 6741356617,
+    "link": "p-6741356617",
+    "image": "/products/6741356617.webp",
+    "form": "",
+    "perServing": [],
+    "perServingConfidence": "none",
+    "isHealthFunctionalFood": null,
+    "reason": "대형, 8개입, 2개",
+    "ulChecked": false,
+    "price": {
+      "value": 13150,
+      "unit": "pack",
+      "collectedAt": "2026-11-07"
+    },
+    "checkedAt": "2026-11-07"
   }
 ]
